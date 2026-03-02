@@ -1,41 +1,64 @@
 # VirtuaFC
 
-A football manager simulation game built with Laravel and Event Sourcing.
+A football manager simulation game built with Laravel 12, Tailwind CSS, and Alpine.js.
 
 ## Features
 
 ### Competitions
 - Manage a football team in the Spanish league system (La Liga, Segunda Division)
-- Compete in the Copa del Rey knockout cup competition
-- League standings and cup brackets
+- Compete in the Copa del Rey knockout cup and the Supercopa de Espana
+- Qualify for European competitions: Champions League, Europa League, and Conference League
+- League standings, cup brackets, and Swiss-format group stages
 
 ### Match Simulation
 - Realistic match engine with Poisson-based goal distribution
-- Player events: goals, assists, yellow/red cards, injuries
-- Formation tactics (4-4-2, 4-3-3, 3-5-2, etc.) affecting attack/defense balance
+- Player events: goals, assists, yellow/red cards, injuries, substitutions
+- 8 formation tactics (4-4-2, 4-3-3, 4-2-3-1, 3-4-3, 3-5-2, 4-1-4-1, 5-3-2, 5-4-1)
 - Team mentality (Defensive/Balanced/Attacking) for tactical adjustments
+- Advanced pitch positioning with a 9x14 grid for player placement
+- Coach assistant with tactical recommendations
 - Configurable simulation parameters via `config/match_simulation.php`
 
 ### Squad Management
 - Player squads with technical and physical attributes
 - Fitness system: players lose fitness when playing, recover during rest
-- Morale system: affected by match results and individual performance
+- Morale system: affected by match results, playing time, and contract status
 - Injury system: realistic injuries from minor strains to season-ending ACL tears
 - Hidden durability attribute affects injury proneness
 - Lineup selection with position compatibility indicators
+- Red card handling with dynamic xG recalculation
+
+### Transfer Market
+- Scouting system to discover players across leagues
+- Player buying, selling, and loan management
+- Contract negotiations and renewals
+- Pre-contract offers for expiring players
+- List players for sale or loan
+
+### Youth Academy
+- Academy tiers with prospect intake each season
+- Phased ability reveals (unknown -> visible -> potential revealed)
+- Promote, loan out, keep, or dismiss academy players
+- Accelerated development for loaned academy players (1.5x)
+
+### Financial System
+- Projection-based budgeting with revenue and wage forecasts
+- Budget allocation across transfers, infrastructure, and academy
+- Competition-specific revenue (matchday, commercial, prize money)
+- Financial transactions and season-end reconciliation
 
 ### Season Progression
 - Player development: young players improve, older players decline
-- End of season summary with awards (top scorer, most assists, best goalkeeper)
+- Promotion and relegation between divisions
+- End-of-season pipeline with 21 ordered processors
 - Season archiving for historical records
-- New season initialization with stat resets and fixture generation
 
 ## Prerequisites
 
-- PHP 8.2 or higher
+- PHP 8.4 or higher
 - Composer
 - Node.js and npm
-- SQLite (default) or MySQL/PostgreSQL
+- SQLite (development) or PostgreSQL (production)
 
 ## Installation
 
@@ -90,13 +113,6 @@ A football manager simulation game built with Laravel and Event Sourcing.
    php artisan app:seed-reference-data --fresh
    ```
 
-## Default User
-
-After seeding, you can log in with:
-
-- **Email:** test@test.com
-- **Password:** password
-
 ## Running the Application
 
 ### Development Server
@@ -113,8 +129,8 @@ Or run services individually:
 # Web server
 php artisan serve
 
-# Queue worker (required for event sourcing)
-php artisan queue:listen
+# Queue worker (required for background jobs)
+php artisan queue:listen --tries=1
 
 # Vite for frontend assets
 npm run dev
@@ -140,28 +156,36 @@ Or with PHPUnit directly:
 
 ## Architecture
 
-### Event Sourcing
+### Modular Monolith
 
-The game uses [Spatie Laravel Event Sourcing](https://spatie.be/docs/laravel-event-sourcing) for match results and game state. Key components:
+The codebase follows a modular monolith pattern with domain logic organized into 9 modules under `app/Modules/`:
 
-- **Aggregates:** `App\Game\Game` - handles game commands and emits events
-- **Events:** `App\Game\Events\*` - recorded when matches are played, cup ties resolved, etc.
-- **Projectors:** `App\Game\GameProjector` - builds read models from events
+| Module | Purpose |
+|--------|---------|
+| **Match** | Match simulation engine |
+| **Lineup** | Tactical layer (formations, substitutions) |
+| **Squad** | Player management and development |
+| **Transfer** | Market operations, contracts, loans, scouting |
+| **Competition** | Structure, configuration, and handlers |
+| **Finance** | Economic model and budget projections |
+| **Season** | Lifecycle orchestration and end-of-season pipeline |
+| **Notification** | In-game messaging |
+| **Academy** | Youth development |
+
+The HTTP layer uses invokable single-action classes: **Actions** (`App\Http\Actions\*`) for form submissions and **Views** (`App\Http\Views\*`) for data preparation.
 
 ### Competition Handlers
 
-Different competition types (leagues, cups) use a pluggable handler system:
+Different competition types use a pluggable handler system implementing `CompetitionHandler`:
 
-- `App\Game\Contracts\CompetitionHandler` - interface for competition behavior
-- `App\Game\Handlers\LeagueHandler` - groups matches by round, updates standings
-- `App\Game\Handlers\KnockoutCupHandler` - groups by date, conducts draws, resolves ties
-- `App\Game\Services\CompetitionHandlerResolver` - resolves handlers by competition type
-
-This architecture allows easy addition of new competition types (European cups, playoffs) without modifying core game logic.
+- `LeagueHandler` — standard league with standings
+- `KnockoutCupHandler` — Copa del Rey bracket/draws
+- `LeagueWithPlayoffHandler` — league with playoff rounds
+- `SwissFormatHandler` — Champions League Swiss-system format
 
 ### Match Simulation
 
-The match simulator (`App\Game\Services\MatchSimulator`) uses configurable parameters:
+The match simulator (`App\Modules\Match\Services\MatchSimulator`) uses configurable parameters:
 
 - Base expected goals with home advantage
 - Team strength calculation from lineup players
@@ -173,47 +197,46 @@ Parameters can be tuned in `config/match_simulation.php` without code changes.
 
 ### Season End Pipeline
 
-End of season processing uses a pluggable processor system:
-
-- `App\Game\Contracts\SeasonEndProcessor` - interface for season transition tasks
-- `App\Game\Processors\SeasonArchiveProcessor` - archives season data
-- `App\Game\Processors\PlayerDevelopmentProcessor` - applies player growth/decline
-- `App\Game\Processors\StatsResetProcessor` - resets season statistics
-- `App\Game\Processors\FixtureGenerationProcessor` - creates next season fixtures
-- `App\Game\Services\SeasonEndPipeline` - orchestrates processors in priority order
-
-New processors can be added without modifying existing code.
+End-of-season processing uses 21 ordered processors implementing `SeasonEndProcessor`. New processors can be added to `SeasonEndPipeline` without modifying existing code.
 
 ## Game Design Documentation
 
 Detailed documentation on game systems and design decisions:
 
-- **[Game Systems Overview](docs/game-systems/README.md)** - Index of all game system documentation
-- **[Player Abilities](docs/game-systems/player-abilities.md)** - How technical/physical abilities are calculated from market value and age
-- **[Player Potential](docs/game-systems/player-potential.md)** - Hidden potential system and scouting ranges
-- **[Player Development](docs/game-systems/player-development.md)** - Age-based growth curves and playing time bonuses
-- **[Market Value Dynamics](docs/game-systems/market-value-dynamics.md)** - How player values evolve over seasons
-- **[Match Simulation](docs/game-systems/match-simulation.md)** - Poisson distribution, team strength, striker bonus
-- **[Injury System](docs/game-systems/injury-system.md)** - Durability, injury probability, and recovery times
-- **[Club Economy System](docs/game-systems/club-economy-system.md)** - Contracts, wages, transfers, youth academy (roadmap)
+- **[Game Systems Overview](docs/game-systems/README.md)** — Index of all game system documentation
+- **[Player Abilities](docs/game-systems/player-abilities.md)** — How abilities are derived from market value with age adjustments
+- **[Player Potential](docs/game-systems/player-potential.md)** — How potential is generated and influences development
+- **[Player Development](docs/game-systems/player-development.md)** — How players grow and decline over seasons
+- **[Market Value Dynamics](docs/game-systems/market-value-dynamics.md)** — How market value evolves with ability and age
+- **[Match Simulation](docs/game-systems/match-simulation.md)** — xG formula, energy system, formations, mentality, events
+- **[Injury System](docs/game-systems/injury-system.md)** — Injury probability, durability, medical tiers, recovery
+- **[Season Lifecycle](docs/game-systems/season-lifecycle.md)** — Season flow, matchday progression, end-of-season pipeline
+- **[Club Economy System](docs/game-systems/club-economy-system.md)** — Budget allocation, revenue sources, investment tiers
+- **[Transfer Market](docs/game-systems/transfer-market.md)** — Scouting, buying, selling, loans, contracts
+- **[Youth Academy](docs/game-systems/academy-redesign.md)** — Phased stat reveals, development, evaluations
 
 ## Data Structure
 
-Reference data is stored in JSON files under `data/`:
+Reference data is stored in JSON files under `data/2025/`:
 
 ```
-data/
-├── ESP1/2024/           # La Liga
-│   ├── competition.json
-│   ├── teams.json
-│   ├── fixtures.json
-│   └── players/
-├── ESP2/2024/           # Segunda Division
-└── transfermarkt/ESPCUP/2024/  # Copa del Rey
+data/2025/
+├── ESP1/          # La Liga
+├── ESP2/          # Segunda Division
+├── ESPCUP/        # Copa del Rey
+├── ESPSUP/        # Supercopa de Espana
+├── UCL/           # Champions League
+├── UEL/           # Europa League
+├── EUR/           # European club data by country
+├── DEU1/          # Bundesliga
+├── ENG1/          # Premier League
+├── FRA1/          # Ligue 1
+├── ITA1/          # Serie A
+└── WC2026/        # World Cup 2026
 ```
 
 ## License
 
-Copyright (c) 2026 Pablo Román. All rights reserved.
+Copyright (c) 2026 Pablo Roman. All rights reserved.
 
 This source code is made available for viewing and educational purposes only. See [LICENSE](LICENSE) for details.
