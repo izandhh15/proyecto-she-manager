@@ -17,12 +17,16 @@ export default function lineupManager(config) {
         // When a user explicitly assigns a player to a slot, it's tracked here.
         manualAssignments: config.currentSlotAssignments || {},
 
-        // Currently selected slot for manual assignment (null = no slot selected)
-        selectedSlot: null,
-        // Player currently occupying the selected slot (for replacement tracking)
-        selectedSlotPlayer: null,
         // Player being hovered in the list (for pitch highlight)
         hoveredPlayerId: null,
+
+        // Grid positioning state
+        gridConfig: config.gridConfig || null,
+        pitchPositions: config.currentPitchPositions || {},
+        positioningSlotId: null,
+        draggingSlotId: null,
+        dragPosition: null, // { x, y } in percentage coordinates during drag
+        _pitchEl: null, // reference to pitch container DOM element
 
         // Dirty tracking: snapshot of initial state to detect unsaved changes
         _initialPlayers: null,
@@ -32,6 +36,7 @@ export default function lineupManager(config) {
         _initialPressing: null,
         _initialDefLine: null,
         _initialAssignments: null,
+        _initialPitchPositions: null,
         _isSaving: false,
 
         // Server data
@@ -57,6 +62,7 @@ export default function lineupManager(config) {
             this._initialPressing = config.currentPressing || 'standard';
             this._initialDefLine = config.currentDefLine || 'normal';
             this._initialAssignments = JSON.stringify(config.currentSlotAssignments || {});
+            this._initialPitchPositions = JSON.stringify(config.currentPitchPositions || {});
 
             // Warn on navigation away with unsaved changes
             window.addEventListener('beforeunload', (e) => {
@@ -65,17 +71,23 @@ export default function lineupManager(config) {
                     e.preventDefault();
                 }
             });
+
+            // Bound drag handlers (created once, registered lazily during drag)
+            this._boundDragMove = (e) => this._onDragMove(e);
+            this._boundDragEnd = (e) => this._onDragEnd(e);
         },
 
         get isDirty() {
-            const playersChanged = JSON.stringify([...this.selectedPlayers].sort()) !== JSON.stringify(this._initialPlayers);
-            const formationChanged = this.selectedFormation !== this._initialFormation;
-            const mentalityChanged = this.selectedMentality !== this._initialMentality;
-            const styleChanged = this.selectedPlayingStyle !== this._initialPlayingStyle;
-            const pressingChanged = this.selectedPressing !== this._initialPressing;
-            const defLineChanged = this.selectedDefLine !== this._initialDefLine;
-            const assignmentsChanged = JSON.stringify(this.manualAssignments) !== this._initialAssignments;
-            return playersChanged || formationChanged || mentalityChanged || styleChanged || pressingChanged || defLineChanged || assignmentsChanged;
+            // Cheap comparisons first, expensive serialization last
+            if (this.selectedFormation !== this._initialFormation) return true;
+            if (this.selectedMentality !== this._initialMentality) return true;
+            if (this.selectedPlayingStyle !== this._initialPlayingStyle) return true;
+            if (this.selectedPressing !== this._initialPressing) return true;
+            if (this.selectedDefLine !== this._initialDefLine) return true;
+            if (JSON.stringify(this.manualAssignments) !== this._initialAssignments) return true;
+            if (JSON.stringify(this.pitchPositions) !== this._initialPitchPositions) return true;
+            if (JSON.stringify([...this.selectedPlayers].sort()) !== JSON.stringify(this._initialPlayers)) return true;
+            return false;
         },
 
         // Computed
@@ -287,12 +299,6 @@ export default function lineupManager(config) {
         toggle(id, isUnavailable) {
             if (isUnavailable) return;
 
-            // If a slot is selected, assign this player to that slot instead of toggling
-            if (this.selectedSlot !== null) {
-                this.assignPlayerToSelectedSlot(id, isUnavailable);
-                return;
-            }
-
             if (this.isSelected(id)) {
                 this.selectedPlayers = this.selectedPlayers.filter(p => p !== id);
                 // Remove any manual assignments for this player
@@ -302,80 +308,18 @@ export default function lineupManager(config) {
             }
         },
 
-        // Select an empty slot on the pitch for manual assignment
-        selectSlot(slotId) {
-            if (this.selectedSlot === slotId) {
-                this.selectedSlot = null;
-                this.selectedSlotPlayer = null;
-            } else {
-                this.selectedSlot = slotId;
-                this.selectedSlotPlayer = null;
-            }
-        },
-
-        // Assign a player to the currently selected slot
-        assignPlayerToSelectedSlot(playerId, isUnavailable) {
-            if (isUnavailable || this.selectedSlot === null) return;
-
-            const slotId = this.selectedSlot;
-            const slot = this.currentSlots.find(s => s.id === slotId);
-            if (!slot) return;
-
-            // Enforce minimum 40 compatibility for manual assignments
-            const player = this.playersData[playerId];
-            if (player) {
-                const compatibility = this.getSlotCompatibility(player.position, slot.label);
-                if (compatibility < 40) return;
-            }
-
-            // If this player is already manually assigned elsewhere, remove old assignment
-            this._removePlayerFromManualAssignments(playerId);
-
-            // Find who currently occupies this slot (manual or auto-assigned)
-            const previousPlayerId = this.selectedSlotPlayer || this.manualAssignments[slotId];
-
-            // Set the manual assignment
-            this.manualAssignments = { ...this.manualAssignments, [slotId]: playerId };
-
-            // Ensure the player is in the selected 11
-            if (!this.isSelected(playerId)) {
-                if (this.selectedCount >= 11 && previousPlayerId && this.isSelected(previousPlayerId)) {
-                    // Remove the current occupant to make room
-                    this.selectedPlayers = this.selectedPlayers.filter(p => p !== previousPlayerId);
-                    this._removePlayerFromManualAssignments(previousPlayerId);
-                }
-                if (this.selectedCount < 11) {
-                    this.selectedPlayers.push(playerId);
-                }
-            }
-
-            this.selectedSlot = null;
-            this.selectedSlotPlayer = null;
-        },
-
-        // Click on a filled slot on the pitch
-        handleSlotClick(slotId, playerId) {
-            if (this.selectedSlot === slotId) {
-                this.selectedSlot = null;
-                this.selectedSlotPlayer = null;
-            } else {
-                this.selectedSlot = slotId;
-                this.selectedSlotPlayer = playerId || null;
-            }
-        },
-
         quickSelect() {
             this.selectedPlayers = [...this.autoLineup];
             this.manualAssignments = {};
-            this.selectedSlot = null;
-            this.selectedSlotPlayer = null;
+            this.pitchPositions = {};
+            this.positioningSlotId = null;
         },
 
         clearSelection() {
             this.selectedPlayers = [];
             this.manualAssignments = {};
-            this.selectedSlot = null;
-            this.selectedSlotPlayer = null;
+            this.pitchPositions = {};
+            this.positioningSlotId = null;
         },
 
         async updateAutoLineup() {
@@ -385,8 +329,8 @@ export default function lineupManager(config) {
                 this.autoLineup = data.autoLineup;
                 this.selectedPlayers = [...this.autoLineup];
                 this.manualAssignments = {};
-                this.selectedSlot = null;
-                this.selectedSlotPlayer = null;
+                this.pitchPositions = {};
+                this.positioningSlotId = null;
             } catch (e) {
                 console.error('Failed to fetch auto lineup', e);
             }
@@ -482,14 +426,6 @@ export default function lineupManager(config) {
             return 0.299 * r + 0.587 * g + 0.114 * b;
         },
 
-        // Get the compatibility display for a player in the currently selected slot
-        getSelectedSlotCompatibility(position) {
-            if (this.selectedSlot === null) return null;
-            const slot = this.currentSlots.find(s => s.id === this.selectedSlot);
-            if (!slot) return null;
-            return this.getCompatibilityDisplay(position, slot.label);
-        },
-
         // Remove a player from all manual assignments
         _removePlayerFromManualAssignments(playerId) {
             const newAssignments = {};
@@ -500,5 +436,247 @@ export default function lineupManager(config) {
             }
             this.manualAssignments = newAssignments;
         },
+
+        // =====================================================================
+        // Grid Positioning System
+        // =====================================================================
+
+        /**
+         * Convert a grid cell to pitch coordinates (0-100%).
+         */
+        cellToCoords(col, row) {
+            const gc = this.gridConfig;
+            if (!gc) return null;
+            return {
+                x: col * (100 / gc.cols) + (100 / (gc.cols * 2)),
+                y: row * (100 / gc.rows) + (100 / (gc.rows * 2)),
+            };
+        },
+
+        /**
+         * Get effective (x, y) position for a slot, using custom grid position if set.
+         * Falls back to the formation's default coordinate.
+         */
+        getEffectivePosition(slotId) {
+            const customPos = this.pitchPositions[String(slotId)];
+            if (customPos) {
+                return this.cellToCoords(customPos[0], customPos[1]);
+            }
+            // Fall back to formation default (col/row grid cell)
+            const slot = this.currentSlots.find(s => s.id === slotId);
+            return slot ? this.cellToCoords(slot.col, slot.row) : null;
+        },
+
+        /**
+         * Get the grid cell for a slot (custom or default).
+         */
+        getSlotCell(slotId) {
+            const customPos = this.pitchPositions[String(slotId)];
+            if (customPos) return { col: customPos[0], row: customPos[1] };
+
+            // Use formation default cell
+            const gc = this.gridConfig;
+            if (!gc) return null;
+            const defaultCells = gc.defaultCells[this.selectedFormation];
+            return defaultCells ? defaultCells[slotId] : null;
+        },
+
+        /**
+         * Check if a grid cell is within a slot's valid zone.
+         */
+        isValidGridCell(slotLabel, col, row) {
+            const gc = this.gridConfig;
+            if (!gc) return false;
+            const zone = gc.zones[slotLabel];
+            if (!zone) return false;
+            return col >= zone[0] && col <= zone[1] && row >= zone[2] && row <= zone[3];
+        },
+
+        /**
+         * Check if a cell is occupied by another slot.
+         */
+        isCellOccupied(col, row, excludeSlotId) {
+            const assignments = this.slotAssignments;
+            for (const slot of assignments) {
+                if (slot.id === excludeSlotId || !slot.player) continue;
+                const cell = this.getSlotCell(slot.id);
+                if (cell && cell.col === col && cell.row === row) return true;
+            }
+            return false;
+        },
+
+        /**
+         * Select a slot for grid repositioning (click-to-place mode).
+         */
+        selectForRepositioning(slotId) {
+            const slot = this.currentSlots.find(s => s.id === slotId);
+            if (slot && slot.role === 'Goalkeeper') return;
+            if (this.positioningSlotId === slotId) {
+                this.positioningSlotId = null;
+            } else {
+                this.positioningSlotId = slotId;
+            }
+        },
+
+        /**
+         * Place a slot at a specific grid cell.
+         */
+        setSlotGridPosition(slotId, col, row) {
+            const slot = this.currentSlots.find(s => s.id === slotId);
+            if (!slot) return;
+
+            if (!this.isValidGridCell(slot.label, col, row)) return;
+            if (this.isCellOccupied(col, row, slotId)) return;
+
+            this.pitchPositions = { ...this.pitchPositions, [String(slotId)]: [col, row] };
+            this.positioningSlotId = null;
+        },
+
+        /**
+         * Handle clicking a grid cell (in grid mode, when a slot is selected for repositioning).
+         */
+        handleGridCellClick(col, row) {
+            if (this.positioningSlotId === null) return;
+            this.setSlotGridPosition(this.positioningSlotId, col, row);
+        },
+
+        /**
+         * Get the zone highlight color class for a position group.
+         */
+        getZoneColorClass(role) {
+            switch (role) {
+                case 'Goalkeeper': return 'bg-amber-500/30 border-amber-400/40';
+                case 'Defender': return 'bg-blue-500/30 border-blue-400/40';
+                case 'Midfielder': return 'bg-emerald-500/30 border-emerald-400/40';
+                case 'Forward': return 'bg-red-500/30 border-red-400/40';
+                default: return 'bg-white/20 border-white/30';
+            }
+        },
+
+        /**
+         * Get the cell state for a grid cell relative to the currently positioning slot.
+         * Returns: 'valid', 'occupied', 'invalid', or 'neutral'
+         */
+        getGridCellState(col, row) {
+            if (this.positioningSlotId === null && this.draggingSlotId === null) return 'neutral';
+
+            const activeSlotId = this.positioningSlotId ?? this.draggingSlotId;
+            const slot = this.currentSlots.find(s => s.id === activeSlotId);
+            if (!slot) return 'neutral';
+
+            if (!this.isValidGridCell(slot.label, col, row)) return 'invalid';
+            if (this.isCellOccupied(col, row, activeSlotId)) return 'occupied';
+            return 'valid';
+        },
+
+        // ----- Drag-and-drop -----
+
+        /**
+         * Begin dragging a player badge in grid mode.
+         */
+        startDrag(slotId, event) {
+            const slot = this.currentSlots.find(s => s.id === slotId);
+            if (slot && slot.role === 'Goalkeeper') return;
+
+            // Prevent default to avoid text selection and scroll on touch
+            event.preventDefault();
+
+            this.draggingSlotId = slotId;
+            this.positioningSlotId = null;
+
+            // Register drag listeners lazily to avoid permanent non-passive touchmove
+            document.addEventListener('mousemove', this._boundDragMove);
+            document.addEventListener('mouseup', this._boundDragEnd);
+            document.addEventListener('touchmove', this._boundDragMove, { passive: false });
+            document.addEventListener('touchend', this._boundDragEnd);
+
+            const coords = this._getEventCoords(event);
+            this._updateDragPosition(coords.clientX, coords.clientY);
+        },
+
+        _onDragMove(event) {
+            if (this.draggingSlotId === null) return;
+            event.preventDefault();
+
+            const coords = this._getEventCoords(event);
+            this._updateDragPosition(coords.clientX, coords.clientY);
+        },
+
+        _onDragEnd(event) {
+            if (this.draggingSlotId === null) return;
+
+            const coords = this._getEventCoords(event);
+            const cell = this._getCellFromClientCoords(coords.clientX, coords.clientY);
+
+            if (cell) {
+                this.setSlotGridPosition(this.draggingSlotId, cell.col, cell.row);
+            }
+
+            this.draggingSlotId = null;
+            this.dragPosition = null;
+
+            // Clean up drag listeners
+            document.removeEventListener('mousemove', this._boundDragMove);
+            document.removeEventListener('mouseup', this._boundDragEnd);
+            document.removeEventListener('touchmove', this._boundDragMove);
+            document.removeEventListener('touchend', this._boundDragEnd);
+        },
+
+        _updateDragPosition(clientX, clientY) {
+            const pitchEl = this._getPitchElement();
+            if (!pitchEl) return;
+
+            const rect = pitchEl.getBoundingClientRect();
+            const x = ((clientX - rect.left) / rect.width) * 100;
+            const y = ((clientY - rect.top) / rect.height) * 100;
+
+            this.dragPosition = {
+                x: Math.max(0, Math.min(100, x)),
+                y: Math.max(0, Math.min(100, y)),
+            };
+        },
+
+        _getCellFromClientCoords(clientX, clientY) {
+            const pitchEl = this._getPitchElement();
+            if (!pitchEl) return null;
+
+            const rect = pitchEl.getBoundingClientRect();
+            const xPct = ((clientX - rect.left) / rect.width) * 100;
+            const yPct = ((clientY - rect.top) / rect.height) * 100;
+
+            // Convert to grid coordinates (y is inverted: top of element = high row)
+            // The pitch renders y=0 at bottom, so top: 100-y%
+            // Screen top = y=100, screen bottom = y=0
+            const pitchY = 100 - yPct;
+
+            const gc = this.gridConfig;
+            if (!gc) return null;
+
+            const col = Math.round((xPct - 100 / (gc.cols * 2)) / (100 / gc.cols));
+            const row = Math.round((pitchY - 100 / (gc.rows * 2)) / (100 / gc.rows));
+
+            return {
+                col: Math.max(0, Math.min(gc.cols - 1, col)),
+                row: Math.max(0, Math.min(gc.rows - 1, row)),
+            };
+        },
+
+        _getEventCoords(event) {
+            if (event.touches && event.touches.length > 0) {
+                return { clientX: event.touches[0].clientX, clientY: event.touches[0].clientY };
+            }
+            if (event.changedTouches && event.changedTouches.length > 0) {
+                return { clientX: event.changedTouches[0].clientX, clientY: event.changedTouches[0].clientY };
+            }
+            return { clientX: event.clientX, clientY: event.clientY };
+        },
+
+        _getPitchElement() {
+            if (!this._pitchEl) {
+                this._pitchEl = document.getElementById('pitch-field');
+            }
+            return this._pitchEl;
+        },
+
     };
 }

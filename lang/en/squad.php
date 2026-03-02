@@ -76,7 +76,6 @@ return [
 
     // Lineup editor
     'pitch' => 'Pitch',
-    'select_player_for_slot' => 'Select a player for this position',
 
     // Opponent scout
     'injured' => 'injured',
@@ -243,4 +242,7 @@ return [
     'confirm_squad' => 'Confirm squad',
     'squad_confirmed' => 'Squad confirmed!',
     'invalid_selection' => 'Invalid selection. Please check the selected players.',
+
+    // Grid positioning
+    'drag_or_tap' => 'Tap a cell or drag the player',
 ];

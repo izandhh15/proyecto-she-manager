@@ -76,7 +76,6 @@ return [
 
     // Lineup editor
     'pitch' => 'Campo',
-    'select_player_for_slot' => 'Selecciona un jugador para esta posición',
 
     // Opponent scout
     'injured' => 'lesionados',
@@ -243,4 +242,7 @@ return [
     'confirm_squad' => 'Confirmar convocatoria',
     'squad_confirmed' => '¡Convocatoria confirmada!',
     'invalid_selection' => 'Selección inválida. Verifica los jugadores seleccionados.',
+
+    // Grid positioning
+    'drag_or_tap' => 'Toca una celda o arrastra al jugador',
 ];

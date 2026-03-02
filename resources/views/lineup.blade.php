@@ -20,6 +20,8 @@
         defensiveLineOptions: @js($defensiveLineOptions),
         autoLineup: @js($autoLineup ?? []),
         currentSlotAssignments: @js($currentSlotAssignments ?? (object) []),
+        gridConfig: @js($gridConfig),
+        currentPitchPositions: @js($currentPitchPositions ?? (object) []),
         playersData: @js($playersData),
         formationSlots: @js($formationSlots),
         slotCompatibility: @js($slotCompatibility),
@@ -84,6 +86,10 @@
                         {{-- Slot assignment hidden inputs --}}
                         <template x-for="slot in slotAssignments" :key="'sa-' + slot.id">
                             <input x-show="slot.player" type="hidden" :name="'slot_assignments[' + slot.id + ']'" :value="slot.player?.id">
+                        </template>
+                        {{-- Pitch position hidden inputs --}}
+                        <template x-for="(pos, slotId) in pitchPositions" :key="'pp-' + slotId">
+                            <input type="hidden" :name="'pitch_positions[' + slotId + ']'" :value="pos[0] + ',' + pos[1]">
                         </template>
 
                         {{-- Top Bar: Formation, Stats, Actions --}}
@@ -232,12 +238,13 @@
                             {{-- Pitch Visualization --}}
 
                             <div class="col-span-1 lg:sticky lg:top-[100px] lg:self-start" :class="{ 'hidden lg:block': activeLineupTab !== 'pitch' }">
-                                <div class="bg-emerald-600 rounded-lg p-4 relative" style="aspect-ratio: 3/4;">
+                                <div id="pitch-container" class="bg-emerald-600 rounded-lg p-4 relative aspect-[3/4]"
+                                    :style="(positioningSlotId !== null || draggingSlotId !== null) ? 'touch-action: none' : ''">
                                     {{-- Pitch markings --}}
                                     <div class="absolute inset-4 border-2 border-emerald-400/50 rounded">
                                         {{-- Goal area (top) --}}
                                         <div class="absolute top-0 left-1/2 -ml-12 w-24 h-8 border-2 border-t-0 border-emerald-400/50"></div>
-                                        {{-- Penalty area (toop) --}}
+                                        {{-- Penalty area (top) --}}
                                         <div class="absolute top-0 left-1/2 -ml-20 w-40 h-16 border-2 border-t-0 border-emerald-400/50"></div>
                                         {{-- Center line --}}
                                         <div class="absolute left-0 right-0 top-1/2 border-t-2 border-emerald-400/50"></div>
@@ -249,36 +256,85 @@
                                         <div class="absolute bottom-0 left-1/2 -ml-20 w-40 h-16 border-2 border-b-0 border-emerald-400/50"></div>
                                     </div>
 
+                                    {{-- Field area (aligned with sidelines) --}}
+                                    <div id="pitch-field" class="absolute inset-4">
+
+                                    {{-- Grid Overlay --}}
+                                    <template x-if="gridConfig">
+                                        <div class="absolute inset-0 pointer-events-none" :class="{ 'pointer-events-auto': positioningSlotId !== null }">
+                                            {{-- Grid lines (vertical) --}}
+                                            <template x-for="col in gridConfig.cols - 1" :key="'gv-' + col">
+                                                <div class="absolute top-0 bottom-0 border-l border-white/10"
+                                                    :style="`left: ${(col / gridConfig.cols) * 100}%`"></div>
+                                            </template>
+                                            {{-- Grid lines (horizontal) --}}
+                                            <template x-for="row in gridConfig.rows - 1" :key="'gh-' + row">
+                                                <div class="absolute left-0 right-0 border-t border-white/10"
+                                                    :style="`top: ${(row / gridConfig.rows) * 100}%`"></div>
+                                            </template>
+                                            {{-- Grid outer edges (right + bottom) --}}
+                                            <div class="absolute top-0 bottom-0 right-0 border-r border-white/10"></div>
+                                            <div class="absolute left-0 right-0 bottom-0 border-b border-white/10"></div>
+
+                                            {{-- Clickable zone cells (shown when positioning a player) --}}
+                                            <template x-if="positioningSlotId !== null || draggingSlotId !== null">
+                                                <div class="absolute inset-0">
+                                                    <template x-for="row in gridConfig.rows" :key="'gr-' + row">
+                                                        <template x-for="col in gridConfig.cols" :key="'gc-' + (row-1) + '-' + (col-1)">
+                                                            <div
+                                                                x-data="{ get state() { return getGridCellState(col-1, row-1) } }"
+                                                                class="absolute transition-colors duration-150 border-t border-l"
+                                                                :style="`left: ${((col-1) / gridConfig.cols) * 100}%; top: ${(1 - (row / gridConfig.rows)) * 100}%; width: ${100 / gridConfig.cols}%; height: ${100 / gridConfig.rows}%; ${(positioningSlotId !== null && state === 'valid') ? 'cursor: pointer; pointer-events: auto' : ''}`"
+                                                                :class="{
+                                                                    [getZoneColorClass(currentSlots.find(s => s.id === (positioningSlotId ?? draggingSlotId))?.role)]: state === 'valid',
+                                                                    'bg-white/5 border-white/5': state === 'occupied',
+                                                                    'bg-black/15 border-transparent': state === 'invalid',
+                                                                    'border-transparent': state === 'neutral',
+                                                                }"
+                                                                @click="positioningSlotId !== null && state === 'valid' && handleGridCellClick(col-1, row-1)"
+                                                            ></div>
+                                                        </template>
+                                                    </template>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+
                                     {{-- Player Slots --}}
                                     <template x-for="slot in slotAssignments" :key="slot.id">
                                         <div
-                                            class="absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 hover:z-30"
-                                            :style="`left: ${slot.x}%; top: ${100 - slot.y}%`"
+                                            class="absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 group/slot"
+                                            :class="{ 'opacity-30': draggingSlotId === slot.id }"
+                                            :style="(() => { const pos = getEffectivePosition(slot.id); return pos ? `left: ${pos.x}%; top: ${100 - pos.y}%; z-index: ${positioningSlotId === slot.id ? 20 : 10}` : '' })()"
+                                            @mouseenter="$el.style.zIndex = 30"
+                                            @mouseleave="$el.style.zIndex = positioningSlotId === slot.id ? 20 : 10"
                                         >
                                             {{-- Empty Slot (clickable for assignment) --}}
                                             <div
                                                 x-show="!slot.player"
-                                                @click="selectSlot(slot.id)"
+                                                @click="selectForRepositioning(slot.id)"
                                                 class="w-11 h-11 rounded-full border-2 flex items-center justify-center backdrop-blur-sm cursor-pointer transition-all duration-200"
-                                                :class="selectedSlot === slot.id
+                                                :class="positioningSlotId === slot.id
                                                     ? 'border-white bg-white/30 ring-2 ring-white/60 scale-110'
                                                     : 'border-dashed border-white/40 bg-white/5 hover:border-white/70 hover:bg-white/15'"
                                             >
-                                                <span class="text-[10px] font-semibold tracking-wide" :class="selectedSlot === slot.id ? 'text-white' : 'text-white/60'" x-text="slot.displayLabel"></span>
+                                                <span class="text-[10px] font-semibold tracking-wide" :class="positioningSlotId === slot.id ? 'text-white' : 'text-white/60'" x-text="slot.displayLabel"></span>
                                             </div>
 
-                                            {{-- Filled Slot (clickable for reassignment) --}}
+                                            {{-- Filled Slot (clickable for reassignment or repositioning) --}}
                                             <div
                                                 x-show="slot.player"
                                                 class="group relative cursor-pointer"
-                                                @click="handleSlotClick(slot.id, slot.player?.id)"
+                                                @click="selectForRepositioning(slot.id)"
+                                                @mousedown="startDrag(slot.id, $event)"
+                                                @touchstart="startDrag(slot.id, $event)"
                                             >
                                                 {{-- Main player badge --}}
                                                 <div
                                                     class="relative w-11 h-11 rounded-xl shadow-lg border border-white/20 transform transition-all duration-200 hover:scale-110 hover:shadow-xl"
                                                     :class="{
-                                                        'ring-2 ring-white ring-offset-1 ring-offset-emerald-600 scale-110': selectedSlot === slot.id,
-                                                        'ring-2 ring-white/70 scale-110 shadow-xl': hoveredPlayerId && hoveredPlayerId === slot.player?.id && selectedSlot !== slot.id,
+                                                        'ring-2 ring-white ring-offset-1 ring-offset-emerald-600 scale-110': positioningSlotId === slot.id,
+                                                        'ring-2 ring-white/70 scale-110 shadow-xl': hoveredPlayerId && hoveredPlayerId === slot.player?.id && positioningSlotId !== slot.id,
                                                     }"
                                                     :style="getShirtStyle(slot.role)"
                                                 >
@@ -289,7 +345,7 @@
                                                 </div>
 
                                                 {{-- Hover tooltip --}}
-                                                <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-slate-900/95 backdrop-blur-sm text-white text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-20 shadow-xl">
+                                                <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-slate-900/95 backdrop-blur-sm text-white text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-50 shadow-xl">
                                                     <div class="flex items-center gap-2">
                                                         <span class="font-semibold" x-text="slot.player?.name"></span>
                                                         <span class="px-1.5 py-0.5 bg-white/15 rounded font-bold text-[10px]" x-text="slot.player?.overallScore"></span>
@@ -306,15 +362,36 @@
                                         </div>
                                     </template>
 
-                                    {{-- Selected slot indicator banner --}}
+                                    {{-- Drag ghost badge (follows cursor during drag) --}}
                                     <div
-                                        x-show="selectedSlot !== null"
+                                        x-show="draggingSlotId !== null && dragPosition"
+                                        x-cloak
+                                        class="absolute transform -translate-x-1/2 -translate-y-1/2 z-40 pointer-events-none"
+                                        :style="dragPosition ? `left: ${dragPosition.x}%; top: ${dragPosition.y}%` : ''"
+                                    >
+                                        <template x-if="draggingSlotId !== null">
+                                            <div class="w-11 h-11 rounded-xl shadow-xl border-2 border-white/50 opacity-80"
+                                                :style="getShirtStyle(currentSlots.find(s => s.id === draggingSlotId)?.role || 'Midfielder')">
+                                                <div class="absolute inset-0 flex items-center justify-center">
+                                                    <span class="font-bold text-xs leading-none inline-flex items-center justify-center w-7 h-7 rounded-full"
+                                                        :style="getNumberStyle(currentSlots.find(s => s.id === draggingSlotId)?.role || 'Midfielder')"
+                                                        x-text="(() => { const s = slotAssignments.find(sa => sa.id === draggingSlotId); return s?.player?.number || getInitials(s?.player?.name); })()"></span>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+
+                                    </div> {{-- /pitch-field --}}
+
+                                    {{-- Grid positioning indicator banner --}}
+                                    <div
+                                        x-show="positioningSlotId !== null"
                                         x-cloak
                                         class="absolute bottom-2 left-1/2 -translate-x-1/2 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg text-xs font-medium text-slate-700 flex items-center gap-2 z-20"
                                     >
-                                        <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
-                                        {{ __('squad.select_player_for_slot') }}
-                                        <button type="button" @click="selectedSlot = null" class="ml-1 text-slate-400 hover:text-slate-600">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                                        {{ __('squad.drag_or_tap') }}
+                                        <button type="button" @click="positioningSlotId = null" class="ml-1 text-slate-400 hover:text-slate-600">
                                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         </button>
                                     </div>
@@ -477,9 +554,8 @@
                                                                 cursor-pointer hover:bg-slate-50
                                                             @endif"
                                                         :class="{
-                                                            'bg-sky-50': isSelected('{{ $player->id }}') && selectedSlot === null,
-                                                            'bg-sky-100 ring-1 ring-sky-300': selectedSlot !== null && !{{ $isUnavailable ? 'true' : 'false' }} && getSelectedSlotCompatibility('{{ $player->position }}')?.score >= 40,
-                                                            'opacity-50': !isSelected('{{ $player->id }}') && selectedCount >= 11 && selectedSlot === null && !{{ $isUnavailable ? 'true' : 'false' }}
+                                                            'bg-sky-50': isSelected('{{ $player->id }}'),
+                                                            'opacity-50': !isSelected('{{ $player->id }}') && selectedCount >= 11 && !{{ $isUnavailable ? 'true' : 'false' }}
                                                         }"
                                                     >
                                                         {{-- Checkbox --}}
@@ -521,18 +597,8 @@
                                                         </td>
                                                         {{-- Compatibility indicator --}}
                                                         <td class="py-2 text-right">
-                                                            {{-- When a slot is selected: show compatibility with that slot --}}
-                                                            @if(!$isUnavailable)
-                                                                <template x-if="selectedSlot !== null && getSelectedSlotCompatibility('{{ $player->position }}')">
-                                                                    <span
-                                                                        class="text-xs font-medium px-1.5 py-0.5 rounded whitespace-nowrap"
-                                                                        :class="getSelectedSlotCompatibility('{{ $player->position }}').class"
-                                                                        x-text="getSelectedSlotCompatibility('{{ $player->position }}').label"
-                                                                    ></span>
-                                                                </template>
-                                                            @endif
-                                                            {{-- When no slot selected: show assigned slot info --}}
-                                                            <template x-if="selectedSlot === null && isSelected('{{ $player->id }}') && getPlayerSlot('{{ $player->id }}')">
+                                                            {{-- Show assigned slot info --}}
+                                                            <template x-if="isSelected('{{ $player->id }}') && getPlayerSlot('{{ $player->id }}')">
                                                                 <span
                                                                     class="text-xs font-medium px-1.5 py-0.5 rounded whitespace-nowrap"
                                                                     :class="getCompatibilityDisplay('{{ $player->position }}', getPlayerSlot('{{ $player->id }}')).class"
