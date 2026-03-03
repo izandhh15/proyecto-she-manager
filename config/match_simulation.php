@@ -231,7 +231,7 @@ return [
     |
     */
     'fatigue' => [
-        'base_recovery_per_day' => 1.0,         // recovery rate per day at fitness 100
+        'base_recovery_per_day' => 1.5,         // recovery rate per day at fitness 100
         'recovery_scaling' => 2.5,              // how much faster recovery is at low fitness
         'max_recovery_days' => 5,               // cap recovery calculation at this many days
 
