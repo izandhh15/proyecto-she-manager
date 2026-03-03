@@ -10,6 +10,7 @@ use App\Models\CupTie;
 use App\Models\Game;
 use App\Models\GameMatch;
 use App\Models\GamePlayer;
+use App\Models\MatchEvent;
 use App\Models\PlayerSuspension;
 
 class MatchFinalizationService
@@ -54,30 +55,26 @@ class MatchFinalizationService
     /**
      * Serve suspensions that were deferred during batch processing.
      * These belong to players on the two teams in the deferred match.
+     *
+     * Excludes players who received cards in this match — any active suspension
+     * they carry was created from this match's events (suspended players can't
+     * be in lineups) and applies to future matches, not this one.
      */
     private function serveDeferredSuspensions(GameMatch $match): void
     {
-        $playerIds = GamePlayer::where('game_id', $match->game_id)
+        $teamPlayerSubquery = GamePlayer::where('game_id', $match->game_id)
             ->whereIn('team_id', [$match->home_team_id, $match->away_team_id])
-            ->pluck('id')
-            ->toArray();
+            ->select('id');
 
-        if (empty($playerIds)) {
-            return;
-        }
+        $cardPlayerSubquery = MatchEvent::where('game_match_id', $match->id)
+            ->whereIn('event_type', [MatchEvent::TYPE_RED_CARD, MatchEvent::TYPE_YELLOW_CARD])
+            ->select('game_player_id');
 
-        $suspensionIds = PlayerSuspension::where('competition_id', $match->competition_id)
+        PlayerSuspension::where('competition_id', $match->competition_id)
             ->where('matches_remaining', '>', 0)
-            ->whereIn('game_player_id', $playerIds)
-            ->pluck('id')
-            ->all();
-
-        if (! empty($suspensionIds)) {
-            PlayerSuspension::whereIn('id', $suspensionIds)->decrement('matches_remaining');
-            PlayerSuspension::whereIn('id', $suspensionIds)
-                ->where('matches_remaining', '<', 0)
-                ->update(['matches_remaining' => 0]);
-        }
+            ->whereIn('game_player_id', $teamPlayerSubquery)
+            ->whereNotIn('game_player_id', $cardPlayerSubquery)
+            ->decrement('matches_remaining');
     }
 
     private function resolveCupTie(GameMatch $match, Game $game, ?Competition $competition): void
