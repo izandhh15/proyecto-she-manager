@@ -221,7 +221,7 @@
                     {{-- Speed Controls --}}
                     <div class="flex items-center justify-center gap-2 mb-6" x-show="phase !== 'full_time' && !penaltyPickerOpen">
                         <span class="text-xs text-slate-400 mr-2">{{ __('game.live_speed') }}</span>
-                        <template x-for="s in [1, 2]" :key="s">
+                        <template x-for="s in [1, 2, 4]" :key="s">
                             <button
                                 @click="setSpeed(s)"
                                 class="px-3 py-1 text-xs font-semibold rounded-md transition-colors"

@@ -57,7 +57,9 @@ export default function liveMatch(config) {
 
         // Clock state
         currentMinute: 0,
-        speed: 1,
+        speed: [1, 2, 4].includes(parseFloat(localStorage.getItem('liveMatchSpeed')))
+            ? parseFloat(localStorage.getItem('liveMatchSpeed'))
+            : 2,
         // Phases: pre_match, first_half, half_time, second_half,
         //         going_to_extra_time, extra_time_first_half, extra_time_half_time,
         //         extra_time_second_half, penalties, full_time
@@ -127,8 +129,9 @@ export default function liveMatch(config) {
 
         // Speed presets: match minutes per real second
         speedRates: {
-            1: 3.0,   // 30s for full match
-            2: 6.0,   // 15s
+            1: 1.5,   // ~60s for full match
+            2: 3.0,   // ~30s for full match
+            4: 6.0,   // ~15s for full match
         },
 
         init() {
@@ -499,6 +502,7 @@ export default function liveMatch(config) {
         // Speed controls
         setSpeed(s) {
             this.speed = s;
+            localStorage.setItem('liveMatchSpeed', s);
         },
 
         skipToEnd() {
