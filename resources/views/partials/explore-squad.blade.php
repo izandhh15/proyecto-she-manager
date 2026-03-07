@@ -37,11 +37,11 @@
             @foreach($players as $gp)
             <tr class="border-b border-slate-50 hover:bg-slate-50/50">
                 {{-- Position badge --}}
-                <td class="py-2 p-2 w-12">
-                    <x-position-badge :position="$gp->position" size="md" />
+                <td class="py-0 p-2 w-12">
+                    <x-position-badge :position="$gp->position" size="sm" />
                 </td>
                 {{-- Name + nationality + mobile details --}}
-                <td class="py-2 pr-3">
+                <td class="py-0 pr-3">
                     <div class="flex items-center gap-2">
                         @if($gp->nationality_flag['code'] ?? null)
                         <img src="/flags/{{ $gp->nationality_flag['code'] }}.svg" class="w-4 h-3 rounded-sm shadow-sm shrink-0" title="{{ $gp->nationality_flag['name'] }}">
@@ -61,13 +61,13 @@
                     </div>
                 </td>
                 {{-- Age --}}
-                <td class="py-2 pr-3 hidden md:table-cell text-slate-600">{{ $gp->age }}</td>
+                <td class="py-0 pr-3 hidden md:table-cell text-slate-600">{{ $gp->age }}</td>
                 {{-- Market value --}}
-                <td class="py-2 pr-3 hidden md:table-cell text-slate-600 font-medium">{{ \App\Support\Money::format($gp->market_value_cents) }}</td>
+                <td class="py-0 pr-3 hidden md:table-cell text-slate-600 font-medium">{{ \App\Support\Money::format($gp->market_value_cents) }}</td>
                 {{-- Contract --}}
-                <td class="py-2 pr-3 hidden md:table-cell text-slate-500">{{ $gp->contract_until?->year ?? '—' }}</td>
+                <td class="py-0 pr-3 hidden md:table-cell text-slate-500">{{ $gp->contract_until?->year ?? '—' }}</td>
                 {{-- Shortlist star --}}
-                <td class="py-2 text-center"
+                <td class="py-0 text-center"
                     x-data="{
                         isShortlisted: {{ $gp->is_shortlisted ? 'true' : 'false' }},
                         async toggle() {
