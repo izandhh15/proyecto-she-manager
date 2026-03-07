@@ -229,7 +229,6 @@ return [
     'ovr_fitness' => 'Fitness',
     'ovr_morale' => 'Morale',
     'live_injuries_report' => 'Injury Report',
-    'live_weeks_out' => ':count week out|:count weeks out',
     'live_extra_time' => 'Extra Time',
     'live_et_abbr' => 'ET',
     'live_et_half_time' => 'ET Half Time',

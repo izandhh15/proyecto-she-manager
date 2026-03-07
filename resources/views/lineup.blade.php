@@ -454,7 +454,13 @@
                                                 @foreach($group['players'] as $player)
                                                     @php
                                                         $isUnavailable = !$player->isAvailable($matchDate, $competitionId);
-                                                        $unavailabilityReason = $player->getUnavailabilityReason($matchDate, $competitionId);
+                                                        $matchData = $matchesMissedMap[$player->id] ?? null;
+                                                        $unavailabilityReason = $player->getUnavailabilityReason(
+                                                            $matchDate,
+                                                            $competitionId,
+                                                            $matchData['count'] ?? null,
+                                                            $matchData['approx'] ?? false,
+                                                        );
                                                     @endphp
                                                     <tr
                                                         @click="toggle('{{ $player->id }}', {{ $isUnavailable ? 'true' : 'false' }})"

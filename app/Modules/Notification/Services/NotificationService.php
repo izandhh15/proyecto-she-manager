@@ -5,6 +5,7 @@ namespace App\Modules\Notification\Services;
 use App\Models\Game;
 use App\Models\GameNotification;
 use App\Models\GamePlayer;
+use App\Modules\Squad\Services\InjuryService;
 use App\Models\RenewalNegotiation;
 use App\Models\ScoutReport;
 use App\Models\Team;
@@ -126,14 +127,29 @@ class NotificationService
     {
         $translatedInjury = $this->translateInjuryType($injuryType);
 
+        // Compute matches missed if injury_until is set
+        $messageKey = 'notifications.player_injured_message';
+        $matchesMissed = 0;
+
+        if ($player->injury_until) {
+            $data = InjuryService::getMatchesMissed($game->id, $player->team_id, $game->current_date, $player->injury_until);
+            $matchesMissed = $data['count'];
+
+            if ($matchesMissed > 0) {
+                $messageKey = $data['approx']
+                    ? 'notifications.player_injured_message_matches_approx'
+                    : 'notifications.player_injured_message_matches';
+            }
+        }
+
         return $this->create(
             game: $game,
             type: GameNotification::TYPE_PLAYER_INJURED,
             title: __('notifications.player_injured_title', ['player' => $player->name]),
-            message: __('notifications.player_injured_message', [
+            message: trans_choice($messageKey, $matchesMissed, [
                 'player' => $player->name,
                 'injury' => $translatedInjury,
-                'weeks' => $weeksOut,
+                'matches' => $matchesMissed,
             ]),
             priority: GameNotification::PRIORITY_CRITICAL,
             metadata: [
@@ -153,7 +169,7 @@ class NotificationService
             game: $game,
             type: GameNotification::TYPE_PLAYER_SUSPENDED,
             title: __('notifications.player_suspended_title', ['player' => $player->name]),
-            message: __('notifications.player_suspended_message', [
+            message: trans_choice('notifications.player_suspended_message', $matches, [
                 'player' => $player->name,
                 'matches' => $matches,
                 'reason' => $reason,

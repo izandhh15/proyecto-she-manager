@@ -6,6 +6,7 @@ use App\Models\AcademyPlayer;
 use App\Models\Game;
 use App\Models\GamePlayer;
 use App\Modules\Squad\Services\DevelopmentCurve;
+use App\Modules\Squad\Services\InjuryService;
 use App\Modules\Squad\Services\PlayerDevelopmentService;
 use App\Modules\Transfer\Services\ContractService;
 use App\Support\PositionMapper;
@@ -31,11 +32,17 @@ class ShowSquadV2
         $seasonEndDate = $game->getSeasonEndDate();
         $nextMatchday = $game->current_matchday + 1;
 
+        // Pre-compute matches missed for injured players
+        $matchesMissedMap = InjuryService::getMatchesMissedMap($gameId, $game->team_id, $game->current_date, $allPlayers);
+
         // Enrich each player with computed data
-        $allPlayers->each(function (GamePlayer $player) use ($game, $seasonEndDate, $nextMatchday) {
+        $allPlayers->each(function (GamePlayer $player) use ($game, $seasonEndDate, $nextMatchday, $matchesMissedMap) {
             // Availability
+            $matchData = $matchesMissedMap[$player->id] ?? null;
             $player->setAttribute('is_unavailable', !$player->isAvailable($game->current_date, $nextMatchday));
-            $player->setAttribute('unavailability_reason', $player->getUnavailabilityReason($game->current_date, $nextMatchday));
+            $player->setAttribute('unavailability_reason', $player->getUnavailabilityReason(
+                $game->current_date, $nextMatchday, $matchData['count'] ?? null, $matchData['approx'] ?? false,
+            ));
 
             // Development projection
             $player->setAttribute('projection', $this->developmentService->getNextSeasonProjection($player));

@@ -601,8 +601,12 @@ class GamePlayer extends Model
      * @param Carbon|null $gameDate Date of the match (for injury check)
      * @param string|null $competitionId Competition ID (for suspension check)
      */
-    public function getUnavailabilityReason(?Carbon $gameDate = null, ?string $competitionId = null): ?string
-    {
+    public function getUnavailabilityReason(
+        ?Carbon $gameDate = null,
+        ?string $competitionId = null,
+        ?int $matchesMissed = null,
+        bool $matchesMissedApproximate = false,
+    ): ?string {
         if ($competitionId !== null && $this->isSuspendedInCompetition($competitionId)) {
             $remaining = $this->getSuspensionMatchesRemaining($competitionId);
             return trans_choice('squad.suspended_matches', $remaining, ['count' => $remaining]);
@@ -612,11 +616,15 @@ class GamePlayer extends Model
             $translationKey = InjuryService::INJURY_TRANSLATION_MAP[$this->injury_type] ?? null;
             $injuryName = $translationKey ? __($translationKey) : __('squad.injured_generic');
 
-            $checkDate = $gameDate ?? $this->game->current_date;
-            $weeksRemaining = (int) ceil($checkDate->diffInDays($this->injury_until) / 7);
-            $duration = trans_choice('squad.injury_weeks', max(1, $weeksRemaining), ['count' => max(1, $weeksRemaining)]);
+            if ($matchesMissed !== null && $matchesMissed > 0) {
+                $matchesStr = $matchesMissedApproximate
+                    ? trans_choice('squad.injury_matches_approx', $matchesMissed, ['count' => $matchesMissed])
+                    : trans_choice('squad.injury_matches', $matchesMissed, ['count' => $matchesMissed]);
 
-            return "$injuryName ($duration)";
+                return "$injuryName ($matchesStr)";
+            }
+
+            return $injuryName;
         }
 
         return null;

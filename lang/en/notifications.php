@@ -20,11 +20,13 @@ return [
 
     // Player injuries
     'player_injured_title' => ':player injured',
-    'player_injured_message' => ':player has :injury and will be out for :weeks weeks.',
+    'player_injured_message' => ':player has :injury.',
+    'player_injured_message_matches' => ':player has :injury and will miss :matches match.|:player has :injury and will miss :matches matches.',
+    'player_injured_message_matches_approx' => ':player has :injury and will miss :matches+ match.|:player has :injury and will miss :matches+ matches.',
 
     // Player suspensions
     'player_suspended_title' => ':player suspended',
-    'player_suspended_message' => ':player has been suspended for :matches matches due to :reason. Will miss the next :competition match.',
+    'player_suspended_message' => ':player has been suspended for :matches match due to :reason. Will miss the next :competition match.|:player has been suspended for :matches matches due to :reason. Will miss the next :competition match.',
     'reason_red_card' => 'a red card',
     'reason_yellow_accumulation' => 'yellow card accumulation',
 

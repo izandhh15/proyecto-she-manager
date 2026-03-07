@@ -3,6 +3,7 @@
 namespace App\Modules\Squad\Services;
 
 use App\Models\Game;
+use App\Models\GameMatch;
 use App\Models\GamePlayer;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -528,5 +529,55 @@ class InjuryService
             'type' => $injuryType,
             'weeks' => $weeksOut,
         ];
+    }
+
+    /**
+     * Build a map of matches missed for injured players in a collection.
+     *
+     * @return array<string, array{count: int, approx: bool}>  Keyed by player ID
+     */
+    public static function getMatchesMissedMap(string $gameId, string $teamId, Carbon $referenceDate, Collection $players): array
+    {
+        $upcomingMatchDates = self::getUpcomingMatchDates($gameId, $teamId, $referenceDate);
+        $lastScheduledDate = $upcomingMatchDates->last();
+
+        $map = [];
+        foreach ($players as $player) {
+            if ($player->isInjured($referenceDate) && $player->injury_until) {
+                $map[$player->id] = [
+                    'count' => $upcomingMatchDates->filter(fn ($d) => $d->lt($player->injury_until))->count(),
+                    'approx' => $lastScheduledDate && $player->injury_until->gt($lastScheduledDate),
+                ];
+            }
+        }
+
+        return $map;
+    }
+
+    /**
+     * Get matches missed for a single injured player.
+     *
+     * @return array{count: int, approx: bool}
+     */
+    public static function getMatchesMissed(string $gameId, string $teamId, Carbon $referenceDate, Carbon $injuryUntil): array
+    {
+        $upcomingMatchDates = self::getUpcomingMatchDates($gameId, $teamId, $referenceDate);
+        $lastScheduledDate = $upcomingMatchDates->last();
+
+        return [
+            'count' => $upcomingMatchDates->filter(fn ($d) => $d->lt($injuryUntil))->count(),
+            'approx' => $lastScheduledDate && $injuryUntil->gt($lastScheduledDate),
+        ];
+    }
+
+    private static function getUpcomingMatchDates(string $gameId, string $teamId, Carbon $referenceDate): Collection
+    {
+        return GameMatch::where('game_id', $gameId)
+            ->where('played', false)
+            ->where(fn ($q) => $q->where('home_team_id', $teamId)
+                                  ->orWhere('away_team_id', $teamId))
+            ->where('scheduled_date', '>=', $referenceDate)
+            ->orderBy('scheduled_date')
+            ->pluck('scheduled_date');
     }
 }

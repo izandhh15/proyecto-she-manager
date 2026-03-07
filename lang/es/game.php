@@ -229,7 +229,6 @@ return [
     'ovr_fitness' => 'Forma',
     'ovr_morale' => 'Moral',
     'live_injuries_report' => 'Parte de Lesiones',
-    'live_weeks_out' => ':count semana de baja|:count semanas de baja',
     'live_extra_time' => 'Prórroga',
     'live_et_abbr' => 'PR',
     'live_et_half_time' => 'Descanso Prórroga',

@@ -111,7 +111,8 @@ return [
     // Unavailability reasons
     'suspended_matches' => 'Sancionado (:count partido)|Sancionado (:count partidos)',
     'injured_generic' => 'Lesionado',
-    'injury_weeks' => ':count semana|:count semanas',
+    'injury_matches' => ':count partido|:count partidos',
+    'injury_matches_approx' => ':count+ partido|:count+ partidos',
 
     // Injury types
     'injury_muscle_fatigue' => 'Fatiga muscular',
