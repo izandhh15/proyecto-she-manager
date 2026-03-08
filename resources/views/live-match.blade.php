@@ -15,7 +15,7 @@
     </head>
     <body class="font-sans antialiased">
     <div class="min-h-screen bg-gradient-to-bl from-slate-900 via-cyan-950 to-teal-950">
-    <main class="text-slate-700 py-8">
+    <main class="text-slate-700 pt-0 pb-8 sm:py-8">
         <div class="max-w-4xl mx-auto sm:px-6 lg:px-8"
              x-data="liveMatch({
                 events: {{ Js::from($events) }},
@@ -94,7 +94,10 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 {{-- Competition & Round Info --}}
                 <div class="px-4 py-2.5 text-center text-sm font-semibold sm:rounded-t-lg {{ $accent }}">
-                    {{ __($match->competition->name) }} &middot; {{ $match->round_name ? __($match->round_name) : __('game.matchday_n', ['number' => $match->round_number]) }}
+                    <div>{{ __($match->competition->name) }} &middot; {{ $match->round_name ? __($match->round_name) : __('game.matchday_n', ['number' => $match->round_number]) }}</div>
+                    @if($match->homeTeam->stadium_name)
+                        <div class="text-xs font-normal opacity-80">{{ $match->homeTeam->stadium_name }}</div>
+                    @endif
                 </div>
                 <div class="p-6 sm:p-8">
 
@@ -639,6 +642,27 @@
                                         </div>
                                     @endif
 
+                                    <div class="text-center mb-4">
+                                        <template x-if="!processingReady">
+                                            <button type="button" disabled
+                                                    class="inline-flex items-center gap-2 px-6 py-2 bg-slate-200 text-slate-500 font-semibold rounded-lg cursor-wait min-h-[44px]">
+                                                <svg class="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
+                                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                                                </svg>
+                                                <span x-text="translations.processingActions"></span>
+                                            </button>
+                                        </template>
+                                        <template x-if="processingReady">
+                                            <form method="POST" action="{{ route('game.finalize-match', $game->id) }}">
+                                                @csrf
+                                                <x-primary-button class="px-6">
+                                                    {{ __('game.live_continue_dashboard') }}
+                                                </x-primary-button>
+                                            </form>
+                                        </template>
+                                    </div>
+
                                     {{-- Other Results --}}
                                     @if(count($otherMatches) > 0)
                                         <div class="mb-4">
@@ -662,27 +686,6 @@
                                             </div>
                                         </div>
                                     @endif
-
-                                    <div class="text-center">
-                                        <template x-if="!processingReady">
-                                            <button type="button" disabled
-                                                    class="inline-flex items-center gap-2 px-6 py-2 bg-slate-200 text-slate-500 font-semibold rounded-lg cursor-wait min-h-[44px]">
-                                                <svg class="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
-                                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
-                                                </svg>
-                                                <span x-text="translations.processingActions"></span>
-                                            </button>
-                                        </template>
-                                        <template x-if="processingReady">
-                                            <form method="POST" action="{{ route('game.finalize-match', $game->id) }}">
-                                                @csrf
-                                                <x-primary-button class="px-6">
-                                                    {{ __('game.live_continue_dashboard') }}
-                                                </x-primary-button>
-                                            </form>
-                                        </template>
-                                    </div>
                                 </div>
                             </template>
                         </div>
