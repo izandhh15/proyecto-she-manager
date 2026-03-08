@@ -9,6 +9,7 @@ use App\Models\CupTie;
 use App\Models\Game;
 use App\Models\GameMatch;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use App\Modules\Competition\Services\LeagueFixtureGenerator;
 
@@ -36,32 +37,39 @@ class CupDrawService
         // Shuffle teams for random pairing
         $shuffledTeams = $teams->shuffle();
 
-        // Create ties (pairings)
-        $ties = collect();
         $teamCount = $shuffledTeams->count();
+        $pairCount = intdiv($teamCount, 2);
 
-        for ($i = 0; $i < $teamCount; $i += 2) {
-            if ($i + 1 >= $teamCount) {
-                // Odd number of teams - one gets a bye (shouldn't happen in real cup)
-                break;
-            }
+        if ($pairCount === 0) {
+            return collect();
+        }
 
-            $homeTeamId = $shuffledTeams[$i];
-            $awayTeamId = $shuffledTeams[$i + 1];
+        // Phase 1: Pre-generate all UUIDs and build row arrays
+        $tieRows = [];
+        $firstLegRows = [];
+        $secondLegRows = [];
+        $tieMatchMap = []; // tieId => [firstLegId, secondLegId]
 
-            // Create the cup tie
-            $tie = CupTie::create([
-                'id' => Str::uuid()->toString(),
+        for ($i = 0; $i < $pairCount; $i++) {
+            $homeTeamId = $shuffledTeams[$i * 2];
+            $awayTeamId = $shuffledTeams[$i * 2 + 1];
+
+            $tieId = Str::uuid()->toString();
+            $firstLegId = Str::uuid()->toString();
+            $secondLegId = $roundConfig->twoLegged ? Str::uuid()->toString() : null;
+
+            $tieRows[] = [
+                'id' => $tieId,
                 'game_id' => $gameId,
                 'competition_id' => $competitionId,
                 'round_number' => $roundNumber,
                 'home_team_id' => $homeTeamId,
                 'away_team_id' => $awayTeamId,
-            ]);
+                'completed' => false,
+            ];
 
-            // Create first leg match
-            $firstLegMatch = GameMatch::create([
-                'id' => Str::uuid()->toString(),
+            $firstLegRows[] = [
+                'id' => $firstLegId,
                 'game_id' => $gameId,
                 'competition_id' => $competitionId,
                 'round_number' => $roundNumber,
@@ -69,32 +77,91 @@ class CupDrawService
                 'home_team_id' => $homeTeamId,
                 'away_team_id' => $awayTeamId,
                 'scheduled_date' => $roundConfig->firstLegDate,
-                'cup_tie_id' => $tie->id,
-            ]);
+                'cup_tie_id' => $tieId,
+                'played' => false,
+                'is_extra_time' => false,
+            ];
 
-            $tie->update(['first_leg_match_id' => $firstLegMatch->id]);
-
-            // Create second leg match if two-legged
             if ($roundConfig->twoLegged) {
-                $secondLegMatch = GameMatch::create([
-                    'id' => Str::uuid()->toString(),
+                $secondLegRows[] = [
+                    'id' => $secondLegId,
                     'game_id' => $gameId,
                     'competition_id' => $competitionId,
                     'round_number' => $roundNumber,
                     'round_name' => $roundConfig->name . '_return',
-                    'home_team_id' => $awayTeamId, // Teams swap for second leg
+                    'home_team_id' => $awayTeamId,
                     'away_team_id' => $homeTeamId,
                     'scheduled_date' => $roundConfig->secondLegDate,
-                    'cup_tie_id' => $tie->id,
-                ]);
-
-                $tie->update(['second_leg_match_id' => $secondLegMatch->id]);
+                    'cup_tie_id' => $tieId,
+                    'played' => false,
+                    'is_extra_time' => false,
+                ];
             }
 
-            $ties->push($tie->fresh());
+            $tieMatchMap[$tieId] = [
+                'first_leg_match_id' => $firstLegId,
+                'second_leg_match_id' => $secondLegId,
+            ];
         }
 
-        return $ties;
+        // Phase 2: Bulk insert all records
+        foreach (array_chunk($tieRows, 100) as $chunk) {
+            CupTie::insert($chunk);
+        }
+
+        foreach (array_chunk($firstLegRows, 100) as $chunk) {
+            GameMatch::insert($chunk);
+        }
+
+        if (!empty($secondLegRows)) {
+            foreach (array_chunk($secondLegRows, 100) as $chunk) {
+                GameMatch::insert($chunk);
+            }
+        }
+
+        // Phase 3: Bulk update CupTies with match IDs using CASE expressions
+        $tieIds = array_keys($tieMatchMap);
+        $placeholders = implode(',', array_fill(0, count($tieIds), '?'));
+
+        $firstLegCases = '';
+        $firstLegBindings = [];
+
+        foreach ($tieMatchMap as $tieId => $matchIds) {
+            $firstLegCases .= 'WHEN id = ? THEN ? ';
+            $firstLegBindings[] = $tieId;
+            $firstLegBindings[] = $matchIds['first_leg_match_id'];
+        }
+
+        $firstLegBindings = array_merge($firstLegBindings, $tieIds);
+
+        DB::update(
+            "UPDATE cup_ties SET first_leg_match_id = CASE {$firstLegCases}END WHERE id IN ({$placeholders})",
+            $firstLegBindings
+        );
+
+        if ($roundConfig->twoLegged) {
+            $secondLegCases = '';
+            $secondLegBindings = [];
+
+            foreach ($tieMatchMap as $tieId => $matchIds) {
+                $secondLegCases .= 'WHEN id = ? THEN ? ';
+                $secondLegBindings[] = $tieId;
+                $secondLegBindings[] = $matchIds['second_leg_match_id'];
+            }
+
+            $secondLegBindings = array_merge($secondLegBindings, $tieIds);
+
+            DB::update(
+                "UPDATE cup_ties SET second_leg_match_id = CASE {$secondLegCases}END WHERE id IN ({$placeholders})",
+                $secondLegBindings
+            );
+        }
+
+        // Return loaded ties
+        return CupTie::where('game_id', $gameId)
+            ->where('competition_id', $competitionId)
+            ->where('round_number', $roundNumber)
+            ->get();
     }
 
     /**

@@ -58,57 +58,59 @@ class SetupNewGame implements ShouldQueue
             return;
         }
 
-        $this->currentDate = $game->current_date ?? Carbon::parse("{$this->season}-08-15");
+        DB::transaction(function () use ($game, $contractService, $developmentService, $setupPipeline, $fixtureProcessor, $standingsProcessor) {
+            $this->currentDate = $game->current_date ?? Carbon::parse("{$this->season}-08-15");
 
-        // Pre-load all reference data (2 queries instead of ~4,600)
-        $allTeams = Team::whereNotNull('transfermarkt_id')->get()->keyBy('transfermarkt_id');
-        $allPlayers = Player::all()->keyBy('transfermarkt_id');
+            // Pre-load all reference data (2 queries instead of ~4,600)
+            $allTeams = Team::whereNotNull('transfermarkt_id')->get()->keyBy('transfermarkt_id');
+            $allPlayers = Player::all()->keyBy('transfermarkt_id');
 
-        // Step 1: Copy competition team rosters into per-game table
-        $this->copyCompetitionTeamsToGame();
+            // Step 1: Copy competition team rosters into per-game table
+            $this->copyCompetitionTeamsToGame();
 
-        // Step 2: Initialize game players (template-based or fallback)
-        $this->initializeGamePlayersFromTemplates($allTeams, $allPlayers, $contractService, $developmentService);
+            // Step 2: Initialize game players (template-based or fallback)
+            $this->initializeGamePlayersFromTemplates($allTeams, $allPlayers, $contractService, $developmentService);
 
-        // Step 3: Run shared setup processors
-        if ($this->gameMode === Game::MODE_CAREER) {
-            // Career mode: run all 4 shared processors (fixtures, standings, budget, cups/Swiss)
-            $swissPotData = $this->buildSwissPotData($allTeams);
+            // Step 3: Run shared setup processors
+            if ($this->gameMode === Game::MODE_CAREER) {
+                // Career mode: run all 4 shared processors (fixtures, standings, budget, cups/Swiss)
+                $swissPotData = $this->buildSwissPotData($allTeams);
 
-            $data = new SeasonTransitionData(
-                oldSeason: '0',
-                newSeason: $this->season,
-                competitionId: $this->competitionId,
-                isInitialSeason: true,
-                metadata: $swissPotData ? [SeasonTransitionData::META_SWISS_POT_DATA => $swissPotData] : [],
-            );
+                $data = new SeasonTransitionData(
+                    oldSeason: '0',
+                    newSeason: $this->season,
+                    competitionId: $this->competitionId,
+                    isInitialSeason: true,
+                    metadata: $swissPotData ? [SeasonTransitionData::META_SWISS_POT_DATA => $swissPotData] : [],
+                );
 
-            $setupPipeline->run($game->refresh(), $data);
+                $setupPipeline->run($game->refresh(), $data);
 
-            // Initialize players for Swiss format competitions (non-template path only)
-            if (!$this->usedTemplates) {
-                $this->initializeSwissFormatPlayers($allTeams, $allPlayers, $contractService, $developmentService);
+                // Initialize players for Swiss format competitions (non-template path only)
+                if (!$this->usedTemplates) {
+                    $this->initializeSwissFormatPlayers($allTeams, $allPlayers, $contractService, $developmentService);
+                }
+            } else {
+                // Non-career mode: only fixtures + standings (no budget/cups)
+                $data = new SeasonTransitionData(
+                    oldSeason: '0',
+                    newSeason: $this->season,
+                    competitionId: $this->competitionId,
+                    isInitialSeason: true,
+                );
+
+                $fixtureProcessor->process($game, $data);
+                $standingsProcessor->process($game, $data);
             }
-        } else {
-            // Non-career mode: only fixtures + standings (no budget/cups)
-            $data = new SeasonTransitionData(
-                oldSeason: '0',
-                newSeason: $this->season,
-                competitionId: $this->competitionId,
-                isInitialSeason: true,
-            );
 
-            $fixtureProcessor->process($game, $data);
-            $standingsProcessor->process($game, $data);
-        }
+            // Mark setup as complete
+            Game::where('id', $this->gameId)->update(['setup_completed_at' => now()]);
 
-        // Mark setup as complete
-        Game::where('id', $this->gameId)->update(['setup_completed_at' => now()]);
-
-        // Notify the user that the summer transfer window is open
-        if ($this->gameMode === Game::MODE_CAREER) {
-            app(NotificationService::class)->notifyTransferWindowOpen($game->refresh(), 'summer');
-        }
+            // Notify the user that the summer transfer window is open
+            if ($this->gameMode === Game::MODE_CAREER) {
+                app(NotificationService::class)->notifyTransferWindowOpen($game->refresh(), 'summer');
+            }
+        });
     }
 
     private function copyCompetitionTeamsToGame(): void
