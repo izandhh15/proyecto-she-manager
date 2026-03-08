@@ -28,7 +28,9 @@ class PlayerDevelopmentProcessor implements SeasonProcessor
     public function process(Game $game, SeasonTransitionData $data): SeasonTransitionData
     {
         // Process development for ALL players in the game
-        $players = GamePlayer::where('game_id', $game->id)->get();
+        $players = GamePlayer::with(['player', 'game'])
+            ->where('game_id', $game->id)
+            ->get();
 
         $allChanges = [];
         $upsertRows = [];

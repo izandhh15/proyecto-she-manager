@@ -49,7 +49,7 @@ class PlayerRetirementProcessor implements SeasonProcessor
      */
     private function processRetirements(Game $game, SeasonTransitionData $data): array
     {
-        $retiringPlayers = GamePlayer::with(['player', 'team'])
+        $retiringPlayers = GamePlayer::with(['player', 'team', 'game'])
             ->where('game_id', $game->id)
             ->whereNotNull('team_id')
             ->where('retiring_at_season', $data->oldSeason)
@@ -84,7 +84,7 @@ class PlayerRetirementProcessor implements SeasonProcessor
         // set from ~500 to ~20-40 before PHP-side probability evaluation.
         $minRetirementCutoff = now()->subYears(33);
 
-        $candidates = GamePlayer::with(['player', 'team'])
+        $candidates = GamePlayer::with(['player', 'team', 'game'])
             ->where('game_id', $game->id)
             ->whereNotNull('team_id')
             ->whereNull('retiring_at_season')

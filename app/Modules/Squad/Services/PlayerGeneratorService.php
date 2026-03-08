@@ -28,6 +28,12 @@ class PlayerGeneratorService
     /** @var array<array{name: string, nationality: string}> Cached identity pool */
     private ?array $identityPool = null;
 
+    /** @var array<string, int[]> Cached taken squad numbers by "gameId:teamId" */
+    private array $takenNumbersCache = [];
+
+    /** @var array<string, string[]> Cached team player names by "gameId:teamId" */
+    private array $teamNamesCache = [];
+
     public function __construct(
         private readonly ContractService $contractService,
         private readonly PlayerDevelopmentService $developmentService,
@@ -47,7 +53,7 @@ class PlayerGeneratorService
     public function create(Game $game, GeneratedPlayerData $data): GamePlayer
     {
         $excludedNames = ($data->name === null)
-            ? $this->getExistingTeamPlayerNames($game->id, $data->teamId)
+            ? $this->getOrLoadTeamPlayerNames($game->id, $data->teamId)
             : [];
         $identity = $this->pickRandomIdentity(excludedNames: $excludedNames);
         $name = $data->name ?? $identity['name'];
@@ -89,9 +95,9 @@ class PlayerGeneratorService
         $seasonYear = (int) $game->season;
         $contractUntil = Carbon::createFromDate($seasonYear + $data->contractYears, 6, 30);
 
-        $number = GamePlayer::nextAvailableNumber($game->id, $data->teamId);
+        $number = $this->findNextAvailableNumber($game->id, $data->teamId);
 
-        return GamePlayer::create([
+        $gamePlayer = GamePlayer::create([
             'id' => Str::uuid()->toString(),
             'game_id' => $game->id,
             'player_id' => $player->id,
@@ -111,6 +117,16 @@ class PlayerGeneratorService
             'potential_high' => $potentialHigh,
             'season_appearances' => 0,
         ]);
+
+        // Set relation to avoid lazy-load when caller accesses $gamePlayer->player
+        $gamePlayer->setRelation('player', $player);
+
+        // Update caches with the newly created player
+        $teamKey = "{$game->id}:{$data->teamId}";
+        $this->takenNumbersCache[$teamKey][] = $number;
+        $this->teamNamesCache[$teamKey][] = $name;
+
+        return $gamePlayer;
     }
 
     /**
@@ -204,17 +220,49 @@ class PlayerGeneratorService
     }
 
     /**
-     * Get names of existing players on a team (to prevent duplicate names in a squad).
+     * Get cached team player names, loading from DB on first access per team.
      *
      * @return string[]
      */
-    private function getExistingTeamPlayerNames(string $gameId, string $teamId): array
+    private function getOrLoadTeamPlayerNames(string $gameId, string $teamId): array
     {
-        return GamePlayer::where('game_id', $gameId)
-            ->where('team_id', $teamId)
-            ->join('players', 'game_players.player_id', '=', 'players.id')
-            ->pluck('players.name')
-            ->toArray();
+        $key = "{$gameId}:{$teamId}";
+
+        if (!isset($this->teamNamesCache[$key])) {
+            $this->teamNamesCache[$key] = GamePlayer::where('game_id', $gameId)
+                ->where('team_id', $teamId)
+                ->join('players', 'game_players.player_id', '=', 'players.id')
+                ->pluck('players.name')
+                ->toArray();
+        }
+
+        return $this->teamNamesCache[$key];
+    }
+
+    /**
+     * Find next available squad number using cached taken numbers.
+     */
+    private function findNextAvailableNumber(string $gameId, string $teamId): int
+    {
+        $key = "{$gameId}:{$teamId}";
+
+        if (!isset($this->takenNumbersCache[$key])) {
+            $this->takenNumbersCache[$key] = GamePlayer::where('game_id', $gameId)
+                ->where('team_id', $teamId)
+                ->whereNotNull('number')
+                ->pluck('number')
+                ->all();
+        }
+
+        $taken = $this->takenNumbersCache[$key];
+
+        for ($n = 2; $n <= 99; $n++) {
+            if (!in_array($n, $taken)) {
+                return $n;
+            }
+        }
+
+        return 99;
     }
 
     /**

@@ -150,7 +150,8 @@ class SeasonArchiveProcessor implements SeasonProcessor
      */
     private function capturePlayerStats(Game $game): array
     {
-        return GamePlayer::where('game_id', $game->id)
+        return GamePlayer::with('player')
+            ->where('game_id', $game->id)
             ->where('appearances', '>', 0)
             ->get()
             ->map(function ($player) {
@@ -225,7 +226,8 @@ class SeasonArchiveProcessor implements SeasonProcessor
      */
     private function calculateBestGoalkeeper(Game $game): ?array
     {
-        $goalkeepers = GamePlayer::where('game_id', $game->id)
+        $goalkeepers = GamePlayer::with('player')
+            ->where('game_id', $game->id)
             ->where('position', 'Goalkeeper')
             ->where('appearances', '>=', self::MIN_GOALKEEPER_APPEARANCES)
             ->get();
@@ -294,19 +296,21 @@ class SeasonArchiveProcessor implements SeasonProcessor
      */
     private function compressMatchEvents(Game $game): ?string
     {
-        $events = MatchEvent::where('game_id', $game->id)
-            ->get()
-            ->map(function ($event) {
-                return [
-                    'match_id' => $event->game_match_id,
-                    'player_id' => $event->game_player_id,
-                    'team_id' => $event->team_id,
-                    'minute' => $event->minute,
-                    'event_type' => $event->event_type,
-                    'metadata' => $event->metadata,
-                ];
-            })
-            ->toArray();
+        $events = [];
+
+        MatchEvent::where('game_id', $game->id)
+            ->chunk(1000, function ($chunk) use (&$events) {
+                foreach ($chunk as $event) {
+                    $events[] = [
+                        'match_id' => $event->game_match_id,
+                        'player_id' => $event->game_player_id,
+                        'team_id' => $event->team_id,
+                        'minute' => $event->minute,
+                        'event_type' => $event->event_type,
+                        'metadata' => $event->metadata,
+                    ];
+                }
+            });
 
         if (empty($events)) {
             return null;

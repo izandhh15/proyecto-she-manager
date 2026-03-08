@@ -60,6 +60,11 @@ class ContractExpirationProcessor implements SeasonProcessor
         $autoRenewedPlayers = [];
         $newFreeAgents = [];
 
+        $releasedIds = [];
+        $freeAgentIds = [];
+        $autoRenewedIds = [];
+        $newContractEnd = Carbon::createFromDate($seasonYear + 3, 6, 30);
+
         // Process user's team first (always release)
         foreach ($expiredPlayers->where('team_id', $game->team_id) as $player) {
             $releasedPlayers[] = [
@@ -68,7 +73,7 @@ class ContractExpirationProcessor implements SeasonProcessor
                 'teamId' => $player->team_id,
                 'teamName' => $player->team->name,
             ];
-            $player->delete();
+            $releasedIds[] = $player->id;
         }
 
         // Process AI teams: decide renewals vs free agents per team
@@ -100,24 +105,28 @@ class ContractExpirationProcessor implements SeasonProcessor
                         'teamName' => $player->team->name,
                         'age' => $player->age,
                     ];
-
-                    $player->update([
-                        'team_id' => null,
-                        'number' => null,
-                    ]);
+                    $freeAgentIds[] = $player->id;
                 } else {
-                    // Auto-renew for 2 years
-                    $newContractEnd = Carbon::createFromDate($seasonYear + 3, 6, 30);
-                    $player->update(['contract_until' => $newContractEnd]);
-
                     $autoRenewedPlayers[] = [
                         'playerId' => $player->id,
                         'playerName' => $player->name,
                         'teamId' => $player->team_id,
                         'teamName' => $player->team->name,
                     ];
+                    $autoRenewedIds[] = $player->id;
                 }
             }
+        }
+
+        // Batch operations instead of per-player queries
+        if (!empty($releasedIds)) {
+            GamePlayer::whereIn('id', $releasedIds)->delete();
+        }
+        if (!empty($freeAgentIds)) {
+            GamePlayer::whereIn('id', $freeAgentIds)->update(['team_id' => null, 'number' => null]);
+        }
+        if (!empty($autoRenewedIds)) {
+            GamePlayer::whereIn('id', $autoRenewedIds)->update(['contract_until' => $newContractEnd]);
         }
 
         return $data->setMetadata('expiredContracts', $releasedPlayers)
@@ -169,19 +178,14 @@ class ContractExpirationProcessor implements SeasonProcessor
      */
     private function calculateAITeamAverages(Game $game): array
     {
-        $allAIPlayers = GamePlayer::where('game_id', $game->id)
+        return GamePlayer::where('game_id', $game->id)
             ->whereNotNull('team_id')
             ->where('team_id', '!=', $game->team_id)
-            ->get()
-            ->groupBy('team_id');
-
-        $averages = [];
-        foreach ($allAIPlayers as $teamId => $players) {
-            $total = $players->sum(fn ($p) => $this->getPlayerAbility($p));
-            $averages[$teamId] = $players->isEmpty() ? 55 : (int) round($total / $players->count());
-        }
-
-        return $averages;
+            ->selectRaw('team_id, ROUND(AVG((COALESCE(game_technical_ability, 50) + COALESCE(game_physical_ability, 50)) / 2.0)) as avg_ability')
+            ->groupBy('team_id')
+            ->pluck('avg_ability', 'team_id')
+            ->map(fn ($v) => (int) $v)
+            ->toArray();
     }
 
     private function getPlayerAbility(GamePlayer $player): int
