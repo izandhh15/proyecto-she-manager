@@ -681,29 +681,6 @@
                                         </template>
                                     </div>
 
-                                    {{-- Other Results --}}
-                                    @if(count($otherMatches) > 0)
-                                        <div class="mb-4">
-                                            <h4 class="text-sm font-semibold text-slate-500 uppercase mb-2">{{ __('game.live_other_results') }}</h4>
-                                            <div class="space-y-1">
-                                                @foreach($otherMatches as $other)
-                                                    <div class="flex items-center py-1.5 px-2 rounded text-sm bg-slate-50">
-                                                        <div class="flex items-center gap-2 flex-1 justify-end">
-                                                            <span class="@if($other['homeScore'] > $other['awayScore']) font-semibold @endif text-slate-700 truncate">{{ $other['homeTeam'] }}</span>
-                                                            <img src="{{ $other['homeTeamImage'] }}" class="w-5 h-5">
-                                                        </div>
-                                                        <div class="px-3 font-semibold tabular-nums text-slate-900">
-                                                            {{ $other['homeScore'] }} - {{ $other['awayScore'] }}
-                                                        </div>
-                                                        <div class="flex items-center gap-2 flex-1">
-                                                            <img src="{{ $other['awayTeamImage'] }}" class="w-5 h-5">
-                                                            <span class="@if($other['awayScore'] > $other['homeScore']) font-semibold @endif text-slate-700 truncate">{{ $other['awayTeam'] }}</span>
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                    @endif
                                 </div>
                             </template>
                         </div>
@@ -719,16 +696,16 @@
 
             {{-- Other Matches Ticker --}}
             @if(count($otherMatches) > 0)
-                <div class="mt-4 px-4 py-3 bg-slate-800/50 rounded-lg">
-                    <div class="flex items-center gap-6 overflow-x-auto text-xs">
-                        <span class="text-slate-500 font-semibold shrink-0 uppercase">{{ __('game.live_other_results') }}</span>
+                <div class="mt-4 px-4 py-3">
+                    <p class="text-white/50 font-semibold text-xs uppercase mb-1.5">{{ __('game.live_other_results') }}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-1 text-xs">
                         <template x-for="(m, idx) in otherMatches" :key="idx">
-                            <div class="flex items-center gap-2 shrink-0 text-slate-300">
+                            <div class="flex items-center gap-1.5 text-white/40">
                                 <img :src="m.homeTeamImage" class="w-4 h-4">
-                                <span class="truncate max-w-20" x-text="m.homeTeam"></span>
-                                <span class="font-bold tabular-nums"
+                                <span class="truncate max-w-24" x-text="m.homeTeam"></span>
+                                <span class="font-semibold tabular-nums"
                                       x-text="otherMatchScores[idx]?.homeScore + ' - ' + otherMatchScores[idx]?.awayScore"></span>
-                                <span class="truncate max-w-20" x-text="m.awayTeam"></span>
+                                <span class="truncate max-w-24" x-text="m.awayTeam"></span>
                                 <img :src="m.awayTeamImage" class="w-4 h-4">
                             </div>
                         </template>
