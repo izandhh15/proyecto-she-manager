@@ -49,9 +49,9 @@
                     <div x-show="confirmSkip" x-cloak class="flex items-center gap-2">
                         <form action="{{ route('game.skip-pre-season', $game->id) }}" method="POST" class="inline">
                             @csrf
-                            <x-danger-button>
+                            <x-primary-button color="sky">
                                 {{ __('app.confirm') }}
-                            </x-danger-button>
+                            </x-primary-button>
                         </form>
                         <x-secondary-button @click="confirmSkip = false">
                             {{ __('app.cancel') }}
