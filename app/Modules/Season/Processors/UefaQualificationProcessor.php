@@ -149,9 +149,10 @@ class UefaQualificationProcessor implements SeasonProcessor
      */
     private function getLeagueStandings(Game $game, string $leagueId): array
     {
-        // Try real standings first
+        // Try real standings first (filter played > 0 to skip bootstrapped zeros)
         $standings = GameStanding::where('game_id', $game->id)
             ->where('competition_id', $leagueId)
+            ->where('played', '>', 0)
             ->orderBy('position')
             ->pluck('team_id', 'position')
             ->toArray();

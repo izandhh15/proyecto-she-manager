@@ -163,10 +163,6 @@ class PromotionRelegationProcessor implements SeasonProcessor
                 'goals_against' => 0,
                 'points' => 0,
             ]);
-        } elseif ($isPlayerTeam) {
-            // Player's team moving to a previously-simulated division.
-            // Bootstrap standings for ALL teams so the league becomes playable.
-            $this->bootstrapDivisionStandings($gameId, $toDivision);
         }
 
         // Update game's primary competition if the player's team moved
@@ -175,42 +171,6 @@ class PromotionRelegationProcessor implements SeasonProcessor
                 ->where('team_id', $teamId)
                 ->update(['competition_id' => $toDivision]);
         }
-    }
-
-    /**
-     * Create standings for all teams in a division that previously had none.
-     * Called when the player's team moves to a simulated division, making it playable.
-     */
-    private function bootstrapDivisionStandings(string $gameId, string $competitionId): void
-    {
-        $teamIds = CompetitionEntry::where('game_id', $gameId)
-            ->where('competition_id', $competitionId)
-            ->pluck('team_id')
-            ->toArray();
-
-        $rows = [];
-        $position = 1;
-        foreach ($teamIds as $teamId) {
-            $rows[] = [
-                'game_id' => $gameId,
-                'competition_id' => $competitionId,
-                'team_id' => $teamId,
-                'position' => $position++,
-                'played' => 0,
-                'won' => 0,
-                'drawn' => 0,
-                'lost' => 0,
-                'goals_for' => 0,
-                'goals_against' => 0,
-                'points' => 0,
-            ];
-        }
-
-        GameStanding::upsert(
-            $rows,
-            ['game_id', 'competition_id', 'team_id'],
-            ['position', 'played', 'won', 'drawn', 'lost', 'goals_for', 'goals_against', 'points']
-        );
     }
 
     /**

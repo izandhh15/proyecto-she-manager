@@ -5,6 +5,7 @@ namespace App\Modules\Season\Processors;
 use App\Modules\Competition\Services\StandingsCalculator;
 use App\Modules\Season\Contracts\SeasonProcessor;
 use App\Modules\Season\DTOs\SeasonTransitionData;
+use App\Models\Competition;
 use App\Models\CompetitionEntry;
 use App\Models\Game;
 use App\Models\GameStanding;
@@ -48,6 +49,18 @@ class StandingsResetProcessor implements SeasonProcessor
 
     private function resetExistingStandings(Game $game, SeasonTransitionData $data): SeasonTransitionData
     {
+        // If the player's league has no standings (promoted to a previously-simulated league),
+        // create initial standings instead of resetting.
+        $hasStandings = GameStanding::where('game_id', $game->id)
+            ->where('competition_id', $data->competitionId)
+            ->exists();
+
+        if (!$hasStandings) {
+            $this->cleanupStaleLeagueStandings($game, $data);
+
+            return $this->createInitialStandings($game, $data);
+        }
+
         // Store final positions for metadata
         $finalStandings = GameStanding::where('game_id', $game->id)
             ->where('competition_id', $data->competitionId)
@@ -75,6 +88,24 @@ class StandingsResetProcessor implements SeasonProcessor
                 'points' => 0,
             ]);
 
+        // Clean up stale standings from non-player leagues (old division data, bootstrapped zeros)
+        $this->cleanupStaleLeagueStandings($game, $data);
+
         return $data;
+    }
+
+    /**
+     * Delete standings for non-player leagues.
+     * These are either stale previous-season data or bootstrapped zeros from promotion.
+     */
+    private function cleanupStaleLeagueStandings(Game $game, SeasonTransitionData $data): void
+    {
+        $leagueCompetitionIds = Competition::where('role', Competition::ROLE_LEAGUE)
+            ->pluck('id');
+
+        GameStanding::where('game_id', $game->id)
+            ->where('competition_id', '!=', $data->competitionId)
+            ->whereIn('competition_id', $leagueCompetitionIds)
+            ->delete();
     }
 }
