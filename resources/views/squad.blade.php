@@ -562,7 +562,12 @@
                                                                 </template>
                                                                 @if($isCareerMode)
                                                                 <template x-if="viewMode === 'planning'">
-                                                                    <span>{{ $gp->formatted_market_value }} &middot; {{ $gp->formatted_wage }}{{ __('squad.per_year') }} &middot; {{ $gp->contract_expiry_year ?? '?' }}</span>
+                                                                    <span>
+                                                                        {{ $gp->formatted_market_value }} &middot; {{ $gp->formatted_wage }}{{ __('squad.per_year') }} &middot; {{ $gp->contract_expiry_year ?? '?' }}
+                                                                        @if($gp->potential_low && $gp->potential_high)
+                                                                            &middot; {{ __('squad.potential') }} {{ $gp->potential_low }}-{{ $gp->potential_high }}
+                                                                        @endif
+                                                                    </span>
                                                                 </template>
                                                                 @endif
                                                                 <template x-if="viewMode === 'stats'">

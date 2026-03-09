@@ -81,7 +81,7 @@
 
                         {{-- Ability estimate + Price + Shortlist --}}
                         <div class="flex items-center gap-3 sm:gap-4 shrink-0">
-                            <div class="text-right hidden sm:block">
+                            <div class="text-right">
                                 <div class="text-xs text-slate-400">{{ __('transfers.ability') }}</div>
                                 <div class="text-sm font-semibold text-slate-700 tabular-nums">{{ $techRange[0] }}-{{ $techRange[1] }}</div>
                             </div>
