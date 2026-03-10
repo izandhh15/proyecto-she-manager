@@ -174,7 +174,7 @@ class NotificationService
                 'player' => $player->name,
                 'matches' => $matches,
                 'reason' => $reason,
-                'competition' => $competition,
+                'competition' => __($competition),
             ]),
             priority: GameNotification::PRIORITY_CRITICAL,
             metadata: [
