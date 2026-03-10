@@ -23,7 +23,7 @@
                             <th class="font-semibold w-6 p-1.5 text-xs">{{ __('game.goal_diff_abbr') }}</th>
                             <th class="font-semibold w-6 p-1.5 text-xs">{{ __('game.pts_abbr') }}</th>
                             @unless($game->isTournamentMode())
-                            <th class="font-semibold w-6 p-1.5 text-xs text-center">{{ __('game.last_5') }}</th>
+                            <th class="font-semibold w-6 p-1.5 text-xs text-center whitespace-nowrap">{{ __('game.last_5') }}</th>
                             @endunless
                         </tr>
                         </thead>

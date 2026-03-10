@@ -66,104 +66,121 @@
                 <div class="p-4 sm:p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                     {{-- Left Column (2/3) - Main Content --}}
                     <div class="md:col-span-2 space-y-8">
-                        {{-- Upcoming Fixtures Header --}}
-                        <div class="flex items-center justify-between">
-                            <h3 class="font-semibold text-xl text-slate-900">{{ __('game.upcoming_fixtures') }}</h3>
-                            <a href="{{ route('game.calendar', $game->id) }}" class="text-sm text-sky-600 hover:text-sky-800">
-                                {{ __('game.full_calendar') }} &rarr;
-                            </a>
-                        </div>
-
                         {{-- Highlighted Next Match Card --}}
                         @php
                             $comp = $nextMatch->competition;
+                            $isPreseason = ($comp->handler_type ?? '') === 'preseason';
                             $accent = match(true) {
-                                ($comp->handler_type ?? '') === 'preseason' => ['badge' => 'bg-sky-100 text-sky-800', 'border' => 'border-l-sky-500'],
-                                ($comp->scope ?? '') === 'continental' => ['badge' => 'bg-blue-100 text-blue-800', 'border' => 'border-l-blue-500'],
-                                ($comp->type ?? '') === 'cup' => ['badge' => 'bg-emerald-100 text-emerald-800', 'border' => 'border-l-emerald-500'],
-                                default => ['badge' => 'bg-amber-100 text-amber-800', 'border' => 'border-l-amber-500'],
+                                $isPreseason => [
+                                    'bg' => 'bg-sky-600', 'badge' => 'bg-white/20 text-white',
+                                ],
+                                ($comp->scope ?? '') === 'continental' => [
+                                    'bg' => 'bg-blue-600', 'badge' => 'bg-white/20 text-white',
+                                ],
+                                ($comp->type ?? '') === 'cup' => [
+                                    'bg' => 'bg-emerald-600', 'badge' => 'bg-white/20 text-white',
+                                ],
+                                default => [
+                                    'bg' => 'bg-amber-600', 'badge' => 'bg-white/20 text-white',
+                                ],
                             };
+
+                            $cupTie = $nextMatch->cup_tie_id ? $nextMatch->cupTie : null;
+                            $firstLegScore = null;
+                            if ($cupTie && $cupTie->first_leg_match_id && $cupTie->firstLegMatch?->played) {
+                                $fl = $cupTie->firstLegMatch;
+                                $firstLegScore = $fl->home_score . ' - ' . $fl->away_score;
+                            }
                         @endphp
-                        <div class="rounded-lg bg-white border border-slate-200 border-l-4 {{ $accent['border'] }} p-4 md:p-5">
-                            {{-- Competition, Round & Date --}}
-                            <div class="text-center">
-                                <div class="flex items-center justify-center gap-2">
-                                    <span class="px-3 py-1 text-sm font-semibold rounded-full {{ $accent['badge'] }}">
-                                        {{ ($comp->handler_type ?? '') === 'preseason' ? __('game.pre_season_friendly') : __($nextMatch->competition->name ?? 'League') }}
+                        <div class="rounded-md overflow-hidden border border-slate-200">
+                            {{-- Section 1: Competition Banner --}}
+                            <div class="{{ $accent['bg'] }} px-4 py-3 md:px-5 md:py-3">
+                                <div class="flex items-center justify-between gap-2">
+                                    <div class="flex items-center gap-2 min-w-0">
+                                        <span class="px-2.5 py-0.5 text-sm font-semibold rounded-full {{ $accent['badge'] }} shrink-0">
+                                            {{ $isPreseason ? __('game.pre_season_friendly') : __($comp->name ?? 'League') }}
+                                        </span>
+                                        @if($nextMatch->round_name)
+                                            <span class="text-sm text-white/70 truncate">&middot; {{ __($nextMatch->round_name) }}</span>
+                                        @else
+                                            <span class="text-sm text-white/70 truncate">&middot; {{ __('game.matchday_n', ['number' => $nextMatch->round_number]) }}</span>
+                                        @endif
+                                    </div>
+                                    <span class="text-sm text-white/70 shrink-0 truncate">
+                                        {{ $nextMatch->homeTeam->stadium_name ?? '' }} &middot; {{ $nextMatch->scheduled_date->locale(app()->getLocale())->translatedFormat('d M Y') }}
                                     </span>
-                                    @if($nextMatch->round_name)
-                                        <span class="text-sm text-slate-500">&middot; {{ __($nextMatch->round_name) }}</span>
-                                    @else
-                                        <span class="text-sm text-slate-500">&middot; {{ __('game.matchday_n', ['number' => $nextMatch->round_number]) }}</span>
-                                    @endif
-                                </div>
-                                <div class="text-sm text-slate-500 mt-1">
-                                    {{ $nextMatch->scheduled_date->locale(app()->getLocale())->translatedFormat('d M Y') }}
                                 </div>
                             </div>
 
-                            {{-- Teams Face-off --}}
-                            <div class="flex items-start justify-around">
-                                {{-- Home Team --}}
-                                <div class="flex-1 flex flex-col items-center text-center min-w-0 px-2">
-                                    <x-team-crest :team="$nextMatch->homeTeam" class="w-12 h-12 md:w-20 md:h-20 mb-2" />
-                                    <h4 class="text-base md:text-xl font-bold text-slate-900 truncate max-w-full">{{ $nextMatch->homeTeam->name }}</h4>
-                                    @if(($comp->handler_type ?? '') !== 'preseason')
-                                    @if($homeStanding)
-                                    <div class="text-sm text-slate-500 mt-0.5">
-                                        {{ $homeStanding->position }}{{ $homeStanding->position == 1 ? 'st' : ($homeStanding->position == 2 ? 'nd' : ($homeStanding->position == 3 ? 'rd' : 'th')) }} &middot; {{ $homeStanding->points }} {{ __('game.pts') }}
-                                    </div>
-                                    @endif
-                                    <div class="flex gap-1 mt-2">
-                                        @php $homeForm = $nextMatch->home_team_id === $game->team_id ? $playerForm : $opponentForm; @endphp
-                                        @forelse($homeForm as $result)
-                                            <span class="w-5 h-5 rounded text-xs font-bold flex items-center justify-center
-                                                @if($result === 'W') bg-green-500 text-white
-                                                @elseif($result === 'D') bg-slate-400 text-white
-                                                @else bg-red-500 text-white @endif">
-                                                {{ $result }}
-                                            </span>
-                                        @empty
-                                            <span class="text-slate-400 text-sm">{{ __('game.no_form') }}</span>
-                                        @endforelse
-                                    </div>
-                                    @endif
+                            {{-- First Leg Score (cup ties) --}}
+                            @if($firstLegScore)
+                                <div class="bg-slate-100 border-b border-slate-200 px-4 py-2 text-center">
+                                    <span class="text-xs text-slate-500 font-medium">1st leg: {{ $firstLegScore }}</span>
                                 </div>
+                            @endif
 
-                                {{-- Away Team --}}
-                                <div class="flex-1 flex flex-col items-center text-center min-w-0 px-2">
-                                    <x-team-crest :team="$nextMatch->awayTeam" class="w-12 h-12 md:w-20 md:h-20 mb-2" />
-                                    <h4 class="text-base md:text-xl font-bold text-slate-900 truncate max-w-full">{{ $nextMatch->awayTeam->name }}</h4>
-                                    @if(($comp->handler_type ?? '') !== 'preseason')
-                                    @if($awayStanding)
-                                    <div class="text-sm text-slate-500 mt-0.5">
-                                        {{ $awayStanding->position }}{{ $awayStanding->position == 1 ? 'st' : ($awayStanding->position == 2 ? 'nd' : ($awayStanding->position == 3 ? 'rd' : 'th')) }} &middot; {{ $awayStanding->points }} {{ __('game.pts') }}
+                            {{-- Section 2: Team Face-Off --}}
+                            <div class="bg-white px-4 py-5 md:px-6 md:py-6">
+                                <div class="flex items-start justify-center gap-3 md:gap-6">
+                                    {{-- Home Team --}}
+                                    <div class="flex-1 flex flex-col items-center text-center min-w-0">
+                                        <x-team-crest :team="$nextMatch->homeTeam" class="w-14 h-14 md:w-20 md:h-20 mb-2" />
+                                        <h4 class="text-sm md:text-xl font-bold text-slate-900 truncate max-w-full">{{ $nextMatch->homeTeam->name }}</h4>
+                                        @if(!$isPreseason)
+                                            @if($homeStanding)
+                                            <div class="text-xs text-slate-500 mt-1.5">
+                                                {{ $homeStanding->position }}{{ $homeStanding->position == 1 ? 'st' : ($homeStanding->position == 2 ? 'nd' : ($homeStanding->position == 3 ? 'rd' : 'th')) }} &middot; {{ $homeStanding->points }} {{ __('game.pts') }}
+                                            </div>
+                                            @endif
+                                            <div class="flex gap-1 mt-2">
+                                                @php $homeForm = $nextMatch->home_team_id === $game->team_id ? $playerForm : $opponentForm; @endphp
+                                                @forelse($homeForm as $result)
+                                                    <span class="w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center
+                                                        @if($result === 'W') bg-green-500 text-white
+                                                        @elseif($result === 'D') bg-slate-300 text-slate-600
+                                                        @else bg-red-500 text-white @endif">
+                                                        {{ $result }}
+                                                    </span>
+                                                @empty
+                                                    <span class="text-slate-400 text-xs">{{ __('game.no_form') }}</span>
+                                                @endforelse
+                                            </div>
+                                        @endif
                                     </div>
-                                    @endif
-                                    <div class="flex gap-1 mt-2">
-                                        @php $awayForm = $nextMatch->away_team_id === $game->team_id ? $playerForm : $opponentForm; @endphp
-                                        @forelse($awayForm as $result)
-                                            <span class="w-5 h-5 rounded text-xs font-bold flex items-center justify-center
-                                                @if($result === 'W') bg-green-500 text-white
-                                                @elseif($result === 'D') bg-slate-400 text-white
-                                                @else bg-red-500 text-white @endif">
-                                                {{ $result }}
-                                            </span>
-                                        @empty
-                                            <span class="text-slate-400 text-sm">{{ __('game.no_form') }}</span>
-                                        @endforelse
+
+                                    {{-- VS Divider --}}
+                                    <div class="flex flex-col items-center justify-center pt-4 md:pt-6 shrink-0">
+                                        <span class="text-lg md:text-2xl font-black text-slate-300 tracking-tight">{{ __('game.vs') }}</span>
                                     </div>
-                                    @endif
+
+                                    {{-- Away Team --}}
+                                    <div class="flex-1 flex flex-col items-center text-center min-w-0">
+                                        <x-team-crest :team="$nextMatch->awayTeam" class="w-14 h-14 md:w-20 md:h-20 mb-2" />
+                                        <h4 class="text-sm md:text-xl font-bold text-slate-900 truncate max-w-full">{{ $nextMatch->awayTeam->name }}</h4>
+                                        @if(!$isPreseason)
+                                            @if($awayStanding)
+                                            <div class="text-xs text-slate-500 mt-1.5">
+                                                {{ $awayStanding->position }}{{ $awayStanding->position == 1 ? 'st' : ($awayStanding->position == 2 ? 'nd' : ($awayStanding->position == 3 ? 'rd' : 'th')) }} &middot; {{ $awayStanding->points }} {{ __('game.pts') }}
+                                            </div>
+                                            @endif
+                                            <div class="flex gap-1 mt-2">
+                                                @php $awayForm = $nextMatch->away_team_id === $game->team_id ? $playerForm : $opponentForm; @endphp
+                                                @forelse($awayForm as $result)
+                                                    <span class="w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center
+                                                        @if($result === 'W') bg-green-500 text-white
+                                                        @elseif($result === 'D') bg-slate-300 text-slate-600
+                                                        @else bg-red-500 text-white @endif">
+                                                        {{ $result }}
+                                                    </span>
+                                                @empty
+                                                    <span class="text-slate-400 text-xs">{{ __('game.no_form') }}</span>
+                                                @endforelse
+                                            </div>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
 
-                            {{-- Set Lineup Button --}}
-                            <div class="mt-4 text-center">
-                                <a href="{{ route('game.lineup', $game->id) }}"
-                                   class="inline-flex items-center gap-2 px-5 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-lg transition-colors min-h-[44px]">
-                                    {{ __('game.set_lineup') }}
-                                </a>
-                            </div>
                         </div>
 
                         {{-- Remaining Upcoming Fixtures --}}
@@ -172,11 +189,18 @@
                             @foreach($upcomingFixtures->skip(1)->take(4) as $fixture)
                                 <x-fixture-row :match="$fixture" :game="$game" :show-score="false" :highlight-next="false" />
                             @endforeach
+                            <div class="text-center pt-1">
+                                <a href="{{ route('game.calendar', $game->id) }}" class="text-sm text-sky-600 hover:text-sky-800">
+                                    {{ __('game.full_calendar') }} &rarr;
+                                </a>
+                            </div>
                         </div>
                         @endif
                     </div>
 
-                    {{-- Right Column (1/3) - Notifications Inbox --}}
+                    <hr class="border-slate-200 md:hidden" />
+
+                    {{-- Right Column (1/3) - Notifications & Standings --}}
                     <div class="space-y-8">
                         {{-- Notifications Inbox --}}
                         <div>
@@ -257,6 +281,8 @@
                             </div>
                             @endif
                         </div>
+
+                        <hr class="border-slate-200 md:hidden" />
 
                         {{-- Abridged League Standings (hidden during pre-season) --}}
                         @if($leagueStandings->isNotEmpty() && empty($isPreSeason))

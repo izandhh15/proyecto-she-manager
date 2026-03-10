@@ -46,7 +46,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
         <th class="font-semibold w-8 p-2 hidden md:table-cell">{{ __('game.goals_against_abbr') }}</th>
         <th class="font-semibold w-8 p-2">{{ __('game.goal_diff_abbr') }}</th>
         <th class="font-semibold w-8 p-2">{{ __('game.pts_abbr') }}</th>
-        <th class="font-semibold w-8 p-2 text-center">{{ __('game.last_5') }}</th>
+        <th class="font-semibold w-8 p-2 text-center whitespace-nowrap">{{ __('game.last_5') }}</th>
     </tr>
     </thead>
     <tbody>
