@@ -44,7 +44,7 @@
 
         <div class="rounded-lg p-6 bg-gradient-to-bl from-slate-900 via-cyan-950 to-teal-950 mb-3">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 sm:p-8">
+                <div class="p-4 sm:p-6 md:p-8">
                     <p class="text-sm text-slate-500">Page content within the white panel, against the dark gradient background.</p>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 <span x-show="copied" x-cloak class="text-green-400">Copied!</span>
             </button>
             <pre class="bg-slate-800 text-slate-300 rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="code">&lt;div class="bg-white overflow-hidden shadow-sm sm:rounded-lg"&gt;
-    &lt;div class="p-6 sm:p-8"&gt;
+    &lt;div class="p-4 sm:p-6 md:p-8"&gt;
         &lt;!-- Page content --&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>

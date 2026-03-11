@@ -102,7 +102,7 @@
                         <div class="text-xs font-normal opacity-80">{{ $match->homeTeam->stadium_name }}</div>
                     @endif
                 </div>
-                <div class="p-6 sm:p-8">
+                <div class="p-4 sm:p-6 md:p-8">
 
                     {{-- Scoreboard --}}
                     <div class="flex items-center justify-center gap-2 md:gap-6 mb-2">

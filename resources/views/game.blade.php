@@ -343,7 +343,7 @@
             @elseif($hasRemainingMatches)
             {{-- AI Matches Remaining State --}}
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 sm:p-8 text-center">
+                <div class="p-4 sm:p-6 md:p-8 text-center">
                     <div class="text-6xl mb-4">&#9917;</div>
                     <h2 class="text-3xl font-bold text-slate-900 mb-2">{{ __('game.other_competitions_in_progress') }}</h2>
                     <p class="text-slate-500 mb-8">{{ __('game.other_competitions_desc') }}</p>

@@ -59,83 +59,85 @@
     })">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white shadow-sm sm:rounded-lg">
-                <div class="p-6 sm:p-8">
-                    {{-- Errors --}}
-                    @if ($errors->any())
-                        <div class="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                            <ul class="text-sm text-red-600">
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
 
-                    <form method="POST" action="{{ route('game.lineup.save', $game->id) }}" @submit="_isSaving = true">
-                        @csrf
+                {{-- Errors --}}
+                @if ($errors->any())
+                    <div class="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                        <ul class="text-sm text-red-600">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-                        {{-- Hidden inputs --}}
-                        <template x-for="playerId in selectedPlayers" :key="playerId">
-                            <input type="hidden" name="players[]" :value="playerId">
-                        </template>
-                        <input type="hidden" name="formation" :value="selectedFormation">
-                        <input type="hidden" name="mentality" :value="selectedMentality">
-                        <input type="hidden" name="playing_style" :value="selectedPlayingStyle">
-                        <input type="hidden" name="pressing" :value="selectedPressing">
-                        <input type="hidden" name="defensive_line" :value="selectedDefLine">
-                        {{-- Slot assignment hidden inputs --}}
-                        <template x-for="slot in slotAssignments" :key="'sa-' + slot.id">
-                            <input x-show="slot.player" type="hidden" :name="'slot_assignments[' + slot.id + ']'" :value="slot.player?.id">
-                        </template>
-                        {{-- Pitch position hidden inputs --}}
-                        <template x-for="(pos, slotId) in pitchPositions" :key="'pp-' + slotId">
-                            <input type="hidden" :name="'pitch_positions[' + slotId + ']'" :value="pos[0] + ',' + pos[1]">
-                        </template>
+                <form method="POST" action="{{ route('game.lineup.save', $game->id) }}" @submit="_isSaving = true">
+                    @csrf
 
-                        {{-- Top Bar: Formation, Stats, Actions --}}
-                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6 md:p-4 md:bg-slate-50 md:rounded-lg sticky top-0 z-10">
-                            <div class="flex flex-wrap items-center gap-2 md:gap-6">
-                                {{-- Formation Selector --}}
-                                <div class="flex items-center gap-2">
-                                    <label class="text-sm font-medium text-slate-700">{{ __('squad.formation') }}:</label>
-                                    <x-select-input
-                                        x-model="selectedFormation"
-                                        @change="updateAutoLineup()"
-                                        class="font-semibold"
-                                    >
-                                        @foreach($formations as $formation)
-                                            <option value="{{ $formation->value }}">{{ $formation->label() }}</option>
-                                        @endforeach
-                                    </x-select-input>
-                                </div>
+                    {{-- Hidden inputs --}}
+                    <template x-for="playerId in selectedPlayers" :key="playerId">
+                        <input type="hidden" name="players[]" :value="playerId">
+                    </template>
+                    <input type="hidden" name="formation" :value="selectedFormation">
+                    <input type="hidden" name="mentality" :value="selectedMentality">
+                    <input type="hidden" name="playing_style" :value="selectedPlayingStyle">
+                    <input type="hidden" name="pressing" :value="selectedPressing">
+                    <input type="hidden" name="defensive_line" :value="selectedDefLine">
+                    {{-- Slot assignment hidden inputs --}}
+                    <template x-for="slot in slotAssignments" :key="'sa-' + slot.id">
+                        <input x-show="slot.player" type="hidden" :name="'slot_assignments[' + slot.id + ']'" :value="slot.player?.id">
+                    </template>
+                    {{-- Pitch position hidden inputs --}}
+                    <template x-for="(pos, slotId) in pitchPositions" :key="'pp-' + slotId">
+                        <input type="hidden" :name="'pitch_positions[' + slotId + ']'" :value="pos[0] + ',' + pos[1]">
+                    </template>
 
-                                {{-- Mentality Selector --}}
-                                <div class="flex items-center gap-2">
-                                    <label class="text-sm font-medium text-slate-700">{{ __('squad.mentality') }}:</label>
-                                    <x-select-input
-                                        x-model="selectedMentality"
-                                        class="font-semibold"
-                                    >
-                                        @foreach($mentalities as $mentality)
-                                            <option value="{{ $mentality->value }}">{{ $mentality->label() }}</option>
-                                        @endforeach
-                                    </x-select-input>
-                                </div>
-
+                    {{-- Top Bar: Formation, Stats, Actions --}}
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 p-4 ms:p-6 md:p-8 shadow-md bg-white md:bg-slate-50 md:rounded-t-lg sticky top-0 z-10">
+                        <div class="flex flex-wrap items-center gap-2 md:gap-6">
+                            {{-- Formation Selector --}}
+                            <div class="flex items-center gap-2">
+                                <label class="text-sm font-medium text-slate-700">{{ __('squad.formation') }}:</label>
+                                <x-select-input
+                                    x-model="selectedFormation"
+                                    @change="updateAutoLineup()"
+                                    class="font-semibold"
+                                >
+                                    @foreach($formations as $formation)
+                                        <option value="{{ $formation->value }}">{{ $formation->label() }}</option>
+                                    @endforeach
+                                </x-select-input>
                             </div>
 
-                            <div class="flex items-center gap-2 md:gap-3 md:shrink-0 border-t border-slate-200 pt-3 md:border-0 md:pt-0">
-                                <button type="button" @click="clearSelection()" class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-200 rounded transition-colors">
-                                    {{ __('app.clear') }}
-                                </button>
-                                <x-secondary-button type="button" @click="quickSelect()">
-                                    {{ __('squad.auto_select') }}
-                                </x-secondary-button>
-                                <x-primary-button x-bind:disabled="selectedCount !== 11" class="flex-1 md:flex-none justify-center">
-                                    {{ __('app.confirm') }}<span class="md:hidden" x-text="'&nbsp;(' + selectedCount + '/11)'"></span>
-                                </x-primary-button>
+                            {{-- Mentality Selector --}}
+                            <div class="flex items-center gap-2">
+                                <label class="text-sm font-medium text-slate-700">{{ __('squad.mentality') }}:</label>
+                                <x-select-input
+                                    x-model="selectedMentality"
+                                    class="font-semibold"
+                                >
+                                    @foreach($mentalities as $mentality)
+                                        <option value="{{ $mentality->value }}">{{ $mentality->label() }}</option>
+                                    @endforeach
+                                </x-select-input>
                             </div>
+
                         </div>
+
+                        <div class="flex items-center gap-2 md:gap-3 md:shrink-0 border-t border-slate-200 pt-3 md:border-0 md:pt-0">
+                            <button type="button" @click="clearSelection()" class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-200 rounded transition-colors">
+                                {{ __('app.clear') }}
+                            </button>
+                            <x-secondary-button type="button" @click="quickSelect()">
+                                {{ __('squad.auto_select') }}
+                            </x-secondary-button>
+                            <x-primary-button x-bind:disabled="selectedCount !== 11" class="flex-1 md:flex-none justify-center">
+                                {{ __('app.confirm') }}<span class="md:hidden" x-text="'&nbsp;(' + selectedCount + '/11)'"></span>
+                            </x-primary-button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 sm:p-6 md:p-8">
 
                         {{-- Team Instructions Panel --}}
                         <div class="mb-4 border border-slate-200 rounded-lg overflow-hidden" x-data="{ instructionsOpen: false }">

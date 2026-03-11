@@ -20,7 +20,7 @@
 
     &lt;div class="max-w-7xl mx-auto sm:px-6 lg:px-8"&gt;
         &lt;div class="bg-white overflow-hidden shadow-sm sm:rounded-lg"&gt;
-            &lt;div class="p-6 sm:p-8"&gt;
+            &lt;div class="p-4 sm:p-6 md:p-8"&gt;
                 &lt;!-- Page content --&gt;
             &lt;/div&gt;
         &lt;/div&gt;
