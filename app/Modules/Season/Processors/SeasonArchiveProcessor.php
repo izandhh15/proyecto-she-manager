@@ -146,13 +146,13 @@ class SeasonArchiveProcessor implements SeasonProcessor
     }
 
     /**
-     * Capture player season stats for all players with appearances.
+     * Capture player season stats for all rostered players.
      */
     private function capturePlayerStats(Game $game): array
     {
         return GamePlayer::with('player')
             ->where('game_id', $game->id)
-            ->where('appearances', '>', 0)
+            ->whereNotNull('team_id')
             ->get()
             ->map(function ($player) {
                 return [
