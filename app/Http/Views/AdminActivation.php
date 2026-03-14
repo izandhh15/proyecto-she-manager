@@ -28,10 +28,17 @@ class AdminActivation
         }
         $inviteSentCount = $inviteQuery->count();
 
-        // Steps 1+: From activation_events read model, filtered by mode
+        // Cohort approach: scope all funnel steps to users who registered in this period.
+        // This prevents later steps (e.g. game_created) from exceeding earlier steps
+        // when a user registered outside the window but created a game inside it.
+        $cohortSubquery = ActivationEvent::query()
+            ->select('user_id')
+            ->where('event', ActivationEvent::EVENT_REGISTERED)
+            ->when($since, fn ($q) => $q->where('occurred_at', '>=', $since));
+
         $query = ActivationEvent::query()
             ->select('event', DB::raw('COUNT(DISTINCT user_id) as user_count'))
-            ->when($since, fn ($q) => $q->where('occurred_at', '>=', $since))
+            ->whereIn('user_id', $cohortSubquery)
             ->when($mode !== 'all', fn ($q) => $q->where(function ($q) use ($mode) {
                 // User-level events (no game_mode) are included in all tabs
                 $q->where('game_mode', $mode)->orWhereNull('game_mode');
