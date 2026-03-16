@@ -216,6 +216,8 @@ return [
     'processing_actions' => 'Processing...',
     'processing_career_actions' => 'Processing game actions...',
     'processing_career_actions_message' => 'Transfers, contracts, and other actions are being processed.',
+    'simulating_matches' => 'Warm-up...',
+    'simulating_matches_message' => 'The teams are warming up...',
 
     // Live match
     'live_pre_match' => 'Pre-match',
