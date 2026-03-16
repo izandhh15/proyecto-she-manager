@@ -86,6 +86,68 @@
 &lt;/svg&gt;</code></pre>
     </div>
 
+    {{-- Social Media Assets --}}
+    <h3 class="text-lg font-semibold text-text-primary mb-3">Social Media Assets</h3>
+    <p class="text-sm text-text-secondary mb-4">Ready-to-use assets for social media profiles, banners, link previews, and stories. All assets use the wordmark on a dark background with a broadcast studio design language. SVG source files in <code class="text-[10px] bg-surface-700 px-1 py-0.5 rounded-sm text-text-body">/img/social/</code>.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        {{-- Avatar --}}
+        <div class="border border-border-default rounded-xl overflow-hidden">
+            <div class="p-6 flex items-center justify-center bg-surface-900 min-h-[120px]">
+                <img src="/img/social/avatar.svg" alt="VirtuaFC social media avatar" class="w-32 h-32">
+            </div>
+            <div class="border-t border-border-default px-4 py-3 bg-surface-800 flex items-center justify-between">
+                <div>
+                    <div class="text-xs font-medium text-text-primary">Avatar</div>
+                    <div class="text-[10px] text-text-muted">1024 &times; 1024 &middot; SVG</div>
+                </div>
+                <a href="/img/social/avatar.svg" download class="text-[10px] font-medium text-accent-blue hover:text-blue-400 px-2 py-1 bg-accent-blue/10 rounded-sm transition-colors">SVG</a>
+            </div>
+        </div>
+        {{-- OG Card --}}
+        <div class="border border-border-default rounded-xl overflow-hidden">
+            <div class="p-6 flex items-center justify-center bg-surface-900 min-h-[120px]">
+                <img src="/img/social/og-card.svg" alt="VirtuaFC Open Graph card" class="w-full max-w-[320px]">
+            </div>
+            <div class="border-t border-border-default px-4 py-3 bg-surface-800 flex items-center justify-between">
+                <div>
+                    <div class="text-xs font-medium text-text-primary">Open Graph Card</div>
+                    <div class="text-[10px] text-text-muted">1200 &times; 630 &middot; SVG</div>
+                </div>
+                <a href="/img/social/og-card.svg" download class="text-[10px] font-medium text-accent-blue hover:text-blue-400 px-2 py-1 bg-accent-blue/10 rounded-sm transition-colors">SVG</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+        {{-- Banner --}}
+        <div class="border border-border-default rounded-xl overflow-hidden">
+            <div class="p-4 flex items-center justify-center bg-surface-900 min-h-[100px]">
+                <img src="/img/social/banner.svg" alt="VirtuaFC social media banner" class="w-full">
+            </div>
+            <div class="border-t border-border-default px-4 py-3 bg-surface-800 flex items-center justify-between">
+                <div>
+                    <div class="text-xs font-medium text-text-primary">Banner</div>
+                    <div class="text-[10px] text-text-muted">1500 &times; 500 &middot; SVG</div>
+                </div>
+                <a href="/img/social/banner.svg" download class="text-[10px] font-medium text-accent-blue hover:text-blue-400 px-2 py-1 bg-accent-blue/10 rounded-sm transition-colors">SVG</a>
+            </div>
+        </div>
+        {{-- Story --}}
+        <div class="border border-border-default rounded-xl overflow-hidden">
+            <div class="p-4 flex items-center justify-center bg-surface-900 min-h-[100px]">
+                <img src="/img/social/story.svg" alt="VirtuaFC story template" class="h-48">
+            </div>
+            <div class="border-t border-border-default px-4 py-3 bg-surface-800 flex items-center justify-between">
+                <div>
+                    <div class="text-xs font-medium text-text-primary">Story</div>
+                    <div class="text-[10px] text-text-muted">1080 &times; 1920 &middot; SVG</div>
+                </div>
+                <a href="/img/social/story.svg" download class="text-[10px] font-medium text-accent-blue hover:text-blue-400 px-2 py-1 bg-accent-blue/10 rounded-sm transition-colors">SVG</a>
+            </div>
+        </div>
+    </div>
+
     {{-- Brand Anatomy --}}
     <h3 class="text-lg font-semibold text-text-primary mb-3">Brand Anatomy</h3>
     <p class="text-sm text-text-secondary mb-4">The core elements that make up the VirtuaFC visual identity.</p>
