@@ -607,7 +607,7 @@
                                 <span class="text-[10px] text-text-muted ml-auto">{{ $homeFormation }}</span>
                             </div>
                             <div class="space-y-0.5">
-                                @foreach($homeLineupDisplay as $p)
+                                @forelse($homeLineupDisplay as $p)
                                     <div class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg hover:bg-surface-800/50">
                                         <span class="inline-flex items-center justify-center w-6 h-6 text-[10px] -skew-x-12 font-semibold text-white shrink-0
                                             {{ match($p['positionGroup']) {
@@ -622,7 +622,9 @@
                                         <span class="text-xs text-text-body flex-1 truncate">{{ $p['name'] }}</span>
                                         <span class="inline-flex items-center justify-center w-5 h-5 rounded-full text-[9px] font-semibold bg-surface-700 text-text-secondary shrink-0">{{ $p['overallScore'] }}</span>
                                     </div>
-                                @endforeach
+                                @empty
+                                    <p class="text-xs text-text-muted italic px-3 py-3">{{ __('game.lineup_unknown') }}</p>
+                                @endforelse
                             </div>
                         </div>
 
@@ -634,7 +636,7 @@
                                 <span class="text-[10px] text-text-muted ml-auto">{{ $awayFormation }}</span>
                             </div>
                             <div class="space-y-0.5">
-                                @foreach($awayLineupDisplay as $p)
+                                @forelse($awayLineupDisplay as $p)
                                     <div class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg hover:bg-surface-800/50">
                                         <span class="inline-flex items-center justify-center w-6 h-6 text-[10px] -skew-x-12 font-semibold text-white shrink-0
                                             {{ match($p['positionGroup']) {
@@ -649,7 +651,9 @@
                                         <span class="text-xs text-text-body flex-1 truncate">{{ $p['name'] }}</span>
                                         <span class="inline-flex items-center justify-center w-5 h-5 rounded-full text-[9px] font-semibold bg-surface-700 text-text-secondary shrink-0">{{ $p['overallScore'] }}</span>
                                     </div>
-                                @endforeach
+                                @empty
+                                    <p class="text-xs text-text-muted italic px-3 py-3">{{ __('game.lineup_unknown') }}</p>
+                                @endforelse
                             </div>
                         </div>
                     </div>

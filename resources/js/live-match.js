@@ -165,6 +165,11 @@ export default function liveMatch(config) {
                 this._needsPenalties = this.preloadedExtraTimeData.needsPenalties || false;
             }
 
+            // When no match events exist but there's a final score (e.g. opponent
+            // has no squad), generate synthetic goal events so the live simulation
+            // reveals goals progressively instead of jumping to the final score.
+            this.events = this.synthesizeGoalsIfNeeded(this.events);
+
             // Brief delay before kickoff
             this._kickoffTimeout = setTimeout(() => {
                 this._kickoffTimeout = null;
@@ -238,6 +243,63 @@ export default function liveMatch(config) {
             }
 
             this._animFrame = requestAnimationFrame(this.tick.bind(this));
+        },
+
+        synthesizeGoalsIfNeeded(events) {
+            // Count goals already present in events
+            let existingHomeGoals = 0;
+            let existingAwayGoals = 0;
+            for (const e of events) {
+                if (e.type === 'goal') {
+                    if (e.teamId === this.homeTeamId) existingHomeGoals++;
+                    else existingAwayGoals++;
+                } else if (e.type === 'own_goal') {
+                    if (e.teamId === this.awayTeamId) existingHomeGoals++;
+                    else existingAwayGoals++;
+                }
+            }
+
+            const missingHome = this.finalHomeScore - existingHomeGoals;
+            const missingAway = this.finalAwayScore - existingAwayGoals;
+
+            if (missingHome <= 0 && missingAway <= 0) {
+                return events;
+            }
+
+            // Generate synthetic goals spread across the match
+            const synthetic = [];
+            const totalMissing = Math.max(0, missingHome) + Math.max(0, missingAway);
+            // Distribute goals between minute 8 and 88 with some randomness
+            const slotSize = 80 / (totalMissing + 1);
+
+            let slot = 0;
+            for (let i = 0; i < Math.max(0, missingHome); i++) {
+                slot++;
+                const minute = Math.round(8 + slotSize * slot + (Math.random() * slotSize * 0.4 - slotSize * 0.2));
+                synthetic.push({
+                    minute: Math.max(1, Math.min(90, minute)),
+                    type: 'goal',
+                    playerName: this.homeTeamName,
+                    teamId: this.homeTeamId,
+                    gamePlayerId: null,
+                    metadata: {},
+                });
+            }
+            for (let i = 0; i < Math.max(0, missingAway); i++) {
+                slot++;
+                const minute = Math.round(8 + slotSize * slot + (Math.random() * slotSize * 0.4 - slotSize * 0.2));
+                synthetic.push({
+                    minute: Math.max(1, Math.min(90, minute)),
+                    type: 'goal',
+                    playerName: this.awayTeamName,
+                    teamId: this.awayTeamId,
+                    gamePlayerId: null,
+                    metadata: {},
+                });
+            }
+
+            // Merge with existing events and sort by minute
+            return [...events, ...synthetic].sort((a, b) => a.minute - b.minute);
         },
 
         processEvents() {
@@ -1305,6 +1367,9 @@ export default function liveMatch(config) {
                     // Update the final score
                     this.finalHomeScore = result.newScore.home;
                     this.finalAwayScore = result.newScore.away;
+
+                    // Synthesize missing goal events (e.g. opponent has no squad)
+                    this.events = this.synthesizeGoalsIfNeeded(this.events);
 
                     // Recalculate current displayed score
                     this.recalculateScore();

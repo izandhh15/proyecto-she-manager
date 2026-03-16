@@ -247,6 +247,7 @@ return [
     'live_tab_stats' => 'Stats',
     'live_tab_lineups' => 'Lineups',
     'live_tab_results' => 'Results',
+    'lineup_unknown' => 'No lineup known',
     'live_stat_goals' => 'Goals',
     'live_stat_cards' => 'Cards',
     'live_stat_injuries' => 'Injuries',
