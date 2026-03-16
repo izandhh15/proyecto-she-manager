@@ -19,7 +19,7 @@ class EnsureGameOwnership
                 return Game::where('id', $gameId)->value('user_id');
             });
 
-            if (! $ownerId || $ownerId !== $request->user()->id) {
+            if (! $ownerId || (int) $ownerId !== (int) $request->user()->id) {
                 abort(403);
             }
         }
