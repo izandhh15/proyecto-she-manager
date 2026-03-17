@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Player;
+use App\Support\ExternalData;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
@@ -15,7 +16,8 @@ class PlayerFactory extends Factory
     {
         return [
             'id' => Str::uuid()->toString(),
-            'transfermarkt_id' => 'gen-' . Str::uuid()->toString(),
+            'external_source' => ExternalData::defaultSource(),
+            'external_id' => 'gen-' . Str::uuid()->toString(),
             'name' => $this->faker->name(),
             'date_of_birth' => $this->faker->dateTimeBetween('-35 years', '-18 years'),
             'nationality' => ['ESP'],

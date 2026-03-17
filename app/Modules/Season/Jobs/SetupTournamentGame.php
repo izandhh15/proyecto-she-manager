@@ -15,6 +15,7 @@ use Carbon\Carbon;
 use App\Models\GamePlayer;
 use App\Models\GameStanding;
 use App\Models\Player;
+use App\Support\ExternalData;
 use App\Models\Team;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -194,16 +195,17 @@ class SetupTournamentGame implements ShouldQueue
         }
 
         $basePath = base_path('data/2025/WC2026/teams');
-        $allPlayers = Player::all()->keyBy('transfermarkt_id');
+        $allPlayers = Player::all()->keyBy('external_id');
         $playerRows = [];
 
-        // Only process teams that have a transfermarkt_id (i.e., have JSON roster files)
+        // Only process teams that have an external_id (i.e., have JSON roster files)
         $teamsWithRosters = collect($teamMapping)->filter(
-            fn ($data) => $data['transfermarkt_id'] !== null
+            fn ($data) => ExternalData::mappingExternalId($data) !== null
         );
 
         foreach ($teamsWithRosters as $fifaCode => $teamData) {
-            $filePath = "{$basePath}/{$teamData['transfermarkt_id']}.json";
+            $externalId = ExternalData::mappingExternalId($teamData);
+            $filePath = "{$basePath}/{$externalId}.json";
             if (!file_exists($filePath)) {
                 continue;
             }
@@ -219,12 +221,12 @@ class SetupTournamentGame implements ShouldQueue
             }
 
             foreach ($data['players'] ?? [] as $playerData) {
-                $transfermarktId = $playerData['id'] ?? null;
-                if (!$transfermarktId) {
+                $externalId = ExternalData::playerExternalId($playerData);
+                if (!$externalId) {
                     continue;
                 }
 
-                $player = $allPlayers->get($transfermarktId);
+                $player = $allPlayers->get($externalId);
                 if (!$player) {
                     continue;
                 }

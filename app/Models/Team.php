@@ -11,7 +11,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
  * @property string $id
- * @property int|null $transfermarkt_id
+ * @property string|null $external_source
+ * @property string|null $external_id
  * @property string $name
  * @property string $country
  * @property string|null $image
@@ -34,7 +35,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereStadiumName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereStadiumSeats($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereTransfermarktId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereExternalId($value)
  * @mixin \Eloquent
  */
 class Team extends Model
@@ -44,7 +45,8 @@ class Team extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'transfermarkt_id',
+        'external_source',
+        'external_id',
         'type',
         'name',
         'country',
@@ -111,14 +113,21 @@ class Team extends Model
 
         $originalUrl = $this->attributes['image'] ?? null;
 
-        if ($this->transfermarkt_id) {
-            $localPath = "crests/{$this->transfermarkt_id}.png";
-            if (file_exists(public_path($localPath))) {
-                return Storage::disk('assets')->url($localPath);
+        if ($this->external_id) {
+            foreach (['png', 'svg'] as $extension) {
+                $localPath = "crests/{$this->external_id}.{$extension}";
+                if (file_exists(public_path($localPath))) {
+                    return Storage::disk('assets')->url($localPath);
+                }
             }
         }
 
         return $originalUrl;
+    }
+
+    public function getTransfermarktIdAttribute(): ?string
+    {
+        return $this->attributes['external_id'] ?? null;
     }
 
     public function getGoalDifferenceAttribute(): int

@@ -3,11 +3,13 @@
 namespace Tests\Unit;
 
 use App\Models\Competition;
+use App\Models\CompetitionEntry;
 use App\Models\Game;
 use App\Models\GameStanding;
 use App\Models\SimulatedSeason;
 use App\Models\Team;
 use App\Models\User;
+use App\Modules\Competition\Playoffs\ESP2PlayoffGenerator;
 use App\Modules\Competition\Promotions\ConfigDrivenPromotionRule;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -136,6 +138,75 @@ class PromotionRelegationValidationTest extends TestCase
     // getRelegatedTeams validation
     // ──────────────────────────────────────────────────
 
+    public function test_direct_promotion_skips_blocked_reserve_team(): void
+    {
+        $parent = Team::factory()->create();
+        $reserve = Team::factory()->create(['parent_team_id' => $parent->id]);
+        $eligible = Team::factory()->create();
+
+        CompetitionEntry::create([
+            'game_id' => $this->game->id,
+            'competition_id' => 'ESP1',
+            'team_id' => $parent->id,
+            'entry_round' => 1,
+        ]);
+
+        $this->createStanding('ESP2', $reserve->id, 1);
+        $this->createStanding('ESP2', $eligible->id, 2);
+
+        $rule = new ConfigDrivenPromotionRule(
+            topDivision: 'ESP1',
+            bottomDivision: 'ESP2',
+            relegatedPositions: [1],
+            directPromotionPositions: [1],
+        );
+
+        $promoted = $rule->getPromotedTeams($this->game);
+
+        $this->assertCount(1, $promoted);
+        $this->assertSame($eligible->id, $promoted[0]['teamId']);
+        $this->assertSame(2, $promoted[0]['position']);
+    }
+
+    public function test_playoff_generator_skips_blocked_reserve_team_and_slides_next_team_in(): void
+    {
+        $parent = Team::factory()->create();
+        $directPromotionTeam = Team::factory()->create();
+        $reserve = Team::factory()->create(['parent_team_id' => $parent->id]);
+        $third = Team::factory()->create();
+        $fourth = Team::factory()->create();
+        $fifth = Team::factory()->create();
+        $sixth = Team::factory()->create();
+
+        CompetitionEntry::create([
+            'game_id' => $this->game->id,
+            'competition_id' => 'ESP1',
+            'team_id' => $parent->id,
+            'entry_round' => 1,
+        ]);
+
+        $this->createStanding('ESP2', $directPromotionTeam->id, 1);
+        $this->createStanding('ESP2', $reserve->id, 2);
+        $this->createStanding('ESP2', $third->id, 3);
+        $this->createStanding('ESP2', $fourth->id, 4);
+        $this->createStanding('ESP2', $fifth->id, 5);
+        $this->createStanding('ESP2', $sixth->id, 6);
+
+        $generator = new ESP2PlayoffGenerator(
+            competitionId: 'ESP2',
+            qualifyingPositions: [2, 3, 4, 5],
+            directPromotionPositions: [1],
+            triggerMatchday: 26,
+        );
+
+        $matchups = $generator->generateMatchups($this->game, 1);
+
+        $this->assertSame([
+            [$sixth->id, $third->id],
+            [$fifth->id, $fourth->id],
+        ], $matchups);
+    }
+
     public function test_relegated_teams_returns_expected_count(): void
     {
         $this->createStandings('ESP1', 20);
@@ -197,5 +268,22 @@ class PromotionRelegationValidationTest extends TestCase
         $this->assertEquals($teams[17], $relegated[0]['teamId']);
         $this->assertEquals($teams[18], $relegated[1]['teamId']);
         $this->assertEquals($teams[19], $relegated[2]['teamId']);
+    }
+
+    private function createStanding(string $competitionId, string $teamId, int $position): void
+    {
+        GameStanding::create([
+            'game_id' => $this->game->id,
+            'competition_id' => $competitionId,
+            'team_id' => $teamId,
+            'position' => $position,
+            'played' => 26,
+            'won' => max(0, 20 - $position),
+            'drawn' => 5,
+            'lost' => $position,
+            'goals_for' => max(0, 50 - $position),
+            'goals_against' => 20 + $position,
+            'points' => (max(0, 20 - $position) * 3) + 5,
+        ]);
     }
 }

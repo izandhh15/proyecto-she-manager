@@ -11,7 +11,7 @@ class FetchTeamCrests extends Command
     protected $signature = 'app:fetch-team-crests
                             {--force : Re-download existing crests}';
 
-    protected $description = 'Download team crests locally from Transfermarkt CDN';
+    protected $description = 'Download team crests locally from the stored external source image URLs';
 
     public function handle(): int
     {
@@ -21,27 +21,30 @@ class FetchTeamCrests extends Command
             mkdir($crestsDir, 0755, true);
         }
 
-        $transfermarktIds = DB::table('teams')
-            ->whereNotNull('transfermarkt_id')
+        $teams = DB::table('teams')
+            ->whereNotNull('external_id')
+            ->whereNotNull('image')
+            ->select('external_id', 'image')
             ->distinct()
-            ->pluck('transfermarkt_id');
+            ->get();
 
-        if ($transfermarktIds->isEmpty()) {
-            $this->warn('No teams with transfermarkt_id found. Run app:seed-reference-data first.');
+        if ($teams->isEmpty()) {
+            $this->warn('No teams with external_id and image found. Run app:seed-reference-data first.');
 
             return self::FAILURE;
         }
 
-        $this->info("Downloading crests for {$transfermarktIds->count()} teams...");
+        $this->info("Downloading crests for {$teams->count()} teams...");
 
-        $bar = $this->output->createProgressBar($transfermarktIds->count());
+        $bar = $this->output->createProgressBar($teams->count());
         $bar->start();
 
         $downloaded = 0;
         $skipped = 0;
         $failed = 0;
 
-        foreach ($transfermarktIds as $id) {
+        foreach ($teams as $team) {
+            $id = $team->external_id;
             $filePath = "{$crestsDir}/{$id}.png";
 
             if (file_exists($filePath) && !$this->option('force')) {
@@ -51,7 +54,7 @@ class FetchTeamCrests extends Command
                 continue;
             }
 
-            $url = "https://tmssl.akamaized.net/images/wappen/big/{$id}.png";
+            $url = $team->image;
 
             try {
                 $response = Http::timeout(10)->get($url);

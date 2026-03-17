@@ -24,9 +24,9 @@ return [
 
     // Authentication
     'log_out' => 'Log Out',
-    'new_game' => 'New game',
+    'new_game' => 'New career',
     'all_teams' => 'All Teams',
-    'load_game' => 'Load game',
+    'load_game' => 'Your careers',
 
     // Common labels
     'name' => 'Name',

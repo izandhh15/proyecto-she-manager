@@ -22,13 +22,13 @@ return [
         'tiers' => [
             1 => [
                 'competition' => 'ESP1',
-                'teams' => 20,
+                'teams' => 16,
                 'handler' => 'league',
                 'config_class' => \App\Modules\Competition\Configs\LaLigaConfig::class,
             ],
             2 => [
                 'competition' => 'ESP2',
-                'teams' => 22,
+                'teams' => 14,
                 'handler' => 'league_with_playoff',
                 'config_class' => \App\Modules\Competition\Configs\LaLiga2Config::class,
             ],
@@ -49,31 +49,37 @@ return [
             'cup' => 'ESPCUP',
             'league' => 'ESP1',
             'cup_final_round' => 7,
-            'cup_entry_round' => 3,
+            'cup_entry_round' => 4,
         ],
 
         'promotions' => [
             [
                 'top_division' => 'ESP1',
                 'bottom_division' => 'ESP2',
-                'relegated_positions' => [18, 19, 20],
-                'direct_promotion_positions' => [1, 2],
-                'playoff_positions' => [3, 4, 5, 6],
+                'relegated_positions' => [15, 16],
+                'direct_promotion_positions' => [1],
+                'playoff_positions' => [2, 3, 4, 5],
                 'playoff_generator' => \App\Modules\Competition\Playoffs\ESP2PlayoffGenerator::class,
             ],
         ],
 
         // Reserve teams that cannot be promoted to the same division as their parent.
-        // Maps child transfermarkt_id => parent transfermarkt_id.
+        // Maps child external_id => parent external_id.
         'reserve_teams' => [
             9899 => 681,   // Real Sociedad B → Real Sociedad
         ],
 
+        'reserve_team_names' => [
+            'FC Barcelona B' => 'FC Barcelona',
+            'Atlético de Madrid B' => 'Atlético de Madrid',
+            'Real Madrid CF B' => 'Real Madrid CF',
+            'CD Tenerife Femenino B' => 'CD Tenerife Femenino',
+        ],
+
         'continental_slots' => [
             'ESP1' => [
-                'UCL' => [1, 2, 3, 4, 5],
-                'UEL' => [6],
-                'UECL' => [7],
+                'UCL' => [1, 2, 3],
+                'UEL' => [4],
             ],
         ],
 
@@ -132,7 +138,7 @@ return [
         'tiers' => [
             1 => [
                 'competition' => 'ENG1',
-                'teams' => 20,
+                'teams' => 12,
                 'handler' => 'league',
                 'config_class' => \App\Modules\Competition\Configs\PremierLeagueConfig::class,
             ],
@@ -143,9 +149,8 @@ return [
 
         'continental_slots' => [
             'ENG1' => [
-                'UCL' => [1, 2, 3, 4, 5],
-                'UEL' => [6],
-                'UECL' => [7],
+                'UCL' => [1, 2, 3],
+                'UEL' => [4],
             ],
         ],
 
@@ -184,7 +189,7 @@ return [
         'tiers' => [
             1 => [
                 'competition' => 'DEU1',
-                'teams' => 18,
+                'teams' => 14,
                 'handler' => 'league',
                 'config_class' => \App\Modules\Competition\Configs\BundesligaConfig::class,
             ],
@@ -195,9 +200,8 @@ return [
 
         'continental_slots' => [
             'DEU1' => [
-                'UCL' => [1, 2, 3, 4],
-                'UEL' => [5, 6],
-                'UECL' => [7],
+                'UCL' => [1, 2, 3],
+                'UEL' => [4],
             ],
         ],
 
@@ -236,7 +240,7 @@ return [
         'tiers' => [
             1 => [
                 'competition' => 'ITA1',
-                'teams' => 20,
+                'teams' => 12,
                 'handler' => 'league',
                 'config_class' => \App\Modules\Competition\Configs\SerieAConfig::class,
             ],
@@ -247,9 +251,8 @@ return [
 
         'continental_slots' => [
             'ITA1' => [
-                'UCL' => [1, 2, 3, 4, 5],
-                'UEL' => [6],
-                'UECL' => [7],
+                'UCL' => [1, 2],
+                'UEL' => [3],
             ],
         ],
 
@@ -288,7 +291,7 @@ return [
         'tiers' => [
             1 => [
                 'competition' => 'FRA1',
-                'teams' => 18,
+                'teams' => 12,
                 'handler' => 'league',
                 'config_class' => \App\Modules\Competition\Configs\Ligue1Config::class,
             ],
@@ -301,7 +304,6 @@ return [
             'FRA1' => [
                 'UCL' => [1, 2, 3],
                 'UEL' => [4],
-                'UECL' => [5],
             ],
         ],
 

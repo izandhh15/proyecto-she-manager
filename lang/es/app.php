@@ -24,9 +24,9 @@ return [
 
     // Authentication
     'log_out' => 'Cerrar Sesión',
-    'new_game' => 'Nueva partida',
+    'new_game' => 'Nueva carrera',
     'all_teams' => 'Todas las selecciones',
-    'load_game' => 'Cargar partida',
+    'load_game' => 'Tus carreras',
 
     // Common labels
     'name' => 'Nombre',

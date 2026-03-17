@@ -12,6 +12,7 @@ use App\Modules\Player\Services\PlayerDevelopmentService;
 use App\Modules\Player\Services\PlayerTierService;
 use App\Modules\Season\Processors\LeagueFixtureProcessor;
 use App\Modules\Season\Processors\StandingsResetProcessor;
+use App\Support\ExternalData;
 use App\Support\Money;
 use App\Models\ClubProfile;
 use App\Models\Competition;
@@ -68,8 +69,8 @@ class SetupNewGame implements ShouldQueue
             $this->currentDate = $game->current_date ?? Carbon::parse("{$this->season}-08-15");
 
             // Pre-load all reference data (2 queries instead of ~4,600)
-            $allTeams = Team::whereNotNull('transfermarkt_id')->get()->keyBy('transfermarkt_id');
-            $allPlayers = Player::all()->keyBy('transfermarkt_id');
+            $allTeams = Team::whereNotNull('external_id')->get()->keyBy('external_id');
+            $allPlayers = Player::all()->keyBy('external_id');
 
             // Step 1: Copy competition team rosters into per-game table
             $this->copyCompetitionTeamsToGame();
@@ -243,12 +244,12 @@ class SetupNewGame implements ShouldQueue
 
             $drawTeams = [];
             foreach ($clubs as $club) {
-                $transfermarktId = $club['id'] ?? null;
-                if (!$transfermarktId) {
+                $externalId = ExternalData::clubExternalId($club);
+                if (!$externalId) {
                     continue;
                 }
 
-                $team = $allTeams->get($transfermarktId);
+                $team = $allTeams->get($externalId);
                 if (!$team) {
                     continue;
                 }
@@ -295,12 +296,12 @@ class SetupNewGame implements ShouldQueue
             $minimumWage = $contractService->getMinimumWageForCompetition($competitionId);
 
             foreach ($clubs as $club) {
-                $transfermarktId = $club['id'] ?? null;
-                if (!$transfermarktId) {
+                $externalId = ExternalData::clubExternalId($club);
+                if (!$externalId) {
                     continue;
                 }
 
-                $team = $allTeams->get($transfermarktId);
+                $team = $allTeams->get($externalId);
                 if (!$team) {
                     continue;
                 }
@@ -458,12 +459,12 @@ class SetupNewGame implements ShouldQueue
         $playerRows = [];
 
         foreach ($clubs as $club) {
-            $transfermarktId = $club['transfermarktId'] ?? $this->extractTransfermarktIdFromImage($club['image'] ?? '');
-            if (!$transfermarktId) {
+            $externalId = ExternalData::clubExternalId($club);
+            if (!$externalId) {
                 continue;
             }
 
-            $team = $allTeams->get($transfermarktId);
+            $team = $allTeams->get($externalId);
             if (!$team) {
                 continue;
             }
@@ -491,7 +492,7 @@ class SetupNewGame implements ShouldQueue
         PlayerDevelopmentService $developmentService,
         Carbon $currentDate,
     ): ?array {
-        $player = $allPlayers->get($playerData['id']);
+        $player = $allPlayers->get(ExternalData::playerExternalId($playerData));
         if (!$player) {
             return null;
         }
@@ -558,19 +559,11 @@ class SetupNewGame implements ShouldQueue
 
             $clubs[] = [
                 'image' => $data['image'] ?? '',
-                'transfermarktId' => $this->extractTransfermarktIdFromImage($data['image'] ?? ''),
+                'externalId' => ExternalData::extractIdFromImage($data['image'] ?? ''),
                 'players' => $data['players'] ?? [],
             ];
         }
 
         return $clubs;
-    }
-
-    private function extractTransfermarktIdFromImage(string $imageUrl): ?string
-    {
-        if (preg_match('/\/(\d+)\.png$/', $imageUrl, $matches)) {
-            return $matches[1];
-        }
-        return null;
     }
 }

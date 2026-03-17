@@ -9,7 +9,10 @@
         {{-- Page Title --}}
         <div class="mt-6 mb-6">
             <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-                <h2 class="font-heading text-2xl lg:text-3xl font-bold uppercase tracking-wide text-text-primary">{{ __($competition->name) }}</h2>
+                <div class="flex items-center gap-3">
+                    <x-competition-logo :competition="$competition" :fallback="false" class="h-10 w-auto max-w-36 shrink-0" />
+                    <h2 class="font-heading text-2xl lg:text-3xl font-bold uppercase tracking-wide text-text-primary">{{ __($competition->name) }}</h2>
+                </div>
                 @if($cupStatus === 'champion')
                     <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-gold/20 text-accent-gold">{{ __('cup.champion') }}</span>
                 @elseif($cupStatus === 'eliminated')

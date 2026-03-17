@@ -49,6 +49,7 @@ return [
     // Knockout round names
     'first_round' => 'First Round',
     'second_round' => 'Second Round',
+    'third_round' => 'Third Round',
     'round_of_32' => 'Round of 32',
     'round_of_16' => 'Round of 16',
     'quarter_finals' => 'Quarter-Finals',

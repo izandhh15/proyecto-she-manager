@@ -5,6 +5,7 @@ namespace App\Http\Views;
 use App\Http\Actions\SaveSquadSelection;
 use App\Models\Game;
 use App\Models\Player;
+use App\Support\ExternalData;
 use App\Support\PositionMapper;
 
 class ShowSquadSelection
@@ -28,16 +29,16 @@ class ShowSquadSelection
         // If the roster has 26 or fewer players, auto-select all and skip the UI
         $totalCandidates = array_sum(array_map('count', $candidates));
         if ($totalCandidates <= 26) {
-            $allTmIds = [];
-            $positionByTmId = [];
+            $allExternalIds = [];
+            $positionByExternalId = [];
             foreach ($candidates as $group) {
                 foreach ($group as $candidate) {
-                    $allTmIds[] = $candidate['transfermarkt_id'];
-                    $positionByTmId[$candidate['transfermarkt_id']] = $candidate['position'];
+                    $allExternalIds[] = $candidate['external_id'];
+                    $positionByExternalId[$candidate['external_id']] = $candidate['position'];
                 }
             }
 
-            SaveSquadSelection::createTournamentGamePlayers($game->id, $game->team_id, $allTmIds, $positionByTmId);
+            SaveSquadSelection::createTournamentGamePlayers($game->id, $game->team_id, $allExternalIds, $positionByExternalId);
             $game->completeNewSeasonSetup();
 
             return redirect()->route('show-game', $game->id)
@@ -52,8 +53,8 @@ class ShowSquadSelection
 
     private function loadCandidates(Game $game): array
     {
-        $transfermarktId = $game->team->transfermarkt_id;
-        $jsonPath = base_path("data/2025/WC2026/teams/{$transfermarktId}.json");
+        $externalId = $game->team->external_id;
+        $jsonPath = base_path("data/2025/WC2026/teams/{$externalId}.json");
 
         if (!file_exists($jsonPath)) {
             return ['goalkeepers' => [], 'defenders' => [], 'midfielders' => [], 'forwards' => []];
@@ -62,19 +63,21 @@ class ShowSquadSelection
         $data = json_decode(file_get_contents($jsonPath), true);
         $jsonPlayers = $data['players'] ?? [];
 
-        // Get transfermarkt IDs and look up Player models for abilities
-        $tmIds = array_column($jsonPlayers, 'id');
-        $playerModels = Player::whereIn('transfermarkt_id', $tmIds)->get()->keyBy('transfermarkt_id');
+        $externalIds = array_values(array_filter(array_map(
+            fn (array $player) => ExternalData::playerExternalId($player),
+            $jsonPlayers
+        )));
+        $playerModels = Player::whereIn('external_id', $externalIds)->get()->keyBy('external_id');
 
         $groups = ['goalkeepers' => [], 'defenders' => [], 'midfielders' => [], 'forwards' => []];
 
         foreach ($jsonPlayers as $jp) {
-            $tmId = $jp['id'] ?? null;
-            if (!$tmId) {
+            $externalId = ExternalData::playerExternalId($jp);
+            if (!$externalId) {
                 continue;
             }
 
-            $player = $playerModels->get($tmId);
+            $player = $playerModels->get($externalId);
             if (!$player) {
                 continue;
             }
@@ -87,7 +90,7 @@ class ShowSquadSelection
             $overall = (int) round(($technical + $physical) / 2);
 
             $candidate = [
-                'transfermarkt_id' => (string) $tmId,
+                'external_id' => $externalId,
                 'player_id' => $player->id,
                 'name' => $player->name,
                 'position' => $position,

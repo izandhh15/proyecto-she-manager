@@ -3,6 +3,9 @@
         {{-- Page Title --}}
         <div class="mt-6 mb-6">
             <h2 class="font-heading text-2xl lg:text-3xl font-bold uppercase tracking-wide text-text-primary">{{ __('app.new_game') }}</h2>
+            <p class="mt-2 max-w-3xl text-sm md:text-base text-text-secondary">
+                Construye tu proyecto en el fútbol femenino: elige club o selección, define una identidad de juego y compite temporada a temporada.
+            </p>
         </div>
 
         @php
@@ -84,6 +87,10 @@
                     </div>
                 @endif
 
+                <div class="rounded-xl border border-border-default bg-surface-800/80 px-4 py-3 text-sm text-text-secondary">
+                    Esta primera versión ya presenta la experiencia como manager de fútbol femenino. La simulación y la estructura de competiciones se mantienen mientras adaptamos datos y plantillas específicas.
+                </div>
+
                 {{-- ===================== CAREER MODE: Club teams ===================== --}}
                 <div x-show="mode === 'career'" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
                     {{-- Competition tabs --}}
@@ -96,7 +103,7 @@
                                         ? 'bg-accent-red text-white'
                                         : 'bg-surface-700 text-text-secondary hover:text-text-body hover:bg-surface-600'"
                                     class="gap-2 shrink-0">
-                                    <img class="w-5 h-4 rounded-sm shadow-sm" src="{{ Storage::disk('assets')->url('flags/' . $competition->flag . '.svg') }}" alt="">
+                                    <x-competition-logo :competition="$competition" class="h-4 w-auto max-w-12 shrink-0" />
                                     <span>{{ __($competition->name) }}</span>
                                 </x-pill-button>
                             @endforeach

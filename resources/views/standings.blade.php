@@ -11,7 +11,10 @@
 
     <div class="max-w-7xl mx-auto px-4 pb-8">
         <div class="mt-6 mb-6">
-            <h2 class="font-heading text-2xl lg:text-3xl font-bold uppercase tracking-wide text-text-primary">{{ __($competition->name) }}</h2>
+            <div class="flex items-center gap-3">
+                <x-competition-logo :competition="$competition" :fallback="false" class="h-10 w-auto max-w-36 shrink-0" />
+                <h2 class="font-heading text-2xl lg:text-3xl font-bold uppercase tracking-wide text-text-primary">{{ __($competition->name) }}</h2>
+            </div>
         </div>
 
         @if($hasPlayoff)

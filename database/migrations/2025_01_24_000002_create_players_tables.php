@@ -22,7 +22,7 @@ return new class extends Migration
         // Players (static biographical data + base abilities)
         Schema::create('players', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('transfermarkt_id')->unique();
+            $table->string('transfermarkt_id')->nullable()->unique();
             $table->string('name');
             $table->date('date_of_birth')->nullable();
             $table->json('nationality')->nullable(); // Array of countries

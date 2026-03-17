@@ -8,9 +8,9 @@
 <img
     src="{{ $team->image }}"
     style="height: auto; aspect-ratio: 4/3; border-radius: 15%;"
-    {{ $attributes->merge(['alt' => $team->name]) }}>
+    {{ $attributes->class('object-cover object-center')->merge(['alt' => $team->name, 'loading' => 'lazy', 'decoding' => 'async']) }}>
 @else
 <img
     src="{{ $team->image }}"
-    {{ $attributes->merge(['alt' => $team->name]) }}>
+    {{ $attributes->class('object-contain object-center')->merge(['alt' => $team->name, 'loading' => 'lazy', 'decoding' => 'async']) }}>
 @endif

@@ -624,7 +624,7 @@ class FrontendSmokeTest extends TestCase
 
         $tournamentTeam = Team::factory()->create([
             'name' => 'Spain',
-            'transfermarkt_id' => 'spain',
+            'external_id' => 'spain',
         ]);
 
         $tournamentGame = Game::factory()->create([

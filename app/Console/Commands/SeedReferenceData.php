@@ -6,6 +6,7 @@ use App\Modules\Competition\Services\CountryConfig;
 use App\Modules\Season\Services\GamePlayerTemplateService;
 use App\Modules\Player\Services\PlayerValuationService;
 use App\Models\User;
+use App\Support\ExternalData;
 use App\Support\Money;
 use App\Support\TeamColors;
 use Carbon\Carbon;
@@ -226,19 +227,28 @@ class SeedReferenceData extends Command
     private function linkReserveTeams(array $config): void
     {
         $reserveTeams = $config['reserve_teams'] ?? [];
-        if (empty($reserveTeams)) {
-            return;
-        }
-
-        foreach ($reserveTeams as $childTransfermarktId => $parentTransfermarktId) {
-            $child = DB::table('teams')->where('transfermarkt_id', $childTransfermarktId)->first();
-            $parent = DB::table('teams')->where('transfermarkt_id', $parentTransfermarktId)->first();
+        foreach ($reserveTeams as $childExternalId => $parentExternalId) {
+            $child = DB::table('teams')->where('external_id', (string) $childExternalId)->first();
+            $parent = DB::table('teams')->where('external_id', (string) $parentExternalId)->first();
 
             if ($child && $parent) {
                 DB::table('teams')->where('id', $child->id)->update([
                     'parent_team_id' => $parent->id,
                 ]);
-                $this->line("  Linked reserve team: {$child->name} → {$parent->name}");
+                $this->line("  Linked reserve team: {$child->name} -> {$parent->name}");
+            }
+        }
+
+        $reserveTeamNames = $config['reserve_team_names'] ?? [];
+        foreach ($reserveTeamNames as $childName => $parentName) {
+            $child = DB::table('teams')->where('name', $childName)->first();
+            $parent = DB::table('teams')->where('name', $parentName)->first();
+
+            if ($child && $parent) {
+                DB::table('teams')->where('id', $child->id)->update([
+                    'parent_team_id' => $parent->id,
+                ]);
+                $this->line("  Linked reserve team: {$child->name} -> {$parent->name}");
             }
         }
     }
@@ -374,7 +384,7 @@ class SeedReferenceData extends Command
 
     /**
      * Seed a player pool competition from individual team JSON files.
-     * Each file is named {transfermarkt_id}.json and contains {id, players}.
+     * Each file is named {external_id}.json and contains {id, players}.
      * Teams must already exist from their league seeding.
      */
     private function seedTeamPoolCompetition(string $basePath, string $code, int $tier, string $handler, string $country, string $flag, string $role, ?string $configName = null): void
@@ -383,10 +393,10 @@ class SeedReferenceData extends Command
 
         $this->seedCompetitionRecord($code, ['name' => $configName ?? $code, 'seasonID' => $season], $tier, 'league', $handler, $country, $flag, $role);
 
-        // Get existing teams by transfermarkt_id
-        $teamsByTransfermarktId = DB::table('teams')
-            ->whereNotNull('transfermarkt_id')
-            ->pluck('id', 'transfermarkt_id')
+        // Get existing teams by external_id
+        $teamsByExternalId = DB::table('teams')
+            ->whereNotNull('external_id')
+            ->pluck('id', 'external_id')
             ->toArray();
 
         $teamIdMap = [];
@@ -394,14 +404,14 @@ class SeedReferenceData extends Command
 
         foreach (glob("{$basePath}/*.json") as $filePath) {
             $data = $this->loadJson($filePath);
-            $transfermarktId = $this->extractTransfermarktIdFromImage($data['image'] ?? '');
+            $externalId = ExternalData::extractIdFromImage($data['image'] ?? '');
 
-            if (!$transfermarktId) {
+            if (!$externalId) {
                 continue;
             }
 
             // Find or create team
-            $teamId = $teamsByTransfermarktId[$transfermarktId] ?? null;
+            $teamId = $teamsByExternalId[$externalId] ?? null;
 
             // Use per-team country from JSON if available, fall back to pool country
             $teamCountry = $data['country'] ?? $country;
@@ -410,8 +420,9 @@ class SeedReferenceData extends Command
                 $teamId = Str::uuid()->toString();
                 DB::table('teams')->insert([
                     'id' => $teamId,
-                    'transfermarkt_id' => $transfermarktId,
-                    'name' => $data['name'] ?? "Unknown ({$transfermarktId})",
+                    'external_source' => ExternalData::defaultSource(),
+                    'external_id' => $externalId,
+                    'name' => $data['name'] ?? "Unknown ({$externalId})",
                     'country' => $teamCountry,
                     'image' => $data['image'] ?? null,
                     'stadium_name' => $data['stadiumName'] ?? null,
@@ -419,10 +430,10 @@ class SeedReferenceData extends Command
                         ? (int) str_replace(['.', ','], '', $data['stadiumSeats'])
                         : 0,
                 ]);
-                $teamsByTransfermarktId[$transfermarktId] = $teamId;
+                $teamsByExternalId[$externalId] = $teamId;
             }
 
-            $teamIdMap[$transfermarktId] = $teamId;
+            $teamIdMap[$externalId] = $teamId;
 
             // Link team to competition
             DB::table('competition_teams')->updateOrInsert(
@@ -436,7 +447,7 @@ class SeedReferenceData extends Command
 
             // Normalize to clubs format for seedPlayersFromTeams
             $clubs[] = [
-                'transfermarktId' => $transfermarktId,
+                'externalId' => $externalId,
                 'players' => $data['players'] ?? [],
             ];
         }
@@ -447,33 +458,33 @@ class SeedReferenceData extends Command
 
     /**
      * Seed teams for Swiss format competitions.
-     * Links existing teams by transfermarkt_id (all teams must already exist from their league seeding).
+     * Links existing teams by external_id (all teams must already exist from their league seeding).
      */
     private function seedSwissFormatTeams(array $clubs, string $competitionId, string $season): array
     {
         $teamIdMap = [];
         $count = 0;
 
-        // Get existing teams by transfermarkt_id
-        $teamsByTransfermarktId = DB::table('teams')
-            ->whereNotNull('transfermarkt_id')
-            ->pluck('id', 'transfermarkt_id')
+        // Get existing teams by external_id
+        $teamsByExternalId = DB::table('teams')
+            ->whereNotNull('external_id')
+            ->pluck('id', 'external_id')
             ->toArray();
 
         foreach ($clubs as $club) {
-            $transfermarktId = $club['id'] ?? null;
-            if (!$transfermarktId) {
+            $externalId = ExternalData::clubExternalId($club);
+            if (!$externalId) {
                 continue;
             }
 
-            $teamId = $teamsByTransfermarktId[$transfermarktId] ?? null;
+            $teamId = $teamsByExternalId[$externalId] ?? null;
 
             if (!$teamId) {
-                $this->warn("  Team not found for transfermarkt_id {$transfermarktId}: {$club['name']}");
+                $this->warn("  Team not found for external_id {$externalId}: {$club['name']}");
                 continue;
             }
 
-            $teamIdMap[$transfermarktId] = $teamId;
+            $teamIdMap[$externalId] = $teamId;
 
             // Link team to competition
             DB::table('competition_teams')->updateOrInsert(
@@ -519,7 +530,7 @@ class SeedReferenceData extends Command
     }
 
     /**
-     * Seed teams and return mapping of transfermarktId -> UUID.
+     * Seed teams and return mapping of externalId -> UUID.
      */
     private function seedTeams(array $clubs, string $competitionId, string $season, string $country = 'ES'): array
     {
@@ -527,16 +538,15 @@ class SeedReferenceData extends Command
         $count = 0;
 
         foreach ($clubs as $club) {
-            // Try to get transfermarktId from club data, or extract from image URL
-            $transfermarktId = $club['transfermarktId'] ?? $this->extractTransfermarktIdFromImage($club['image'] ?? '');
-            if (!$transfermarktId) {
-                $this->warn("  Skipping club without transfermarktId: {$club['name']}");
+            $externalId = ExternalData::clubExternalId($club);
+            if (!$externalId) {
+                $this->warn("  Skipping club without externalId: {$club['name']}");
                 continue;
             }
 
             // Check if team already exists
             $existingTeam = DB::table('teams')
-                ->where('transfermarkt_id', $transfermarktId)
+                ->where('external_id', $externalId)
                 ->first();
 
             $colors = TeamColors::get($club['name']);
@@ -557,7 +567,8 @@ class SeedReferenceData extends Command
 
                 DB::table('teams')->insert([
                     'id' => $teamId,
-                    'transfermarkt_id' => $transfermarktId,
+                    'external_source' => ExternalData::defaultSource(),
+                    'external_id' => $externalId,
                     'name' => $club['name'],
                     'country' => $country,
                     'image' => $club['image'] ?? null,
@@ -567,7 +578,7 @@ class SeedReferenceData extends Command
                 ]);
             }
 
-            $teamIdMap[$transfermarktId] = $teamId;
+            $teamIdMap[$externalId] = $teamId;
 
             // Link team to competition
             DB::table('competition_teams')->updateOrInsert(
@@ -596,8 +607,8 @@ class SeedReferenceData extends Command
         $valuationService = app(PlayerValuationService::class);
 
         foreach ($clubs as $club) {
-            $transfermarktId = $club['transfermarktId'] ?? $this->extractTransfermarktIdFromImage($club['image'] ?? '');
-            if (!$transfermarktId || !isset($teamIdMap[$transfermarktId])) {
+            $externalId = ExternalData::clubExternalId($club);
+            if (!$externalId || !isset($teamIdMap[$externalId])) {
                 continue;
             }
 
@@ -641,17 +652,30 @@ class SeedReferenceData extends Command
                     'physical_ability' => $physical,
                 ];
 
+                $playerExternalId = ExternalData::playerExternalId($player);
+                if (!$playerExternalId) {
+                    continue;
+                }
+
                 $exists = DB::table('players')
-                    ->where('transfermarkt_id', $player['id'])
+                    ->where('external_id', $playerExternalId)
                     ->exists();
 
                 if ($exists) {
                     DB::table('players')
-                        ->where('transfermarkt_id', $player['id'])
-                        ->update($playerValues);
+                        ->where('external_id', $playerExternalId)
+                        ->update(array_merge($playerValues, [
+                            'external_source' => ExternalData::defaultSource(),
+                            'transfermarkt_id' => $playerExternalId,
+                        ]));
                 } else {
                     DB::table('players')->insert(array_merge(
-                        ['id' => Str::uuid()->toString(), 'transfermarkt_id' => $player['id']],
+                        [
+                            'id' => Str::uuid()->toString(),
+                            'external_source' => ExternalData::defaultSource(),
+                            'external_id' => $playerExternalId,
+                            'transfermarkt_id' => $playerExternalId,
+                        ],
                         $playerValues
                     ));
                 }
@@ -667,10 +691,10 @@ class SeedReferenceData extends Command
     {
         $count = 0;
 
-        // Get existing teams by transfermarkt_id
-        $teamsByTransfermarktId = DB::table('teams')
-            ->whereNotNull('transfermarkt_id')
-            ->pluck('id', 'transfermarkt_id')
+        // Get existing teams by external_id
+        $teamsByExternalId = DB::table('teams')
+            ->whereNotNull('external_id')
+            ->pluck('id', 'external_id')
             ->toArray();
 
         // Get supercup teams for entry round calculation (config-driven)
@@ -685,31 +709,38 @@ class SeedReferenceData extends Command
                 ->join('teams', 'competition_teams.team_id', '=', 'teams.id')
                 ->where('competition_teams.competition_id', $supercupConfig['competition'])
                 ->where('competition_teams.season', $season)
-                ->whereNotNull('teams.transfermarkt_id')
-                ->pluck('teams.transfermarkt_id')
+                ->whereNotNull('teams.external_id')
+                ->pluck('teams.external_id')
                 ->map(fn ($id) => (string) $id)
                 ->toArray();
         }
 
         foreach ($clubs as $club) {
-            $cupTeamId = $club['id'];
+            $cupTeamId = ExternalData::clubExternalId($club);
+            if (!$cupTeamId) {
+                continue;
+            }
 
-            // Determine entry round (supercup teams enter later)
-            $entryRound = in_array($cupTeamId, $supercupTeamIds) ? $supercupEntryRound : 1;
+            // Preserve explicit staged entries from JSON and still bump supercup teams when needed.
+            $entryRound = (int) ($club['entryRound'] ?? 1);
+            if (in_array($cupTeamId, $supercupTeamIds, true)) {
+                $entryRound = max($entryRound, $supercupEntryRound);
+            }
 
             // Find or create team
-            $teamId = $teamsByTransfermarktId[$cupTeamId] ?? null;
+            $teamId = $teamsByExternalId[$cupTeamId] ?? null;
 
             if (!$teamId) {
                 $teamId = Str::uuid()->toString();
                 DB::table('teams')->insert([
                     'id' => $teamId,
-                    'transfermarkt_id' => (int) $cupTeamId,
+                    'external_source' => ExternalData::defaultSource(),
+                    'external_id' => $cupTeamId,
                     'name' => $club['name'],
                     'country' => $country,
-                    'image' => "https://tmssl.akamaized.net/images/wappen/big/{$cupTeamId}.png",
+                    'image' => $club['image'] ?? null,
                 ]);
-                $teamsByTransfermarktId[$cupTeamId] = $teamId;
+                $teamsByExternalId[$cupTeamId] = $teamId;
             }
 
             // Link team to cup competition
@@ -737,6 +768,15 @@ class SeedReferenceData extends Command
         }
 
         $content = file_get_contents($path);
+        if ($content === false) {
+            throw new \RuntimeException("Unable to read JSON file: {$path}");
+        }
+
+        // Some exported datasets arrive as UTF-8 with BOM, which breaks json_decode.
+        if (str_starts_with($content, "\xEF\xBB\xBF")) {
+            $content = substr($content, 3);
+        }
+
         $data = json_decode($content, true);
 
         if (json_last_error() !== JSON_ERROR_NONE) {
@@ -744,19 +784,6 @@ class SeedReferenceData extends Command
         }
 
         return $data;
-    }
-
-    /**
-     * Extract transfermarkt ID from image URL.
-     * URL format: https://tmssl.akamaized.net/images/wappen/big/{id}.png
-     */
-    private function extractTransfermarktIdFromImage(string $imageUrl): ?string
-    {
-        if (preg_match('/\/(\d+)\.png$/', $imageUrl, $matches)) {
-            return $matches[1];
-        }
-
-        return null;
     }
 
     private function generateGamePlayerTemplates(array $countryCodes): void

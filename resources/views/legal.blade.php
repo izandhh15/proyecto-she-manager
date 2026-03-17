@@ -57,7 +57,7 @@
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-text-faint mt-0.5">&bull;</span>
-                                    FIFA, UEFA, FIFPro, Transfermarkt ni ninguna otra entidad
+                                    FIFA, UEFA, FIFPro, Soccerdonna, Transfermarkt ni ninguna otra entidad
                                 </li>
                             </ul>
                         </div>

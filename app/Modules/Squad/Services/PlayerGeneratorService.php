@@ -6,6 +6,7 @@ use App\Modules\Squad\DTOs\GeneratedPlayerData;
 use App\Models\Game;
 use App\Models\GamePlayer;
 use App\Models\Player;
+use App\Support\ExternalData;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use App\Modules\Transfer\Services\ContractService;
@@ -64,7 +65,8 @@ class PlayerGeneratorService
         // Create the reference Player record
         $player = Player::create([
             'id' => Str::uuid()->toString(),
-            'transfermarkt_id' => 'gen-' . Str::uuid()->toString(),
+            'external_source' => ExternalData::defaultSource(),
+            'external_id' => 'gen-' . Str::uuid()->toString(),
             'name' => $name,
             'nationality' => $nationality,
             'date_of_birth' => $data->dateOfBirth->format('Y-m-d'),

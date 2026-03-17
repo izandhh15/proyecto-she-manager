@@ -8,6 +8,7 @@ use App\Models\Game;
 use App\Models\GamePlayer;
 use App\Models\ShortlistedPlayer;
 use App\Models\TransferOffer;
+use App\Support\CompetitionBranding;
 use Illuminate\Http\Request;
 
 class ShowExplore
@@ -39,6 +40,7 @@ class ShowExplore
                     'name' => __($comp->name),
                     'country' => $comp->country,
                     'flag' => $comp->flag,
+                    'icon' => CompetitionBranding::iconUrl($comp),
                     'tier' => $comp->tier,
                     'scope' => $comp->scope,
                     'teamCount' => $teamCounts->get($comp->id, 0),

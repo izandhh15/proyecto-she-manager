@@ -3,22 +3,22 @@
         {
             "round": 1,
             "name": "cup.first_round",
-            "date": "2025-10-29"
+            "date": "2025-09-10"
         },
         {
             "round": 2,
             "name": "cup.second_round",
-            "date": "2025-12-03"
+            "date": "2025-09-30"
         },
         {
             "round": 3,
-            "name": "cup.round_of_32",
-            "date": "2025-12-17"
+            "name": "cup.third_round",
+            "date": "2025-11-04"
         },
         {
             "round": 4,
             "name": "cup.round_of_16",
-            "date": "2026-01-14"
+            "date": "2025-12-19"
         },
         {
             "round": 5,

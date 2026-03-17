@@ -13,43 +13,33 @@ class LaLigaConfig implements CompetitionConfig, HasSeasonGoals
      * La Liga TV revenue by position (in cents).
      */
     private const TV_REVENUE = [
-        1 => 15_500_000_000,   // €155M
-        2 => 14_000_000_000,   // €140M
-        3 => 10_500_000_000,   // €105M
-        4 => 7_200_000_000,    // €72M
-        5 => 6_800_000_000,    // €68M
-        6 => 6_500_000_000,    // €65M
-        7 => 6_200_000_000,    // €62M
-        8 => 5_800_000_000,    // €58M
-        9 => 5_500_000_000,    // €55M
-        10 => 5_200_000_000,   // €52M
-        11 => 4_800_000_000,   // €48M
-        12 => 4_600_000_000,   // €46M
-        13 => 4_500_000_000,   // €45M
-        14 => 4_400_000_000,   // €44M
-        15 => 4_300_000_000,   // €43M
-        16 => 4_300_000_000,   // €43M
-        17 => 4_200_000_000,   // €42M
-        18 => 4_200_000_000,   // €42M
-        19 => 4_100_000_000,   // €41M
-        20 => 4_000_000_000,   // €40M
+        1 => 15_500_000_000,   // EUR155M
+        2 => 14_000_000_000,   // EUR140M
+        3 => 10_500_000_000,   // EUR105M
+        4 => 7_200_000_000,    // EUR72M
+        5 => 6_800_000_000,    // EUR68M
+        6 => 6_500_000_000,    // EUR65M
+        7 => 6_200_000_000,    // EUR62M
+        8 => 5_800_000_000,    // EUR58M
+        9 => 5_500_000_000,    // EUR55M
+        10 => 5_200_000_000,   // EUR52M
+        11 => 4_800_000_000,   // EUR48M
+        12 => 4_600_000_000,   // EUR46M
+        13 => 4_500_000_000,   // EUR45M
+        14 => 4_400_000_000,   // EUR44M
+        15 => 4_300_000_000,   // EUR43M
+        16 => 4_300_000_000,   // EUR43M
+        17 => 4_200_000_000,   // EUR42M
+        18 => 4_200_000_000,   // EUR42M
+        19 => 4_100_000_000,   // EUR41M
+        20 => 4_000_000_000,   // EUR40M
     ];
 
     private const POSITION_FACTORS = [
-        'top' => 1.10,        // 1st-4th
-        'mid_high' => 1.0,    // 5th-10th
-        'mid_low' => 0.95,    // 11th-16th
-        'relegation' => 0.85, // 17th-20th
-    ];
-
-    /**
-     * Season goals with target positions.
-     */
-    private const SEASON_GOALS = [
-        Game::GOAL_TITLE => ['targetPosition' => 1, 'label' => 'game.goal_title'],
-        Game::GOAL_EUROPA_LEAGUE => ['targetPosition' => 6, 'label' => 'game.goal_europa_league'],
-        Game::GOAL_TOP_HALF => ['targetPosition' => 10, 'label' => 'game.goal_top_half'],
-        Game::GOAL_SURVIVAL => ['targetPosition' => 17, 'label' => 'game.goal_survival'],
+        'top' => 1.10,
+        'mid_high' => 1.0,
+        'mid_low' => 0.95,
+        'relegation' => 0.85,
     ];
 
     /**
@@ -65,20 +55,28 @@ class LaLigaConfig implements CompetitionConfig, HasSeasonGoals
 
     public function getTvRevenue(int $position): int
     {
-        return self::TV_REVENUE[$position] ?? self::TV_REVENUE[20];
+        $lastConfiguredPosition = max(array_keys(self::TV_REVENUE));
+
+        return self::TV_REVENUE[$position] ?? self::TV_REVENUE[$lastConfiguredPosition];
     }
 
     public function getPositionFactor(int $position): float
     {
-        if ($position <= 4) {
+        $topZoneMax = max($this->europeanPositions() ?: [4]);
+        $relegationStart = min($this->relegationPositions());
+        $midSpan = max(0, ($relegationStart - 1) - $topZoneMax);
+        $midHighEnd = $topZoneMax + (int) ceil($midSpan / 2);
+
+        if ($position <= $topZoneMax) {
             return self::POSITION_FACTORS['top'];
         }
-        if ($position <= 10) {
+        if ($position <= $midHighEnd) {
             return self::POSITION_FACTORS['mid_high'];
         }
-        if ($position <= 16) {
+        if ($position < $relegationStart) {
             return self::POSITION_FACTORS['mid_low'];
         }
+
         return self::POSITION_FACTORS['relegation'];
     }
 
@@ -89,12 +87,27 @@ class LaLigaConfig implements CompetitionConfig, HasSeasonGoals
 
     public function getGoalTargetPosition(string $goal): int
     {
-        return self::SEASON_GOALS[$goal]['targetPosition'] ?? 10;
+        $topHalf = max(1, (int) floor($this->teamCount() / 2));
+        $survival = max(1, min($this->relegationPositions()) - 1);
+        $europeanTarget = max($this->europeanGoalPositions() ?: [6]);
+
+        return match ($goal) {
+            Game::GOAL_TITLE => 1,
+            Game::GOAL_EUROPA_LEAGUE => $europeanTarget,
+            Game::GOAL_TOP_HALF => $topHalf,
+            Game::GOAL_SURVIVAL => $survival,
+            default => $topHalf,
+        };
     }
 
     public function getAvailableGoals(): array
     {
-        return self::SEASON_GOALS;
+        return [
+            Game::GOAL_TITLE => ['targetPosition' => $this->getGoalTargetPosition(Game::GOAL_TITLE), 'label' => 'game.goal_title'],
+            Game::GOAL_EUROPA_LEAGUE => ['targetPosition' => $this->getGoalTargetPosition(Game::GOAL_EUROPA_LEAGUE), 'label' => 'game.goal_europa_league'],
+            Game::GOAL_TOP_HALF => ['targetPosition' => $this->getGoalTargetPosition(Game::GOAL_TOP_HALF), 'label' => 'game.goal_top_half'],
+            Game::GOAL_SURVIVAL => ['targetPosition' => $this->getGoalTargetPosition(Game::GOAL_SURVIVAL), 'label' => 'game.goal_survival'],
+        ];
     }
 
     public function getTopScorerAwardName(): string
@@ -115,8 +128,6 @@ class LaLigaConfig implements CompetitionConfig, HasSeasonGoals
     public function getStandingsZones(): array
     {
         $slots = config('countries.ES.continental_slots.ESP1', []);
-        $promotions = config('countries.ES.promotions', []);
-
         $zones = [];
 
         if (!empty($slots['UCL'])) {
@@ -149,11 +160,11 @@ class LaLigaConfig implements CompetitionConfig, HasSeasonGoals
             ];
         }
 
-        $relegation = collect($promotions)->first(fn ($r) => $r['top_division'] === 'ESP1');
-        if ($relegation && !empty($relegation['relegated_positions'])) {
+        $relegation = $this->relegationPositions();
+        if (!empty($relegation)) {
             $zones[] = [
-                'minPosition' => min($relegation['relegated_positions']),
-                'maxPosition' => max($relegation['relegated_positions']),
+                'minPosition' => min($relegation),
+                'maxPosition' => max($relegation),
                 'borderColor' => 'red-500',
                 'bgColor' => 'bg-red-500',
                 'label' => 'game.relegation',
@@ -163,4 +174,39 @@ class LaLigaConfig implements CompetitionConfig, HasSeasonGoals
         return $zones;
     }
 
+    private function teamCount(): int
+    {
+        return (int) config('countries.ES.tiers.1.teams', 20);
+    }
+
+    /**
+     * @return int[]
+     */
+    private function relegationPositions(): array
+    {
+        $promotions = config('countries.ES.promotions', []);
+        $rule = collect($promotions)->first(fn ($promotion) => $promotion['top_division'] === 'ESP1');
+
+        return $rule['relegated_positions'] ?? [$this->teamCount() - 1, $this->teamCount()];
+    }
+
+    /**
+     * @return int[]
+     */
+    private function europeanPositions(): array
+    {
+        return array_values(array_unique(array_merge(
+            config('countries.ES.continental_slots.ESP1.UCL', []),
+            config('countries.ES.continental_slots.ESP1.UEL', []),
+            config('countries.ES.continental_slots.ESP1.UECL', []),
+        )));
+    }
+
+    /**
+     * @return int[]
+     */
+    private function europeanGoalPositions(): array
+    {
+        return config('countries.ES.continental_slots.ESP1.UEL', []) ?: $this->europeanPositions();
+    }
 }

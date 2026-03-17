@@ -35,7 +35,7 @@ $tabs = [
         },
 
         countByGroup(group) {
-            return this.players[group].filter(p => this.selectedIds.includes(p.transfermarkt_id)).length;
+            return this.players[group].filter(p => this.selectedIds.includes(p.external_id)).length;
         },
 
         get canConfirm() {
@@ -102,21 +102,21 @@ $tabs = [
                 <div x-show="activeTab === '{{ $groupKey }}'" x-cloak class="divide-y divide-border-default">
                     @foreach ($candidatesByGroup[$groupKey] as $candidate)
                     <button type="button"
-                            @click="togglePlayer('{{ $candidate['transfermarkt_id'] }}')"
+                            @click="togglePlayer('{{ $candidate['external_id'] }}')"
                             :class="{
-                                'bg-accent-green/10 border-l-4 border-l-emerald-500': isSelected('{{ $candidate['transfermarkt_id'] }}'),
-                                'border-l-4 border-l-transparent hover:bg-surface-700/50': !isSelected('{{ $candidate['transfermarkt_id'] }}'),
-                                'opacity-40 cursor-not-allowed': isMaxed && !isSelected('{{ $candidate['transfermarkt_id'] }}'),
+                                'bg-accent-green/10 border-l-4 border-l-emerald-500': isSelected('{{ $candidate['external_id'] }}'),
+                                'border-l-4 border-l-transparent hover:bg-surface-700/50': !isSelected('{{ $candidate['external_id'] }}'),
+                                'opacity-40 cursor-not-allowed': isMaxed && !isSelected('{{ $candidate['external_id'] }}'),
                             }"
-                            :disabled="isMaxed && !isSelected('{{ $candidate['transfermarkt_id'] }}')"
+                            :disabled="isMaxed && !isSelected('{{ $candidate['external_id'] }}')"
                             class="w-full flex items-center gap-3 px-3 md:px-5 py-3 md:py-3.5 text-left transition-all min-h-[56px]">
 
                         {{-- Checkbox --}}
                         <div class="shrink-0 w-5 h-5 rounded-sm border-2 flex items-center justify-center transition-colors"
-                             :class="isSelected('{{ $candidate['transfermarkt_id'] }}')
+                             :class="isSelected('{{ $candidate['external_id'] }}')
                                  ? 'bg-emerald-500 border-emerald-500'
                                  : 'border-border-strong'">
-                            <svg x-show="isSelected('{{ $candidate['transfermarkt_id'] }}')" class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                            <svg x-show="isSelected('{{ $candidate['external_id'] }}')" class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
@@ -147,9 +147,9 @@ $tabs = [
                                 <span class="text-xs font-semibold text-text-secondary">{{ $candidate['physical'] }}</span>
                             </div>
                             <div class="flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-lg transition-colors"
-                                 :class="isSelected('{{ $candidate['transfermarkt_id'] }}') ? 'bg-accent-green/10' : 'bg-surface-700'">
+                                 :class="isSelected('{{ $candidate['external_id'] }}') ? 'bg-accent-green/10' : 'bg-surface-700'">
                                 <span class="text-sm md:text-base font-bold"
-                                      :class="isSelected('{{ $candidate['transfermarkt_id'] }}') ? 'text-accent-green' : 'text-text-body'">{{ $candidate['overall'] }}</span>
+                                      :class="isSelected('{{ $candidate['external_id'] }}') ? 'text-accent-green' : 'text-text-body'">{{ $candidate['overall'] }}</span>
                             </div>
                         </div>
                     </button>

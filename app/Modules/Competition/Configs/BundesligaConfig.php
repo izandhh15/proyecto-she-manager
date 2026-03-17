@@ -46,9 +46,9 @@ class BundesligaConfig implements CompetitionConfig, HasSeasonGoals
      */
     private const SEASON_GOALS = [
         Game::GOAL_TITLE => ['targetPosition' => 1, 'label' => 'game.goal_title'],
-        Game::GOAL_EUROPA_LEAGUE => ['targetPosition' => 6, 'label' => 'game.goal_europa_league'],
-        Game::GOAL_TOP_HALF => ['targetPosition' => 9, 'label' => 'game.goal_top_half'],
-        Game::GOAL_SURVIVAL => ['targetPosition' => 15, 'label' => 'game.goal_survival'],
+        Game::GOAL_EUROPA_LEAGUE => ['targetPosition' => 4, 'label' => 'game.goal_europa_league'],
+        Game::GOAL_TOP_HALF => ['targetPosition' => 7, 'label' => 'game.goal_top_half'],
+        Game::GOAL_SURVIVAL => ['targetPosition' => 12, 'label' => 'game.goal_survival'],
     ];
 
     /**
@@ -88,7 +88,7 @@ class BundesligaConfig implements CompetitionConfig, HasSeasonGoals
 
     public function getGoalTargetPosition(string $goal): int
     {
-        return self::SEASON_GOALS[$goal]['targetPosition'] ?? 9;
+        return self::SEASON_GOALS[$goal]['targetPosition'] ?? 7;
     }
 
     public function getAvailableGoals(): array
@@ -148,8 +148,8 @@ class BundesligaConfig implements CompetitionConfig, HasSeasonGoals
         }
 
         $zones[] = [
-            'minPosition' => 16,
-            'maxPosition' => 18,
+            'minPosition' => 13,
+            'maxPosition' => 14,
             'borderColor' => 'red-500',
             'bgColor' => 'bg-red-500',
             'label' => 'game.relegation',

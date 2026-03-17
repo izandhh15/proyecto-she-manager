@@ -9,7 +9,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @property string $id
- * @property string $transfermarkt_id
+ * @property string|null $external_source
+ * @property string|null $external_id
  * @property string $name
  * @property \Illuminate\Support\Carbon|null $date_of_birth
  * @property array<array-key, mixed>|null $nationality
@@ -32,7 +33,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Player whereNationality($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Player wherePhysicalAbility($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Player whereTechnicalAbility($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Player whereTransfermarktId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Player whereExternalId($value)
  * @mixin \Eloquent
  */
 class Player extends Model
@@ -42,7 +43,8 @@ class Player extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'transfermarkt_id',
+        'external_source',
+        'external_id',
         'name',
         'date_of_birth',
         'nationality',
@@ -62,6 +64,11 @@ class Player extends Model
     public function gamePlayers(): HasMany
     {
         return $this->hasMany(GamePlayer::class);
+    }
+
+    public function getTransfermarktIdAttribute(): ?string
+    {
+        return $this->attributes['external_id'] ?? null;
     }
 
 }

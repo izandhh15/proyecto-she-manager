@@ -5,6 +5,7 @@ namespace App\Modules\Season\Services;
 use App\Models\Player;
 use App\Models\Team;
 use App\Modules\Competition\Services\CountryConfig;
+use App\Support\ExternalData;
 use App\Support\Money;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -37,8 +38,8 @@ class GamePlayerTemplateService
      */
     public function generateTemplates(string $season, string $countryCode): int
     {
-        $allTeams = Team::whereNotNull('transfermarkt_id')->get()->keyBy('transfermarkt_id');
-        $allPlayers = Player::all()->keyBy('transfermarkt_id');
+        $allTeams = Team::whereNotNull('external_id')->get()->keyBy('external_id');
+        $allPlayers = Player::all()->keyBy('external_id');
 
         $countryConfig = app(CountryConfig::class);
         $competitionIds = $countryConfig->playerInitializationOrder($countryCode);
@@ -122,12 +123,12 @@ class GamePlayerTemplateService
         $rows = [];
 
         foreach ($clubs as $club) {
-            $transfermarktId = $club['transfermarktId'] ?? $this->extractTransfermarktIdFromImage($club['image'] ?? '');
-            if (!$transfermarktId) {
+            $externalId = ExternalData::clubExternalId($club);
+            if (!$externalId) {
                 continue;
             }
 
-            $team = $allTeams->get($transfermarktId);
+            $team = $allTeams->get($externalId);
             if (!$team) {
                 continue;
             }
@@ -171,12 +172,12 @@ class GamePlayerTemplateService
         $rows = [];
 
         foreach ($clubs as $club) {
-            $transfermarktId = $club['id'] ?? null;
-            if (!$transfermarktId) {
+            $externalId = ExternalData::clubExternalId($club);
+            if (!$externalId) {
                 continue;
             }
 
-            $team = $allTeams->get($transfermarktId);
+            $team = $allTeams->get($externalId);
             if (!$team) {
                 continue;
             }
@@ -209,7 +210,7 @@ class GamePlayerTemplateService
         int $minimumWage,
         Collection $allPlayers,
     ): ?array {
-        $player = $allPlayers->get($playerData['id']);
+        $player = $allPlayers->get(ExternalData::playerExternalId($playerData));
         if (!$player) {
             return null;
         }
@@ -276,19 +277,11 @@ class GamePlayerTemplateService
 
             $clubs[] = [
                 'image' => $data['image'] ?? '',
-                'transfermarktId' => $this->extractTransfermarktIdFromImage($data['image'] ?? ''),
+                'externalId' => ExternalData::extractIdFromImage($data['image'] ?? ''),
                 'players' => $data['players'] ?? [],
             ];
         }
 
         return $clubs;
-    }
-
-    private function extractTransfermarktIdFromImage(string $imageUrl): ?string
-    {
-        if (preg_match('/\/(\d+)\.png$/', $imageUrl, $matches)) {
-            return $matches[1];
-        }
-        return null;
     }
 }

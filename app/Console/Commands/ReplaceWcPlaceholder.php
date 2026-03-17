@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Modules\Player\Services\PlayerValuationService;
 use App\Support\CountryCodeMapper;
+use App\Support\ExternalData;
 use App\Support\Money;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
@@ -17,7 +18,8 @@ class ReplaceWcPlaceholder extends Command
                             {--placeholder-code= : FIFA code of the placeholder to replace (e.g., UEPA)}
                             {--new-name= : Name of the real team (e.g., Turkey)}
                             {--new-fifa-code= : FIFA code of the real team (e.g., TUR)}
-                            {--transfermarkt-id= : Transfermarkt ID if roster JSON is available}';
+                            {--external-id= : External roster ID if roster JSON is available}
+                            {--transfermarkt-id= : Deprecated alias for --external-id}';
 
     protected $description = 'Replace a World Cup placeholder team with a real qualified team';
 
@@ -26,7 +28,7 @@ class ReplaceWcPlaceholder extends Command
         $placeholderCode = $this->option('placeholder-code');
         $newName = $this->option('new-name');
         $newFifaCode = $this->option('new-fifa-code');
-        $transfermarktId = $this->option('transfermarkt-id');
+        $externalId = $this->option('external-id') ?: $this->option('transfermarkt-id');
 
         if (!$placeholderCode || !$newName || !$newFifaCode) {
             $this->error('All of --placeholder-code, --new-name, and --new-fifa-code are required.');
@@ -56,21 +58,22 @@ class ReplaceWcPlaceholder extends Command
             'name' => $newName,
             'country' => $countryCode,
         ];
-        if ($transfermarktId) {
-            $updateData['transfermarkt_id'] = $transfermarktId;
+        if ($externalId) {
+            $updateData['external_source'] = ExternalData::defaultSource();
+            $updateData['external_id'] = $externalId;
         }
 
         DB::table('teams')->where('id', $teamId)->update($updateData);
         $this->info("Updated team: {$entry['name']} → {$newName}");
 
         // Seed players if roster JSON exists
-        if ($transfermarktId) {
-            $jsonPath = base_path("data/2025/WC2026/teams/{$transfermarktId}.json");
+        if ($externalId) {
+            $jsonPath = base_path("data/2025/WC2026/teams/{$externalId}.json");
             if (file_exists($jsonPath)) {
                 $playerCount = $this->seedPlayers($jsonPath);
-                $this->info("Seeded {$playerCount} players from {$transfermarktId}.json");
+                $this->info("Seeded {$playerCount} players from {$externalId}.json");
             } else {
-                $this->warn("No roster file found at data/2025/WC2026/teams/{$transfermarktId}.json");
+                $this->warn("No roster file found at data/2025/WC2026/teams/{$externalId}.json");
             }
         }
 
@@ -82,7 +85,7 @@ class ReplaceWcPlaceholder extends Command
             'name' => $newName,
             'group' => $entry['group'],
             'is_placeholder' => false,
-            'transfermarkt_id' => $transfermarktId,
+            'external_id' => $externalId,
         ];
         file_put_contents($mappingPath, json_encode($mapping, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
         $this->info("Updated team_mapping.json: {$placeholderCode} → {$newFifaCode}");
@@ -109,12 +112,12 @@ class ReplaceWcPlaceholder extends Command
         $count = 0;
 
         foreach ($data['players'] as $player) {
-            $transfermarktId = $player['id'] ?? null;
-            if (!$transfermarktId) {
+            $externalId = ExternalData::playerExternalId($player);
+            if (!$externalId) {
                 continue;
             }
 
-            if (DB::table('players')->where('transfermarkt_id', $transfermarktId)->exists()) {
+            if (DB::table('players')->where('external_id', $externalId)->exists()) {
                 $count++;
                 continue;
             }
@@ -145,7 +148,8 @@ class ReplaceWcPlaceholder extends Command
 
             DB::table('players')->insert([
                 'id' => Str::uuid()->toString(),
-                'transfermarkt_id' => $transfermarktId,
+                'external_source' => ExternalData::defaultSource(),
+                'external_id' => $externalId,
                 'name' => $player['name'],
                 'date_of_birth' => $dateOfBirth,
                 'nationality' => json_encode($player['nationality'] ?? []),

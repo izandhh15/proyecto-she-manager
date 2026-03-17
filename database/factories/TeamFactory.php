@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Team;
+use App\Support\ExternalData;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -14,7 +15,8 @@ class TeamFactory extends Factory
     {
         return [
             'id' => Str::uuid()->toString(),
-            'transfermarkt_id' => $this->faker->unique()->numberBetween(1000, 99999),
+            'external_source' => ExternalData::defaultSource(),
+            'external_id' => (string) $this->faker->unique()->numberBetween(1000, 99999),
             'name' => $this->faker->city() . ' FC',
             'country' => 'ES',
             'image' => null,
@@ -26,7 +28,7 @@ class TeamFactory extends Factory
     public function withImage(): static
     {
         return $this->state(fn (array $attributes) => [
-            'image' => 'https://tmssl.akamaized.net/images/wappen/big/' . $attributes['transfermarkt_id'] . '.png',
+            'image' => 'https://example.com/crests/' . $attributes['external_id'] . '.png',
         ]);
     }
 }

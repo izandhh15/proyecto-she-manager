@@ -146,11 +146,11 @@ class SeasonInitializationService
 
     /**
      * Conduct cup draws for all knockout cups in a country.
-     * Also updates ESPCUP entry_rounds for supercup-qualifying teams.
+     * Also bumps domestic cup entry_rounds for supercup-qualifying teams.
      */
     public function conductCupDraws(string $gameId, string $countryCode): void
     {
-        // Update ESPCUP entry_rounds based on supercup qualifiers
+        // Update domestic cup entry_rounds based on supercup qualifiers
         $this->updateCupEntryRoundsForSupercupTeams($gameId, $countryCode);
 
         // Draw round 1 for all domestic knockout cups (ESPCUP, ESPSUP)
@@ -169,8 +169,8 @@ class SeasonInitializationService
     }
 
     /**
-     * Update ESPCUP entry_rounds for teams qualifying for the supercup.
-     * Supercup-qualifying teams enter the cup at a later round.
+     * Bump domestic cup entry_rounds for teams qualifying for the supercup.
+     * Existing staged entries from seed data must be preserved.
      */
     private function updateCupEntryRoundsForSupercupTeams(string $gameId, string $countryCode): void
     {
@@ -197,15 +197,14 @@ class SeasonInitializationService
             return;
         }
 
-        // Reset ALL domestic cup entries to round 1
-        CompetitionEntry::where('game_id', $gameId)
-            ->where('competition_id', $domesticCupId)
-            ->update(['entry_round' => 1]);
-
-        // Set supercup-qualifying teams to enter at the later round
+        // Only bump teams that should also enter later due to supercup qualification.
         CompetitionEntry::where('game_id', $gameId)
             ->where('competition_id', $domesticCupId)
             ->whereIn('team_id', $supercupTeamIds)
+            ->where(function ($query) use ($cupEntryRound) {
+                $query->whereNull('entry_round')
+                    ->orWhere('entry_round', '<', $cupEntryRound);
+            })
             ->update(['entry_round' => $cupEntryRound]);
     }
 

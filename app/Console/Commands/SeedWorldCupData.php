@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Modules\Player\Services\PlayerValuationService;
 use App\Support\CountryCodeMapper;
+use App\Support\ExternalData;
 use App\Support\TeamColors;
 use App\Support\Money;
 use Carbon\Carbon;
@@ -31,7 +32,7 @@ class SeedWorldCupData extends Command
     /** @var array<int, string> csv_id → fifa_code */
     private array $csvIdToFifaCode = [];
 
-    /** @var array<string, string> team_name from JSON → transfermarkt_id (filename) */
+    /** @var array<string, string> team_name from JSON → external_id (filename) */
     private array $jsonTeamNames = [];
 
     public function handle(): int
@@ -196,7 +197,7 @@ class SeedWorldCupData extends Command
     /**
      * Seed all 48 teams from CSV.
      *
-     * @return array<string, array{uuid: string, csv_id: int, name: string, group: string, is_placeholder: bool, transfermarkt_id: string|null}>
+     * @return array<string, array{uuid: string, csv_id: int, name: string, group: string, is_placeholder: bool, external_id: string|null}>
      */
     private function seedTeams(): array
     {
@@ -205,7 +206,7 @@ class SeedWorldCupData extends Command
 
         foreach ($this->csvTeams as $csvId => $team) {
             $countryCode = CountryCodeMapper::toCode($team['team_name']);
-            $transfermarktId = $this->jsonTeamNames[$team['team_name']] ?? null;
+            $externalId = $this->jsonTeamNames[$team['team_name']] ?? null;
 
             // Check for existing team by country code (for non-placeholders)
             $existing = null;
@@ -219,8 +220,9 @@ class SeedWorldCupData extends Command
             if ($existing) {
                 $teamId = $existing->id;
                 $updateData = [];
-                if ($transfermarktId && !$existing->transfermarkt_id) {
-                    $updateData['transfermarkt_id'] = $transfermarktId;
+                if ($externalId && !$existing->external_id) {
+                    $updateData['external_source'] = ExternalData::defaultSource();
+                    $updateData['external_id'] = $externalId;
                 }
                 if (!$existing->colors) {
                     $updateData['colors'] = json_encode(TeamColors::get($team['team_name']));
@@ -232,7 +234,8 @@ class SeedWorldCupData extends Command
                 $teamId = Str::uuid()->toString();
                 DB::table('teams')->insert([
                     'id' => $teamId,
-                    'transfermarkt_id' => $transfermarktId,
+                    'external_source' => $externalId ? ExternalData::defaultSource() : null,
+                    'external_id' => $externalId,
                     'type' => 'national',
                     'name' => $team['team_name'],
                     'country' => $countryCode ?? 'TBD',
@@ -259,7 +262,7 @@ class SeedWorldCupData extends Command
                 'name' => $team['team_name'],
                 'group' => $team['group_letter'],
                 'is_placeholder' => $team['is_placeholder'],
-                'transfermarkt_id' => $transfermarktId,
+                'external_id' => $externalId,
             ];
         }
 
@@ -291,12 +294,12 @@ class SeedWorldCupData extends Command
             }
 
             foreach ($data['players'] as $player) {
-                $transfermarktId = $player['id'] ?? null;
-                if (!$transfermarktId) {
+                $externalId = ExternalData::playerExternalId($player);
+                if (!$externalId) {
                     continue;
                 }
 
-                if (DB::table('players')->where('transfermarkt_id', $transfermarktId)->exists()) {
+                if (DB::table('players')->where('external_id', $externalId)->exists()) {
                     $playerCount++;
                     continue;
                 }
@@ -327,7 +330,8 @@ class SeedWorldCupData extends Command
 
                 DB::table('players')->insert([
                     'id' => Str::uuid()->toString(),
-                    'transfermarkt_id' => $transfermarktId,
+                    'external_source' => ExternalData::defaultSource(),
+                    'external_id' => $externalId,
                     'name' => $player['name'],
                     'date_of_birth' => $dateOfBirth,
                     'nationality' => json_encode(!empty($player['nationality']) ? $player['nationality'] : [$data['name']]),
@@ -516,7 +520,7 @@ class SeedWorldCupData extends Command
     {
         $realTeams = count(array_filter($teamMapping, fn ($t) => !$t['is_placeholder']));
         $placeholders = count(array_filter($teamMapping, fn ($t) => $t['is_placeholder']));
-        $withRosters = count(array_filter($teamMapping, fn ($t) => $t['transfermarkt_id'] !== null));
+        $withRosters = count(array_filter($teamMapping, fn ($t) => $t['external_id'] !== null));
 
         $this->newLine();
         $this->info('Summary:');
