@@ -1,11 +1,11 @@
-﻿<?php
+<?php
 
 namespace App\Support;
 
 class TeamColors
 {
     /**
-     * Tailwind color name â†’ hex value lookup.
+     * Tailwind color name Ã¢â€ â€™ hex value lookup.
      * Only includes shades actually used by teams.
      */
     private const TAILWIND_HEX = [
@@ -46,14 +46,14 @@ class TeamColors
     ];
 
     /**
-     * Team name â†’ kit colors mapping.
+     * Team name Ã¢â€ â€™ kit colors mapping.
      * Uses Tailwind color names for readability.
      *
      * Patterns: solid, stripes, hoops, sash, halves
      */
     private const TEAMS = [
         // =============================================
-        // Spain â€” La Liga (ESP1)
+        // Spain Ã¢â‚¬â€ La Liga (ESP1)
         // =============================================
         'Real Madrid' => [
             'pattern' => 'solid',
@@ -67,7 +67,7 @@ class TeamColors
             'secondary' => 'blue-800',
             'number' => 'white',
         ],
-        'AtlÃ©tico de Madrid' => [
+        'AtlÃƒÂ©tico de Madrid' => [
             'pattern' => 'stripes',
             'primary' => 'red-600',
             'secondary' => 'white',
@@ -79,7 +79,7 @@ class TeamColors
             'secondary' => 'white',
             'number' => 'black',
         ],
-        'Real Betis BalompiÃ©' => [
+        'Real Betis BalompiÃƒÂ©' => [
             'pattern' => 'stripes',
             'primary' => 'green-600',
             'secondary' => 'white',
@@ -145,7 +145,7 @@ class TeamColors
             'secondary' => 'red-500',
             'number' => 'black',
         ],
-        'Deportivo AlavÃ©s' => [
+        'Deportivo AlavÃƒÂ©s' => [
             'pattern' => 'stripes',
             'primary' => 'blue-700',
             'secondary' => 'white',
@@ -177,9 +177,9 @@ class TeamColors
         ],
 
         // =============================================
-        // Spain â€” Segunda DivisiÃ³n (ESP2)
+        // Spain Ã¢â‚¬â€ Segunda DivisiÃƒÂ³n (ESP2)
         // =============================================
-        'Deportivo de La CoruÃ±a' => [
+        'Deportivo de La CoruÃƒÂ±a' => [
             'pattern' => 'stripes',
             'primary' => 'blue-600',
             'secondary' => 'white',
@@ -191,13 +191,13 @@ class TeamColors
             'secondary' => 'yellow-400',
             'number' => 'blue-900',
         ],
-        'MÃ¡laga CF' => [
+        'MÃƒÂ¡laga CF' => [
             'pattern' => 'stripes',
             'primary' => 'blue-500',
             'secondary' => 'white',
             'number' => 'white',
         ],
-        'Sporting GijÃ³n' => [
+        'Sporting GijÃƒÂ³n' => [
             'pattern' => 'stripes',
             'primary' => 'red-600',
             'secondary' => 'white',
@@ -215,13 +215,13 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'green-700',
         ],
-        'CÃ³rdoba CF' => [
+        'CÃƒÂ³rdoba CF' => [
             'pattern' => 'stripes',
             'primary' => 'green-600',
             'secondary' => 'white',
             'number' => 'green-600',
         ],
-        'CÃ¡diz CF' => [
+        'CÃƒÂ¡diz CF' => [
             'pattern' => 'solid',
             'primary' => 'yellow-400',
             'secondary' => 'blue-700',
@@ -239,19 +239,19 @@ class TeamColors
             'secondary' => 'white',
             'number' => 'red-600',
         ],
-        'UD AlmerÃ­a' => [
+        'UD AlmerÃƒÂ­a' => [
             'pattern' => 'stripes',
             'primary' => 'red-600',
             'secondary' => 'white',
             'number' => 'white',
         ],
-        'Albacete BalompiÃ©' => [
+        'Albacete BalompiÃƒÂ©' => [
             'pattern' => 'solid',
             'primary' => 'white',
             'secondary' => 'white',
             'number' => 'black',
         ],
-        'CD CastellÃ³n' => [
+        'CD CastellÃƒÂ³n' => [
             'pattern' => 'stripes',
             'primary' => 'black',
             'secondary' => 'white',
@@ -263,7 +263,7 @@ class TeamColors
             'secondary' => 'red-700',
             'number' => 'red-700',
         ],
-        'CD LeganÃ©s' => [
+        'CD LeganÃƒÂ©s' => [
             'pattern' => 'stripes',
             'primary' => 'blue-600',
             'secondary' => 'white',
@@ -293,7 +293,7 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'black',
         ],
-        'CD MirandÃ©s' => [
+        'CD MirandÃƒÂ©s' => [
             'pattern' => 'solid',
             'primary' => 'red-700',
             'secondary' => 'red-700',
@@ -313,7 +313,7 @@ class TeamColors
         ],
 
         // =============================================
-        // England â€” Premier League (ENG1)
+        // England Ã¢â‚¬â€ Premier League (ENG1)
         // =============================================
         'Manchester City' => [
             'pattern' => 'solid',
@@ -437,7 +437,7 @@ class TeamColors
         ],
 
         // =============================================
-        // Germany â€” Bundesliga (DEU1)
+        // Germany Ã¢â‚¬â€ Bundesliga (DEU1)
         // =============================================
         'Bayern Munich' => [
             'pattern' => 'solid',
@@ -481,7 +481,7 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'white',
         ],
-        'Borussia MÃ¶nchengladbach' => [
+        'Borussia MÃƒÂ¶nchengladbach' => [
             'pattern' => 'solid',
             'primary' => 'white',
             'secondary' => 'green-600',
@@ -499,7 +499,7 @@ class TeamColors
             'secondary' => 'white',
             'number' => 'white',
         ],
-        '1.FC KÃ¶ln' => [
+        '1.FC KÃƒÂ¶ln' => [
             'pattern' => 'solid',
             'primary' => 'white',
             'secondary' => 'red-600',
@@ -549,7 +549,7 @@ class TeamColors
         ],
 
         // =============================================
-        // France â€” Ligue 1 (FRA1)
+        // France Ã¢â‚¬â€ Ligue 1 (FRA1)
         // =============================================
         'Paris Saint-Germain' => [
             'pattern' => 'bar',
@@ -661,7 +661,7 @@ class TeamColors
         ],
 
         // =============================================
-        // Italy â€” Serie A (ITA1)
+        // Italy Ã¢â‚¬â€ Serie A (ITA1)
         // =============================================
         'Inter Milan' => [
             'pattern' => 'stripes',
@@ -979,7 +979,7 @@ class TeamColors
         ],
 
         // Hungary
-        'FerencvÃ¡rosi TC' => [
+        'FerencvÃƒÂ¡rosi TC' => [
             'pattern' => 'stripes',
             'primary' => 'green-600',
             'secondary' => 'white',
@@ -995,7 +995,7 @@ class TeamColors
         ],
 
         // Sweden
-        'MalmÃ¶ FF' => [
+        'MalmÃƒÂ¶ FF' => [
             'pattern' => 'solid',
             'primary' => 'sky-400',
             'secondary' => 'white',
@@ -1003,7 +1003,7 @@ class TeamColors
         ],
 
         // Norway
-        'FK BodÃ¸/Glimt' => [
+        'FK BodÃƒÂ¸/Glimt' => [
             'pattern' => 'solid',
             'primary' => 'yellow-400',
             'secondary' => 'black',
@@ -1041,7 +1041,7 @@ class TeamColors
         ],
 
         // Azerbaijan
-        'QarabaÄŸ FK' => [
+        'QarabaÃ„Å¸ FK' => [
             'pattern' => 'solid',
             'primary' => 'black',
             'secondary' => 'white',
@@ -1369,7 +1369,7 @@ class TeamColors
         ],
 
         // =============================================
-        // National Teams â€” FIFA World Cup 2026
+        // National Teams Ã¢â‚¬â€ FIFA World Cup 2026
         // =============================================
 
         // Group A
@@ -1465,7 +1465,7 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'black',
         ],
-        'CuraÃ§ao' => [
+        'CuraÃƒÂ§ao' => [
             'pattern' => 'solid',
             'primary' => 'blue-600',
             'secondary' => 'yellow-400',
