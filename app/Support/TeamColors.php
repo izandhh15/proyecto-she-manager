@@ -1,11 +1,11 @@
-<?php
+﻿<?php
 
 namespace App\Support;
 
 class TeamColors
 {
     /**
-     * Tailwind color name → hex value lookup.
+     * Tailwind color name â†’ hex value lookup.
      * Only includes shades actually used by teams.
      */
     private const TAILWIND_HEX = [
@@ -46,14 +46,14 @@ class TeamColors
     ];
 
     /**
-     * Team name → kit colors mapping.
+     * Team name â†’ kit colors mapping.
      * Uses Tailwind color names for readability.
      *
      * Patterns: solid, stripes, hoops, sash, halves
      */
     private const TEAMS = [
         // =============================================
-        // Spain — La Liga (ESP1)
+        // Spain â€” La Liga (ESP1)
         // =============================================
         'Real Madrid' => [
             'pattern' => 'solid',
@@ -67,7 +67,7 @@ class TeamColors
             'secondary' => 'blue-800',
             'number' => 'white',
         ],
-        'Atlético de Madrid' => [
+        'AtlÃ©tico de Madrid' => [
             'pattern' => 'stripes',
             'primary' => 'red-600',
             'secondary' => 'white',
@@ -79,7 +79,7 @@ class TeamColors
             'secondary' => 'white',
             'number' => 'black',
         ],
-        'Real Betis Balompié' => [
+        'Real Betis BalompiÃ©' => [
             'pattern' => 'stripes',
             'primary' => 'green-600',
             'secondary' => 'white',
@@ -145,7 +145,7 @@ class TeamColors
             'secondary' => 'red-500',
             'number' => 'black',
         ],
-        'Deportivo Alavés' => [
+        'Deportivo AlavÃ©s' => [
             'pattern' => 'stripes',
             'primary' => 'blue-700',
             'secondary' => 'white',
@@ -177,9 +177,9 @@ class TeamColors
         ],
 
         // =============================================
-        // Spain — Segunda División (ESP2)
+        // Spain â€” Segunda DivisiÃ³n (ESP2)
         // =============================================
-        'Deportivo de La Coruña' => [
+        'Deportivo de La CoruÃ±a' => [
             'pattern' => 'stripes',
             'primary' => 'blue-600',
             'secondary' => 'white',
@@ -191,13 +191,13 @@ class TeamColors
             'secondary' => 'yellow-400',
             'number' => 'blue-900',
         ],
-        'Málaga CF' => [
+        'MÃ¡laga CF' => [
             'pattern' => 'stripes',
             'primary' => 'blue-500',
             'secondary' => 'white',
             'number' => 'white',
         ],
-        'Sporting Gijón' => [
+        'Sporting GijÃ³n' => [
             'pattern' => 'stripes',
             'primary' => 'red-600',
             'secondary' => 'white',
@@ -215,13 +215,13 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'green-700',
         ],
-        'Córdoba CF' => [
+        'CÃ³rdoba CF' => [
             'pattern' => 'stripes',
             'primary' => 'green-600',
             'secondary' => 'white',
             'number' => 'green-600',
         ],
-        'Cádiz CF' => [
+        'CÃ¡diz CF' => [
             'pattern' => 'solid',
             'primary' => 'yellow-400',
             'secondary' => 'blue-700',
@@ -239,19 +239,19 @@ class TeamColors
             'secondary' => 'white',
             'number' => 'red-600',
         ],
-        'UD Almería' => [
+        'UD AlmerÃ­a' => [
             'pattern' => 'stripes',
             'primary' => 'red-600',
             'secondary' => 'white',
             'number' => 'white',
         ],
-        'Albacete Balompié' => [
+        'Albacete BalompiÃ©' => [
             'pattern' => 'solid',
             'primary' => 'white',
             'secondary' => 'white',
             'number' => 'black',
         ],
-        'CD Castellón' => [
+        'CD CastellÃ³n' => [
             'pattern' => 'stripes',
             'primary' => 'black',
             'secondary' => 'white',
@@ -263,7 +263,7 @@ class TeamColors
             'secondary' => 'red-700',
             'number' => 'red-700',
         ],
-        'CD Leganés' => [
+        'CD LeganÃ©s' => [
             'pattern' => 'stripes',
             'primary' => 'blue-600',
             'secondary' => 'white',
@@ -293,7 +293,7 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'black',
         ],
-        'CD Mirandés' => [
+        'CD MirandÃ©s' => [
             'pattern' => 'solid',
             'primary' => 'red-700',
             'secondary' => 'red-700',
@@ -313,7 +313,7 @@ class TeamColors
         ],
 
         // =============================================
-        // England — Premier League (ENG1)
+        // England â€” Premier League (ENG1)
         // =============================================
         'Manchester City' => [
             'pattern' => 'solid',
@@ -437,7 +437,7 @@ class TeamColors
         ],
 
         // =============================================
-        // Germany — Bundesliga (DEU1)
+        // Germany â€” Bundesliga (DEU1)
         // =============================================
         'Bayern Munich' => [
             'pattern' => 'solid',
@@ -481,7 +481,7 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'white',
         ],
-        'Borussia Mönchengladbach' => [
+        'Borussia MÃ¶nchengladbach' => [
             'pattern' => 'solid',
             'primary' => 'white',
             'secondary' => 'green-600',
@@ -499,7 +499,7 @@ class TeamColors
             'secondary' => 'white',
             'number' => 'white',
         ],
-        '1.FC Köln' => [
+        '1.FC KÃ¶ln' => [
             'pattern' => 'solid',
             'primary' => 'white',
             'secondary' => 'red-600',
@@ -549,7 +549,7 @@ class TeamColors
         ],
 
         // =============================================
-        // France — Ligue 1 (FRA1)
+        // France â€” Ligue 1 (FRA1)
         // =============================================
         'Paris Saint-Germain' => [
             'pattern' => 'bar',
@@ -661,7 +661,7 @@ class TeamColors
         ],
 
         // =============================================
-        // Italy — Serie A (ITA1)
+        // Italy â€” Serie A (ITA1)
         // =============================================
         'Inter Milan' => [
             'pattern' => 'stripes',
@@ -979,7 +979,7 @@ class TeamColors
         ],
 
         // Hungary
-        'Ferencvárosi TC' => [
+        'FerencvÃ¡rosi TC' => [
             'pattern' => 'stripes',
             'primary' => 'green-600',
             'secondary' => 'white',
@@ -995,7 +995,7 @@ class TeamColors
         ],
 
         // Sweden
-        'Malmö FF' => [
+        'MalmÃ¶ FF' => [
             'pattern' => 'solid',
             'primary' => 'sky-400',
             'secondary' => 'white',
@@ -1003,7 +1003,7 @@ class TeamColors
         ],
 
         // Norway
-        'FK Bodø/Glimt' => [
+        'FK BodÃ¸/Glimt' => [
             'pattern' => 'solid',
             'primary' => 'yellow-400',
             'secondary' => 'black',
@@ -1041,7 +1041,7 @@ class TeamColors
         ],
 
         // Azerbaijan
-        'Qarabağ FK' => [
+        'QarabaÄŸ FK' => [
             'pattern' => 'solid',
             'primary' => 'black',
             'secondary' => 'white',
@@ -1065,7 +1065,311 @@ class TeamColors
         ],
 
         // =============================================
-        // National Teams — FIFA World Cup 2026
+        // Women's Club Aliases
+        // =============================================
+        'Arsenal Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-600',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Aston Villa Women' => [
+            'pattern' => 'solid',
+            'primary' => 'purple-800',
+            'secondary' => 'sky-400',
+            'number' => 'sky-400',
+        ],
+        'Brighton & Hove Albion Women' => [
+            'pattern' => 'stripes',
+            'primary' => 'blue-600',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Chelsea Women' => [
+            'pattern' => 'solid',
+            'primary' => 'blue-700',
+            'secondary' => 'blue-700',
+            'number' => 'white',
+        ],
+        'Everton Women' => [
+            'pattern' => 'solid',
+            'primary' => 'blue-700',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Leicester City Women' => [
+            'pattern' => 'solid',
+            'primary' => 'blue-600',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Liverpool Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-600',
+            'secondary' => 'red-600',
+            'number' => 'white',
+        ],
+        'London City Lionesses' => [
+            'pattern' => 'solid',
+            'primary' => 'amber-500',
+            'secondary' => 'blue-900',
+            'number' => 'blue-900',
+        ],
+        'Manchester City Women' => [
+            'pattern' => 'solid',
+            'primary' => 'sky-400',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Manchester United Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-600',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Tottenham Hotspur Women' => [
+            'pattern' => 'solid',
+            'primary' => 'white',
+            'secondary' => 'blue-900',
+            'number' => 'blue-900',
+        ],
+        'West Ham United Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-800',
+            'secondary' => 'sky-400',
+            'number' => 'sky-400',
+        ],
+        'Dijon FCO Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-600',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'FC Fleury 91' => [
+            'pattern' => 'solid',
+            'primary' => 'red-600',
+            'secondary' => 'black',
+            'number' => 'white',
+        ],
+        'Le Havre Women' => [
+            'pattern' => 'solid',
+            'primary' => 'sky-500',
+            'secondary' => 'blue-900',
+            'number' => 'white',
+        ],
+        'RC Lens Women' => [
+            'pattern' => 'stripes',
+            'primary' => 'yellow-400',
+            'secondary' => 'red-600',
+            'number' => 'black',
+        ],
+        'OL Lyonnes' => [
+            'pattern' => 'solid',
+            'primary' => 'white',
+            'secondary' => 'blue-700',
+            'number' => 'red-600',
+        ],
+        'Olympique de Marseille Women' => [
+            'pattern' => 'solid',
+            'primary' => 'white',
+            'secondary' => 'sky-400',
+            'number' => 'sky-400',
+        ],
+        'Montpellier HSC Women' => [
+            'pattern' => 'solid',
+            'primary' => 'orange-500',
+            'secondary' => 'blue-800',
+            'number' => 'blue-800',
+        ],
+        'FC Nantes Women' => [
+            'pattern' => 'solid',
+            'primary' => 'yellow-400',
+            'secondary' => 'green-700',
+            'number' => 'green-700',
+        ],
+        'Paris FC Women' => [
+            'pattern' => 'solid',
+            'primary' => 'blue-700',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Paris Saint-Germain Women' => [
+            'pattern' => 'bar',
+            'primary' => 'blue-900',
+            'secondary' => 'red-600',
+            'number' => 'white',
+        ],
+        'Racing Strasbourg Women' => [
+            'pattern' => 'solid',
+            'primary' => 'blue-500',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'AS Saint-Etienne Women' => [
+            'pattern' => 'solid',
+            'primary' => 'green-600',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Juventus Women' => [
+            'pattern' => 'stripes',
+            'primary' => 'black',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Inter Women' => [
+            'pattern' => 'stripes',
+            'primary' => 'blue-900',
+            'secondary' => 'black',
+            'number' => 'white',
+        ],
+        'AC Milan Women' => [
+            'pattern' => 'stripes',
+            'primary' => 'red-600',
+            'secondary' => 'black',
+            'number' => 'white',
+        ],
+        'Sassuolo Women' => [
+            'pattern' => 'stripes',
+            'primary' => 'green-600',
+            'secondary' => 'black',
+            'number' => 'white',
+        ],
+        'Parma Women' => [
+            'pattern' => 'halves',
+            'primary' => 'white',
+            'secondary' => 'black',
+            'number' => 'black',
+        ],
+        'Genoa Women' => [
+            'pattern' => 'halves',
+            'primary' => 'blue-900',
+            'secondary' => 'red-700',
+            'number' => 'white',
+        ],
+        'Fiorentina Women' => [
+            'pattern' => 'solid',
+            'primary' => 'purple-700',
+            'secondary' => 'purple-700',
+            'number' => 'white',
+        ],
+        'Ternana Women' => [
+            'pattern' => 'stripes',
+            'primary' => 'green-600',
+            'secondary' => 'red-600',
+            'number' => 'white',
+        ],
+        'Lazio Women' => [
+            'pattern' => 'solid',
+            'primary' => 'sky-400',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'AS Roma Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-900',
+            'secondary' => 'amber-500',
+            'number' => 'amber-500',
+        ],
+        'Napoli Women' => [
+            'pattern' => 'solid',
+            'primary' => 'sky-500',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Como Women' => [
+            'pattern' => 'solid',
+            'primary' => 'blue-700',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Bayer 04 Leverkusen Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-600',
+            'secondary' => 'black',
+            'number' => 'white',
+        ],
+        'Bayern Munich Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-700',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Carl Zeiss Jena Women' => [
+            'pattern' => 'solid',
+            'primary' => 'yellow-400',
+            'secondary' => 'blue-700',
+            'number' => 'blue-700',
+        ],
+        'FC Koln Women' => [
+            'pattern' => 'solid',
+            'primary' => 'white',
+            'secondary' => 'red-600',
+            'number' => 'red-600',
+        ],
+        'Eintracht Frankfurt Women' => [
+            'pattern' => 'solid',
+            'primary' => 'black',
+            'secondary' => 'red-600',
+            'number' => 'white',
+        ],
+        'SGS Essen' => [
+            'pattern' => 'solid',
+            'primary' => 'purple-700',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'SC Freiburg Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-700',
+            'secondary' => 'black',
+            'number' => 'white',
+        ],
+        'Hamburger SV Women' => [
+            'pattern' => 'solid',
+            'primary' => 'white',
+            'secondary' => 'blue-700',
+            'number' => 'blue-700',
+        ],
+        'Hoffenheim Women' => [
+            'pattern' => 'solid',
+            'primary' => 'blue-500',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'FC Nurnberg Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-900',
+            'secondary' => 'black',
+            'number' => 'white',
+        ],
+        'RB Leipzig Women' => [
+            'pattern' => 'solid',
+            'primary' => 'white',
+            'secondary' => 'red-600',
+            'number' => 'red-600',
+        ],
+        'Union Berlin Women' => [
+            'pattern' => 'solid',
+            'primary' => 'red-700',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Werder Bremen Women' => [
+            'pattern' => 'solid',
+            'primary' => 'green-600',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+        'Wolfsburg Women' => [
+            'pattern' => 'solid',
+            'primary' => 'green-700',
+            'secondary' => 'white',
+            'number' => 'white',
+        ],
+
+        // =============================================
+        // National Teams â€” FIFA World Cup 2026
         // =============================================
 
         // Group A
@@ -1161,7 +1465,7 @@ class TeamColors
             'secondary' => 'black',
             'number' => 'black',
         ],
-        'Curaçao' => [
+        'CuraÃ§ao' => [
             'pattern' => 'solid',
             'primary' => 'blue-600',
             'secondary' => 'yellow-400',
@@ -1395,3 +1699,4 @@ class TeamColors
         return self::TAILWIND_HEX[$color] ?? '#6B7280';
     }
 }
+

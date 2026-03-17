@@ -114,13 +114,51 @@
                     @foreach($countries as $countryCode => $country)
                         @foreach($country['tiers'] as $tier => $competition)
                             <div x-show="openTab === '{{ $competition->id }}'" x-cloak>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                                <div class="mb-4 rounded-xl border border-border-default bg-surface-800/70 px-4 py-3">
+                                    <div class="flex items-center gap-3">
+                                        <x-competition-logo :competition="$competition" class="h-8 w-auto max-w-20 shrink-0" />
+                                        <div class="min-w-0">
+                                            <p class="font-heading text-sm font-bold uppercase tracking-[0.18em] text-text-body">
+                                                {{ $country['name'] }}
+                                            </p>
+                                            <p class="text-sm text-text-secondary">
+                                                {{ __($competition->name) }} · {{ $competition->teams->count() }} clubes
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
                                     @foreach($competition->teams as $team)
-                                        <label class="flex items-center gap-3 rounded-lg border border-border-default p-3 md:p-4 cursor-pointer transition-all
+                                        <label class="flex items-start gap-3 rounded-xl border border-border-default p-4 cursor-pointer transition-all
                                                        hover:bg-accent-blue/5 hover:border-accent-blue/30
                                                        has-checked:ring-2 has-checked:ring-accent-blue has-checked:border-accent-blue/30 has-checked:bg-accent-blue/5">
-                                            <x-team-crest :team="$team" class="w-10 h-10 shrink-0" />
-                                            <span class="text-sm md:text-base font-medium text-text-body truncate">{{ $team->name }}</span>
+                                            <x-team-crest :team="$team" class="w-11 h-11 shrink-0 mt-0.5" />
+                                            <div class="min-w-0 flex-1">
+                                                <div class="flex items-start justify-between gap-3">
+                                                    <div class="min-w-0">
+                                                        <p class="text-sm md:text-base font-semibold text-text-body truncate">{{ $team->name }}</p>
+                                                        <p class="text-xs uppercase tracking-wide text-text-muted">{{ $country['name'] }}</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mt-3 space-y-1.5 text-xs md:text-sm text-text-secondary">
+                                                    <div class="flex items-center gap-2">
+                                                        <svg class="h-4 w-4 shrink-0 text-accent-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M8.25 6.75h7.5m-7.5 3h7.5m-7.5 3h7.5m-7.5 3h7.5" />
+                                                        </svg>
+                                                        <span class="truncate">{{ $team->stadium_name ?: 'Estadio por confirmar' }}</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-2">
+                                                        <svg class="h-4 w-4 shrink-0 text-accent-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.742-.479 3 3 0 0 0-4.682-2.72m.94 3.198v.75c0 .414-.336.75-.75.75H6.75a.75.75 0 0 1-.75-.75v-.75m12 0a5.966 5.966 0 0 0-1.977-4.447M6 18.72a9.094 9.094 0 0 1-3.742-.479 3 3 0 0 1 4.682-2.72m-.94 3.198a5.966 5.966 0 0 1 1.977-4.447m0 0a5.975 5.975 0 0 1 8.046 0M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                                        </svg>
+                                                        <span>
+                                                            {{ $team->stadium_seats ? number_format($team->stadium_seats, 0, ',', '.') . ' asientos' : 'Aforo pendiente' }}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <input x-bind:required="mode === 'career'" x-bind:disabled="mode !== 'career'" type="radio" name="team_id" value="{{ $team->id }}" class="hidden">
                                         </label>
                                     @endforeach
