@@ -24,12 +24,18 @@
 
             {{-- Description --}}
             <p class="text-text-secondary max-w-md mx-auto">{{ $message }}</p>
+
+            <div x-show="errorMessage" x-cloak class="mt-6 max-w-lg mx-auto rounded-xl border border-accent-primary/30 bg-surface/80 px-4 py-3 text-left">
+                <div class="text-sm font-semibold text-text-primary">{{ __('app.error') }}</div>
+                <p class="mt-1 text-sm text-text-secondary" x-text="errorMessage"></p>
+            </div>
         </div>
     </div>
 
     <script>
         function loadingPoller() {
             return {
+                errorMessage: null,
                 startPolling() {
                     const pollUrl = '{{ route("game.setup-status", $game->id) }}';
 
@@ -40,6 +46,9 @@
                             if (data.ready) {
                                 clearInterval(interval);
                                 window.location.reload();
+                            } else if (data.failed) {
+                                clearInterval(interval);
+                                this.errorMessage = data.message;
                             }
                         } catch (e) {
                             // Silently retry on network error

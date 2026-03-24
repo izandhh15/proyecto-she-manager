@@ -7,7 +7,7 @@ class EnergyCalculator
     /**
      * Calculate energy drain per minute for a player.
      *
-     * @param  float  $tacticalDrainMultiplier  Combined tactical drain (playing style × pressing)
+     * @param  float  $tacticalDrainMultiplier  Combined tactical drain (playing style Ã— pressing)
      */
     public static function drainPerMinute(int $physicalAbility, int $age, bool $isGoalkeeper, float $tacticalDrainMultiplier = 1.0): float
     {
@@ -43,11 +43,11 @@ class EnergyCalculator
     }
 
     /**
-     * Calculate average energy over a period (linear drain → midpoint).
+     * Calculate average energy over a period (linear drain â†’ midpoint).
      */
     public static function averageEnergy(int $physicalAbility, int $age, bool $isGoalkeeper, int $entryMinute, int $fromMinute, int $toMinute = 93, float $tacticalDrainMultiplier = 1.0): float
     {
-        // Player hasn't entered yet — shouldn't happen but return full energy
+        // Player hasn't entered yet â€” shouldn't happen but return full energy
         if ($entryMinute > $toMinute) {
             return 100.0;
         }
@@ -62,7 +62,7 @@ class EnergyCalculator
     }
 
     /**
-     * Convert average energy (0–100) to an effectiveness modifier (min_effectiveness–1.0).
+     * Convert average energy (0â€“100) to an effectiveness modifier (min_effectivenessâ€“1.0).
      */
     public static function effectivenessModifier(float $averageEnergy): float
     {

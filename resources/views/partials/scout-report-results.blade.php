@@ -87,7 +87,7 @@
                             </div>
                             <div class="text-right">
                                 <div class="text-xs text-text-secondary">{{ __('transfers.asking_price') }}</div>
-                                <div class="text-sm font-semibold {{ $canAffordFee ? 'text-text-primary' : 'text-accent-red' }}">{{ $formattedAskingPrice }}</div>
+                                <div class="text-sm font-semibold {{ $canAffordFee ? 'text-text-primary' : 'text-accent-primary' }}">{{ $formattedAskingPrice }}</div>
                             </div>
                             {{-- Shortlist toggle --}}
                             <x-icon-button
@@ -163,7 +163,7 @@
                                     <div class="space-y-2.5">
                                         <div class="flex items-center justify-between">
                                             <span class="text-xs text-text-muted">{{ __('transfers.estimated_asking_price') }}</span>
-                                            <span class="text-xs font-semibold {{ $canAffordFee ? 'text-text-primary' : 'text-accent-red' }}">{{ $formattedAskingPrice }}</span>
+                                            <span class="text-xs font-semibold {{ $canAffordFee ? 'text-text-primary' : 'text-accent-primary' }}">{{ $formattedAskingPrice }}</span>
                                         </div>
                                         <div class="flex items-center justify-between">
                                             <span class="text-xs text-text-muted">{{ __('transfers.wage_demand') }}</span>
@@ -223,7 +223,7 @@
                                                 </div>
                                             </form>
                                         @elseif(!$canAffordFee)
-                                            <div class="text-xs text-accent-red font-medium">
+                                            <div class="text-xs text-accent-primary font-medium">
                                                 {{ __('transfers.transfer_fee_exceeds_budget') }}
                                             </div>
                                         @else

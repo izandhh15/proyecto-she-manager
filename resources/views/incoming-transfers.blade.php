@@ -43,7 +43,7 @@
                                     <p class="font-semibold text-text-body mb-2">{{ __('transfers.transfers_help_selling_title') }}</p>
                                     <ul class="space-y-1 text-text-secondary">
                                         <li class="flex gap-2"><span class="text-accent-gold shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_list') }}</li>
-                                        <li class="flex gap-2"><span class="text-accent-red shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_unsolicited') }}</li>
+                                        <li class="flex gap-2"><span class="text-accent-primary shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_unsolicited') }}</li>
                                         <li class="flex gap-2"><span class="text-accent-green shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_accept') }}</li>
                                     </ul>
                                 </div>
@@ -52,7 +52,7 @@
                                 <div>
                                     <p class="font-semibold text-text-body mb-2">{{ __('transfers.transfers_help_contracts_title') }}</p>
                                     <ul class="space-y-1 text-text-secondary">
-                                        <li class="flex gap-2"><span class="text-accent-red shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_expiring') }}</li>
+                                        <li class="flex gap-2"><span class="text-accent-primary shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_expiring') }}</li>
                                         <li class="flex gap-2"><span class="text-accent-blue shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_renew') }}</li>
                                         <li class="flex gap-2"><span class="text-accent-gold shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_wages') }}</li>
                                     </ul>
@@ -90,7 +90,7 @@
                             @endif
 
                             {{-- ============================================= --}}
-                            {{-- COUNTER-OFFERS — red accent --}}
+                            {{-- COUNTER-OFFERS â€” red accent --}}
                             {{-- ============================================= --}}
                             @if($counterOffers->isNotEmpty())
                             <div class="border-l-4 border-l-accent-red pl-5">
@@ -98,7 +98,7 @@
                                 <p class="text-sm text-text-muted mb-3">{{ __('transfers.counter_offers_help') }}</p>
                                 <div class="space-y-3">
                                     @foreach($counterOffers as $bid)
-                                    <div class="bg-accent-red/10 border border-accent-red/20 rounded-xl p-4">
+                                    <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-xl p-4">
                                         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                                             <div class="flex items-center gap-4">
                                                 @if($bid->sellingTeam)
@@ -113,13 +113,13 @@
                                                     </div>
                                                     <div class="text-sm mt-1">
                                                         <span class="text-text-muted line-through">{{ __('transfers.your_bid_amount', ['amount' => $bid->formatted_transfer_fee]) }}</span>
-                                                        <span class="text-accent-red font-semibold ml-2">{{ __('transfers.they_ask', ['amount' => \App\Support\Money::format($bid->asking_price)]) }}</span>
+                                                        <span class="text-accent-primary font-semibold ml-2">{{ __('transfers.they_ask', ['amount' => \App\Support\Money::format($bid->asking_price)]) }}</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4">
                                                 <div class="md:text-right">
-                                                    <div class="text-xl font-bold text-accent-red">{{ \App\Support\Money::format($bid->asking_price) }}</div>
+                                                    <div class="text-xl font-bold text-accent-primary">{{ \App\Support\Money::format($bid->asking_price) }}</div>
                                                 </div>
                                                 <form method="post" action="{{ route('game.scouting.counter.accept', [$game->id, $bid->id]) }}">
                                                     @csrf
@@ -134,7 +134,7 @@
                             @endif
 
                             {{-- ============================================= --}}
-                            {{-- PENDING BIDS — amber accent --}}
+                            {{-- PENDING BIDS â€” amber accent --}}
                             {{-- ============================================= --}}
                             @if($pendingBids->isNotEmpty())
                             <div class="border-l-4 border-l-accent-gold pl-5">
@@ -180,7 +180,7 @@
                             @endif
 
                             {{-- ============================================= --}}
-                            {{-- INCOMING AGREED TRANSFERS — green accent --}}
+                            {{-- INCOMING AGREED TRANSFERS â€” green accent --}}
                             {{-- ============================================= --}}
                             @if($incomingAgreedTransfers->isNotEmpty())
                             <div class="border-l-4 border-l-accent-green pl-5">
@@ -281,8 +281,8 @@
                                                 </div>
                                             </div>
                                             <div class="text-right">
-                                                <div class="text-sm font-bold text-accent-red line-through">{{ $bid->formatted_transfer_fee }}</div>
-                                                <div class="text-xs text-accent-red">{{ __('transfers.bid_rejected') }}</div>
+                                                <div class="text-sm font-bold text-accent-primary line-through">{{ $bid->formatted_transfer_fee }}</div>
+                                                <div class="text-xs text-accent-primary">{{ __('transfers.bid_rejected') }}</div>
                                             </div>
                                         </div>
                                     </div>

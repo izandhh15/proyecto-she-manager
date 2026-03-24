@@ -9,4 +9,4 @@
 {{ __('beta.email_warning') }}
 
 {{ __('beta.email_thanks') }}
-Pablo — {{ config('app.name') }}
+Pablo â€” {{ config('app.name') }}

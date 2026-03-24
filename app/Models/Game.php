@@ -101,7 +101,7 @@ class Game extends Model
     public const GOAL_TOP_HALF = 'top_half';
     public const GOAL_SURVIVAL = 'survival';
 
-    // Segunda División season goals
+    // Segunda DivisiÃ³n season goals
     public const GOAL_PROMOTION = 'promotion';
     public const GOAL_PLAYOFF = 'playoff';
 
@@ -503,7 +503,7 @@ class Game extends Model
      * Check if we've just entered the winter window (January 1).
      * Used to trigger one-time events like wage payments.
      *
-     * Also accounts for the December→January gap (see isWinterWindowOpen).
+     * Also accounts for the Decemberâ†’January gap (see isWinterWindowOpen).
      */
     public function isStartOfWinterWindow(): bool
     {
@@ -516,7 +516,7 @@ class Game extends Model
             return true;
         }
 
-        // December→January gap: next match is in early January
+        // Decemberâ†’January gap: next match is in early January
         if ($this->current_date->month === 12) {
             $nextMatch = $this->next_match;
             if ($nextMatch && $nextMatch->scheduled_date->month === 1 && $nextMatch->scheduled_date->day <= 7) {
@@ -617,7 +617,7 @@ class Game extends Model
      * Check if we're in the pre-contract offer period (January through May).
      * Players in their last year of contract can be approached for a free transfer.
      *
-     * Also accounts for the December→January gap (see isWinterWindowOpen).
+     * Also accounts for the Decemberâ†’January gap (see isWinterWindowOpen).
      */
     public function isPreContractPeriod(): bool
     {
@@ -646,7 +646,7 @@ class Game extends Model
     // ==========================================
 
     /**
-     * Format a season year for display: "2025" → "2025/26".
+     * Format a season year for display: "2025" â†’ "2025/26".
      */
     public static function formatSeason(string $season): string
     {
@@ -691,7 +691,7 @@ class Game extends Model
         $boundaries = [];
 
         if ($this->isTransferWindowOpen()) {
-            // Window is open — countdown to closing
+            // Window is open â€” countdown to closing
             if ($this->isSummerWindowOpen()) {
                 $boundaries[] = [
                     'date' => Carbon::createFromDate($year, 9, 1),
@@ -708,7 +708,7 @@ class Game extends Model
                 ];
             }
         } else {
-            // Window is closed — countdown to opening
+            // Window is closed â€” countdown to opening
             if ($month >= 2 && $month <= 6) {
                 $boundaries[] = [
                     'date' => Carbon::createFromDate($year, 7, 1),

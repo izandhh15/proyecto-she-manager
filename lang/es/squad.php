@@ -8,10 +8,10 @@ return [
     'stats' => 'Estadísticas',
 
     // Position groups
-    'goalkeepers' => 'Porteros',
+    'goalkeepers' => 'Porteras',
     'defenders' => 'Defensas',
     'midfielders' => 'Centrocampistas',
-    'forwards' => 'Delanteros',
+    'forwards' => 'Delanteras',
     'goalkeepers_short' => 'PO',
     'defenders_short' => 'DEF',
     'midfielders_short' => 'MC',
@@ -331,7 +331,7 @@ return [
     'pos' => 'Pos',
     'rating' => 'Nota',
     'key_stats' => 'Estadísticas',
-    'players_count' => 'jugadores',
+    'players_count' => 'jugadoras',
     'dev_status_label' => 'Estado',
 
     // Morale labels

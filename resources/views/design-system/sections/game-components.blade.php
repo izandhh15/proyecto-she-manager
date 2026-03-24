@@ -1,6 +1,6 @@
 <section id="game-components" class="mb-20">
     <h2 class="font-heading text-2xl lg:text-3xl font-bold uppercase tracking-wide text-text-primary mb-2">Game Components</h2>
-    <p class="text-sm text-text-secondary mb-8">Complex components that require Eloquent model data to render. Documented here with props, usage patterns, and descriptions — no rendered previews since they depend on live data.</p>
+    <p class="text-sm text-text-secondary mb-8">Complex components that require Eloquent model data to render. Documented here with props, usage patterns, and descriptions â€” no rendered previews since they depend on live data.</p>
 
     {{-- Player Avatar --}}
     <div class="mb-12">
@@ -13,15 +13,15 @@
                 <div class="text-[10px] text-text-muted uppercase tracking-wider mb-3">Sizes</div>
                 <div class="flex items-end gap-6">
                     <div class="text-center">
-                        <x-player-avatar name="Marc Rodríguez" position-group="Goalkeeper" position-abbrev="GK" size="sm" />
+                        <x-player-avatar name="Marc RodrÃ­guez" position-group="Goalkeeper" position-abbrev="GK" size="sm" />
                         <div class="text-[10px] text-text-muted mt-2">sm</div>
                     </div>
                     <div class="text-center">
-                        <x-player-avatar name="Marc Rodríguez" position-group="Goalkeeper" position-abbrev="GK" size="md" />
+                        <x-player-avatar name="Marc RodrÃ­guez" position-group="Goalkeeper" position-abbrev="GK" size="md" />
                         <div class="text-[10px] text-text-muted mt-2">md</div>
                     </div>
                     <div class="text-center">
-                        <x-player-avatar name="Marc Rodríguez" position-group="Goalkeeper" position-abbrev="GK" size="lg" />
+                        <x-player-avatar name="Marc RodrÃ­guez" position-group="Goalkeeper" position-abbrev="GK" size="lg" />
                         <div class="text-[10px] text-text-muted mt-2">lg</div>
                     </div>
                 </div>
@@ -32,15 +32,15 @@
                 <div class="text-[10px] text-text-muted uppercase tracking-wider mb-3">Position Groups</div>
                 <div class="flex items-center gap-6">
                     <div class="text-center">
-                        <x-player-avatar name="Marc Rodríguez" position-group="Goalkeeper" position-abbrev="GK" />
+                        <x-player-avatar name="Marc RodrÃ­guez" position-group="Goalkeeper" position-abbrev="GK" />
                         <div class="text-[10px] text-text-muted mt-2">GK</div>
                     </div>
                     <div class="text-center">
-                        <x-player-avatar name="Pablo García" position-group="Defender" position-abbrev="CB" />
+                        <x-player-avatar name="Pablo GarcÃ­a" position-group="Defender" position-abbrev="CB" />
                         <div class="text-[10px] text-text-muted mt-2">DEF</div>
                     </div>
                     <div class="text-center">
-                        <x-player-avatar name="Luis Fernández" position-group="Midfielder" position-abbrev="CM" />
+                        <x-player-avatar name="Luis FernÃ¡ndez" position-group="Midfielder" position-abbrev="CM" />
                         <div class="text-[10px] text-text-muted mt-2">MID</div>
                     </div>
                     <div class="text-center">
@@ -48,11 +48,11 @@
                         <div class="text-[10px] text-text-muted mt-2">FWD</div>
                     </div>
                     <div class="text-center">
-                        <x-player-avatar name="Ana López" position-group="Defender" />
+                        <x-player-avatar name="Ana LÃ³pez" position-group="Defender" />
                         <div class="text-[10px] text-text-muted mt-2">No badge</div>
                     </div>
                     <div class="text-center">
-                        <x-player-avatar name="Marc Rodríguez" position-group="Goalkeeper" :number="1" />
+                        <x-player-avatar name="Marc RodrÃ­guez" position-group="Goalkeeper" :number="1" />
                         <div class="text-[10px] text-text-muted mt-2">With #</div>
                     </div>
                 </div>
@@ -90,13 +90,13 @@
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">name</td>
                         <td class="py-2 pr-4 text-text-secondary">string</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Player name (initials computed automatically)</td>
                     </tr>
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">positionGroup</td>
                         <td class="py-2 pr-4 text-text-secondary">string</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Goalkeeper | Defender | Midfielder | Forward</td>
                     </tr>
                     <tr class="border-b border-border-default">
@@ -133,7 +133,7 @@
                 <x-summary-card label="AVG AGE" value="26.3" />
                 <x-summary-card label="FITNESS" value="87%" value-class="text-accent-green" />
                 <x-summary-card label="MORALE" value="78" />
-                <x-summary-card label="BUDGET" value="€12.5M" class="min-w-[130px]" />
+                <x-summary-card label="BUDGET" value="â‚¬12.5M" class="min-w-[130px]" />
             </div>
         </div>
 
@@ -150,7 +150,7 @@
 &lt;x-summary-card label="FITNESS" value="87%" value-class="text-accent-green" /&gt;
 
 &lt;!-- With custom width --&gt;
-&lt;x-summary-card label="BUDGET" value="€12.5M" class="min-w-[130px]" /&gt;
+&lt;x-summary-card label="BUDGET" value="â‚¬12.5M" class="min-w-[130px]" /&gt;
 
 &lt;!-- With slot content --&gt;
 &lt;x-summary-card label="STATUS" value="Active"&gt;
@@ -173,13 +173,13 @@
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">label</td>
                         <td class="py-2 pr-4 text-text-secondary">string</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Micro-label text displayed above the value</td>
                     </tr>
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">value</td>
                         <td class="py-2 pr-4 text-text-secondary">string</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Main bold value</td>
                     </tr>
                     <tr class="border-b border-border-default">
@@ -257,13 +257,13 @@
                     <tr class="border-b border-border-default">
                         <td class="px-3 py-2 font-mono text-accent-blue text-xs">match</td>
                         <td class="px-3 py-2">GameMatch</td>
-                        <td class="px-3 py-2 text-text-muted">—</td>
+                        <td class="px-3 py-2 text-text-muted">â€”</td>
                         <td class="px-3 py-2">The match model with homeTeam/awayTeam and competition loaded</td>
                     </tr>
                     <tr class="border-b border-border-default">
                         <td class="px-3 py-2 font-mono text-accent-blue text-xs">game</td>
                         <td class="px-3 py-2">Game</td>
-                        <td class="px-3 py-2 text-text-muted">—</td>
+                        <td class="px-3 py-2 text-text-muted">â€”</td>
                         <td class="px-3 py-2">The game model (determines user's team for home/away)</td>
                     </tr>
                     <tr class="border-b border-border-default">
@@ -292,7 +292,7 @@
         <div class="bg-surface-700/30 border border-border-default rounded-xl p-6 mb-3">
             <div class="bg-surface-800 border border-border-default rounded-xl overflow-hidden max-w-md">
                 <div class="divide-y divide-border-default">
-                    {{-- Played match — win --}}
+                    {{-- Played match â€” win --}}
                     <div class="flex items-center gap-3 px-4 py-2.5 hover:bg-surface-700/30 transition-colors">
                         <div class="w-10 shrink-0 text-center">
                             <div class="text-[11px] font-medium text-text-body leading-tight">15</div>
@@ -311,7 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- Played match — loss --}}
+                    {{-- Played match â€” loss --}}
                     <div class="flex items-center gap-3 px-4 py-2.5 hover:bg-surface-700/30 transition-colors">
                         <div class="w-10 shrink-0 text-center">
                             <div class="text-[11px] font-medium text-text-body leading-tight">22</div>
@@ -325,8 +325,8 @@
                         </div>
                         <div class="shrink-0 text-right">
                             <div class="flex items-center gap-2">
-                                <div class="w-1.5 h-1.5 rounded-full bg-accent-red shrink-0"></div>
-                                <span class="text-[11px] font-semibold text-accent-red">0 - 2</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-accent-primary shrink-0"></div>
+                                <span class="text-[11px] font-semibold text-accent-primary">0 - 2</span>
                             </div>
                         </div>
                     </div>
@@ -583,7 +583,7 @@
                     <tr class="border-b border-border-default">
                         <td class="px-3 py-2 font-mono text-accent-blue text-xs">icon</td>
                         <td class="px-3 py-2">string</td>
-                        <td class="px-3 py-2 text-text-muted">—</td>
+                        <td class="px-3 py-2 text-text-muted">â€”</td>
                         <td class="px-3 py-2">Icon key: injury, suspended, recovered, fitness, transfer, transfer_complete, clock, scout, contract, loan, loan_destination, loan_failed, trophy, eliminated, academy</td>
                     </tr>
                     <tr class="border-b border-border-default">
@@ -766,7 +766,7 @@
                     <tr class="border-b border-border-default">
                         <td class="px-3 py-2 font-mono text-accent-blue text-xs">standing</td>
                         <td class="px-3 py-2">GameStanding</td>
-                        <td class="px-3 py-2 text-text-muted">—</td>
+                        <td class="px-3 py-2 text-text-muted">â€”</td>
                         <td class="px-3 py-2">The standing model instance (with team relation loaded)</td>
                     </tr>
                     <tr class="border-b border-border-default">

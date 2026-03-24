@@ -29,10 +29,10 @@ class SeedWorldCupData extends Command
     /** @var array<int, array{match_number: int, home_team_id: int, away_team_id: int, stage_id: int, kickoff_at: string, match_label: string}> */
     private array $csvMatches = [];
 
-    /** @var array<int, string> csv_id → fifa_code */
+    /** @var array<int, string> csv_id â†’ fifa_code */
     private array $csvIdToFifaCode = [];
 
-    /** @var array<string, string> team_name from JSON → external_id (filename) */
+    /** @var array<string, string> team_name from JSON â†’ external_id (filename) */
     private array $jsonTeamNames = [];
 
     public function handle(): int
@@ -280,7 +280,7 @@ class SeedWorldCupData extends Command
         $basePath = base_path('data/2025/WC2026/teams');
 
         if (!is_dir($basePath)) {
-            $this->warn('No teams directory found — skipping player seeding.');
+            $this->warn('No teams directory found â€” skipping player seeding.');
             return 0;
         }
 
@@ -351,7 +351,7 @@ class SeedWorldCupData extends Command
     }
 
     /**
-     * Generate team_mapping.json (FIFA code → UUID bridge).
+     * Generate team_mapping.json (FIFA code â†’ UUID bridge).
      */
     private function generateTeamMapping(array $teamMapping): void
     {

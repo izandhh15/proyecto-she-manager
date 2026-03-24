@@ -16,7 +16,7 @@ final class SelectTeam
             return redirect()->route('dashboard')->withErrors(['limit' => __('messages.game_limit_reached')]);
         }
 
-        // Build country → tier → competition structure for career mode
+        // Build country â†’ tier â†’ competition structure for career mode
         $countries = [];
 
         foreach ($countryConfig->playableCountryCodes() as $code) {

@@ -26,7 +26,7 @@
         return this.euros >= 1_000_000 ? 100_000 : 10_000;
     },
     get display() {
-        return '€ ' + new Intl.NumberFormat('es-ES').format(this.euros);
+        return 'â‚¬ ' + new Intl.NumberFormat('es-ES').format(this.euros);
     },
     get atMin() {
         return this.euros <= this.min;

@@ -33,7 +33,7 @@
         <div class="space-y-2">
             @foreach($alerts as $alert)
                 <div class="flex items-start gap-2 p-2.5 rounded-lg text-xs
-                    @if($alert['type'] === 'danger') bg-accent-red/10 text-accent-red border border-accent-red/20
+                    @if($alert['type'] === 'danger') bg-accent-primary/10 text-accent-primary border border-accent-primary/20
                     @elseif($alert['type'] === 'warning') bg-accent-gold/10 text-accent-gold border border-accent-gold/20
                     @else bg-accent-blue/10 text-accent-blue border border-accent-blue/20
                     @endif">
@@ -104,7 +104,7 @@
         <div class="flex items-center justify-between mt-2 text-xs">
             <span class="flex items-center gap-1">
                 <span class="w-2 h-2 rounded-full bg-green-400"></span>
-                <span class="text-text-secondary">≤23: {{ $youngCount }}</span>
+                <span class="text-text-secondary">â‰¤23: {{ $youngCount }}</span>
             </span>
             <span class="flex items-center gap-1">
                 <span class="w-2 h-2 rounded-full bg-sky-400"></span>
@@ -124,7 +124,7 @@
         <div class="space-y-3">
             @if($expiringThisSeason->isNotEmpty())
                 <div>
-                    <div class="text-xs font-medium text-accent-red mb-1.5">{{ __('squad.expiring_this_season') }}</div>
+                    <div class="text-xs font-medium text-accent-primary mb-1.5">{{ __('squad.expiring_this_season') }}</div>
                     <div class="space-y-1">
                         @foreach($expiringThisSeason as $ep)
                             <x-ghost-button color="slate" size="xs" @click="$dispatch('show-player-detail', '{{ route('game.player.detail', [$game->id, $ep->id]) }}')"

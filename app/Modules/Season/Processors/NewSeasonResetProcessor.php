@@ -20,7 +20,7 @@ class NewSeasonResetProcessor implements SeasonProcessor
 
     public function priority(): int
     {
-        return 110; // Last — after budget projections are ready
+        return 110; // Last â€” after budget projections are ready
     }
 
     public function process(Game $game, SeasonTransitionData $data): SeasonTransitionData

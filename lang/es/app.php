@@ -21,6 +21,7 @@ return [
     'details' => 'Detalles',
     'back' => 'Volver',
     'view_details' => 'Ver detalles',
+    'error' => 'Error',
 
     // Authentication
     'log_out' => 'Cerrar Sesión',

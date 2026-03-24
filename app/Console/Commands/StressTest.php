@@ -246,7 +246,7 @@ class StressTest extends Command
         ]);
 
         $this->line(sprintf(
-            "    Game %d/%d: Season %d done — %d advances, %d matches, %.1fs total (p50: %dms, p95: %dms, max: %dms)",
+            "    Game %d/%d: Season %d done â€” %d advances, %d matches, %.1fs total (p50: %dms, p95: %dms, max: %dms)",
             $gameNumber,
             $totalGames,
             $seasonNumber,

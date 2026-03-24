@@ -7,11 +7,11 @@ use Illuminate\Support\Facades\DB;
 class PlayerTierService
 {
     // Market value thresholds in cents (lower bound of each tier)
-    public const TIER_5_MIN = 50_000_000_00;  // €50M+  World Class
-    public const TIER_4_MIN = 20_000_000_00;  // €20M+  Excellent
-    public const TIER_3_MIN =  5_000_000_00;  // €5M+   Good
-    public const TIER_2_MIN =  1_000_000_00;  // €1M+   Average
-    // Tier 1: below €1M                        Developing
+    public const TIER_5_MIN = 50_000_000_00;  // â‚¬50M+  World Class
+    public const TIER_4_MIN = 20_000_000_00;  // â‚¬20M+  Excellent
+    public const TIER_3_MIN =  5_000_000_00;  // â‚¬5M+   Good
+    public const TIER_2_MIN =  1_000_000_00;  // â‚¬1M+   Average
+    // Tier 1: below â‚¬1M                        Developing
 
     /**
      * Compute tier from market value in cents (pure function, no DB).

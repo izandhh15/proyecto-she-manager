@@ -61,13 +61,13 @@ class ConfigDrivenPromotionRule implements PromotionRelegationRule
         $promoted = $this->getEligibleDirectPromotions($game);
 
         if (!empty($promoted)) {
-            // Real standings exist — check for playoff winner
+            // Real standings exist â€” check for playoff winner
             if ($this->playoffGenerator) {
                 $playoffWinner = $this->getPlayoffWinner($game);
                 if ($playoffWinner) {
                     $promoted[] = $playoffWinner;
                 } else {
-                    // No playoff played — promote next eligible position directly
+                    // No playoff played â€” promote next eligible position directly
                     $promoted = array_merge($promoted, $this->getNextEligibleTeam($game, $promoted));
                 }
             }
@@ -77,7 +77,7 @@ class ConfigDrivenPromotionRule implements PromotionRelegationRule
             return $promoted;
         }
 
-        // Fall back to simulated results — take top N (no playoffs in simulated leagues)
+        // Fall back to simulated results â€” take top N (no playoffs in simulated leagues)
         $totalPromoted = count($this->directPromotionPositions) + ($this->playoffGenerator ? 1 : 0);
 
         $promoted = $this->getEligibleSimulatedPromotions($game, $totalPromoted);

@@ -5,9 +5,9 @@ namespace App\Modules\Squad\DTOs;
 class SuspensionRuleSet
 {
     /**
-     * @param  array<int, int>  $yellowCardThresholds  Mode 1 — exact thresholds: [yellowCount => banMatches]
-     * @param  int|null  $yellowCardSuspendAt  Mode 2 — first suspension at this many yellows
-     * @param  int  $yellowCardRepeatEvery  Mode 2 — suspend again every N yellows after the first
+     * @param  array<int, int>  $yellowCardThresholds  Mode 1 â€” exact thresholds: [yellowCount => banMatches]
+     * @param  int|null  $yellowCardSuspendAt  Mode 2 â€” first suspension at this many yellows
+     * @param  int  $yellowCardRepeatEvery  Mode 2 â€” suspend again every N yellows after the first
      * @param  int|null  $yellowCardResetAfterRound  Reset yellow cards after this knockout round (null = no reset)
      */
     public function __construct(
@@ -24,7 +24,7 @@ class SuspensionRuleSet
      */
     public function checkAccumulation(int $yellowCards): ?int
     {
-        // Mode 2 — interval-based (FIFA WC, UCL/UEL)
+        // Mode 2 â€” interval-based (FIFA WC, UCL/UEL)
         if ($this->yellowCardSuspendAt !== null) {
             if ($yellowCards >= $this->yellowCardSuspendAt
                 && ($yellowCards - $this->yellowCardSuspendAt) % $this->yellowCardRepeatEvery === 0) {
@@ -34,7 +34,7 @@ class SuspensionRuleSet
             return null;
         }
 
-        // Mode 1 — exact thresholds (La Liga)
+        // Mode 1 â€” exact thresholds (La Liga)
         return $this->yellowCardThresholds[$yellowCards] ?? null;
     }
 

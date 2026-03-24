@@ -10,18 +10,18 @@ class ConferenceLeagueConfig implements CompetitionConfig
      * UECL knockout round prize money (in cents).
      */
     private const KNOCKOUT_PRIZE_MONEY = [
-        1 => 30_000_000,       // €300K - Knockout Playoff
-        2 => 60_000_000,       // €600K - Round of 16
-        3 => 100_000_000,      // €1M - Quarter-finals
-        4 => 150_000_000,      // €1.5M - Semi-finals
-        5 => 300_000_000,      // €3M - Final (winner)
+        1 => 30_000_000,       // â‚¬300K - Knockout Playoff
+        2 => 60_000_000,       // â‚¬600K - Round of 16
+        3 => 100_000_000,      // â‚¬1M - Quarter-finals
+        4 => 150_000_000,      // â‚¬1.5M - Semi-finals
+        5 => 300_000_000,      // â‚¬3M - Final (winner)
     ];
 
     public function getTvRevenue(int $position): int
     {
         // Conference League prize money is roughly 25-30% of UCL
-        $base = 250_000_000; // €2.5M base
-        $positionBonus = max(0, 37 - $position) * 50_000_000; // €500K per position
+        $base = 250_000_000; // â‚¬2.5M base
+        $positionBonus = max(0, 37 - $position) * 50_000_000; // â‚¬500K per position
 
         return $base + $positionBonus;
     }

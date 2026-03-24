@@ -211,7 +211,7 @@
     {{-- Financial Table --}}
     <div>
         <h3 class="text-lg font-semibold text-text-primary mb-2">Financial Table</h3>
-        <p class="text-sm text-text-secondary mb-4">Line-item table with <code class="text-xs bg-surface-700 px-1.5 py-0.5 rounded-sm text-text-body">text-accent-green</code> for income and <code class="text-xs bg-surface-700 px-1.5 py-0.5 rounded-sm text-text-body">text-accent-red</code> for expenses. Used in the finances page budget flow.</p>
+        <p class="text-sm text-text-secondary mb-4">Line-item table with <code class="text-xs bg-surface-700 px-1.5 py-0.5 rounded-sm text-text-body">text-accent-green</code> for income and <code class="text-xs bg-surface-700 px-1.5 py-0.5 rounded-sm text-text-body">text-accent-primary</code> for expenses. Used in the finances page budget flow.</p>
 
         <div class="bg-surface-700/30 border border-border-default rounded-xl p-6 mb-3">
             <div class="bg-surface-800 border border-border-default rounded-xl overflow-hidden">
@@ -244,11 +244,11 @@
                 <div class="px-5 py-1 space-y-0 text-sm">
                     <div class="flex items-center justify-between py-2">
                         <span class="text-text-secondary pl-3">Wages</span>
-                        <span class="text-accent-red tabular-nums">-&euro;24.8M</span>
+                        <span class="text-accent-primary tabular-nums">-&euro;24.8M</span>
                     </div>
                     <div class="flex items-center justify-between py-2">
                         <span class="text-text-secondary pl-3">Operating Expenses</span>
-                        <span class="text-accent-red tabular-nums">-&euro;3.2M</span>
+                        <span class="text-accent-primary tabular-nums">-&euro;3.2M</span>
                     </div>
                     <div class="border-t-2 border-border-strong pt-2 mt-1">
                         <div class="flex items-center justify-between py-2">
@@ -272,7 +272,7 @@
 &lt;/div&gt;
 &lt;div class="flex items-center justify-between py-2"&gt;
     &lt;span class="text-text-secondary pl-3"&gt;Wages&lt;/span&gt;
-    &lt;span class="text-accent-red tabular-nums"&gt;-&amp;euro;24.8M&lt;/span&gt;
+    &lt;span class="text-accent-primary tabular-nums"&gt;-&amp;euro;24.8M&lt;/span&gt;
 &lt;/div&gt;
 &lt;!-- Total row --&gt;
 &lt;div class="border-t-2 border-border-strong pt-2 mt-1"&gt;

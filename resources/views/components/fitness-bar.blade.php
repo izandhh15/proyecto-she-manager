@@ -5,7 +5,7 @@
         $value >= 80 => 'bg-accent-green',
         $value >= 60 => 'bg-accent-gold',
         $value >= 40 => 'bg-accent-orange',
-        default => 'bg-accent-red',
+        default => 'bg-accent-primary',
     };
 
     $barWidth = match($size) {

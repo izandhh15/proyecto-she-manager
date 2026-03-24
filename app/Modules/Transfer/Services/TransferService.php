@@ -72,11 +72,11 @@ class TransferService
      * [min_market_value_cents => chance]
      */
     private const PRE_CONTRACT_OFFER_CHANCE_BY_VALUE = [
-        5_000_000_000  => 0.35, // €50M+ → 35%
-        2_000_000_000  => 0.25, // €20M+ → 25%
-        1_000_000_000  => 0.20, // €10M+ → 20%
-        500_000_000    => 0.15, // €5M+  → 15%
-        0              => 0.10, // < €5M → 10%
+        5_000_000_000  => 0.35, // â‚¬50M+ â†’ 35%
+        2_000_000_000  => 0.25, // â‚¬20M+ â†’ 25%
+        1_000_000_000  => 0.20, // â‚¬10M+ â†’ 20%
+        500_000_000    => 0.15, // â‚¬5M+  â†’ 15%
+        0              => 0.10, // < â‚¬5M â†’ 10%
     ];
 
     /**
@@ -719,7 +719,7 @@ class TransferService
             ->where('status', TransferOffer::STATUS_PENDING)
             ->update(['status' => TransferOffer::STATUS_REJECTED, 'resolved_at' => $game->current_date]);
 
-        // Pre-contract transfers always wait until end of season — the player's
+        // Pre-contract transfers always wait until end of season â€” the player's
         // current contract is still valid until June regardless of window status.
         if ($offer->isPreContract()) {
             $offer->update(['status' => TransferOffer::STATUS_AGREED, 'resolved_at' => $game->current_date]);
@@ -1018,8 +1018,8 @@ class TransferService
     /**
      * Select a buyer weighted by player trajectory and team strength.
      *
-     * Growing players (≤23) attract offers from stronger teams.
-     * Declining players (≥29) attract offers from weaker teams.
+     * Growing players (â‰¤23) attract offers from stronger teams.
+     * Declining players (â‰¥29) attract offers from weaker teams.
      * Peak players (24-28) attract offers uniformly.
      */
     private function selectWeightedBuyer(Collection $buyers, GamePlayer $player, Collection $squadValues): Team
@@ -1421,7 +1421,7 @@ class TransferService
     {
         $counterAmount = $offer->asking_price;
 
-        // Committed budget already includes this offer's transfer_fee — subtract it to avoid double-counting
+        // Committed budget already includes this offer's transfer_fee â€” subtract it to avoid double-counting
         $available = $this->availableBudget($game) + $offer->transfer_fee;
 
         if ($counterAmount > $available) {

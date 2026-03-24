@@ -23,11 +23,11 @@ class ContractService
      * Based on Spanish labor regulations for professional football.
      */
     private const MINIMUM_WAGES = [
-        1 => 20_000_000, // €200K - La Liga
-        2 => 10_000_000, // €100K - La Liga 2
+        1 => 20_000_000, // â‚¬200K - La Liga
+        2 => 10_000_000, // â‚¬100K - La Liga 2
     ];
 
-    private const DEFAULT_MINIMUM_WAGE = 10_000_000; // €100K
+    private const DEFAULT_MINIMUM_WAGE = 10_000_000; // â‚¬100K
 
     private array $minimumWageCache = [];
 
@@ -36,13 +36,13 @@ class ContractService
      * Higher value players command a larger percentage of their value as wages.
      */
     private const WAGE_TIERS = [
-        ['min_value' => 10_000_000_000, 'percentage' => 0.175], // €100M+ → 17.5%
-        ['min_value' => 5_000_000_000, 'percentage' => 0.15],   // €50-100M → 15%
-        ['min_value' => 2_000_000_000, 'percentage' => 0.125],  // €20-50M → 12.5%
-        ['min_value' => 1_000_000_000, 'percentage' => 0.11],   // €10-20M → 11%
-        ['min_value' => 500_000_000, 'percentage' => 0.10],     // €5-10M → 10%
-        ['min_value' => 200_000_000, 'percentage' => 0.09],     // €2-5M → 9%
-        ['min_value' => 0, 'percentage' => 0.08],               // <€2M → 8%
+        ['min_value' => 10_000_000_000, 'percentage' => 0.175], // â‚¬100M+ â†’ 17.5%
+        ['min_value' => 5_000_000_000, 'percentage' => 0.15],   // â‚¬50-100M â†’ 15%
+        ['min_value' => 2_000_000_000, 'percentage' => 0.125],  // â‚¬20-50M â†’ 12.5%
+        ['min_value' => 1_000_000_000, 'percentage' => 0.11],   // â‚¬10-20M â†’ 11%
+        ['min_value' => 500_000_000, 'percentage' => 0.10],     // â‚¬5-10M â†’ 10%
+        ['min_value' => 200_000_000, 'percentage' => 0.09],     // â‚¬2-5M â†’ 9%
+        ['min_value' => 0, 'percentage' => 0.08],               // <â‚¬2M â†’ 8%
     ];
 
     /**
@@ -76,7 +76,7 @@ class ContractService
      * - Young players have rookie contracts (discount)
      * - Veterans have legacy contracts from their prime (premium)
      *
-     * Includes ±10% variance and enforces league minimum wage.
+     * Includes Â±10% variance and enforces league minimum wage.
      *
      * @param int $marketValueCents Player's market value in cents
      * @param int $minimumWageCents League minimum wage in cents
@@ -95,7 +95,7 @@ class ContractService
         $ageModifier = $this->getAgeWageModifier($age);
         $baseWage = (int) ($baseWage * $ageModifier);
 
-        // Apply ±10% variance for squad diversity
+        // Apply Â±10% variance for squad diversity
         $variance = 0.90 + (mt_rand(0, 2000) / 10000); // 0.90 to 1.10
         $wage = (int) ($baseWage * $variance);
 
@@ -384,7 +384,7 @@ class ContractService
             ->whereNotNull('pending_annual_wage')
             ->get();
 
-        // Single bulk update: copy pending_annual_wage → annual_wage, then clear
+        // Single bulk update: copy pending_annual_wage â†’ annual_wage, then clear
         if ($players->isNotEmpty()) {
             GamePlayer::where('game_id', $game->id)
                 ->where('team_id', $game->team_id)
@@ -439,7 +439,7 @@ class ContractService
     private const MAX_NEGOTIATION_ROUNDS = 3;
 
     /**
-     * Calculate a player's disposition score (0.10 – 0.95).
+     * Calculate a player's disposition score (0.10 â€“ 0.95).
      * Higher = more willing to accept a lower wage.
      */
     public function calculateDisposition(GamePlayer $player, int $round = 1): float
@@ -613,7 +613,7 @@ class ContractService
         $counterThreshold = (int) ($minimumAcceptable * 0.85);
 
         if ($effectiveOffer >= $counterThreshold && $negotiation->round < self::MAX_NEGOTIATION_ROUNDS) {
-            // Counter — offer midpoint between minimum and demand, using player's preferred years
+            // Counter â€” offer midpoint between minimum and demand, using player's preferred years
             $counterWage = (int) (($minimumAcceptable + $negotiation->player_demand) / 2);
             // Round to nearest 100K
             $counterWage = (int) (round($counterWage / 10_000_000) * 10_000_000);
@@ -789,12 +789,12 @@ class ContractService
     private const SEVERANCE_RATE = 0.50;
 
     /**
-     * Minimum squad size — cannot release if it would drop below this.
+     * Minimum squad size â€” cannot release if it would drop below this.
      */
     public const MIN_SQUAD_SIZE = 20;
 
     /**
-     * Maximum squad size — cannot add players above this.
+     * Maximum squad size â€” cannot add players above this.
      */
     public const MAX_SQUAD_SIZE = 30;
 
@@ -817,7 +817,7 @@ class ContractService
     }
 
     /**
-     * Minimum players per position group — mirrors SquadReplenishmentProcessor.
+     * Minimum players per position group â€” mirrors SquadReplenishmentProcessor.
      */
     private const POSITION_GROUP_MINIMUMS = [
         'Goalkeeper' => 2,

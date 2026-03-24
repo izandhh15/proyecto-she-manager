@@ -139,7 +139,7 @@ class Team extends Model
      * Get the Spanish grammatical article for this team name.
      *
      * Most teams use "el" (masculine): "del Real Madrid", "al Barcelona"
-     * Some use "la" (feminine): "de la Real Sociedad", "a la UD Almería"
+     * Some use "la" (feminine): "de la Real Sociedad", "a la UD AlmerÃ­a"
      * Some use no article: "de Osasuna", "a Osasuna"
      */
     public function getArticleAttribute(): ?string

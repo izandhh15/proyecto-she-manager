@@ -62,7 +62,7 @@ class CountryConfig
      * Get the flag code for a country code.
      *
      * Maps country codes to flag-icon codes (used during seeding).
-     * Most codes are just lowercased, except special cases like EN → gb-eng.
+     * Most codes are just lowercased, except special cases like EN â†’ gb-eng.
      */
     public function flag(string $countryCode): string
     {

@@ -121,17 +121,17 @@ class UefaQualificationProcessor implements SeasonProcessor
         $existingQualification = $qualifications[$cupWinnerId] ?? null;
 
         if (!$existingQualification) {
-            // Cup winner is NOT already qualified — give them the UEL spot
+            // Cup winner is NOT already qualified â€” give them the UEL spot
             $qualifications[$cupWinnerId] = $targetCompetition;
         } elseif ($existingQualification === 'UCL' || $existingQualification === $targetCompetition) {
-            // Cup winner already in UCL or UEL — cascade the cup's UEL spot
+            // Cup winner already in UCL or UEL â€” cascade the cup's UEL spot
             // to the next non-qualified team
             $nextTeam = $this->getNextNonQualifiedTeam($standings, $qualifications);
             if ($nextTeam) {
                 $qualifications[$nextTeam] = $targetCompetition;
             }
         } elseif ($existingQualification === 'UECL') {
-            // Cup winner was in UECL via league — upgrade them to UEL
+            // Cup winner was in UECL via league â€” upgrade them to UEL
             $qualifications[$cupWinnerId] = $targetCompetition;
 
             // Cascade the now-vacant UECL spot to the next non-qualified team

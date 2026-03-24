@@ -31,7 +31,7 @@ class SwissDrawService
     /**
      * Generate league phase fixtures with progressive constraint relaxation.
      *
-     * Never throws — falls back through increasingly relaxed constraint levels
+     * Never throws â€” falls back through increasingly relaxed constraint levels
      * until fixtures are produced. The circle-method fallback (Level 3) is
      * mathematically guaranteed to succeed.
      *
@@ -53,7 +53,7 @@ class SwissDrawService
             }
         }
 
-        // Level 0: Full constraints (country protection + diversity cap ≤ 2)
+        // Level 0: Full constraints (country protection + diversity cap â‰¤ 2)
         $result = $this->tryLevel($teams, $pots, $matchdayDates, 500, true, 2);
         if ($result !== null) {
             return $result;
@@ -104,7 +104,7 @@ class SwissDrawService
     }
 
     /**
-     * Generate fixtures using the circle (polygon) method — guaranteed to succeed.
+     * Generate fixtures using the circle (polygon) method â€” guaranteed to succeed.
      *
      * 1. Fix teams[0], rotate teams[1..35] through 35 rounds, pick 8 rounds
      * 2. Each round produces 18 undirected pairings (no conflicts)
@@ -207,7 +207,7 @@ class SwissDrawService
                 'country_distribution' => $distribution,
             ]);
         } catch (\Throwable) {
-            // No facade root (unit tests without Laravel container) — skip
+            // No facade root (unit tests without Laravel container) â€” skip
         }
     }
 
@@ -216,9 +216,9 @@ class SwissDrawService
         return $a < $b ? "{$a}|{$b}" : "{$b}|{$a}";
     }
 
-    // ──────────────────────────────────────────────────────────────────────
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     // Opponent assignment
-    // ──────────────────────────────────────────────────────────────────────
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     /**
      * Try to assign opponents pot-by-pot. Returns 144 matches or null on failure.
@@ -275,7 +275,7 @@ class SwissDrawService
                         // Country protection (relaxable)
                         if ($enforceCountryProtection && $team['country'] === $c['country']) return false;
 
-                        // Diversity cap (relaxable — 0 = no limit)
+                        // Diversity cap (relaxable â€” 0 = no limit)
                         if ($maxCountryOpponents > 0) {
                             if (($countryCount[$team['id']][$c['country']] ?? 0) >= $maxCountryOpponents) return false;
                             if (($countryCount[$c['id']][$team['country']] ?? 0) >= $maxCountryOpponents) return false;
@@ -375,7 +375,7 @@ class SwissDrawService
                 }
             }
 
-            // Orient edges along the circuit: consecutive vertices define home→away
+            // Orient edges along the circuit: consecutive vertices define homeâ†’away
             for ($i = 0; $i < count($circuit) - 1; $i++) {
                 $matches[] = [
                     'homeTeamId' => $circuit[$i],
@@ -387,9 +387,9 @@ class SwissDrawService
         return $matches;
     }
 
-    // ──────────────────────────────────────────────────────────────────────
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     // Scheduling: assign matches to rounds using perfect matching extraction
-    // ──────────────────────────────────────────────────────────────────────
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     /**
      * Schedule 144 matches into 8 rounds of 18, with no team playing twice per round.
@@ -434,9 +434,9 @@ class SwissDrawService
     /**
      * Find a perfect matching (18 edges covering all 36 teams) in the available edges.
      *
-     * Phase 1 — Greedy: pick random edges where both endpoints are free.
-     * Phase 2 — Augment: for each still-free team, BFS for an augmenting path
-     * (alternating unmatched→matched edges ending at another free team),
+     * Phase 1 â€” Greedy: pick random edges where both endpoints are free.
+     * Phase 2 â€” Augment: for each still-free team, BFS for an augmenting path
+     * (alternating unmatchedâ†’matched edges ending at another free team),
      * then flip the path to grow the matching by 1.
      */
     private function findPerfectMatching(array $matches, array $teamEdges, array $available, array $allTeams): ?array

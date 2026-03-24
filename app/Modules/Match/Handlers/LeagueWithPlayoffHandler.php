@@ -97,7 +97,7 @@ class LeagueWithPlayoffHandler extends CupCompetitionHandler
             return false;
         }
 
-        // Don't generate while a league match is pending finalization —
+        // Don't generate while a league match is pending finalization â€”
         // its standings haven't been applied yet, so seedings would be wrong
         if ($game->hasPendingFinalizationForCompetition($game->competition_id)) {
             return false;

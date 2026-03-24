@@ -66,12 +66,13 @@ return [
         // Reserve teams that cannot be promoted to the same division as their parent.
         // Maps child external_id => parent external_id.
         'reserve_teams' => [
-            9899 => 681,   // Real Sociedad B → Real Sociedad
+            9899 => 681,   // Real Sociedad B â†’ Real Sociedad
         ],
 
         'reserve_team_names' => [
             'FC Barcelona B' => 'FC Barcelona',
             'Atlético de Madrid B' => 'Atlético de Madrid',
+            'Atletico de Madrid B' => 'Atlético de Madrid',
             'Real Madrid CF B' => 'Real Madrid CF',
             'CD Tenerife Femenino B' => 'CD Tenerife Femenino',
         ],
@@ -107,24 +108,24 @@ return [
         |----------------------------------------------------------------------
         |
         | Categories (initialized in this order during game setup):
-        |   1. transfer_pool — foreign league teams for scouting/transfers/loans
-        |   2. continental   — opponents in UEFA competitions (reuse pool rosters)
+        |   1. transfer_pool â€” foreign league teams for scouting/transfers/loans
+        |   2. continental   â€” opponents in UEFA competitions (reuse pool rosters)
         |
         | Domestic cup teams (ESPCUP lower-division) are linked at seeding time
-        | but don't need GamePlayer rosters — early rounds are auto-simulated.
+        | but don't need GamePlayer rosters â€” early rounds are auto-simulated.
         */
         'support' => [
             'transfer_pool' => [
-                // Other top-flight leagues — full rosters from JSON, eagerly loaded at game setup
+                // Other top-flight leagues â€” full rosters from JSON, eagerly loaded at game setup
                 'ENG1' => ['role' => 'league', 'handler' => 'league', 'country' => 'EN'],
                 'DEU1' => ['role' => 'league', 'handler' => 'league', 'country' => 'DE'],
                 'FRA1' => ['role' => 'league', 'handler' => 'league', 'country' => 'FR'],
                 'ITA1' => ['role' => 'league', 'handler' => 'league', 'country' => 'IT'],
-                // EUR club pool — individual team files, includes NLD/POR teams
+                // EUR club pool â€” individual team files, includes NLD/POR teams
                 'EUR'  => ['role' => 'team_pool', 'handler' => 'team_pool', 'country' => 'EU'],
             ],
             'continental' => [
-                // Teams needed for European competitions — rosters reused from
+                // Teams needed for European competitions â€” rosters reused from
                 // tiers + transfer_pool where possible, gaps filled from EUR pool
                 'UCL' => ['handler' => 'swiss_format', 'country' => 'EU'],
                 'UEL' => ['handler' => 'swiss_format', 'country' => 'EU'],

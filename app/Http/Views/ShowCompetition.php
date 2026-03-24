@@ -68,7 +68,7 @@ class ShowCompetition
         $hasGroups = $standings->whereNotNull('group_label')->isNotEmpty();
         $groupedStandings = $hasGroups ? $standings->groupBy('group_label') : null;
 
-        // Playoff bracket data for league_with_playoff competitions (e.g. Segunda División)
+        // Playoff bracket data for league_with_playoff competitions (e.g. Segunda DivisiÃ³n)
         $knockoutRounds = collect();
         $knockoutTies = collect();
         $leaguePhaseComplete = false;

@@ -65,8 +65,8 @@
 
             {{-- Errors --}}
             @if ($errors->any())
-                <div class="mt-4 p-4 bg-accent-red/10 border border-accent-red/20 rounded-lg">
-                    <ul class="text-sm text-accent-red">
+                <div class="mt-4 p-4 bg-accent-primary/10 border border-accent-primary/20 rounded-lg">
+                    <ul class="text-sm text-accent-primary">
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
                         @endforeach
@@ -146,7 +146,7 @@
                                             document.body.appendChild(f);
                                             f.submit();
                                         "
-                                        class="p-1 text-text-faint hover:text-accent-red transition-colors rounded-sm min-h-[36px]"
+                                        class="p-1 text-text-faint hover:text-accent-primary transition-colors rounded-sm min-h-[36px]"
                                         title="{{ __('app.remove') }}">
                                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                                     </button>
@@ -330,7 +330,7 @@
                                                     x-show="slot.compatibility > 0 && slot.compatibility < 60"
                                                     x-cloak
                                                     class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full shadow-sm border border-black/20"
-                                                    :class="slot.compatibility < 40 ? 'bg-accent-red' : 'bg-accent-gold'"
+                                                    :class="slot.compatibility < 40 ? 'bg-accent-primary' : 'bg-accent-gold'"
                                                 ></span>
                                             </div>
 
@@ -485,7 +485,7 @@
                                                         <div class="flex items-center gap-1.5">
                                                             <span class="text-xs font-medium text-text-primary truncate">{{ $player->name }}</span>
                                                             @if($unavailabilityReason)
-                                                                <span class="text-[8px] px-1 py-0.5 rounded-sm bg-red-500/10 text-accent-red font-medium shrink-0">{{ $unavailabilityReason }}</span>
+                                                                <span class="text-[8px] px-1 py-0.5 rounded-sm bg-red-500/10 text-accent-primary font-medium shrink-0">{{ $unavailabilityReason }}</span>
                                                             @endif
                                                         </div>
                                                         <div class="flex items-center gap-2 mt-0.5">
@@ -493,7 +493,7 @@
                                                             @if(!$isUnavailable)
                                                             <div class="flex items-center gap-1">
                                                                 <div class="w-8 h-1 rounded-full bg-surface-600 overflow-hidden">
-                                                                    <div class="h-full rounded-full fitness-bar @if($player->fitness >= 80) bg-accent-green @elseif($player->fitness >= 60) bg-accent-gold @elseif($player->fitness >= 40) bg-accent-orange @else bg-accent-red @endif" style="width: {{ $player->fitness }}%"></div>
+                                                                    <div class="h-full rounded-full fitness-bar @if($player->fitness >= 80) bg-accent-green @elseif($player->fitness >= 60) bg-accent-gold @elseif($player->fitness >= 40) bg-accent-orange @else bg-accent-primary @endif" style="width: {{ $player->fitness }}%"></div>
                                                                 </div>
                                                                 <span class="text-[8px] text-text-faint">{{ $player->fitness }}%</span>
                                                             </div>
@@ -544,10 +544,10 @@
                             <template x-if="formationModifiers[selectedFormation]">
                                 <div class="mt-3 pt-3 border-t border-border-default">
                                     <div class="flex items-center gap-3 text-[10px] font-medium">
-                                        <span :class="formationModifiers[selectedFormation]?.attack > 0 ? 'text-accent-green' : formationModifiers[selectedFormation]?.attack < 0 ? 'text-accent-red' : 'text-text-secondary'">
+                                        <span :class="formationModifiers[selectedFormation]?.attack > 0 ? 'text-accent-green' : formationModifiers[selectedFormation]?.attack < 0 ? 'text-accent-primary' : 'text-text-secondary'">
                                             ATK <span x-text="(formationModifiers[selectedFormation]?.attack > 0 ? '+' : '') + formationModifiers[selectedFormation]?.attack + '%'"></span>
                                         </span>
-                                        <span :class="formationModifiers[selectedFormation]?.defense > 0 ? 'text-accent-green' : formationModifiers[selectedFormation]?.defense < 0 ? 'text-accent-red' : 'text-text-secondary'">
+                                        <span :class="formationModifiers[selectedFormation]?.defense > 0 ? 'text-accent-green' : formationModifiers[selectedFormation]?.defense < 0 ? 'text-accent-primary' : 'text-text-secondary'">
                                             DEF <span x-text="(formationModifiers[selectedFormation]?.defense > 0 ? '+' : '') + formationModifiers[selectedFormation]?.defense + '%'"></span>
                                         </span>
                                     </div>
@@ -569,7 +569,7 @@
                                         class="text-[10px] font-semibold px-1.5 py-0.5 rounded-full shrink-0"
                                         :class="{
                                             'bg-accent-green/10 text-accent-green': teamAverage > {{ $opponentData['teamAverage'] ?: 0 }},
-                                            'bg-accent-red/10 text-accent-red': teamAverage < {{ $opponentData['teamAverage'] ?: 0 }},
+                                            'bg-accent-primary/10 text-accent-primary': teamAverage < {{ $opponentData['teamAverage'] ?: 0 }},
                                             'bg-surface-700 text-text-secondary': teamAverage === {{ $opponentData['teamAverage'] ?: 0 }}
                                         }"
                                         x-text="teamAverage > {{ $opponentData['teamAverage'] ?: 0 }} ? '+' + (teamAverage - {{ $opponentData['teamAverage'] ?: 0 }}) : (teamAverage < {{ $opponentData['teamAverage'] ?: 0 }} ? (teamAverage - {{ $opponentData['teamAverage'] ?: 0 }}) : '=')"
@@ -591,7 +591,7 @@
                                     <span class="text-text-body mx-0.5">&middot;</span>
                                     <span class="font-medium
                                         @if($opponentData['mentality'] === 'defensive') text-accent-blue
-                                        @elseif($opponentData['mentality'] === 'attacking') text-accent-red
+                                        @elseif($opponentData['mentality'] === 'attacking') text-accent-primary
                                         @else text-text-secondary
                                         @endif">{{ __('squad.mentality_' . $opponentData['mentality']) }}</span>
                                 </div>

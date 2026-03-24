@@ -384,7 +384,7 @@ class GameNotification extends Model
     {
         return match ($this->priority) {
             self::PRIORITY_CRITICAL => [
-                'bg' => 'bg-red-600',
+                'bg' => 'bg-red-700',
                 'text' => 'text-white',
                 'label' => __('notifications.priority_urgent'),
             ],

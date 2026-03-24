@@ -53,7 +53,7 @@
                                   :class="getPositionBadgeColor(kicker.positionGroup)"
                                   x-text="kicker.positionAbbr"></span>
                             <span class="text-sm font-semibold text-text-primary flex-1 truncate" x-text="kicker.name"></span>
-                            <span class="text-xs text-text-secondary shrink-0" x-text="'⭐ ' + kicker.technicalAbility"></span>
+                            <span class="text-xs text-text-secondary shrink-0" x-text="'â­ ' + kicker.technicalAbility"></span>
                             <x-icon-button size="sm" @click="removePenaltyKicker(idx)" class="shrink-0 hover:text-red-500">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -65,7 +65,7 @@
                     <template x-for="i in Math.max(0, 5 - selectedPenaltyKickers.length)" :key="'empty-' + i">
                         <div class="flex items-center gap-2 py-1.5 px-2 rounded-sm border border-dashed border-border-strong">
                             <span class="text-xs font-bold text-text-body w-5 text-center shrink-0" x-text="selectedPenaltyKickers.length + i"></span>
-                            <span class="text-xs text-text-body">—</span>
+                            <span class="text-xs text-text-body">â€”</span>
                         </div>
                     </template>
                 </div>
@@ -83,7 +83,7 @@
                                   :class="getPositionBadgeColor(player.positionGroup)"
                                   x-text="player.positionAbbr"></span>
                             <span class="text-sm text-text-primary flex-1 truncate" x-text="player.name"></span>
-                            <span class="text-xs text-text-secondary shrink-0" x-text="'⭐ ' + player.technicalAbility"></span>
+                            <span class="text-xs text-text-secondary shrink-0" x-text="'â­ ' + player.technicalAbility"></span>
                         </button>
                     </template>
                 </div>

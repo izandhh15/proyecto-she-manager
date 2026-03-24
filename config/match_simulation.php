@@ -16,8 +16,8 @@ return [
     |
     | The xG formula uses strength RATIOS rather than shares:
     |
-    |   homeXG = (strengthRatio ^ ratioExponent) × baseGoals + homeAdvantage
-    |   awayXG = (1/strengthRatio ^ ratioExponent) × baseGoals
+    |   homeXG = (strengthRatio ^ ratioExponent) Ã— baseGoals + homeAdvantage
+    |   awayXG = (1/strengthRatio ^ ratioExponent) Ã— baseGoals
     |
     | When teams are equal (ratio=1.0), both get base_goals (1.3 xG).
     | When elite faces bottom (ratio ~1.30), elite gets ~2.20 xG vs ~0.77.
@@ -220,7 +220,7 @@ return [
     | recovery is slow near fitness 100 and faster at lower fitness levels.
     | This creates natural equilibria based on match frequency:
     |
-    |   recoveryRate = base × physicalMod × (1 + scaling × (100 − fitness) / 100)
+    |   recoveryRate = base Ã— physicalMod Ã— (1 + scaling Ã— (100 âˆ’ fitness) / 100)
     |
     | Players who play every week stabilize around 88-93 fitness (depending
     | on age and physical ability). Congested periods (2+ matches/week)
@@ -238,7 +238,7 @@ return [
         'fitness_loss' => [                     // [min, max] fitness loss per match by position
             'Goalkeeper' => [3, 6],             // GKs barely tire
             'Defender' => [9, 13],              // moderate
-            'Midfielder' => [10, 15],           // highest — midfielders run the most
+            'Midfielder' => [10, 15],           // highest â€” midfielders run the most
             'Forward' => [9, 13],               // moderate
         ],
 
@@ -269,12 +269,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | Possession % is derived from tactical choices and team strength.
-    | It is purely cosmetic — it does NOT affect xG, energy, or simulation.
+    | It is purely cosmetic â€” it does NOT affect xG, energy, or simulation.
     |
     | Each factor adds/subtracts from a base of 50. The raw scores for both
     | teams are then normalized so they sum to 100%.
     |
-    | noise_range: random ± variation (seeded per match for determinism)
+    | noise_range: random Â± variation (seeded per match for determinism)
     |
     */
     'possession' => [

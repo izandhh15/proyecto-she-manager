@@ -14,7 +14,7 @@
                 class="text-xs font-semibold px-2 py-0.5 rounded-full shrink-0"
                 :class="{
                     'bg-accent-green/10 text-accent-green': teamAverage > {{ $opponentData['teamAverage'] ?: 0 }},
-                    'bg-accent-red/10 text-accent-red': teamAverage < {{ $opponentData['teamAverage'] ?: 0 }},
+                    'bg-accent-primary/10 text-accent-primary': teamAverage < {{ $opponentData['teamAverage'] ?: 0 }},
                     'bg-surface-700 text-text-secondary': teamAverage === {{ $opponentData['teamAverage'] ?: 0 }}
                 }"
                 x-text="teamAverage > {{ $opponentData['teamAverage'] ?: 0 }} ? '+' + (teamAverage - {{ $opponentData['teamAverage'] ?: 0 }}) : (teamAverage < {{ $opponentData['teamAverage'] ?: 0 }} ? (teamAverage - {{ $opponentData['teamAverage'] ?: 0 }}) : '=')"
@@ -39,7 +39,7 @@
             <span class="text-text-body">&middot;</span>
             <span class="text-xs font-medium
                 @if($opponentData['mentality'] === 'defensive') text-accent-blue
-                @elseif($opponentData['mentality'] === 'attacking') text-accent-red
+                @elseif($opponentData['mentality'] === 'attacking') text-accent-primary
                 @else text-text-secondary
                 @endif">{{ __('squad.mentality_' . $opponentData['mentality']) }}</span>
         </div>
@@ -53,11 +53,11 @@
                 <span class="w-5 h-5 rounded text-xs font-bold flex items-center justify-center
                     @if($result === 'W') bg-accent-green text-white
                     @elseif($result === 'D') bg-surface-600 text-text-body
-                    @else bg-accent-red text-white @endif">
+                    @else bg-accent-primary text-white @endif">
                     {{ $result }}
                 </span>
             @empty
-                <span class="text-[10px] text-text-secondary">—</span>
+                <span class="text-[10px] text-text-secondary">â€”</span>
             @endforelse
         </div>
 
@@ -69,11 +69,11 @@
                 <span class="w-5 h-5 rounded text-xs font-bold flex items-center justify-center
                     @if($result === 'W') bg-accent-green text-white
                     @elseif($result === 'D') bg-surface-600 text-text-body
-                    @else bg-accent-red text-white @endif">
+                    @else bg-accent-primary text-white @endif">
                     {{ $result }}
                 </span>
             @empty
-                <span class="text-[10px] text-text-secondary">—</span>
+                <span class="text-[10px] text-text-secondary">â€”</span>
             @endforelse
         </div>
     </div>

@@ -112,7 +112,7 @@ class SeedReferenceData extends Command
 
     /**
      * Seed all competitions for a country in dependency order:
-     * tiers → domestic cups (supercup first) → transfer pool → continental.
+     * tiers â†’ domestic cups (supercup first) â†’ transfer pool â†’ continental.
      */
     private function seedCountry(string $countryCode, CountryConfig $countryConfig): void
     {
@@ -145,7 +145,7 @@ class SeedReferenceData extends Command
         // Step 1b: Link reserve teams to their parent teams
         $this->linkReserveTeams($config);
 
-        // Step 2: Seed domestic cups — supercup first so main cup can look up
+        // Step 2: Seed domestic cups â€” supercup first so main cup can look up
         // supercup teams for entry_round calculation
         $cupIds = array_keys($config['domestic_cups'] ?? []);
         $this->line("  Step 2/4: Seeding " . count($cupIds) . " domestic cup(s)...");
@@ -321,7 +321,7 @@ class SeedReferenceData extends Command
         } else {
             $this->seedLeagueCompetition($basePath, $code, $tier, $handler, $country, $flag, $role, $configName);
         }
-        $this->line("  ✓ {$code} done.");
+        $this->line("  âœ“ {$code} done.");
     }
 
     private function seedLeagueCompetition(string $basePath, string $code, int $tier, string $handler, string $country, string $flag, string $role = 'league', ?string $configName = null): void

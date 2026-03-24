@@ -124,7 +124,7 @@ class PlayerConditionService
      * natural equilibria based on match frequency. Players who play every week
      * stabilize around 88-93; congested periods push them into the 70s-80s.
      *
-     * Formula: recoveryRate = base × physicalMod × (1 + scaling × (100 − fitness) / 100)
+     * Formula: recoveryRate = base Ã— physicalMod Ã— (1 + scaling Ã— (100 âˆ’ fitness) / 100)
      */
     private function calculateFitnessChange(GamePlayer $player, bool $playedMatch, int $daysSinceLastMatch): int
     {
@@ -224,7 +224,7 @@ class PlayerConditionService
 
         // Bench frustration: players who don't get game time gradually lose morale
         // regardless of team results. Offsets the win bonus for non-playing players.
-        // Better players get more frustrated — star players have higher expectations.
+        // Better players get more frustrated â€” star players have higher expectations.
         if (!$playedMatch) {
             $ability = $player->current_technical_ability;
             // Multiplier ranges from ~0.3x (ability 20) to ~1.5x (ability 100)

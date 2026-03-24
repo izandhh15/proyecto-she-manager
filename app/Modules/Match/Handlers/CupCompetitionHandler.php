@@ -180,7 +180,7 @@ abstract class CupCompetitionHandler implements CompetitionHandler
             ->exists();
 
         if ($roundExists && $allComplete) {
-            // Only reset once — check if a later round already has ties (reset already happened)
+            // Only reset once â€” check if a later round already has ties (reset already happened)
             $laterRoundExists = CupTie::where('game_id', $gameId)
                 ->where('competition_id', $competitionId)
                 ->where('round_number', '>', $resetRound)

@@ -70,14 +70,14 @@
                         {{ $gamePlayer->team->name }}
                     </span>
                 @endif
-                <span>{{ $gamePlayer->age($game->current_date) }} {{ __('app.years') }}@if($gamePlayer->player->height) · {{ $gamePlayer->player->height }}@endif</span>
+                <span>{{ $gamePlayer->age($game->current_date) }} {{ __('app.years') }}@if($gamePlayer->player->height) Â· {{ $gamePlayer->player->height }}@endif</span>
             </div>
             <div class="text-[11px] text-text-faint mt-1">{{ $gamePlayer->position_name }}</div>
 
             {{-- Status badges --}}
             <div class="flex flex-wrap items-center gap-1.5 mt-2">
                 @if($gamePlayer->isInjured())
-                    <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-accent-red/10 text-accent-red">{{ __('game.injured') }}</span>
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-accent-primary/10 text-accent-primary">{{ __('game.injured') }}</span>
                 @endif
                 @if($gamePlayer->isRetiring())
                     <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-accent-orange/10 text-accent-orange">{{ __('squad.retiring') }}</span>
@@ -189,7 +189,7 @@
                 <span class="inline-flex items-center gap-1.5">
                     <span class="w-2 h-3 bg-yellow-400 rounded-xs"></span>
                     <span class="text-xs font-semibold text-text-body">{{ $gamePlayer->yellow_cards }}</span>
-                    <span class="w-2 h-3 bg-accent-red rounded-xs ml-1"></span>
+                    <span class="w-2 h-3 bg-accent-primary rounded-xs ml-1"></span>
                     <span class="text-xs font-semibold text-text-body">{{ $gamePlayer->red_cards }}</span>
                 </span>
             </div>
@@ -253,7 +253,7 @@
                                 @endif
                                 <div class="flex justify-between text-sm">
                                     <span class="text-text-muted">{{ __('squad.release_severance_label') }}</span>
-                                    <span class="font-semibold text-accent-red">{{ \App\Support\Money::format($severance) }}</span>
+                                    <span class="font-semibold text-accent-primary">{{ \App\Support\Money::format($severance) }}</span>
                                 </div>
                             </div>
 
@@ -288,7 +288,7 @@
                 {{ $renewalNegotiation->isPending() ? __('transfers.negotiating') : __('transfers.player_countered') }}
             </span>
             <a href="{{ route('game.transfers.outgoing', $game->id) }}" class="text-xs text-text-muted hover:text-text-body underline underline-offset-2">
-                {{ __('app.view_details') }} →
+                {{ __('app.view_details') }} â†’
             </a>
         @endif
     </div>

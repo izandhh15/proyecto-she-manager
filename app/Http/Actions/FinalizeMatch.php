@@ -41,7 +41,7 @@ class FinalizeMatch
 
         // Fire SeasonCompleted if no unplayed matches remain after finalization.
         // This covers the case where the player's match is the last match of the
-        // season (e.g. promotion playoff final) — ShowGame would redirect straight
+        // season (e.g. promotion playoff final) â€” ShowGame would redirect straight
         // to season-end, bypassing AdvanceMatchday which normally fires this event.
         $hasRemainingMatches = GameMatch::where('game_id', $game->id)
             ->where('played', false)

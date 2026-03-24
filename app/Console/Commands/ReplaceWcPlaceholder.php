@@ -64,7 +64,7 @@ class ReplaceWcPlaceholder extends Command
         }
 
         DB::table('teams')->where('id', $teamId)->update($updateData);
-        $this->info("Updated team: {$entry['name']} → {$newName}");
+        $this->info("Updated team: {$entry['name']} â†’ {$newName}");
 
         // Seed players if roster JSON exists
         if ($externalId) {
@@ -88,7 +88,7 @@ class ReplaceWcPlaceholder extends Command
             'external_id' => $externalId,
         ];
         file_put_contents($mappingPath, json_encode($mapping, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-        $this->info("Updated team_mapping.json: {$placeholderCode} → {$newFifaCode}");
+        $this->info("Updated team_mapping.json: {$placeholderCode} â†’ {$newFifaCode}");
 
         // Regenerate groups.json with new FIFA code
         $this->regenerateGroupsJson($mapping, $placeholderCode, $newFifaCode);
@@ -178,6 +178,6 @@ class ReplaceWcPlaceholder extends Command
         );
 
         file_put_contents($groupsPath, $content);
-        $this->info("Updated groups.json: {$oldCode} → {$newCode}");
+        $this->info("Updated groups.json: {$oldCode} â†’ {$newCode}");
     }
 }

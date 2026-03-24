@@ -21,8 +21,8 @@
         $yourScore = $isHome ? $match->home_score : $match->away_score;
         $oppScore = $isHome ? $match->away_score : $match->home_score;
         $result = $yourScore > $oppScore ? 'W' : ($yourScore < $oppScore ? 'L' : 'D');
-        $resultClass = $result === 'W' ? 'text-accent-green' : ($result === 'L' ? 'text-accent-red' : 'text-text-secondary');
-        $resultDot = $result === 'W' ? 'bg-accent-green' : ($result === 'L' ? 'bg-accent-red' : 'bg-surface-600');
+        $resultClass = $result === 'W' ? 'text-accent-green' : ($result === 'L' ? 'text-accent-primary' : 'text-text-secondary');
+        $resultDot = $result === 'W' ? 'bg-accent-green' : ($result === 'L' ? 'bg-accent-primary' : 'bg-surface-600');
         $resultText = $yourScore . ' - ' . $oppScore;
     }
 @endphp

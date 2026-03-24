@@ -20,7 +20,7 @@ class ScoutingService
 {
     /**
      * Acceptance probability modifiers based on reputation gap (source - offering).
-     * Gap ≤ 0 means moving up or lateral → no penalty.
+     * Gap â‰¤ 0 means moving up or lateral â†’ no penalty.
      */
     private const REPUTATION_GAP_MODIFIERS = [
         0 => 1.00,
@@ -37,16 +37,16 @@ class ScoutingService
     /**
      * Wage premium multipliers for players on expiring contracts (pre-contract signings).
      * Keyed by minimum market value in cents.
-     * Checked in descending order — first match wins.
+     * Checked in descending order â€” first match wins.
      */
     private const FREE_AGENT_WAGE_PREMIUMS = [
-        10_000_000_000 => 1.50, // €100M+
-        5_000_000_000  => 1.45, // €50M+
-        2_000_000_000  => 1.40, // €20M+
-        1_000_000_000  => 1.35, // €10M+
-        500_000_000    => 1.30, // €5M+
-        200_000_000    => 1.25, // €2M+
-        0              => 1.20, // < €2M
+        10_000_000_000 => 1.50, // â‚¬100M+
+        5_000_000_000  => 1.45, // â‚¬50M+
+        2_000_000_000  => 1.40, // â‚¬20M+
+        1_000_000_000  => 1.35, // â‚¬10M+
+        500_000_000    => 1.30, // â‚¬5M+
+        200_000_000    => 1.25, // â‚¬2M+
+        0              => 1.20, // < â‚¬2M
     ];
 
     /**
@@ -241,7 +241,7 @@ class ScoutingService
             ->where('team_id', '!=', $game->team_id)
             ->whereIn('position', $positions);
 
-        // Scope filter (domestic / international) — enforce tier restriction
+        // Scope filter (domestic / international) â€” enforce tier restriction
         $scope = $filters['scope'] ?? ['domestic', 'international'];
         if (!$this->canSearchInternationally($game)) {
             $scope = ['domestic'];
@@ -430,7 +430,7 @@ class ScoutingService
 
         $askingPrice = $base * $importanceMultiplier * $contractModifier * $ageModifier;
 
-        // Round to nearest €100K (in cents)
+        // Round to nearest â‚¬100K (in cents)
         return (int) (round($askingPrice / 10_000_000) * 10_000_000);
     }
 
@@ -442,7 +442,7 @@ class ScoutingService
      */
     public function calculatePlayerImportance(GamePlayer $player, ?Collection $teammates = null): float
     {
-        // Free agents have no team context — return neutral importance
+        // Free agents have no team context â€” return neutral importance
         if ($player->team_id === null) {
             return 0.0;
         }
@@ -714,7 +714,7 @@ class ScoutingService
      */
     public function calculateReputationModifier(Team $biddingTeam, GamePlayer $player): float
     {
-        // Free agents have no current team context — no penalty
+        // Free agents have no current team context â€” no penalty
         if ($player->team_id === null) {
             return 1.0;
         }
@@ -830,7 +830,7 @@ class ScoutingService
             'can_afford_fee' => $canAffordFee,
             'can_afford_wage' => $canAffordWage,
             'transfer_budget' => $investment->transfer_budget ?? 0,
-            'formatted_transfer_budget' => $investment ? $investment->formatted_transfer_budget : '€ 0',
+            'formatted_transfer_budget' => $investment ? $investment->formatted_transfer_budget : 'â‚¬ 0',
             'tech_range' => [max(1, $techAbility - $fuzz), min(99, $techAbility + $fuzz)],
             'phys_range' => [max(1, $physAbility - $fuzz), min(99, $physAbility + $fuzz)],
         ];
@@ -980,8 +980,8 @@ class ScoutingService
         $reputationModifier = $this->calculateReputationModifier($game->team, $player);
         if ($reputationModifier < 1.0) {
             // Scale the score down proportionally to the reputation gap
-            // e.g. modifier 0.75 (1 tier gap) → score * 0.75
-            // e.g. modifier 0.20 (3 tier gap) → score * 0.20
+            // e.g. modifier 0.75 (1 tier gap) â†’ score * 0.75
+            // e.g. modifier 0.20 (3 tier gap) â†’ score * 0.20
             $score = (int) ($score * $reputationModifier);
         }
 

@@ -17,14 +17,14 @@ use Carbon\Carbon;
 class BudgetProjectionService
 {
     /**
-     * UEFA and RFEF solidarity funds (€250K)
+     * UEFA and RFEF solidarity funds (â‚¬250K)
      */
-    private const SOLIDARITY_FUNDS = 100_000_000; // €1M in cents
+    private const SOLIDARITY_FUNDS = 100_000_000; // â‚¬1M in cents
 
     /**
      * Minimum transfer budget guaranteed after mandatory infrastructure.
      */
-    private const MINIMUM_TRANSFER_BUDGET = 100_000_000; // €1M in cents
+    private const MINIMUM_TRANSFER_BUDGET = 100_000_000; // â‚¬1M in cents
 
     /**
      * Maximum stadium seats used for commercial revenue calculation.
@@ -207,7 +207,7 @@ class BudgetProjectionService
 
     /**
      * Calculate matchday revenue.
-     * Formula: Base (stadium_seats × revenue_per_seat) × Facilities Multiplier
+     * Formula: Base (stadium_seats Ã— revenue_per_seat) Ã— Facilities Multiplier
      */
     public function calculateMatchdayRevenue(Team $team, Game $game): int
     {
@@ -312,7 +312,7 @@ class BudgetProjectionService
     /**
      * Get base commercial revenue for budget projections.
      * Season 2+: uses previous season's actual commercial revenue.
-     * Season 1: calculates from stadium_seats × config rate.
+     * Season 1: calculates from stadium_seats Ã— config rate.
      */
     private function getBaseCommercialRevenue(Game $game, Team $team, Competition $league): int|float
     {
@@ -326,7 +326,7 @@ class BudgetProjectionService
             return $previousFinances->actual_commercial_revenue;
         }
 
-        // First season: calculate from stadium seats × config rate (capped)
+        // First season: calculate from stadium seats Ã— config rate (capped)
         $reputation = TeamReputation::resolveLevel($game->id, $team->id);
         $seats = min($team->stadium_seats, self::MAX_COMMERCIAL_SEATS);
 
@@ -341,7 +341,7 @@ class BudgetProjectionService
     }
 
     /**
-     * Calculate public subsidy (Subvenciones Públicas) to guarantee a minimum viable budget.
+     * Calculate public subsidy (Subvenciones PÃºblicas) to guarantee a minimum viable budget.
      * Ensures every team can cover mandatory infrastructure + a minimum transfer budget.
      */
     private function calculateSubsidy(int $projectedSurplus, int $carriedDebt, int $carriedSurplus): int

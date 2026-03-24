@@ -38,7 +38,7 @@ class ShowFinances
             ->where('team_id', $game->team_id)
             ->sum('annual_wage');
 
-        // Get transactions for the current season (July 1 → June 30)
+        // Get transactions for the current season (July 1 â†’ June 30)
         $seasonYear = (int) $game->season;
         $seasonStart = "{$seasonYear}-07-01";
         $seasonEnd = ($seasonYear + 1) . '-06-30';

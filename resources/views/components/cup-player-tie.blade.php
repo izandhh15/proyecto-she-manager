@@ -16,13 +16,13 @@
 @endphp
 
 <div class="mb-8 rounded-xl overflow-hidden border
-    {{ $accentColor === 'blue' ? 'border-accent-blue/20' : ($accentColor === 'green' ? 'border-accent-green/20' : 'border-accent-red/20') }}">
+    {{ $accentColor === 'blue' ? 'border-accent-blue/20' : ($accentColor === 'green' ? 'border-accent-green/20' : 'border-accent-primary/20') }}">
 
     {{-- Header bar --}}
     <div class="px-4 py-2 flex items-center justify-between
-        {{ $accentColor === 'blue' ? 'bg-accent-blue/10' : ($accentColor === 'green' ? 'bg-accent-green/10' : 'bg-accent-red/10') }}">
+        {{ $accentColor === 'blue' ? 'bg-accent-blue/10' : ($accentColor === 'green' ? 'bg-accent-green/10' : 'bg-accent-primary/10') }}">
         <span class="text-[10px] font-heading font-semibold uppercase tracking-widest
-            {{ $accentColor === 'blue' ? 'text-accent-blue' : ($accentColor === 'green' ? 'text-accent-green' : 'text-accent-red') }}">
+            {{ $accentColor === 'blue' ? 'text-accent-blue' : ($accentColor === 'green' ? 'text-accent-green' : 'text-accent-primary') }}">
             @if($tie->completed)
                 @if($cupStatus === 'champion' && $competitionName)
                     {{ __('cup.champion_message', ['competition' => __($competitionName)]) }}

@@ -11,12 +11,12 @@ class AdvanceMatchday
     {
         $game = Game::findOrFail($gameId);
 
-        // Already advancing — redirect to loading screen
+        // Already advancing â€” redirect to loading screen
         if ($game->isAdvancingMatchday()) {
             return redirect()->route('show-game', $gameId);
         }
 
-        // Career actions still processing — redirect to loading screen
+        // Career actions still processing â€” redirect to loading screen
         if ($game->isProcessingCareerActions()) {
             return redirect()->route('show-game', $gameId);
         }

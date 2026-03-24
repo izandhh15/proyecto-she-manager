@@ -34,26 +34,26 @@
                     <h1 class="font-heading text-2xl sm:text-3xl font-bold uppercase tracking-wide text-text-primary mb-8">Aviso Legal</h1>
 
                     <div class="space-y-5 text-sm sm:text-base leading-relaxed text-text-body">
-                        <p>VirtuaFC es un proyecto de software de código abierto desarrollado por Pablo Román con fines educativos y de entretenimiento. Este proyecto no tiene ánimo de lucro y se distribuye de forma gratuita.</p>
+                        <p>VirtuaFC es un proyecto de software de cÃ³digo abierto desarrollado por Pablo RomÃ¡n con fines educativos y de entretenimiento. Este proyecto no tiene Ã¡nimo de lucro y se distribuye de forma gratuita.</p>
 
                         <div>
-                            <p class="font-semibold text-text-primary mb-2">No está afiliado, patrocinado ni respaldado por:</p>
+                            <p class="font-semibold text-text-primary mb-2">No estÃ¡ afiliado, patrocinado ni respaldado por:</p>
                             <ul class="space-y-1.5 text-text-secondary">
                                 <li class="flex items-start gap-2">
                                     <span class="text-text-faint mt-0.5">&bull;</span>
-                                    La Liga de Fútbol Profesional
+                                    La Liga de FÃºtbol Profesional
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-text-faint mt-0.5">&bull;</span>
-                                    La Real Federación Española de Fútbol
+                                    La Real FederaciÃ³n EspaÃ±ola de FÃºtbol
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-text-faint mt-0.5">&bull;</span>
-                                    Ningún club de fútbol
+                                    NingÃºn club de fÃºtbol
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-text-faint mt-0.5">&bull;</span>
-                                    Ningún jugador o personal deportivo
+                                    NingÃºn jugador o personal deportivo
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-text-faint mt-0.5">&bull;</span>
@@ -62,9 +62,9 @@
                             </ul>
                         </div>
 
-                        <p>Los nombres de clubes, competiciones y jugadores son propiedad de sus respectivos titulares y se utilizan únicamente con fines de identificación en un contexto de simulación ficticia.</p>
+                        <p>Los nombres de clubes, competiciones y jugadores son propiedad de sus respectivos titulares y se utilizan Ãºnicamente con fines de identificaciÃ³n en un contexto de simulaciÃ³n ficticia.</p>
 
-                        <p>Los valores y estadísticas de jugadores son <strong class="font-semibold text-text-primary">completamente ficticios</strong> y generados por algoritmos del juego. No representan evaluaciones reales.</p>
+                        <p>Los valores y estadÃ­sticas de jugadores son <strong class="font-semibold text-text-primary">completamente ficticios</strong> y generados por algoritmos del juego. No representan evaluaciones reales.</p>
                     </div>
 
                     <div class="mt-8 pt-6 border-t border-border-default">
@@ -82,10 +82,10 @@
                     <div class="max-w-3xl mx-auto px-4 sm:px-6 py-8">
                         <div class="flex flex-col items-center gap-3">
                             <div class="-skew-x-12 bg-text-faint/15 px-3 py-0.5">
-                                <span class="skew-x-12 inline-block text-lg font-extrabold text-text-faint tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">Virtua FC</span>
+                                <span class="skew-x-12 inline-block text-lg font-extrabold text-text-faint tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">SheManager</span>
                             </div>
                             <p class="text-xs text-text-faint">
-                                &copy; {{ date('Y') }} Pablo Román &middot; <a href="https://github.com/pabloroman/virtua-fc" target="_blank" class="hover:text-text-muted transition-colors">Proyecto Open Source</a>
+                                &copy; {{ date('Y') }} Pablo RomÃ¡n &middot; <a href="https://github.com/pabloroman/virtua-fc" target="_blank" class="hover:text-text-muted transition-colors">Proyecto Open Source</a>
                             </p>
                             <x-theme-toggle />
                         </div>

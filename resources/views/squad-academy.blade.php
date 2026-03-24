@@ -28,9 +28,9 @@
             @if($capacity > 0)
                 <x-summary-card :label="__('squad.academy_capacity')">
                     <div class="flex items-center gap-2 mt-1">
-                        <span class="font-heading text-xl font-bold {{ $academyCount > $capacity ? 'text-accent-red' : 'text-text-primary' }}">{{ $academyCount }}/{{ $capacity }}</span>
+                        <span class="font-heading text-xl font-bold {{ $academyCount > $capacity ? 'text-accent-primary' : 'text-text-primary' }}">{{ $academyCount }}/{{ $capacity }}</span>
                         <div class="w-16 h-1.5 bg-bar-track rounded-full overflow-hidden">
-                            <div class="h-full rounded-full {{ $academyCount > $capacity ? 'bg-accent-red' : ($academyCount >= $capacity - 1 ? 'bg-accent-gold' : 'bg-emerald-500') }}"
+                            <div class="h-full rounded-full {{ $academyCount > $capacity ? 'bg-accent-primary' : ($academyCount >= $capacity - 1 ? 'bg-accent-gold' : 'bg-emerald-500') }}"
                                  style="width: {{ min(100, ($academyCount / max($capacity, 1)) * 100) }}%"></div>
                         </div>
                     </div>
@@ -88,10 +88,10 @@
                         <p class="font-semibold text-text-body mb-2">{{ __('squad.academy_help_evaluations_title') }}</p>
                         <p class="text-text-muted mb-2">{{ __('squad.academy_help_evaluation_desc') }}</p>
                         <ul class="space-y-1 text-text-secondary">
-                            <li class="flex gap-2"><span class="text-accent-green shrink-0">↑</span> {{ __('squad.academy_help_promote') }}</li>
-                            <li class="flex gap-2"><span class="text-accent-blue shrink-0">⇄</span> {{ __('squad.academy_help_loan') }}</li>
-                            <li class="flex gap-2"><span class="text-text-secondary shrink-0">✓</span> {{ __('squad.academy_help_keep') }}</li>
-                            <li class="flex gap-2"><span class="text-accent-red shrink-0">✕</span> {{ __('squad.academy_help_dismiss') }}</li>
+                            <li class="flex gap-2"><span class="text-accent-green shrink-0">â†‘</span> {{ __('squad.academy_help_promote') }}</li>
+                            <li class="flex gap-2"><span class="text-accent-blue shrink-0">â‡„</span> {{ __('squad.academy_help_loan') }}</li>
+                            <li class="flex gap-2"><span class="text-text-secondary shrink-0">âœ“</span> {{ __('squad.academy_help_keep') }}</li>
+                            <li class="flex gap-2"><span class="text-accent-primary shrink-0">âœ•</span> {{ __('squad.academy_help_dismiss') }}</li>
                         </ul>
                         <p class="mt-3 text-xs text-text-secondary">{{ __('squad.academy_help_age_rule') }} {{ __('squad.academy_help_capacity_rule') }}</p>
                     </div>
@@ -235,7 +235,7 @@
                                         <img src="{{ Storage::disk('assets')->url('flags/' . $prospect->nationality_flag['code'] . '.svg') }}" class="w-5 h-4 rounded-sm shadow-xs shrink-0 hidden md:block" title="{{ $prospect->nationality_flag['name'] }}">
                                     @endif
                                     <span class="text-xs text-text-secondary hidden md:block">{{ $prospect->age }}</span>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg text-xs font-semibold bg-surface-600 text-text-secondary shrink-0">—</span>
+                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg text-xs font-semibold bg-surface-600 text-text-secondary shrink-0">â€”</span>
                                 </div>
                             @endforeach
                         </div>

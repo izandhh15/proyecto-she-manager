@@ -587,7 +587,7 @@ export default function liveMatch(config) {
         updatePossession() {
             // Every 2-4 match-minutes, pick a new random target around the base
             if (this.currentMinute >= this._possessionNextShift) {
-                const swing = (Math.random() - 0.5) * 16; // ±8
+                const swing = (Math.random() - 0.5) * 16; // Â±8
                 this._possessionTarget = Math.max(25, Math.min(75, this._basePossession + swing));
                 this._possessionNextShift = this.currentMinute + 2 + Math.random() * 2;
             }
@@ -1151,7 +1151,7 @@ export default function liveMatch(config) {
         },
 
         get windowsUsed() {
-            // Count unique minutes in substitutionsMade — each unique minute = one window
+            // Count unique minutes in substitutionsMade â€” each unique minute = one window
             const minutes = new Set(this.substitutionsMade.map(s => s.minute));
             return minutes.size;
         },
@@ -1489,7 +1489,7 @@ export default function liveMatch(config) {
                 'Goalkeeper': 'bg-amber-500',
                 'Defender': 'bg-blue-600',
                 'Midfielder': 'bg-emerald-600',
-                'Forward': 'bg-red-600',
+                'Forward': 'bg-purple-700',
             };
             return colors[group] || 'bg-emerald-600';
         },
@@ -1593,7 +1593,7 @@ export default function liveMatch(config) {
             };
 
             // Career actions run in background while user watches the match.
-            // Delay first check and poll every 3s — the job usually finishes
+            // Delay first check and poll every 3s â€” the job usually finishes
             // well before the match animation ends (~15-30s).
             setTimeout(() => {
                 check();

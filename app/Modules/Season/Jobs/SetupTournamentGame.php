@@ -53,7 +53,7 @@ class SetupTournamentGame implements ShouldQueue
         $groupsPath = base_path('data/2025/WC2026/groups.json');
         $groupsData = json_decode(file_get_contents($groupsPath), true);
 
-        // Build FIFA code → Team UUID map from team_mapping.json
+        // Build FIFA code â†’ Team UUID map from team_mapping.json
         $mappingPath = base_path('data/2025/WC2026/team_mapping.json');
         $mapping = json_decode(file_get_contents($mappingPath), true);
         $teamKeyMap = collect($mapping)->mapWithKeys(
@@ -210,7 +210,7 @@ class SetupTournamentGame implements ShouldQueue
                 continue;
             }
 
-            // Skip user's team — their players are created during squad selection
+            // Skip user's team â€” their players are created during squad selection
             if ($teamData['uuid'] === $this->teamId) {
                 continue;
             }

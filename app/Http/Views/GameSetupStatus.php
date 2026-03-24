@@ -7,12 +7,14 @@ use App\Modules\Match\Jobs\ProcessMatchdayAdvance;
 use App\Modules\Season\Jobs\ProcessSeasonTransition;
 use App\Modules\Season\Jobs\SetupNewGame;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\DB;
 
 class GameSetupStatus
 {
     public function __invoke(string $gameId): JsonResponse
     {
         $game = Game::findOrFail($gameId);
+        $setupFailed = $this->hasRecentSetupFailure($gameId);
 
         // Recovery: re-dispatch if season transition is stuck for > 2 minutes
         if ($game->isTransitioningSeason() && $game->season_transitioning_at->lt(now()->subMinutes(2))) {
@@ -22,7 +24,7 @@ class GameSetupStatus
         }
 
         // Recovery: re-dispatch if initial game setup is stuck for > 2 minutes
-        if (!$game->isSetupComplete() && $game->created_at->lt(now()->subMinutes(2))) {
+        if (!$game->isSetupComplete() && !$setupFailed && $game->created_at->lt(now()->subMinutes(2))) {
             SetupNewGame::dispatch(
                 gameId: $game->id,
                 teamId: $game->team_id,
@@ -46,6 +48,19 @@ class GameSetupStatus
                 && !$game->isTransitioningSeason()
                 && !$game->isProcessingCareerActions()
                 && !$game->isAdvancingMatchday(),
+            'failed' => $setupFailed,
+            'message' => $setupFailed
+                ? __('game.setup_failed_message')
+                : null,
         ]);
+    }
+
+    private function hasRecentSetupFailure(string $gameId): bool
+    {
+        return DB::table('failed_jobs')
+            ->where('queue', 'like', '%setup%')
+            ->where('payload', 'like', '%'.$gameId.'%')
+            ->where('failed_at', '>=', now()->subMinutes(10))
+            ->exists();
     }
 }

@@ -45,7 +45,7 @@
 
             <x-section-card title="Infrastructure">
                 <div class="px-5 py-4">
-                    <p class="text-sm text-text-secondary">A section card without a badge — only the title is shown in the header.</p>
+                    <p class="text-sm text-text-secondary">A section card without a badge â€” only the title is shown in the header.</p>
                 </div>
             </x-section-card>
         </div>
@@ -74,8 +74,8 @@
 &lt;x-section-card title="Transactions"&gt;
     &lt;x-slot name="badge"&gt;
         &lt;div class="flex items-center gap-4 text-xs"&gt;
-            &lt;span class="text-accent-green font-medium"&gt;+€12.5M Income&lt;/span&gt;
-            &lt;span class="text-accent-red font-medium"&gt;-€8.2M Expenses&lt;/span&gt;
+            &lt;span class="text-accent-green font-medium"&gt;+â‚¬12.5M Income&lt;/span&gt;
+            &lt;span class="text-accent-primary font-medium"&gt;-â‚¬8.2M Expenses&lt;/span&gt;
         &lt;/div&gt;
     &lt;/x-slot&gt;
     &lt;div class="px-5 py-4"&gt;
@@ -102,7 +102,7 @@
                 </div>
                 <div class="bg-surface-700/50 border border-border-default rounded-lg px-3.5 py-2.5">
                     <div class="text-[10px] text-text-muted uppercase tracking-wider">Wage Bill</div>
-                    <div class="font-heading text-xl font-bold text-accent-red mt-0.5">&euro;68.2M</div>
+                    <div class="font-heading text-xl font-bold text-accent-primary mt-0.5">&euro;68.2M</div>
                 </div>
             </div>
         </div>

@@ -129,7 +129,7 @@
                     <span class="text-xs text-text-secondary w-16">Defense</span>
                     <div class="flex-1 mx-3">
                         <div class="stat-bar-track">
-                            <div class="stat-bar-fill bg-accent-red" style="width: 42%"></div>
+                            <div class="stat-bar-fill bg-accent-primary" style="width: 42%"></div>
                         </div>
                     </div>
                     <span class="text-xs font-semibold text-text-primary w-6 text-right">42</span>
@@ -237,7 +237,7 @@
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">value</td>
                         <td class="py-2 pr-4 text-text-secondary">int</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Fitness percentage (0-100)</td>
                     </tr>
                     <tr class="border-b border-border-default">
@@ -287,9 +287,9 @@
                 <div class="flex items-center gap-3">
                     <span class="text-xs text-text-secondary w-24">Squad cap</span>
                     <div class="flex-1 h-1.5 bg-surface-600 rounded-full overflow-hidden">
-                        <div class="h-full rounded-full bg-accent-red" style="width: 95%"></div>
+                        <div class="h-full rounded-full bg-accent-primary" style="width: 95%"></div>
                     </div>
-                    <span class="text-xs font-semibold text-accent-red w-8 text-right">95%</span>
+                    <span class="text-xs font-semibold text-accent-primary w-8 text-right">95%</span>
                 </div>
             </div>
         </div>
@@ -431,7 +431,7 @@
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">value</td>
                         <td class="py-2 pr-4 text-text-secondary">int</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Morale value (0-100). Color and label are determined automatically.</td>
                     </tr>
                 </tbody>

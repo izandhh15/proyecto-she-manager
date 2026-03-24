@@ -35,7 +35,7 @@
             </a>
         </div>
 
-        {{-- League Section — Team-Grouped --}}
+        {{-- League Section â€” Team-Grouped --}}
         <div class="mb-8">
             <h3 class="font-heading text-sm font-semibold uppercase tracking-widest text-text-secondary mb-4">{{ $competitionName }}</h3>
 
@@ -56,7 +56,7 @@
                                 {{-- OUT transfers --}}
                                 @foreach($activity['out'] as $transfer)
                                     <div class="flex items-center gap-1.5 md:gap-2 text-sm min-h-[28px]">
-                                        <span class="text-accent-red font-bold w-4 shrink-0 text-center" title="{{ __('transfers.transfer_activity_out') }}">&#x2197;</span>
+                                        <span class="text-accent-primary font-bold w-4 shrink-0 text-center" title="{{ __('transfers.transfer_activity_out') }}">&#x2197;</span>
                                         <x-position-badge :position="$transfer['position']" size="sm" />
                                         <span class="text-text-primary truncate min-w-0">{{ $transfer['playerName'] }}</span>
                                         <span class="text-text-secondary shrink-0">&rarr;</span>
@@ -99,7 +99,7 @@
             @endif
         </div>
 
-        {{-- Rest of World Section — Team-Grouped --}}
+        {{-- Rest of World Section â€” Team-Grouped --}}
         @if(count($restOfWorldTeamActivity) > 0)
             <div>
                 <h3 class="font-heading text-sm font-semibold uppercase tracking-widest text-text-secondary mb-4">{{ __('transfers.transfer_activity_other_leagues') }}</h3>
@@ -120,7 +120,7 @@
                                 {{-- OUT transfers --}}
                                 @foreach($activity['out'] as $transfer)
                                     <div class="flex items-center gap-1.5 md:gap-2 text-sm min-h-[28px]">
-                                        <span class="text-accent-red font-bold w-4 shrink-0 text-center" title="{{ __('transfers.transfer_activity_out') }}">&#x2197;</span>
+                                        <span class="text-accent-primary font-bold w-4 shrink-0 text-center" title="{{ __('transfers.transfer_activity_out') }}">&#x2197;</span>
                                         <x-position-badge :position="$transfer['position']" size="sm" />
                                         <span class="text-text-primary truncate min-w-0">{{ $transfer['playerName'] }}</span>
                                         <span class="text-text-secondary shrink-0">&rarr;</span>

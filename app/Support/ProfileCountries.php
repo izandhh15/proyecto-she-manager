@@ -17,6 +17,7 @@ class ProfileCountries
     {
         $locale = app()->getLocale();
         $countries = [];
+        $intlAvailable = class_exists(Locale::class) && method_exists(Locale::class, 'getDisplayRegion');
 
         foreach (CountryCodeMapper::getMap() as $name => $code) {
             // Skip football-specific sub-country codes (e.g. gb-eng, gb-sct)
@@ -28,9 +29,11 @@ class ProfileCountries
 
             // Keep only one entry per code
             if (! isset($countries[$upper])) {
-                $localized = Locale::getDisplayRegion('und_'.$upper, $locale);
+                $localized = $intlAvailable
+                    ? Locale::getDisplayRegion('und_'.$upper, $locale)
+                    : $upper;
 
-                // Fall back to English name if intl returns the code itself
+                // Fall back to the curated name when intl is unavailable or cannot resolve the country.
                 $countries[$upper] = ($localized !== $upper) ? $localized : $name;
             }
         }

@@ -80,7 +80,7 @@
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">value</td>
                         <td class="py-2 pr-4 text-text-secondary">int</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Ability score (determines color automatically)</td>
                     </tr>
                     <tr class="border-b border-border-default">
@@ -226,7 +226,7 @@
             <div class="flex flex-wrap gap-3">
                 <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-green/20 text-accent-green">Active</span>
                 <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-gold/20 text-accent-gold">Pending</span>
-                <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-red/20 text-accent-red">Rejected</span>
+                <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-primary/20 text-accent-primary">Rejected</span>
                 <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-blue/20 text-accent-blue">Info</span>
                 <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-orange/20 text-accent-orange">Warning</span>
                 <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-white/10 text-text-secondary">Default</span>
@@ -243,7 +243,7 @@
             </button>
             <pre class="bg-surface-700 text-text-body rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="pillCode">&lt;span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-green/20 text-accent-green"&gt;Active&lt;/span&gt;
 &lt;span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-gold/20 text-accent-gold"&gt;Pending&lt;/span&gt;
-&lt;span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-red/20 text-accent-red"&gt;Rejected&lt;/span&gt;
+&lt;span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-primary/20 text-accent-primary"&gt;Rejected&lt;/span&gt;
 &lt;span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-accent-blue/20 text-accent-blue"&gt;Info&lt;/span&gt;</code></pre>
         </div>
     </div>
@@ -297,7 +297,7 @@
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">competition</td>
                         <td class="py-2 pr-4 text-text-secondary">Competition</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-muted">â€”</td>
                         <td class="py-2 text-text-secondary">Competition model (determines color automatically)</td>
                     </tr>
                     <tr class="border-b border-border-default">
@@ -327,7 +327,7 @@
                 <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-green text-white">W</span>
                 <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-green text-white">W</span>
                 <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-slate-500 text-white">D</span>
-                <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-red text-white">L</span>
+                <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-primary text-white">L</span>
                 <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-green text-white">W</span>
             </div>
         </div>
@@ -340,7 +340,7 @@
             </button>
             <pre class="bg-surface-700 text-text-body rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="formCode">&lt;span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-green text-white"&gt;W&lt;/span&gt;
 &lt;span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-slate-500 text-white"&gt;D&lt;/span&gt;
-&lt;span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-red text-white"&gt;L&lt;/span&gt;</code></pre>
+&lt;span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center bg-accent-primary text-white"&gt;L&lt;/span&gt;</code></pre>
         </div>
     </div>
 
@@ -353,17 +353,17 @@
             <div class="flex items-center gap-8">
                 <div class="flex items-center gap-2">
                     <span class="text-sm text-text-body">Inbox</span>
-                    <span class="inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold text-white bg-accent-red rounded-full">3</span>
+                    <span class="inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold text-white bg-accent-primary rounded-full">3</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <span class="text-sm text-text-body">Updates</span>
-                    <span class="inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold text-white bg-accent-red rounded-full">9+</span>
+                    <span class="inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold text-white bg-accent-primary rounded-full">9+</span>
                 </div>
                 <div class="relative inline-flex">
                     <svg class="w-6 h-6 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
                     </svg>
-                    <span class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center w-4 h-4 text-[9px] font-bold text-white bg-accent-red rounded-full">5</span>
+                    <span class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center w-4 h-4 text-[9px] font-bold text-white bg-accent-primary rounded-full">5</span>
                 </div>
             </div>
         </div>
@@ -375,12 +375,12 @@
                 <span x-show="copied" x-cloak class="text-accent-green">Copied!</span>
             </button>
             <pre class="bg-surface-700 text-text-body rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="notifCode">&lt;!-- Inline count --&gt;
-&lt;span class="inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold text-white bg-accent-red rounded-full"&gt;3&lt;/span&gt;
+&lt;span class="inline-flex items-center justify-center w-5 h-5 text-[10px] font-bold text-white bg-accent-primary rounded-full"&gt;3&lt;/span&gt;
 
 &lt;!-- Positioned over icon --&gt;
 &lt;div class="relative inline-flex"&gt;
     &lt;svg class="w-6 h-6 text-text-secondary" ...&gt;...&lt;/svg&gt;
-    &lt;span class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center w-4 h-4 text-[9px] font-bold text-white bg-accent-red rounded-full"&gt;5&lt;/span&gt;
+    &lt;span class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center w-4 h-4 text-[9px] font-bold text-white bg-accent-primary rounded-full"&gt;5&lt;/span&gt;
 &lt;/div&gt;</code></pre>
         </div>
     </div>

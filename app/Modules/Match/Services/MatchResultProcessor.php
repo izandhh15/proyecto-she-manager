@@ -55,7 +55,7 @@ class MatchResultProcessor
         $competitions = Competition::whereIn('id', $competitionIds)->get()->keyBy('id');
 
         // 3. Serve suspensions for all matches (batch, using pre-loaded player IDs)
-        // Exclude players from the deferred match's teams — their suspensions
+        // Exclude players from the deferred match's teams â€” their suspensions
         // will be served during finalization, so they remain ineligible for
         // substitution while the user plays the live match.
         $preLoadedPlayerIds = $allPlayers ? $allPlayers->flatten()->pluck('id')->toArray() : [];
@@ -366,7 +366,7 @@ class MatchResultProcessor
             }
         }
 
-        // Process injury events individually (already efficient — one save per injury)
+        // Process injury events individually (already efficient â€” one save per injury)
         foreach ($injuryEvents as $eventData) {
             $player = $players->get($eventData['game_player_id']);
             if (! $player) {
@@ -434,7 +434,7 @@ class MatchResultProcessor
     }
 
     /**
-     * Bulk update appearances — 1 query for all lineup + auto-subbed-in players across all matches.
+     * Bulk update appearances â€” 1 query for all lineup + auto-subbed-in players across all matches.
      */
     private function bulkUpdateAppearances($matches, array $matchResults): void
     {

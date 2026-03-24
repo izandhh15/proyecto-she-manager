@@ -404,7 +404,7 @@ export default function lineupManager(config) {
                 this.positioningSlotId = null;
                 this.assigningSlotId = null;
 
-                // Keep currently selected players — _autoAssignToSlots will
+                // Keep currently selected players â€” _autoAssignToSlots will
                 // re-slot them into the new formation's positions automatically.
             } catch (e) {
                 console.error('Failed to fetch auto lineup', e);
@@ -858,7 +858,7 @@ export default function lineupManager(config) {
 
             event.preventDefault();
 
-            // Enter pending state — not yet dragging until 5px threshold
+            // Enter pending state â€” not yet dragging until 5px threshold
             const coords = this._getEventCoords(event);
             this._listDragPendingId = playerId;
             this._listDragStartCoords = { x: coords.clientX, y: coords.clientY };

@@ -30,7 +30,7 @@ class DefaultLeagueConfig implements CompetitionConfig, HasSeasonGoals
     public function __construct(int $numTeams = 20, int $baseTvRevenue = 5_000_000_000)
     {
         $this->numTeams = $numTeams;
-        $this->baseTvRevenue = $baseTvRevenue; // €50M default base
+        $this->baseTvRevenue = $baseTvRevenue; // â‚¬50M default base
     }
 
     public function getTvRevenue(int $position): int

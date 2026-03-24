@@ -16,12 +16,12 @@
             {{-- Capacity --}}
             <div class="flex items-center gap-2.5 bg-surface-700/50 border border-border-default rounded-lg px-3 py-2">
                 <span class="text-[10px] text-text-muted uppercase tracking-widest font-semibold">{{ __('squad.academy_capacity') }}</span>
-                <span class="font-heading text-sm font-bold" :class="seatsUsed > {{ $capacity }} ? 'text-accent-red' : 'text-text-primary'">
+                <span class="font-heading text-sm font-bold" :class="seatsUsed > {{ $capacity }} ? 'text-accent-primary' : 'text-text-primary'">
                     <span x-text="seatsUsed"></span>/{{ $capacity }}
                 </span>
                 <div class="w-12 h-1.5 bg-bar-track rounded-full overflow-hidden">
                     <div class="h-full rounded-full transition-all duration-300"
-                         :class="seatsUsed > {{ $capacity }} ? 'bg-accent-red' : (seatsUsed >= {{ $capacity }} - 1 ? 'bg-accent-gold' : 'bg-emerald-500')"
+                         :class="seatsUsed > {{ $capacity }} ? 'bg-accent-primary' : (seatsUsed >= {{ $capacity }} - 1 ? 'bg-accent-gold' : 'bg-emerald-500')"
                          :style="'width: ' + Math.min(100, (seatsUsed / {{ max($capacity, 1) }}) * 100) + '%'">
                     </div>
                 </div>
@@ -42,9 +42,9 @@
             @endif
 
             @if($occupiedSeats > $capacity && $capacity > 0)
-                <div class="flex items-center gap-2 bg-accent-red/10 border border-accent-red/20 rounded-lg px-3 py-2">
-                    <svg class="w-4 h-4 text-accent-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.072 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-                    <span class="text-sm text-accent-red">{{ __('squad.academy_over_capacity') }}</span>
+                <div class="flex items-center gap-2 bg-accent-primary/10 border border-accent-primary/20 rounded-lg px-3 py-2">
+                    <svg class="w-4 h-4 text-accent-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.072 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+                    <span class="text-sm text-accent-primary">{{ __('squad.academy_over_capacity') }}</span>
                 </div>
             @endif
         </div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="flex items-start gap-2.5">
-                    <span class="shrink-0 mt-0.5 w-5 h-5 rounded-sm bg-red-600 flex items-center justify-center">
+                    <span class="shrink-0 mt-0.5 w-5 h-5 rounded-sm bg-purple-700 flex items-center justify-center">
                         <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
                     </span>
                     <div>
@@ -199,7 +199,7 @@
 
                                 <x-pill-button size="xs" type="button"
                                     @click="setDecision('{{ $prospect->id }}', 'dismiss')"
-                                    x-bind:class="decisions['{{ $prospect->id }}'] === 'dismiss' ? 'bg-red-600 text-white ring-2 ring-red-300' : 'bg-surface-700 text-text-secondary hover:bg-accent-red/10 hover:text-accent-red'"
+                                    x-bind:class="decisions['{{ $prospect->id }}'] === 'dismiss' ? 'bg-purple-700 text-white ring-2 ring-red-300' : 'bg-surface-700 text-text-secondary hover:bg-accent-primary/10 hover:text-accent-primary'"
                                     class="rounded-md min-h-[36px]">
                                     {{ __('squad.academy_dismiss') }}
                                 </x-pill-button>
@@ -259,7 +259,7 @@
                                 @endunless
 
                                 <x-pill-button size="sm" @click="setDecision('{{ $prospect->id }}', 'dismiss')"
-                                    x-bind:class="decisions['{{ $prospect->id }}'] === 'dismiss' ? 'bg-red-600 text-white ring-2 ring-red-300' : 'bg-surface-700 text-text-secondary'"
+                                    x-bind:class="decisions['{{ $prospect->id }}'] === 'dismiss' ? 'bg-purple-700 text-white ring-2 ring-red-300' : 'bg-surface-700 text-text-secondary'"
                                     class="flex-1 min-h-[44px]">
                                     {{ __('squad.academy_dismiss') }}
                                 </x-pill-button>

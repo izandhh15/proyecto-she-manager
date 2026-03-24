@@ -16,7 +16,7 @@
 
     // Calculate point positions for each axis
     $angleStep = (2 * M_PI) / $numAxes;
-    // Start from top (-π/2) so first axis points up
+    // Start from top (-Ï€/2) so first axis points up
     $startAngle = -M_PI / 2;
 
     $getPoint = function (int $index, float $value) use ($cx, $cy, $radius, $angleStep, $startAngle) {

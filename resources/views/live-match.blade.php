@@ -241,9 +241,9 @@
                                  :style="'left: ' + marker.position + '%'"
                                  :class="{
                                      'bg-accent-green': marker.type === 'goal',
-                                     'bg-accent-red': marker.type === 'own_goal',
+                                     'bg-accent-primary': marker.type === 'own_goal',
                                      'bg-accent-gold': marker.type === 'yellow_card',
-                                     'bg-accent-red': marker.type === 'red_card',
+                                     'bg-accent-primary': marker.type === 'red_card',
                                      'bg-accent-orange': marker.type === 'injury',
                                      'bg-accent-blue': marker.type === 'substitution',
                                  }"
@@ -353,7 +353,7 @@
                                                      class="w-4 h-4 shrink-0 object-contain">
                                                 <span class="flex-1 truncate text-sm text-text-body" x-text="kick.playerName"></span>
                                                 <span class="text-[10px] font-bold shrink-0 px-1.5 py-0.5 rounded"
-                                                      :class="kick.scored ? 'bg-accent-green/10 text-accent-green' : 'bg-red-500/10 text-accent-red'"
+                                                      :class="kick.scored ? 'bg-accent-green/10 text-accent-green' : 'bg-red-500/10 text-accent-primary'"
                                                       x-text="kick.scored ? translations.penScored : translations.penMissed"></span>
                                             </div>
                                         </template>
@@ -559,7 +559,7 @@
                                     <span class="font-heading font-bold text-sm text-text-primary" x-text="getStatCount('yellow_card', 'home')"></span>
                                 </div>
                                 <div class="flex items-center gap-1">
-                                    <div class="w-3 h-4 rounded-[2px] bg-accent-red"></div>
+                                    <div class="w-3 h-4 rounded-[2px] bg-accent-primary"></div>
                                     <span class="font-heading font-bold text-sm text-text-primary" x-text="getStatCount('red_card', 'home')"></span>
                                 </div>
                             </div>
@@ -571,7 +571,7 @@
                                 </div>
                                 <div class="flex items-center gap-1">
                                     <span class="font-heading font-bold text-sm text-text-primary" x-text="getStatCount('red_card', 'away')"></span>
-                                    <div class="w-3 h-4 rounded-[2px] bg-accent-red"></div>
+                                    <div class="w-3 h-4 rounded-[2px] bg-accent-primary"></div>
                                 </div>
                             </div>
                         </div>
@@ -614,7 +614,7 @@
                                                 'GK' => 'bg-amber-600',
                                                 'DEF' => 'bg-blue-600',
                                                 'MID' => 'bg-green-600',
-                                                'FWD' => 'bg-red-600',
+                                                'FWD' => 'bg-purple-700',
                                                 default => 'bg-surface-600',
                                             } }}">
                                             <span class="skew-x-12">{{ $p['positionAbbr'] }}</span>
@@ -643,7 +643,7 @@
                                                 'GK' => 'bg-amber-600',
                                                 'DEF' => 'bg-blue-600',
                                                 'MID' => 'bg-green-600',
-                                                'FWD' => 'bg-red-600',
+                                                'FWD' => 'bg-purple-700',
                                                 default => 'bg-surface-600',
                                             } }}">
                                             <span class="skew-x-12">{{ $p['positionAbbr'] }}</span>
@@ -739,7 +739,7 @@
                                           'text-accent-gold': tournamentResultType === 'champion',
                                           'text-text-secondary': tournamentResultType === 'runner_up' || tournamentResultType === 'fourth',
                                           'text-accent-orange': tournamentResultType === 'third',
-                                          'text-accent-red': tournamentResultType === 'eliminated',
+                                          'text-accent-primary': tournamentResultType === 'eliminated',
                                       }"
                                       x-text="tournamentResultType === 'champion' ? translations.tournamentChampion
                                            : tournamentResultType === 'runner_up' ? translations.tournamentRunnerUp
@@ -761,7 +761,7 @@
                                       :class="{
                                           'text-accent-green': (userTeamId === homeTeamId && homeScore > awayScore) || (userTeamId === awayTeamId && awayScore > homeScore),
                                           'text-accent-gold': homeScore === awayScore,
-                                          'text-accent-red': (userTeamId === homeTeamId && homeScore < awayScore) || (userTeamId === awayTeamId && awayScore < homeScore),
+                                          'text-accent-primary': (userTeamId === homeTeamId && homeScore < awayScore) || (userTeamId === awayTeamId && awayScore < homeScore),
                                       }"
                                       x-text="(userTeamId === homeTeamId && homeScore > awayScore) || (userTeamId === awayTeamId && awayScore > homeScore)
                                           ? '{{ __('game.live_result_win') }}'

@@ -34,7 +34,7 @@ class SimulateSeason extends Command
 
         $this->info("Simulating from matchday {$game->current_matchday} to {$targetMatchday}...");
 
-        // Disable query logging — it accumulates every SQL string in memory
+        // Disable query logging â€” it accumulates every SQL string in memory
         // across hundreds of iterations.
         DB::disableQueryLog();
         DB::flushQueryLog();
@@ -70,7 +70,7 @@ class SimulateSeason extends Command
 
             $game->refresh();
             $mem = round(memory_get_usage() / 1024 / 1024, 1);
-            $this->line("  Batch #{$advances} — matchday {$game->current_matchday} — {$game->current_date->toDateString()} — {$mem}MB");
+            $this->line("  Batch #{$advances} â€” matchday {$game->current_matchday} â€” {$game->current_date->toDateString()} â€” {$mem}MB");
         }
 
         $peak = round(memory_get_peak_usage() / 1024 / 1024, 1);

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@800&family=Inter:wght@300;400;500;600;700&display=swap')
-layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@800&family=Inter:wght@300;400;500;600;700&display=swap') layer(base);
 
 @import 'tailwindcss';
 
@@ -9,7 +8,7 @@ layer(base);
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
-/* ── Theme mode custom properties ── */
+/* ÃƒÂ¢Ã¢â‚¬Â�Ã¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬Â�Ã¢â€šÂ¬ Theme mode custom properties ÃƒÂ¢Ã¢â‚¬Â�Ã¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬Â�Ã¢â€šÂ¬ */
 :root {
   --surface-600: #334155;
   --surface-700: #1e293b;
@@ -56,7 +55,7 @@ layer(base);
   --scrollbar-thumb: #cbd5e1;
   --ring-offset-bg: #ffffff;
   --stat-bar-bg: rgba(0, 0, 0, 0.06);
-  --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
   --accent-tint: rgba(59, 130, 246, 0.06);
   --accent-tint-border: rgba(59, 130, 246, 0.15);
   --success-tint: rgba(34, 197, 94, 0.06);
@@ -110,7 +109,7 @@ input[type="radio"]:checked {
   --color-accent-blue: #3b82f6;
   --color-accent-gold: #f59e0b;
   --color-accent-green: #22c55e;
-  --color-accent-red: #ef4444;
+  --color-accent-red: #9333ea;
   --color-accent-orange: #f97316;
 
   --color-bar-track: var(--bar-track);
@@ -141,6 +140,7 @@ input[type="radio"]:checked {
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -153,18 +153,23 @@ input[type="radio"]:checked {
 @utility dual-range {
   /* Dual-range slider (scouting) */
   @apply relative h-6 flex items-center;
+
   & input[type='range'] {
     @apply absolute w-full pointer-events-none appearance-none bg-transparent h-1.5;
   }
+
   & input[type='range']::-webkit-slider-thumb {
     @apply pointer-events-auto appearance-none w-4 h-4 rounded-full bg-accent-blue border-2 border-surface-800 shadow-sm cursor-pointer;
   }
+
   & input[type='range']::-moz-range-thumb {
     @apply pointer-events-auto appearance-none w-4 h-4 rounded-full bg-accent-blue border-2 border-surface-800 shadow-sm cursor-pointer;
   }
+
   & .track {
     @apply absolute w-full h-1.5 rounded-full bg-surface-600;
   }
+
   & .track-fill {
     @apply absolute h-1.5 rounded-full bg-accent-blue;
   }
@@ -174,6 +179,7 @@ input[type="radio"]:checked {
   .dual-range & {
     @apply absolute w-full h-1.5 rounded-full bg-surface-600;
   }
+
   .tier-range & {
     @apply absolute w-full h-1.5 rounded-full bg-surface-600;
   }
@@ -183,6 +189,7 @@ input[type="radio"]:checked {
   .dual-range & {
     @apply absolute h-1.5 rounded-full bg-accent-blue;
   }
+
   .tier-range & {
     @apply absolute h-1.5 rounded-full bg-accent-blue;
   }
@@ -191,18 +198,23 @@ input[type="radio"]:checked {
 @utility tier-range {
   /* Tier range slider (budget allocation) */
   @apply relative h-6 flex items-center;
+
   & .track {
     @apply absolute w-full h-1.5 rounded-full bg-surface-600;
   }
+
   & .track-fill {
     @apply absolute h-1.5 rounded-full bg-accent-blue;
   }
+
   & input[type='range'] {
     @apply absolute w-full appearance-none bg-transparent h-1.5 cursor-pointer;
   }
+
   & input[type='range']::-webkit-slider-thumb {
     @apply pointer-events-auto appearance-none w-4 h-4 rounded-full bg-accent-blue border-2 border-surface-800 shadow-sm cursor-pointer;
   }
+
   & input[type='range']::-moz-range-thumb {
     @apply pointer-events-auto appearance-none w-4 h-4 rounded-full bg-accent-blue border-2 border-surface-800 shadow-sm cursor-pointer;
   }
@@ -237,6 +249,7 @@ input[type="radio"]:checked {
 @utility nav-item {
   /* Nav item with active underline */
   position: relative;
+
   &.active::after {
     content: '';
     position: absolute;
@@ -258,11 +271,13 @@ input[type="radio"]:checked {
     height: 2px;
     background: #3b82f6;
   }
+
   &.formation-option {
     background: #3b82f6;
     color: white;
     border-color: #3b82f6;
   }
+
   &.mentality-btn {
     box-shadow: 0 0 0 1px currentColor;
   }
@@ -271,9 +286,11 @@ input[type="radio"]:checked {
 @utility player-row {
   /* Player row hover */
   transition: all 0.15s ease;
+
   &:hover {
     background: rgba(59, 130, 246, 0.05);
   }
+
   &:hover .rating-badge {
     transform: scale(1.08);
   }
@@ -391,6 +408,7 @@ input[type="radio"]:checked {
   inset: 0;
   pointer-events: none;
   clip-path: inset(15% 0 50% 0);
+
   &::after {
     content: '';
     position: absolute;
@@ -409,6 +427,7 @@ input[type="radio"]:checked {
   inset: 0;
   pointer-events: none;
   clip-path: inset(50% 0 15% 0);
+
   &::after {
     content: '';
     position: absolute;
@@ -455,6 +474,7 @@ input[type="radio"]:checked {
     transform 0.2s ease,
     filter 0.2s ease;
   z-index: 10;
+
   &:hover {
     transform: translate(-50%, -50%) scale(1.12);
     z-index: 20;
@@ -473,6 +493,7 @@ input[type="radio"]:checked {
   font-size: 13px;
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
   @media (min-width: 1024px) {
     width: 48px;
     height: 48px;
@@ -494,6 +515,7 @@ input[type="radio"]:checked {
   margin-top: 3px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+
   @media (min-width: 1024px) {
     font-size: 11px;
     margin-top: 4px;
@@ -526,11 +548,13 @@ input[type="radio"]:checked {
 @utility formation-option {
   /* Formation & mentality selectors */
   transition: all 0.15s ease;
+
   &.active {
     background: #3b82f6;
     color: white;
     border-color: #3b82f6;
   }
+
   &.active:hover {
     background: #2563eb;
     border-color: #2563eb;
@@ -539,6 +563,7 @@ input[type="radio"]:checked {
 
 @utility mentality-btn {
   transition: all 0.15s ease;
+
   &.active {
     box-shadow: 0 0 0 1px currentColor;
   }
@@ -547,6 +572,7 @@ input[type="radio"]:checked {
 @utility bench-card {
   /* Bench card */
   transition: all 0.15s ease;
+
   &:hover {
     background: rgba(59, 130, 246, 0.08);
     border-color: rgba(59, 130, 246, 0.2);
@@ -555,11 +581,9 @@ input[type="radio"]:checked {
 
 @utility tip-card {
   /* Tip card gradient */
-  background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.08),
-    rgba(59, 130, 246, 0.02)
-  );
+  background: linear-gradient(135deg,
+      rgba(59, 130, 246, 0.08),
+      rgba(59, 130, 246, 0.02));
   border: 1px solid rgba(59, 130, 246, 0.15);
 }
 
@@ -568,6 +592,7 @@ input[type="radio"]:checked {
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
+
   .player-row:hover & {
     transform: scale(1.08);
   }
@@ -580,72 +605,78 @@ input[type="radio"]:checked {
 }
 
 @layer base {
-    @media (max-width: 767px) {
-        html {
-            font-size: 14px;
-        }
+  @media (max-width: 767px) {
+    html {
+      font-size: 14px;
     }
+  }
 
-    [x-cloak] {
-        display: none !important;
-    }
+  [x-cloak] {
+    display: none !important;
+  }
 
-    .tippy-box {
-        background-color: var(--surface-600) !important;
-        border: 1px solid var(--border-strong) !important;
-        border-radius: 0.5rem !important;
-        color: var(--text-primary) !important;
-    }
+  .tippy-box {
+    background-color: var(--surface-600) !important;
+    border: 1px solid var(--border-strong) !important;
+    border-radius: 0.5rem !important;
+    color: var(--text-primary) !important;
+  }
 
-    .tippy-box > .tippy-arrow::before {
-        color: var(--surface-600) !important;
-    }
+  .tippy-box>.tippy-arrow::before {
+    color: var(--surface-600) !important;
+  }
 
-    .tippy-content {
-        font-size: 0.75rem;
-    }
+  .tippy-content {
+    font-size: 0.75rem;
+  }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+  width: 4px;
+  height: 4px;
 }
+
 ::-webkit-scrollbar-track {
-    background: var(--scrollbar-track);
+  background: var(--scrollbar-track);
 }
+
 ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb);
-    border-radius: 4px;
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
 }
 
 /* Hide scrollbar for horizontal-scroll nav tabs */
 .scrollbar-hide::-webkit-scrollbar,
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
+
 .scrollbar-hide,
 .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Mobile: larger touch targets for range slider thumbs */
 @media (max-width: 767px) {
-    .dual-range input[type="range"]::-webkit-slider-thumb {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-    .dual-range input[type="range"]::-moz-range-thumb {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-    .tier-range input[type="range"]::-webkit-slider-thumb {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-    .tier-range input[type="range"]::-moz-range-thumb {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
+  .dual-range input[type="range"]::-webkit-slider-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .dual-range input[type="range"]::-moz-range-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .tier-range input[type="range"]::-webkit-slider-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .tier-range input[type="range"]::-moz-range-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

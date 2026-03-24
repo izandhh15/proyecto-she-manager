@@ -18,10 +18,10 @@ use Carbon\Carbon;
  * expired contracts, transfers, or any other mechanism that removes players.
  *
  * Three rules are enforced:
- * 1. Position group minimums (2 GK, 5 DEF, 5 MID, 3 FWD) — always, even if
+ * 1. Position group minimums (2 GK, 5 DEF, 5 MID, 3 FWD) â€” always, even if
  *    total squad size is sufficient (e.g. user buys all AI team's goalkeepers).
- * 2. Minimum squad size of 22 — fill remaining gaps by position target priority.
- * 3. Youth intake — each AI team receives 2-3 young players (17-20) per season,
+ * 2. Minimum squad size of 22 â€” fill remaining gaps by position target priority.
+ * 3. Youth intake â€” each AI team receives 2-3 young players (17-20) per season,
  *    simulating AI youth academies and maintaining healthy age balance.
  *
  * Priority: 8
@@ -161,7 +161,7 @@ class SquadReplenishmentProcessor implements SeasonProcessor
                 ];
             }
 
-            // Phase 2: Youth intake — inject young players to maintain age balance
+            // Phase 2: Youth intake â€” inject young players to maintain age balance
             $currentSquadSize = $players->count() + count($positionsToFill);
             $youthPlayers = $this->generateYouthIntake(
                 $game, $teamId, $teamAvgAbility, $currentSquadSize, $data->newSeason,
@@ -325,7 +325,7 @@ class SquadReplenishmentProcessor implements SeasonProcessor
         int $teamAvgAbility,
         string $newSeason,
     ): GamePlayer {
-        // Ability within ±10% of team average, with some variance
+        // Ability within Â±10% of team average, with some variance
         $variance = mt_rand(-10, 10);
         $baseAbility = max(35, min(90, $teamAvgAbility + $variance));
 

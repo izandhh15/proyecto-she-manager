@@ -3,7 +3,7 @@
 @php
 $colors = [
     'blue' => 'border-accent-blue/20 text-accent-blue bg-accent-blue/10 hover:bg-accent-blue/20',
-    'red' => 'border-accent-red/20 text-accent-red bg-accent-red/10 hover:bg-accent-red/20',
+    'red' => 'border-accent-primary/20 text-accent-primary bg-accent-primary/10 hover:bg-accent-primary/20',
     'green' => 'border-accent-green/20 text-accent-green bg-accent-green/10 hover:bg-accent-green/20',
     'amber' => 'border-accent-gold/20 text-accent-gold bg-accent-gold/10 hover:bg-accent-gold/20',
     'violet' => 'border-violet-500/20 text-violet-400 bg-violet-500/10 hover:bg-violet-500/20',

@@ -74,7 +74,7 @@
                     <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
                         {{-- ============================== --}}
-                        {{-- LEFT COLUMN (2/3) — Shortlist + Search History --}}
+                        {{-- LEFT COLUMN (2/3) â€” Shortlist + Search History --}}
                         {{-- ============================== --}}
                         <div class="md:col-span-2 space-y-6">
 
@@ -273,7 +273,7 @@
                                                     <div class="text-right shrink-0">
                                                         <div class="text-xs text-text-secondary">{{ __('transfers.asking_price') }}</div>
                                                         <template x-if="player.formattedAskingPrice">
-                                                            <div class="text-sm font-semibold" :class="player.canAffordFee ? 'text-text-primary' : 'text-accent-red'" x-text="player.formattedAskingPrice"></div>
+                                                            <div class="text-sm font-semibold" :class="player.canAffordFee ? 'text-text-primary' : 'text-accent-primary'" x-text="player.formattedAskingPrice"></div>
                                                         </template>
                                                         <template x-if="!player.formattedAskingPrice">
                                                             <div class="flex items-center justify-end gap-1 text-text-body">
@@ -296,7 +296,7 @@
                                                         {{-- Stop tracking button (for currently tracking players) --}}
                                                         <template x-if="player.isTracking">
                                                             <x-icon-button size="sm" @click.stop="stopTracking(player)"
-                                                                class="text-teal-400 hover:text-red-500 hover:bg-accent-red/10 min-h-[44px] sm:min-h-0"
+                                                                class="text-teal-400 hover:text-red-500 hover:bg-accent-primary/10 min-h-[44px] sm:min-h-0"
                                                                 title="{{ __('transfers.stop_tracking') }}">
                                                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
                                                             </x-icon-button>
@@ -305,7 +305,7 @@
                                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                                                         </svg>
                                                         <template x-if="confirmRemoveId !== player.id">
-                                                            <x-icon-button size="sm" @click.stop="confirmRemoveId = player.id" class="text-text-body hover:text-red-500 hover:bg-accent-red/10 min-h-[44px] sm:min-h-0" title="{{ __('transfers.remove_from_shortlist') }}">
+                                                            <x-icon-button size="sm" @click.stop="confirmRemoveId = player.id" class="text-text-body hover:text-red-500 hover:bg-accent-primary/10 min-h-[44px] sm:min-h-0" title="{{ __('transfers.remove_from_shortlist') }}">
                                                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                                                                 </svg>
@@ -367,7 +367,7 @@
                                                             <div class="flex flex-wrap gap-x-6 gap-y-1 text-xs mb-3">
                                                                 <div>
                                                                     <span class="text-text-muted">{{ __('transfers.estimated_asking_price') }}:</span>
-                                                                    <span class="font-semibold" :class="player.canAffordFee ? 'text-text-primary' : 'text-accent-red'" x-text="player.formattedAskingPrice"></span>
+                                                                    <span class="font-semibold" :class="player.canAffordFee ? 'text-text-primary' : 'text-accent-primary'" x-text="player.formattedAskingPrice"></span>
                                                                 </div>
                                                                 <div>
                                                                     <span class="text-text-muted">{{ __('transfers.wage_demand') }}:</span>
@@ -382,7 +382,7 @@
                                                                         :class="{
                                                                             'bg-accent-green/10 text-accent-green border-accent-green/20': player.willingness === 'very_interested' || player.willingness === 'open',
                                                                             'bg-accent-gold/10 text-accent-gold border-accent-gold/20': player.willingness === 'undecided',
-                                                                            'bg-accent-red/10 text-accent-red border-accent-red/20': player.willingness === 'reluctant' || player.willingness === 'not_interested',
+                                                                            'bg-accent-primary/10 text-accent-primary border-accent-primary/20': player.willingness === 'reluctant' || player.willingness === 'not_interested',
                                                                         }">
                                                                         {{ __('transfers.willingness') }}: <span x-text="player.willingnessLabel"></span>
                                                                     </span>
@@ -399,7 +399,7 @@
                                                             <template x-if="player.intelLevel === 1 && player.isTracking">
                                                                 <div class="flex items-center gap-1.5 mb-3 text-xs text-teal-400">
                                                                     <span class="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse"></span>
-                                                                    {{ __('transfers.tracking_in_progress') }} — {{ __('transfers.intel_deep') }}
+                                                                    {{ __('transfers.tracking_in_progress') }} â€” {{ __('transfers.intel_deep') }}
                                                                 </div>
                                                             </template>
 
@@ -459,7 +459,7 @@
                                                                     <div class="flex items-center gap-2" x-data="{
                                                                         holdTimer: null, holdInterval: null,
                                                                         get step() { return player.wageEuros >= 1000000 ? 100000 : 10000 },
-                                                                        get display() { return '€ ' + new Intl.NumberFormat('es-ES').format(player.wageEuros) },
+                                                                        get display() { return 'â‚¬ ' + new Intl.NumberFormat('es-ES').format(player.wageEuros) },
                                                                         get atMin() { return player.wageEuros <= 0 },
                                                                         increment() { player.wageEuros += this.step },
                                                                         decrement() { player.wageEuros = Math.max(player.wageEuros - this.step, 0) },
@@ -481,7 +481,7 @@
 
                                                             {{-- Action: Can't afford --}}
                                                             <template x-if="!player.isFreeAgent && !player.hasExistingOffer && !(player.isExpiring && isPreContractPeriod) && !player.canAffordFee">
-                                                                <div class="text-xs text-accent-red font-medium">
+                                                                <div class="text-xs text-accent-primary font-medium">
                                                                     {{ __('transfers.transfer_fee_exceeds_budget') }}
                                                                 </div>
                                                             </template>
@@ -491,7 +491,7 @@
                                                                 <div class="flex flex-col sm:flex-row gap-2" x-data="{
                                                                     holdTimer: null, holdInterval: null,
                                                                     get step() { return player.bidEuros >= 1000000 ? 100000 : 10000 },
-                                                                    get display() { return '€ ' + new Intl.NumberFormat('es-ES').format(player.bidEuros) },
+                                                                    get display() { return 'â‚¬ ' + new Intl.NumberFormat('es-ES').format(player.bidEuros) },
                                                                     get atMin() { return player.bidEuros <= 0 },
                                                                     increment() { player.bidEuros += this.step },
                                                                     decrement() { player.bidEuros = Math.max(player.bidEuros - this.step, 0) },
@@ -585,7 +585,7 @@
                                                                 {{ __('transfers.view_results') }}
                                                             </x-action-button>
                                                             <template x-if="!confirmDelete">
-                                                                <x-icon-button size="sm" @click="confirmDelete = true" class="hover:text-red-500 hover:bg-accent-red/10 sm:min-h-0" title="{{ __('transfers.delete_search') }}">
+                                                                <x-icon-button size="sm" @click="confirmDelete = true" class="hover:text-red-500 hover:bg-accent-primary/10 sm:min-h-0" title="{{ __('transfers.delete_search') }}">
                                                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
                                                                     </svg>
@@ -621,7 +621,7 @@
                         </div>
 
                         {{-- ============================== --}}
-                        {{-- RIGHT COLUMN (1/3) — Search Panel --}}
+                        {{-- RIGHT COLUMN (1/3) â€” Search Panel --}}
                         {{-- ============================== --}}
                         <div class="space-y-6">
 
@@ -639,7 +639,7 @@
                                         <p class="text-xs text-text-muted mb-4">
                                             {{ __('transfers.looking_for') }}: <span class="font-medium">{{ \App\Support\PositionMapper::filterToDisplayName($searchingReport->filters['position']) }}</span>
                                             @if(isset($searchingReport->filters['scope']) && count($searchingReport->filters['scope']) === 1)
-                                                — <span class="font-medium">{{ in_array('domestic', $searchingReport->filters['scope']) ? __('transfers.scope_domestic') : __('transfers.scope_international') }}</span>
+                                                â€” <span class="font-medium">{{ in_array('domestic', $searchingReport->filters['scope']) ? __('transfers.scope_domestic') : __('transfers.scope_international') }}</span>
                                             @endif
                                         </p>
                                         <div class="w-full bg-bar-track rounded-full h-2 mb-4">

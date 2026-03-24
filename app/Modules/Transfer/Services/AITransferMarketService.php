@@ -21,8 +21,8 @@ use Illuminate\Support\Str;
  * to minimize query count.
  *
  * Two types of AI-to-AI transfers:
- * 1. Squad Clearing — surplus/backup players move to equal or lower reputation clubs
- * 2. Talent Upgrading — quality players move to equal or higher reputation clubs
+ * 1. Squad Clearing â€” surplus/backup players move to equal or lower reputation clubs
+ * 2. Talent Upgrading â€” quality players move to equal or higher reputation clubs
  */
 class AITransferMarketService
 {
@@ -44,7 +44,7 @@ class AITransferMarketService
         'Forward' => 4,
     ];
 
-    /** Minimum group counts — never sell below this */
+    /** Minimum group counts â€” never sell below this */
     private const MIN_GROUP_COUNTS = [
         'Goalkeeper' => 2,
         'Defender' => 5,
@@ -55,7 +55,7 @@ class AITransferMarketService
     /** Minimum squad size below which a team will not sell */
     private const MIN_SQUAD_SIZE = 20;
 
-    /** Maximum squad size — buyers can't exceed this */
+    /** Maximum squad size â€” buyers can't exceed this */
     private const MAX_SQUAD_SIZE = 30;
 
     public function __construct(
@@ -255,8 +255,8 @@ class AITransferMarketService
     /**
      * Process AI-to-AI transfers with two transfer types.
      *
-     * Type 1 (Squad Clearing): surplus players → equal or lower reputation buyers
-     * Type 2 (Talent Upgrading): quality players → equal or higher reputation buyers
+     * Type 1 (Squad Clearing): surplus players â†’ equal or lower reputation buyers
+     * Type 2 (Talent Upgrading): quality players â†’ equal or higher reputation buyers
      */
     private function processAITransfers(
         Game $game,
@@ -293,7 +293,7 @@ class AITransferMarketService
         $foreignIndex = 0;
 
         $count = 0;
-        // Set of player IDs already transferred — used only to prevent double-transfers
+        // Set of player IDs already transferred â€” used only to prevent double-transfers
         $transferredPlayerIds = [];
 
         // Build all sell candidates across all teams (or filtered subset), tagged by type
@@ -358,7 +358,7 @@ class AITransferMarketService
                 $teamSizeDeltas->put($sellerTeamId, ($teamSizeDeltas->get($sellerTeamId, 0)) - 1);
                 $teamSizeDeltas->put($buyerTeamId, ($teamSizeDeltas->get($buyerTeamId, 0)) + 1);
             } else {
-                // No domestic buyer — try foreign departure
+                // No domestic buyer â€” try foreign departure
                 if (mt_rand(1, 100) <= self::FOREIGN_FALLBACK_CHANCE && ! empty($foreignTeams)) {
                     $foreignTeam = $foreignTeams[$foreignIndex % count($foreignTeams)];
                     $foreignIndex++;
@@ -544,7 +544,7 @@ class AITransferMarketService
             return null;
         }
 
-        // Must be at or above team average — this is a quality player
+        // Must be at or above team average â€” this is a quality player
         if ($ability < $teamAvg) {
             return null;
         }
@@ -563,7 +563,7 @@ class AITransferMarketService
             $score += 1;
         }
 
-        // Surplus bonus — easier to let go if position group is stocked
+        // Surplus bonus â€” easier to let go if position group is stocked
         $surplus = $groupCount - (self::IDEAL_GROUP_COUNTS[$group] ?? 4);
         if ($surplus > 0) {
             $score += min(4, $surplus * 2);
@@ -907,7 +907,7 @@ class AITransferMarketService
         ];
     }
 
-    // ── Batch operation helpers ─────────────────────────────────────────
+    // â”€â”€ Batch operation helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     /**
      * Load shared context needed by both processTransferBatch and processWindowClose.
@@ -972,7 +972,7 @@ class AITransferMarketService
 
     /**
      * Allocate the next available squad number from the in-memory map.
-     * Mutates the map to reserve the number — no DB query.
+     * Mutates the map to reserve the number â€” no DB query.
      */
     private function allocateSquadNumber(Collection &$takenNumbers, string $teamId): int
     {
@@ -1005,11 +1005,11 @@ class AITransferMarketService
         }
     }
 
-    // ── Budget & tracking helpers ───────────────────────────────────────
+    // â”€â”€ Budget & tracking helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     /**
      * Compute a deterministic transfer budget for a team using hash-based distribution.
-     * Same inputs always produce the same budget — no state storage needed.
+     * Same inputs always produce the same budget â€” no state storage needed.
      */
     private function computeDeterministicBudget(string $teamId, string $season, string $window, bool $isSummer): int
     {
@@ -1076,7 +1076,7 @@ class AITransferMarketService
         return $counts;
     }
 
-    // ── Data loading helpers ────────────────────────────────────────────
+    // â”€â”€ Data loading helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     /**
      * Load reputation tier indices for all AI teams.
@@ -1100,7 +1100,7 @@ class AITransferMarketService
         return $teamReputations->get($teamId, 6);
     }
 
-    // ── Utility helpers ─────────────────────────────────────────────────
+    // â”€â”€ Utility helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     /**
      * Increment a team's budget counter.

@@ -57,7 +57,7 @@
 
         {{-- Projection marker --}}
         @if($projectedPct !== null && $projection != 0)
-        <div class="absolute top-1/2 -translate-y-1/2 {{ $dotSize }} rounded-full border border-surface-800 shadow-xs {{ $projection > 0 ? 'bg-accent-green' : 'bg-accent-red' }}" style="left: {{ $projectedPct }}%"></div>
+        <div class="absolute top-1/2 -translate-y-1/2 {{ $dotSize }} rounded-full border border-surface-800 shadow-xs {{ $projection > 0 ? 'bg-accent-green' : 'bg-accent-primary' }}" style="left: {{ $projectedPct }}%"></div>
         @endif
     </div>
 

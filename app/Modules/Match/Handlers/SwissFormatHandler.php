@@ -15,7 +15,7 @@ use Illuminate\Support\Collection;
  * Handler for UEFA-style Swiss format competitions (Champions League, Europa League, Conference League).
  *
  * League phase: 36 teams, 8 matchdays, single standings table.
- * Knockout phase: Playoff (9-24) → R16 (top 8 + playoff winners) → QF → SF → Final.
+ * Knockout phase: Playoff (9-24) â†’ R16 (top 8 + playoff winners) â†’ QF â†’ SF â†’ Final.
  */
 class SwissFormatHandler extends CupCompetitionHandler
 {
@@ -96,7 +96,7 @@ class SwissFormatHandler extends CupCompetitionHandler
             return;
         }
 
-        // Don't generate while a league-phase match is pending finalization —
+        // Don't generate while a league-phase match is pending finalization â€”
         // its standings haven't been applied yet, so seedings would be wrong
         if ($game->hasPendingFinalizationForCompetition($competitionId)) {
             return;

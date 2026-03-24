@@ -134,7 +134,7 @@ class PlayerGeneratorService
     }
 
     /**
-     * Country code → nationality string mapping for weighted selection.
+     * Country code â†’ nationality string mapping for weighted selection.
      */
     private const COUNTRY_TO_NATIONALITY = [
         'ES' => 'Spain',
@@ -165,7 +165,7 @@ class PlayerGeneratorService
             }
         }
 
-        // Exact nationality filter takes priority (e.g. Athletic Bilbao → 100% Spanish)
+        // Exact nationality filter takes priority (e.g. Athletic Bilbao â†’ 100% Spanish)
         if ($nationality !== null) {
             $filtered = array_filter($pool, fn (array $entry) => $entry['nationality'] === $nationality);
 
@@ -204,7 +204,7 @@ class PlayerGeneratorService
 
     /**
      * Generate a realistic height string (e.g. "1,78m").
-     * Distribution centered around 180cm (range 168–196).
+     * Distribution centered around 180cm (range 168â€“196).
      */
     private function generateHeight(): string
     {

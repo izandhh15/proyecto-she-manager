@@ -34,7 +34,7 @@
                 <div class="text-[10px] text-text-muted uppercase tracking-widest mb-1">{{ __('finances.available_surplus') }}</div>
                 <div class="font-heading text-4xl font-bold text-text-primary">{{ \App\Support\Money::format($availableSurplus) }}</div>
                 @if($finances->carried_debt > 0)
-                <div class="text-sm text-accent-red mt-1">
+                <div class="text-sm text-accent-primary mt-1">
                     ({{ __('finances.after_debt_deduction', ['amount' => \App\Support\Money::format($finances->carried_debt)]) }})
                 </div>
                 @endif

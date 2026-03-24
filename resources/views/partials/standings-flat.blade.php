@@ -16,7 +16,7 @@ $borderColorMap = [
 $bgColorMap = [
     'bg-accent-blue' => 'bg-accent-blue',
     'bg-orange-500' => 'bg-orange-500',
-    'bg-accent-red' => 'bg-accent-red',
+    'bg-accent-primary' => 'bg-accent-primary',
     'bg-green-300' => 'bg-green-300',
     'bg-accent-green' => 'bg-accent-green',
     'bg-accent-gold' => 'bg-accent-gold',
@@ -61,7 +61,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                         <div class="flex items-center gap-1">
                             <span>{{ $standing->position }}</span>
                             @if($standing->position_change !== 0)
-                                <span class="text-xs @if($standing->position_change > 0) text-accent-green @else text-accent-red @endif">
+                                <span class="text-xs @if($standing->position_change > 0) text-accent-green @else text-accent-primary @endif">
                                     {{ $standing->position_change_icon }}
                                 </span>
                             @endif

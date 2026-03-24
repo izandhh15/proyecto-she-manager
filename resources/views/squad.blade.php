@@ -169,7 +169,7 @@
                     {{-- Availability filter --}}
                     <div class="flex items-center gap-1 shrink-0">
                         <x-pill-button size="xs" @click="availFilter = availFilter === 'available' ? 'all' : 'available'" x-bind:class="availFilter === 'available' ? 'bg-accent-green/20 text-accent-green border-accent-green/30' : 'bg-surface-700 text-text-secondary hover:text-text-body border-border-default'" class="rounded-sm border">{{ __('squad.available') }}</x-pill-button>
-                        <x-pill-button size="xs" @click="availFilter = availFilter === 'unavailable' ? 'all' : 'unavailable'" x-bind:class="availFilter === 'unavailable' ? 'bg-accent-red/20 text-accent-red border-accent-red/30' : 'bg-surface-700 text-text-secondary hover:text-text-body border-border-default'" class="rounded-sm border">{{ __('squad.unavailable') }}</x-pill-button>
+                        <x-pill-button size="xs" @click="availFilter = availFilter === 'unavailable' ? 'all' : 'unavailable'" x-bind:class="availFilter === 'unavailable' ? 'bg-accent-primary/20 text-accent-primary border-accent-primary/30' : 'bg-surface-700 text-text-secondary hover:text-text-body border-border-default'" class="rounded-sm border">{{ __('squad.unavailable') }}</x-pill-button>
                     </div>
 
                     {{-- View Mode Toggle --}}
@@ -300,7 +300,7 @@
                                 <div class="px-4 py-2 bg-surface-700/30 border-b border-border-default">
                                     <div class="flex items-center justify-between">
                                         <span class="font-heading text-[11px] font-semibold uppercase tracking-widest text-text-muted">{{ $group['label'] }}</span>
-                                        <span class="text-[10px] text-text-faint">{{ $group['players']->count() }} · {{ __('squad.avg_ovr') }} {{ round($group['players']->avg('overall_score')) }}</span>
+                                        <span class="text-[10px] text-text-faint">{{ $group['players']->count() }} Â· {{ __('squad.avg_ovr') }} {{ round($group['players']->avg('overall_score')) }}</span>
                                     </div>
                                 </div>
 
@@ -365,7 +365,7 @@
                                                     @keydown.enter.prevent="$el.blur()"
                                                     :disabled="numberSaving['{{ $gp->id }}']"
                                                     class="w-14 h-8 text-sm font-medium text-center bg-surface-700 border rounded-sm tabular-nums focus:ring-2 focus:ring-accent-blue focus:border-accent-blue [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                                                    :class="numberErrors['{{ $gp->id }}'] ? 'border-red-500 bg-accent-red/10' : 'border-border-strong'">
+                                                    :class="numberErrors['{{ $gp->id }}'] ? 'border-red-500 bg-accent-primary/10' : 'border-border-strong'">
                                                 <div class="w-4 shrink-0 flex items-center justify-center">
                                                     <svg x-show="numberSaved['{{ $gp->id }}']" x-transition.opacity class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                                                     <svg x-show="numberErrors['{{ $gp->id }}']" class="w-4 h-4 text-red-500 cursor-help" fill="none" stroke="currentColor" viewBox="0 0 24 24" :title="numberErrors['{{ $gp->id }}']"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -445,7 +445,7 @@
                                             <span class="text-xs text-text-muted text-right tabular-nums">{{ $isCareerMode ? $gp->formatted_wage : '' }}</span>
                                         </template>
                                         <template x-if="viewMode === 'tactical'">
-                                            <span class="text-[11px] text-center tabular-nums @if($isCareerMode && $gp->isContractExpiring($seasonEndDate)) text-accent-red font-medium @else text-text-muted @endif">{{ $isCareerMode ? $gp->contract_expiry_year : '' }}</span>
+                                            <span class="text-[11px] text-center tabular-nums @if($isCareerMode && $gp->isContractExpiring($seasonEndDate)) text-accent-primary font-medium @else text-text-muted @endif">{{ $isCareerMode ? $gp->contract_expiry_year : '' }}</span>
                                         </template>
 
                                         {{-- === Planning columns (career only) === --}}
@@ -467,7 +467,7 @@
                                             <span class="text-xs text-text-muted text-right tabular-nums">{{ $gp->formatted_wage }}</span>
                                         </template>
                                         <template x-if="viewMode === 'planning'">
-                                            <span class="text-[11px] text-center tabular-nums @if($gp->isContractExpiring($seasonEndDate)) text-accent-red font-medium @else text-text-muted @endif">
+                                            <span class="text-[11px] text-center tabular-nums @if($gp->isContractExpiring($seasonEndDate)) text-accent-primary font-medium @else text-text-muted @endif">
                                                 {{ $gp->contract_expiry_year ?? '' }}
                                             </span>
                                         </template>
@@ -513,7 +513,7 @@
                                                     <span class="text-[11px] tabular-nums text-text-secondary">{{ $gp->yellow_cards }}</span>
                                                 </span>
                                                 <span class="inline-flex items-center gap-0.5">
-                                                    <span class="w-2 h-3 bg-accent-red rounded-xs"></span>
+                                                    <span class="w-2 h-3 bg-accent-primary rounded-xs"></span>
                                                     <span class="text-[11px] tabular-nums text-text-secondary">{{ $gp->red_cards }}</span>
                                                 </span>
                                             </div>
@@ -532,7 +532,7 @@
                                                     @keydown.enter.prevent="$el.blur()"
                                                     :disabled="numberSaving['{{ $gp->id }}']"
                                                     class="w-14 h-8 text-sm font-medium text-center bg-surface-700 border rounded-sm tabular-nums focus:ring-2 focus:ring-accent-blue focus:border-accent-blue [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                                                    :class="numberErrors['{{ $gp->id }}'] ? 'border-red-500 bg-accent-red/10' : 'border-border-strong'">
+                                                    :class="numberErrors['{{ $gp->id }}'] ? 'border-red-500 bg-accent-primary/10' : 'border-border-strong'">
                                             </div>
                                         </template>
                                     </div>

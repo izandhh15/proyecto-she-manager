@@ -192,8 +192,8 @@
         {{-- Summary card value --}}
         <div class="flex items-center gap-4">
             <div>
-                <span class="font-heading text-xl font-bold text-accent-green">+€4.2M</span>
-                <span class="mx-3 font-heading text-xl font-bold text-accent-red">-€8.1M</span>
+                <span class="font-heading text-xl font-bold text-accent-green">+â‚¬4.2M</span>
+                <span class="mx-3 font-heading text-xl font-bold text-accent-primary">-â‚¬8.1M</span>
                 <span class="font-heading text-xl font-bold text-text-primary">24</span>
             </div>
             <div>

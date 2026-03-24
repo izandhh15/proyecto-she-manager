@@ -14,12 +14,13 @@ use App\Modules\Competition\Services\LeagueFixtureGenerator;
 use App\Modules\Competition\Services\StandingsCalculator;
 use App\Modules\Competition\Services\CountryConfig;
 use App\Modules\Competition\Services\SwissDrawService;
+use App\Support\ExternalData;
 
 /**
  * Shared season initialization operations used by both initial game setup
  * (SetupNewGame) and subsequent season transitions (ContinentalAndCupInitProcessor).
  *
- * This service has NO idempotency checks — callers are responsible for ensuring
+ * This service has NO idempotency checks â€” callers are responsible for ensuring
  * operations are not run twice.
  */
 class SeasonInitializationService
@@ -76,7 +77,7 @@ class SeasonInitializationService
      * Initialize a Swiss format competition (fixtures + standings).
      * Only initializes if the given team participates.
      *
-     * @param array|null $teamsWithPots [{id, pot, country}, ...] — null = auto-assign pots by market value
+     * @param array|null $teamsWithPots [{id, pot, country}, ...] â€” null = auto-assign pots by market value
      */
     public function initializeSwissCompetition(
         string $gameId,
@@ -99,7 +100,7 @@ class SeasonInitializationService
             return;
         }
 
-        // Build draw teams — from explicit data or auto-assign pots by market value
+        // Build draw teams â€” from explicit data or auto-assign pots by market value
         if ($teamsWithPots !== null) {
             $drawTeams = $teamsWithPots;
         } else {
@@ -117,7 +118,7 @@ class SeasonInitializationService
             return;
         }
 
-        $scheduleData = json_decode(file_get_contents($schedulePath), true);
+        $scheduleData = ExternalData::decodeJsonFile($schedulePath);
         $matchdayDates = [];
         foreach ($scheduleData['league'] as $md) {
             $matchdayDates[$md['round']] = $md['date'];
@@ -247,7 +248,7 @@ class SeasonInitializationService
         // Get countries for all teams in one query
         $teamCountries = Team::whereIn('id', $entries)->pluck('country', 'id')->toArray();
 
-        // Assign pots: top 9 → Pot 1, next 9 → Pot 2, etc.
+        // Assign pots: top 9 â†’ Pot 1, next 9 â†’ Pot 2, etc.
         $drawTeams = [];
         foreach ($teamValues as $i => $tv) {
             $pot = (int) floor($i / 9) + 1;

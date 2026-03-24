@@ -30,12 +30,12 @@
                             <tr>
                                 <td class="px-4 py-2.5 font-mono font-semibold text-text-primary">{{ $f['name'] }}</td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $f['attack'] > 1.0 ? 'text-accent-green' : ($f['attack'] < 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $f['attack'] > 1.0 ? 'text-accent-green' : ($f['attack'] < 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $f['attack'] == 1.0 ? '-' : ($f['attack'] > 1.0 ? '+' : '') . round(($f['attack'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $f['defense'] < 1.0 ? 'text-accent-green' : ($f['defense'] > 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $f['defense'] < 1.0 ? 'text-accent-green' : ($f['defense'] > 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $f['defense'] == 1.0 ? '-' : ($f['defense'] > 1.0 ? '+' : '') . round(($f['defense'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
@@ -71,12 +71,12 @@
                             <tr>
                                 <td class="px-4 py-2.5 font-semibold text-text-primary">{{ __('game.mentality_' . $m['name']) }}</td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $m['own_goals'] > 1.0 ? 'text-accent-green' : ($m['own_goals'] < 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $m['own_goals'] > 1.0 ? 'text-accent-green' : ($m['own_goals'] < 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $m['own_goals'] == 1.0 ? '-' : ($m['own_goals'] > 1.0 ? '+' : '') . round(($m['own_goals'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $m['opponent_goals'] < 1.0 ? 'text-accent-green' : ($m['opponent_goals'] > 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $m['opponent_goals'] < 1.0 ? 'text-accent-green' : ($m['opponent_goals'] > 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $m['opponent_goals'] == 1.0 ? '-' : ($m['opponent_goals'] > 1.0 ? '+' : '') . round(($m['opponent_goals'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
@@ -110,12 +110,12 @@
                             <tr>
                                 <td class="px-4 py-2.5 font-semibold text-text-primary">{{ $s['label'] }}</td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $s['own_xg'] > 1.0 ? 'text-accent-green' : ($s['own_xg'] < 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $s['own_xg'] > 1.0 ? 'text-accent-green' : ($s['own_xg'] < 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $s['own_xg'] == 1.0 ? '-' : ($s['own_xg'] > 1.0 ? '+' : '') . round(($s['own_xg'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $s['opp_xg'] < 1.0 ? 'text-accent-green' : ($s['opp_xg'] > 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $s['opp_xg'] < 1.0 ? 'text-accent-green' : ($s['opp_xg'] > 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $s['opp_xg'] == 1.0 ? '-' : ($s['opp_xg'] > 1.0 ? '+' : '') . round(($s['opp_xg'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
@@ -154,7 +154,7 @@
                             <tr>
                                 <td class="px-4 py-2.5 font-semibold text-text-primary">{{ $p['label'] }}</td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $p['own_xg'] > 1.0 ? 'text-accent-green' : ($p['own_xg'] < 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $p['own_xg'] > 1.0 ? 'text-accent-green' : ($p['own_xg'] < 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $p['own_xg'] == 1.0 ? '-' : ($p['own_xg'] > 1.0 ? '+' : '') . round(($p['own_xg'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
@@ -163,7 +163,7 @@
                                         <span class="text-accent-green">{{ round(($p['opp_xg'] - 1) * 100) }}%</span>
                                         <span class="text-text-secondary text-xs">&rarr; {{ round(($p['fade_to'] - 1) * 100) }}%</span>
                                     @else
-                                        <span class="{{ $p['opp_xg'] < 1.0 ? 'text-accent-green' : ($p['opp_xg'] > 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                        <span class="{{ $p['opp_xg'] < 1.0 ? 'text-accent-green' : ($p['opp_xg'] > 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                             {{ $p['opp_xg'] == 1.0 ? '-' : ($p['opp_xg'] > 1.0 ? '+' : '') . round(($p['opp_xg'] - 1) * 100) . '%' }}
                                         </span>
                                     @endif
@@ -206,12 +206,12 @@
                             <tr>
                                 <td class="px-4 py-2.5 font-semibold text-text-primary">{{ $d['label'] }}</td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $d['own_xg'] > 1.0 ? 'text-accent-green' : ($d['own_xg'] < 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $d['own_xg'] > 1.0 ? 'text-accent-green' : ($d['own_xg'] < 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $d['own_xg'] == 1.0 ? '-' : ($d['own_xg'] > 1.0 ? '+' : '') . round(($d['own_xg'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
                                 <td class="px-4 py-2.5 text-center">
-                                    <span class="{{ $d['opp_xg'] < 1.0 ? 'text-accent-green' : ($d['opp_xg'] > 1.0 ? 'text-accent-red' : 'text-text-muted') }}">
+                                    <span class="{{ $d['opp_xg'] < 1.0 ? 'text-accent-green' : ($d['opp_xg'] > 1.0 ? 'text-accent-primary' : 'text-text-muted') }}">
                                         {{ $d['opp_xg'] == 1.0 ? '-' : ($d['opp_xg'] > 1.0 ? '+' : '') . round(($d['opp_xg'] - 1) * 100) . '%' }}
                                     </span>
                                 </td>
@@ -247,7 +247,7 @@
                         <div class="flex items-center gap-2 flex-wrap">
                             <span class="inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-medium bg-accent-blue/10 text-accent-blue">{{ __('game.style_counter_attack') }}</span>
                             <span class="text-text-secondary text-xs">vs</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-medium bg-accent-red/10 text-accent-red">{{ __('game.mentality_attacking') }}</span>
+                            <span class="inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-medium bg-accent-primary/10 text-accent-primary">{{ __('game.mentality_attacking') }}</span>
                             <span class="text-text-secondary text-xs">+</span>
                             <span class="inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-medium bg-accent-green/10 text-accent-green">{{ __('game.defline_high_line') }}</span>
                         </div>
@@ -266,7 +266,7 @@
                         </div>
                         <p class="text-xs text-text-muted mt-1">{{ __('game.tg_possession_penalty_desc') }}</p>
                     </div>
-                    <span class="text-accent-red font-semibold text-sm shrink-0">{{ round(($tacticalInteractions['possession_disrupted_by_high_press'] - 1) * 100) }}% {{ __('game.tg_your_goals') }}</span>
+                    <span class="text-accent-primary font-semibold text-sm shrink-0">{{ round(($tacticalInteractions['possession_disrupted_by_high_press'] - 1) * 100) }}% {{ __('game.tg_your_goals') }}</span>
                 </div>
 
                 {{-- Direct vs High Press --}}
@@ -294,7 +294,7 @@
                         <span class="text-text-muted">{{ __('game.tg_legend_positive') }}</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <span class="text-accent-red font-semibold">-5%</span>
+                        <span class="text-accent-primary font-semibold">-5%</span>
                         <span class="text-text-muted">{{ __('game.tg_legend_negative') }}</span>
                     </div>
                     <div class="flex items-center gap-2">

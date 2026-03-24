@@ -6,7 +6,7 @@
 </span>
 <span class="w-6 text-center shrink-0 flex items-center justify-center"
       x-show="event.type === 'own_goal'">
-    <svg class="w-3.5 h-3.5 text-accent-red" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="8"/></svg>
+    <svg class="w-3.5 h-3.5 text-accent-primary" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="8"/></svg>
 </span>
 <span class="w-6 text-center shrink-0 flex items-center justify-center"
       x-show="event.type === 'yellow_card'">
@@ -14,7 +14,7 @@
 </span>
 <span class="w-6 text-center shrink-0 flex items-center justify-center"
       x-show="event.type === 'red_card'">
-    <div class="w-2.5 h-3.5 rounded-[2px] bg-accent-red"></div>
+    <div class="w-2.5 h-3.5 rounded-[2px] bg-accent-primary"></div>
 </span>
 <span class="w-6 text-center shrink-0 flex items-center justify-center"
       x-show="event.type === 'injury'">
@@ -33,19 +33,19 @@
         <span class="text-[10px] text-text-muted ml-1">{{ __('game.live_goal') }}</span>
     </template>
     <template x-if="event.type === 'own_goal'">
-        <span class="text-[10px] text-accent-red ml-1">({{ __('game.og') }})</span>
+        <span class="text-[10px] text-accent-primary ml-1">({{ __('game.og') }})</span>
     </template>
     <template x-if="event.type === 'yellow_card'">
         <span class="text-[10px] text-text-muted ml-1">{{ __('game.live_yellow_card') }}</span>
     </template>
     <template x-if="event.type === 'red_card'">
-        <span class="text-[10px] text-accent-red ml-1" x-text="event.metadata?.second_yellow ? '{{ __('game.live_second_yellow') }}' : '{{ __('game.live_red_card') }}'"></span>
+        <span class="text-[10px] text-accent-primary ml-1" x-text="event.metadata?.second_yellow ? '{{ __('game.live_second_yellow') }}' : '{{ __('game.live_red_card') }}'"></span>
     </template>
     <template x-if="event.type === 'injury'">
         <span class="text-[10px] text-accent-orange ml-1">{{ __('game.live_injury') }}</span>
     </template>
     <template x-if="event.type === 'substitution'">
-        <div class="text-[10px] text-text-secondary"><span class="text-[10px] text-accent-red font-semibold">OFF</span> <span x-text="event.playerName"></span></div>
+        <div class="text-[10px] text-text-secondary"><span class="text-[10px] text-accent-primary font-semibold">OFF</span> <span x-text="event.playerName"></span></div>
     </template>
     <template x-if="event.assistPlayerName">
         <div class="text-[10px] text-text-secondary" x-text="'{{ __('game.live_assist') }} ' + event.assistPlayerName"></div>

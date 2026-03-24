@@ -5,9 +5,9 @@ namespace App\Support;
 use App\Modules\Lineup\Enums\Formation;
 
 /**
- * Defines the 9×14 pitch grid for advanced player positioning.
+ * Defines the 9Ã—14 pitch grid for advanced player positioning.
  *
- * The grid is purely visual — it controls WHERE player badges render on the pitch
+ * The grid is purely visual â€” it controls WHERE player badges render on the pitch
  * but has no effect on match simulation. Each slot label (GK, CB, LM, etc.) has
  * a rectangular zone of valid cells. Players can be placed in any cell within
  * their slot's zone.

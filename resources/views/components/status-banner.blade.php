@@ -9,7 +9,7 @@
     $colorMap = [
         'blue'  => ['banner' => 'bg-accent-blue/10 border-accent-blue/20 text-accent-blue',  'icon-bg' => 'bg-accent-blue/10'],
         'gold'  => ['banner' => 'bg-accent-gold/10 border-accent-gold/20 text-accent-gold',  'icon-bg' => 'bg-accent-gold/10'],
-        'red'   => ['banner' => 'bg-accent-red/10 border-accent-red/20 text-accent-red',     'icon-bg' => 'bg-accent-red/10'],
+        'red'   => ['banner' => 'bg-accent-primary/10 border-accent-primary/20 text-accent-primary',     'icon-bg' => 'bg-accent-primary/10'],
         'green' => ['banner' => 'bg-accent-green/10 border-accent-green/20 text-accent-green','icon-bg' => 'bg-accent-green/10'],
     ];
     $colors = $colorMap[$color] ?? $colorMap['blue'];

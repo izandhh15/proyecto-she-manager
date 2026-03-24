@@ -186,7 +186,7 @@ class MatchResimulationService
         ?Collection $homeBenchPlayers = null,
         ?Collection $awayBenchPlayers = null,
     ): ResimulationResult {
-        return DB::transaction(function () use ($match, $game, $minute, $homePlayers, $awayPlayers, $allSubstitutions, $homeBenchPlayers, $awayBenchPlayers) {
+        return DB::transaction(function () use ($match, $game, $minute, $homePlayers, $awayPlayers, $allSubstitutions) {
             $competitionId = $match->competition_id;
 
             // 1. Capture old ET scores
@@ -379,7 +379,7 @@ class MatchResimulationService
             }
         }
 
-        // Update each affected player — set stats to counted values (0 if no events remain)
+        // Update each affected player â€” set stats to counted values (0 if no events remain)
         $players = GamePlayer::whereIn('id', $playerIds)->get();
         foreach ($players as $player) {
             $counts = $statsMap[$player->id] ?? [];

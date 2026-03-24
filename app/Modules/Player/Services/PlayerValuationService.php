@@ -10,7 +10,7 @@ namespace App\Modules\Player\Services;
  * - PlayerDevelopmentService::calculateMarketValue() (abilities -> market value)
  * - PlayerGeneratorService::estimateMarketValue() (abilities -> market value for generated players)
  *
- * Uses pure ability average (technical + physical) / 2 — NOT overall_score.
+ * Uses pure ability average (technical + physical) / 2 â€” NOT overall_score.
  * Fitness and morale are transient and must not permanently affect valuation.
  */
 class PlayerValuationService
@@ -20,7 +20,7 @@ class PlayerValuationService
      *
      * Used during initial seeding to derive abilities from Transfermarkt data.
      *
-     * @param int $marketValueCents Market value in cents (e.g., 1_500_000_000 = €15M)
+     * @param int $marketValueCents Market value in cents (e.g., 1_500_000_000 = â‚¬15M)
      * @param string $position Player position (e.g., 'Centre-Forward', 'Goalkeeper')
      * @param int $age Player's current age
      * @return array{0: int, 1: int} [technical, physical]
@@ -64,7 +64,7 @@ class PlayerValuationService
      * Convert abilities to market value.
      *
      * Used after season-end development, for generated players, etc.
-     * Uses pure ability average (tech+phys)/2 — NOT overall_score.
+     * Uses pure ability average (tech+phys)/2 â€” NOT overall_score.
      *
      * @param int $averageAbility (technical + physical) / 2
      * @param int $age Player's current age
@@ -113,7 +113,7 @@ class PlayerValuationService
 
         $newValue = (int) round($baseValue * $ageMultiplier * $trendMultiplier);
 
-        // Clamp to reasonable range: €100K to €200M
+        // Clamp to reasonable range: â‚¬100K to â‚¬200M
         return max(100_000_00, min(200_000_000_00, $newValue));
     }
 
@@ -127,14 +127,14 @@ class PlayerValuationService
     private function marketValueToRawAbility(int $marketValueCents): int
     {
         return match (true) {
-            $marketValueCents >= 10_000_000_000 => rand(88, 95),  // €100M+
-            $marketValueCents >= 5_000_000_000 => rand(83, 90),   // €50M+
-            $marketValueCents >= 2_000_000_000 => rand(78, 85),   // €20M+
-            $marketValueCents >= 1_000_000_000 => rand(73, 80),   // €10M+
-            $marketValueCents >= 500_000_000 => rand(68, 75),     // €5M+
-            $marketValueCents >= 200_000_000 => rand(63, 70),     // €2M+
-            $marketValueCents >= 100_000_000 => rand(58, 65),     // €1M+
-            $marketValueCents > 0 => rand(50, 60),                // Under €1M
+            $marketValueCents >= 10_000_000_000 => rand(88, 95),  // â‚¬100M+
+            $marketValueCents >= 5_000_000_000 => rand(83, 90),   // â‚¬50M+
+            $marketValueCents >= 2_000_000_000 => rand(78, 85),   // â‚¬20M+
+            $marketValueCents >= 1_000_000_000 => rand(73, 80),   // â‚¬10M+
+            $marketValueCents >= 500_000_000 => rand(68, 75),     // â‚¬5M+
+            $marketValueCents >= 200_000_000 => rand(63, 70),     // â‚¬2M+
+            $marketValueCents >= 100_000_000 => rand(58, 65),     // â‚¬1M+
+            $marketValueCents > 0 => rand(50, 60),                // Under â‚¬1M
             default => rand(45, 55),                               // Unknown
         };
     }
@@ -152,13 +152,13 @@ class PlayerValuationService
             $ageCap = 75 + ($age - 17) * 2;
 
             // Exceptional market value raises the cap significantly
-            if ($marketValueCents >= 15_000_000_000) {      // €150M+
+            if ($marketValueCents >= 15_000_000_000) {      // â‚¬150M+
                 $ageCap += 14;
-            } elseif ($marketValueCents >= 10_000_000_000) { // €100M+
+            } elseif ($marketValueCents >= 10_000_000_000) { // â‚¬100M+
                 $ageCap += 10;
-            } elseif ($marketValueCents >= 5_000_000_000) {  // €50M+
+            } elseif ($marketValueCents >= 5_000_000_000) {  // â‚¬50M+
                 $ageCap += 6;
-            } elseif ($marketValueCents >= 2_000_000_000) {  // €20M+
+            } elseif ($marketValueCents >= 2_000_000_000) {  // â‚¬20M+
                 $ageCap += 3;
             }
 
@@ -171,10 +171,10 @@ class PlayerValuationService
 
         // Veterans: boost ability if market value proves they're still elite
         $typicalValueForAge = match (true) {
-            $age <= 33 => 500_000_000,   // €5M
-            $age <= 35 => 300_000_000,   // €3M
-            $age <= 37 => 150_000_000,   // €1.5M
-            default => 80_000_000,        // €800K
+            $age <= 33 => 500_000_000,   // â‚¬5M
+            $age <= 35 => 300_000_000,   // â‚¬3M
+            $age <= 37 => 150_000_000,   // â‚¬1.5M
+            default => 80_000_000,        // â‚¬800K
         };
 
         $valueRatio = $marketValueCents / max(1, $typicalValueForAge);
@@ -204,16 +204,16 @@ class PlayerValuationService
     private function abilityToBaseValue(int $ability): int
     {
         $anchors = [
-            [45, 10_000_000],        // €100K
-            [50, 30_000_000],        // €300K
-            [58, 100_000_000],       // €1M
-            [63, 200_000_000],       // €2M
-            [68, 500_000_000],       // €5M
-            [73, 1_000_000_000],     // €10M
-            [78, 2_000_000_000],     // €20M
-            [83, 5_000_000_000],     // €50M
-            [88, 10_000_000_000],    // €100M
-            [95, 20_000_000_000],    // €200M
+            [45, 10_000_000],        // â‚¬100K
+            [50, 30_000_000],        // â‚¬300K
+            [58, 100_000_000],       // â‚¬1M
+            [63, 200_000_000],       // â‚¬2M
+            [68, 500_000_000],       // â‚¬5M
+            [73, 1_000_000_000],     // â‚¬10M
+            [78, 2_000_000_000],     // â‚¬20M
+            [83, 5_000_000_000],     // â‚¬50M
+            [88, 10_000_000_000],    // â‚¬100M
+            [95, 20_000_000_000],    // â‚¬200M
         ];
 
         if ($ability <= $anchors[0][0]) {

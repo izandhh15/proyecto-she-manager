@@ -70,7 +70,7 @@
                             </x-primary-button>
                             <x-icon-button
                                 @click="confirmDelete = true"
-                                class="hover:text-accent-red hover:bg-accent-red/10"
+                                class="hover:text-accent-primary hover:bg-accent-primary/10"
                                 title="{{ __('game.delete_game') }}"
                             >
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">

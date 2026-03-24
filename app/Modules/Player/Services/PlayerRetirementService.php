@@ -61,7 +61,7 @@ class PlayerRetirementService
      *
      * Takes into account:
      * - Age (primary factor via base probability curve)
-     * - Fitness (lower fitness → more likely to retire)
+     * - Fitness (lower fitness â†’ more likely to retire)
      * - Season appearances (starters delay retirement, bench warmers accelerate)
      * - Current ability (elite players tend to play longer)
      * - Position (goalkeepers have longer careers)

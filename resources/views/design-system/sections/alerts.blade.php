@@ -47,7 +47,7 @@
                 <span x-show="!copied">Copy</span>
                 <span x-show="copied" x-cloak class="text-accent-green">Copied!</span>
             </button>
-            <pre class="bg-surface-700 text-text-body rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="code">&lt;!-- Session-based (self-checking — renders nothing if session key is absent) --&gt;
+            <pre class="bg-surface-700 text-text-body rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="code">&lt;!-- Session-based (self-checking â€” renders nothing if session key is absent) --&gt;
 &lt;x-flash-message type="success" :message="session('success')" class="mb-4" /&gt;
 &lt;x-flash-message type="error" :message="session('error')" class="mb-4" /&gt;
 &lt;x-flash-message type="warning" :message="session('warning')" class="mb-4" /&gt;
@@ -111,10 +111,10 @@
                     </tr>
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-medium text-text-primary">Error</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-accent-red">red-500</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-accent-red">red-500/10</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-accent-red">red-400</td>
-                        <td class="py-2 font-mono text-xs text-accent-red">red-400</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-accent-primary">red-500</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-accent-primary">red-500/10</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-accent-primary">red-400</td>
+                        <td class="py-2 font-mono text-xs text-accent-primary">red-400</td>
                     </tr>
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-medium text-text-primary">Warning</td>
@@ -280,7 +280,7 @@
                     <tr class="border-b border-border-default">
                         <td class="py-2 pr-4 font-mono text-xs text-accent-blue">default slot</td>
                         <td class="py-2 pr-4 font-mono text-xs text-text-secondary">slot</td>
-                        <td class="py-2 pr-4 font-mono text-xs text-text-secondary">—</td>
+                        <td class="py-2 pr-4 font-mono text-xs text-text-secondary">â€”</td>
                         <td class="py-2 text-text-secondary">Action area (buttons, links) aligned to the right on desktop.</td>
                     </tr>
                 </tbody>

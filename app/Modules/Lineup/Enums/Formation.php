@@ -80,7 +80,7 @@ enum Formation: string
     /**
      * Get pitch slot positions for visual formation display.
      * Returns array of slots with: id, role (position group), col (0-8), row (0-13), label
-     * Positions are defined as cells on a 9×14 grid (see PitchGrid).
+     * Positions are defined as cells on a 9Ã—14 grid (see PitchGrid).
      *
      * @return array<array{id: int, role: string, col: int, row: int, label: string}>
      */

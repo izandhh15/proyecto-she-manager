@@ -19,10 +19,10 @@
             scopeDomestic: true,
             scopeInternational: {{ $canSearchInternationally ? 'true' : 'false' }},
             formatValue(val) {
-                if (val === 0) return '€0';
-                if (val >= 1000000) return '€' + (val / 1000000) + 'M';
-                if (val >= 1000) return '€' + (val / 1000) + 'K';
-                return '€' + val;
+                if (val === 0) return 'â‚¬0';
+                if (val >= 1000000) return 'â‚¬' + (val / 1000000) + 'M';
+                if (val >= 1000) return 'â‚¬' + (val / 1000) + 'K';
+                return 'â‚¬' + val;
             },
             ageTrackLeft() { return ((this.ageMin - 16) / (40 - 16)) * 100 + '%'; },
             ageTrackWidth() { return ((this.ageMax - this.ageMin) / (40 - 16)) * 100 + '%'; },
@@ -68,7 +68,7 @@
                             </optgroup>
                         </x-select-input>
                         @error('position')
-                            <p class="text-sm text-accent-red mt-1">{{ $message }}</p>
+                            <p class="text-sm text-accent-primary mt-1">{{ $message }}</p>
                         @enderror
                     </div>
 
@@ -116,7 +116,7 @@
                     <div>
                         <div class="flex items-center justify-between mb-2">
                             <label class="text-sm font-semibold text-text-body">{{ __('transfers.age_range') }}</label>
-                            <span class="text-sm font-semibold text-text-primary" x-text="ageMin + ' – ' + ageMax"></span>
+                            <span class="text-sm font-semibold text-text-primary" x-text="ageMin + ' â€“ ' + ageMax"></span>
                         </div>
                         <div class="dual-range">
                             <div class="track"></div>
@@ -132,7 +132,7 @@
                     <div>
                         <div class="flex items-center justify-between mb-2">
                             <label class="text-sm font-semibold text-text-body">{{ __('transfers.ability_range') }}</label>
-                            <span class="text-sm font-semibold text-text-primary" x-text="abilityMin + ' – ' + abilityMax"></span>
+                            <span class="text-sm font-semibold text-text-primary" x-text="abilityMin + ' â€“ ' + abilityMax"></span>
                         </div>
                         <div class="dual-range">
                             <div class="track"></div>
@@ -148,7 +148,7 @@
                     <div>
                         <div class="flex items-center justify-between mb-2">
                             <label class="text-sm font-semibold text-text-body">{{ __('transfers.value_range') }}</label>
-                            <span class="text-sm font-semibold text-text-primary" x-text="formatValue(valueMin()) + ' – ' + formatValue(valueMax())"></span>
+                            <span class="text-sm font-semibold text-text-primary" x-text="formatValue(valueMin()) + ' â€“ ' + formatValue(valueMax())"></span>
                         </div>
                         <div class="dual-range">
                             <div class="track"></div>

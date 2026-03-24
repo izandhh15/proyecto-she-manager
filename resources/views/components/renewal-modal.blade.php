@@ -48,7 +48,7 @@
                             <span class="inline-block w-2 h-2 rounded-full mr-1.5
                                 @if($renewalMood['color'] === 'green') bg-accent-green
                                 @elseif($renewalMood['color'] === 'amber') bg-accent-gold
-                                @else bg-accent-red
+                                @else bg-accent-primary
                                 @endif"></span>{{ $renewalMood['label'] }}
                         </span>
                         <span class="text-text-muted">{{ __('transfers.player_demand') }}: <span class="font-semibold text-text-body">{{ $renewalDemand['formattedWage'] }}{{ __('squad.per_year') }}</span></span>

@@ -144,7 +144,7 @@ class FormationRecommender
     /**
      * Get the single best formation recommendation.
      * Pre-computes player data as lightweight arrays to avoid accessor overhead
-     * during the O(formations × slots × players) evaluation.
+     * during the O(formations Ã— slots Ã— players) evaluation.
      */
     public function getBestFormation(Collection $players): Formation
     {

@@ -202,7 +202,7 @@ class GamePlayer extends Model
 
     /**
      * Find the next available squad number for a team.
-     * Scans 2–99 and returns the first unused number.
+     * Scans 2â€“99 and returns the first unused number.
      */
     public static function nextAvailableNumber(string $gameId, string $teamId): int
     {
@@ -457,7 +457,7 @@ class GamePlayer extends Model
             return false;
         }
 
-        // Renewal explicitly declined or rejected — contract situation is settled
+        // Renewal explicitly declined or rejected â€” contract situation is settled
         if ($this->hasDeclinedRenewal()) {
             return false;
         }
@@ -728,7 +728,7 @@ class GamePlayer extends Model
     }
 
     /**
-     * Get formatted annual wage for display (e.g., "€2.5M", "€450K").
+     * Get formatted annual wage for display (e.g., "â‚¬2.5M", "â‚¬450K").
      */
     public function getFormattedWageAttribute(): string
     {

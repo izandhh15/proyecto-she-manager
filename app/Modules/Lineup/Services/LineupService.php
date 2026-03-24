@@ -260,7 +260,7 @@ class LineupService
     /**
      * Calculate effective score for AI rotation: penalizes low-fitness players.
      * Players above the threshold are unaffected. Below it, score degrades linearly.
-     * Example with threshold 80: 85-rated player at fitness 60 → effective ~72.3
+     * Example with threshold 80: 85-rated player at fitness 60 â†’ effective ~72.3
      */
     private function effectiveScore(GamePlayer $player): float
     {
@@ -291,7 +291,7 @@ class LineupService
 
     /**
      * Select mentality for an AI team based on reputation, venue, and relative strength.
-     * Returns a deterministic mentality — same inputs always produce the same output.
+     * Returns a deterministic mentality â€” same inputs always produce the same output.
      */
     public function selectAIMentality(?string $reputationLevel, bool $isHome, float $teamAvg, float $opponentAvg): Mentality
     {
@@ -534,7 +534,7 @@ class LineupService
             return ['lineup' => []];
         }
 
-        // Get the lineup from that match (formation is not carried over —
+        // Get the lineup from that match (formation is not carried over â€”
         // mid-match tactical changes are transient and should not affect defaults)
         $previousLineup = $this->getLineup($previousMatch, $teamId) ?? [];
 
@@ -650,7 +650,7 @@ class LineupService
         $teamId = $match->$teamIdField;
 
         // Re-validate existing lineups: if any player is injured/suspended,
-        // the user didn't actively set this lineup — regenerate from scratch.
+        // the user didn't actively set this lineup â€” regenerate from scratch.
         if (!empty($match->$lineupField)) {
             $existingLineup = $match->$lineupField;
 
@@ -716,7 +716,7 @@ class LineupService
                 $availableIds
             );
         } elseif ($isPlayerTeam) {
-            // Player team without preferred lineup — auto-select without fitness rotation
+            // Player team without preferred lineup â€” auto-select without fitness rotation
             $lineup = $this->selectBestXI($availablePlayers, $playerFormation)->pluck('id')->toArray();
         } else {
             // AI team: use squad-fitted formation with fitness rotation
@@ -745,12 +745,11 @@ class LineupService
             $match->{$prefix . '_defensive_line'} = $playerDefLine;
         } else {
             // AI team: set formation, reputation-driven mentality, and AI instructions
-            $aiFormation = $aiFormation ?? $this->selectAIFormation($availablePlayers);
             $isHome = $prefix === 'home';
             $opponentTeamId = $isHome ? $match->away_team_id : $match->home_team_id;
 
             // Reuse already-selected lineup for team average (avoids redundant selectBestXI)
-            $teamAvg = $this->calculateTeamAverage($aiSelectedXI ?? $this->selectBestXI($availablePlayers, $aiFormation));
+            $teamAvg = $this->calculateTeamAverage($aiSelectedXI);
 
             $opponentPlayers = $allPlayersGrouped?->get($opponentTeamId, collect()) ?? collect();
             $opponentAvg = $opponentPlayers->isNotEmpty()

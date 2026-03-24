@@ -7,7 +7,7 @@
                class="shrink-0 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors {{ $item['active'] ? 'border-accent-blue text-text-primary' : 'border-transparent text-text-muted hover:text-text-body hover:border-border-strong' }}">
                 {{ $item['label'] }}
                 @if(!empty($item['badge']))
-                    <span class="ml-1.5 px-1.5 py-0.5 text-[10px] font-bold bg-accent-red text-white rounded-full">{{ $item['badge'] }}</span>
+                    <span class="ml-1.5 px-1.5 py-0.5 text-[10px] font-bold bg-accent-primary text-white rounded-full">{{ $item['badge'] }}</span>
                 @endif
             </a>
         @endforeach

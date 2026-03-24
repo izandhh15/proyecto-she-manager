@@ -374,7 +374,7 @@ $awayGoalLines = $formatGoalGroup($awayGoals);
                                     <div class="text-[10px] text-text-muted uppercase tracking-widest">{{ __('season.drawn') }}</div>
                                 </div>
                                 <div>
-                                    <div class="font-heading text-lg md:text-xl font-bold text-accent-red">{{ $yourRecord['lost'] }}</div>
+                                    <div class="font-heading text-lg md:text-xl font-bold text-accent-primary">{{ $yourRecord['lost'] }}</div>
                                     <div class="text-[10px] text-text-muted uppercase tracking-widest">{{ __('season.lost') }}</div>
                                 </div>
                                 <div>
@@ -386,7 +386,7 @@ $awayGoalLines = $formatGoalGroup($awayGoals);
                                     <div class="text-[10px] text-text-muted uppercase tracking-widest">{{ __('season.goals_against') }}</div>
                                 </div>
                                 <div>
-                                    <div class="font-heading text-lg md:text-xl font-bold {{ $yourRecord['goalsFor'] - $yourRecord['goalsAgainst'] >= 0 ? 'text-accent-green' : 'text-accent-red' }}">
+                                    <div class="font-heading text-lg md:text-xl font-bold {{ $yourRecord['goalsFor'] - $yourRecord['goalsAgainst'] >= 0 ? 'text-accent-green' : 'text-accent-primary' }}">
                                         {{ $yourRecord['goalsFor'] - $yourRecord['goalsAgainst'] >= 0 ? '+' : '' }}{{ $yourRecord['goalsFor'] - $yourRecord['goalsAgainst'] }}
                                     </div>
                                     <div class="text-[10px] text-text-muted uppercase tracking-widest">{{ __('season.goal_diff_abbr') }}</div>
@@ -403,7 +403,7 @@ $awayGoalLines = $formatGoalGroup($awayGoals);
                                         $opponent = $isHome ? $match->awayTeam : $match->homeTeam;
                                         $scored = $isHome ? $match->home_score : $match->away_score;
                                         $conceded = $isHome ? $match->away_score : $match->home_score;
-                                        $resultClass = $scored > $conceded ? 'bg-accent-green' : ($scored < $conceded ? 'bg-accent-red' : 'bg-surface-600');
+                                        $resultClass = $scored > $conceded ? 'bg-accent-green' : ($scored < $conceded ? 'bg-accent-primary' : 'bg-surface-600');
                                         $resultLetter = $scored > $conceded ? 'W' : ($scored < $conceded ? 'L' : 'D');
                                     @endphp
                                     <div class="flex items-center gap-2.5 py-2 px-2.5 rounded-lg {{ $loop->even ? 'bg-surface-700/50' : '' }}">
@@ -461,7 +461,7 @@ $awayGoalLines = $formatGoalGroup($awayGoals);
                                                 <td class="text-center py-1.5 {{ $gp->goals > 0 ? 'font-semibold text-text-body' : 'text-text-muted' }}">{{ $gp->goals }}</td>
                                                 <td class="text-center py-1.5 {{ $gp->assists > 0 ? 'font-semibold text-text-body' : 'text-text-muted' }}">{{ $gp->assists }}</td>
                                                 <td class="text-center py-1.5 hidden md:table-cell {{ $gp->yellow_cards > 0 ? 'text-accent-gold font-medium' : 'text-text-muted' }}">{{ $gp->yellow_cards }}</td>
-                                                <td class="text-center py-1.5 hidden md:table-cell {{ $gp->red_cards > 0 ? 'text-accent-red font-medium' : 'text-text-muted' }}">{{ $gp->red_cards }}</td>
+                                                <td class="text-center py-1.5 hidden md:table-cell {{ $gp->red_cards > 0 ? 'text-accent-primary font-medium' : 'text-text-muted' }}">{{ $gp->red_cards }}</td>
                                             </tr>
                                             @endforeach
                                         </tbody>

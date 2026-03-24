@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="theme-color" content="#0B1120">
 
-        <title>{{ config('app.name', 'Laravel') }} — Admin</title>
+        <title>{{ config('app.name', 'Laravel') }} â€” Admin</title>
 
         <link rel="icon" type="image/svg+xml" href="/favicon.svg">
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -35,10 +35,10 @@
             @if(config('beta.enabled'))
                 <div class="bg-amber-500 text-amber-950 text-center text-xs py-1.5 px-4">
                     <span class="font-semibold">{{ __('beta.badge') }}</span>
-                    —
+                    â€”
                     {{ __('beta.banner_warning') }}
                     @if(config('beta.feedback_url'))
-                        · <a href="{{ config('beta.feedback_url') }}" target="_blank" class="underline font-semibold hover:text-amber-300">{{ __('beta.send_feedback') }}</a>
+                        Â· <a href="{{ config('beta.feedback_url') }}" target="_blank" class="underline font-semibold hover:text-amber-300">{{ __('beta.send_feedback') }}</a>
                     @endif
                 </div>
             @endif

@@ -185,7 +185,7 @@
         <div class="bg-surface-700/30 border border-border-default rounded-xl p-6 mb-3">
             <div class="max-w-sm">
                 <x-input-label for="demo-error" value="Email" />
-                <x-text-input id="demo-error" type="email" class="mt-1 block w-full border-accent-red/50 focus:border-accent-red focus:ring-accent-red" value="invalid-email" />
+                <x-text-input id="demo-error" type="email" class="mt-1 block w-full border-accent-primary/50 focus:border-accent-primary focus:ring-accent-primary" value="invalid-email" />
                 <x-input-error :messages="['The email field must be a valid email address.']" class="mt-2" />
             </div>
         </div>
@@ -196,7 +196,7 @@
                 <span x-show="!copied">Copy</span>
                 <span x-show="copied" x-cloak class="text-accent-green">Copied!</span>
             </button>
-            <pre class="bg-surface-700 text-text-body rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="code">&lt;x-text-input class="border-accent-red/50 focus:border-accent-red focus:ring-accent-red" /&gt;
+            <pre class="bg-surface-700 text-text-body rounded-lg p-4 overflow-x-auto text-xs leading-relaxed"><code x-ref="code">&lt;x-text-input class="border-accent-primary/50 focus:border-accent-primary focus:ring-accent-primary" /&gt;
 &lt;x-input-error :messages="$errors-&gt;get('email')" class="mt-2" /&gt;</code></pre>
         </div>
     </div>

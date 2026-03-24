@@ -107,11 +107,11 @@ class GameStanding extends Model
     {
         $change = $this->position_change;
         if ($change > 0) {
-            return '▲';
+            return 'â–²';
         }
         if ($change < 0) {
-            return '▼';
+            return 'â–¼';
         }
-        return '–';
+        return 'â€“';
     }
 }

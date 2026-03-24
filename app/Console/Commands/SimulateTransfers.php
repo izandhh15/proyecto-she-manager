@@ -42,12 +42,12 @@ class SimulateTransfers extends Command
 
         $pdo = DB::connection()->getPdo();
 
-        // Wrap everything in a single transaction — nothing persists
+        // Wrap everything in a single transaction â€” nothing persists
         $pdo->beginTransaction();
 
         try {
             for ($run = 1; $run <= $runs; $run++) {
-                $this->info("━━━ Run {$run}/{$runs} ━━━");
+                $this->info("â”â”â” Run {$run}/{$runs} â”â”â”");
 
                 try {
                     $pdo->exec('SAVEPOINT run_snapshot');
@@ -82,7 +82,7 @@ class SimulateTransfers extends Command
             $pdo->rollBack();
         }
 
-        $this->info('Done. All runs were rolled back — no data was modified.');
+        $this->info('Done. All runs were rolled back â€” no data was modified.');
         return 0;
     }
 
@@ -93,7 +93,7 @@ class SimulateTransfers extends Command
 
         // Split paid transfers into domestic (both teams have from_team) vs foreign-like
         $domestic = $paidTransfers->filter(fn ($t) => $t->from_team_id && $t->to_team_id);
-        $foreign = collect(); // All paid transfers are technically domestic or foreign — we just display them all
+        $foreign = collect(); // All paid transfers are technically domestic or foreign â€” we just display them all
 
         $this->info("  Transfers: {$domestic->count()} transfers | Free agents: {$freeAgents->count()}");
         $this->newLine();
@@ -106,7 +106,7 @@ class SimulateTransfers extends Command
                 $fromName = $t->fromTeam->name ?? '?';
                 $toName = $t->toTeam->name ?? '?';
                 $fee = Money::format($t->transfer_fee);
-                $this->line("    {$pos} {$playerName}  {$fromName} → {$toName}  {$fee}");
+                $this->line("    {$pos} {$playerName}  {$fromName} â†’ {$toName}  {$fee}");
             }
             $this->newLine();
         }
@@ -117,7 +117,7 @@ class SimulateTransfers extends Command
                 $pos = str_pad($t->gamePlayer->position ?? '?', 20);
                 $playerName = $t->gamePlayer->name ?? 'Unknown';
                 $toName = $t->toTeam->name ?? '?';
-                $this->line("    {$pos} {$playerName} → {$toName}");
+                $this->line("    {$pos} {$playerName} â†’ {$toName}");
             }
             $this->newLine();
         }

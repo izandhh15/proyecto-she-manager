@@ -56,7 +56,7 @@ class MatchFinalizationService
      * Serve suspensions that were deferred during batch processing.
      * These belong to players on the two teams in the deferred match.
      *
-     * Excludes players who received cards in this match — any active suspension
+     * Excludes players who received cards in this match â€” any active suspension
      * they carry was created from this match's events (suspended players can't
      * be in lineups) and applies to future matches, not this one.
      */

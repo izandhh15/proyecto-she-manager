@@ -59,7 +59,7 @@
                                 <span class="w-8 h-8 rounded text-sm font-bold flex items-center justify-center
                                     @if($result === 'W') bg-accent-green text-white
                                     @elseif($result === 'D') bg-surface-600 text-white
-                                    @else bg-accent-red text-white @endif">
+                                    @else bg-accent-primary text-white @endif">
                                     {{ $result }}
                                 </span>
                             @endforeach

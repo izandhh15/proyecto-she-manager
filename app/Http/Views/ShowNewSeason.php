@@ -54,6 +54,22 @@ class ShowNewSeason
             return redirect()->route('game.squad-selection', $gameId);
         }
 
+        $needsRosterRepair = ! GamePlayer::where('game_id', $game->id)
+            ->where('team_id', $game->team_id)
+            ->exists();
+
+        if ($needsRosterRepair) {
+            SetupNewGame::dispatchSync(
+                gameId: $game->id,
+                teamId: $game->team_id,
+                competitionId: $game->competition_id,
+                season: $game->season,
+                gameMode: $game->game_mode ?? Game::MODE_CAREER,
+            );
+
+            $game = Game::with('team')->findOrFail($gameId);
+        }
+
         // Ensure we have financial projections
         $finances = $game->currentFinances;
         if (!$finances) {
@@ -218,7 +234,7 @@ class ShowNewSeason
             ->toArray();
 
         // Previous reputation level (from archive's transfer_activity metadata or TeamReputation history)
-        // We can derive from the archive final_standings — check if there's a stored reputation
+        // We can derive from the archive final_standings â€” check if there's a stored reputation
         // For simplicity, we'll just compare with current level
         $previousReputation = $archive->transfer_activity['previous_reputation'] ?? null;
 

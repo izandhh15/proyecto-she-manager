@@ -3,6 +3,7 @@
 namespace App\Modules\Season\Jobs;
 
 use App\Modules\Competition\Services\CountryConfig;
+use App\Modules\Finance\Services\BudgetProjectionService;
 use App\Modules\Notification\Services\NotificationService;
 use App\Modules\Season\DTOs\SeasonTransitionData;
 use App\Modules\Season\Services\SeasonSetupPipeline;
@@ -10,6 +11,7 @@ use App\Modules\Transfer\Services\ContractService;
 use App\Modules\Player\Services\InjuryService;
 use App\Modules\Player\Services\PlayerDevelopmentService;
 use App\Modules\Player\Services\PlayerTierService;
+use App\Modules\Player\Services\PlayerValuationService;
 use App\Modules\Season\Processors\LeagueFixtureProcessor;
 use App\Modules\Season\Processors\StandingsResetProcessor;
 use App\Support\ExternalData;
@@ -31,6 +33,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
 class SetupNewGame implements ShouldQueue
@@ -58,14 +61,23 @@ class SetupNewGame implements ShouldQueue
         SeasonSetupPipeline $setupPipeline,
         LeagueFixtureProcessor $fixtureProcessor,
         StandingsResetProcessor $standingsProcessor,
+        BudgetProjectionService $budgetProjectionService,
     ): void {
-        // Idempotency: skip if already set up
         $game = Game::find($this->gameId);
-        if (!$game || $game->isSetupComplete()) {
+        if (!$game) {
             return;
         }
 
-        DB::transaction(function () use ($game, $contractService, $developmentService, $setupPipeline, $fixtureProcessor, $standingsProcessor) {
+        $isRepairRun = $game->isSetupComplete();
+        $userSquadExists = GamePlayer::where('game_id', $this->gameId)
+            ->where('team_id', $this->teamId)
+            ->exists();
+
+        if ($isRepairRun && $userSquadExists) {
+            return;
+        }
+
+        DB::transaction(function () use ($game, $isRepairRun, $contractService, $developmentService, $setupPipeline, $fixtureProcessor, $standingsProcessor, $budgetProjectionService) {
             $this->currentDate = $game->current_date ?? Carbon::parse("{$this->season}-08-15");
 
             // Pre-load all reference data (2 queries instead of ~4,600)
@@ -80,6 +92,17 @@ class SetupNewGame implements ShouldQueue
     
             // Step 2: Initialize game players (template-based or fallback)
             $this->initializeGamePlayersFromTemplates($allTeams, $allPlayers, $contractService, $developmentService);
+            $this->backfillMissingGamePlayersFromReferenceData($allTeams, $allPlayers, $contractService, $developmentService);
+
+            if ($isRepairRun) {
+                app(PlayerTierService::class)->recomputeAllTiersForGame($this->gameId);
+
+                if ($game->isCareerMode()) {
+                    $budgetProjectionService->generateProjections($game->refresh());
+                }
+
+                return;
+            }
 
             // Step 3: Run shared setup processors
             if ($this->gameMode === Game::MODE_CAREER) {
@@ -130,6 +153,18 @@ class SetupNewGame implements ShouldQueue
                 app(NotificationService::class)->notifyTransferWindowOpen($game->refresh(), 'summer');
             }
         });
+    }
+
+    public function failed(?\Throwable $exception): void
+    {
+        Log::error('Initial game setup failed', [
+            'game_id' => $this->gameId,
+            'team_id' => $this->teamId,
+            'competition_id' => $this->competitionId,
+            'season' => $this->season,
+            'error' => $exception?->getMessage(),
+            'trace' => $exception?->getTraceAsString(),
+        ]);
     }
 
     private function copyCompetitionTeamsToGame(): void
@@ -235,12 +270,12 @@ class SetupNewGame implements ShouldQueue
 
         foreach ($swissIds as $competitionId) {
             $teamsFilePath = base_path("data/{$this->season}/{$competitionId}/teams.json");
-            if (!file_exists($teamsFilePath)) {
-                continue;
-            }
+        if (!file_exists($teamsFilePath)) {
+            continue;
+        }
 
-            $teamsData = json_decode(file_get_contents($teamsFilePath), true);
-            $clubs = $teamsData['clubs'] ?? [];
+        $teamsData = ExternalData::decodeJsonFile($teamsFilePath);
+        $clubs = $teamsData['clubs'] ?? [];
 
             $drawTeams = [];
             foreach ($clubs as $club) {
@@ -287,12 +322,12 @@ class SetupNewGame implements ShouldQueue
 
         foreach ($swissIds as $competitionId) {
             $teamsFilePath = base_path("data/{$this->season}/{$competitionId}/teams.json");
-            if (!file_exists($teamsFilePath)) {
-                continue;
-            }
+        if (!file_exists($teamsFilePath)) {
+            continue;
+        }
 
-            $teamsData = json_decode(file_get_contents($teamsFilePath), true);
-            $clubs = $teamsData['clubs'] ?? [];
+        $teamsData = ExternalData::decodeJsonFile($teamsFilePath);
+        $clubs = $teamsData['clubs'] ?? [];
             $minimumWage = $contractService->getMinimumWageForCompetition($competitionId);
 
             foreach ($clubs as $club) {
@@ -340,63 +375,15 @@ class SetupNewGame implements ShouldQueue
     ): void {
         // Idempotency: skip if players already exist
         if (GamePlayer::where('game_id', $this->gameId)->exists()) {
-            $this->usedTemplates = true; // assume templates if players exist
             return;
         }
 
-        $hasTemplates = DB::table('game_player_templates')
-            ->where('season', $this->season)
-            ->exists();
-
-        if (!$hasTemplates) {
-            // Fallback to old behavior
-            $this->initializeGamePlayers($allTeams, $allPlayers, $contractService, $developmentService);
-            return;
-        }
-
-        $this->usedTemplates = true;
-
-        $templates = DB::table('game_player_templates')
-            ->where('season', $this->season)
-            ->get();
-
-        $rows = [];
-        $seenPlayerIds = [];
-
-        foreach ($templates as $t) {
-            // Skip duplicate players (same player listed under multiple teams)
-            if (isset($seenPlayerIds[$t->player_id])) {
-                continue;
-            }
-            $seenPlayerIds[$t->player_id] = true;
-
-            $rows[] = [
-                'id' => Str::uuid()->toString(),
-                'game_id' => $this->gameId,
-                'player_id' => $t->player_id,
-                'team_id' => $t->team_id,
-                'number' => $t->number,
-                'position' => $t->position,
-                'market_value' => $t->market_value,
-                'market_value_cents' => $t->market_value_cents,
-                'contract_until' => $t->contract_until,
-                'annual_wage' => $t->annual_wage,
-                'fitness' => $t->fitness,
-                'morale' => $t->morale,
-                'durability' => $t->durability,
-                'game_technical_ability' => $t->game_technical_ability,
-                'game_physical_ability' => $t->game_physical_ability,
-                'potential' => $t->potential,
-                'potential_low' => $t->potential_low,
-                'potential_high' => $t->potential_high,
-                'tier' => $t->tier,
-                'season_appearances' => 0,
-            ];
-        }
-
-        foreach (array_chunk($rows, 500) as $chunk) {
-            GamePlayer::insert($chunk);
-        }
+        // Always build squads from each club's source JSON so every club
+        // reflects the roster currently defined in data/2025/*/teams.json.
+        // This keeps manual per-club editing deterministic and avoids stale
+        // or incomplete template data leaving clubs with empty squads.
+        $this->usedTemplates = false;
+        $this->initializeGamePlayers($allTeams, $allPlayers, $contractService, $developmentService);
     }
 
     // =====================================================================
@@ -483,6 +470,125 @@ class SetupNewGame implements ShouldQueue
         }
     }
 
+    /**
+     * Some seeded template sets can be incomplete for specific clubs.
+     * If that happens, rebuild only the missing teams from their reference JSON.
+     */
+    private function backfillMissingGamePlayersFromReferenceData(
+        Collection $allTeams,
+        Collection $allPlayers,
+        ContractService $contractService,
+        PlayerDevelopmentService $developmentService,
+    ): void {
+        $missingTeamIds = CompetitionEntry::where('game_id', $this->gameId)
+            ->pluck('team_id')
+            ->unique()
+            ->reject(fn (string $teamId) => GamePlayer::where('game_id', $this->gameId)->where('team_id', $teamId)->exists())
+            ->values();
+
+        if ($missingTeamIds->isEmpty()) {
+            return;
+        }
+
+        $existingPlayerIds = GamePlayer::where('game_id', $this->gameId)
+            ->pluck('player_id')
+            ->flip()
+            ->toArray();
+
+        $competitionIds = CompetitionEntry::where('game_id', $this->gameId)
+            ->pluck('competition_id')
+            ->unique()
+            ->values();
+
+        foreach ($competitionIds as $competitionId) {
+            if ($missingTeamIds->isEmpty()) {
+                break;
+            }
+
+            $insertedTeamIds = $this->initializeMissingGamePlayersForCompetition(
+                $competitionId,
+                $missingTeamIds->all(),
+                $existingPlayerIds,
+                $allTeams,
+                $allPlayers,
+                $contractService,
+                $developmentService,
+            );
+
+            if (!empty($insertedTeamIds)) {
+                $missingTeamIds = $missingTeamIds
+                    ->reject(fn (string $teamId) => in_array($teamId, $insertedTeamIds, true))
+                    ->values();
+            }
+        }
+    }
+
+    /**
+     * Initialize only the clubs that are still missing from the current game.
+     *
+     * @param  array<string>  $missingTeamIds
+     * @param  array<string, bool>  $existingPlayerIds
+     * @return array<string>
+     */
+    private function initializeMissingGamePlayersForCompetition(
+        string $competitionId,
+        array $missingTeamIds,
+        array &$existingPlayerIds,
+        Collection $allTeams,
+        Collection $allPlayers,
+        ContractService $contractService,
+        PlayerDevelopmentService $developmentService,
+    ): array {
+        $basePath = base_path("data/{$this->season}/{$competitionId}");
+        $teamsFilePath = "{$basePath}/teams.json";
+
+        if (file_exists($teamsFilePath)) {
+            $clubs = $this->loadClubsFromTeamsJson($teamsFilePath);
+        } else {
+            $clubs = $this->loadClubsFromTeamPoolFiles($basePath);
+        }
+
+        if (empty($clubs)) {
+            return [];
+        }
+
+        $minimumWage = $contractService->getMinimumWageForCompetition($competitionId);
+        $playerRows = [];
+        $insertedTeamIds = [];
+
+        foreach ($clubs as $club) {
+            $externalId = ExternalData::clubExternalId($club);
+            if (!$externalId) {
+                continue;
+            }
+
+            $team = $allTeams->get($externalId);
+            if (!$team || !in_array($team->id, $missingTeamIds, true)) {
+                continue;
+            }
+
+            foreach ($club['players'] ?? [] as $playerData) {
+                $row = $this->prepareGamePlayerRow($team, $playerData, $minimumWage, $allPlayers, $contractService, $developmentService, $this->currentDate);
+                if (!$row || isset($existingPlayerIds[$row['player_id']])) {
+                    continue;
+                }
+
+                $playerRows[] = $row;
+                $existingPlayerIds[$row['player_id']] = true;
+            }
+
+            if (!empty($club['players'])) {
+                $insertedTeamIds[] = $team->id;
+            }
+        }
+
+        foreach (array_chunk($playerRows, 100) as $chunk) {
+            GamePlayer::insert($chunk);
+        }
+
+        return array_values(array_unique($insertedTeamIds));
+    }
+
     private function prepareGamePlayerRow(
         Team $team,
         array $playerData,
@@ -492,7 +598,7 @@ class SetupNewGame implements ShouldQueue
         PlayerDevelopmentService $developmentService,
         Carbon $currentDate,
     ): ?array {
-        $player = $allPlayers->get(ExternalData::playerExternalId($playerData));
+        $player = $this->resolveReferencePlayer($playerData, $allPlayers, $currentDate);
         if (!$player) {
             return null;
         }
@@ -541,9 +647,70 @@ class SetupNewGame implements ShouldQueue
         ];
     }
 
+    private function resolveReferencePlayer(array $playerData, Collection $allPlayers, Carbon $currentDate): ?Player
+    {
+        $externalId = ExternalData::playerExternalId($playerData);
+        if (!$externalId) {
+            return null;
+        }
+
+        $player = $allPlayers->get($externalId);
+        if ($player) {
+            return $player;
+        }
+
+        $dateOfBirth = null;
+        if (!empty($playerData['dateOfBirth'])) {
+            try {
+                $dateOfBirth = Carbon::parse($playerData['dateOfBirth'])->toDateString();
+            } catch (\Throwable) {
+                $dateOfBirth = null;
+            }
+        }
+
+        $age = $dateOfBirth
+            ? Carbon::parse($dateOfBirth)->diffInYears($currentDate)
+            : 25;
+
+        $foot = match (strtolower((string) ($playerData['foot'] ?? ''))) {
+            'left' => 'left',
+            'right' => 'right',
+            'both' => 'both',
+            default => null,
+        };
+
+        $marketValueCents = Money::parseMarketValue($playerData['marketValue'] ?? null);
+        [$technical, $physical] = app(PlayerValuationService::class)->marketValueToAbilities(
+            $marketValueCents,
+            $playerData['position'] ?? 'Central Midfield',
+            $age
+        );
+
+        $player = Player::create([
+            'external_source' => ExternalData::defaultSource(),
+            'external_id' => $externalId,
+            'name' => $playerData['name'] ?? $externalId,
+            'date_of_birth' => $dateOfBirth,
+            'nationality' => $playerData['nationality'] ?? [],
+            'height' => $playerData['height'] ?? null,
+            'foot' => $foot,
+            'technical_ability' => $technical,
+            'physical_ability' => $physical,
+        ]);
+
+        // Backfill legacy column when it exists in older user databases.
+        DB::table('players')
+            ->where('id', $player->id)
+            ->update(['transfermarkt_id' => $externalId]);
+
+        $allPlayers->put($externalId, $player);
+
+        return $player;
+    }
+
     private function loadClubsFromTeamsJson(string $teamsFilePath): array
     {
-        $data = json_decode(file_get_contents($teamsFilePath), true);
+        $data = ExternalData::decodeJsonFile($teamsFilePath);
         return $data['clubs'] ?? [];
     }
 
@@ -552,8 +719,9 @@ class SetupNewGame implements ShouldQueue
         $clubs = [];
 
         foreach (glob("{$basePath}/*.json") as $filePath) {
-            $data = json_decode(file_get_contents($filePath), true);
-            if (!$data) {
+            try {
+                $data = ExternalData::decodeJsonFile($filePath);
+            } catch (\RuntimeException) {
                 continue;
             }
 

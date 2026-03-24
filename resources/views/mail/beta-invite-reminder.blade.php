@@ -7,4 +7,4 @@
 {{ __('beta.reminder_email_code_label') }} {{ $code }}
 
 {{ __('beta.reminder_email_thanks') }}
-Pablo — {{ config('app.name') }}
+Pablo â€” {{ config('app.name') }}

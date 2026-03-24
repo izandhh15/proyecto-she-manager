@@ -20,7 +20,7 @@ use App\Models\GameStanding;
  * - Final: Winners play (two legs)
  * - Winner is promoted alongside the directly promoted teams
  *
- * Originally built for Spanish Segunda División, but parameterized via constructor
+ * Originally built for Spanish Segunda DivisiÃ³n, but parameterized via constructor
  * to support any league with the same playoff format.
  */
 class ESP2PlayoffGenerator implements PlayoffGenerator

@@ -106,7 +106,7 @@ class ShowLiveMatch
             : ($playerMatch->away_lineup ?? []);
 
         // Existing substitutions already made on this match (for page reload scenario)
-        // Filter to user's team only — opponent auto-subs should not affect the user's count or display.
+        // Filter to user's team only â€” opponent auto-subs should not affect the user's count or display.
         $existingSubstitutions = collect($playerMatch->substitutions ?? [])
             ->filter(fn ($s) => ($s['team_id'] ?? null) === $game->team_id)
             ->values()
@@ -315,7 +315,7 @@ class ShowLiveMatch
                 'away' => $match->away_score_penalties,
             ];
         } else {
-            // ET done but penalties not yet — user needs to pick kickers
+            // ET done but penalties not yet â€” user needs to pick kickers
             $data['needsPenalties'] = true;
         }
 

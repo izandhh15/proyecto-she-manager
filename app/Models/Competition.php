@@ -49,9 +49,9 @@ class Competition extends Model
     public const ROLE_EUROPEAN = 'european';
     public const ROLE_TEAM_POOL = 'team_pool';
 
-    /** @deprecated Use ROLE_LEAGUE instead — kept only for migration compatibility */
+    /** @deprecated Use ROLE_LEAGUE instead â€” kept only for migration compatibility */
     public const ROLE_PRIMARY = 'league';
-    /** @deprecated Use ROLE_LEAGUE instead — kept only for migration compatibility */
+    /** @deprecated Use ROLE_LEAGUE instead â€” kept only for migration compatibility */
     public const ROLE_FOREIGN = 'league';
 
     public const SCOPE_DOMESTIC = 'domestic';
@@ -120,9 +120,9 @@ class Competition extends Model
 
         // Scale base TV revenue by tier
         $baseTvRevenue = match ($this->tier) {
-            1 => 5_000_000_000,  // €50M base for tier 1
-            2 => 1_000_000_000,  // €10M base for tier 2
-            default => 500_000_000, // €5M base for lower tiers
+            1 => 5_000_000_000,  // â‚¬50M base for tier 1
+            2 => 1_000_000_000,  // â‚¬10M base for tier 2
+            default => 500_000_000, // â‚¬5M base for lower tiers
         };
 
         return new DefaultLeagueConfig($numTeams, $baseTvRevenue);

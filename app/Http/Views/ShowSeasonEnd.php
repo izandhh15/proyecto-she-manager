@@ -80,7 +80,7 @@ class ShowSeasonEnd
 
         // === League Awards (sidebar) ===
 
-        // Top scorers (Pichichi) — top 3
+        // Top scorers (Pichichi) â€” top 3
         $topScorers = GamePlayer::with(['player', 'team'])
             ->where('game_id', $gameId)
             ->whereIn('team_id', $competitionTeamIds)
@@ -90,7 +90,7 @@ class ShowSeasonEnd
             ->limit(3)
             ->get();
 
-        // Best goalkeeper (Zamora) — minimum 50% appearances
+        // Best goalkeeper (Zamora) â€” minimum 50% appearances
         $minGoalkeeperAppearances = 19;
         $bestGoalkeeper = GamePlayer::with(['player', 'team'])
             ->where('game_id', $gameId)

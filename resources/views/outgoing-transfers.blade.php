@@ -48,7 +48,7 @@
                                     <p class="font-semibold text-text-body mb-2">{{ __('transfers.transfers_help_selling_title') }}</p>
                                     <ul class="space-y-1 text-text-secondary">
                                         <li class="flex gap-2"><span class="text-accent-gold shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_list') }}</li>
-                                        <li class="flex gap-2"><span class="text-accent-red shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_unsolicited') }}</li>
+                                        <li class="flex gap-2"><span class="text-accent-primary shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_unsolicited') }}</li>
                                         <li class="flex gap-2"><span class="text-accent-green shrink-0">&#9679;</span> {{ __('transfers.transfers_help_selling_accept') }}</li>
                                     </ul>
                                 </div>
@@ -57,7 +57,7 @@
                                 <div>
                                     <p class="font-semibold text-text-body mb-2">{{ __('transfers.transfers_help_contracts_title') }}</p>
                                     <ul class="space-y-1 text-text-secondary">
-                                        <li class="flex gap-2"><span class="text-accent-red shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_expiring') }}</li>
+                                        <li class="flex gap-2"><span class="text-accent-primary shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_expiring') }}</li>
                                         <li class="flex gap-2"><span class="text-accent-blue shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_renew') }}</li>
                                         <li class="flex gap-2"><span class="text-accent-gold shrink-0">&#9679;</span> {{ __('transfers.transfers_help_contracts_wages') }}</li>
                                     </ul>
@@ -95,7 +95,7 @@
                     <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
                         {{-- ============================== --}}
-                        {{-- LEFT COLUMN (2/3) — Action Items --}}
+                        {{-- LEFT COLUMN (2/3) â€” Action Items --}}
                         {{-- ============================== --}}
                         <div class="md:col-span-2 space-y-6">
 
@@ -108,14 +108,14 @@
                             </div>
                             @endif
 
-                            {{-- UNSOLICITED OFFERS — red accent --}}
+                            {{-- UNSOLICITED OFFERS â€” red accent --}}
                             @if($unsolicitedOffers->isNotEmpty())
                             <div class="border-l-4 border-l-accent-red pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.unsolicited_offers') }}</h4>
                                 <p class="text-sm text-text-muted mb-3">{{ __('transfers.unsolicited_offers_help') }}</p>
                                 <div class="space-y-3">
                                     @foreach($unsolicitedOffers as $offer)
-                                    <div class="bg-accent-red/10 border border-accent-red/20 rounded-xl p-4">
+                                    <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-xl p-4">
                                         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                                             <div class="flex items-center gap-4">
                                                 <x-team-crest :team="$offer->offeringTeam" class="w-10 h-10 shrink-0" />
@@ -163,14 +163,14 @@
                             </div>
                             @endif
 
-                            {{-- PRE-CONTRACT OFFERS — red accent --}}
+                            {{-- PRE-CONTRACT OFFERS â€” red accent --}}
                             @if($preContractOffers->isNotEmpty())
                             <div class="border-l-4 border-l-accent-red pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.pre_contract_offers_received') }}</h4>
                                 <p class="text-sm text-text-muted mb-3">{{ __('transfers.pre_contract_offers_help') }}</p>
                                 <div class="space-y-3">
                                     @foreach($preContractOffers as $offer)
-                                    <div class="bg-accent-red/10 border border-accent-red/20 rounded-xl p-4">
+                                    <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-xl p-4">
                                         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                                             <div class="flex items-center gap-4">
                                                 <x-team-crest :team="$offer->offeringTeam" class="w-10 h-10 shrink-0" />
@@ -185,7 +185,7 @@
                                                 </div>
                                             </div>
                                             <div class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4">
-                                                <span class="text-sm font-semibold text-accent-red">{{ __('squad.free_transfer') }}</span>
+                                                <span class="text-sm font-semibold text-accent-primary">{{ __('squad.free_transfer') }}</span>
                                                 <div class="flex gap-2">
                                                     <form method="post" action="{{ route('game.transfers.accept', [$game->id, $offer->id]) }}">
                                                         @csrf
@@ -215,7 +215,7 @@
                             </div>
                             @endif
 
-                            {{-- RENEWAL COUNTER-OFFERS — gold accent (needs action) --}}
+                            {{-- RENEWAL COUNTER-OFFERS â€” gold accent (needs action) --}}
                             @if($counteredNegotiations->isNotEmpty())
                             <div class="border-l-4 border-l-accent-gold pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.renewal_counter_offers') }}</h4>
@@ -248,12 +248,12 @@
                                                             <span class="inline-flex items-center gap-1 text-xs font-medium
                                                                 @if($mood['color'] === 'green') text-accent-green
                                                                 @elseif($mood['color'] === 'amber') text-accent-gold
-                                                                @else text-accent-red
+                                                                @else text-accent-primary
                                                                 @endif">
                                                                 <span class="w-1.5 h-1.5 rounded-full
                                                                     @if($mood['color'] === 'green') bg-accent-green
                                                                     @elseif($mood['color'] === 'amber') bg-accent-gold
-                                                                    @else bg-accent-red
+                                                                    @else bg-accent-primary
                                                                     @endif"></span>
                                                                 {{ $mood['label'] }}
                                                             </span>
@@ -302,7 +302,7 @@
                             </div>
                             @endif
 
-                            {{-- RENEWAL OFFERS PENDING — blue accent (waiting for response) --}}
+                            {{-- RENEWAL OFFERS PENDING â€” blue accent (waiting for response) --}}
                             @if($pendingOfferNegotiations->isNotEmpty())
                             <div class="border-l-4 border-l-accent-blue pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.renewal_offers_sent') }}</h4>
@@ -343,7 +343,7 @@
                             </div>
                             @endif
 
-                            {{-- OFFERS FOR LISTED PLAYERS — gold accent --}}
+                            {{-- OFFERS FOR LISTED PLAYERS â€” gold accent --}}
                             @if($listedOffers->isNotEmpty())
                             <div class="border-l-4 border-l-accent-gold pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.offers_received') }}</h4>
@@ -387,7 +387,7 @@
                             </div>
                             @endif
 
-                            {{-- AGREED OUTGOING TRANSFERS — green accent --}}
+                            {{-- AGREED OUTGOING TRANSFERS â€” green accent --}}
                             @if($agreedTransfers->isNotEmpty())
                             <div class="border-l-4 border-l-accent-green pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.agreed_transfers') }}</h4>
@@ -418,7 +418,7 @@
                             </div>
                             @endif
 
-                            {{-- PLAYERS LEAVING ON FREE — green accent --}}
+                            {{-- PLAYERS LEAVING ON FREE â€” green accent --}}
                             @if($agreedPreContracts->isNotEmpty())
                             <div class="border-l-4 border-l-accent-green pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.players_leaving_free') }}</h4>
@@ -439,7 +439,7 @@
                                                 </div>
                                             </div>
                                             <div class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4">
-                                                <span class="text-sm font-semibold text-accent-red">{{ __('squad.free_transfer') }}</span>
+                                                <span class="text-sm font-semibold text-accent-primary">{{ __('squad.free_transfer') }}</span>
                                                 <span class="text-xs text-text-muted">{{ __('squad.pre_contract_signed') }}</span>
                                             </div>
                                         </div>
@@ -449,7 +449,7 @@
                             </div>
                             @endif
 
-                            {{-- LOAN SEARCHES — blue accent --}}
+                            {{-- LOAN SEARCHES â€” blue accent --}}
                             @if($loanSearches->isNotEmpty())
                             <div class="border-l-4 border-l-accent-blue pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.loan_searches_section') }}</h4>
@@ -484,7 +484,7 @@
                             </div>
                             @endif
 
-                            {{-- LISTED PLAYERS FOR SALE — gold accent --}}
+                            {{-- LISTED PLAYERS FOR SALE â€” gold accent --}}
                             @if($listedPlayers->isNotEmpty())
                             <div class="border-l-4 border-l-accent-gold pl-5">
                                 <h4 class="font-semibold text-lg text-text-primary mb-1">{{ __('transfers.listed_players') }}</h4>
@@ -547,7 +547,7 @@
                         </div>
 
                         {{-- ============================== --}}
-                        {{-- RIGHT COLUMN (1/3) — Planning --}}
+                        {{-- RIGHT COLUMN (1/3) â€” Planning --}}
                         {{-- ============================== --}}
                         <div class="space-y-6">
 
@@ -599,7 +599,7 @@
                                             $mood = $renewalMoods[$player->id] ?? null;
                                             $hasPendingOffer = $preContractOffers->where('game_player_id', $player->id)->isNotEmpty();
                                         @endphp
-                                        <tr x-data class="border-t border-border-default transition-colors cursor-pointer {{ $hasPendingOffer ? 'bg-accent-red/10' : 'hover:bg-[rgba(59,130,246,0.05)]' }}"
+                                        <tr x-data class="border-t border-border-default transition-colors cursor-pointer {{ $hasPendingOffer ? 'bg-accent-primary/10' : 'hover:bg-[rgba(59,130,246,0.05)]' }}"
                                             @click="$dispatch('show-player-detail', '{{ route('game.player.detail', [$game->id, $player->id]) }}')">
                                             <td class="py-2.5 pl-4 text-center">
                                                 <x-position-badge :position="$player->position" size="sm" />

@@ -4,29 +4,29 @@ return [
     // Annual operating expenses by reputation level (in cents)
     // Covers: non-playing staff, admin, travel, insurance, legal, etc.
     'operating_expenses' => [
-        'elite'        => 12_000_000_000, // €120M
-        'continental'  =>  7_000_000_000, // €70M
-        'established'  =>  3_500_000_000, // €35M
-        'modest'       =>  1_800_000_000, // €18M
-        'local'        =>    750_000_000, // €7.5M
+        'elite'        => 12_000_000_000, // â‚¬120M
+        'continental'  =>  7_000_000_000, // â‚¬70M
+        'established'  =>  3_500_000_000, // â‚¬35M
+        'modest'       =>  1_800_000_000, // â‚¬18M
+        'local'        =>    750_000_000, // â‚¬7.5M
     ],
 
     // Commercial revenue per seat per season by reputation level (in cents).
     'commercial_per_seat' => [
-        'elite'        => 120_000, // €1,200/seat
-        'continental'  =>  65_000, // €650/seat
-        'established'  =>  45_000, // €450/seat
-        'modest'       =>  35_000, // €350/seat
-        'local'        =>  18_000, // €180/seat
+        'elite'        => 120_000, // â‚¬1,200/seat
+        'continental'  =>  65_000, // â‚¬650/seat
+        'established'  =>  45_000, // â‚¬450/seat
+        'modest'       =>  35_000, // â‚¬350/seat
+        'local'        =>  18_000, // â‚¬180/seat
     ],
 
     // Matchday revenue per seat per season by reputation level (in cents).
     'revenue_per_seat' => [
-        'elite'        => 60_000, // €600/seat
-        'continental'  => 38_000, // €380/seat
-        'established'  => 27_000, // €270/seat
-        'modest'       => 18_000, // €180/seat
-        'local'        =>  8_000, // €80/seat
+        'elite'        => 60_000, // â‚¬600/seat
+        'continental'  => 38_000, // â‚¬380/seat
+        'established'  => 27_000, // â‚¬270/seat
+        'modest'       => 18_000, // â‚¬180/seat
+        'local'        =>  8_000, // â‚¬80/seat
     ],
 
     // Operating expense multiplier by competition tier.

@@ -70,7 +70,7 @@ class PositionMapper
         'Goalkeeper' => ['bg' => 'bg-amber-500', 'text' => 'text-white'],
         'Defender' => ['bg' => 'bg-blue-600', 'text' => 'text-white'],
         'Midfielder' => ['bg' => 'bg-emerald-600', 'text' => 'text-white'],
-        'Forward' => ['bg' => 'bg-red-600', 'text' => 'text-white'],
+        'Forward' => ['bg' => 'bg-purple-700', 'text' => 'text-white'],
     ];
 
     /**

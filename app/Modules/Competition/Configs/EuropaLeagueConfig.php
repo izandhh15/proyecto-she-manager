@@ -10,18 +10,18 @@ class EuropaLeagueConfig implements CompetitionConfig
      * UEL knockout round prize money (in cents).
      */
     private const KNOCKOUT_PRIZE_MONEY = [
-        1 => 50_000_000,       // €500K - Knockout Playoff
-        2 => 100_000_000,      // €1M - Round of 16
-        3 => 150_000_000,      // €1.5M - Quarter-finals
-        4 => 250_000_000,      // €2.5M - Semi-finals
-        5 => 500_000_000,      // €5M - Final (winner)
+        1 => 50_000_000,       // â‚¬500K - Knockout Playoff
+        2 => 100_000_000,      // â‚¬1M - Round of 16
+        3 => 150_000_000,      // â‚¬1.5M - Quarter-finals
+        4 => 250_000_000,      // â‚¬2.5M - Semi-finals
+        5 => 500_000_000,      // â‚¬5M - Final (winner)
     ];
 
     public function getTvRevenue(int $position): int
     {
         // Europa League prize money is roughly 50-60% of UCL
-        $base = 500_000_000; // €5M base
-        $positionBonus = max(0, 37 - $position) * 100_000_000; // €1M per position
+        $base = 500_000_000; // â‚¬5M base
+        $positionBonus = max(0, 37 - $position) * 100_000_000; // â‚¬1M per position
 
         return $base + $positionBonus;
     }

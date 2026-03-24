@@ -1,0 +1,365 @@
+File
+Edit
+View
+Window
+Help
+Añadir clubes europeos
+proyecto-she-manager
+
+
+
+
+
+
+
+
+escudos de saint ettiene y montpellier fallan
+
+
+Procesado durante 28s
+Falla porque esos dos no tienen escudo local en public/crests y la app intenta tirar de la URL remota del JSON.
+
+Ahora mismo sí existen estos de Francia:
+
+fra1-dijon-fco.png
+fra1-fc-fleury-91.png
+fra1-fc-nantes.png
+fra1-le-havre-ac.png
+fra1-ol-lyonnes.png
+fra1-olympique-de-marseille.png
+fra1-paris-fc.png
+fra1-paris-saint-germain.png
+fra1-racing-strasbourg.png
+fra1-rc-lens.png
+Pero faltan:
+
+fra1-montpellier-hsc.png
+fra1-as-saint-etienne.png
+Haz esto en tu otro PC:
+
+Consigue los dos escudos en PNG.
+Guárdalos en:
+public/crests/fra1-montpellier-hsc.png
+public/crests/fra1-as-saint-etienne.png
+Luego limpia caché:
+php artisan optimize:clear
+No hace falta reseed para esto si solo añades los PNG, porque Team.php ya prioriza automáticamente public/crests/{external_id}.png.
+
+Si quieres, te digo también de qué tamaño conviene guardarlos para que se vean bien.
+
+
+sigue apareciendo el color rojo y Virtua FC quiero que salga en lila y SheManager
+
+
+Procesado durante 1m 23s
+Sí. Haz estos 4 cambios en el otro PC.
+
+Cambia el nombre global en .env:
+APP_NAME="SheManager"
+VITE_APP_NAME="SheManager"
+Cambia el footer donde sigue poniendo Virtua FC en resources/views/layouts/app.blade.php:
+Busca:
+
+<span class="skew-x-12 inline-block text-lg font-extrabold text-text-faint tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">Virtua FC</span>
+y pon:
+
+<span class="skew-x-12 inline-block text-lg font-extrabold text-text-faint tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">SheManager</span>
+Cambia el logo rojo a lila en resources/views/components/application-logo.blade.php:
+Ahora tienes:
+
+<div class="-skew-x-12 bg-red-600 px-3 sm:px-4 py-1">
+    <span class="skew-x-12 inline-block text-xl sm:text-3xl font-extrabold text-white tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">She Manager</span>
+</div>
+Déjalo así:
+
+<div class="-skew-x-12 bg-purple-700 px-3 sm:px-4 py-1">
+    <span class="skew-x-12 inline-block text-xl sm:text-3xl font-extrabold text-white tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">SheManager</span>
+</div>
+Cambia el color accent-red a lila en resources/css/app.css:
+Busca:
+
+--color-accent-red: #ef4444;
+y cámbialo por:
+
+--color-accent-red: #9333ea;
+Después ejecuta:
+
+php artisan optimize:clear
+npm run build
+Si estás en desarrollo con Vite:
+
+npm run dev
+Si quieres, te digo también cómo cambiar todos los bg-accent-red, text-accent-red y ring-accent-red a una clase nueva tipo accent-primary para que no vuelva a quedar “rojo” por el nombre.
+
+
+si porfa
+
+Sí, mejor hacerlo limpio.
+
+Haz esto:
+
+En resources/css/app.css añade una variable nueva y deja de depender del nombre red:
+Cambia este bloque:
+
+--color-accent-blue: #3b82f6;
+--color-accent-gold: #f59e0b;
+--color-accent-green: #22c55e;
+--color-accent-red: #9333ea;
+--color-accent-orange: #f97316;
+por este:
+
+--color-accent-blue: #3b82f6;
+--color-accent-gold: #f59e0b;
+--color-accent-green: #22c55e;
+--color-accent-primary: #9333ea;
+--color-accent-red: #9333ea;
+--color-accent-orange: #f97316;
+Así no rompes lo anterior y ya tienes la variable buena.
+
+Luego reemplaza en el proyecto:
+bg-accent-red por bg-accent-primary
+text-accent-red por text-accent-primary
+ring-accent-red por ring-accent-primary
+border-accent-red por border-accent-primary
+Si ves variantes como:
+border-accent-red/30
+bg-accent-red/5
+text-accent-red/80
+cámbialas igual a:
+
+border-accent-primary/30
+bg-accent-primary/5
+text-accent-primary/80
+Después limpia y recompila:
+php artisan optimize:clear
+npm run build
+O en dev:
+
+npm run dev
+Si quieres hacerlo rápido en VS Code:
+
+Ctrl + Shift + H
+reemplaza globalmente esos 4 patrones
+Hazlos en este orden:
+
+bg-accent-red -> bg-accent-primary
+text-accent-red -> text-accent-primary
+ring-accent-red -> ring-accent-primary
+border-accent-red -> border-accent-primary
+Si quieres, en el siguiente mensaje te dejo también un bloque PowerShell para hacer los reemplazos automáticos.
+
+
+si asi que lo haga solo powershell
+
+Pega esto tal cual en PowerShell desde la raíz del proyecto:
+
+$files = Get-ChildItem -Recurse -File resources,app,config
+
+foreach ($file in $files) {
+    $content = Get-Content $file.FullName -Raw
+
+    $content = $content.Replace('bg-accent-red', 'bg-accent-primary')
+    $content = $content.Replace('text-accent-red', 'text-accent-primary')
+    $content = $content.Replace('ring-accent-red', 'ring-accent-primary')
+    $content = $content.Replace('border-accent-red', 'border-accent-primary')
+
+    [System.IO.File]::WriteAllText($file.FullName, $content, (New-Object System.Text.UTF8Encoding($false)))
+}
+Luego en resources/css/app.css cambia también con PowerShell esta línea:
+
+$path = "resources\css\app.css"
+$content = Get-Content $path -Raw
+$content = $content.Replace('--color-accent-red: #9333ea;', "--color-accent-primary: #9333ea;`r`n  --color-accent-red: #9333ea;")
+[System.IO.File]::WriteAllText($path, $content, (New-Object System.Text.UTF8Encoding($false)))
+Y después ejecuta:
+
+php artisan optimize:clear
+npm run build
+Si usas modo desarrollo:
+
+npm run dev
+Si quieres, te paso otro bloque para cambiar automáticamente Virtua FC por SheManager en todos los archivos también.
+
+
+si que haga todo automatico solo sea ejecutar
+
+Ejecuta esto tal cual desde la raíz del proyecto en PowerShell y te hace todo de una:
+
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+
+# 1. APP_NAME en .env si existe
+if (Test-Path ".env") {
+    $envPath = ".env"
+    $envContent = Get-Content $envPath -Raw
+    $envContent = [regex]::Replace($envContent, '^APP_NAME=.*$', 'APP_NAME="SheManager"', 'Multiline')
+    $envContent = [regex]::Replace($envContent, '^VITE_APP_NAME=.*$', 'VITE_APP_NAME="SheManager"', 'Multiline')
+    [System.IO.File]::WriteAllText((Resolve-Path $envPath), $envContent, $utf8NoBom)
+}
+
+# 2. Cambiar Virtua FC / She Manager en vistas y PHP
+$files = Get-ChildItem resources,app,config -Recurse -File
+
+foreach ($file in $files) {
+    $content = Get-Content $file.FullName -Raw
+
+    $content = $content.Replace('Virtua FC', 'SheManager')
+    $content = $content.Replace('She Manager', 'SheManager')
+
+    $content = $content.Replace('bg-accent-red', 'bg-accent-primary')
+    $content = $content.Replace('text-accent-red', 'text-accent-primary')
+    $content = $content.Replace('ring-accent-red', 'ring-accent-primary')
+    $content = $content.Replace('border-accent-red', 'border-accent-primary')
+
+    $content = $content.Replace('bg-red-600', 'bg-purple-700')
+
+    [System.IO.File]::WriteAllText($file.FullName, $content, $utf8NoBom)
+}
+
+# 3. Añadir accent-primary en app.css
+$cssPath = "resources\css\app.css"
+if (Test-Path $cssPath) {
+    $cssContent = Get-Content $cssPath -Raw
+
+    if ($cssContent -notmatch '--color-accent-primary:') {
+        $cssContent = $cssContent.Replace(
+            '--color-accent-red: #ef4444;',
+            "--color-accent-primary: #9333ea;`r`n  --color-accent-red: #9333ea;"
+        )
+    } else {
+        $cssContent = [regex]::Replace($cssContent, '--color-accent-primary:\s*#[0-9a-fA-F]{6};', '--color-accent-primary: #9333ea;')
+        $cssContent = [regex]::Replace($cssContent, '--color-accent-red:\s*#[0-9a-fA-F]{6};', '--color-accent-red: #9333ea;')
+    }
+
+    [System.IO.File]::WriteAllText((Resolve-Path $cssPath), $cssContent, $utf8NoBom)
+}
+
+# 4. Limpiar caché y compilar
+php artisan optimize:clear
+npm run build
+Si estás en desarrollo, después arranca con:
+
+composer dev
+Si quieres, te hago también otro script único para arreglar automáticamente los BOM si vuelven a aparecer.
+
+
+sigue saliendo caracteres como acentos y ñ fallando
+
+Eso es un problema de codificación general: varios archivos quedaron en UTF-8 sin BOM pero con texto ya “roto” de antes, como Ã±, Ã©, Â·, â€”.
+
+Haz esto:
+
+En VS Code abre la carpeta.
+Busca y reemplaza globalmente estos patrones frecuentes:
+Ã¡ -> á
+Ã© -> é
+Ã­ -> í
+Ã³ -> ó
+Ãº -> ú
+Ã -> Á
+Ã‰ -> É
+Ã -> Í
+Ã“ -> Ó
+Ãš -> Ú
+Ã± -> ñ
+Ã‘ -> Ñ
+Â· -> ·
+â€” -> —
+â€“ -> –
+â†’ -> →
+âœ“ -> ✓
+Guarda siempre en UTF-8 o mejor UTF-8 without BOM.
+Si quieres hacerlo por PowerShell automático, ejecuta esto desde la raíz:
+
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+
+$replacements = @{
+    'Ã¡' = 'á'
+    'Ã©' = 'é'
+    'Ã­' = 'í'
+    'Ã³' = 'ó'
+    'Ãº' = 'ú'
+    'Ã' = 'Á'
+    'Ã‰' = 'É'
+    'Ã' = 'Í'
+    'Ã“' = 'Ó'
+    'Ãš' = 'Ú'
+    'Ã±' = 'ñ'
+    'Ã‘' = 'Ñ'
+    'Â·' = '·'
+    'â€”' = '—'
+    'â€“' = '–'
+    'â†’' = '→'
+    'âœ“' = '✓'
+}
+
+$files = Get-ChildItem resources,app,config,database -Recurse -File
+
+foreach ($file in $files) {
+    $content = Get-Content $file.FullName -Raw
+    foreach ($key in $replacements.Keys) {
+        $content = $content.Replace($key, $replacements[$key])
+    }
+    [System.IO.File]::WriteAllText($file.FullName, $content, $utf8NoBom)
+}
+Luego:
+
+php artisan optimize:clear
+npm run build
+Si quieres, te preparo un script más completo con más reemplazos típicos para dejarlo casi todo limpio de una pasada.
+
+
+no me ciera
+
+
+Prueba este bloque más completo, que corrige más caracteres rotos de una vez. Pégalo tal cual en PowerShell desde la raíz del proyecto:
+
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+
+$replacements = [ordered]@{
+    'Ã¡'='á'; 'Ã©'='é'; 'Ã­'='í'; 'Ã³'='ó'; 'Ãº'='ú'
+    'Ã'='Á'; 'Ã‰'='É'; 'Ã'='Í'; 'Ã“'='Ó'; 'Ãš'='Ú'
+    'Ã±'='ñ'; 'Ã‘'='Ñ'
+    'Ã¼'='ü'; 'Ãœ'='Ü'
+    'Ã '`='à'; 'Ã¨'='è'; 'Ã²'='ò'; 'Ã€'='À'; 'Ãˆ'='È'; 'Ã’'='Ò'
+    'Ã¤'='ä'; 'Ã¶'='ö'; 'Ã„'='Ä'; 'Ã–'='Ö'
+    'Ã§'='ç'; 'Ã‡'='Ç'
+    'Â¿'='¿'; 'Â¡'='¡'; 'Â·'='·'
+    'â€”'='—'; 'â€“'='–'; 'â€˜'='‘'; 'â€™'='’'; 'â€œ'='“'; 'â€'='”'
+    'â€¦'='…'; 'â€¢'='•'; 'â„¢'='™'; 'â‚¬'='€'
+    'â†’'='→'; 'â†'='←'; 'â†”'='↔'
+    'âœ“'='✓'; 'âœ”'='✔'; 'âœ•'='✕'
+    'Premi?re'='Première'
+    'G?rard'='Gérard'
+    'Oc?ane'='Océane'
+    'Fran?ois'='François'
+    'Ke?ta'='Keïta'
+}
+
+$files = Get-ChildItem resources,app,config,database,data -Recurse -File | Where-Object {
+    $_.Extension -in '.php','.blade.php','.css','.js','.json','.md','.txt','.env','.example'
+}
+
+foreach ($file in $files) {
+    $content = Get-Content $file.FullName -Raw
+    $original = $content
+
+    foreach ($key in $replacements.Keys) {
+        $content = $content.Replace($key, $replacements[$key])
+    }
+
+    if ($content -ne $original) {
+        [System.IO.File]::WriteAllText($file.FullName, $content, $utf8NoBom)
+        Write-Host "Corregido: $($file.FullName)"
+    }
+}
+
+php artisan optimize:clear
+npm run build
+Si te falla al pegarlo, hazlo así:
+
+abre Bloc de notas
+pega el bloque
+guárdalo como fix-encoding.ps1 en la raíz del proyecto
+ejecútalo con:
+powershell -ExecutionPolicy Bypass -File .\fix-encoding.ps1
+Si quieres, te lo dejo en versión aún más corta para copiar mejor.

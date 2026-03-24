@@ -17,7 +17,7 @@ use Illuminate\Support\Collection;
  * Group phase: teams play round-robin within groups (league-style, batched by round_number).
  * Knockout phase: single-leg ties with extra time & penalties, generated progressively.
  *
- * FIFA 2026 format: 48 teams, 12 groups → R32 → R16 → QF → SF → 3rd place + Final.
+ * FIFA 2026 format: 48 teams, 12 groups â†’ R32 â†’ R16 â†’ QF â†’ SF â†’ 3rd place + Final.
  */
 class GroupStageCupHandler extends CupCompetitionHandler
 {
@@ -74,7 +74,7 @@ class GroupStageCupHandler extends CupCompetitionHandler
             return;
         }
 
-        // Don't generate while a group-stage match is pending finalization —
+        // Don't generate while a group-stage match is pending finalization â€”
         // its standings haven't been applied yet, so seedings would be wrong
         if ($game->hasPendingFinalizationForCompetition($competitionId)) {
             return;
@@ -84,7 +84,7 @@ class GroupStageCupHandler extends CupCompetitionHandler
         $finalRound = $this->knockoutGenerator->getFinalRound($competitionId);
 
         if ($currentRound === 0) {
-            // No knockout rounds yet — generate the first one
+            // No knockout rounds yet â€” generate the first one
             $qualifiedTeams = $this->knockoutGenerator->getQualifiedTeams($game->id, $competitionId);
             $firstRound = $this->knockoutGenerator->getFirstKnockoutRound(count($qualifiedTeams));
 

@@ -32,7 +32,7 @@
                 ['bg' => 'bg-accent-blue', 'name' => 'accent-blue', 'hex' => '#3B82F6', 'usage' => 'Interactive, links, focus'],
                 ['bg' => 'bg-accent-gold', 'name' => 'accent-gold', 'hex' => '#F59E0B', 'usage' => 'Highlights, awards'],
                 ['bg' => 'bg-accent-green', 'name' => 'accent-green', 'hex' => '#22C55E', 'usage' => 'Success, positive'],
-                ['bg' => 'bg-accent-red', 'name' => 'accent-red', 'hex' => '#EF4444', 'usage' => 'Danger, primary CTA'],
+                ['bg' => 'bg-accent-primary', 'name' => 'accent-red', 'hex' => '#EF4444', 'usage' => 'Danger, primary CTA'],
                 ['bg' => 'bg-accent-orange', 'name' => 'accent-orange', 'hex' => '#F97316', 'usage' => 'Warnings, energy'],
             ] as $color)
             <div class="bg-surface-800 border border-border-default rounded-xl p-4">
@@ -136,7 +136,7 @@
                     <span class="text-xs text-text-secondary">white/20 (avoid)</span>
                 </div>
                 <div class="flex-1 bg-surface-700/50 border border-slate-200 rounded-lg p-3 text-center">
-                    <span class="text-xs text-accent-red">slate-200 (never)</span>
+                    <span class="text-xs text-accent-primary">slate-200 (never)</span>
                 </div>
             </div>
         </div>
@@ -170,8 +170,8 @@
             {{-- Danger --}}
             <div class="bg-surface-800 border border-border-default rounded-xl p-5">
                 <div class="flex items-center gap-3 mb-3">
-                    <div class="w-10 h-10 rounded-lg bg-accent-red/20 border border-accent-red/30 flex items-center justify-center">
-                        <svg class="w-5 h-5 text-accent-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                    <div class="w-10 h-10 rounded-lg bg-accent-primary/20 border border-accent-primary/30 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-accent-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
                     </div>
                     <div>
                         <div class="font-heading font-bold text-sm text-text-primary uppercase tracking-wide">Danger / Destructive</div>
@@ -180,9 +180,9 @@
                 </div>
                 <p class="text-sm text-text-secondary mb-3">Match losses, injuries, red cards, budget deficit, relegation warnings, destructive actions.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-2 py-1 text-[10px] rounded-sm bg-accent-red/10 text-accent-red border border-accent-red/20">text-accent-red</span>
-                    <span class="px-2 py-1 text-[10px] rounded-sm bg-accent-red/10 text-accent-red border border-accent-red/20">bg-accent-red/10</span>
-                    <span class="px-2 py-1 text-[10px] rounded-sm bg-accent-red/10 text-accent-red border border-accent-red/20">border-accent-red/20</span>
+                    <span class="px-2 py-1 text-[10px] rounded-sm bg-accent-primary/10 text-accent-primary border border-accent-primary/20">text-accent-primary</span>
+                    <span class="px-2 py-1 text-[10px] rounded-sm bg-accent-primary/10 text-accent-primary border border-accent-primary/20">bg-accent-primary/10</span>
+                    <span class="px-2 py-1 text-[10px] rounded-sm bg-accent-primary/10 text-accent-primary border border-accent-primary/20">border-accent-primary/20</span>
                 </div>
             </div>
 

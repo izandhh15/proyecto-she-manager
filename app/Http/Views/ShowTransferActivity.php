@@ -78,7 +78,7 @@ class ShowTransferActivity
             if ($fromInLeague || $toInLeague) {
                 $leagueTransferCount++;
 
-                // Add to selling team's OUT (skip free agents — they have no from team)
+                // Add to selling team's OUT (skip free agents â€” they have no from team)
                 if ($fromInLeague && $transfer->from_team_id) {
                     $teamId = $transfer->from_team_id;
                     $leagueTeamActivity[$teamId]['out'][] = [

@@ -230,7 +230,7 @@
                          class="absolute right-0 mt-2 w-48 bg-surface-700 border border-border-default rounded-lg shadow-xl z-50 py-1" style="display: none;">
                         <button class="w-full text-left px-4 py-2 text-sm text-accent-blue hover:bg-surface-600 transition-colors">List for sale</button>
                         <button class="w-full text-left px-4 py-2 text-sm text-accent-gold hover:bg-surface-600 transition-colors">Loan out</button>
-                        <button class="w-full text-left px-4 py-2 text-sm text-accent-red hover:bg-surface-600 transition-colors">Release player</button>
+                        <button class="w-full text-left px-4 py-2 text-sm text-accent-primary hover:bg-surface-600 transition-colors">Release player</button>
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
          class="absolute right-0 mt-2 w-48 bg-surface-700 border border-border-default rounded-lg shadow-xl z-50 py-1"&gt;
         &lt;button class="w-full text-left px-4 py-2 text-sm text-accent-blue hover:bg-surface-600"&gt;List for sale&lt;/button&gt;
         &lt;button class="w-full text-left px-4 py-2 text-sm text-accent-gold hover:bg-surface-600"&gt;Loan out&lt;/button&gt;
-        &lt;button class="w-full text-left px-4 py-2 text-sm text-accent-red hover:bg-surface-600"&gt;Release&lt;/button&gt;
+        &lt;button class="w-full text-left px-4 py-2 text-sm text-accent-primary hover:bg-surface-600"&gt;Release&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
         </div>

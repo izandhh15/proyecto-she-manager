@@ -41,7 +41,7 @@ class SeasonSimulationService
             ];
         }
 
-        // Simulate every home/away fixture (N × (N-1) matches)
+        // Simulate every home/away fixture (N Ã— (N-1) matches)
         $teamList = $teams->values();
         $baseGoals = config('match_simulation.base_goals', 1.3);
         $ratioExponent = config('match_simulation.ratio_exponent', 2.0);
@@ -84,7 +84,7 @@ class SeasonSimulationService
             }
         }
 
-        // Sort by points → goal difference → goals for
+        // Sort by points â†’ goal difference â†’ goals for
         uasort($standings, function ($a, $b) {
             $pointsDiff = $b['points'] <=> $a['points'];
             if ($pointsDiff !== 0) {

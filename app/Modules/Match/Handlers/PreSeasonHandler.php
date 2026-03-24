@@ -31,7 +31,7 @@ class PreSeasonHandler implements CompetitionHandler
 
     public function afterMatches(Game $game, Collection $matches, Collection $allPlayers): void
     {
-        // No post-match actions — no standings, no prize money, no cup ties
+        // No post-match actions â€” no standings, no prize money, no cup ties
     }
 
     public function getRedirectRoute(Game $game, Collection $matches, int $matchday): string

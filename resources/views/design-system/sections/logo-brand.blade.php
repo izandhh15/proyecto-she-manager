@@ -43,9 +43,9 @@
 &lt;x-application-logo /&gt;
 
 &lt;!-- Rendered HTML --&gt;
-&lt;div class="-skew-x-12 bg-red-600 px-3 sm:px-4 py-1"&gt;
+&lt;div class="-skew-x-12 bg-purple-700 px-3 sm:px-4 py-1"&gt;
     &lt;span class="skew-x-12 inline-block text-xl sm:text-3xl font-extrabold text-white tracking-tight"
-          style="font-family: 'Barlow Semi Condensed', sans-serif;"&gt;Virtua FC&lt;/span&gt;
+          style="font-family: 'Barlow Semi Condensed', sans-serif;"&gt;SheManager&lt;/span&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -153,12 +153,12 @@
     <p class="text-sm text-text-secondary mb-4">The core elements that make up the VirtuaFC visual identity.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div class="bg-surface-800 border border-border-default rounded-xl p-5">
-            <div class="w-10 h-10 rounded-lg bg-red-600 mb-3 -skew-x-12"></div>
+            <div class="w-10 h-10 rounded-lg bg-purple-700 mb-3 -skew-x-12"></div>
             <h4 class="font-semibold text-sm text-text-primary mb-1">Skewed Parallelogram</h4>
             <p class="text-xs text-text-secondary leading-relaxed">The -12deg skew is the signature shape. Applied via <code class="text-[10px] bg-surface-700 px-1 py-0.5 rounded-sm text-text-body">-skew-x-12</code> in Tailwind or <code class="text-[10px] bg-surface-700 px-1 py-0.5 rounded-sm text-text-body">skewX(-12deg)</code> in SVG.</p>
         </div>
         <div class="bg-surface-800 border border-border-default rounded-xl p-5">
-            <div class="w-10 h-10 rounded-lg bg-red-600 mb-3 flex items-center justify-center">
+            <div class="w-10 h-10 rounded-lg bg-purple-700 mb-3 flex items-center justify-center">
                 <span class="text-white text-xs font-bold">#dc2626</span>
             </div>
             <h4 class="font-semibold text-sm text-text-primary mb-1">Brand Red</h4>
@@ -216,7 +216,7 @@
                 </style>
             </defs>
             <rect class="vfc-bg" x="12" y="3" width="129" height="40" transform="skewX(-12)"/>
-            <text class="vfc-text" x="72" y="33" text-anchor="middle">Virtua FC</text>
+            <text class="vfc-text" x="72" y="33" text-anchor="middle">SheManager</text>
         </svg>
     </div>
     <div x-data="{ copied: false }" class="relative">
@@ -230,7 +230,7 @@
         transform="skewX(-12)"/&gt;
   &lt;text fill="#fff" font-family="'Barlow Semi Condensed', 'Arial Black', sans-serif"
         font-weight="800" font-size="28" x="72" y="33"
-        text-anchor="middle"&gt;Virtua FC&lt;/text&gt;
+        text-anchor="middle"&gt;SheManager&lt;/text&gt;
 &lt;/svg&gt;</code></pre>
     </div>
 

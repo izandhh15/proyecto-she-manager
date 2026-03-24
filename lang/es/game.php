@@ -213,6 +213,7 @@ return [
     // Setup loading
     'preparing_season' => 'Preparando tu temporada...',
     'setup_loading_message' => 'Estamos configurando los equipos, jugadores y competiciones. Esto solo tomará unos segundos.',
+    'setup_failed_message' => 'La configuración inicial ha fallado. Revisa `storage/logs/laravel.log`, limpia la cola fallida y vuelve a crear la partida.',
     'processing_actions' => 'Procesando...',
     'processing_career_actions' => 'Procesando acciones del juego...',
     'processing_career_actions_message' => 'Transferencias, contratos y otras acciones se están procesando.',
@@ -393,7 +394,7 @@ return [
 
     // Onboarding - Squad Snapshot
     'your_squad' => 'Tu Plantilla',
-    'players_count' => ':count jugadores',
+    'players_count' => ':count jugadoras',
     'avg_overall' => 'Media General',
     'avg_age' => 'Edad Media',
     'squad_size' => 'Tamaño',
@@ -401,11 +402,11 @@ return [
     'ideal_range' => ':min-:max ideal',
     'position_coverage' => 'Cobertura por Posición',
     'areas_of_concern' => 'Puntos de Atención',
-    'concern_low_goalkeepers' => 'Solo :count portero|Solo :count porteros',
+    'concern_low_goalkeepers' => 'Solo :count portera|Solo :count porteras',
     'concern_low_defenders' => 'Solo :count defensa|Solo :count defensas',
-    'concern_low_forwards' => 'Solo :count delantero|Solo :count delanteros',
+    'concern_low_forwards' => 'Solo :count delantera|Solo :count delanteras',
     'concern_aging_squad' => 'La edad media es :age',
-    'concern_small_squad' => 'Solo :count jugadores en la plantilla',
+    'concern_small_squad' => 'Solo :count jugadoras en la plantilla',
 
     // Onboarding - Off-Season Recap
     'offseason_recap' => 'Resumen del Mercado',

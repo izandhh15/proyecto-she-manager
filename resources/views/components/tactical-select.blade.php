@@ -22,7 +22,7 @@
         @keydown.escape.window="open = false"
         class="w-full h-9 px-3 flex items-center justify-between gap-2 rounded-lg border border-border-strong bg-surface-700 text-sm font-medium text-text-body hover:border-white/20 hover:bg-surface-600 transition-colors"
     >
-        <span class="truncate" x-text="{{ $options }}.find(o => o.value === {{ $model }})?.label || '—'"></span>
+        <span class="truncate" x-text="{{ $options }}.find(o => o.value === {{ $model }})?.label || 'â€”'"></span>
         <svg class="w-4 h-4 shrink-0 text-text-muted transition-transform duration-200" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>

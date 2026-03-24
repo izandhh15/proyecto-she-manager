@@ -16,7 +16,7 @@
                 @if($cupStatus === 'champion')
                     <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-gold/20 text-accent-gold">{{ __('cup.champion') }}</span>
                 @elseif($cupStatus === 'eliminated')
-                    <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-red/20 text-accent-red">{{ __('cup.eliminated') }}</span>
+                    <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-primary/20 text-accent-primary">{{ __('cup.eliminated') }}</span>
                 @elseif($cupStatus === 'active')
                     <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-green/20 text-accent-green">{{ __($playerRoundName) }}</span>
                 @elseif($cupStatus === 'advanced')

@@ -340,7 +340,7 @@ class YouthAcademyService
 
     /**
      * Teams whose academy only produces domestic players (cantera philosophy).
-     * Maps team name → exact nationality filter (overrides weighted selection).
+     * Maps team name â†’ exact nationality filter (overrides weighted selection).
      */
     private const CANTERA_TEAMS = [
         'Athletic Bilbao' => 'Spain',

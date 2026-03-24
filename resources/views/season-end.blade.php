@@ -21,7 +21,7 @@ $borderColorMap = [
 $bgColorMap = [
     'bg-accent-blue' => 'bg-accent-blue',
     'bg-orange-500' => 'bg-orange-500',
-    'bg-accent-red' => 'bg-accent-red',
+    'bg-accent-primary' => 'bg-accent-primary',
     'bg-green-300' => 'bg-green-300',
     'bg-accent-green' => 'bg-accent-green',
     'bg-accent-gold' => 'bg-accent-gold',
@@ -57,7 +57,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                 <h1 class="font-heading text-3xl md:text-5xl font-bold text-accent-gold tracking-tight mb-1">
                     {{ __('season.champion_label') }}
                 </h1>
-                <p class="text-lg text-text-secondary">{{ $game->team->name }} · {{ $game->formatted_season }}</p>
+                <p class="text-lg text-text-secondary">{{ $game->team->name }} Â· {{ $game->formatted_season }}</p>
             @else
                 <div class="inline-block drop-shadow-lg mb-4">
                     <x-team-crest :team="$game->team" class="w-20 h-20 md:w-28 md:h-28 mx-auto" />
@@ -65,7 +65,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                 <h1 class="font-heading text-3xl md:text-5xl font-bold text-text-primary mb-1">
                     {{ __('game.season_complete') }}
                 </h1>
-                <p class="text-lg text-text-secondary">{{ $game->team->name }} · {{ $game->formatted_season }}</p>
+                <p class="text-lg text-text-secondary">{{ $game->team->name }} Â· {{ $game->formatted_season }}</p>
             @endif
         </div>
 
@@ -79,14 +79,14 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                 'exceeded' => 'border-l-emerald-500 bg-accent-green/10',
                 'met' => 'border-l-border-strong bg-surface-700/50',
                 'below' => 'border-l-amber-500 bg-accent-gold/10',
-                'disaster' => 'border-l-red-500 bg-accent-red/10',
+                'disaster' => 'border-l-red-500 bg-accent-primary/10',
             ];
             $gradeTextColors = [
                 'exceptional' => 'text-accent-green',
                 'exceeded' => 'text-accent-green',
                 'met' => 'text-text-body',
                 'below' => 'text-accent-gold',
-                'disaster' => 'text-accent-red',
+                'disaster' => 'text-accent-primary',
             ];
             $accentClass = $gradeAccent[$managerEvaluation['grade']] ?? $gradeAccent['met'];
             $textClass = $gradeTextColors[$managerEvaluation['grade']] ?? $gradeTextColors['met'];
@@ -183,7 +183,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                         @php
                             $repDirectionConfig = match($reputationData['direction']) {
                                 'rising' => ['icon' => '&#9650;', 'color' => 'text-accent-green', 'label' => __('season.reputation_rising')],
-                                'declining' => ['icon' => '&#9660;', 'color' => 'text-accent-red', 'label' => __('season.reputation_declining')],
+                                'declining' => ['icon' => '&#9660;', 'color' => 'text-accent-primary', 'label' => __('season.reputation_declining')],
                                 default => ['icon' => '&#9654;', 'color' => 'text-text-secondary', 'label' => __('season.reputation_stable')],
                             };
                         @endphp
@@ -206,7 +206,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                             {{ __('season.individual_awards') }}
                         </h3>
 
-                        {{-- Pichichi — Top Scorer --}}
+                        {{-- Pichichi â€” Top Scorer --}}
                         <div class="border border-border-default rounded-lg overflow-hidden">
                             <div class="px-4 py-2.5 bg-accent-gold/10 border-b border-accent-gold/20">
                                 <div class="text-xs font-semibold text-accent-gold uppercase tracking-wide">
@@ -232,7 +232,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                             </div>
                         </div>
 
-                        {{-- Zamora — Best Goalkeeper --}}
+                        {{-- Zamora â€” Best Goalkeeper --}}
                         <div class="border border-border-default rounded-lg overflow-hidden">
                             <div class="px-4 py-2.5 bg-accent-blue/10 border-b border-accent-blue/20">
                                 <div class="text-xs font-semibold text-accent-blue uppercase tracking-wide">
@@ -277,7 +277,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                                         <div class="flex items-center gap-2 text-sm @if($isPlayerTeam) bg-accent-blue/10 -mx-1 px-1 py-0.5 rounded-sm @endif">
                                             <x-team-crest :team="$team" class="w-4 h-4 shrink-0" />
                                             <span class="flex-1 truncate @if($isPlayerTeam) font-medium @endif">{{ $team->name }}</span>
-                                            <span class="text-xs text-text-secondary tabular-nums">{{ is_int($entry['position']) ? $entry['position'] . 'º' : $entry['position'] }}</span>
+                                            <span class="text-xs text-text-secondary tabular-nums">{{ is_int($entry['position']) ? $entry['position'] . 'Âº' : $entry['position'] }}</span>
                                         </div>
                                         @endif
                                     @endforeach
@@ -287,8 +287,8 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
 
                             @if(!empty($promotionData['relegated']))
                             <div class="border border-border-default rounded-lg overflow-hidden">
-                                <div class="px-4 py-2.5 bg-accent-red/10 border-b border-accent-red/20">
-                                    <div class="text-xs font-semibold text-accent-red uppercase tracking-wide">
+                                <div class="px-4 py-2.5 bg-accent-primary/10 border-b border-accent-primary/20">
+                                    <div class="text-xs font-semibold text-accent-primary uppercase tracking-wide">
                                         {{ __('season.relegated_to', ['league' => $promotionData['bottomLeagueName']]) }}
                                     </div>
                                 </div>
@@ -302,7 +302,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                                         <div class="flex items-center gap-2 text-sm @if($isPlayerTeam) bg-accent-blue/10 -mx-1 px-1 py-0.5 rounded-sm @endif">
                                             <x-team-crest :team="$team" class="w-4 h-4 shrink-0" />
                                             <span class="flex-1 truncate @if($isPlayerTeam) font-medium @endif">{{ $team->name }}</span>
-                                            <span class="text-xs text-text-secondary tabular-nums">{{ $entry['position'] }}º</span>
+                                            <span class="text-xs text-text-secondary tabular-nums">{{ $entry['position'] }}Âº</span>
                                         </div>
                                         @endif
                                     @endforeach
@@ -433,13 +433,13 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                     @endif
 
                     @if($worstDefeat)
-                    <div class="bg-accent-red/10 border border-accent-red/20 rounded-lg p-3">
+                    <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-3">
                         <div class="text-[10px] text-text-muted uppercase tracking-widest font-semibold mb-1.5">{{ __('season.worst_defeat') }}</div>
                         <div class="flex items-center gap-1.5 mb-1">
                             <x-team-crest :team="$worstDefeat['opponent']" class="w-4 h-4 shrink-0" />
                             <span class="text-sm text-text-secondary truncate">{{ __('season.vs') }} {{ $worstDefeat['opponent']->name }}</span>
                         </div>
-                        <div class="font-heading text-xl font-bold text-accent-red tabular-nums">{{ $worstDefeat['score'] }}</div>
+                        <div class="font-heading text-xl font-bold text-accent-primary tabular-nums">{{ $worstDefeat['score'] }}</div>
                     </div>
                     @else
                     <div class="bg-accent-green/10 border border-accent-green/20 rounded-lg p-3">
@@ -455,7 +455,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                             <span class="text-xs text-text-secondary">{{ __('season.won') }}</span>
                             <span class="font-heading text-xl font-bold text-text-secondary tabular-nums ml-1">{{ $homeRecord['d'] }}</span>
                             <span class="text-xs text-text-secondary">{{ __('season.drawn') }}</span>
-                            <span class="font-heading text-xl font-bold text-accent-red tabular-nums ml-1">{{ $homeRecord['l'] }}</span>
+                            <span class="font-heading text-xl font-bold text-accent-primary tabular-nums ml-1">{{ $homeRecord['l'] }}</span>
                             <span class="text-xs text-text-secondary">{{ __('season.lost') }}</span>
                         </div>
                     </div>
@@ -467,7 +467,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                             <span class="text-xs text-text-secondary">{{ __('season.won') }}</span>
                             <span class="font-heading text-xl font-bold text-text-secondary tabular-nums ml-1">{{ $awayRecord['d'] }}</span>
                             <span class="text-xs text-text-secondary">{{ __('season.drawn') }}</span>
-                            <span class="font-heading text-xl font-bold text-accent-red tabular-nums ml-1">{{ $awayRecord['l'] }}</span>
+                            <span class="font-heading text-xl font-bold text-accent-primary tabular-nums ml-1">{{ $awayRecord['l'] }}</span>
                             <span class="text-xs text-text-secondary">{{ __('season.lost') }}</span>
                         </div>
                     </div>
@@ -488,7 +488,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                                 <span class="font-heading text-xl font-bold text-text-primary tabular-nums">{{ $teamYellowCards }}</span>
                             </div>
                             <div class="flex items-center gap-1">
-                                <div class="w-3 h-4 rounded-xs bg-accent-red"></div>
+                                <div class="w-3 h-4 rounded-xs bg-accent-primary"></div>
                                 <span class="font-heading text-xl font-bold text-text-primary tabular-nums">{{ $teamRedCards }}</span>
                             </div>
                         </div>
@@ -497,7 +497,7 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
                     @if($transferBalance !== 0)
                     <div class="bg-surface-700/50 border border-border-default rounded-lg p-3">
                         <div class="text-[10px] text-text-muted uppercase tracking-widest font-semibold mb-1.5">{{ __('season.transfer_balance') }}</div>
-                        <div class="font-heading text-xl font-bold tabular-nums mt-2 {{ $transferBalance >= 0 ? 'text-accent-green' : 'text-accent-red' }}">
+                        <div class="font-heading text-xl font-bold tabular-nums mt-2 {{ $transferBalance >= 0 ? 'text-accent-green' : 'text-accent-primary' }}">
                             {{ \App\Support\Money::format($transferBalance) }}
                         </div>
                     </div>

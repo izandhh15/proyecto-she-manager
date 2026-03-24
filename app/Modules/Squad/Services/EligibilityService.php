@@ -109,7 +109,7 @@ class EligibilityService
     /**
      * Process all card events (yellows and reds) in batch.
      * Loads/creates suspension records in bulk, aggregates yellow card increments,
-     * checks accumulation thresholds, and applies suspensions — all in ~4-5 queries
+     * checks accumulation thresholds, and applies suspensions â€” all in ~4-5 queries
      * regardless of how many cards were given.
      *
      * @param  array  $cardEvents  [{game_player_id, competitionId, event_type, metadata}]

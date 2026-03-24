@@ -78,7 +78,7 @@ class PreSeasonFixtureProcessor implements SeasonProcessor
             ? ClubProfile::getReputationTierIndex($userProfile->reputation_level)
             : 3;
 
-        // Get reputation levels within ±1 tier
+        // Get reputation levels within Â±1 tier
         $tiers = ClubProfile::REPUTATION_TIERS;
         $validLevels = [];
         for ($i = max(0, $userTierIndex - 1); $i <= min(count($tiers) - 1, $userTierIndex + 1); $i++) {

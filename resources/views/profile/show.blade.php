@@ -58,8 +58,8 @@
                                 @endif
 
                                 <div class="min-w-0 flex-1">
-                                    <p class="text-sm font-medium text-text-primary truncate">{{ $game->team?->name ?? '—' }}</p>
-                                    <p class="text-xs text-text-muted truncate">{{ $game->competition?->name ?? '—' }} · {{ $game->season }}</p>
+                                    <p class="text-sm font-medium text-text-primary truncate">{{ $game->team?->name ?? 'â€”' }}</p>
+                                    <p class="text-xs text-text-muted truncate">{{ $game->competition?->name ?? 'â€”' }} Â· {{ $game->season }}</p>
                                 </div>
 
                                 @if($game->game_mode === 'tournament')

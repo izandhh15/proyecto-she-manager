@@ -36,7 +36,7 @@ class ShowSquad
         $matchesMissedMap = InjuryService::getMatchesMissedMap($gameId, $game->team_id, $game->current_date, $allPlayers);
 
         // Enrich each player with computed data
-        $allPlayers->each(function (GamePlayer $player) use ($game, $seasonEndDate, $nextMatchday, $matchesMissedMap) {
+        $allPlayers->each(function (GamePlayer $player) use ($game, $nextMatchday, $matchesMissedMap) {
             // Availability
             $matchData = $matchesMissedMap[$player->id] ?? null;
             $player->setAttribute('is_unavailable', !$player->isAvailable($game->current_date, $nextMatchday));

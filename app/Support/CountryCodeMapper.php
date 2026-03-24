@@ -13,7 +13,7 @@ class CountryCodeMapper
     private static array $countryToCode = [
         // A
         'Afghanistan' => 'af',
-        'Åland Islands' => 'ax',
+        'Ã…land Islands' => 'ax',
         'Albania' => 'al',
         'Algeria' => 'dz',
         'American Samoa' => 'as',
@@ -77,12 +77,12 @@ class CountryCodeMapper
         'Democratic Republic of Congo' => 'cd',
         'Cook Islands' => 'ck',
         'Costa Rica' => 'cr',
-        "Côte d'Ivoire" => 'ci',
+        "CÃ´te d'Ivoire" => 'ci',
         "Cote d'Ivoire" => 'ci',
         'Ivory Coast' => 'ci',
         'Croatia' => 'hr',
         'Cuba' => 'cu',
-        'Curaçao' => 'cw',
+        'CuraÃ§ao' => 'cw',
         'Curacao' => 'cw',
         'Cyprus' => 'cy',
         'Czechia' => 'cz',
@@ -259,7 +259,7 @@ class CountryCodeMapper
         'Qatar' => 'qa',
 
         // R
-        'Réunion' => 're',
+        'RÃ©union' => 're',
         'Reunion' => 're',
         'Romania' => 'ro',
         'Russia' => 'ru',
@@ -267,7 +267,7 @@ class CountryCodeMapper
         'Rwanda' => 'rw',
 
         // S
-        'Saint Barthélemy' => 'bl',
+        'Saint BarthÃ©lemy' => 'bl',
         'Saint Helena, Ascension and Tristan da Cunha' => 'sh',
         'Saint Kitts and Nevis' => 'kn',
         'St. Kitts and Nevis' => 'kn',
@@ -280,7 +280,7 @@ class CountryCodeMapper
         'Samoa' => 'ws',
         'San Marino' => 'sm',
         'Sao Tome and Principe' => 'st',
-        'São Tomé and Príncipe' => 'st',
+        'SÃ£o TomÃ© and PrÃ­ncipe' => 'st',
         'Saudi Arabia' => 'sa',
         'Senegal' => 'sn',
         'Serbia' => 'rs',
@@ -321,7 +321,7 @@ class CountryCodeMapper
         'Trinidad and Tobago' => 'tt',
         'Tunisia' => 'tn',
         'Turkey' => 'tr',
-        'Türkiye' => 'tr',
+        'TÃ¼rkiye' => 'tr',
         'Turkmenistan' => 'tm',
         'Turks and Caicos Islands' => 'tc',
         'Tuvalu' => 'tv',

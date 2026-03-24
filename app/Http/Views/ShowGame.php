@@ -56,7 +56,7 @@ class ShowGame
             ]);
         }
 
-        // Matchday advance completed — consume result and redirect
+        // Matchday advance completed â€” consume result and redirect
         if ($advanceResult = $game->matchday_advance_result) {
             $game->update(['matchday_advance_result' => null]);
             $result = MatchdayAdvanceResult::fromArray($advanceResult);

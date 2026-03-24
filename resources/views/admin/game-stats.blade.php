@@ -23,7 +23,7 @@
                             @else
                                 <div class="w-5 h-5 shrink-0 rounded bg-surface-700"></div>
                             @endif
-                            <span class="text-sm text-text-primary truncate w-28 shrink-0">{{ $entry->team?->name ?? '—' }}</span>
+                            <span class="text-sm text-text-primary truncate w-28 shrink-0">{{ $entry->team?->name ?? 'â€”' }}</span>
                             <div class="flex-1 h-5 bg-surface-700 rounded-sm overflow-hidden">
                                 <div class="h-full bg-accent-blue/60 rounded-sm" style="width: {{ ($entry->picks / $maxPicks) * 100 }}%"></div>
                             </div>
@@ -77,7 +77,7 @@
                         $mentalityColors = [
                             'defensive' => 'bg-accent-blue/60',
                             'balanced'  => 'bg-accent-gold/60',
-                            'attacking' => 'bg-accent-red/60',
+                            'attacking' => 'bg-accent-primary/60',
                         ];
                         $mentalityLabels = [
                             'defensive' => __('game.mentality_defensive'),

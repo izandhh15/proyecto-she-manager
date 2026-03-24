@@ -118,7 +118,7 @@ class ShowScoutingHub
                 'offerStatus' => $existingOfferStatuses[$gp->id]['status'] ?? null,
                 'offerIsCounter' => $existingOfferStatuses[$gp->id]['isCounter'] ?? false,
                 'offerType' => $existingOfferStatuses[$gp->id]['offerType'] ?? null,
-                // Locked by default — populated below if intel level warrants it
+                // Locked by default â€” populated below if intel level warrants it
                 'techRange' => null,
                 'formattedAskingPrice' => null,
                 'askingPrice' => null,

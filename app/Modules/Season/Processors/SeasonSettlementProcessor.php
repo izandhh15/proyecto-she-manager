@@ -52,7 +52,7 @@ class SeasonSettlementProcessor implements SeasonProcessor
         $actualTransferIncome = $this->calculateTransferIncome($game);
         $actualCupBonusRevenue = $this->calculateCupBonusRevenue($game);
 
-        // Guaranteed income — same amount as projected
+        // Guaranteed income â€” same amount as projected
         $actualSubsidyRevenue = $finances->projected_subsidy_revenue;
         $actualSolidarityFundsRevenue = $finances->projected_solidarity_funds_revenue;
 
@@ -67,7 +67,7 @@ class SeasonSettlementProcessor implements SeasonProcessor
         // Calculate actual wages (pro-rated for all players)
         $actualWages = $this->calculateActualWages($game);
 
-        // Operating expenses are fixed costs — same as projected
+        // Operating expenses are fixed costs â€” same as projected
         $actualOperatingExpenses = $finances->projected_operating_expenses;
 
         // Calculate actual surplus

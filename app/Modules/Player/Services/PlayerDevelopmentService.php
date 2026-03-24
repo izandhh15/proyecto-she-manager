@@ -133,7 +133,7 @@ class PlayerDevelopmentService
      *
      * @param int $age Player's current age
      * @param int $currentAbility Player's current overall ability
-     * @param int $marketValueCents Player's market value in cents (e.g., €15M = 1500000000)
+     * @param int $marketValueCents Player's market value in cents (e.g., â‚¬15M = 1500000000)
      * @return array{potential: int, low: int, high: int}
      */
     public function generatePotential(int $age, int $currentAbility, int $marketValueCents = 0): array
@@ -185,7 +185,7 @@ class PlayerDevelopmentService
      * Calculate potential bonus based on market value relative to age.
      *
      * Young players with exceptional market value have PROVEN their potential
-     * by performing at the highest level. A €120M 17-year-old has demonstrated
+     * by performing at the highest level. A â‚¬120M 17-year-old has demonstrated
      * they belong with the elite.
      *
      * @return int Bonus points to add to potential range (0-10)
@@ -199,23 +199,23 @@ class PlayerDevelopmentService
 
         // Typical market value for age (what an "average good player" is worth)
         $typicalValueForAge = match (true) {
-            $age <= 17 => 50_000_000,       // €500K
-            $age <= 19 => 200_000_000,      // €2M
-            $age <= 21 => 500_000_000,      // €5M
-            $age <= 23 => 1_000_000_000,    // €10M
-            $age <= 25 => 1_500_000_000,    // €15M
-            default => 2_000_000_000,        // €20M
+            $age <= 17 => 50_000_000,       // â‚¬500K
+            $age <= 19 => 200_000_000,      // â‚¬2M
+            $age <= 21 => 500_000_000,      // â‚¬5M
+            $age <= 23 => 1_000_000_000,    // â‚¬10M
+            $age <= 25 => 1_500_000_000,    // â‚¬15M
+            default => 2_000_000_000,        // â‚¬20M
         };
 
         $valueRatio = $marketValueCents / max(1, $typicalValueForAge);
 
         // Higher ratio = more proven potential
         return match (true) {
-            $valueRatio >= 100 => 10, // €120M 17yo (240x typical) = elite potential
-            $valueRatio >= 50 => 8,   // €50M 17yo
-            $valueRatio >= 20 => 6,   // €40M 19yo
-            $valueRatio >= 10 => 4,   // €20M 19yo
-            $valueRatio >= 5 => 2,    // €10M 17yo
+            $valueRatio >= 100 => 10, // â‚¬120M 17yo (240x typical) = elite potential
+            $valueRatio >= 50 => 8,   // â‚¬50M 17yo
+            $valueRatio >= 20 => 6,   // â‚¬40M 19yo
+            $valueRatio >= 10 => 4,   // â‚¬20M 19yo
+            $valueRatio >= 5 => 2,    // â‚¬10M 17yo
             default => 0,
         };
     }
@@ -226,7 +226,7 @@ class PlayerDevelopmentService
      * Veterans with exceptional market value have PROVEN their quality.
      * Their potential should reflect their demonstrated ceiling.
      *
-     * A €15M 36-year-old Lewandowski has proven he can perform at 90+ level.
+     * A â‚¬15M 36-year-old Lewandowski has proven he can perform at 90+ level.
      *
      * @return int Points to add to current ability for potential
      */
@@ -234,10 +234,10 @@ class PlayerDevelopmentService
     {
         // Typical market value for veterans
         $typicalValueForAge = match (true) {
-            $age <= 33 => 800_000_000,   // €8M
-            $age <= 35 => 400_000_000,   // €4M
-            $age <= 37 => 200_000_000,   // €2M
-            default => 100_000_000,       // €1M
+            $age <= 33 => 800_000_000,   // â‚¬8M
+            $age <= 35 => 400_000_000,   // â‚¬4M
+            $age <= 37 => 200_000_000,   // â‚¬2M
+            default => 100_000_000,       // â‚¬1M
         };
 
         $valueRatio = $marketValueCents / max(1, $typicalValueForAge);

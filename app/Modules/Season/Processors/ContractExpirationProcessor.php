@@ -142,17 +142,17 @@ class ContractExpirationProcessor implements SeasonProcessor
         $ability = $this->getPlayerAbility($player);
         $age = $player->age($player->game->current_date);
 
-        // Age 33+ and below team average → 70% chance
+        // Age 33+ and below team average â†’ 70% chance
         if ($age >= 33 && $ability < $teamAvg) {
             return mt_rand(1, 100) <= 70;
         }
 
-        // Age 30-32 and significantly below average → 30% chance
+        // Age 30-32 and significantly below average â†’ 30% chance
         if ($age >= 30 && $ability < $teamAvg - 10) {
             return mt_rand(1, 100) <= 30;
         }
 
-        // Baseline random chance → 5%
+        // Baseline random chance â†’ 5%
         return mt_rand(1, 100) <= 5;
     }
 

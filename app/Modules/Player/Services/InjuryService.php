@@ -127,7 +127,7 @@ class InjuryService
     ];
 
     /**
-     * Training injury type weights — skewed toward minor injuries.
+     * Training injury type weights â€” skewed toward minor injuries.
      * Severe injuries (ACL, Achilles, metatarsal) don't happen in training.
      */
     private const TRAINING_INJURY_WEIGHTS = [

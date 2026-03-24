@@ -199,7 +199,7 @@ class MatchSimulator
 
     /**
      * Pick a player based on position weights and player quality.
-     * Uses effective score (base ability × match performance) for weighting.
+     * Uses effective score (base ability Ã— match performance) for weighting.
      *
      * Players with position weight of 0 are excluded entirely (e.g., goalkeepers can't score).
      */
@@ -319,7 +319,7 @@ class MatchSimulator
             $fitness = $player->fitness;
             $morale = $player->morale;
 
-            // Weighted contribution — ability-dominant so team quality differences are wide
+            // Weighted contribution â€” ability-dominant so team quality differences are wide
             // Fitness/morale still affect matches through getMatchPerformance() modifiers
             $playerStrength = ($effectiveTechnical * 0.55) +
                               ($effectivePhysical * 0.35) +
@@ -377,7 +377,7 @@ class MatchSimulator
         // Bonus scales from 0 at 85 to ~0.25 at 100
         // Formula: (rating - 85) / 60 gives 0.0 to 0.25 range
         // Only truly elite forwards provide a noticeable boost
-        // A 94-rated Mbappé gets +0.15 expected goals
+        // A 94-rated MbappÃ© gets +0.15 expected goals
         // A 88-rated striker gets +0.05 expected goals
         return ($bestForwardScore - 85) / 60;
     }
@@ -454,8 +454,8 @@ class MatchSimulator
         $z = sqrt(-2 * log($u1)) * cos(2 * M_PI * $u2);
 
         // Standard deviation controls randomness (configurable)
-        // ~68% of performances fall within ±stdDev of baseline
-        // ~95% fall within ±2*stdDev
+        // ~68% of performances fall within Â±stdDev of baseline
+        // ~95% fall within Â±2*stdDev
         $stdDev = config('match_simulation.performance_std_dev', 0.12);
         $basePerformance = 1.0 + ($z * $stdDev);
 
@@ -534,7 +534,7 @@ class MatchSimulator
 
     /**
      * Calculate cosmetic possession percentages from tactics and team strength.
-     * Purely display — does not affect simulation outcomes.
+     * Purely display â€” does not affect simulation outcomes.
      *
      * @return array{home: int, away: int} Possession percentages (sum = 100)
      */
@@ -565,10 +565,10 @@ class MatchSimulator
             + ($cfg['mentality'][$awayMentality->value] ?? 0)
             + ($cfg['formation_midfield'][$awayFormation->value] ?? 0);
 
-        // Strength bonus: stronger team gets up to ±strength_max_bonus
+        // Strength bonus: stronger team gets up to Â±strength_max_bonus
         $maxBonus = $cfg['strength_max_bonus'] ?? 5;
         if ($homeStrength + $awayStrength > 0) {
-            $strengthShare = $homeStrength / ($homeStrength + $awayStrength); // 0.0–1.0
+            $strengthShare = $homeStrength / ($homeStrength + $awayStrength); // 0.0â€“1.0
             $homeScore += ($strengthShare - 0.5) * 2 * $maxBonus;
             $awayScore += (0.5 - $strengthShare) * 2 * $maxBonus;
         }
@@ -691,7 +691,7 @@ class MatchSimulator
         // Tactical Interactions
         $interactions = config('match_simulation.tactical_interactions', []);
 
-        // Counter-Attack vs opponent's Attacking mentality + High Line → bonus own xG
+        // Counter-Attack vs opponent's Attacking mentality + High Line â†’ bonus own xG
         $counterBonus = $interactions['counter_vs_attacking_high_line'] ?? 1.0;
         if ($homePlayingStyle === PlayingStyle::COUNTER_ATTACK && $awayMentality === Mentality::ATTACKING && $awayDefLine === DefensiveLineHeight::HIGH_LINE) {
             $homeXG *= $counterBonus;
@@ -700,7 +700,7 @@ class MatchSimulator
             $awayXG *= $counterBonus;
         }
 
-        // Possession disrupted by opponent's High Press → penalty to own xG
+        // Possession disrupted by opponent's High Press â†’ penalty to own xG
         $possessionPenalty = $interactions['possession_disrupted_by_high_press'] ?? 1.0;
         if ($homePlayingStyle === PlayingStyle::POSSESSION && $awayPressing === PressingIntensity::HIGH_PRESS) {
             $homeXG *= $possessionPenalty;
@@ -709,7 +709,7 @@ class MatchSimulator
             $awayXG *= $possessionPenalty;
         }
 
-        // Direct bypasses opponent's High Press → bonus to own xG
+        // Direct bypasses opponent's High Press â†’ bonus to own xG
         $directBonus = $interactions['direct_bypasses_high_press'] ?? 1.0;
         if ($homePlayingStyle === PlayingStyle::DIRECT && $awayPressing === PressingIntensity::HIGH_PRESS) {
             $homeXG *= $directBonus;
@@ -871,7 +871,7 @@ class MatchSimulator
                 $awayScore = $this->poissonRandom($awayExpectedGoals);
             }
 
-            // Check for red cards — if found, split goal generation into two periods
+            // Check for red cards â€” if found, split goal generation into two periods
             $homeRedCard = $homeCardEvents->first(fn (MatchEventData $e) => $e->type === 'red_card');
             $awayRedCard = $awayCardEvents->first(fn (MatchEventData $e) => $e->type === 'red_card');
 
@@ -931,8 +931,8 @@ class MatchSimulator
     /**
      * Re-generate goals when a red card splits the match into two periods.
      *
-     * Period 1: [fromMinute+1, splitMinute] — full-strength teams.
-     * Period 2: [splitMinute+1, 93] — red-carded player removed, strength
+     * Period 1: [fromMinute+1, splitMinute] â€” full-strength teams.
+     * Period 2: [splitMinute+1, 93] â€” red-carded player removed, strength
      * recalculated, and man-down xG modifiers applied.
      *
      * @return array{0: int, 1: int, 2: Collection<MatchEventData>} [homeScore, awayScore, goalEvents]
@@ -1369,7 +1369,7 @@ class MatchSimulator
         $etMinutesRemaining = max(0, 120 - $fromMinute);
         $etFraction = $etMinutesRemaining / 90.0;
 
-        // Ratio-based xG — energy already accounts for fatigue
+        // Ratio-based xG â€” energy already accounts for fatigue
         $homeStrength = $this->calculateTeamStrength($homePlayers, $fromMinute, $homeEntryMinutes, $homeTacticalDrain);
         $awayStrength = $this->calculateTeamStrength($awayPlayers, $fromMinute, $awayEntryMinutes, $awayTacticalDrain);
 
@@ -1464,7 +1464,7 @@ class MatchSimulator
         $homeKickers = $this->buildKickerQueue($homePlayers, $homeOrder);
         $awayKickers = $this->buildKickerQueue($awayPlayers, $awayOrder);
 
-        // Lower-division cup teams may have no GamePlayer records — coin-flip the result
+        // Lower-division cup teams may have no GamePlayer records â€” coin-flip the result
         if (empty($homeKickers) || empty($awayKickers)) {
             $homeWins = (bool) random_int(0, 1);
 
@@ -1475,7 +1475,7 @@ class MatchSimulator
             ];
         }
 
-        // Extract goalkeepers — home kickers face the away GK and vice versa
+        // Extract goalkeepers â€” home kickers face the away GK and vice versa
         $homeGk = $homePlayers->firstWhere('position', 'Goalkeeper');
         $awayGk = $awayPlayers->firstWhere('position', 'Goalkeeper');
 
@@ -1559,7 +1559,7 @@ class MatchSimulator
             $homeScore = collect($kicks)->where('side', 'home')->where('scored', true)->count();
             $awayScore = collect($kicks)->where('side', 'away')->where('scored', true)->count();
 
-            // Edge case: still tied if earlier rounds compensated — flip one loser scored kick
+            // Edge case: still tied if earlier rounds compensated â€” flip one loser scored kick
             if ($homeScore === $awayScore) {
                 foreach ($kicks as $idx => $kick) {
                     if ($kick['side'] === $loserSide && $kick['scored'] && $kick['round'] < 5) {

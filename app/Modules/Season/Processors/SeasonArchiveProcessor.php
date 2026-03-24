@@ -107,7 +107,7 @@ class SeasonArchiveProcessor implements SeasonProcessor
             return;
         }
 
-        // UEL wasn't played by the user — pick a random team from UEL entries
+        // UEL wasn't played by the user â€” pick a random team from UEL entries
         $uelEntry = CompetitionEntry::where('game_id', $game->id)
             ->where('competition_id', 'UEL')
             ->inRandomOrder()

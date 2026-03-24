@@ -13,7 +13,7 @@ use App\Models\GameStanding;
  *
  * 48 teams, 12 groups of 4:
  * - Group stage: 3 matchdays, top 2 per group + 8 best 3rd-place teams advance (32 total)
- * - Round of 32 → Round of 16 → Quarter-finals → Semi-finals → Third place → Final
+ * - Round of 32 â†’ Round of 16 â†’ Quarter-finals â†’ Semi-finals â†’ Third place â†’ Final
  *
  * Uses a fixed bracket from bracket.json (no open draw).
  * Third-place team assignment uses the FIFA deterministic lookup table.
@@ -113,7 +113,7 @@ class WorldCupKnockoutGenerator
         $bracket = $this->loadBracket();
         $r32Matches = $bracket['round_of_32'] ?? [];
 
-        // Build group standings lookup: group_label + position → team_id
+        // Build group standings lookup: group_label + position â†’ team_id
         $standings = GameStanding::where('game_id', $game->id)
             ->where('competition_id', $competitionId)
             ->whereNotNull('group_label')
@@ -153,7 +153,7 @@ class WorldCupKnockoutGenerator
             return $positionMap[$m[1] . $m[2]] ?? null;
         }
 
-        // Third-place slot: "3ABCDF" — find which bracket match uses this slot label
+        // Third-place slot: "3ABCDF" â€” find which bracket match uses this slot label
         if (str_starts_with($slot, '3') && strlen($slot) > 2) {
             $bracket = $this->loadBracket();
             foreach ($bracket['round_of_32'] as $entry) {
@@ -169,7 +169,7 @@ class WorldCupKnockoutGenerator
     /**
      * Determine which 8 third-place teams qualify and assign them to bracket slots.
      *
-     * @return array<int, string> match_number → team_id
+     * @return array<int, string> match_number â†’ team_id
      */
     private function resolveThirdPlaceAssignment(string $gameId, string $competitionId): array
     {

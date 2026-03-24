@@ -38,10 +38,10 @@
             @if(config('beta.enabled'))
                 <div class="bg-amber-500 text-amber-950 text-center text-xs py-1.5 px-4">
                     <span class="font-semibold">{{ __('beta.badge') }}</span>
-                    —
+                    â€”
                     {{ __('beta.banner_warning') }}
                     @if(config('beta.feedback_url'))
-                        · <a href="{{ config('beta.feedback_url') }}" target="_blank" class="underline font-semibold hover:text-amber-300">{{ __('beta.send_feedback') }}</a>
+                        Â· <a href="{{ config('beta.feedback_url') }}" target="_blank" class="underline font-semibold hover:text-amber-300">{{ __('beta.send_feedback') }}</a>
                     @endif
                 </div>
             @endif
@@ -67,10 +67,10 @@
                             {{-- Logo + copyright --}}
                             <div class="flex flex-col items-center md:items-start gap-3">
                                 <div class="-skew-x-12 bg-text-faint/15 px-3 py-0.5">
-                                    <span class="skew-x-12 inline-block text-lg font-extrabold text-text-faint tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">Virtua FC</span>
+                                    <span class="skew-x-12 inline-block text-lg font-extrabold text-text-faint tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">SheManager</span>
                                 </div>
                                 <p class="text-xs text-text-faint">
-                                    &copy; {{ date('Y') }} Pablo Román &middot; <a href="https://github.com/pabloroman/virtua-fc" target="_blank" class="hover:text-text-muted transition-colors">Proyecto Open Source</a> &middot; <a href="{{ route('legal') }}" class="hover:text-text-muted transition-colors">Aviso Legal</a>
+                                    &copy; {{ date('Y') }} Pablo RomÃ¡n &middot; <a href="https://github.com/pabloroman/virtua-fc" target="_blank" class="hover:text-text-muted transition-colors">Proyecto Open Source</a> &middot; <a href="{{ route('legal') }}" class="hover:text-text-muted transition-colors">Aviso Legal</a>
                                 </p>
                             </div>
 

@@ -76,7 +76,7 @@
                             {{-- Drop-off --}}
                             <div class="w-20 text-right hidden md:block">
                                 @if($i > 0 && $step['drop_off'] > 0)
-                                    <span class="text-xs font-medium {{ $step['drop_off'] >= 50 ? 'text-accent-red' : ($step['drop_off'] >= 25 ? 'text-accent-gold' : 'text-text-muted') }}">
+                                    <span class="text-xs font-medium {{ $step['drop_off'] >= 50 ? 'text-accent-primary' : ($step['drop_off'] >= 25 ? 'text-accent-gold' : 'text-text-muted') }}">
                                         -{{ $step['drop_off'] }}%
                                     </span>
                                 @endif
@@ -95,7 +95,7 @@
                     @if($i > 0 && $step['drop_off'] > 0)
                         <div class="flex items-center justify-between">
                             <span class="text-xs text-text-secondary truncate">{{ $step['label'] }}</span>
-                            <span class="text-xs font-medium {{ $step['drop_off'] >= 50 ? 'text-accent-red' : ($step['drop_off'] >= 25 ? 'text-accent-gold' : 'text-text-muted') }}">
+                            <span class="text-xs font-medium {{ $step['drop_off'] >= 50 ? 'text-accent-primary' : ($step['drop_off'] >= 25 ? 'text-accent-gold' : 'text-text-muted') }}">
                                 -{{ $step['drop_off'] }}%
                             </span>
                         </div>

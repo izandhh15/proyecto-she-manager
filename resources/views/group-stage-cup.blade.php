@@ -26,7 +26,7 @@
                 @if($knockoutStatus === 'champion')
                     <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-gold/20 text-accent-gold">{{ __('cup.champion') }}</span>
                 @elseif($knockoutStatus === 'eliminated')
-                    <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-red/20 text-accent-red">{{ __('cup.eliminated') }}</span>
+                    <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-primary/20 text-accent-primary">{{ __('cup.eliminated') }}</span>
                 @elseif($knockoutStatus === 'active')
                     <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-accent-green/20 text-accent-green">{{ __($playerTie?->firstLegMatch?->round_name ?? '') }}</span>
                 @elseif($knockoutStatus === 'qualified')
@@ -40,12 +40,12 @@
         {{-- Tab Navigation --}}
         <div class="flex gap-1 border-b border-border-strong mb-6 overflow-x-auto scrollbar-hide">
             <x-tab-button @click="tab = 'groups'"
-                    x-bind:class="tab === 'groups' ? 'border-b-2 border-red-500 text-accent-red font-semibold' : 'text-text-muted hover:text-text-body border-transparent'"
+                    x-bind:class="tab === 'groups' ? 'border-b-2 border-red-500 text-accent-primary font-semibold' : 'text-text-muted hover:text-text-body border-transparent'"
                     class="shrink-0 min-h-[44px]">
                 {{ __('game.group_stage') }}
             </x-tab-button>
             <x-tab-button @click="tab = 'knockout'"
-                    x-bind:class="tab === 'knockout' ? 'border-b-2 border-red-500 text-accent-red font-semibold' : 'text-text-muted hover:text-text-body border-transparent'"
+                    x-bind:class="tab === 'knockout' ? 'border-b-2 border-red-500 text-accent-primary font-semibold' : 'text-text-muted hover:text-text-body border-transparent'"
                     class="shrink-0 min-h-[44px] gap-2">
                 {{ __('game.knockout_phase') }}
                 @if(!$groupStageComplete)

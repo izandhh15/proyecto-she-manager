@@ -46,7 +46,7 @@
                             <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center
                                 @if($result === 'W') bg-accent-green text-white
                                 @elseif($result === 'D') bg-slate-500 text-white
-                                @else bg-accent-red text-white @endif">
+                                @else bg-accent-primary text-white @endif">
                                 {{ $result }}
                             </span>
                         @empty
@@ -77,7 +77,7 @@
                             <span class="w-5 h-5 rounded-sm text-[10px] font-bold flex items-center justify-center
                                 @if($result === 'W') bg-accent-green text-white
                                 @elseif($result === 'D') bg-slate-500 text-white
-                                @else bg-accent-red text-white @endif">
+                                @else bg-accent-primary text-white @endif">
                                 {{ $result }}
                             </span>
                         @empty

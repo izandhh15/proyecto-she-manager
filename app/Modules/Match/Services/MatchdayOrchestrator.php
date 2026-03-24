@@ -78,7 +78,7 @@ class MatchdayOrchestrator
                     return MatchdayAdvanceResult::liveMatch($result['playerMatch']->id);
                 }
 
-                // AI-only batch — check if the player still has upcoming matches
+                // AI-only batch â€” check if the player still has upcoming matches
                 $playerHasMoreMatches = GameMatch::where('game_id', $game->id)
                     ->where('played', false)
                     ->where(fn ($q) => $q->where('home_team_id', $game->team_id)
@@ -104,7 +104,7 @@ class MatchdayOrchestrator
                     return MatchdayAdvanceResult::done();
                 }
 
-                // Player has matches coming but not in this batch — continue silently
+                // Player has matches coming but not in this batch â€” continue silently
                 $game->refresh()->setRelations([]);
             }
 
@@ -176,7 +176,7 @@ class MatchdayOrchestrator
         // --- Simulate matches ---
         $matchResults = $this->simulateMatches($matches, $game, $allPlayers);
 
-        // Identify user's match — its score-dependent effects are deferred to finalization
+        // Identify user's match â€” its score-dependent effects are deferred to finalization
         $playerMatch = $matches->first(fn ($m) => $m->involvesTeam($game->team_id));
         $deferMatchId = $playerMatch?->id;
 
@@ -222,7 +222,7 @@ class MatchdayOrchestrator
     private function autoSimulateRemainingBatches(Game $game): void
     {
         while ($nextBatch = $this->matchdayService->getNextMatchBatch($game)) {
-            // Stop if this batch involves the player — they need to play it
+            // Stop if this batch involves the player â€” they need to play it
             $involvesPlayer = $nextBatch['matches']->contains(
                 fn ($m) => $m->involvesTeam($game->team_id)
             );
@@ -251,7 +251,7 @@ class MatchdayOrchestrator
         $homePlayers = $this->getLineupPlayers($match, $allPlayers, 'home');
         $awayPlayers = $this->getLineupPlayers($match, $allPlayers, 'away');
 
-        // Don't pass bench players for the user's team — they make their own
+        // Don't pass bench players for the user's team â€” they make their own
         // substitution decisions during the live match. The simulator already
         // guards with `$benchPlayers !== null`, so injury events are still
         // generated but no auto-substitution follows.
@@ -531,13 +531,13 @@ class MatchdayOrchestrator
                 continue;
             }
 
-            // Defer notification if a match is pending finalization — standings
+            // Defer notification if a match is pending finalization â€” standings
             // are incomplete. The notification will be sent after finalization.
             if ($game->hasPendingFinalizationForCompetition($competitionId)) {
                 continue;
             }
 
-            // League phase just completed — check player's team position
+            // League phase just completed â€” check player's team position
             $standing = GameStanding::where('game_id', $game->id)
                 ->where('competition_id', $competitionId)
                 ->where('team_id', $game->team_id)
@@ -598,13 +598,13 @@ class MatchdayOrchestrator
                 continue;
             }
 
-            // Defer notification if a match is pending finalization — standings
+            // Defer notification if a match is pending finalization â€” standings
             // are incomplete. The notification will be sent after finalization.
             if ($game->hasPendingFinalizationForCompetition($competitionId)) {
                 continue;
             }
 
-            // Regular season just completed — check player's team position
+            // Regular season just completed â€” check player's team position
             $standing = GameStanding::where('game_id', $game->id)
                 ->where('competition_id', $competitionId)
                 ->where('team_id', $game->team_id)
@@ -660,13 +660,13 @@ class MatchdayOrchestrator
                 continue;
             }
 
-            // Defer notification if a match is pending finalization — standings
+            // Defer notification if a match is pending finalization â€” standings
             // are incomplete. The notification will be sent after finalization.
             if ($game->hasPendingFinalizationForCompetition($competitionId)) {
                 continue;
             }
 
-            // Group stage just completed — check player's team position
+            // Group stage just completed â€” check player's team position
             $standing = GameStanding::where('game_id', $game->id)
                 ->where('competition_id', $competitionId)
                 ->where('team_id', $game->team_id)

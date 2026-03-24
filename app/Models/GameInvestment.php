@@ -75,28 +75,28 @@ class GameInvestment extends Model
      */
     public const TIER_THRESHOLDS = [
         'youth_academy' => [
-            1 => 50_000_000,      // €500K
-            2 => 200_000_000,     // €2M
-            3 => 800_000_000,     // €8M
-            4 => 2_000_000_000,   // €20M
+            1 => 50_000_000,      // â‚¬500K
+            2 => 200_000_000,     // â‚¬2M
+            3 => 800_000_000,     // â‚¬8M
+            4 => 2_000_000_000,   // â‚¬20M
         ],
         'medical' => [
-            1 => 30_000_000,      // €300K
-            2 => 150_000_000,     // €1.5M
-            3 => 500_000_000,     // €5M
-            4 => 1_000_000_000,   // €10M
+            1 => 30_000_000,      // â‚¬300K
+            2 => 150_000_000,     // â‚¬1.5M
+            3 => 500_000_000,     // â‚¬5M
+            4 => 1_000_000_000,   // â‚¬10M
         ],
         'scouting' => [
-            1 => 20_000_000,      // €200K
-            2 => 100_000_000,     // €1M
-            3 => 400_000_000,     // €4M
-            4 => 1_000_000_000,   // €10M
+            1 => 20_000_000,      // â‚¬200K
+            2 => 100_000_000,     // â‚¬1M
+            3 => 400_000_000,     // â‚¬4M
+            4 => 1_000_000_000,   // â‚¬10M
         ],
         'facilities' => [
-            1 => 50_000_000,      // €500K
-            2 => 300_000_000,     // €3M
-            3 => 1_000_000_000,   // €10M
-            4 => 2_500_000_000,   // €25M
+            1 => 50_000_000,      // â‚¬500K
+            2 => 300_000_000,     // â‚¬3M
+            3 => 1_000_000_000,   // â‚¬10M
+            4 => 2_500_000_000,   // â‚¬25M
         ],
     ];
 
@@ -114,16 +114,16 @@ class GameInvestment extends Model
     /**
      * Minimum required investment for professional leagues (Tier 1 in all areas).
      */
-    public const MINIMUM_TOTAL_INVESTMENT = 150_000_000; // €1.5M in cents
+    public const MINIMUM_TOTAL_INVESTMENT = 150_000_000; // â‚¬1.5M in cents
 
     /**
      * Maximum investment ceilings per area (Tier 4 threshold - no benefit beyond this).
      */
     public const INVESTMENT_CEILINGS = [
-        'youth_academy' => 2_000_000_000,   // €20M
-        'medical' => 1_000_000_000,         // €10M
-        'scouting' => 1_000_000_000,        // €10M
-        'facilities' => 2_500_000_000,      // €25M
+        'youth_academy' => 2_000_000_000,   // â‚¬20M
+        'medical' => 1_000_000_000,         // â‚¬10M
+        'scouting' => 1_000_000_000,        // â‚¬10M
+        'facilities' => 2_500_000_000,      // â‚¬25M
     ];
 
     /**
@@ -219,7 +219,7 @@ class GameInvestment extends Model
                 return $tiers;
             }
 
-            // All already at minimum — can't reduce further
+            // All already at minimum â€” can't reduce further
             if (max($tiers) <= 1) {
                 return $tiers;
             }

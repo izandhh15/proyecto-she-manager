@@ -201,7 +201,7 @@ class ReputationUpdateProcessor implements SeasonProcessor
                 priority: $improved
                     ? GameNotification::PRIORITY_MILESTONE
                     : GameNotification::PRIORITY_WARNING,
-                icon: $improved ? '📈' : '📉',
+                icon: $improved ? 'ðŸ“ˆ' : 'ðŸ“‰',
             );
     }
 }

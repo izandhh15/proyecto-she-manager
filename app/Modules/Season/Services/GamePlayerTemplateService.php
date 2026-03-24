@@ -32,7 +32,7 @@ class GamePlayerTemplateService
 
     /**
      * Generate pre-computed game_player_templates for a season and country.
-     * Additive — call clearTemplates() first if a fresh start is needed.
+     * Additive â€” call clearTemplates() first if a fresh start is needed.
      *
      * @return int Number of template rows generated
      */
@@ -77,7 +77,7 @@ class GamePlayerTemplateService
             }
         }
 
-        // Swiss format gap teams (UCL, UEL — teams not already covered)
+        // Swiss format gap teams (UCL, UEL â€” teams not already covered)
         $swissIds = $countryConfig->swissFormatCompetitionIds($countryCode);
         foreach ($swissIds as $competitionId) {
             $rows = $this->generateForSwissGapTeams($competitionId, $season, $allTeams, $allPlayers, $processedTeamIds, $processedPlayerIds);
@@ -166,7 +166,7 @@ class GamePlayerTemplateService
             return [];
         }
 
-        $teamsData = json_decode(file_get_contents($teamsFilePath), true);
+        $teamsData = ExternalData::decodeJsonFile($teamsFilePath);
         $clubs = $teamsData['clubs'] ?? [];
         $minimumWage = $this->contractService->getMinimumWageForCompetition($competitionId);
         $rows = [];
@@ -261,7 +261,7 @@ class GamePlayerTemplateService
 
     private function loadClubsFromTeamsJson(string $teamsFilePath): array
     {
-        $data = json_decode(file_get_contents($teamsFilePath), true);
+        $data = ExternalData::decodeJsonFile($teamsFilePath);
         return $data['clubs'] ?? [];
     }
 
@@ -270,8 +270,9 @@ class GamePlayerTemplateService
         $clubs = [];
 
         foreach (glob("{$basePath}/*.json") as $filePath) {
-            $data = json_decode(file_get_contents($filePath), true);
-            if (!$data) {
+            try {
+                $data = ExternalData::decodeJsonFile($filePath);
+            } catch (\RuntimeException) {
                 continue;
             }
 

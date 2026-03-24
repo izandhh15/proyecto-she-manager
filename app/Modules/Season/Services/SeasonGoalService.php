@@ -111,7 +111,7 @@ class SeasonGoalService
             $grade = 'disaster';
         }
 
-        // Promotion is a major achievement — enforce a minimum grade floor
+        // Promotion is a major achievement â€” enforce a minimum grade floor
         if ($promoted) {
             $minGrade = match ($goal) {
                 Game::GOAL_PROMOTION => 'met',

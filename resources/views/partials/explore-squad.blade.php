@@ -57,7 +57,7 @@
                         <span class="mx-1">&middot;</span>
                         <span>{{ \App\Support\Money::format($gp->market_value_cents) }}</span>
                         <span class="mx-1">&middot;</span>
-                        <span>{{ $gp->contract_until?->year ?? '—' }}</span>
+                        <span>{{ $gp->contract_until?->year ?? 'â€”' }}</span>
                     </div>
                 </td>
                 {{-- Age --}}
@@ -65,7 +65,7 @@
                 {{-- Market value --}}
                 <td class="py-2.5 pr-3 hidden md:table-cell text-text-secondary tabular-nums">{{ \App\Support\Money::format($gp->market_value_cents) }}</td>
                 {{-- Contract --}}
-                <td class="py-2.5 pr-3 hidden md:table-cell text-center text-text-muted tabular-nums">{{ $gp->contract_until?->year ?? '—' }}</td>
+                <td class="py-2.5 pr-3 hidden md:table-cell text-center text-text-muted tabular-nums">{{ $gp->contract_until?->year ?? 'â€”' }}</td>
                 {{-- Shortlist star --}}
                 <td class="py-2.5 pr-4 text-center"
                     x-data="{

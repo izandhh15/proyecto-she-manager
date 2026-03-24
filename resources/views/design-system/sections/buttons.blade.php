@@ -564,7 +564,7 @@
                         <td class="py-2.5 px-4"><code class="text-[10px] text-accent-blue">danger</code></td>
                         <td class="py-2.5 px-4 text-text-body">Destructive</td>
                         <td class="py-2.5 px-4 hidden md:table-cell">Delete account, Release player</td>
-                        <td class="py-2.5 px-4"><span class="inline-block w-16 h-6 rounded-sm bg-accent-red"></span></td>
+                        <td class="py-2.5 px-4"><span class="inline-block w-16 h-6 rounded-sm bg-accent-primary"></span></td>
                     </tr>
                     <tr class="border-b border-border-default">
                         <td class="py-2.5 px-4"><code class="text-[10px] text-accent-blue">secondary</code></td>

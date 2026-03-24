@@ -102,12 +102,12 @@ class PromotionRelegationProcessor implements SeasonProcessor
         $relegatedIds = array_column($relegated, 'teamId');
         $playerTeamId = Game::where('id', $gameId)->value('team_id');
 
-        // Move relegated teams: top → bottom
+        // Move relegated teams: top â†’ bottom
         foreach ($relegatedIds as $teamId) {
             $this->moveTeam($teamId, $topDivision, $bottomDivision, $gameId, $newSeason, $playerTeamId);
         }
 
-        // Move promoted teams: bottom → top
+        // Move promoted teams: bottom â†’ top
         foreach ($promotedIds as $teamId) {
             $this->moveTeam($teamId, $bottomDivision, $topDivision, $gameId, $newSeason, $playerTeamId);
         }
@@ -144,7 +144,7 @@ class PromotionRelegationProcessor implements SeasonProcessor
         );
 
         // Update game_standings.
-        // Delete from source (if exists — simulated leagues have no standings).
+        // Delete from source (if exists â€” simulated leagues have no standings).
         GameStanding::where('game_id', $gameId)
             ->where('competition_id', $fromDivision)
             ->where('team_id', $teamId)
@@ -157,7 +157,7 @@ class PromotionRelegationProcessor implements SeasonProcessor
         $isPlayerTeam = $teamId === $playerTeamId;
 
         if ($targetHasStandings) {
-            // Target division already has real standings — just add this team
+            // Target division already has real standings â€” just add this team
             GameStanding::firstOrCreate([
                 'game_id' => $gameId,
                 'competition_id' => $toDivision,

@@ -47,30 +47,32 @@ $submitLabel = $submitLabel ?? __('finances.confirm_budget_allocation');
     },
 
     formatMoney(cents) {
-        const euros = cents / 100;
-        if (euros >= 1000000000) return '€' + (euros / 1000000000).toFixed(1) + 'B';
-        if (euros >= 1000000) return '€' + (euros / 1000000).toFixed(1) + 'M';
-        if (euros >= 1000) return '€' + (euros / 1000).toFixed(0) + 'K';
-        return '€' + euros.toFixed(0);
+        const sign = cents < 0 ? '-' : '';
+        const euros = Math.abs(cents) / 100;
+        const compact = (value) => Number.isInteger(value) ? String(value) : value.toFixed(1).replace('.', ',');
+
+        if (euros >= 1000000) return `${sign}€ ${compact(euros / 1000000)}M`;
+        if (euros >= 1000) return `${sign}€ ${Math.round(euros / 1000)}K`;
+        return `${sign}€ ${Math.round(euros).toLocaleString('es-ES')}`;
     },
 
     getTierColor(tier) {
         const t = parseInt(tier);
-        const colors = { 0: 'text-accent-red', 1: 'text-accent-gold', 2: 'text-accent-green', 3: 'text-accent-blue', 4: 'text-purple-400' };
+        const colors = { 0: 'text-accent-primary', 1: 'text-accent-gold', 2: 'text-accent-green', 3: 'text-accent-blue', 4: 'text-purple-400' };
         return colors[t] || 'text-text-secondary';
     }
 }">
 
     {{-- Allocation Summary --}}
     <div class="mb-6 p-3 rounded-lg flex items-center justify-between text-sm transition-colors duration-200"
-         :class="exceedsBudget ? 'bg-accent-red/10 ring-1 ring-accent-red/20' : 'bg-surface-700/50'">
+         :class="exceedsBudget ? 'bg-accent-primary/10 ring-1 ring-accent-primary/20' : 'bg-surface-700/50'">
         <div class="flex items-center gap-2">
             <span class="text-text-muted">{{ __('finances.infrastructure') }}</span>
-            <span class="font-semibold" :class="exceedsBudget ? 'text-accent-red' : 'text-text-primary'" x-text="formatMoney(infrastructureTotal)"></span>
+            <span class="font-semibold" :class="exceedsBudget ? 'text-accent-primary' : 'text-text-primary'" x-text="formatMoney(infrastructureTotal)"></span>
         </div>
         <div class="flex items-center gap-2">
             <span class="text-text-muted">{{ __('finances.available_remaining') }}</span>
-            <span class="font-semibold" :class="exceedsBudget ? 'text-accent-red' : 'text-accent-green'" x-text="exceedsBudget ? '-' + formatMoney(infrastructureTotal - availableSurplus) : formatMoney(availableSurplus - infrastructureTotal)"></span>
+            <span class="font-semibold" :class="exceedsBudget ? 'text-accent-primary' : 'text-accent-green'" x-text="exceedsBudget ? '-' + formatMoney(infrastructureTotal - availableSurplus) : formatMoney(availableSurplus - infrastructureTotal)"></span>
         </div>
     </div>
 
@@ -205,10 +207,10 @@ $submitLabel = $submitLabel ?? __('finances.confirm_budget_allocation');
         </div>
 
         {{-- Warnings --}}
-        <div x-show="exceedsBudget" x-cloak class="mb-6 p-3 bg-accent-red/10 border border-accent-red/20 rounded-lg text-accent-red text-sm">
+        <div x-show="exceedsBudget" x-cloak class="mb-6 p-3 bg-accent-primary/10 border border-accent-primary/20 rounded-lg text-accent-primary text-sm">
             {{ __('finances.budget_exceeds_surplus') }}
         </div>
-        <div x-show="!meetsMinimumRequirements && !exceedsBudget" x-cloak class="mb-6 p-3 bg-accent-red/10 border border-accent-red/20 rounded-lg text-accent-red text-sm">
+        <div x-show="!meetsMinimumRequirements && !exceedsBudget" x-cloak class="mb-6 p-3 bg-accent-primary/10 border border-accent-primary/20 rounded-lg text-accent-primary text-sm">
             {{ __('finances.tier_minimum_warning') }}
         </div>
 

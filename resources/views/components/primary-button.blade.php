@@ -3,7 +3,7 @@
 @php
 $colors = [
     'blue' => 'bg-accent-blue hover:bg-blue-600 focus:ring-accent-blue active:bg-blue-700',
-    'red' => 'bg-accent-red hover:bg-red-500 focus:ring-accent-red active:bg-red-700',
+    'red' => 'bg-accent-primary hover:bg-red-500 focus:ring-accent-primary active:bg-red-700',
     'green' => 'bg-accent-green hover:bg-green-600 focus:ring-accent-green active:bg-green-700',
     'amber' => 'bg-accent-gold hover:bg-amber-600 focus:ring-accent-gold active:bg-amber-700',
     'sky' => 'bg-sky-600 hover:bg-sky-500 focus:ring-sky-500 active:bg-sky-700',
