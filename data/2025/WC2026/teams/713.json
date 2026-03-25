@@ -1,0 +1,404 @@
+{
+    "id": "713",
+    "externalId": "713",
+    "transfermarktId": "713",
+    "name": "Portugal",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "10583",
+            "externalId": "10583",
+            "name": "Patrícia Morais",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1992-06-17",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "35k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "72373",
+            "externalId": "72373",
+            "name": "Sierra Cota-Yarde",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Portugal",
+                "Canada"
+            ],
+            "dateOfBirth": "2003-07-04",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "32446",
+            "externalId": "32446",
+            "name": "Inês Pereira",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1999-05-26",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "100k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "66887",
+            "externalId": "66887",
+            "name": "Érica Cancelinha",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2006-12-26",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "22210",
+            "externalId": "22210",
+            "name": "Diana Gomes",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1998-07-26",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "60k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "61020",
+            "externalId": "61020",
+            "name": "Inês Meninas",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2006-05-16",
+            "foot": "left",
+            "height": "Inês Meninas Valadares Gaia FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "43650",
+            "externalId": "43650",
+            "name": "Carolina Correia",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2002-04-03",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "42246",
+            "externalId": "42246",
+            "name": "Catarina Amado",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1999-07-21",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "55k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "40315",
+            "externalId": "40315",
+            "name": "Bárbara Lopes",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2002-01-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "3864",
+            "externalId": "3864",
+            "name": "Carole Costa",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1990-05-03",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40309",
+            "externalId": "40309",
+            "name": "Maria Alagoa",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2003-04-21",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "77693",
+            "externalId": "77693",
+            "name": "Nadia Bravo",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2004-11-29",
+            "foot": "right",
+            "height": "Nadia Bravo SC Braga, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51444",
+            "externalId": "51444",
+            "name": "Raquel Ferreira",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2002-02-07",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "40305",
+            "externalId": "40305",
+            "name": "Andreia Jacinto",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2002-06-08",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "450k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "39013",
+            "externalId": "39013",
+            "name": "Pauleta",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Portugal",
+                "Spain"
+            ],
+            "dateOfBirth": "1997-08-11",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "40k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "38997",
+            "externalId": "38997",
+            "name": "Andreia Faria",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2000-04-19",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30583",
+            "externalId": "30583",
+            "name": "Tatiana Pinto",
+            "position": "Attacking Midfield",
+            "age": 31,
+            "nationality": [
+                "Portugal",
+                "Brazil"
+            ],
+            "dateOfBirth": "1994-03-28",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "125k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "20206",
+            "externalId": "20206",
+            "name": "Fátima Pinto",
+            "position": "Defensive Midfield",
+            "age": 30,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1996-01-16",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "6949",
+            "externalId": "6949",
+            "name": "Dolores Silva",
+            "position": "Defensive Midfield",
+            "age": 34,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1991-08-07",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "35k",
+            "contract": null
+        },
+        {
+            "id": "40081",
+            "externalId": "40081",
+            "name": "Telma Encarnação",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2001-10-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "80k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "42245",
+            "externalId": "42245",
+            "name": "Lúcia Alves",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1997-10-22",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "55k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "43269",
+            "externalId": "43269",
+            "name": "Beatriz Fonseca",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1998-09-15",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "55k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "32440",
+            "externalId": "32440",
+            "name": "Ana Capeta",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "1997-12-22",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64639",
+            "externalId": "64639",
+            "name": "Maísa Correia",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Portugal",
+                "Cape Verde"
+            ],
+            "dateOfBirth": "2006-10-11",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "67066",
+            "externalId": "67066",
+            "name": "Carolina Santiago",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Portugal"
+            ],
+            "dateOfBirth": "2006-08-31",
+            "foot": "right",
+            "height": "Carolina Santiago Sporting CP, Strikerm",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "19097",
+            "externalId": "19097",
+            "name": "Jéssica Silva",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Portugal",
+                "Angola"
+            ],
+            "dateOfBirth": "1994-12-11",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

@@ -1,0 +1,408 @@
+{
+    "id": "643",
+    "externalId": "643",
+    "transfermarktId": "643",
+    "name": "Croatia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "97089",
+            "externalId": "97089",
+            "name": "Ana Ristovski",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2008-01-20",
+            "foot": "right",
+            "height": "Ana Ristovski ŽNK Hajduk Split, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10811",
+            "externalId": "10811",
+            "name": "Doris Bačić",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Croatia",
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "1995-02-23",
+            "foot": "right",
+            "height": "1,85m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74979",
+            "externalId": "74979",
+            "name": "Carlotta Sesjak",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Croatia",
+                "Germany"
+            ],
+            "dateOfBirth": "2006-04-24",
+            "foot": "right",
+            "height": "Carlotta Sesjak 1. FFC Recklinghausen, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10719",
+            "externalId": "10719",
+            "name": "Kristina Nevrkla",
+            "position": "Centre-Back",
+            "age": 35,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "1990-07-05",
+            "foot": "left",
+            "height": "Kristina Nevrkla ŽNK LIO, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "95152",
+            "externalId": "95152",
+            "name": "Sara Herceg",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2005-09-13",
+            "foot": "left",
+            "height": "Sara Herceg ŽNK Hajduk Split, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18328",
+            "externalId": "18328",
+            "name": "Ana Jelenčić",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "1994-06-08",
+            "foot": "left",
+            "height": "Ana Jelenčić Servette FC Chênois Féinin, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28935",
+            "externalId": "28935",
+            "name": "Maria Kunštek",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "1998-11-06",
+            "foot": "left",
+            "height": "1,76m",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "63687",
+            "externalId": "63687",
+            "name": "Tea Vračević",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2006-04-25",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "44366",
+            "externalId": "44366",
+            "name": "Janja Čanjevac",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2000-11-14",
+            "foot": "left",
+            "height": "Janja Čanjevac ŽNK Hajduk Split, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63684",
+            "externalId": "63684",
+            "name": "Nina Varga",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2005-08-20",
+            "foot": "left",
+            "height": "Nina Varga ŽNK Međiurje-Čakovec, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "49979",
+            "externalId": "49979",
+            "name": "Lucia Orkić",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Croatia",
+                "Austria"
+            ],
+            "dateOfBirth": "2005-06-22",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "61998",
+            "externalId": "61998",
+            "name": "Barbara Živković",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2005-02-15",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "7565",
+            "externalId": "7565",
+            "name": "Maja Joščak",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "1990-08-04",
+            "foot": "right",
+            "height": "Maja Joščak ŽNK Agra, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117225",
+            "externalId": "117225",
+            "name": "Erika Zschuppe",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Croatia",
+                "United States"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Erika Zschuppe vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84182",
+            "externalId": "84182",
+            "name": "Lea Kolčić",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2006-04-29",
+            "foot": "right",
+            "height": "Lea Kolčić ŽNK Agra, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63688",
+            "externalId": "63688",
+            "name": "Lucija Vunić",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2006-02-18",
+            "foot": "right",
+            "height": "Lucija Vunić ŽNK Dinao, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51520",
+            "externalId": "51520",
+            "name": "Bianca Galić",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Croatia",
+                "Australia"
+            ],
+            "dateOfBirth": "1999-05-14",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "41110",
+            "externalId": "41110",
+            "name": "Petra Pezelj",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "1998-10-28",
+            "foot": "both",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39482",
+            "externalId": "39482",
+            "name": "Ella Ljuština",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Croatia",
+                "Switzerland"
+            ],
+            "dateOfBirth": "2002-05-10",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36278",
+            "externalId": "36278",
+            "name": "Helena Spajić",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2000-02-08",
+            "foot": "right",
+            "height": "Helena Spajić ŽNK Dinao, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16896",
+            "externalId": "16896",
+            "name": "Ivana Slipčević",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Croatia",
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "1998-08-23",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "7578",
+            "externalId": "7578",
+            "name": "Izabela Lojna",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "1992-05-11",
+            "foot": "right",
+            "height": "Izabela Lojna ŽNK LIO, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63677",
+            "externalId": "63677",
+            "name": "Petra Mikulica",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2005-02-02",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "46455",
+            "externalId": "46455",
+            "name": "Karla Kurkutović",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Croatia"
+            ],
+            "dateOfBirth": "2001-12-27",
+            "foot": "right",
+            "height": "Karla Kurkutović Górnik Lęczna, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37113",
+            "externalId": "37113",
+            "name": "Paula Vidović",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Croatia",
+                "Germany"
+            ],
+            "dateOfBirth": "2003-06-16",
+            "foot": "right",
+            "height": "Paula Vidović FC Ingolstadt 04, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "1626",
+            "externalId": "1626",
+            "name": "Ivana Rudelić",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Croatia",
+                "Germany"
+            ],
+            "dateOfBirth": "1992-01-25",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

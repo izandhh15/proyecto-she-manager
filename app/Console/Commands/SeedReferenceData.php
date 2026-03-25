@@ -628,6 +628,11 @@ class SeedReferenceData extends Command
                     }
                 }
 
+                if ($dateOfBirth === null && isset($player['age']) && is_numeric($player['age'])) {
+                    $age = (int) $player['age'];
+                    $dateOfBirth = $this->approximateDateOfBirthFromAge($age);
+                }
+
                 // Normalize foot value
                 $foot = match (strtolower($player['foot'] ?? '')) {
                     'left' => 'left',
@@ -685,6 +690,22 @@ class SeedReferenceData extends Command
         }
 
         $this->line("  Players: {$count}");
+    }
+
+    private function approximateDateOfBirthFromAge(int $age): ?string
+    {
+        if ($age < 14 || $age > 45) {
+            return null;
+        }
+
+        $referenceDate = now();
+        $candidate = Carbon::create($referenceDate->year - $age, 7, 1, 0, 0, 0, $referenceDate->timezone);
+
+        if ($candidate->diffInYears($referenceDate) !== $age) {
+            $candidate = $candidate->subYear();
+        }
+
+        return $candidate->toDateString();
     }
 
     private function seedCupTeams(array $clubs, string $competitionId, string $season, string $country = 'ES'): void

@@ -1,0 +1,349 @@
+{
+    "id": "458",
+    "externalId": "458",
+    "transfermarktId": "458",
+    "name": "Mexico",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "43707",
+            "externalId": "43707",
+            "name": "Celeste Espino",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "2003-08-09",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "17970",
+            "externalId": "17970",
+            "name": "Esthefanny Barreras",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "1996-11-02",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "57667",
+            "externalId": "57667",
+            "name": "Itzel Velasco",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "2004-09-23",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106318",
+            "externalId": "106318",
+            "name": "Aaliyah Farmer",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "2003-10-27",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "17962",
+            "externalId": "17962",
+            "name": "Greta Espinoza",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "1995-06-05",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23048",
+            "externalId": "23048",
+            "name": "Rebeca Bernal",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "1997-08-31",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "150k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "23058",
+            "externalId": "23058",
+            "name": "Kimberly Rodríguez",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "1999-03-26",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33593",
+            "externalId": "33593",
+            "name": "Cristina Ferral",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "1993-02-16",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33984",
+            "externalId": "33984",
+            "name": "Jimena López",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "1999-01-30",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "4767",
+            "externalId": "4767",
+            "name": "Kenti Robles",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Mexico",
+                "Spain"
+            ],
+            "dateOfBirth": "1991-02-15",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67316",
+            "externalId": "67316",
+            "name": "Ivonne Gutiérrez",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "2002-12-14",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37954",
+            "externalId": "37954",
+            "name": "Reyna Reyes",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "2001-02-16",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "140k",
+            "contract": "2030-12-31"
+        },
+        {
+            "id": "43801",
+            "externalId": "43801",
+            "name": "Fátima Servín",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "2005-05-17",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "60082",
+            "externalId": "60082",
+            "name": "Montserrat Saldívar",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "2006-09-20",
+            "foot": "left",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33973",
+            "externalId": "33973",
+            "name": "Alexia Delgado",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "1999-12-09",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "27889",
+            "externalId": "27889",
+            "name": "María Sánchez",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "1996-02-20",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "17963",
+            "externalId": "17963",
+            "name": "Karla Nieto",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "1995-01-09",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33988",
+            "externalId": "33988",
+            "name": "Lizbeth Ovalle",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "1999-10-19",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "725k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "41058",
+            "externalId": "41058",
+            "name": "Myra Delgadillo",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "1995-12-09",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39982",
+            "externalId": "39982",
+            "name": "Kiana Palacios",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "1996-10-01",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "350k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "35369",
+            "externalId": "35369",
+            "name": "Diana Ordóñez",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Mexico",
+                "United States"
+            ],
+            "dateOfBirth": "2001-09-26",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "7168",
+            "externalId": "7168",
+            "name": "Charlyn Corral",
+            "position": "Centre-Forward",
+            "age": 34,
+            "nationality": [
+                "Mexico"
+            ],
+            "dateOfBirth": "1991-09-11",
+            "foot": "right",
+            "height": "1,52m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

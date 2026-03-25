@@ -1,0 +1,371 @@
+{
+    "id": "448",
+    "externalId": "448",
+    "transfermarktId": "448",
+    "name": "Brazil",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "81614",
+            "externalId": "81614",
+            "name": "Thaís Lima",
+            "position": "Goalkeeper",
+            "age": 17,
+            "nationality": [
+                "Brazil",
+                "Portugal"
+            ],
+            "dateOfBirth": "2008-04-11",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "71294",
+            "externalId": "71294",
+            "name": "Cláudia",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2002-07-22",
+            "foot": "right",
+            "height": "1,90m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44821",
+            "externalId": "44821",
+            "name": "Lorena",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "1997-05-06",
+            "foot": "right",
+            "height": "1,82m",
+            "marketValue": "100k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "45379",
+            "externalId": "45379",
+            "name": "Carlinha",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "1997-06-04",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71264",
+            "externalId": "71264",
+            "name": "Vitória Calhau",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2000-06-05",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "67466",
+            "externalId": "67466",
+            "name": "Tarciane",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2003-05-27",
+            "foot": "right",
+            "height": "1,84m",
+            "marketValue": "700k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "37887",
+            "externalId": "37887",
+            "name": "Isa Haas",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2001-01-20",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37890",
+            "externalId": "37890",
+            "name": "Bruninha",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2002-06-16",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "80k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "39016",
+            "externalId": "39016",
+            "name": "Yasmim",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "1996-10-28",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "160k",
+            "contract": null
+        },
+        {
+            "id": "45204",
+            "externalId": "45204",
+            "name": "Isabela",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2001-07-23",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "120k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "45318",
+            "externalId": "45318",
+            "name": "Mariza",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2001-11-08",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45537",
+            "externalId": "45537",
+            "name": "Thaís Ferreira",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "1996-05-01",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "45421",
+            "externalId": "45421",
+            "name": "Duda Sampaio",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2001-05-18",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "45535",
+            "externalId": "45535",
+            "name": "Ary Borges",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "1999-12-28",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "65k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "35783",
+            "externalId": "35783",
+            "name": "Angelina",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Brazil",
+                "United States"
+            ],
+            "dateOfBirth": "2000-01-26",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "125k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "8751",
+            "externalId": "8751",
+            "name": "Bia Zaneratto",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "1993-12-17",
+            "foot": "left",
+            "height": "1,76m",
+            "marketValue": "225k",
+            "contract": null
+        },
+        {
+            "id": "57491",
+            "externalId": "57491",
+            "name": "Tainá Maranhão",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2004-08-18",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "57945",
+            "externalId": "57945",
+            "name": "Laís Estevam",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2000-11-26",
+            "foot": "right",
+            "height": "Laís Esteva SE Paleiras, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58184",
+            "externalId": "58184",
+            "name": "Isa",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2003-10-19",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "37886",
+            "externalId": "37886",
+            "name": "Amanda Gutierres",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2001-03-18",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "400k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "68248",
+            "externalId": "68248",
+            "name": "Luany",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2003-02-03",
+            "foot": "both",
+            "height": "1,64m",
+            "marketValue": "500k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "70421",
+            "externalId": "70421",
+            "name": "Dudinha",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2005-07-04",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "300k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "37882",
+            "externalId": "37882",
+            "name": "Jheniffer",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "2001-11-06",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "24252",
+            "externalId": "24252",
+            "name": "Ludmila",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Brazil"
+            ],
+            "dateOfBirth": "1994-12-01",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "375k",
+            "contract": "2028-12-31"
+        }
+    ]
+}

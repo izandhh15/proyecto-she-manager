@@ -1,0 +1,280 @@
+{
+    "id": "548",
+    "externalId": "548",
+    "transfermarktId": "548",
+    "name": "Ivory Coast",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "89885",
+            "externalId": "89885",
+            "name": "Aramatou Diakité",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "2001-07-23",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28061",
+            "externalId": "28061",
+            "name": "Cynthia Djohoré",
+            "position": "Goalkeeper",
+            "age": 38,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1987-12-16",
+            "foot": "right",
+            "height": "1,82m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28060",
+            "externalId": "28060",
+            "name": "Mariam Diakité",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1995-04-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "28067",
+            "externalId": "28067",
+            "name": "Nina Kpaho",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1996-12-30",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93030",
+            "externalId": "93030",
+            "name": "Matoba Cissé",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1997-03-26",
+            "foot": "right",
+            "height": "Matoba Cissé Athlético FC d’Abidjan, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28058",
+            "externalId": "28058",
+            "name": "Fatou Coulibaly",
+            "position": "Centre-Back",
+            "age": 39,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1986-12-05",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100851",
+            "externalId": "100851",
+            "name": "Frédérique Abrogoua",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "2001-07-17",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "93034",
+            "externalId": "93034",
+            "name": "Estelle Gnaly",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "2001-12-28",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51966",
+            "externalId": "51966",
+            "name": "Bernadette Amani",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1997-09-05",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "60k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "88966",
+            "externalId": "88966",
+            "name": "Sylviane Kokora",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1995-07-12",
+            "foot": "both",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "27819",
+            "externalId": "27819",
+            "name": "Ida Guehai",
+            "position": "Attacking Midfield",
+            "age": 31,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1994-07-15",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "112019",
+            "externalId": "112019",
+            "name": "Marie Gossé",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "2004-11-22",
+            "foot": "right",
+            "height": "Marie Gossé CD Tenerife Feenino B, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93028",
+            "externalId": "93028",
+            "name": "Melissa Behinan",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "2003-05-25",
+            "foot": "both",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "74301",
+            "externalId": "74301",
+            "name": "Habibou Ouédraogo",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Cote d'Ivoire",
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2002-02-18",
+            "foot": "right",
+            "height": "1,82m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63287",
+            "externalId": "63287",
+            "name": "Rosemonde Kouassi",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "2001-12-26",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "250k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "28063",
+            "externalId": "28063",
+            "name": "Rebecca Elloh",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1994-12-25",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "28071",
+            "externalId": "28071",
+            "name": "Sandrine Niamien",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1994-08-30",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28070",
+            "externalId": "28070",
+            "name": "Koko Ange N’Guessan",
+            "position": "Centre-Forward",
+            "age": 35,
+            "nationality": [
+                "Cote d'Ivoire"
+            ],
+            "dateOfBirth": "1990-11-18",
+            "foot": "right",
+            "height": "1,53m",
+            "marketValue": "45k",
+            "contract": null
+        }
+    ]
+}

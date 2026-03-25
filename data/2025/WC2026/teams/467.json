@@ -1,0 +1,400 @@
+{
+    "id": "467",
+    "externalId": "467",
+    "transfermarktId": "467",
+    "name": "South Korea",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "75597",
+            "externalId": "75597",
+            "name": "Seo-bin Woo",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2004-04-13",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59303",
+            "externalId": "59303",
+            "name": "Ji-soo Ryu",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1997-09-03",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40484",
+            "externalId": "40484",
+            "name": "Min-jung Kim",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1996-09-12",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66294",
+            "externalId": "66294",
+            "name": "Jin-hui Kim",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1998-10-07",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44044",
+            "externalId": "44044",
+            "name": "Hye-jeong Park",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2000-03-30",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66301",
+            "externalId": "66301",
+            "name": "Na-yeong Shin",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1999-10-09",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "53281",
+            "externalId": "53281",
+            "name": "Yoo-jin Ko",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1997-01-24",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16952",
+            "externalId": "16952",
+            "name": "Sel-gi Jang",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1994-05-31",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59775",
+            "externalId": "59775",
+            "name": "Jin-young Noh",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2000-06-03",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "5993",
+            "externalId": "5993",
+            "name": "Hye-ri Kim",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1990-06-25",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "44038",
+            "externalId": "44038",
+            "name": "Hyo-joo Choo",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2000-07-29",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "59399",
+            "externalId": "59399",
+            "name": "Min-hwa Lee",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1999-10-29",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75566",
+            "externalId": "75566",
+            "name": "Min-ji Kim",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2003-08-21",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101663",
+            "externalId": "101663",
+            "name": "Shin-ji Kim",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2004-05-03",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "5992",
+            "externalId": "5992",
+            "name": "So-yun Ji",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1991-02-21",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "90k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "69661",
+            "externalId": "69661",
+            "name": "Jae-eun Song",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1997-04-03",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101664",
+            "externalId": "101664",
+            "name": "Soo-jeong Park",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2004-11-03",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "30k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "84652",
+            "externalId": "84652",
+            "name": "Min-young Jung",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2000-09-28",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "16949",
+            "externalId": "16949",
+            "name": "Yoo-jung Choi",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1992-01-25",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "87497",
+            "externalId": "87497",
+            "name": "Casey Phair",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Korea, South",
+                "United States"
+            ],
+            "dateOfBirth": "2007-06-29",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "45k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "39624",
+            "externalId": "39624",
+            "name": "Hwa-yeon Son",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1997-03-15",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "45k",
+            "contract": null
+        },
+        {
+            "id": "59779",
+            "externalId": "59779",
+            "name": "Eun-joo Mun",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2000-09-01",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16947",
+            "externalId": "16947",
+            "name": "Yu-ri Choe",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1994-09-16",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75592",
+            "externalId": "75592",
+            "name": "Yu-gyeong Jeon",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2004-01-20",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "40482",
+            "externalId": "40482",
+            "name": "Chae-rim Kang",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "1998-03-23",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "38076",
+            "externalId": "38076",
+            "name": "Eun-young Lee",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Korea, South"
+            ],
+            "dateOfBirth": "2002-03-31",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        }
+    ]
+}

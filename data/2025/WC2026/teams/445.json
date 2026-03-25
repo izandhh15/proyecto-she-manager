@@ -1,0 +1,343 @@
+{
+    "id": "445",
+    "externalId": "445",
+    "transfermarktId": "445",
+    "name": "Argentina",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "40514",
+            "externalId": "40514",
+            "name": "Solana Pereyra",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "1999-04-05",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91077",
+            "externalId": "91077",
+            "name": "Priscila Siben",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2007-04-03",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65290",
+            "externalId": "65290",
+            "name": "Lara Esponda",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2005-11-08",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28386",
+            "externalId": "28386",
+            "name": "Aldana Cometti",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "1996-03-03",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "75k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "38184",
+            "externalId": "38184",
+            "name": "Eliana Stábile",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "1993-11-26",
+            "foot": "left",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79362",
+            "externalId": "79362",
+            "name": "Abril Reche",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2001-04-04",
+            "foot": "left",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70434",
+            "externalId": "70434",
+            "name": "Milagros Martín",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Argentina",
+                "Spain"
+            ],
+            "dateOfBirth": "2007-04-26",
+            "foot": "left",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "16994",
+            "externalId": "16994",
+            "name": "Adriana Sachs",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "1993-12-25",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54941",
+            "externalId": "54941",
+            "name": "Agustina Vargas",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2001-12-27",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102185",
+            "externalId": "102185",
+            "name": "Margarita Giménez",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Argentina",
+                "Italy"
+            ],
+            "dateOfBirth": "2004-11-01",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "70431",
+            "externalId": "70431",
+            "name": "Sofía Domínguez",
+            "position": "Attacking Midfield",
+            "age": 20,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2005-12-16",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68612",
+            "externalId": "68612",
+            "name": "Chiara Singarella",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2003-12-05",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65293",
+            "externalId": "65293",
+            "name": "Maricel Pereyra",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2002-05-11",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "62774",
+            "externalId": "62774",
+            "name": "Vanina Preininger",
+            "position": "Defensive Midfield",
+            "age": 29,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "1996-09-26",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "54323",
+            "externalId": "54323",
+            "name": "Cata Ongaro",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2003-03-26",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46189",
+            "externalId": "46189",
+            "name": "Justina Morcillo",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2000-08-09",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46184",
+            "externalId": "46184",
+            "name": "Daiana Falfán",
+            "position": "Defensive Midfield",
+            "age": 25,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2000-10-14",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46174",
+            "externalId": "46174",
+            "name": "Sophía Braun",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Argentina",
+                "United States"
+            ],
+            "dateOfBirth": "2000-01-26",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "17005",
+            "externalId": "17005",
+            "name": "Flor Bonsegundo",
+            "position": "Attacking Midfield",
+            "age": 32,
+            "nationality": [
+                "Argentina",
+                "Spain"
+            ],
+            "dateOfBirth": "1993-07-14",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "65292",
+            "externalId": "65292",
+            "name": "Agostina Holzheier",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2003-09-30",
+            "foot": "left",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54325",
+            "externalId": "54325",
+            "name": "Carolina Troncoso",
+            "position": "Centre-Forward",
+            "age": 35,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "1991-01-28",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54320",
+            "externalId": "54320",
+            "name": "Martina Del Trecco",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Argentina"
+            ],
+            "dateOfBirth": "2001-10-28",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -29,6 +29,11 @@ class SeedWorldCupData extends Command
     /** @var array<int, array{match_number: int, home_team_id: int, away_team_id: int, stage_id: int, kickoff_at: string, match_label: string}> */
     private array $csvMatches = [];
 
+    /** @var array<string, string> */
+    private const CSV_TEAM_NAME_OVERRIDES = [
+        'CUR' => 'Curaçao',
+    ];
+
     /** @var array<int, string> csv_id â†’ fifa_code */
     private array $csvIdToFifaCode = [];
 
@@ -121,13 +126,15 @@ class SeedWorldCupData extends Command
 
         while (($row = fgetcsv($handle)) !== false) {
             $csvId = (int) $row[0];
+            $fifaCode = $row[2];
             $this->csvTeams[$csvId] = [
-                'team_name' => $row[1],
-                'fifa_code' => $row[2],
+                'team_name' => self::CSV_TEAM_NAME_OVERRIDES[$fifaCode]
+                    ?? $this->normalizeCsvCell($row[1] ?? ''),
+                'fifa_code' => $fifaCode,
                 'group_letter' => $row[3],
                 'is_placeholder' => strtolower($row[4]) === 'true',
             ];
-            $this->csvIdToFifaCode[$csvId] = $row[2];
+            $this->csvIdToFifaCode[$csvId] = $fifaCode;
         }
         fclose($handle);
 
@@ -166,8 +173,13 @@ class SeedWorldCupData extends Command
         }
 
         foreach (glob("{$basePath}/*.json") as $filePath) {
-            $data = json_decode(file_get_contents($filePath), true);
-            if (!$data || empty($data['name'])) {
+            try {
+                $data = ExternalData::decodeJsonFile($filePath);
+            } catch (\RuntimeException) {
+                continue;
+            }
+
+            if (empty($data['name'])) {
                 continue;
             }
             $tmId = pathinfo($filePath, PATHINFO_FILENAME);
@@ -288,8 +300,13 @@ class SeedWorldCupData extends Command
         $playerCount = 0;
 
         foreach (glob("{$basePath}/*.json") as $filePath) {
-            $data = json_decode(file_get_contents($filePath), true);
-            if (!$data || empty($data['players'])) {
+            try {
+                $data = ExternalData::decodeJsonFile($filePath);
+            } catch (\RuntimeException) {
+                continue;
+            }
+
+            if (empty($data['players'])) {
                 continue;
             }
 
@@ -317,6 +334,11 @@ class SeedWorldCupData extends Command
                     }
                 }
 
+                if ($dateOfBirth === null && isset($player['age']) && is_numeric($player['age'])) {
+                    $age = (int) $player['age'];
+                    $dateOfBirth = $this->approximateDateOfBirthFromAge($age);
+                }
+
                 $foot = match (strtolower($player['foot'] ?? '')) {
                     'left' => 'left',
                     'right' => 'right',
@@ -332,6 +354,7 @@ class SeedWorldCupData extends Command
                     'id' => Str::uuid()->toString(),
                     'external_source' => ExternalData::defaultSource(),
                     'external_id' => $externalId,
+                    'transfermarkt_id' => $externalId,
                     'name' => $player['name'],
                     'date_of_birth' => $dateOfBirth,
                     'nationality' => json_encode(!empty($player['nationality']) ? $player['nationality'] : [$data['name']]),
@@ -530,5 +553,44 @@ class SeedWorldCupData extends Command
         $this->line("  Groups: " . count(array_unique(array_column($teamMapping, 'group'))));
         $this->newLine();
         $this->info('World Cup data seeded successfully!');
+    }
+
+    private function approximateDateOfBirthFromAge(int $age): ?string
+    {
+        if ($age < 14 || $age > 45) {
+            return null;
+        }
+
+        $referenceDate = now();
+        $candidate = Carbon::create($referenceDate->year - $age, 7, 1, 0, 0, 0, $referenceDate->timezone);
+
+        if ($candidate->diffInYears($referenceDate) !== $age) {
+            $candidate = $candidate->subYear();
+        }
+
+        return $candidate->toDateString();
+    }
+
+    private function normalizeCsvCell(string $value): string
+    {
+        $value = trim($value);
+        if ($value === '') {
+            return $value;
+        }
+
+        $value = strtr($value, [
+            'CuraÃ§ao' => 'Curaçao',
+            'CuraÃƒÂ§ao' => 'Curaçao',
+            "CÃ´te d'Ivoire" => "Côte d'Ivoire",
+        ]);
+
+        if (preg_match('/Ã|Â|â/u', $value)) {
+            $repaired = @mb_convert_encoding($value, 'UTF-8', 'ISO-8859-1');
+            if (is_string($repaired) && $repaired !== '') {
+                return trim($repaired);
+            }
+        }
+
+        return $value;
     }
 }

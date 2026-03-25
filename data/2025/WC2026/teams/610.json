@@ -1,0 +1,394 @@
+{
+    "id": "610",
+    "externalId": "610",
+    "transfermarktId": "610",
+    "name": "Haiti",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "109488",
+            "externalId": "109488",
+            "name": "Elieka Jude Gabriel",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Elieka Jude Gabriel unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "109487",
+            "externalId": "109487",
+            "name": "Mahe-Lee Caron",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "2007-03-01",
+            "foot": "right",
+            "height": "Mahe-Lee Caron unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "109486",
+            "externalId": "109486",
+            "name": "Kaïna Cesar",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Haiti",
+                "France"
+            ],
+            "dateOfBirth": "2005-09-04",
+            "foot": "right",
+            "height": "Kaïna Cesar Lipscob Bisons, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33931",
+            "externalId": "33931",
+            "name": "Kerly Théus",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "1999-01-07",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "99814",
+            "externalId": "99814",
+            "name": "Roxanne Vilain",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Haiti",
+                "Canada"
+            ],
+            "dateOfBirth": "2002-02-24",
+            "foot": "left",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33917",
+            "externalId": "33917",
+            "name": "Betina Petit-Frère",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "2003-08-01",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33930",
+            "externalId": "33930",
+            "name": "Tabita Joseph",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "2003-09-13",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73893",
+            "externalId": "73893",
+            "name": "Claire Constant",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Haiti",
+                "United States"
+            ],
+            "dateOfBirth": "1999-10-13",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "44106",
+            "externalId": "44106",
+            "name": "Kethna Louis",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "1996-08-05",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "44235",
+            "externalId": "44235",
+            "name": "Chelsea Surpris",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Haiti",
+                "United States"
+            ],
+            "dateOfBirth": "1996-12-20",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "63789",
+            "externalId": "63789",
+            "name": "Jennyfer Limage",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "1997-12-25",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44676",
+            "externalId": "44676",
+            "name": "Jasmine Vilgrain",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Haiti",
+                "Canada"
+            ],
+            "dateOfBirth": "2002-07-25",
+            "foot": "left",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44298",
+            "externalId": "44298",
+            "name": "Maudeline Moryl",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "2003-01-24",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "80702",
+            "externalId": "80702",
+            "name": "Deborah Bien-Aimé",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Haiti",
+                "United States"
+            ],
+            "dateOfBirth": "2003-09-16",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45095",
+            "externalId": "45095",
+            "name": "Dayana Pierre-Louis",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "2003-09-24",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "40k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "18190",
+            "externalId": "18190",
+            "name": "Amandine Pierre-Louis",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Haiti",
+                "Canada"
+            ],
+            "dateOfBirth": "1995-02-18",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "33922",
+            "externalId": "33922",
+            "name": "Sherly Jeudy",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "1998-10-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33913",
+            "externalId": "33913",
+            "name": "Melchie Dumornay",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "2003-08-17",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "1.2m",
+            "contract": "2030-06-30"
+        },
+        {
+            "id": "23005",
+            "externalId": "23005",
+            "name": "Anyssa Ibrahim",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Haiti",
+                "Canada"
+            ],
+            "dateOfBirth": "1999-02-08",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45045",
+            "externalId": "45045",
+            "name": "Darlina Joseph",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "2003-12-15",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "69198",
+            "externalId": "69198",
+            "name": "Noa Ganthier",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Haiti",
+                "United States"
+            ],
+            "dateOfBirth": "2002-10-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44100",
+            "externalId": "44100",
+            "name": "Batcheba Louis",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "1997-06-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "85k",
+            "contract": null
+        },
+        {
+            "id": "33914",
+            "externalId": "33914",
+            "name": "Roseline Éloissaint",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "1999-02-20",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "99815",
+            "externalId": "99815",
+            "name": "Chelsea Domond",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Haiti",
+                "United States"
+            ],
+            "dateOfBirth": "1999-12-19",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33631",
+            "externalId": "33631",
+            "name": "Nérilia Mondésir",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Haiti"
+            ],
+            "dateOfBirth": "1999-01-17",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "70k",
+            "contract": "2027-12-31"
+        }
+    ]
+}

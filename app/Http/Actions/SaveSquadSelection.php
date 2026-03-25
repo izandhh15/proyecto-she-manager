@@ -2,6 +2,7 @@
 
 namespace App\Http\Actions;
 
+use App\Modules\Season\Services\TournamentRosterFallbackService;
 use App\Modules\Player\Services\InjuryService;
 use App\Modules\Player\Services\PlayerDevelopmentService;
 use App\Models\Game;
@@ -65,6 +66,7 @@ class SaveSquadSelection
 
     public static function createTournamentGamePlayers(string $gameId, string $teamId, array $externalIds, array $positionByExternalId): void
     {
+        $game = Game::with('team')->findOrFail($gameId);
         $playerModels = Player::whereIn('external_id', $externalIds)->get()->keyBy('external_id');
 
         $playerRows = [];
@@ -94,6 +96,10 @@ class SaveSquadSelection
             ];
         }
 
-        GamePlayer::insert($playerRows);
+        if (! empty($playerRows)) {
+            GamePlayer::insert($playerRows);
+        }
+
+        app(TournamentRosterFallbackService::class)->ensureMinimumSquad($game, $game->team);
     }
 }

@@ -1,0 +1,354 @@
+{
+    "id": "462",
+    "externalId": "462",
+    "transfermarktId": "462",
+    "name": "Norway",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "47256",
+            "externalId": "47256",
+            "name": "Selma Panengstuen",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2003-03-05",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "46377",
+            "externalId": "46377",
+            "name": "Sunniva Skoglund",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2002-05-22",
+            "foot": "right",
+            "height": "Sunniva Skoglund Stabæk Fotball, Goalkeeperm",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "20743",
+            "externalId": "20743",
+            "name": "Cecilie Fiskerstrand",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1996-03-20",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "90k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "35459",
+            "externalId": "35459",
+            "name": "Mathilde Harviken",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2001-12-29",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "130k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "20033",
+            "externalId": "20033",
+            "name": "Tuva Hansen",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1997-08-04",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "100k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "20745",
+            "externalId": "20745",
+            "name": "Guro Bergsvand",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1994-03-03",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "27871",
+            "externalId": "27871",
+            "name": "Ingrid Engen",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1998-04-29",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "500k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "27883",
+            "externalId": "27883",
+            "name": "Marit Lund",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1997-11-07",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "45k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32868",
+            "externalId": "32868",
+            "name": "Emilie Woldvik",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1999-01-08",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "55k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "60828",
+            "externalId": "60828",
+            "name": "Signe Gaupset",
+            "position": "Attacking Midfield",
+            "age": 20,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2005-06-18",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "160k",
+            "contract": null
+        },
+        {
+            "id": "44029",
+            "externalId": "44029",
+            "name": "Emma Stølen Godø",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2000-05-31",
+            "foot": "right",
+            "height": "Ea Stølen Godø Juventus FC, Midfieldm",
+            "marketValue": "140k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39716",
+            "externalId": "39716",
+            "name": "Julie Blakstad",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2001-08-27",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "200k",
+            "contract": null
+        },
+        {
+            "id": "38430",
+            "externalId": "38430",
+            "name": "Justine Kielland",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2002-11-22",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "175k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "33490",
+            "externalId": "33490",
+            "name": "Thea Bjelde",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2000-06-05",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "150k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "28339",
+            "externalId": "28339",
+            "name": "Frida Maanum",
+            "position": "Attacking Midfield",
+            "age": 26,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1999-07-16",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "400k",
+            "contract": null
+        },
+        {
+            "id": "15248",
+            "externalId": "15248",
+            "name": "Vilde Bøe Risa",
+            "position": "Defensive Midfield",
+            "age": 30,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1995-07-13",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "325k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "13414",
+            "externalId": "13414",
+            "name": "Lisa Naalsund",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1995-06-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "225k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "33482",
+            "externalId": "33482",
+            "name": "Elisabeth Terland",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2001-06-28",
+            "foot": "both",
+            "height": "1,71m",
+            "marketValue": "700k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "16257",
+            "externalId": "16257",
+            "name": "Synne Jensen",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1996-02-15",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "90k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "11710",
+            "externalId": "11710",
+            "name": "Guro Reiten",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1994-07-26",
+            "foot": "left",
+            "height": "1,66m",
+            "marketValue": "450k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "8869",
+            "externalId": "8869",
+            "name": "Karina Sævik",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1996-03-24",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "6143",
+            "externalId": "6143",
+            "name": "Caroline Graham",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1995-02-18",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "1.1m",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "6124",
+            "externalId": "6124",
+            "name": "Ada Hegerberg",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1995-07-10",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "575k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

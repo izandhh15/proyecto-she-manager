@@ -44,6 +44,10 @@ class SetupNewGame implements ShouldQueue
 
     private bool $usedTemplates = false;
     private Carbon $currentDate;
+    /** @var array<string, array<int, bool>> */
+    private array $assignedSquadNumbers = [];
+    /** @var array<string, bool> */
+    private array $assignedPlayerIds = [];
 
     public function __construct(
         public string $gameId,
@@ -351,7 +355,7 @@ class SetupNewGame implements ShouldQueue
 
                 foreach ($playersData as $playerData) {
                     $row = $this->prepareGamePlayerRow($team, $playerData, $minimumWage, $allPlayers, $contractService, $developmentService, $this->currentDate);
-                    if ($row) {
+                    if ($row && $this->reservePlayerId($row['player_id'])) {
                         $playerRows[] = $row;
                     }
                 }
@@ -459,7 +463,7 @@ class SetupNewGame implements ShouldQueue
             $playersData = $club['players'] ?? [];
             foreach ($playersData as $playerData) {
                 $row = $this->prepareGamePlayerRow($team, $playerData, $minimumWage, $allPlayers, $contractService, $developmentService, $this->currentDate);
-                if ($row) {
+                if ($row && $this->reservePlayerId($row['player_id'])) {
                     $playerRows[] = $row;
                 }
             }
@@ -612,7 +616,7 @@ class SetupNewGame implements ShouldQueue
             }
         }
 
-        $age = (int) $player->date_of_birth->diffInYears($currentDate);
+        $age = $player->ageAt($currentDate);
         $marketValueCents = Money::parseMarketValue($playerData['marketValue'] ?? null);
         $annualWage = $contractService->calculateAnnualWage($marketValueCents, $minimumWage, $age);
 
@@ -629,7 +633,7 @@ class SetupNewGame implements ShouldQueue
             'game_id' => $this->gameId,
             'player_id' => $player->id,
             'team_id' => $team->id,
-            'number' => isset($playerData['number']) ? (int) $playerData['number'] : null,
+            'number' => $this->assignSquadNumber($team->id, $playerData['number'] ?? null),
             'position' => $playerData['position'] ?? 'Unknown',
             'market_value' => $playerData['marketValue'] ?? null,
             'market_value_cents' => $marketValueCents,
@@ -666,6 +670,10 @@ class SetupNewGame implements ShouldQueue
             } catch (\Throwable) {
                 $dateOfBirth = null;
             }
+        }
+
+        if ($dateOfBirth === null && isset($playerData['age']) && is_numeric($playerData['age'])) {
+            $dateOfBirth = $this->approximateDateOfBirthFromAge((int) $playerData['age'], $currentDate);
         }
 
         $age = $dateOfBirth
@@ -706,6 +714,73 @@ class SetupNewGame implements ShouldQueue
         $allPlayers->put($externalId, $player);
 
         return $player;
+    }
+
+    private function assignSquadNumber(string $teamId, mixed $preferredNumber): ?int
+    {
+        if (! isset($this->assignedSquadNumbers[$teamId])) {
+            $takenNumbers = GamePlayer::where('game_id', $this->gameId)
+                ->where('team_id', $teamId)
+                ->whereNotNull('number')
+                ->pluck('number')
+                ->map(fn (mixed $number) => (int) $number)
+                ->all();
+
+            $this->assignedSquadNumbers[$teamId] = array_fill_keys($takenNumbers, true);
+        }
+
+        $assignedNumbers = &$this->assignedSquadNumbers[$teamId];
+        $requestedNumber = is_numeric($preferredNumber) ? (int) $preferredNumber : null;
+
+        if ($requestedNumber !== null && $requestedNumber >= 1 && $requestedNumber <= 99 && ! isset($assignedNumbers[$requestedNumber])) {
+            $assignedNumbers[$requestedNumber] = true;
+
+            return $requestedNumber;
+        }
+
+        for ($number = 1; $number <= 99; $number++) {
+            if (! isset($assignedNumbers[$number])) {
+                $assignedNumbers[$number] = true;
+
+                return $number;
+            }
+        }
+
+        return null;
+    }
+
+    private function reservePlayerId(string $playerId): bool
+    {
+        if (empty($this->assignedPlayerIds)) {
+            $existingPlayerIds = GamePlayer::where('game_id', $this->gameId)
+                ->pluck('player_id')
+                ->all();
+
+            $this->assignedPlayerIds = array_fill_keys($existingPlayerIds, true);
+        }
+
+        if (isset($this->assignedPlayerIds[$playerId])) {
+            return false;
+        }
+
+        $this->assignedPlayerIds[$playerId] = true;
+
+        return true;
+    }
+
+    private function approximateDateOfBirthFromAge(int $age, Carbon $referenceDate): ?string
+    {
+        if ($age < 14 || $age > 45) {
+            return null;
+        }
+
+        $candidate = Carbon::create($referenceDate->year - $age, 7, 1, 0, 0, 0, $referenceDate->timezone);
+
+        if ($candidate->diffInYears($referenceDate) !== $age) {
+            $candidate = $candidate->subYear();
+        }
+
+        return $candidate->toDateString();
     }
 
     private function loadClubsFromTeamsJson(string $teamsFilePath): array

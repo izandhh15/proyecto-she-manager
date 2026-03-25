@@ -225,7 +225,7 @@ class GamePlayerTemplateService
         }
 
         $referenceDate = Carbon::parse("{$season}-08-15");
-        $age = (int) $player->date_of_birth->diffInYears($referenceDate);
+        $age = $player->ageAt($referenceDate);
         $marketValueCents = Money::parseMarketValue($playerData['marketValue'] ?? null);
         $annualWage = $this->contractService->calculateAnnualWage($marketValueCents, $minimumWage, $age);
 

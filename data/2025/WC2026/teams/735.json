@@ -1,0 +1,370 @@
+{
+    "id": "735",
+    "externalId": "735",
+    "transfermarktId": "735",
+    "name": "Senegal",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "110192",
+            "externalId": "110192",
+            "name": "Khady Faye",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2004-01-14",
+            "foot": "right",
+            "height": "Khady Faye Aigles de la Médina, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74360",
+            "externalId": "74360",
+            "name": "Tening Sène",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1990-01-21",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83309",
+            "externalId": "83309",
+            "name": "Adji Ndiaye",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2006-08-04",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74339",
+            "externalId": "74339",
+            "name": "Marème Babou",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2003-04-13",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74340",
+            "externalId": "74340",
+            "name": "Anta Dembélé",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1994-06-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110193",
+            "externalId": "110193",
+            "name": "Aissatou Fall",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2007-12-01",
+            "foot": "left",
+            "height": "Aissatou Fall Kaolack FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83317",
+            "externalId": "83317",
+            "name": "Wolimata Ndiaye",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2004-01-10",
+            "foot": "left",
+            "height": "Woliata Ndiaye Thonon Évian Grand Genève FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110194",
+            "externalId": "110194",
+            "name": "Maty Cissokho",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1998-04-20",
+            "foot": "left",
+            "height": "Maty Cissokho Aigles de la Médina, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110196",
+            "externalId": "110196",
+            "name": "Adama Sané",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2005-03-08",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74349",
+            "externalId": "74349",
+            "name": "Meta Camara",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1997-08-14",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "110201",
+            "externalId": "110201",
+            "name": "Meta Kandé",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2002-03-26",
+            "foot": "right",
+            "height": "Meta Kandé Aigles de la Médina, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68662",
+            "externalId": "68662",
+            "name": "Awa Diakhaté",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1997-01-02",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74359",
+            "externalId": "74359",
+            "name": "Safiétou Sagna",
+            "position": "Defensive Midfield",
+            "age": 31,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1994-04-11",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110197",
+            "externalId": "110197",
+            "name": "Sadigatou Diallo",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2003-02-21",
+            "foot": "right",
+            "height": "Sadigatou Diallo Aigles de la Médina, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110198",
+            "externalId": "110198",
+            "name": "Fatoumata Dramé",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2001-03-28",
+            "foot": "right",
+            "height": "Fatouata Draé Aigles de la Médina, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74353",
+            "externalId": "74353",
+            "name": "Bineta Korkel Seck",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1998-01-11",
+            "foot": "right",
+            "height": "Bineta Korkel Seck Aigles de la Médina, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74352",
+            "externalId": "74352",
+            "name": "Korka Fall",
+            "position": "Central Midfield",
+            "age": 36,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1990-02-19",
+            "foot": "right",
+            "height": "Korka Fall Stade Malherbe Caen, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "110200",
+            "externalId": "110200",
+            "name": "Ndeye Awa Casset",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2003-11-12",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59958",
+            "externalId": "59958",
+            "name": "Mama Diop",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1994-10-09",
+            "foot": "right",
+            "height": "Maa Diop RC Strasbourg, Strikerm",
+            "marketValue": "35k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "110195",
+            "externalId": "110195",
+            "name": "Dieynaba Ndaw",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Senegal",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2003-04-10",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74346",
+            "externalId": "74346",
+            "name": "Nguenar Ndiaye",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "1995-01-10",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74345",
+            "externalId": "74345",
+            "name": "Haby Baldé",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2000-01-01",
+            "foot": "right",
+            "height": "Haby Baldé ES 3 Cités Poitiers, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74354",
+            "externalId": "74354",
+            "name": "Hapsatou Malado",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2005-04-14",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74348",
+            "externalId": "74348",
+            "name": "Pascaline Bassène",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Senegal"
+            ],
+            "dateOfBirth": "2002-10-22",
+            "foot": "right",
+            "height": "Pascaline Bassène CD Argual, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

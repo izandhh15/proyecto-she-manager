@@ -1,0 +1,300 @@
+{
+    "id": "534",
+    "externalId": "534",
+    "transfermarktId": "534",
+    "name": "Curaçao",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "69557",
+            "externalId": "69557",
+            "name": "Marelly Balentina",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Marelly Balentina unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69553",
+            "externalId": "69553",
+            "name": "Thiheyna Susana",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "2000-07-25",
+            "foot": "right",
+            "height": "Thiheyna Susana unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74109",
+            "externalId": "74109",
+            "name": "Ludmarie Flaneur",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Curacao",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2005-04-18",
+            "foot": "right",
+            "height": "Ludarie Flaneur BVV Barendrecht, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69555",
+            "externalId": "69555",
+            "name": "Ignarda Pieternella",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "1993-03-17",
+            "foot": "right",
+            "height": "Ignarda Pieternella unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69563",
+            "externalId": "69563",
+            "name": "Fresheny Michiel",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "2003-05-16",
+            "foot": "right",
+            "height": "Fresheny Michiel SV Vesta, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69569",
+            "externalId": "69569",
+            "name": "Ashanty Alexandre",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "2002-05-06",
+            "foot": "right",
+            "height": "Ashanty Alexandre SV Vesta, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69566",
+            "externalId": "69566",
+            "name": "Anaïse Piar",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "2001-02-06",
+            "foot": "right",
+            "height": "Anaïse Piar unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72127",
+            "externalId": "72127",
+            "name": "Shade Desir",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "1999-01-30",
+            "foot": "right",
+            "height": "Shade Desir unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69559",
+            "externalId": "69559",
+            "name": "Nuhely Emerenciana",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "1992-08-20",
+            "foot": "right",
+            "height": "Nuhely Eerenciana unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69552",
+            "externalId": "69552",
+            "name": "Jeleaugh Rosa",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Curacao",
+                "Spain"
+            ],
+            "dateOfBirth": "2004-07-18",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "69564",
+            "externalId": "69564",
+            "name": "Sterre Noordhoek",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "1997-05-06",
+            "foot": "right",
+            "height": "Sterre Noordhoek unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69567",
+            "externalId": "69567",
+            "name": "Riesmarly Tokaay",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Curacao",
+                "Dominican Republic"
+            ],
+            "dateOfBirth": "2003-02-11",
+            "foot": "right",
+            "height": "Riesarly Tokaay unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69562",
+            "externalId": "69562",
+            "name": "Gervionna Martina",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "2006-01-31",
+            "foot": "right",
+            "height": "Gervionna Martina unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74111",
+            "externalId": "74111",
+            "name": "Raëngelly Keller",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "2005-11-16",
+            "foot": "right",
+            "height": "Raëngelly Keller Be Quick ’28, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38282",
+            "externalId": "38282",
+            "name": "Chelsea Kenton",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Curacao",
+                "Netherlands"
+            ],
+            "dateOfBirth": "1999-09-02",
+            "foot": "right",
+            "height": "Chelsea Kenton WV-HEDW, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "62800",
+            "externalId": "62800",
+            "name": "Shi-jona Martina",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Curacao",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2004-11-14",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "69560",
+            "externalId": "69560",
+            "name": "Taïsha Hansen",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": "2002-11-05",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69551",
+            "externalId": "69551",
+            "name": "Kadisha Martina",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Curacao",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2000-08-28",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72126",
+            "externalId": "72126",
+            "name": "Shareykisha Justiana",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Curacao"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

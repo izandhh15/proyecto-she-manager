@@ -98,7 +98,7 @@ class ShowSquadSelection
                 'position_abbreviation' => $positionDisplay['abbreviation'],
                 'position_bg' => $positionDisplay['bg'],
                 'position_text' => $positionDisplay['text'],
-                'age' => $player->date_of_birth->age,
+                'age' => $player->age ?? 25,
                 'height' => $jp['height'] ?? null,
                 'technical' => $technical,
                 'physical' => $physical,

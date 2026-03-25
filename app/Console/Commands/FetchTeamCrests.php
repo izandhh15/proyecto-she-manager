@@ -57,7 +57,10 @@ class FetchTeamCrests extends Command
             $url = $team->image;
 
             try {
-                $response = Http::timeout(10)->get($url);
+                $response = Http::withoutVerifying()
+                    ->timeout(20)
+                    ->retry(3, 400)
+                    ->get($url);
 
                 if ($response->successful()) {
                     file_put_contents($filePath, $response->body());

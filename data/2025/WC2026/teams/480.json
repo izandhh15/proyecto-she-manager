@@ -1,0 +1,85 @@
+{
+    "id": "480",
+    "externalId": "480",
+    "transfermarktId": "480",
+    "name": "Egypt",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "115607",
+            "externalId": "115607",
+            "name": "Nour Abdelwahed",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Egypt"
+            ],
+            "dateOfBirth": "2004-04-04",
+            "foot": "left",
+            "height": "Nour Abdelwahed FC Masar, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58417",
+            "externalId": "58417",
+            "name": "Mahira Ali",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Egypt"
+            ],
+            "dateOfBirth": "1997-11-01",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "115885",
+            "externalId": "115885",
+            "name": "Amira Mohamed",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Egypt"
+            ],
+            "dateOfBirth": "2003-04-24",
+            "foot": "right",
+            "height": "Aira Mohaed FC Masar, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106426",
+            "externalId": "106426",
+            "name": "Nedya Sawan",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Egypt",
+                "United States"
+            ],
+            "dateOfBirth": "2002-04-22",
+            "foot": "right",
+            "height": "Nedya Sawan vereinslos, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "115878",
+            "externalId": "115878",
+            "name": "Yasmine Abdelaziz",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Egypt"
+            ],
+            "dateOfBirth": "2002-02-02",
+            "foot": "right",
+            "height": "Yasine Abdelaziz FC Masar, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

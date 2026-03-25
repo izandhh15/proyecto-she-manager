@@ -1,0 +1,402 @@
+{
+    "id": "446",
+    "externalId": "446",
+    "transfermarktId": "446",
+    "name": "Australia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "8327",
+            "externalId": "8327",
+            "name": "Mackenzie Arnold",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1994-02-25",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "70k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "66795",
+            "externalId": "66795",
+            "name": "Chloe Lincoln",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2005-01-04",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31963",
+            "externalId": "31963",
+            "name": "Morgan Aquino",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2001-08-04",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39325",
+            "externalId": "39325",
+            "name": "Courtney Nevin",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2002-02-12",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "43989",
+            "externalId": "43989",
+            "name": "Winonah Heatley",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2001-06-18",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "90k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "31903",
+            "externalId": "31903",
+            "name": "Clare Hunt",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1999-03-12",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "110k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "45433",
+            "externalId": "45433",
+            "name": "Jamilla Rankin",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2003-05-09",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "70k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "275",
+            "externalId": "275",
+            "name": "Steph Catley",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1994-01-26",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "450k",
+            "contract": null
+        },
+        {
+            "id": "31862",
+            "externalId": "31862",
+            "name": "Kaitlyn Torpey",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2000-03-17",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "6936",
+            "externalId": "6936",
+            "name": "Alanna Kennedy",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1995-01-21",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "90k",
+            "contract": null
+        },
+        {
+            "id": "30942",
+            "externalId": "30942",
+            "name": "Ellie Carpenter",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2000-04-28",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "550k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "49716",
+            "externalId": "49716",
+            "name": "Charlie Rule",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2003-02-16",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "22344",
+            "externalId": "22344",
+            "name": "Clare Wheeler",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1998-01-14",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "2003",
+            "externalId": "2003",
+            "name": "Emily Van Egmond",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Australia",
+                "Netherlands"
+            ],
+            "dateOfBirth": "1993-07-12",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "80k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "26699",
+            "externalId": "26699",
+            "name": "Alex Chidiac",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1999-01-15",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "40k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "34053",
+            "externalId": "34053",
+            "name": "Amy Sayer",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2001-11-30",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "45k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "597",
+            "externalId": "597",
+            "name": "Katrina Gorry",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Australia",
+                "Ireland"
+            ],
+            "dateOfBirth": "1992-08-13",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "39199",
+            "externalId": "39199",
+            "name": "Kyra Cooney-Cross",
+            "position": "Defensive Midfield",
+            "age": 24,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2002-02-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "250k",
+            "contract": null
+        },
+        {
+            "id": "7059",
+            "externalId": "7059",
+            "name": "Caitlin Foord",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1994-11-11",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "425k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "39964",
+            "externalId": "39964",
+            "name": "Mary Fowler",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Australia",
+                "Ireland"
+            ],
+            "dateOfBirth": "2003-02-14",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "600k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "62824",
+            "externalId": "62824",
+            "name": "Kahli Johnson",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2004-02-18",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "12018",
+            "externalId": "12018",
+            "name": "Hayley Raso",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1994-09-05",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "160k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "910",
+            "externalId": "910",
+            "name": "Sam Kerr",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1993-09-10",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "500k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "725",
+            "externalId": "725",
+            "name": "Michelle Heyman",
+            "position": "Central Midfield",
+            "age": 37,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1988-07-04",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64222",
+            "externalId": "64222",
+            "name": "Holly McNamara",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "2003-01-23",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31960",
+            "externalId": "31960",
+            "name": "Remy Siemsen",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Australia"
+            ],
+            "dateOfBirth": "1999-11-10",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "70k",
+            "contract": null
+        }
+    ]
+}

@@ -1,0 +1,389 @@
+{
+    "id": "751",
+    "externalId": "751",
+    "transfermarktId": "751",
+    "name": "Spain",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "34648",
+            "externalId": "34648",
+            "name": "Misa Rodríguez",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "1999-07-22",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "150k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "41016",
+            "externalId": "41016",
+            "name": "Enith Salón",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2001-09-24",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42896",
+            "externalId": "42896",
+            "name": "Adriana Nanclares",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2002-05-09",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "125k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "84969",
+            "externalId": "84969",
+            "name": "Aiara Agirrezabala",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2008-10-02",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "150k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "30423",
+            "externalId": "30423",
+            "name": "Ona Batlle",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "1999-06-10",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "800k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "58462",
+            "externalId": "58462",
+            "name": "Lucía Corrales",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2005-11-24",
+            "foot": "left",
+            "height": "1,72m",
+            "marketValue": "100k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "35181",
+            "externalId": "35181",
+            "name": "Jana Fernández",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2002-02-18",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "300k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35184",
+            "externalId": "35184",
+            "name": "María Méndez",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2001-04-10",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "450k",
+            "contract": null
+        },
+        {
+            "id": "35558",
+            "externalId": "35558",
+            "name": "Laia Codina",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2000-01-22",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "275k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "35563",
+            "externalId": "35563",
+            "name": "Olga Carmona",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2000-06-12",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "500k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "57101",
+            "externalId": "57101",
+            "name": "Sandra Villafañe",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2005-09-18",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "80k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "48781",
+            "externalId": "48781",
+            "name": "Martina Fernández",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2004-10-01",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "20817",
+            "externalId": "20817",
+            "name": "Mariona Caldentey",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "1996-03-19",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "1.3m",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "92032",
+            "externalId": "92032",
+            "name": "Clara Serrajordi",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2007-12-07",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "150k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "62819",
+            "externalId": "62819",
+            "name": "Vicky López",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Spain",
+                "Nigeria"
+            ],
+            "dateOfBirth": "2006-07-26",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "800k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "48937",
+            "externalId": "48937",
+            "name": "Fiamma Benítez",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Spain",
+                "Argentina"
+            ],
+            "dateOfBirth": "2004-06-19",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "500k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "21948",
+            "externalId": "21948",
+            "name": "Patri Guijarro",
+            "position": "Defensive Midfield",
+            "age": 27,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "1998-05-17",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "1.3m",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "4824",
+            "externalId": "4824",
+            "name": "Alexia Putellas",
+            "position": "Attacking Midfield",
+            "age": 32,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "1994-02-04",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "1.2m",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "43216",
+            "externalId": "43216",
+            "name": "Inma Gabarro",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2002-11-05",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "100k",
+            "contract": null
+        },
+        {
+            "id": "47634",
+            "externalId": "47634",
+            "name": "Edna Imade",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Spain",
+                "Nigeria"
+            ],
+            "dateOfBirth": "2000-10-05",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "550k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "40417",
+            "externalId": "40417",
+            "name": "Ornella Vignola",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Spain",
+                "Uruguay"
+            ],
+            "dateOfBirth": "2004-09-30",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "150k",
+            "contract": null
+        },
+        {
+            "id": "35758",
+            "externalId": "35758",
+            "name": "Claudia Pina",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2001-08-12",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "1.2m",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "35564",
+            "externalId": "35564",
+            "name": "Athenea del Castillo",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2000-10-24",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "650k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35179",
+            "externalId": "35179",
+            "name": "Salma Paralluelo",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Spain",
+                "Equatorial Guinea"
+            ],
+            "dateOfBirth": "2003-11-13",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "750k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "30432",
+            "externalId": "30432",
+            "name": "Eva Navarro",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Spain"
+            ],
+            "dateOfBirth": "2001-01-27",
+            "foot": "both",
+            "height": "1,60m",
+            "marketValue": "200k",
+            "contract": "2028-06-30"
+        }
+    ]
+}

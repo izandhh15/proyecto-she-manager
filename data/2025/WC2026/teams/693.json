@@ -1,0 +1,374 @@
+{
+    "id": "693",
+    "externalId": "693",
+    "transfermarktId": "693",
+    "name": "New Zealand",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "107721",
+            "externalId": "107721",
+            "name": "Alina Santos",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2003-08-25",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22501",
+            "externalId": "22501",
+            "name": "Victoria Esson",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1991-03-06",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "33535",
+            "externalId": "33535",
+            "name": "Anna Leat",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2001-06-26",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "105015",
+            "externalId": "105015",
+            "name": "Lara Wall",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2000-05-31",
+            "foot": "right",
+            "height": "Lara Wall Wellington Phoenix FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "17980",
+            "externalId": "17980",
+            "name": "CJ Bott",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1995-04-22",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "18017",
+            "externalId": "18017",
+            "name": "Meikayla Moore",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1996-06-04",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "25k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "22850",
+            "externalId": "22850",
+            "name": "Elizabeth Anton",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1998-12-12",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "34032",
+            "externalId": "34032",
+            "name": "Ally Green",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "New Zealand",
+                "Australia"
+            ],
+            "dateOfBirth": "1998-08-17",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "35820",
+            "externalId": "35820",
+            "name": "Michaela Foster",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1999-01-09",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35823",
+            "externalId": "35823",
+            "name": "Claudia Bunge",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1999-09-21",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "75619",
+            "externalId": "75619",
+            "name": "Emma Pijnenburg",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "New Zealand",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2004-09-13",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64225",
+            "externalId": "64225",
+            "name": "Kate Taylor",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2003-10-21",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "65k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "6606",
+            "externalId": "6606",
+            "name": "Betsy Hassett",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1990-08-04",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "82249",
+            "externalId": "82249",
+            "name": "Deven Jackson",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1998-04-22",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "68405",
+            "externalId": "68405",
+            "name": "Katie Kitching",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "New Zealand",
+                "England"
+            ],
+            "dateOfBirth": "1998-09-06",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "37811",
+            "externalId": "37811",
+            "name": "Grace Wisnewski",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2002-06-28",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "37804",
+            "externalId": "37804",
+            "name": "Maya Hahn",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "New Zealand",
+                "Germany"
+            ],
+            "dateOfBirth": "2001-02-07",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "14004",
+            "externalId": "14004",
+            "name": "Olivia Chance",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1993-10-05",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "1120",
+            "externalId": "1120",
+            "name": "Annalie Longo",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1991-07-01",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38947",
+            "externalId": "38947",
+            "name": "Indiah-Paige Riley",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "New Zealand",
+                "Australia"
+            ],
+            "dateOfBirth": "2001-12-20",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "37799",
+            "externalId": "37799",
+            "name": "Kelli Brown",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2001-02-21",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "75613",
+            "externalId": "75613",
+            "name": "Milly Clegg",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2005-11-01",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "35832",
+            "externalId": "35832",
+            "name": "Gabi Rennie",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "2001-07-07",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "35824",
+            "externalId": "35824",
+            "name": "Jacqui Hand",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "New Zealand"
+            ],
+            "dateOfBirth": "1999-02-19",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        }
+    ]
+}

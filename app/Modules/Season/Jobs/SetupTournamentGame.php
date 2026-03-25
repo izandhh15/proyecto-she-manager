@@ -17,6 +17,7 @@ use App\Models\GameStanding;
 use App\Models\Player;
 use App\Support\ExternalData;
 use App\Models\Team;
+use App\Modules\Season\Services\TournamentRosterFallbackService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -43,6 +44,7 @@ class SetupTournamentGame implements ShouldQueue
         StandingsCalculator $standingsCalculator,
         PlayerDevelopmentService $developmentService,
         NotificationService $notificationService,
+        TournamentRosterFallbackService $tournamentRosterFallbackService,
     ): void {
         $game = Game::find($this->gameId);
         if (!$game || $game->isSetupComplete()) {
@@ -71,7 +73,7 @@ class SetupTournamentGame implements ShouldQueue
 
         // Step 4: Create game players for teams with JSON rosters
         $currentDate = $game->current_date ?? Carbon::parse('2025-06-10');
-        $this->createGamePlayers($mapping, $developmentService, $currentDate);
+        $this->createGamePlayers($game, $mapping, $developmentService, $currentDate, $tournamentRosterFallbackService);
 
         // Compute tiers for all players based on market value
         app(PlayerTierService::class)->recomputeAllTiersForGame($this->gameId);
@@ -188,7 +190,13 @@ class SetupTournamentGame implements ShouldQueue
     /**
      * Create game players only for teams that have JSON roster files.
      */
-    private function createGamePlayers(array $teamMapping, PlayerDevelopmentService $developmentService, Carbon $currentDate): void
+    private function createGamePlayers(
+        Game $game,
+        array $teamMapping,
+        PlayerDevelopmentService $developmentService,
+        Carbon $currentDate,
+        TournamentRosterFallbackService $tournamentRosterFallbackService,
+    ): void
     {
         if (GamePlayer::where('game_id', $this->gameId)->exists()) {
             return;
@@ -196,6 +204,7 @@ class SetupTournamentGame implements ShouldQueue
 
         $basePath = base_path('data/2025/WC2026/teams');
         $allPlayers = Player::all()->keyBy('external_id');
+        $teamsById = Team::whereIn('id', collect($teamMapping)->pluck('uuid')->all())->get()->keyBy('id');
         $playerRows = [];
 
         // Only process teams that have an external_id (i.e., have JSON roster files)
@@ -234,7 +243,7 @@ class SetupTournamentGame implements ShouldQueue
                 $currentAbility = (int) round(
                     ($player->technical_ability + $player->physical_ability) / 2
                 );
-                $age = (int) $player->date_of_birth->diffInYears($currentDate);
+                $age = $player->ageAt($currentDate);
                 $potentialData = $developmentService->generatePotential(
                     $age,
                     $currentAbility
@@ -266,6 +275,10 @@ class SetupTournamentGame implements ShouldQueue
 
         foreach (array_chunk($playerRows, 100) as $chunk) {
             GamePlayer::insert($chunk);
+        }
+
+        foreach ($teamsById as $team) {
+            $tournamentRosterFallbackService->ensureMinimumSquad($game, $team);
         }
     }
 }

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Support\Str;
 
 /**
  * @property string $id
@@ -43,6 +44,9 @@ class Team extends Model
     use HasFactory, HasUuids;
 
     public $timestamps = false;
+
+    /** @var array<string, string>|null */
+    private static ?array $localCrestMap = null;
 
     protected $fillable = [
         'external_source',
@@ -113,6 +117,10 @@ class Team extends Model
 
         $originalUrl = $this->attributes['image'] ?? null;
 
+        if ($localPath = $this->resolveNamedLocalCrestPath()) {
+            return Storage::disk('assets')->url($localPath);
+        }
+
         if ($this->external_id) {
             foreach (['png', 'svg'] as $extension) {
                 $localPath = "crests/{$this->external_id}.{$extension}";
@@ -123,6 +131,70 @@ class Team extends Model
         }
 
         return $originalUrl;
+    }
+
+    private function resolveNamedLocalCrestPath(): ?string
+    {
+        $name = $this->attributes['name'] ?? '';
+        $key = self::normalizeCrestKey($name);
+
+        if ($key === '') {
+            return null;
+        }
+
+        return self::localCrestMap()[$key] ?? null;
+    }
+
+    /**
+     * Build a lookup map for manual crest files named by club slug, optionally
+     * prefixed with a competition code such as "esp1-" or "eng1-".
+     *
+     * @return array<string, string>
+     */
+    private static function localCrestMap(): array
+    {
+        if (self::$localCrestMap !== null) {
+            return self::$localCrestMap;
+        }
+
+        $crestsDir = public_path('crests');
+        if (! is_dir($crestsDir)) {
+            return self::$localCrestMap = [];
+        }
+
+        $map = [];
+
+        foreach (scandir($crestsDir) ?: [] as $file) {
+            $path = $crestsDir . DIRECTORY_SEPARATOR . $file;
+            if (! is_file($path)) {
+                continue;
+            }
+
+            $extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+            if (! in_array($extension, ['png', 'svg'], true)) {
+                continue;
+            }
+
+            $basename = pathinfo($file, PATHINFO_FILENAME);
+            $relativePath = "crests/{$file}";
+
+            $keys = [self::normalizeCrestKey($basename)];
+
+            if (preg_match('/^[a-z0-9]+-(.+)$/i', $basename, $matches) === 1) {
+                $keys[] = self::normalizeCrestKey($matches[1]);
+            }
+
+            foreach (array_filter(array_unique($keys)) as $key) {
+                $map[$key] ??= $relativePath;
+            }
+        }
+
+        return self::$localCrestMap = $map;
+    }
+
+    private static function normalizeCrestKey(string $value): string
+    {
+        return trim(Str::slug(Str::ascii($value)));
     }
 
     public function getTransfermarktIdAttribute(): ?string

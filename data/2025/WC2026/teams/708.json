@@ -1,0 +1,355 @@
+{
+    "id": "708",
+    "externalId": "708",
+    "transfermarktId": "708",
+    "name": "Paraguay",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "25227",
+            "externalId": "25227",
+            "name": "Cristina Recalde",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "1994-03-29",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70499",
+            "externalId": "70499",
+            "name": "Araceli Leguizamón",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2005-08-06",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "55060",
+            "externalId": "55060",
+            "name": "Sol Belotto",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2003-08-14",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "28k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "79244",
+            "externalId": "79244",
+            "name": "Camila Barbosa",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Paraguay",
+                "Brazil"
+            ],
+            "dateOfBirth": "2002-02-18",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "35845",
+            "externalId": "35845",
+            "name": "Deisy Ojeda",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2000-03-03",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35854",
+            "externalId": "35854",
+            "name": "Daysy Bareiro",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2001-01-19",
+            "foot": "left",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35855",
+            "externalId": "35855",
+            "name": "Dahiana Bogarín",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2000-11-13",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35870",
+            "externalId": "35870",
+            "name": "María Martínez",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "1999-05-24",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70495",
+            "externalId": "70495",
+            "name": "Naomi de León",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2005-05-06",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91696",
+            "externalId": "91696",
+            "name": "Liz Barreto",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2000-11-04",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46148",
+            "externalId": "46148",
+            "name": "Fiorela Martínez",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2002-04-18",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65584",
+            "externalId": "65584",
+            "name": "Camila Arrieta",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2001-09-16",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96307",
+            "externalId": "96307",
+            "name": "Belén Riveros",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2002-06-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91697",
+            "externalId": "91697",
+            "name": "Diana Benítez",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2007-03-30",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101849",
+            "externalId": "101849",
+            "name": "Danna Garcete",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2005-05-21",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22862",
+            "externalId": "22862",
+            "name": "Fanny Godoy",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "1998-01-21",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101851",
+            "externalId": "101851",
+            "name": "Claudia Martínez",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2008-01-15",
+            "foot": "both",
+            "height": "1,65m",
+            "marketValue": "300k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "72529",
+            "externalId": "72529",
+            "name": "Cindy Ramos",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2002-11-01",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70491",
+            "externalId": "70491",
+            "name": "Fátima Acosta",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "2005-01-07",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38179",
+            "externalId": "38179",
+            "name": "Ramona Martínez",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "1996-07-21",
+            "foot": "right",
+            "height": "1,49m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35871",
+            "externalId": "35871",
+            "name": "Celeste Aguilera",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "1999-06-16",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35850",
+            "externalId": "35850",
+            "name": "Lice Chamorro",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "1998-12-22",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "22869",
+            "externalId": "22869",
+            "name": "Jessica Martínez",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Paraguay"
+            ],
+            "dateOfBirth": "1999-06-14",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "40k",
+            "contract": null
+        }
+    ]
+}

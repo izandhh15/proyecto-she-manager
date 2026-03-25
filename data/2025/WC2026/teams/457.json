@@ -1,0 +1,379 @@
+{
+    "id": "457",
+    "externalId": "457",
+    "transfermarktId": "457",
+    "name": "Canada",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "18197",
+            "externalId": "18197",
+            "name": "Kailen Sheridan",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "1995-07-16",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "80k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "95771",
+            "externalId": "95771",
+            "name": "Mel Dagenais",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "2000-12-07",
+            "foot": "right",
+            "height": "1,86m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "49277",
+            "externalId": "49277",
+            "name": "Emily Burns",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "1997-07-24",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "37711",
+            "externalId": "37711",
+            "name": "Jade Rose",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "2003-02-12",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "250k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "82411",
+            "externalId": "82411",
+            "name": "Sydney Collins",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Canada",
+                "United States"
+            ],
+            "dateOfBirth": "1999-09-08",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "71344",
+            "externalId": "71344",
+            "name": "Megan Reid",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Canada",
+                "United States"
+            ],
+            "dateOfBirth": "1996-07-08",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "55k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "68868",
+            "externalId": "68868",
+            "name": "Brooklyn Courtnall",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Canada",
+                "United States"
+            ],
+            "dateOfBirth": "2002-12-28",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "40k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "35912",
+            "externalId": "35912",
+            "name": "Vanessa Gilles",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Canada",
+                "France"
+            ],
+            "dateOfBirth": "1996-03-11",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "190k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "24969",
+            "externalId": "24969",
+            "name": "Janine Sonis",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Canada",
+                "United States"
+            ],
+            "dateOfBirth": "1994-08-20",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "100k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "23009",
+            "externalId": "23009",
+            "name": "Marie Levasseur",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "1997-05-18",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23002",
+            "externalId": "23002",
+            "name": "Gabrielle Carle",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "1998-10-12",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "150k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "33877",
+            "externalId": "33877",
+            "name": "Julia Grosso",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "2000-08-29",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "175k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "33885",
+            "externalId": "33885",
+            "name": "Emma Regan",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "2000-01-28",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "90k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "68871",
+            "externalId": "68871",
+            "name": "Simi Awujo",
+            "position": "Defensive Midfield",
+            "age": 22,
+            "nationality": [
+                "Canada",
+                "United States"
+            ],
+            "dateOfBirth": "2003-09-23",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "300k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "22300",
+            "externalId": "22300",
+            "name": "Jessie Fleming",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "1998-03-11",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "150k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "34363",
+            "externalId": "34363",
+            "name": "Cloé Lacasse",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Canada",
+                "Iceland"
+            ],
+            "dateOfBirth": "1993-07-07",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "140k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "33588",
+            "externalId": "33588",
+            "name": "Marie-Yasmine Alidou",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "1995-04-28",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "45k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "18193",
+            "externalId": "18193",
+            "name": "Nichelle Prince",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Canada",
+                "Jamaica"
+            ],
+            "dateOfBirth": "1995-02-19",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "55k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "43998",
+            "externalId": "43998",
+            "name": "Evelyne Viens",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "1997-02-06",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "180k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "33550",
+            "externalId": "33550",
+            "name": "Jordyn Huitema",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "2001-05-08",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "150k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "55619",
+            "externalId": "55619",
+            "name": "Delaney Baie Pridham",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Canada",
+                "United States"
+            ],
+            "dateOfBirth": "1997-09-02",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "30k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "68859",
+            "externalId": "68859",
+            "name": "Holly Ward",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "2003-10-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "79112",
+            "externalId": "79112",
+            "name": "Annabelle Chukwu",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Canada",
+                "Nigeria"
+            ],
+            "dateOfBirth": "2007-02-08",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "95964",
+            "externalId": "95964",
+            "name": "Kaylee Hunter",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Canada"
+            ],
+            "dateOfBirth": "2008-01-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        }
+    ]
+}

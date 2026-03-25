@@ -1,0 +1,371 @@
+{
+    "id": "447",
+    "externalId": "447",
+    "transfermarktId": "447",
+    "name": "Belgium",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "41174",
+            "externalId": "41174",
+            "name": "Lowiese Seynhaeve",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1999-12-29",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "17132",
+            "externalId": "17132",
+            "name": "Diede Lemey",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1996-10-07",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "39895",
+            "externalId": "39895",
+            "name": "Femke Bastiaen",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2001-04-11",
+            "foot": "right",
+            "height": "Feke Bastiaen FC Utrecht, Goalkeeperm",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "81017",
+            "externalId": "81017",
+            "name": "Amy Littel",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2004-04-15",
+            "foot": "left",
+            "height": "Ay Littel Club YLA, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63525",
+            "externalId": "63525",
+            "name": "Saar Janssen",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2005-07-22",
+            "foot": "left",
+            "height": "Saar Janssen OH Leuven Woen, Defencem",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "20698",
+            "externalId": "20698",
+            "name": "Isabelle Iliano",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1997-03-02",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "40k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39903",
+            "externalId": "39903",
+            "name": "Sari Kees",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2001-02-17",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39896",
+            "externalId": "39896",
+            "name": "Constance Brackman",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2001-10-20",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "84217",
+            "externalId": "84217",
+            "name": "Aurélie Reynders",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2007-07-08",
+            "foot": "right",
+            "height": "Aurélie Reynders OH Leuven Woen, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "40673",
+            "externalId": "40673",
+            "name": "Jarne Teulings",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2002-01-11",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "65k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "39904",
+            "externalId": "39904",
+            "name": "Zenia Mertens",
+            "position": "Defensive Midfield",
+            "age": 25,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2001-02-27",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "40k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "38337",
+            "externalId": "38337",
+            "name": "Marie Detruyer",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2004-01-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "120k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "38330",
+            "externalId": "38330",
+            "name": "Valesca Ampoorter",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2004-03-05",
+            "foot": "right",
+            "height": "Valesca Apoorter TSG 1899 Hoffenhei, Midfieldm",
+            "marketValue": "100k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "30675",
+            "externalId": "30675",
+            "name": "Kassandra Missipo",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Belgium",
+                "Cameroon"
+            ],
+            "dateOfBirth": "1998-02-03",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "20690",
+            "externalId": "20690",
+            "name": "Tine De Caigny",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1997-06-09",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "14521",
+            "externalId": "14521",
+            "name": "Justine Vanhaevermaet",
+            "position": "Defensive Midfield",
+            "age": 33,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1992-04-29",
+            "foot": "right",
+            "height": "1,85m",
+            "marketValue": "30k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "13654",
+            "externalId": "13654",
+            "name": "Janice Cayman",
+            "position": "Defensive Midfield",
+            "age": 37,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1988-10-12",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "25k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "23420",
+            "externalId": "23420",
+            "name": "Elena Dhont",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1998-03-27",
+            "foot": "both",
+            "height": "1,64m",
+            "marketValue": "80k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "14539",
+            "externalId": "14539",
+            "name": "Ella van Kerkhoven",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1993-11-20",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "35k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "41175",
+            "externalId": "41175",
+            "name": "Mariam Toloba",
+            "position": "Second Striker",
+            "age": 26,
+            "nationality": [
+                "Belgium",
+                "Ghana"
+            ],
+            "dateOfBirth": "1999-09-20",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "55k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "42033",
+            "externalId": "42033",
+            "name": "Hannah Eurlings",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2003-01-01",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "70k",
+            "contract": null
+        },
+        {
+            "id": "42036",
+            "externalId": "42036",
+            "name": "Luna Vanzeir",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2003-01-07",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "58035",
+            "externalId": "58035",
+            "name": "Lore Jacobs",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "2005-04-27",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "100k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "11531",
+            "externalId": "11531",
+            "name": "Tessa Wullaert",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Belgium"
+            ],
+            "dateOfBirth": "1993-03-19",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "100k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

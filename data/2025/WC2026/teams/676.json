@@ -1,0 +1,457 @@
+{
+    "id": "676",
+    "externalId": "676",
+    "transfermarktId": "676",
+    "name": "Morocco",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "64322",
+            "externalId": "64322",
+            "name": "Khadija Er-Rmichi",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1989-09-16",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "88039",
+            "externalId": "88039",
+            "name": "Fatima El Jebraoui",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "2007-08-08",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33590",
+            "externalId": "33590",
+            "name": "Inès Arouaissa",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "2001-06-30",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64269",
+            "externalId": "64269",
+            "name": "Hind El Hasnaoui",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1996-09-13",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64323",
+            "externalId": "64323",
+            "name": "Zineb Redouani",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "2000-06-12",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66737",
+            "externalId": "66737",
+            "name": "Nouhaïla Benzina",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1998-05-11",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64325",
+            "externalId": "64325",
+            "name": "Siham Boukhami",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1992-02-01",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64273",
+            "externalId": "64273",
+            "name": "Aziza Rabbah",
+            "position": "Central Midfield",
+            "age": 39,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1986-07-04",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110191",
+            "externalId": "110191",
+            "name": "Soumia Hady",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1998-06-30",
+            "foot": "left",
+            "height": "Souia Hady Wydad Casablanca, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48803",
+            "externalId": "48803",
+            "name": "Hanane Aït El Haj",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1994-11-02",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "79044",
+            "externalId": "79044",
+            "name": "Hajar Saïd",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "2005-05-22",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "47038",
+            "externalId": "47038",
+            "name": "Sarah Kassi",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "2003-09-09",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "45k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "12261",
+            "externalId": "12261",
+            "name": "Élodie Nakkach",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "1995-01-20",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "64328",
+            "externalId": "64328",
+            "name": "Ghizlane Chebbak",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1990-08-22",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64327",
+            "externalId": "64327",
+            "name": "Najat Badri",
+            "position": "Attacking Midfield",
+            "age": 37,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1988-05-19",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "60117",
+            "externalId": "60117",
+            "name": "Sabah Seghir",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "2000-09-27",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22125",
+            "externalId": "22125",
+            "name": "Anissa Lahmari",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "1997-02-17",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "35k",
+            "contract": null
+        },
+        {
+            "id": "64329",
+            "externalId": "64329",
+            "name": "Sanaâ Mssoudy",
+            "position": "Attacking Midfield",
+            "age": 26,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1999-12-30",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48492",
+            "externalId": "48492",
+            "name": "Imane Saoud",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "2002-06-06",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "75k",
+            "contract": null
+        },
+        {
+            "id": "35569",
+            "externalId": "35569",
+            "name": "Yasmin Mrabet",
+            "position": "Defensive Midfield",
+            "age": 26,
+            "nationality": [
+                "Morocco",
+                "Spain"
+            ],
+            "dateOfBirth": "1999-08-08",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "60121",
+            "externalId": "60121",
+            "name": "Imène El Ghazouani",
+            "position": "Attacking Midfield",
+            "age": 25,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "2000-06-09",
+            "foot": "right",
+            "height": "Iène El Ghazouani FUS Rabat, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96473",
+            "externalId": "96473",
+            "name": "Salma Bouguerch",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1998-11-04",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38332",
+            "externalId": "38332",
+            "name": "Rania Boutiebi",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Morocco",
+                "Belgium"
+            ],
+            "dateOfBirth": "2004-03-04",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "46619",
+            "externalId": "46619",
+            "name": "Kenza Chapelle",
+            "position": "Second Striker",
+            "age": 23,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "2002-08-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "35k",
+            "contract": null
+        },
+        {
+            "id": "71119",
+            "externalId": "71119",
+            "name": "Imane Touriss",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Morocco",
+                "France"
+            ],
+            "dateOfBirth": "2005-02-11",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "111536",
+            "externalId": "111536",
+            "name": "Shara Codina",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Morocco",
+                "Spain"
+            ],
+            "dateOfBirth": "2000-06-26",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66741",
+            "externalId": "66741",
+            "name": "Ibtissam Jraïdi",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1992-12-09",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64331",
+            "externalId": "64331",
+            "name": "Fatima Tagnaout",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Morocco"
+            ],
+            "dateOfBirth": "1999-01-20",
+            "foot": "left",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36116",
+            "externalId": "36116",
+            "name": "Sakina Ouzraoui",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Morocco",
+                "Belgium"
+            ],
+            "dateOfBirth": "2001-08-29",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

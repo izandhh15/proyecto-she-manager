@@ -1,0 +1,371 @@
+{
+    "id": "819",
+    "externalId": "819",
+    "transfermarktId": "819",
+    "name": "Uruguay",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "70332",
+            "externalId": "70332",
+            "name": "Romina Olmedo",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2006-10-07",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65461",
+            "externalId": "65461",
+            "name": "Agustina Sánchez",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1999-09-11",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38209",
+            "externalId": "38209",
+            "name": "Sofía Olivera",
+            "position": "Goalkeeper",
+            "age": 34,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1991-08-14",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "77336",
+            "externalId": "77336",
+            "name": "Fátima Traversaro",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Uruguay",
+                "Spain"
+            ],
+            "dateOfBirth": "2003-05-15",
+            "foot": "left",
+            "height": "Fátia Traversaro Balears FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "28488",
+            "externalId": "28488",
+            "name": "Stephanie Lacoste",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1996-09-09",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38212",
+            "externalId": "38212",
+            "name": "Daiana Farías",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1999-01-26",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18094",
+            "externalId": "18094",
+            "name": "Carina Felipe",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1998-03-03",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18111",
+            "externalId": "18111",
+            "name": "Stephanie Tregartten",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1997-10-13",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "94302",
+            "externalId": "94302",
+            "name": "Fátima Barone",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1999-09-17",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52155",
+            "externalId": "52155",
+            "name": "Yannel Correa",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Uruguay",
+                "Spain"
+            ],
+            "dateOfBirth": "1996-09-10",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "28k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "71730",
+            "externalId": "71730",
+            "name": "Alison Latúa",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2003-05-23",
+            "foot": "left",
+            "height": "Alison Latúa Club Nacional, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37832",
+            "externalId": "37832",
+            "name": "Juliana Viera",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2002-05-08",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110316",
+            "externalId": "110316",
+            "name": "Micaela Fitipaldi",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1999-09-22",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38217",
+            "externalId": "38217",
+            "name": "Sindy Ramírez",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1991-01-28",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38219",
+            "externalId": "38219",
+            "name": "Ximena Velazco",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1995-07-31",
+            "foot": "both",
+            "height": "1,57m",
+            "marketValue": "28k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "18105",
+            "externalId": "18105",
+            "name": "Pamela González",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1995-09-28",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "65k",
+            "contract": null
+        },
+        {
+            "id": "37812",
+            "externalId": "37812",
+            "name": "Pilar González",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2002-06-29",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37822",
+            "externalId": "37822",
+            "name": "Ángela Gómez",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2002-08-19",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70325",
+            "externalId": "70325",
+            "name": "Ilana Guedes",
+            "position": "Attacking Midfield",
+            "age": 19,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2007-03-13",
+            "foot": "right",
+            "height": "Ilana Guedes Liverpool FC Montevideo, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37816",
+            "externalId": "37816",
+            "name": "Belén Aquino",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2002-02-01",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "37830",
+            "externalId": "37830",
+            "name": "Espe Pizarro",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2001-04-15",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "18117",
+            "externalId": "18117",
+            "name": "Alaides Paz",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "1996-05-27",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46575",
+            "externalId": "46575",
+            "name": "Wendy Carballo",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2002-07-28",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110315",
+            "externalId": "110315",
+            "name": "Yamila Dornelles",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Uruguay"
+            ],
+            "dateOfBirth": "2006-07-09",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

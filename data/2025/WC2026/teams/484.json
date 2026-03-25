@@ -1,0 +1,388 @@
+{
+    "id": "484",
+    "externalId": "484",
+    "transfermarktId": "484",
+    "name": "Algeria",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "19079",
+            "externalId": "19079",
+            "name": "Chloé N’Gazi",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1996-06-06",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "35k",
+            "contract": null
+        },
+        {
+            "id": "100050",
+            "externalId": "100050",
+            "name": "Lisa Jacob Zouaoui",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2005-01-18",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28709",
+            "externalId": "28709",
+            "name": "Sofia Guellati",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1992-07-09",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "15k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35284",
+            "externalId": "35284",
+            "name": "Roselène Khezami",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2001-09-02",
+            "foot": "left",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29410",
+            "externalId": "29410",
+            "name": "Morgane Belkhiter",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1995-11-23",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35281",
+            "externalId": "35281",
+            "name": "Inès Belloumou",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2001-06-21",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "25k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "59966",
+            "externalId": "59966",
+            "name": "Emma Smaali",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2000-09-29",
+            "foot": "left",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29149",
+            "externalId": "29149",
+            "name": "Léa Abadou",
+            "position": "Defensive Midfield",
+            "age": 29,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1997-03-12",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61129",
+            "externalId": "61129",
+            "name": "Mélinne D’Oria",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2001-08-07",
+            "foot": "right",
+            "height": "Mélinne D’Oria Le Mans FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65215",
+            "externalId": "65215",
+            "name": "Ouassila Alouache",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Algeria"
+            ],
+            "dateOfBirth": "2000-07-11",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79610",
+            "externalId": "79610",
+            "name": "Mélissa Bethi",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2005-11-18",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "80k",
+            "contract": null
+        },
+        {
+            "id": "37026",
+            "externalId": "37026",
+            "name": "Wissem Bouzid",
+            "position": "Defensive Midfield",
+            "age": 23,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2002-12-18",
+            "foot": "right",
+            "height": "Wisse Bouzid Le Mans FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31774",
+            "externalId": "31774",
+            "name": "Lina Boussaha",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1999-01-16",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "30644",
+            "externalId": "30644",
+            "name": "Amira Ould Braham",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1998-02-17",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "25k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "65218",
+            "externalId": "65218",
+            "name": "Nouhed Naïli",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Algeria"
+            ],
+            "dateOfBirth": "2001-04-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105990",
+            "externalId": "105990",
+            "name": "Aïcha Hamidèche",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Algeria"
+            ],
+            "dateOfBirth": "2001-10-02",
+            "foot": "left",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "105833",
+            "externalId": "105833",
+            "name": "Ferial Daoui",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Algeria"
+            ],
+            "dateOfBirth": "1999-12-15",
+            "foot": "right",
+            "height": "Ferial Daoui Al-Aal, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "95752",
+            "externalId": "95752",
+            "name": "Sidi Moussa Ikram Salima",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2004-06-12",
+            "foot": "right",
+            "height": "Sidi Moussa Ikra Salia FC Fleury 91 B, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110128",
+            "externalId": "110128",
+            "name": "Inès Khiri",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1999-03-28",
+            "foot": "right",
+            "height": "Inès Khiri Yverdon Sport FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73663",
+            "externalId": "73663",
+            "name": "Lynda Bendris",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "2004-07-25",
+            "foot": "right",
+            "height": "Lynda Bendris AS Cannes, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59985",
+            "externalId": "59985",
+            "name": "Ikram Adjabi",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Algeria"
+            ],
+            "dateOfBirth": "1998-05-23",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "15k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "59933",
+            "externalId": "59933",
+            "name": "Laura Taleb Muller",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1999-01-09",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "30794",
+            "externalId": "30794",
+            "name": "Inès Boutaleb",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1998-11-08",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61437",
+            "externalId": "61437",
+            "name": "Morgane Ikene",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Algeria",
+                "France"
+            ],
+            "dateOfBirth": "1999-01-13",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

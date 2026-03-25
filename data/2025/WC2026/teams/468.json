@@ -1,0 +1,372 @@
+{
+    "id": "468",
+    "externalId": "468",
+    "transfermarktId": "468",
+    "name": "United States",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "44514",
+            "externalId": "44514",
+            "name": "Claudia Dickey",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2000-01-06",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "80k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "41276",
+            "externalId": "41276",
+            "name": "Phallon Tullis-Joyce",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1996-10-19",
+            "foot": "right",
+            "height": "1,85m",
+            "marketValue": "250k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "22761",
+            "externalId": "22761",
+            "name": "Emily Sonnett",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1993-11-25",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "125k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "72694",
+            "externalId": "72694",
+            "name": "Gisele Thompson",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2005-12-02",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "400k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "69707",
+            "externalId": "69707",
+            "name": "Avery Patterson",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2002-06-14",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "120k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "67460",
+            "externalId": "67460",
+            "name": "Emily Sams",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1999-07-01",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "175k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "35745",
+            "externalId": "35745",
+            "name": "Emily Fox",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1998-07-05",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "650k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "33940",
+            "externalId": "33940",
+            "name": "Tara Rudd",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1999-07-02",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "200k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "31805",
+            "externalId": "31805",
+            "name": "Kennedy Wesley",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2001-03-08",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "75k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "31755",
+            "externalId": "31755",
+            "name": "Naomi Girma",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "United States",
+                "Ethiopia"
+            ],
+            "dateOfBirth": "2000-06-14",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "800k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "33935",
+            "externalId": "33935",
+            "name": "Sam Coffey",
+            "position": "Defensive Midfield",
+            "age": 27,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1998-12-31",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "450k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "59277",
+            "externalId": "59277",
+            "name": "Olivia Moultrie",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2005-09-17",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "350k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "24977",
+            "externalId": "24977",
+            "name": "Rose Lavelle",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1995-05-14",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "250k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "72682",
+            "externalId": "72682",
+            "name": "Claire Hutton",
+            "position": "Defensive Midfield",
+            "age": 20,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2006-01-11",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "225k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "72683",
+            "externalId": "72683",
+            "name": "Riley Jackson",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2005-12-02",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "80k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "7331",
+            "externalId": "7331",
+            "name": "Lindsey Heaps",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "1994-05-26",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "650k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74149",
+            "externalId": "74149",
+            "name": "Jaedyn Shaw",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "United States",
+                "Vietnam"
+            ],
+            "dateOfBirth": "2004-11-20",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "350k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "85614",
+            "externalId": "85614",
+            "name": "Lily Yohannes",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "United States",
+                "Eritrea"
+            ],
+            "dateOfBirth": "2007-06-12",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "700k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "96864",
+            "externalId": "96864",
+            "name": "Jameese Joseph",
+            "position": "Second Striker",
+            "age": 23,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2002-05-03",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "80k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "96741",
+            "externalId": "96741",
+            "name": "Emma Sears",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2001-02-23",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "125k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "86719",
+            "externalId": "86719",
+            "name": "Maddie Dahlien",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2004-07-25",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "75k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "73977",
+            "externalId": "73977",
+            "name": "Ally Sentnor",
+            "position": "Second Striker",
+            "age": 22,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2004-02-18",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "400k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "69735",
+            "externalId": "69735",
+            "name": "Alyssa Thompson",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2004-11-07",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "700k",
+            "contract": "2030-06-30"
+        },
+        {
+            "id": "37838",
+            "externalId": "37838",
+            "name": "Trinity Rodman",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "United States"
+            ],
+            "dateOfBirth": "2002-05-20",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "800k",
+            "contract": "2028-12-31"
+        }
+    ]
+}

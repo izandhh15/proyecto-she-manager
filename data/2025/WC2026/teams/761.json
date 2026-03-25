@@ -1,0 +1,414 @@
+{
+    "id": "761",
+    "externalId": "761",
+    "transfermarktId": "761",
+    "name": "South Africa",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "93045",
+            "externalId": "93045",
+            "name": "Casey Gordon",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2007-12-03",
+            "foot": "right",
+            "height": "Casey Gordon JVW FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38895",
+            "externalId": "38895",
+            "name": "Kaylin Swart",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1994-09-30",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30872",
+            "externalId": "30872",
+            "name": "Andile Dlamini",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1992-09-02",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "78748",
+            "externalId": "78748",
+            "name": "Dineo Magagula",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1994-10-14",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30878",
+            "externalId": "30878",
+            "name": "Lebohang Ramalepe",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1991-12-03",
+            "foot": "left",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40487",
+            "externalId": "40487",
+            "name": "Bongeka Gamede",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1999-05-22",
+            "foot": "left",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "66672",
+            "externalId": "66672",
+            "name": "Regina Mogolola",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1993-04-17",
+            "foot": "left",
+            "height": "Regina Mogolola JVW FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37934",
+            "externalId": "37934",
+            "name": "Fikile Magama",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2002-01-19",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37921",
+            "externalId": "37921",
+            "name": "Karabo Dhlamini",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2001-09-18",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30876",
+            "externalId": "30876",
+            "name": "Bambanani Mbane",
+            "position": "Centre-Back",
+            "age": 36,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1990-03-12",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39517",
+            "externalId": "39517",
+            "name": "Tiisetso Makhubela",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1997-04-24",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37924",
+            "externalId": "37924",
+            "name": "Lonathemba Mhlongo",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2002-08-23",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "88294",
+            "externalId": "88294",
+            "name": "Unathi Simayile",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Unathi Siayile UWC Ladies FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37930",
+            "externalId": "37930",
+            "name": "Jessica Wade",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2003-04-11",
+            "foot": "both",
+            "height": "Jessica Wade Åland United, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "88245",
+            "externalId": "88245",
+            "name": "Isabella Ludwig",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2002-12-13",
+            "foot": "right",
+            "height": "Isabella Ludwig Maelodi Sundowns Ladies FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "53382",
+            "externalId": "53382",
+            "name": "Hildah Magaia",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1994-12-16",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "62833",
+            "externalId": "62833",
+            "name": "Gabriela Salgado",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1998-02-20",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30877",
+            "externalId": "30877",
+            "name": "Linda Motlhalo",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1998-07-01",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "25k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "66667",
+            "externalId": "66667",
+            "name": "Nonhlanhla Mthandi",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1995-08-19",
+            "foot": "right",
+            "height": "Nonhlanhla Mthandi Maelodi Sundowns Ladies FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16500",
+            "externalId": "16500",
+            "name": "Refiloe Jane",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1992-08-04",
+            "foot": "both",
+            "height": "1,61m",
+            "marketValue": "45k",
+            "contract": null
+        },
+        {
+            "id": "37922",
+            "externalId": "37922",
+            "name": "Sibulele Holweni",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2001-04-28",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74419",
+            "externalId": "74419",
+            "name": "Amogelang Motau",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1997-02-27",
+            "foot": "both",
+            "height": "Aogelang Motau Club Tijuana, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66670",
+            "externalId": "66670",
+            "name": "Bongiwe Thusi",
+            "position": "Centre-Forward",
+            "age": 34,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1991-07-20",
+            "foot": "right",
+            "height": "Bongiwe Thusi JVW FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110417",
+            "externalId": "110417",
+            "name": "Bonolo Mokoma",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Bonolo Mokoa JVW FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "57942",
+            "externalId": "57942",
+            "name": "Noxolo Cesane",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2000-10-11",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "88270",
+            "externalId": "88270",
+            "name": "Kgalebane Mohlakoana",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "1993-12-10",
+            "foot": "right",
+            "height": "Kgalebane Mohlakoana TP Mazebe, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110256",
+            "externalId": "110256",
+            "name": "Ronnel Donnelly",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "South Africa"
+            ],
+            "dateOfBirth": "2004-03-31",
+            "foot": "right",
+            "height": "Ronnel Donnelly Maelodi Sundowns Ladies FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

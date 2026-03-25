@@ -1,0 +1,385 @@
+{
+    "id": "456",
+    "externalId": "456",
+    "transfermarktId": "456",
+    "name": "Japan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "23138",
+            "externalId": "23138",
+            "name": "Ayaka Yamashita",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1995-09-29",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "70k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "17996",
+            "externalId": "17996",
+            "name": "Chika Hirao",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1996-12-31",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "35k",
+            "contract": null
+        },
+        {
+            "id": "59319",
+            "externalId": "59319",
+            "name": "Akane Okuma",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2004-09-15",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18031",
+            "externalId": "18031",
+            "name": "Risa Shimizu",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1996-06-15",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "55k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22901",
+            "externalId": "22901",
+            "name": "Moeka Minami",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1998-12-07",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "95k",
+            "contract": null
+        },
+        {
+            "id": "35797",
+            "externalId": "35797",
+            "name": "Hana Takahashi",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2000-02-19",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56785",
+            "externalId": "56785",
+            "name": "Toko Koga",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2006-01-06",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "45k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "22896",
+            "externalId": "22896",
+            "name": "Hikaru Kitagawa",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1997-05-10",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "45k",
+            "contract": null
+        },
+        {
+            "id": "43022",
+            "externalId": "43022",
+            "name": "Miyabi Moriya",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1996-08-22",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "5939",
+            "externalId": "5939",
+            "name": "Saki Kumagai",
+            "position": "Defensive Midfield",
+            "age": 35,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1990-10-17",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "70k",
+            "contract": null
+        },
+        {
+            "id": "35793",
+            "externalId": "35793",
+            "name": "Hinata Miyazawa",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1999-11-28",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "125k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "22904",
+            "externalId": "22904",
+            "name": "Fuka Nagano",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1999-03-09",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "180k",
+            "contract": null
+        },
+        {
+            "id": "17994",
+            "externalId": "17994",
+            "name": "Yui Hasegawa",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1997-01-29",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "500k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "35811",
+            "externalId": "35811",
+            "name": "Honoka Hayashi",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1998-05-19",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "55k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "56791",
+            "externalId": "56791",
+            "name": "Momoko Tanikawa",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2005-05-07",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "450k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "56786",
+            "externalId": "56786",
+            "name": "Manaka Matsukubo",
+            "position": "Second Striker",
+            "age": 21,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2004-07-28",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "375k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "18011",
+            "externalId": "18011",
+            "name": "Yui Narumiya",
+            "position": "Attacking Midfield",
+            "age": 31,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1995-02-22",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23217",
+            "externalId": "23217",
+            "name": "Kiko Seike",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1996-08-08",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "170k",
+            "contract": null
+        },
+        {
+            "id": "35817",
+            "externalId": "35817",
+            "name": "Riko Ueki",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1999-07-30",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "170k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "12795",
+            "externalId": "12795",
+            "name": "Mina Tanaka",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Japan",
+                "Thailand"
+            ],
+            "dateOfBirth": "1994-04-28",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "100k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "64103",
+            "externalId": "64103",
+            "name": "Aoba Fujino",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2004-01-27",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "375k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "37772",
+            "externalId": "37772",
+            "name": "Yuzuki Yamamoto",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2002-09-01",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "48464",
+            "externalId": "48464",
+            "name": "Maika Hamano",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2004-05-09",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "450k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "43054",
+            "externalId": "43054",
+            "name": "Remina Chiba",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "1999-04-30",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "80k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "44461",
+            "externalId": "44461",
+            "name": "Maya Hijikata",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Japan"
+            ],
+            "dateOfBirth": "2004-04-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "45k",
+            "contract": null
+        }
+    ]
+}

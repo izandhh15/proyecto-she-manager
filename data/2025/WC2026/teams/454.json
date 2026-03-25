@@ -1,0 +1,374 @@
+{
+    "id": "454",
+    "externalId": "454",
+    "transfermarktId": "454",
+    "name": "Ghana",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "85402",
+            "externalId": "85402",
+            "name": "Afi Amenyeku",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2005-11-15",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35910",
+            "externalId": "35910",
+            "name": "Kerrie McCarthy",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2000-10-22",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37783",
+            "externalId": "37783",
+            "name": "Cynthia Konlan",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2002-11-29",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92426",
+            "externalId": "92426",
+            "name": "Comfort Yeboah",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2006-12-17",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "75584",
+            "externalId": "75584",
+            "name": "Anasthesia Achiaa",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2003-12-20",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72454",
+            "externalId": "72454",
+            "name": "Louisa Aniwaa",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2003-04-04",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "34990",
+            "externalId": "34990",
+            "name": "Portia Boakye",
+            "position": "Centre-Back",
+            "age": 36,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "1989-04-17",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "64598",
+            "externalId": "64598",
+            "name": "Susan Duah",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2002-02-03",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41275",
+            "externalId": "41275",
+            "name": "Bénédicte Simon",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Ghana",
+                "France"
+            ],
+            "dateOfBirth": "1997-06-02",
+            "foot": "right",
+            "height": "Bénédicte Sion Servette FC Chênois Féinin, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37785",
+            "externalId": "37785",
+            "name": "Nina Norshie",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2001-09-14",
+            "foot": "left",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100782",
+            "externalId": "100782",
+            "name": "Stella Nyamekye",
+            "position": "Attacking Midfield",
+            "age": 20,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2005-09-18",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "20k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "16784",
+            "externalId": "16784",
+            "name": "Jennifer Cudjoe",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "1994-03-07",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "93131",
+            "externalId": "93131",
+            "name": "Nancy Amoh",
+            "position": "Defensive Midfield",
+            "age": 20,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2005-09-18",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35904",
+            "externalId": "35904",
+            "name": "Grace Asantewaa",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2000-12-05",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22982",
+            "externalId": "22982",
+            "name": "Ernestina Abambila",
+            "position": "Defensive Midfield",
+            "age": 27,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "1998-12-30",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35895",
+            "externalId": "35895",
+            "name": "Evelyn Badu",
+            "position": "Second Striker",
+            "age": 23,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2002-09-11",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "20k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "66778",
+            "externalId": "66778",
+            "name": "Doris Boaduwaa",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2002-12-24",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70723",
+            "externalId": "70723",
+            "name": "Princess Marfo",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Ghana",
+                "Denmark"
+            ],
+            "dateOfBirth": "2003-10-02",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "33938",
+            "externalId": "33938",
+            "name": "Abi Kim",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Ghana",
+                "United States"
+            ],
+            "dateOfBirth": "1998-07-19",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "26473",
+            "externalId": "26473",
+            "name": "Josephine Bonsu",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Ghana",
+                "Germany"
+            ],
+            "dateOfBirth": "1999-08-20",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "25345",
+            "externalId": "25345",
+            "name": "Alice Kusi",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "1995-01-12",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92413",
+            "externalId": "92413",
+            "name": "Mary Amponsah",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "2006-04-16",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22989",
+            "externalId": "22989",
+            "name": "Princella Adubea",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Ghana"
+            ],
+            "dateOfBirth": "1998-12-27",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "19926",
+            "externalId": "19926",
+            "name": "Chantelle Boye-Hlorkah",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Ghana",
+                "England"
+            ],
+            "dateOfBirth": "1995-09-08",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

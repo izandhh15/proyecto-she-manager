@@ -1,0 +1,386 @@
+{
+    "id": "463",
+    "externalId": "463",
+    "transfermarktId": "463",
+    "name": "Austria",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "56071",
+            "externalId": "56071",
+            "name": "Larissa Rusek",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2005-01-01",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "70k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "42231",
+            "externalId": "42231",
+            "name": "Mariella El Sherif",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2004-09-02",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "65k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "12407",
+            "externalId": "12407",
+            "name": "Jasmin Pal",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1996-08-24",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "40k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "31061",
+            "externalId": "31061",
+            "name": "Celina Degen",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2001-05-16",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "35k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "40379",
+            "externalId": "40379",
+            "name": "Chiara D’Angelo",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2004-07-31",
+            "foot": "both",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31066",
+            "externalId": "31066",
+            "name": "Claudia Wenger",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2001-05-06",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "35k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "67",
+            "externalId": "67",
+            "name": "Verena Hanshaw",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1994-01-20",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "23374",
+            "externalId": "23374",
+            "name": "Laura Wienroither",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1999-01-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "19886",
+            "externalId": "19886",
+            "name": "Jennifer Klein",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1999-01-11",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "35k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "16302",
+            "externalId": "16302",
+            "name": "Marina Georgieva",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Austria",
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1997-04-13",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "15066",
+            "externalId": "15066",
+            "name": "Katharina Naschenweng",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1997-12-16",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "200k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "2665",
+            "externalId": "2665",
+            "name": "Katharina Schiechtl",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1993-02-27",
+            "foot": "right",
+            "height": "1,86m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "936",
+            "externalId": "936",
+            "name": "Virginia Kirchberger",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1993-05-25",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "24843",
+            "externalId": "24843",
+            "name": "Julia Hickelsberger",
+            "position": "Attacking Midfield",
+            "age": 26,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1999-08-01",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "70k",
+            "contract": null
+        },
+        {
+            "id": "15065",
+            "externalId": "15065",
+            "name": "Barbara Dunst",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1997-09-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "200k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "34966",
+            "externalId": "34966",
+            "name": "Maria Plattner",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2001-05-06",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37689",
+            "externalId": "37689",
+            "name": "Annabel Schasching",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2002-07-26",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "65k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "1532",
+            "externalId": "1532",
+            "name": "Sarah Puntigam",
+            "position": "Defensive Midfield",
+            "age": 33,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1992-10-13",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "65k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "19732",
+            "externalId": "19732",
+            "name": "Viktoria Pinther",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "1998-10-16",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31062",
+            "externalId": "31062",
+            "name": "Lisa Kolb",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2001-05-04",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "33532",
+            "externalId": "33532",
+            "name": "Melanie Brunnthaler",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2000-09-28",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "80k",
+            "contract": null
+        },
+        {
+            "id": "34935",
+            "externalId": "34935",
+            "name": "Sophie Hillebrand",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2002-01-24",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42232",
+            "externalId": "42232",
+            "name": "Eileen Campbell",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Austria",
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2000-09-17",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "110k",
+            "contract": null
+        },
+        {
+            "id": "46428",
+            "externalId": "46428",
+            "name": "Carina Brunold",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2002-09-17",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "55214",
+            "externalId": "55214",
+            "name": "Valentina Mädl",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Austria"
+            ],
+            "dateOfBirth": "2005-12-18",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "70k",
+            "contract": "2028-06-30"
+        }
+    ]
+}

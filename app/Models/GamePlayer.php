@@ -636,7 +636,7 @@ class GamePlayer extends Model
      */
     public function age(Carbon|\DateTimeInterface $currentDate): int
     {
-        return (int) $this->player->date_of_birth->diffInYears($currentDate);
+        return $this->player->ageAt($currentDate);
     }
 
     /**

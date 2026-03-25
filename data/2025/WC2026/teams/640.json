@@ -1,0 +1,354 @@
+{
+    "id": "640",
+    "externalId": "640",
+    "transfermarktId": "640",
+    "name": "Colombia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "54737",
+            "externalId": "54737",
+            "name": "Kate Tapia",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1992-12-07",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "27899",
+            "externalId": "27899",
+            "name": "Catalina Pérez",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1994-11-08",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46566",
+            "externalId": "46566",
+            "name": "Natalia Giraldo",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2003-05-19",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65070",
+            "externalId": "65070",
+            "name": "Yirleidys Minota",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2002-11-10",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63171",
+            "externalId": "63171",
+            "name": "Ana Guzmán",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2005-06-11",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "53793",
+            "externalId": "53793",
+            "name": "Jorelyn Carabalí",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1997-05-18",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "80k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "70454",
+            "externalId": "70454",
+            "name": "Mary Álvarez",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2005-08-22",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38166",
+            "externalId": "38166",
+            "name": "Manuela Vanegas",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2000-11-09",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "150k",
+            "contract": null
+        },
+        {
+            "id": "38165",
+            "externalId": "38165",
+            "name": "Daniela Árias",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1994-08-31",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "40k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "38155",
+            "externalId": "38155",
+            "name": "Daniela Caracas",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1997-04-25",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "37743",
+            "externalId": "37743",
+            "name": "Ilana Izquierdo",
+            "position": "Defensive Midfield",
+            "age": 23,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2002-06-14",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37739",
+            "externalId": "37739",
+            "name": "Wendy Bonilla",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2002-07-08",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "8662",
+            "externalId": "8662",
+            "name": "Daniela Montoya",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1990-08-22",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54736",
+            "externalId": "54736",
+            "name": "Gabriela Rodríguez",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2005-05-10",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "18238",
+            "externalId": "18238",
+            "name": "Leicy Santos",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1996-05-16",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "400k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "18236",
+            "externalId": "18236",
+            "name": "Marcela Restrepo",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "1995-11-10",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65061",
+            "externalId": "65061",
+            "name": "Greicy Landázury",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2004-08-01",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "65066",
+            "externalId": "65066",
+            "name": "Liced Serna",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2002-02-01",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "99509",
+            "externalId": "99509",
+            "name": "Valerin Loboa",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2007-07-03",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "45k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "99513",
+            "externalId": "99513",
+            "name": "Maithé López",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2007-01-24",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "53792",
+            "externalId": "53792",
+            "name": "Linda Caicedo",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2005-02-22",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "1m",
+            "contract": "2031-06-30"
+        },
+        {
+            "id": "46570",
+            "externalId": "46570",
+            "name": "Manuela Paví",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2000-12-23",
+            "foot": "right",
+            "height": "1,51m",
+            "marketValue": "55k",
+            "contract": null
+        },
+        {
+            "id": "37737",
+            "externalId": "37737",
+            "name": "Gisela Robledo",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Colombia"
+            ],
+            "dateOfBirth": "2003-05-13",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": "2026-08-31"
+        }
+    ]
+}

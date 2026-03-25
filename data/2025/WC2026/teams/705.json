@@ -1,0 +1,312 @@
+{
+    "id": "705",
+    "externalId": "705",
+    "transfermarktId": "705",
+    "name": "Panama",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "38531",
+            "externalId": "38531",
+            "name": "Farissa Córdoba",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "1989-06-30",
+            "foot": "right",
+            "height": "1,86m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70097",
+            "externalId": "70097",
+            "name": "Isabella Morey",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Panama",
+                "United States"
+            ],
+            "dateOfBirth": "2003-12-17",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38527",
+            "externalId": "38527",
+            "name": "Yenith Bailey",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2001-03-29",
+            "foot": "both",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38529",
+            "externalId": "38529",
+            "name": "Katherine Castillo",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "1996-03-23",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38534",
+            "externalId": "38534",
+            "name": "Rebeca Espinosa",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "1992-07-05",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61142",
+            "externalId": "61142",
+            "name": "Carina Baltrip-Reyes",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Panama",
+                "United States"
+            ],
+            "dateOfBirth": "1998-07-01",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "43656",
+            "externalId": "43656",
+            "name": "Hilary Jaén",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2002-08-29",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44074",
+            "externalId": "44074",
+            "name": "Wendy Natis",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2002-08-19",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44068",
+            "externalId": "44068",
+            "name": "Schiandra González",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "1995-07-04",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72386",
+            "externalId": "72386",
+            "name": "Carmen Montenegro",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2000-12-05",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70104",
+            "externalId": "70104",
+            "name": "Mickeylis Gutiérrez",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2002-09-03",
+            "foot": "right",
+            "height": "Mickeylis Gutiérrez Santa Fé FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70102",
+            "externalId": "70102",
+            "name": "Ericka Arauz",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2003-07-20",
+            "foot": "right",
+            "height": "Ericka Arauz Mario Méndez FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44079",
+            "externalId": "44079",
+            "name": "Deysiré Salazar",
+            "position": "Defensive Midfield",
+            "age": 21,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2004-05-04",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "43655",
+            "externalId": "43655",
+            "name": "María Guevara",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2000-10-04",
+            "foot": "right",
+            "height": "María Guevara Mario Méndez FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38543",
+            "externalId": "38543",
+            "name": "Aldrith Quintero",
+            "position": "Defensive Midfield",
+            "age": 24,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2002-01-01",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38538",
+            "externalId": "38538",
+            "name": "Natalia Mills",
+            "position": "Attacking Midfield",
+            "age": 33,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "1993-03-22",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70094",
+            "externalId": "70094",
+            "name": "Ana Quintero",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2004-08-14",
+            "foot": "right",
+            "height": "Ana Quintero CD Plaza Aador, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38532",
+            "externalId": "38532",
+            "name": "Marta Cox",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "1997-07-20",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "38530",
+            "externalId": "38530",
+            "name": "Lineth Cedeño",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Panama"
+            ],
+            "dateOfBirth": "2000-12-05",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "83326",
+            "externalId": "83326",
+            "name": "Riley Tanner",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Panama",
+                "United States"
+            ],
+            "dateOfBirth": "1999-10-15",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

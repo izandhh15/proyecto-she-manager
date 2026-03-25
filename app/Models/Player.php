@@ -71,4 +71,17 @@ class Player extends Model
         return $this->attributes['external_id'] ?? null;
     }
 
+    public function getAgeAttribute(): ?int
+    {
+        return $this->date_of_birth?->age;
+    }
+
+    public function ageAt(\DateTimeInterface $referenceDate, int $fallback = 25): int
+    {
+        if (! $this->date_of_birth) {
+            return $fallback;
+        }
+
+        return (int) $this->date_of_birth->diffInYears($referenceDate);
+    }
 }

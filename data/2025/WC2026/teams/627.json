@@ -1,0 +1,266 @@
+{
+    "id": "627",
+    "externalId": "627",
+    "transfermarktId": "627",
+    "name": "Jordan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "56849",
+            "externalId": "56849",
+            "name": "Shireen Al-Shalabi",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "1994-06-03",
+            "foot": "right",
+            "height": "Shireen Al-Shalabi Etihad Club, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56862",
+            "externalId": "56862",
+            "name": "Malak Shannak",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "1998-08-01",
+            "foot": "right",
+            "height": "Malak Shannak Etihad Club, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "78839",
+            "externalId": "78839",
+            "name": "Rawand Kassab",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "2003-11-06",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56846",
+            "externalId": "56846",
+            "name": "Rand Abu-Hussein",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "1997-03-01",
+            "foot": "left",
+            "height": "Rand Abu-Hussein Aan SC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56848",
+            "externalId": "56848",
+            "name": "Ayah Al-Majali",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "1992-03-09",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "107223",
+            "externalId": "107223",
+            "name": "Alia Hasan",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "2004-10-17",
+            "foot": "left",
+            "height": "Alia Hasan Al-Nasser SC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56855",
+            "externalId": "56855",
+            "name": "Alanoud Ghazi",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Jordan",
+                "Iraq"
+            ],
+            "dateOfBirth": "1999-05-18",
+            "foot": "left",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67398",
+            "externalId": "67398",
+            "name": "Tuqa Ghazi",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "2005-07-29",
+            "foot": "left",
+            "height": "Tuqa Ghazi Etihad Club, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67921",
+            "externalId": "67921",
+            "name": "Lana Feras",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "1998-06-02",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "56847",
+            "externalId": "56847",
+            "name": "Enas Al-Jamaeen",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "2003-11-11",
+            "foot": "right",
+            "height": "Enas Al-Jaaeen Etihad Club, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "88841",
+            "externalId": "88841",
+            "name": "Tahreer Al-Qawasameh",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "2002-10-26",
+            "foot": "right",
+            "height": "Tahreer Al-Qawasaeh Al-Nasser SC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "78856",
+            "externalId": "78856",
+            "name": "Yasmine Al-Ajrab",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "2005-02-01",
+            "foot": "right",
+            "height": "Yasine Al-Ajrab Al-Istiqlal Club, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56863",
+            "externalId": "56863",
+            "name": "Mai Sweilem",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "1995-09-25",
+            "foot": "right",
+            "height": "Mai Sweile Etihad Club, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56852",
+            "externalId": "56852",
+            "name": "Leen Al-Btoush",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "2001-07-20",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107218",
+            "externalId": "107218",
+            "name": "Roukayah Al Fararjeh",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Jordan",
+                "Australia"
+            ],
+            "dateOfBirth": "2005-06-20",
+            "foot": "right",
+            "height": "Roukayah Al Fararjeh Blacktown Spartans FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107220",
+            "externalId": "107220",
+            "name": "Retal Al-Shobaki",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Retal Al-Shobaki Al-Istiqlal Club, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56851",
+            "externalId": "56851",
+            "name": "Bana Al-Bitar",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Jordan"
+            ],
+            "dateOfBirth": "1996-10-06",
+            "foot": "right",
+            "height": "Bana Al-Bitar Aan SC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -1,0 +1,357 @@
+{
+    "id": "459",
+    "externalId": "459",
+    "transfermarktId": "459",
+    "name": "Netherlands",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "44528",
+            "externalId": "44528",
+            "name": "Daniëlle de Jong",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2002-10-11",
+            "foot": "right",
+            "height": "Daniëlle de Jong Juventus FC, Goalkeeperm",
+            "marketValue": "80k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "34025",
+            "externalId": "34025",
+            "name": "Daphne van Domselaar",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2000-03-06",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "170k",
+            "contract": null
+        },
+        {
+            "id": "30744",
+            "externalId": "30744",
+            "name": "Lize Kop",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1998-03-17",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "75k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "72610",
+            "externalId": "72610",
+            "name": "Veerle Buurman",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2006-04-21",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "200k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35666",
+            "externalId": "35666",
+            "name": "Lynn Wilms",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2000-10-03",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "175k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35661",
+            "externalId": "35661",
+            "name": "Marisa Olislagers",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2000-09-09",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "95k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35596",
+            "externalId": "35596",
+            "name": "Caitlin Dijkstra",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1999-01-30",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "100k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35133",
+            "externalId": "35133",
+            "name": "Lieske Carleer",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2001-04-16",
+            "foot": "left",
+            "height": "1,75m",
+            "marketValue": "30k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "29983",
+            "externalId": "29983",
+            "name": "Kerstin Casparij",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2000-08-19",
+            "foot": "both",
+            "height": "1,71m",
+            "marketValue": "500k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "25392",
+            "externalId": "25392",
+            "name": "Ilse van der Zanden",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1995-07-25",
+            "foot": "left",
+            "height": "Ilse van der Zanden ACF Fiorentina, Defencem",
+            "marketValue": "45k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "19416",
+            "externalId": "19416",
+            "name": "Dominique Janssen",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1995-01-17",
+            "foot": "both",
+            "height": "1,75m",
+            "marketValue": "250k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30426",
+            "externalId": "30426",
+            "name": "Damaris Egurrola",
+            "position": "Defensive Midfield",
+            "age": 26,
+            "nationality": [
+                "Netherlands",
+                "Spain"
+            ],
+            "dateOfBirth": "1999-08-26",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "575k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "33573",
+            "externalId": "33573",
+            "name": "Victoria Pelova",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1999-06-03",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "275k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "20273",
+            "externalId": "20273",
+            "name": "Jill Roord",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1997-04-22",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "300k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35145",
+            "externalId": "35145",
+            "name": "Ella Peddemors",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2002-08-06",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "150k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "38418",
+            "externalId": "38418",
+            "name": "Esmee Brugts",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Netherlands",
+                "Suriname"
+            ],
+            "dateOfBirth": "2003-07-28",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "550k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "6920",
+            "externalId": "6920",
+            "name": "Jackie Groenen",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Netherlands",
+                "Belgium"
+            ],
+            "dateOfBirth": "1994-12-17",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "275k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "54876",
+            "externalId": "54876",
+            "name": "Wieke Kaptein",
+            "position": "Defensive Midfield",
+            "age": 20,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2005-08-29",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "475k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "2900",
+            "externalId": "2900",
+            "name": "Daniëlle van de Donk",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1991-08-05",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "150k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "35137",
+            "externalId": "35137",
+            "name": "Chasity Grant",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2001-04-19",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "80k",
+            "contract": null
+        },
+        {
+            "id": "35144",
+            "externalId": "35144",
+            "name": "Romée Leuchter",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "2001-01-12",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "520k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "16173",
+            "externalId": "16173",
+            "name": "Lineth Beerensteyn",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1996-10-11",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "575k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "9241",
+            "externalId": "9241",
+            "name": "Vivianne Miedema",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Netherlands"
+            ],
+            "dateOfBirth": "1996-07-15",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "425k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

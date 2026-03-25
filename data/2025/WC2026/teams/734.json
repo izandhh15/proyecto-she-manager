@@ -1,0 +1,374 @@
+{
+    "id": "734",
+    "externalId": "734",
+    "transfermarktId": "734",
+    "name": "Scotland",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "8957",
+            "externalId": "8957",
+            "name": "Lee Gibson",
+            "position": "Goalkeeper",
+            "age": 34,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1991-09-23",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35719",
+            "externalId": "35719",
+            "name": "Eartha Cumings",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1999-06-11",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "60k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35705",
+            "externalId": "35705",
+            "name": "Sandy MacIver",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Scottland",
+                "England"
+            ],
+            "dateOfBirth": "1998-06-18",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "10824",
+            "externalId": "10824",
+            "name": "Nicola Docherty",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1992-08-23",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22132",
+            "externalId": "22132",
+            "name": "Rachel McLauchlan",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1997-07-07",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "120k",
+            "contract": null
+        },
+        {
+            "id": "2311",
+            "externalId": "2311",
+            "name": "Sophie Howard",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Scottland",
+                "Germany"
+            ],
+            "dateOfBirth": "1993-09-17",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "30k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "74387",
+            "externalId": "74387",
+            "name": "Emma Lawton",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2001-07-26",
+            "foot": "left",
+            "height": "Ea Lawton Celtic FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "36110",
+            "externalId": "36110",
+            "name": "Jenna Clark",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2001-09-29",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "190k",
+            "contract": null
+        },
+        {
+            "id": "40811",
+            "externalId": "40811",
+            "name": "Amy Muir",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2000-03-07",
+            "foot": "left",
+            "height": "Ay Muir Glasgow City FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40814",
+            "externalId": "40814",
+            "name": "Charlotte Newsham",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2000-05-14",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46740",
+            "externalId": "46740",
+            "name": "Georgia Brown",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2002-08-31",
+            "foot": "left",
+            "height": "1,88m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22138",
+            "externalId": "22138",
+            "name": "Chelsea Cornet",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1998-04-19",
+            "foot": "right",
+            "height": "Chelsea Cornet Biringha City, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "22143",
+            "externalId": "22143",
+            "name": "Erin Cuthbert",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1998-07-19",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "350k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "10461",
+            "externalId": "10461",
+            "name": "Caroline Weir",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1995-06-20",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "800k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "63284",
+            "externalId": "63284",
+            "name": "Jodi McLeary",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2005-06-01",
+            "foot": "right",
+            "height": "Jodi McLeary Rangers FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "62908",
+            "externalId": "62908",
+            "name": "Kirsty Maclean",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2005-04-12",
+            "foot": "right",
+            "height": "Kirsty Maclean Liverpool FC, Midfieldm",
+            "marketValue": "45k",
+            "contract": null
+        },
+        {
+            "id": "57003",
+            "externalId": "57003",
+            "name": "Maria McAneny",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2004-06-25",
+            "foot": "left",
+            "height": "Maria McAneny Celtic FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "53057",
+            "externalId": "53057",
+            "name": "Miri Taylor",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Scottland",
+                "England"
+            ],
+            "dateOfBirth": "2000-02-02",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "80k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "85515",
+            "externalId": "85515",
+            "name": "Mia McAulay",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2006-08-15",
+            "foot": "right",
+            "height": "Mia McAulay Rangers FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42980",
+            "externalId": "42980",
+            "name": "Freya Gregory",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Scottland",
+                "England"
+            ],
+            "dateOfBirth": "2003-01-12",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "40808",
+            "externalId": "40808",
+            "name": "Kathleen McGovern",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2002-06-27",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40805",
+            "externalId": "40805",
+            "name": "Lauren Davidson",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2001-10-01",
+            "foot": "right",
+            "height": "Lauren Davidson SK Brann, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "29821",
+            "externalId": "29821",
+            "name": "Kirsty Hanson",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Scottland",
+                "England"
+            ],
+            "dateOfBirth": "1998-04-17",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "80k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "22144",
+            "externalId": "22144",
+            "name": "Kirsty Howat",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "1997-05-19",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

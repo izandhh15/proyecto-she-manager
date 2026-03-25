@@ -1,0 +1,340 @@
+{
+    "id": "444",
+    "externalId": "444",
+    "transfermarktId": "444",
+    "name": "Germany",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "2369",
+            "externalId": "2369",
+            "name": "Ann-Katrin Berger",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1990-10-09",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "140k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "30714",
+            "externalId": "30714",
+            "name": "Stina Johannes",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2000-01-23",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "160k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "33305",
+            "externalId": "33305",
+            "name": "Ena Mahmutovic",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2003-12-23",
+            "foot": "both",
+            "height": "1,77m",
+            "marketValue": "155k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "7288",
+            "externalId": "7288",
+            "name": "Rebecca Knaak",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1996-06-23",
+            "foot": "both",
+            "height": "1,75m",
+            "marketValue": "300k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "41286",
+            "externalId": "41286",
+            "name": "Jella Veit",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2005-05-03",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "55k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38143",
+            "externalId": "38143",
+            "name": "Franziska Kett",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2004-10-24",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "200k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "38132",
+            "externalId": "38132",
+            "name": "Carlotta Wamser",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2003-11-01",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "120k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "19254",
+            "externalId": "19254",
+            "name": "Giulia Gwinn",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1999-07-02",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "700k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "19255",
+            "externalId": "19255",
+            "name": "Janina Minge",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1999-06-11",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "400k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "21820",
+            "externalId": "21820",
+            "name": "Sarai Linder",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1999-10-26",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "300k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "33274",
+            "externalId": "33274",
+            "name": "Camilla Küver",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Germany",
+                "Norway"
+            ],
+            "dateOfBirth": "2003-06-10",
+            "foot": "both",
+            "height": "1,83m",
+            "marketValue": "160k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "7276",
+            "externalId": "7276",
+            "name": "Linda Dallmann",
+            "position": "Attacking Midfield",
+            "age": 31,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1994-09-02",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "385k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "38127",
+            "externalId": "38127",
+            "name": "Lisanne Gräwe",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2003-02-11",
+            "foot": "both",
+            "height": "1,61m",
+            "marketValue": "180k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32078",
+            "externalId": "32078",
+            "name": "Sjoeke Nüsken",
+            "position": "Defensive Midfield",
+            "age": 25,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2001-01-22",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "600k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "17414",
+            "externalId": "17414",
+            "name": "Elisa Senß",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1997-10-01",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "300k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32481",
+            "externalId": "32481",
+            "name": "Larissa Mühlhaus",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2003-01-13",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "225k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "33029",
+            "externalId": "33029",
+            "name": "Jule Brand",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2002-10-16",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "800k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "31819",
+            "externalId": "31819",
+            "name": "Shekiera Martinez",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2001-07-04",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "400k",
+            "contract": null
+        },
+        {
+            "id": "31225",
+            "externalId": "31225",
+            "name": "Vivien Endemann",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2001-08-07",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "200k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "25248",
+            "externalId": "25248",
+            "name": "Nicole Anyomi",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "2000-02-10",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "500k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "16386",
+            "externalId": "16386",
+            "name": "Lea Schüller",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1997-11-12",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "650k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "13992",
+            "externalId": "13992",
+            "name": "Laura Freigang",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Germany"
+            ],
+            "dateOfBirth": "1998-02-01",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "475k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

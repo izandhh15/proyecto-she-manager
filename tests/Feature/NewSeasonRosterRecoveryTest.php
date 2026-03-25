@@ -142,6 +142,61 @@ class NewSeasonRosterRecoveryTest extends TestCase
         $this->assertGreaterThan(0, $game->currentFinances->projected_wages);
     }
 
+    public function test_setup_new_game_reassigns_duplicate_squad_numbers_within_same_team(): void
+    {
+        $clubs = $this->clubsPayload();
+        $clubs[0]['players'][1]['number'] = '07';
+        $clubs[0]['players'][2]['number'] = '07';
+        $clubs[0]['players'][3]['number'] = null;
+
+        file_put_contents($this->testDataDir . '/teams.json', $this->bomEncodedJson([
+            'id' => 'TEST1',
+            'code' => 'test-league-2025',
+            'name' => 'Test League',
+            'seasonID' => '2025',
+            'clubs' => $clubs,
+        ]));
+
+        $game = $this->makeGame(setupComplete: false);
+
+        $this->runSetupJob($game);
+
+        $numbers = GamePlayer::where('game_id', $game->id)
+            ->where('team_id', $this->userTeam->id)
+            ->pluck('number')
+            ->filter()
+            ->values();
+
+        $this->assertCount(4, GamePlayer::where('game_id', $game->id)->where('team_id', $this->userTeam->id)->get());
+        $this->assertSame($numbers->count(), $numbers->unique()->count());
+        $this->assertTrue($numbers->contains(7));
+    }
+
+    public function test_setup_new_game_skips_duplicate_player_ids_across_clubs(): void
+    {
+        $clubs = $this->clubsPayload();
+        $duplicateId = $clubs[0]['players'][0]['id'];
+        $clubs[1]['players'][0]['id'] = $duplicateId;
+        $clubs[1]['players'][0]['name'] = 'Duplicated Test Player';
+
+        file_put_contents($this->testDataDir . '/teams.json', $this->bomEncodedJson([
+            'id' => 'TEST1',
+            'code' => 'test-league-2025',
+            'name' => 'Test League',
+            'seasonID' => '2025',
+            'clubs' => $clubs,
+        ]));
+
+        $game = $this->makeGame(setupComplete: false);
+
+        $this->runSetupJob($game);
+
+        $playerIds = GamePlayer::where('game_id', $game->id)->pluck('player_id');
+
+        $this->assertSame($playerIds->count(), $playerIds->unique()->count());
+        $this->assertSame(15, $playerIds->count());
+    }
+
     private function makeGame(bool $setupComplete): Game
     {
         return Game::factory()->create([

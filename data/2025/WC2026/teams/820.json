@@ -1,0 +1,399 @@
+{
+    "id": "820",
+    "externalId": "820",
+    "transfermarktId": "820",
+    "name": "Uzbekistan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "51612",
+            "externalId": "51612",
+            "name": "Maftuna Jonimqulova",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1999-07-26",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52533",
+            "externalId": "52533",
+            "name": "Kumushoy Gulomova",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1999-11-06",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51641",
+            "externalId": "51641",
+            "name": "Zarina Saidova",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2001-09-19",
+            "foot": "right",
+            "height": "Zarina Saidova Bunyodkor, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51624",
+            "externalId": "51624",
+            "name": "Laylo Tilovova",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1997-03-08",
+            "foot": "right",
+            "height": "Laylo Tilovova FC Nasaf Qarshi, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52389",
+            "externalId": "52389",
+            "name": "Madina Khikmatova",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2001-08-09",
+            "foot": "left",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51652",
+            "externalId": "51652",
+            "name": "Kholida Dadaboeva",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1993-04-12",
+            "foot": "left",
+            "height": "Kholida Dadaboeva Qizilqu PFK, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51625",
+            "externalId": "51625",
+            "name": "Shodia Tosheva",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1997-05-14",
+            "foot": "left",
+            "height": "Shodia Tosheva FC Nasaf Qarshi, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52357",
+            "externalId": "52357",
+            "name": "Dilrabo Asadova",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1996-12-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51622",
+            "externalId": "51622",
+            "name": "Maftuna Shoyimova",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1999-01-01",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52379",
+            "externalId": "52379",
+            "name": "Kamila Zaripova",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1998-11-19",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52366",
+            "externalId": "52366",
+            "name": "Sevinch Kuchkorova",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2004-09-28",
+            "foot": "left",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91483",
+            "externalId": "91483",
+            "name": "Asalkhon Aminjonova",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2007-04-22",
+            "foot": "left",
+            "height": "1,52m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71988",
+            "externalId": "71988",
+            "name": "Rukhshona Usarova",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2007-07-26",
+            "foot": "left",
+            "height": "Rukhshona Usarova FC Sogdiana Jizzakh, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117458",
+            "externalId": "117458",
+            "name": "Solikha Khusniddinova",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1998-01-22",
+            "foot": "right",
+            "height": "Solikha Khusniddinova FC Nasaf Qarshi, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51715",
+            "externalId": "51715",
+            "name": "Ilvina Ablyakimova",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1995-04-27",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51642",
+            "externalId": "51642",
+            "name": "Feruza Turdiboeva",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1994-01-06",
+            "foot": "right",
+            "height": "Feruza Turdiboeva AGMK Olaliq, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51664",
+            "externalId": "51664",
+            "name": "Diyorakhon Khabibullaeva",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1999-09-15",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51605",
+            "externalId": "51605",
+            "name": "Gulzoda Amirova",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1999-10-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51644",
+            "externalId": "51644",
+            "name": "Umida Zoirova",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1998-04-22",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51713",
+            "externalId": "51713",
+            "name": "Dildora Nozimova",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1997-11-03",
+            "foot": "right",
+            "height": "Dildora Noziova Qizilqu PFK, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117457",
+            "externalId": "117457",
+            "name": "Diyora Bakhtiyarova",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2007-08-29",
+            "foot": "right",
+            "height": "Diyora Bakhtiyarova Bunyodkor, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51615",
+            "externalId": "51615",
+            "name": "Nilufar Kudratova",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1997-06-05",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51656",
+            "externalId": "51656",
+            "name": "Zarina Mamatkarimova",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2004-03-04",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51635",
+            "externalId": "51635",
+            "name": "Lyudmila Karachik",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "1994-12-08",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52369",
+            "externalId": "52369",
+            "name": "Leila Oraniyazova",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2003-11-30",
+            "foot": "right",
+            "height": "Leila Oraniyazova AGMK Olaliq, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117459",
+            "externalId": "117459",
+            "name": "Ominakhon Valikhanova",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Uzbekistan"
+            ],
+            "dateOfBirth": "2004-06-04",
+            "foot": "right",
+            "height": "Oinakhon Valikhanova Lokootiv, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}
