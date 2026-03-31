@@ -1,0 +1,25 @@
+{
+    "id": "668",
+    "externalId": "668",
+    "transfermarktId": "668",
+    "name": "Madagascar",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "99924",
+            "externalId": "99924",
+            "name": "Jocelyne Zafisambondaoky",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Madagascar",
+                "Germany"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Jocelyne Zafisabondaoky Türkiyespor Berlin, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

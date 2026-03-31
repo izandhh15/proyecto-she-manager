@@ -1,0 +1,294 @@
+{
+    "id": "783",
+    "externalId": "783",
+    "transfermarktId": "783",
+    "name": "Tahiti",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "69819",
+            "externalId": "69819",
+            "name": "Gelimma El Hadj Kaddour",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2005-06-06",
+            "foot": "right",
+            "height": "Gelia El Hadj Kaddour AS Dragon, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66147",
+            "externalId": "66147",
+            "name": "Camille André",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2003-02-09",
+            "foot": "right",
+            "height": "Caille André ALC Longvic, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110392",
+            "externalId": "110392",
+            "name": "Ameria Bea",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2004-08-31",
+            "foot": "right",
+            "height": "Aeria Bea unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110401",
+            "externalId": "110401",
+            "name": "Tihiura Tahutini",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2007-01-09",
+            "foot": "right",
+            "height": "Tihiura Tahutini unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110398",
+            "externalId": "110398",
+            "name": "Francesca Pagoubealo",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "1995-09-19",
+            "foot": "right",
+            "height": "Francesca Pagoubealo unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69778",
+            "externalId": "69778",
+            "name": "Julienne Naomi",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2003-06-28",
+            "foot": "right",
+            "height": "Julienne Naoi AS Dragon, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110403",
+            "externalId": "110403",
+            "name": "Vahinetua Tuiho",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2001-12-28",
+            "foot": "right",
+            "height": "Vahinetua Tuiho unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110399",
+            "externalId": "110399",
+            "name": "Rere-Ura Peu",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "1996-06-05",
+            "foot": "right",
+            "height": "Rere-Ura Peu unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69777",
+            "externalId": "69777",
+            "name": "Gwendoline Fournier",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "1991-04-16",
+            "foot": "right",
+            "height": "Gwendoline Fournier AS Pirae, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110395",
+            "externalId": "110395",
+            "name": "Vateanui Deane",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "1995-11-03",
+            "foot": "right",
+            "height": "Vateanui Deane AS Pirae, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69822",
+            "externalId": "69822",
+            "name": "Kohai Mai",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2004-02-14",
+            "foot": "right",
+            "height": "Kohai Mai AS Pirae, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110397",
+            "externalId": "110397",
+            "name": "Tevava Mai",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "1991-05-04",
+            "foot": "right",
+            "height": "Tevava Mai unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38036",
+            "externalId": "38036",
+            "name": "Kiani Wong",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2000-11-21",
+            "foot": "right",
+            "height": "Kiani Wong FC Girondins de Bordeaux, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110391",
+            "externalId": "110391",
+            "name": "Tiare-Hei Ahupu",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2005-07-10",
+            "foot": "right",
+            "height": "Tiare-Hei Ahupu unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110396",
+            "externalId": "110396",
+            "name": "Haranui Le Gayic",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2007-02-22",
+            "foot": "right",
+            "height": "Haranui Le Gayic AS Tefana, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110393",
+            "externalId": "110393",
+            "name": "Heitiare Bonnet",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "1997-07-04",
+            "foot": "right",
+            "height": "Heitiare Bonnet unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110394",
+            "externalId": "110394",
+            "name": "Hereana Brothers",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2007-02-20",
+            "foot": "right",
+            "height": "Hereana Brothers unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110402",
+            "externalId": "110402",
+            "name": "Tauhere Teore",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2004-11-15",
+            "foot": "right",
+            "height": "Tauhere Teore AS Tefana, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110400",
+            "externalId": "110400",
+            "name": "Anavai Taaviri",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Tahiti"
+            ],
+            "dateOfBirth": "2005-09-30",
+            "foot": "right",
+            "height": "Anavai Taaviri unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

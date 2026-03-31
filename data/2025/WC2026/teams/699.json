@@ -1,0 +1,371 @@
+{
+    "id": "699",
+    "externalId": "699",
+    "transfermarktId": "699",
+    "name": "Northern Ireland",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "79325",
+            "externalId": "79325",
+            "name": "Kate Smith",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2007-05-10",
+            "foot": "right",
+            "height": "Kate Sith Lisburn Rangers, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "21983",
+            "externalId": "21983",
+            "name": "Jackie Burns",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "1997-03-06",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40126",
+            "externalId": "40126",
+            "name": "Maddy Harvey-Clifford",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2002-05-08",
+            "foot": "right",
+            "height": "Maddy Harvey-Clifford Cliftonville, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13751",
+            "externalId": "13751",
+            "name": "Caragh Hamilton",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "1996-10-18",
+            "foot": "right",
+            "height": "Caragh Hailton Sunderland AFC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "63474",
+            "externalId": "63474",
+            "name": "Abi Sweetlove",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2006-04-09",
+            "foot": "right",
+            "height": "Abi Sweetlove Linfield FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38769",
+            "externalId": "38769",
+            "name": "Sarah Robson",
+            "position": "Defensive Midfield",
+            "age": 38,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "1987-05-23",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36323",
+            "externalId": "36323",
+            "name": "Nat Johnson",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Northern Ireland",
+                "England"
+            ],
+            "dateOfBirth": "1993-11-12",
+            "foot": "right",
+            "height": "Nat Johnson Nottingha Forest, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36039",
+            "externalId": "36039",
+            "name": "Rebecca McKenna",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2001-04-13",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "18327",
+            "externalId": "18327",
+            "name": "Rebecca Holloway",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "1995-08-25",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "35k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32420",
+            "externalId": "32420",
+            "name": "Louise McDaniel",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2000-05-24",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "79337",
+            "externalId": "79337",
+            "name": "Mia Moore",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2007-04-17",
+            "foot": "right",
+            "height": "Mia Moore Glentoran, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32407",
+            "externalId": "32407",
+            "name": "Megan Bell",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2001-04-17",
+            "foot": "right",
+            "height": "Megan Bell Linfield FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "11499",
+            "externalId": "11499",
+            "name": "Nadene Caldwell",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "1991-01-24",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "44499",
+            "externalId": "44499",
+            "name": "Toni-Leigh Finnegan",
+            "position": "Defensive Midfield",
+            "age": 23,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2002-10-16",
+            "foot": "right",
+            "height": "Toni-Leigh Finnegan Aberdeen FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "45456",
+            "externalId": "45456",
+            "name": "Danielle Maxwell",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2002-04-09",
+            "foot": "right",
+            "height": "Danielle Maxwell Burnley FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46409",
+            "externalId": "46409",
+            "name": "Joely Andrews",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2002-04-30",
+            "foot": "right",
+            "height": "Joely Andrews Heart of Midlothian FC, Midfieldm",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "63469",
+            "externalId": "63469",
+            "name": "Aimee Kerr",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2006-05-31",
+            "foot": "right",
+            "height": "Aiee Kerr Glentoran, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63466",
+            "externalId": "63466",
+            "name": "Keri Halliday",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2005-02-11",
+            "foot": "right",
+            "height": "Keri Halliday Motherwell FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79340",
+            "externalId": "79340",
+            "name": "Kascie Weir",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2006-10-02",
+            "foot": "right",
+            "height": "Kascie Weir Glentoran, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "53051",
+            "externalId": "53051",
+            "name": "Emily Wilson",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2001-08-26",
+            "foot": "right",
+            "height": "Eily Wilson Glentoran, Strikerm",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "46410",
+            "externalId": "46410",
+            "name": "Kerry Beattie",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2002-09-27",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40137",
+            "externalId": "40137",
+            "name": "Leyla McFarland",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Northern Ireland",
+                "United States"
+            ],
+            "dateOfBirth": "2000-08-20",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32415",
+            "externalId": "32415",
+            "name": "Casey Howe",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "2002-09-02",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22229",
+            "externalId": "22229",
+            "name": "Lauren Wade",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Northern Ireland"
+            ],
+            "dateOfBirth": "1993-11-21",
+            "foot": "left",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

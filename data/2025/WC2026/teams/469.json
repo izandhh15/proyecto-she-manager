@@ -1,0 +1,359 @@
+{
+    "id": "469",
+    "externalId": "469",
+    "transfermarktId": "469",
+    "name": "Poland",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "55119",
+            "externalId": "55119",
+            "name": "Natalia Radkiewicz",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2003-08-08",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "39538",
+            "externalId": "39538",
+            "name": "Kinga Szemik",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "1997-06-25",
+            "foot": "right",
+            "height": "1,82m",
+            "marketValue": "80k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "46601",
+            "externalId": "46601",
+            "name": "Oliwia Szperkowska",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2001-08-27",
+            "foot": "right",
+            "height": "Oliwia Szperkowska Czarni Sosnowiec, Goalkeeperm",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "24470",
+            "externalId": "24470",
+            "name": "Paulina Dudek",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "1997-06-16",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "150k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "26541",
+            "externalId": "26541",
+            "name": "Oliwia Woś",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Poland",
+                "Germany"
+            ],
+            "dateOfBirth": "1999-08-15",
+            "foot": "left",
+            "height": "1,83m",
+            "marketValue": "140k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "63551",
+            "externalId": "63551",
+            "name": "Jagoda Cyraniak",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2006-05-23",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35176",
+            "externalId": "35176",
+            "name": "Wiktoria Zieniewicz",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2002-05-09",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "39732",
+            "externalId": "39732",
+            "name": "Aleksandra Zaremba",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Poland",
+                "Spain"
+            ],
+            "dateOfBirth": "2001-02-19",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "90k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "85852",
+            "externalId": "85852",
+            "name": "Weronika Araśniewicz",
+            "position": "Attacking Midfield",
+            "age": 18,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2008-03-15",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "20360",
+            "externalId": "20360",
+            "name": "Ewelina Kamczyk",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "1996-02-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "90k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "68611",
+            "externalId": "68611",
+            "name": "Patrycja Sarapata",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2004-11-26",
+            "foot": "right",
+            "height": "Patrycja Sarapata Czarni Sosnowiec, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "62365",
+            "externalId": "62365",
+            "name": "Emilia Szymczak",
+            "position": "Defensive Midfield",
+            "age": 19,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2006-06-17",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "80k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "55130",
+            "externalId": "55130",
+            "name": "Gabriela Grzybowska",
+            "position": "Defensive Midfield",
+            "age": 23,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2002-11-21",
+            "foot": "right",
+            "height": "Gabriela Grzybowska Dijon FCO, Midfieldm",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "51264",
+            "externalId": "51264",
+            "name": "Milena Kokosz",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Poland",
+                "Norway"
+            ],
+            "dateOfBirth": "2001-08-16",
+            "foot": "left",
+            "height": "Milena Kokosz Rosenborg BK , Midfieldm",
+            "marketValue": "35k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "47389",
+            "externalId": "47389",
+            "name": "Nadia Krezyman",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2004-06-22",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "150k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35159",
+            "externalId": "35159",
+            "name": "Adriana Achcińska",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2002-04-22",
+            "foot": "right",
+            "height": "Adriana Achcińska 1. FC Köln, Midfieldm",
+            "marketValue": "70k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "30321",
+            "externalId": "30321",
+            "name": "Martyna Wiankowska",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "1996-12-24",
+            "foot": "left",
+            "height": "Martyna Wiankowska 1. FC Köln, Midfieldm",
+            "marketValue": "70k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "21823",
+            "externalId": "21823",
+            "name": "Tanja Pawollek",
+            "position": "Defensive Midfield",
+            "age": 27,
+            "nationality": [
+                "Poland",
+                "Germany"
+            ],
+            "dateOfBirth": "1999-01-18",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "80k",
+            "contract": null
+        },
+        {
+            "id": "39911",
+            "externalId": "39911",
+            "name": "Klaudia Jedlińska",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2000-02-09",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "150k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35447",
+            "externalId": "35447",
+            "name": "Weronika Zawistowska",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "1999-12-17",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "35175",
+            "externalId": "35175",
+            "name": "Paulina Tomasiak",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "2002-01-02",
+            "foot": "right",
+            "height": "Paulina Toasiak Górnik Lęczna, Strikerm",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35160",
+            "externalId": "35160",
+            "name": "Natalia Padilla Bidas",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Poland",
+                "Spain"
+            ],
+            "dateOfBirth": "2002-11-06",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "100k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22010",
+            "externalId": "22010",
+            "name": "Ewa Pajor",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Poland"
+            ],
+            "dateOfBirth": "1996-12-03",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "1.2m",
+            "contract": "2027-06-30"
+        }
+    ]
+}

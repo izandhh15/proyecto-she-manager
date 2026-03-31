@@ -1,0 +1,41 @@
+{
+    "id": "579",
+    "externalId": "579",
+    "transfermarktId": "579",
+    "name": "Fiji",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "96201",
+            "externalId": "96201",
+            "name": "Preeya Singh",
+            "position": "Defensive Midfield",
+            "age": 21,
+            "nationality": [
+                "Fiji",
+                "United States"
+            ],
+            "dateOfBirth": "2004-08-19",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71919",
+            "externalId": "71919",
+            "name": "Trina Davis",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Fiji",
+                "United States"
+            ],
+            "dateOfBirth": "2001-09-06",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

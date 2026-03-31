@@ -1,0 +1,386 @@
+{
+    "id": "748",
+    "externalId": "748",
+    "transfermarktId": "748",
+    "name": "Slovakia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "71142",
+            "externalId": "71142",
+            "name": "Viktória Opalková",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2006-11-16",
+            "foot": "right",
+            "height": "Viktória Opalková Spartak Myjava, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "52159",
+            "externalId": "52159",
+            "name": "Martina Geletová",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2003-11-19",
+            "foot": "right",
+            "height": "Martina Geletová AP Gdańsk, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "46623",
+            "externalId": "46623",
+            "name": "Anika Tóth",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Slovakia",
+                "Canada"
+            ],
+            "dateOfBirth": "2002-01-15",
+            "foot": "right",
+            "height": "Anika Tóth Halifax Tides FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "46991",
+            "externalId": "46991",
+            "name": "Laura Retkesová",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2004-07-30",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "76704",
+            "externalId": "76704",
+            "name": "Nina Matušicová",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2005-03-02",
+            "foot": "right",
+            "height": "Nina Matušicová Spartak Myjava, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65189",
+            "externalId": "65189",
+            "name": "Soňa Servátková",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2006-11-23",
+            "foot": "right",
+            "height": "Soňa Servátková FC Viktoria Plzeň, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65107",
+            "externalId": "65107",
+            "name": "Zuzana Nárožná",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2005-03-04",
+            "foot": "right",
+            "height": "Zuzana Nárožná Spartak Myjava, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61806",
+            "externalId": "61806",
+            "name": "Barbora Vargová",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2005-06-01",
+            "foot": "right",
+            "height": "Barbora Vargová FC Slovan Liberec, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "12141",
+            "externalId": "12141",
+            "name": "Jana Vojteková",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1991-08-12",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "27581",
+            "externalId": "27581",
+            "name": "Kristína Košíková",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1993-12-20",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "14308",
+            "externalId": "14308",
+            "name": "Patrícia Fischerová",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1993-08-26",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "41148",
+            "externalId": "41148",
+            "name": "Tamara Morávková",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2003-01-02",
+            "foot": "right",
+            "height": "Taara Morávková SK Slavia Praha, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "41147",
+            "externalId": "41147",
+            "name": "Ľudmila Maťavková",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1998-04-11",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "36096",
+            "externalId": "36096",
+            "name": "Victoria Kaláberová",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Slovakia",
+                "United States"
+            ],
+            "dateOfBirth": "2001-07-07",
+            "foot": "right",
+            "height": "Victoria Kaláberová GKS Katowice, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30764",
+            "externalId": "30764",
+            "name": "Martina Šurnovská",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1999-02-10",
+            "foot": "right",
+            "height": "Martina Šurnovská SK Slavia Praha, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61800",
+            "externalId": "61800",
+            "name": "Aneta Surová",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2005-05-27",
+            "foot": "right",
+            "height": "Aneta Surová FC Slovan Liberec, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63413",
+            "externalId": "63413",
+            "name": "Lea Dolinar",
+            "position": "Defensive Midfield",
+            "age": 19,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2006-04-27",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30484",
+            "externalId": "30484",
+            "name": "Mária Mikolajová",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1999-06-13",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "65k",
+            "contract": null
+        },
+        {
+            "id": "71147",
+            "externalId": "71147",
+            "name": "Michaela Ferencová",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2005-03-26",
+            "foot": "right",
+            "height": "Michaela Ferencová FC Slovan Liberec, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46979",
+            "externalId": "46979",
+            "name": "Karolína Bayerová",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2004-08-26",
+            "foot": "right",
+            "height": "Karolína Bayerová Karriereende, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46992",
+            "externalId": "46992",
+            "name": "Sofia Anna Škerdová",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2004-10-19",
+            "foot": "right",
+            "height": "Sofia Anna Škerdová FC Slovan Liberec, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30761",
+            "externalId": "30761",
+            "name": "Klaudia Fabová",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1998-09-12",
+            "foot": "right",
+            "height": "Klaudia Fabová AP Gdańsk, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65103",
+            "externalId": "65103",
+            "name": "Darina Hrúziková",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2005-04-06",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65109",
+            "externalId": "65109",
+            "name": "Michaela Martišková",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "2006-02-23",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "15563",
+            "externalId": "15563",
+            "name": "Patrícia Hmírová",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Slovakia"
+            ],
+            "dateOfBirth": "1993-11-30",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "30k",
+            "contract": null
+        }
+    ]
+}

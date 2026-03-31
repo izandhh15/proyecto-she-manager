@@ -1,0 +1,219 @@
+{
+    "id": "517",
+    "externalId": "517",
+    "transfermarktId": "517",
+    "name": "Bolivia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "110277",
+            "externalId": "110277",
+            "name": "Jodi Medina",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1999-02-25",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70477",
+            "externalId": "70477",
+            "name": "Vanessa Ojeda",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "2006-03-29",
+            "foot": "right",
+            "height": "Vanessa Ojeda unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74729",
+            "externalId": "74729",
+            "name": "Érika Salvatierra",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1990-05-03",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46685",
+            "externalId": "46685",
+            "name": "Aidé Mendiola",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "2000-11-14",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70472",
+            "externalId": "70472",
+            "name": "Jhenifer Cuba",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "2005-04-27",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "78892",
+            "externalId": "78892",
+            "name": "Karla Ticona",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1995-06-29",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "108628",
+            "externalId": "108628",
+            "name": "Mayli Miranda",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1995-03-21",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110283",
+            "externalId": "110283",
+            "name": "Nelly Carballo",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "2007-02-12",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46693",
+            "externalId": "46693",
+            "name": "Nashmi Segovia",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "2000-03-09",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54992",
+            "externalId": "54992",
+            "name": "Marilin Rojas",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1998-06-05",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29283",
+            "externalId": "29283",
+            "name": "Ana Paula Rojas",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1997-07-17",
+            "foot": "right",
+            "height": "1,52m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67618",
+            "externalId": "67618",
+            "name": "Camila Mariscal",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1999-09-10",
+            "foot": "right",
+            "height": "Caila Mariscal unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29272",
+            "externalId": "29272",
+            "name": "Carla Méndez",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "1997-01-30",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46678",
+            "externalId": "46678",
+            "name": "Alizia Bejarano",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Bolivia"
+            ],
+            "dateOfBirth": "2000-06-08",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

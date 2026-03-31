@@ -1,0 +1,339 @@
+{
+    "id": "554",
+    "externalId": "554",
+    "transfermarktId": "554",
+    "name": "Faroe Island",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "52579",
+            "externalId": "52579",
+            "name": "Gunnvá Lützen",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2005-04-25",
+            "foot": "right",
+            "height": "Gunnvá Lützen HB Tórshavn, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48079",
+            "externalId": "48079",
+            "name": "Óluva Joensen",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2002-04-21",
+            "foot": "right",
+            "height": "Óluva Joensen KÍ Klaksvík, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "60863",
+            "externalId": "60863",
+            "name": "Teresa Jacobsen",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2006-07-30",
+            "foot": "right",
+            "height": "Teresa Jacobsen HB Tórshavn, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32633",
+            "externalId": "32633",
+            "name": "Tórunn Joensen",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "1999-09-27",
+            "foot": "right",
+            "height": "Tórunn Joensen KÍ Klaksvík, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56470",
+            "externalId": "56470",
+            "name": "Vár Johannesen",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2006-02-16",
+            "foot": "right",
+            "height": "Vár Johannesen KÍ Klaksvík, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46418",
+            "externalId": "46418",
+            "name": "Birita Ryan",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2002-11-24",
+            "foot": "right",
+            "height": "Birita Ryan KÍ Klaksvík, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "14888",
+            "externalId": "14888",
+            "name": "Heidi Sevdal",
+            "position": "Central Midfield",
+            "age": 37,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "1989-03-06",
+            "foot": "right",
+            "height": "Heidi Sevdal NSÍ Runavík, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "85748",
+            "externalId": "85748",
+            "name": "Anna Brændstrup",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2005-07-23",
+            "foot": "right",
+            "height": "Anna Brændstrup Gil Vicente FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65179",
+            "externalId": "65179",
+            "name": "Jonnhild á Sondum",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2006-04-06",
+            "foot": "right",
+            "height": "Jonnhild á Sondu NSÍ Runavík, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59828",
+            "externalId": "59828",
+            "name": "Súsanna Godtfred",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2006-12-31",
+            "foot": "right",
+            "height": "Súsanna Godtfred HB Tórshavn, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56482",
+            "externalId": "56482",
+            "name": "Jancý Mohr",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2005-08-04",
+            "foot": "right",
+            "height": "Jancý Mohr KÍ Klaksvík, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47177",
+            "externalId": "47177",
+            "name": "Sunniva Willemoes",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2003-12-09",
+            "foot": "right",
+            "height": "Sunniva Willeoes vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42495",
+            "externalId": "42495",
+            "name": "Jensa Tórolvsdóttir",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2001-08-03",
+            "foot": "right",
+            "height": "Jensa Tórolvsdóttir Víkingur Gøta, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42378",
+            "externalId": "42378",
+            "name": "Julia Naomi Mortensen",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2000-09-28",
+            "foot": "right",
+            "height": "Julia Naoi Mortensen HB Tórshavn, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35344",
+            "externalId": "35344",
+            "name": "Sara Shaki",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2000-12-19",
+            "foot": "right",
+            "height": "Sara Shaki HB Tórshavn, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32630",
+            "externalId": "32630",
+            "name": "Sanna Svarvadal",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2001-11-14",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "24042",
+            "externalId": "24042",
+            "name": "Durita Hummeland",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "1998-03-21",
+            "foot": "right",
+            "height": "Durita Hueland KÍ Klaksvík, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23276",
+            "externalId": "23276",
+            "name": "Ásla Johannesen",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "1996-05-09",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "9342",
+            "externalId": "9342",
+            "name": "Eyðvør Klakstein",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "1995-09-05",
+            "foot": "right",
+            "height": "Eyðvør Klakstein KÍ Klaksvík, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47186",
+            "externalId": "47186",
+            "name": "Malena Olsen",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2004-05-19",
+            "foot": "right",
+            "height": "Malena Olsen KÍ Klaksvík, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56358",
+            "externalId": "56358",
+            "name": "Fridrikka Clementsen",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2003-07-11",
+            "foot": "right",
+            "height": "Fridrikka Cleentsen HB Tórshavn, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "57014",
+            "externalId": "57014",
+            "name": "Sólja Ernstsdóttir",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Faroe Island"
+            ],
+            "dateOfBirth": "2006-09-05",
+            "foot": "right",
+            "height": "Sólja Ernstsdóttir KÍ Klaksvík, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

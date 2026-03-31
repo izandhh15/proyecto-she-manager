@@ -8,8 +8,8 @@
             "transfermarktId": "6245",
             "name": "Juventus FC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6245.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadio Alessandro La Marmora - Pozzo",
+            "stadiumSeats": "5827",
             "players": [
                 {
                     "id": "44528",
@@ -150,7 +150,7 @@
                         "Norway"
                     ],
                     "dateOfBirth": "2001-12-29",
-                    "foot": "left",
+                    "foot": "right",
                     "height": "1,74m",
                     "marketValue": "130k",
                     "contract": "2027-06-30"
@@ -354,7 +354,7 @@
                     "name": "Tatiana Pinto",
                     "position": "Attacking Midfield",
                     "number": "29",
-                    "age": 31,
+                    "age": 32,
                     "nationality": [
                         "Portugal",
                         "Brazil"
@@ -371,7 +371,7 @@
                     "name": "Abi Brighton",
                     "position": "Central Midfield",
                     "number": "33",
-                    "age": 23,
+                    "age": 24,
                     "nationality": [
                         "United States"
                     ],
@@ -582,8 +582,8 @@
             "transfermarktId": "6952",
             "name": "AS Roma",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6952.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadio Tre Fontane",
+            "stadiumSeats": "4000",
             "players": [
                 {
                     "id": "35736",
@@ -1110,8 +1110,8 @@
             "transfermarktId": "6954",
             "name": "Inter Milano",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6954.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Arena Civica Gianni Brera",
+            "stadiumSeats": "10000",
             "players": [
                 {
                     "id": "43455",
@@ -1151,7 +1151,7 @@
                     "name": "Telma Ívarsdóttir",
                     "position": "Goalkeeper",
                     "number": "23",
-                    "age": 26,
+                    "age": 27,
                     "nationality": [
                         "Iceland"
                     ],
@@ -1617,8 +1617,8 @@
             "transfermarktId": "6940",
             "name": "ACF Fiorentina",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6940.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadio Curva Fiesole - Viola Park",
+            "stadiumSeats": "3000",
             "players": [
                 {
                     "id": "20743",
@@ -2124,8 +2124,8 @@
             "transfermarktId": "6937",
             "name": "AC Milan",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6937.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Puma House of Football - Centro P. Vismara",
+            "stadiumSeats": "1200",
             "players": [
                 {
                     "id": "11961",
@@ -2669,7 +2669,7 @@
             "transfermarktId": "8049",
             "name": "Lazio Women",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/8049.png",
-            "stadiumName": "Stadio Mirko Fersini",
+            "stadiumName": "Centro Sportivo Campo Aquile - Mirko Fersini",
             "stadiumSeats": "3000",
             "players": [
                 {
@@ -2921,7 +2921,7 @@
                     "name": "Alice Benoît",
                     "position": "Central Midfield",
                     "number": "10",
-                    "age": 29,
+                    "age": 30,
                     "nationality": [
                         "France"
                     ],
@@ -3099,8 +3099,8 @@
             "transfermarktId": "8968",
             "name": "FC Como Women",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/8968.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadio Ferruccio Trabattoni",
+            "stadiumSeats": "3700",
             "players": [
                 {
                     "id": "42762",
@@ -3528,8 +3528,8 @@
             "transfermarktId": "8278",
             "name": "Parma Calcio",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/8278.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadio Ennio Tardini",
+            "stadiumSeats": "22352",
             "players": [
                 {
                     "id": "41985",
@@ -4053,8 +4053,8 @@
             "transfermarktId": "6329",
             "name": "US Sassuolo",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6329.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadio Enzo Ricci",
+            "stadiumSeats": "4008",
             "players": [
                 {
                     "id": "47929",
@@ -4514,7 +4514,7 @@
                     "name": "Elena Dhont",
                     "position": "Centre-Forward",
                     "number": "13",
-                    "age": 27,
+                    "age": 28,
                     "nationality": [
                         "Belgium"
                     ],
@@ -5042,8 +5042,8 @@
             "transfermarktId": "8175",
             "name": "Genoa CFC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/8175.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "LaCantera Stadium Barabino & Partners",
+            "stadiumSeats": "4000",
             "players": [
                 {
                     "id": "74313",
@@ -5690,7 +5690,7 @@
                     "name": "Chiara Ripamonti",
                     "position": "Centre-Back",
                     "number": "55",
-                    "age": 24,
+                    "age": 25,
                     "nationality": [
                         "Italy"
                     ],
@@ -5915,7 +5915,7 @@
                     "name": "Natasha Bianconi",
                     "position": "Centre-Forward",
                     "number": "30",
-                    "age": 17,
+                    "age": 18,
                     "nationality": [
                         "Italy"
                     ],

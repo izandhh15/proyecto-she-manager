@@ -1,0 +1,424 @@
+{
+    "id": "6483",
+    "externalId": "6483",
+    "transfermarktId": "6483",
+    "name": "Kosovo",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "63613",
+            "externalId": "63613",
+            "name": "Djellza Mehmeti",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2006-10-27",
+            "foot": "right",
+            "height": "Djellza Meheti KFF Mitrovica, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "50531",
+            "externalId": "50531",
+            "name": "Alma Demiri",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "2005-06-27",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30908",
+            "externalId": "30908",
+            "name": "Tina Kolgeci",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2000-10-30",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "50098",
+            "externalId": "50098",
+            "name": "Laureta Crnaveri",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "2005-05-09",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107859",
+            "externalId": "107859",
+            "name": "Jonida Godeni",
+            "position": "Central Midfield",
+            "age": 16,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2009-06-21",
+            "foot": "right",
+            "height": "Jonida Godeni SGS Essen U19, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91626",
+            "externalId": "91626",
+            "name": "Ramize Orana",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2007-08-23",
+            "foot": "right",
+            "height": "Raize Orana KFF Ferizaj, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "76927",
+            "externalId": "76927",
+            "name": "Mirjeta Januzi",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "2007-03-02",
+            "foot": "right",
+            "height": "Mirjeta Januzi 1. FC Nürnberg II, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63621",
+            "externalId": "63621",
+            "name": "Kreshnike Ramaja",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2005-09-20",
+            "foot": "right",
+            "height": "Kreshnike Raaja KFF Dukagjini, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42639",
+            "externalId": "42639",
+            "name": "Rrezona Ramadani",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2002-09-05",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42634",
+            "externalId": "42634",
+            "name": "Albulena Fejza",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2002-09-23",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42633",
+            "externalId": "42633",
+            "name": "Elmedina Avdili",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2003-06-04",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42630",
+            "externalId": "42630",
+            "name": "Gjenifer Pjetri",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2001-04-22",
+            "foot": "right",
+            "height": "Gjenifer Pjetri KFF Dukagjini, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33313",
+            "externalId": "33313",
+            "name": "Blerta Smaili",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "2002-05-08",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "42638",
+            "externalId": "42638",
+            "name": "Lumbardha Misini",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2003-04-02",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "30929",
+            "externalId": "30929",
+            "name": "Donjeta Halilaj",
+            "position": "Attacking Midfield",
+            "age": 26,
+            "nationality": [
+                "Kosovo",
+                "Albania"
+            ],
+            "dateOfBirth": "2000-03-12",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "81504",
+            "externalId": "81504",
+            "name": "Bardha Mahmuti",
+            "position": "Attacking Midfield",
+            "age": 19,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2006-05-15",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "81500",
+            "externalId": "81500",
+            "name": "Shenarta Bela",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2006-09-01",
+            "foot": "right",
+            "height": "Shenarta Bela KFF Mitrovica, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31911",
+            "externalId": "31911",
+            "name": "Gentiana Fetaj",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "2002-08-04",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "15k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "51899",
+            "externalId": "51899",
+            "name": "Fatlinda Ramaj",
+            "position": "Defensive Midfield",
+            "age": 25,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2000-10-01",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "50104",
+            "externalId": "50104",
+            "name": "Sara Sahiti",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "2006-05-14",
+            "foot": "right",
+            "height": "Sara Sahiti TSG 1899 Hoffenhei II, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "36105",
+            "externalId": "36105",
+            "name": "Marigonë Tahiri",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "1999-02-25",
+            "foot": "right",
+            "height": "Marigonë Tahiri Ünye Gücü FK, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "63618",
+            "externalId": "63618",
+            "name": "Aurona Racaj",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2005-06-14",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35353",
+            "externalId": "35353",
+            "name": "Valentina Metaj",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Kosovo",
+                "Sweden"
+            ],
+            "dateOfBirth": "2004-10-03",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73367",
+            "externalId": "73367",
+            "name": "Elona Paci",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "2007-11-02",
+            "foot": "right",
+            "height": "Elona Paci 1. FC Köln II, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36085",
+            "externalId": "36085",
+            "name": "Kaltrina Biqkaj",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2000-08-05",
+            "foot": "both",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "81505",
+            "externalId": "81505",
+            "name": "Aurora Mulliqi",
+            "position": "Second Striker",
+            "age": 18,
+            "nationality": [
+                "Kosovo"
+            ],
+            "dateOfBirth": "2007-09-12",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "31638",
+            "externalId": "31638",
+            "name": "Erëleta Memeti",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Kosovo",
+                "Germany"
+            ],
+            "dateOfBirth": "1999-06-30",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "185k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

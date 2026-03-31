@@ -1,0 +1,395 @@
+{
+    "id": "831",
+    "externalId": "831",
+    "transfermarktId": "831",
+    "name": "Wales",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "50616",
+            "externalId": "50616",
+            "name": "Poppy Soper",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2002-05-04",
+            "foot": "right",
+            "height": "Poppy Soper Rugby Borough FC, Goalkeeperm",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "47198",
+            "externalId": "47198",
+            "name": "Safia Middleton-Patel",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Wales",
+                "India"
+            ],
+            "dateOfBirth": "2004-09-21",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "25k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "44497",
+            "externalId": "44497",
+            "name": "Olivia Clark",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "2001-08-30",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "3181",
+            "externalId": "3181",
+            "name": "Rhiannon Roberts",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "1990-08-30",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "47020",
+            "externalId": "47020",
+            "name": "Mia Ross",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "2003-04-28",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46391",
+            "externalId": "46391",
+            "name": "Esther Morgan",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "2002-08-28",
+            "foot": "right",
+            "height": "Esther Morgan Bristol City, Defencem",
+            "marketValue": "30k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30383",
+            "externalId": "30383",
+            "name": "Gemma Evans",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "1996-08-01",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "290k",
+            "contract": null
+        },
+        {
+            "id": "30412",
+            "externalId": "30412",
+            "name": "Lois Joel",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "1999-06-02",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "33437",
+            "externalId": "33437",
+            "name": "Lily Woodham",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2000-09-03",
+            "foot": "left",
+            "height": "1,61m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "38961",
+            "externalId": "38961",
+            "name": "Ella Powell",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2000-02-01",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "104618",
+            "externalId": "104618",
+            "name": "Gwen Zimmerman",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Wales",
+                "United States"
+            ],
+            "dateOfBirth": "2007-09-24",
+            "foot": "right",
+            "height": "Gwen Zieran Eclipse Select Acadey, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73271",
+            "externalId": "73271",
+            "name": "Mared Griffiths",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2007-03-03",
+            "foot": "right",
+            "height": "Mared Griffiths Sunderland AFC, Midfieldm",
+            "marketValue": "70k",
+            "contract": null
+        },
+        {
+            "id": "42727",
+            "externalId": "42727",
+            "name": "Carrie Jones",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2003-09-04",
+            "foot": "right",
+            "height": "Carrie Jones IFK Norrköping DFK, Midfieldm",
+            "marketValue": "45k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30335",
+            "externalId": "30335",
+            "name": "Ceri Holland",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "1997-12-12",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "160k",
+            "contract": null
+        },
+        {
+            "id": "27555",
+            "externalId": "27555",
+            "name": "Charlie Estcourt",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "1998-05-27",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "11806",
+            "externalId": "11806",
+            "name": "Hayley Ladd",
+            "position": "Defensive Midfield",
+            "age": 32,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "1993-10-06",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "90k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "11804",
+            "externalId": "11804",
+            "name": "Angharad James-Turner",
+            "position": "Defensive Midfield",
+            "age": 31,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "1994-06-01",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "5550",
+            "externalId": "5550",
+            "name": "Sophie Ingle",
+            "position": "Defensive Midfield",
+            "age": 34,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "1991-09-02",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "5180",
+            "externalId": "5180",
+            "name": "Rachel Rowe",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "1992-09-13",
+            "foot": "left",
+            "height": "Rachel Rowe Nottingha Forest, Midfieldm",
+            "marketValue": "35k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "34920",
+            "externalId": "34920",
+            "name": "Elise Hughes",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2001-04-15",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "35k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "30407",
+            "externalId": "30407",
+            "name": "Hannah Cain",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Wales",
+                "England"
+            ],
+            "dateOfBirth": "1999-02-11",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "47196",
+            "externalId": "47196",
+            "name": "Mary McAteer",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2004-01-02",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "47208",
+            "externalId": "47208",
+            "name": "Phoebie Poole",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2004-05-13",
+            "foot": "right",
+            "height": "Phoebie Poole Plyouth Argyle, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64483",
+            "externalId": "64483",
+            "name": "Olivia Francis",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2006-02-20",
+            "foot": "right",
+            "height": "Olivia Francis Manchester United U21, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64489",
+            "externalId": "64489",
+            "name": "Tianna Teisar",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Wales"
+            ],
+            "dateOfBirth": "2005-09-24",
+            "foot": "left",
+            "height": "Tianna Teisar Plyouth Argyle, Strikerm",
+            "marketValue": "10k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

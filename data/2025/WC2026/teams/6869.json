@@ -1,0 +1,354 @@
+{
+    "id": "6869",
+    "externalId": "6869",
+    "transfermarktId": "6869",
+    "name": "Papua New Guinea",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "97080",
+            "externalId": "97080",
+            "name": "Leah Lou",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2000-04-26",
+            "foot": "right",
+            "height": "Leah Lou unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110233",
+            "externalId": "110233",
+            "name": "Emeliah Toks",
+            "position": "Goalkeeper",
+            "age": 17,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2008-07-28",
+            "foot": "right",
+            "height": "Eeliah Toks Lae City FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "53311",
+            "externalId": "53311",
+            "name": "Lavina Hola",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1996-05-27",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97093",
+            "externalId": "97093",
+            "name": "Raynata Samuel",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2004-08-10",
+            "foot": "right",
+            "height": "Raynata Sauel Hekari United, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110220",
+            "externalId": "110220",
+            "name": "Pauline David",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1999-02-24",
+            "foot": "right",
+            "height": "Pauline David unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75089",
+            "externalId": "75089",
+            "name": "Shalom Waida",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2001-02-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38035",
+            "externalId": "38035",
+            "name": "Olivia Upaupa",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1997-03-12",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75096",
+            "externalId": "75096",
+            "name": "Serah Waida",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1998-07-24",
+            "foot": "right",
+            "height": "Serah Waida Hekari United, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83565",
+            "externalId": "83565",
+            "name": "Michaelyne Butubu",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2003-01-23",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38086",
+            "externalId": "38086",
+            "name": "Merolyne Sali",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1998-10-30",
+            "foot": "right",
+            "height": "Merolyne Sali Allies FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110236",
+            "externalId": "110236",
+            "name": "Grace Batiy",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1999-10-14",
+            "foot": "right",
+            "height": "Grace Batiy Hekari United, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38011",
+            "externalId": "38011",
+            "name": "Yvonne Gabong",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1996-08-26",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38023",
+            "externalId": "38023",
+            "name": "Ramona Padio",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1998-03-13",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97158",
+            "externalId": "97158",
+            "name": "Mavis Singara",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2003-07-25",
+            "foot": "right",
+            "height": "Mavis Singara Hekari United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97092",
+            "externalId": "97092",
+            "name": "Christie Maneu",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2004-08-17",
+            "foot": "right",
+            "height": "Christie Maneu unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83566",
+            "externalId": "83566",
+            "name": "Phylis Pala",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2003-07-21",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97091",
+            "externalId": "97091",
+            "name": "Hortance Kimit",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1995-06-12",
+            "foot": "right",
+            "height": "Hortance Kiit Hekari United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38017",
+            "externalId": "38017",
+            "name": "Marie Kaipu",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1997-08-16",
+            "foot": "right",
+            "height": "Marie Kaipu Hekari United, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83563",
+            "externalId": "83563",
+            "name": "Calista Maneo",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2002-09-29",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83567",
+            "externalId": "83567",
+            "name": "Nenny Elipas",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2005-05-25",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74803",
+            "externalId": "74803",
+            "name": "Charlie Yanding",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "1997-02-01",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75088",
+            "externalId": "75088",
+            "name": "Arnolda Dou",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2001-12-20",
+            "foot": "right",
+            "height": "Arnolda Dou Port Moresby Strikers, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97157",
+            "externalId": "97157",
+            "name": "Keren Kalapai",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Papua New Guinea"
+            ],
+            "dateOfBirth": "2004-08-22",
+            "foot": "right",
+            "height": "Keren Kalapai Lae City FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

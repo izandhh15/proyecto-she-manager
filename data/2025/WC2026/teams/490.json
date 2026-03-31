@@ -1,0 +1,416 @@
+{
+    "id": "490",
+    "externalId": "490",
+    "transfermarktId": "490",
+    "name": "Antigua and Barbuda",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "69305",
+            "externalId": "69305",
+            "name": "Anik Jarvis",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1992-05-24",
+            "foot": "right",
+            "height": "Anik Jarvis unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69312",
+            "externalId": "69312",
+            "name": "Makiesha Simon",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Makiesha Sion unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69296",
+            "externalId": "69296",
+            "name": "Tassianne Benjamin",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Tassianne Benjain unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69311",
+            "externalId": "69311",
+            "name": "Skyla Scavo",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Skyla Scavo unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69304",
+            "externalId": "69304",
+            "name": "Jahira James",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1999-04-15",
+            "foot": "right",
+            "height": "Jahira Jaes unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72111",
+            "externalId": "72111",
+            "name": "Tyanna Simon",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "2003-04-18",
+            "foot": "right",
+            "height": "Tyanna Sion unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72416",
+            "externalId": "72416",
+            "name": "Denesia Samuel",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Denesia Sauel unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69302",
+            "externalId": "69302",
+            "name": "Amelia Green",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1991-09-13",
+            "foot": "right",
+            "height": "Aelia Green unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72110",
+            "externalId": "72110",
+            "name": "Dafina Simon-Ponte",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Dafina Sion-Ponte unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69316",
+            "externalId": "69316",
+            "name": "Arrianne Whyte",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1992-01-04",
+            "foot": "right",
+            "height": "Arrianne Whyte unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69295",
+            "externalId": "69295",
+            "name": "Maritza Baptiste",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Maritza Baptiste unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69294",
+            "externalId": "69294",
+            "name": "Brianna Auguiste",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Antigua and Barbuda",
+                "United States"
+            ],
+            "dateOfBirth": "2002-11-01",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69314",
+            "externalId": "69314",
+            "name": "Devikka Tittle",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1993-06-13",
+            "foot": "right",
+            "height": "Devikka Tittle unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69310",
+            "externalId": "69310",
+            "name": "Zolique Samuel",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Zolique Sauel unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69300",
+            "externalId": "69300",
+            "name": "Gabrielle de Souza",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Gabrielle de Souza unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69299",
+            "externalId": "69299",
+            "name": "Shunnye Christopher",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "2004-08-10",
+            "foot": "right",
+            "height": "Shunnye Christopher unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69303",
+            "externalId": "69303",
+            "name": "Kai Jacobs",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1995-12-15",
+            "foot": "right",
+            "height": "Kai Jacobs unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69309",
+            "externalId": "69309",
+            "name": "Breana Roberts",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Breana Roberts unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72112",
+            "externalId": "72112",
+            "name": "Virginia Simon",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Virginia Sion unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69301",
+            "externalId": "69301",
+            "name": "Tritch-Ann Grant",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1998-02-01",
+            "foot": "right",
+            "height": "Tritch-Ann Grant unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69313",
+            "externalId": "69313",
+            "name": "Nicola Stewart",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Nicola Stewart unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72109",
+            "externalId": "72109",
+            "name": "Breanna Humphreys",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1995-01-17",
+            "foot": "right",
+            "height": "Breanna Huphreys unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69547",
+            "externalId": "69547",
+            "name": "Nicelle Drew",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Nicelle Drew unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72113",
+            "externalId": "72113",
+            "name": "Shakea Ogarro",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1998-04-26",
+            "foot": "right",
+            "height": "Shakea Ogarro unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69315",
+            "externalId": "69315",
+            "name": "Luan Tomlinson",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Luan Tolinson unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69298",
+            "externalId": "69298",
+            "name": "Monica Bird",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Antigua and Barbuda",
+                "Puerto Rico"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69307",
+            "externalId": "69307",
+            "name": "Georgetta Lewis",
+            "position": "Centre-Forward",
+            "age": 37,
+            "nationality": [
+                "Antigua and Barbuda"
+            ],
+            "dateOfBirth": "1988-08-25",
+            "foot": "right",
+            "height": "Georgetta Lewis unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

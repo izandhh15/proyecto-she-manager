@@ -1,0 +1,354 @@
+{
+    "id": "691",
+    "externalId": "691",
+    "transfermarktId": "691",
+    "name": "Nepal",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "67478",
+            "externalId": "67478",
+            "name": "Usha Nath",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2001-02-02",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67485",
+            "externalId": "67485",
+            "name": "Anjila Tumbapo Subba",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1996-07-25",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67481",
+            "externalId": "67481",
+            "name": "Anjana Rana Magar",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2002-01-17",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106102",
+            "externalId": "106102",
+            "name": "Pratiksha Chaudhary",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2004-10-29",
+            "foot": "right",
+            "height": "Pratiksha Chaudhary Ared Police Force Club, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67484",
+            "externalId": "67484",
+            "name": "Puja Rana",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2001-03-28",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67472",
+            "externalId": "67472",
+            "name": "Bimala BK",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2002-01-23",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92459",
+            "externalId": "92459",
+            "name": "Samiksha Ghimire",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2001-10-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67474",
+            "externalId": "67474",
+            "name": "Amrita Jaishi",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1994-10-15",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67483",
+            "externalId": "67483",
+            "name": "Gita Rana",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1996-09-21",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67486",
+            "externalId": "67486",
+            "name": "Nisha Thokar",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2001-02-01",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67476",
+            "externalId": "67476",
+            "name": "Saru Limbu",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2001-03-04",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106104",
+            "externalId": "106104",
+            "name": "Man Maya Damai",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2004-09-13",
+            "foot": "right",
+            "height": "Man Maya Daai Ared Police Force Club, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67477",
+            "externalId": "67477",
+            "name": "Renuka Nagarkote",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1995-04-16",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45785",
+            "externalId": "45785",
+            "name": "Anita Basnet",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1994-12-27",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67480",
+            "externalId": "67480",
+            "name": "Preeti Rai",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2004-11-20",
+            "foot": "right",
+            "height": "1,45m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67356",
+            "externalId": "67356",
+            "name": "Bimala Chaudhary",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1997-02-28",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106105",
+            "externalId": "106105",
+            "name": "Saraswati Hamal",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2004-03-07",
+            "foot": "right",
+            "height": "Saraswati Haal Ared Police Force Club, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67473",
+            "externalId": "67473",
+            "name": "Rashmi Kumari Ghising",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2002-06-15",
+            "foot": "right",
+            "height": "Rashi Kuari Ghising Ared Police Force Club, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45786",
+            "externalId": "45786",
+            "name": "Sabitra Bhandari",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1996-05-23",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "92460",
+            "externalId": "92460",
+            "name": "Rekha Poudel",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2001-03-11",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67357",
+            "externalId": "67357",
+            "name": "Anita KC",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "1997-06-25",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67482",
+            "externalId": "67482",
+            "name": "Sabita Rana Magar",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": "2003-07-06",
+            "foot": "right",
+            "height": "Sabita Rana Magar Ared Police Force Club, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "109981",
+            "externalId": "109981",
+            "name": "Chandra Bhandari",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Nepal"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Chandra Bhandari Nepal Ary Club, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

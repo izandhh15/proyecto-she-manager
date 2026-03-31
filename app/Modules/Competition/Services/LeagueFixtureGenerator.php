@@ -55,6 +55,55 @@ class LeagueFixtureGenerator
             ];
         }, $matchdays);
     }
+
+    /**
+     * Normalize imported matchdays to the round count required by the current
+     * team count. Some source schedules still reflect outdated league sizes.
+     *
+     * @param  array<array{round: int, date: string}>  $matchdays
+     * @return array<array{round: int, date: string}>
+     */
+    public static function normalizeMatchdays(array $matchdays, int $teamCount): array
+    {
+        if ($teamCount < 4 || $teamCount % 2 !== 0) {
+            throw new \InvalidArgumentException(
+                "Team count must be even and at least 4, got {$teamCount}"
+            );
+        }
+
+        $expectedMatchdays = ($teamCount - 1) * 2;
+        $matchdays = array_values($matchdays);
+
+        usort($matchdays, fn (array $a, array $b) => ($a['round'] ?? 0) <=> ($b['round'] ?? 0));
+
+        if (count($matchdays) > $expectedMatchdays) {
+            $matchdays = array_slice($matchdays, 0, $expectedMatchdays);
+        }
+
+        if (count($matchdays) < $expectedMatchdays) {
+            if ($matchdays === []) {
+                throw new \InvalidArgumentException(
+                    "Expected {$expectedMatchdays} matchdays for {$teamCount} teams, got 0"
+                );
+            }
+
+            $lastDate = Carbon::parse(end($matchdays)['date']);
+            while (count($matchdays) < $expectedMatchdays) {
+                $lastDate = $lastDate->copy()->addWeek();
+                $matchdays[] = [
+                    'round' => count($matchdays) + 1,
+                    'date' => $lastDate->format('Y-m-d'),
+                ];
+            }
+        }
+
+        foreach ($matchdays as $index => &$matchday) {
+            $matchday['round'] = $index + 1;
+        }
+        unset($matchday);
+
+        return $matchdays;
+    }
     /**
      * Load knockout rounds from a competition's schedule.json file.
      *

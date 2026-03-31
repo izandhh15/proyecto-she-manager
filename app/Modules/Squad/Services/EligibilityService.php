@@ -4,6 +4,7 @@ namespace App\Modules\Squad\Services;
 
 use App\Models\GamePlayer;
 use App\Models\PlayerSuspension;
+use App\Modules\Player\Services\InjuryService;
 use App\Modules\Squad\DTOs\SuspensionRuleSet;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -33,7 +34,9 @@ class EligibilityService
     public function applyInjury(GamePlayer $player, string $injuryType, int $weeksOut, Carbon $matchDate): void
     {
         $player->injury_type = $injuryType;
-        $player->injury_until = \Illuminate\Support\Carbon::instance($matchDate->copy()->addWeeks($weeksOut));
+        $player->injury_until = \Illuminate\Support\Carbon::instance(
+            InjuryService::resolveInjuryUntil($injuryType, $weeksOut, $matchDate)
+        );
         $player->save();
     }
 

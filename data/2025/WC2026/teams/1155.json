@@ -1,0 +1,130 @@
+{
+    "id": "1155",
+    "externalId": "1155",
+    "transfermarktId": "1155",
+    "name": "Equatorial Guinea",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "92387",
+            "externalId": "92387",
+            "name": "Dolores Hernández",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Equatorial Guinea"
+            ],
+            "dateOfBirth": "2001-10-24",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92383",
+            "externalId": "92383",
+            "name": "Cecilia Akeng",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Equatorial Guinea"
+            ],
+            "dateOfBirth": "2002-11-08",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92389",
+            "externalId": "92389",
+            "name": "Angelina Obono",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Equatorial Guinea"
+            ],
+            "dateOfBirth": "2002-06-17",
+            "foot": "right",
+            "height": "Angelina Obono unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "6583",
+            "externalId": "6583",
+            "name": "Dorine Chuigoué",
+            "position": "Central Midfield",
+            "age": 37,
+            "nationality": [
+                "Equatorial Guinea",
+                "Spain"
+            ],
+            "dateOfBirth": "1988-11-28",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "20291",
+            "externalId": "20291",
+            "name": "Annette Jacky Messomo",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1993-03-01",
+            "foot": "right",
+            "height": "Annette Jacky Messoo unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66767",
+            "externalId": "66767",
+            "name": "Nuria Baita",
+            "position": "Defensive Midfield",
+            "age": 24,
+            "nationality": [
+                "Equatorial Guinea"
+            ],
+            "dateOfBirth": "2002-03-07",
+            "foot": "right",
+            "height": "Nuria Baita FC 15 de Agosto, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92391",
+            "externalId": "92391",
+            "name": "Catalina Andeme",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Equatorial Guinea"
+            ],
+            "dateOfBirth": "1999-07-14",
+            "foot": "right",
+            "height": "Catalina Andee unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92390",
+            "externalId": "92390",
+            "name": "Elena Obono",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Equatorial Guinea"
+            ],
+            "dateOfBirth": "1999-11-13",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

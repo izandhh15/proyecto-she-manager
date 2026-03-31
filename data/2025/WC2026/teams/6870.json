@@ -1,0 +1,297 @@
+{
+    "id": "6870",
+    "externalId": "6870",
+    "transfermarktId": "6870",
+    "name": "Cookinseln",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "110202",
+            "externalId": "110202",
+            "name": "Courtney Napa",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "1992-12-28",
+            "foot": "right",
+            "height": "Courtney Napa Nikao Sokattak FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74748",
+            "externalId": "74748",
+            "name": "Kimberly Uini",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2006-08-23",
+            "foot": "right",
+            "height": "Kiberly Uini Matavera Ngatangiia, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110210",
+            "externalId": "110210",
+            "name": "Rianna Pepe",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "1998-10-10",
+            "foot": "right",
+            "height": "Rianna Pepe Tupapa Maraerenga FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74751",
+            "externalId": "74751",
+            "name": "Penina Katuke",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2005-11-19",
+            "foot": "right",
+            "height": "Penina Katuke Titikaveka FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37988",
+            "externalId": "37988",
+            "name": "Teretia Teinaki",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2002-01-23",
+            "foot": "right",
+            "height": "Teretia Teinaki Avatiu FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74747",
+            "externalId": "74747",
+            "name": "Tanga Morris",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "1996-11-28",
+            "foot": "right",
+            "height": "Tanga Morris Matavera Ngatangiia, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74759",
+            "externalId": "74759",
+            "name": "Tineke de Jong",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Cookinseln",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2002-05-26",
+            "foot": "right",
+            "height": "Tineke de Jong Manukau United FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110211",
+            "externalId": "110211",
+            "name": "Tearoa Rouru",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2005-02-06",
+            "foot": "right",
+            "height": "Tearoa Rouru Matavera Ngatangiia, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37998",
+            "externalId": "37998",
+            "name": "Claudean Robati",
+            "position": "Centre-Back",
+            "age": 37,
+            "nationality": [
+                "Cookinseln",
+                "New Zealand"
+            ],
+            "dateOfBirth": "1988-12-06",
+            "foot": "right",
+            "height": "Claudean Robati Tupapa Maraerenga FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110209",
+            "externalId": "110209",
+            "name": "Deja Pareta",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2004-06-19",
+            "foot": "right",
+            "height": "Deja Pareta Hibiscus Coast AFC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74753",
+            "externalId": "74753",
+            "name": "Kayleena Kermode",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "1999-02-08",
+            "foot": "right",
+            "height": "Kayleena Kerode Tupapa Maraerenga FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110204",
+            "externalId": "110204",
+            "name": "Paulina Ngaroi",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2003-08-09",
+            "foot": "right",
+            "height": "Paulina Ngaroi Avatiu FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64474",
+            "externalId": "64474",
+            "name": "Ally Toailoa",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Cookinseln",
+                "New Zealand"
+            ],
+            "dateOfBirth": "1999-04-19",
+            "foot": "right",
+            "height": "Ally Toailoa Papakura City FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110207",
+            "externalId": "110207",
+            "name": "Mareta Brothers",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2003-04-09",
+            "foot": "right",
+            "height": "Mareta Brothers Manukau United FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110208",
+            "externalId": "110208",
+            "name": "Maureen Fitzpatrick",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2001-12-08",
+            "foot": "right",
+            "height": "Maureen Fitzpatrick Franklin United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37984",
+            "externalId": "37984",
+            "name": "Lee Maoate-Cox",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "1995-03-21",
+            "foot": "right",
+            "height": "Lee Maoate-Cox Coastal Spirit FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110203",
+            "externalId": "110203",
+            "name": "Te Upoko Tuariki",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2006-02-24",
+            "foot": "right",
+            "height": "Te Upoko Tuariki Puaikura FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74761",
+            "externalId": "74761",
+            "name": "Ngamata Moekaa",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "2002-05-24",
+            "foot": "right",
+            "height": "Ngaata Moekaa Joondalup United, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37997",
+            "externalId": "37997",
+            "name": "Tayla Hetherington",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Cookinseln"
+            ],
+            "dateOfBirth": "1994-01-27",
+            "foot": "right",
+            "height": "Tayla Hetherington Manukau United FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

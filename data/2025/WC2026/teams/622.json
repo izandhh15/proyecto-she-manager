@@ -1,0 +1,359 @@
+{
+    "id": "622",
+    "externalId": "622",
+    "transfermarktId": "622",
+    "name": "Iceland",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "31035",
+            "externalId": "31035",
+            "name": "Telma Ívarsdóttir",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "1999-03-30",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "48441",
+            "externalId": "48441",
+            "name": "Fanney Inga Birkisdóttir",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2005-03-17",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "43455",
+            "externalId": "43455",
+            "name": "Cecilía Rán Rúnarsdóttir",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2003-07-26",
+            "foot": "right",
+            "height": "1,88m",
+            "marketValue": "150k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "17904",
+            "externalId": "17904",
+            "name": "Glódís Perla Viggósdóttir",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "1995-06-27",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "450k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "30199",
+            "externalId": "30199",
+            "name": "Guðrún Arnardóttir",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "1995-07-29",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "55k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "31040",
+            "externalId": "31040",
+            "name": "Ingibjörg Sigurðardóttir",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "1997-10-07",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "45k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "46445",
+            "externalId": "46445",
+            "name": "Hafrún Rakel Halldórsdóttir",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2002-10-01",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "35195",
+            "externalId": "35195",
+            "name": "Arna Eiríksdóttir",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2002-09-14",
+            "foot": "right",
+            "height": "Arna Eiríksdóttir Vålerenga Fotball, Defencem",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35127",
+            "externalId": "35127",
+            "name": "Diljá Ýr Zomers",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Iceland",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2001-11-11",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "48524",
+            "externalId": "48524",
+            "name": "Katla Tryggvadóttir",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2005-05-05",
+            "foot": "right",
+            "height": "Katla Tryggvadóttir ACF Fiorentina, Midfieldm",
+            "marketValue": "75k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "48471",
+            "externalId": "48471",
+            "name": "Sædís Rún Heiðarsdóttir",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2004-09-16",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "45k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "43448",
+            "externalId": "43448",
+            "name": "Ída Marín Hermannsdóttir",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2002-07-13",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35074",
+            "externalId": "35074",
+            "name": "Karólína Lea Vilhjálmsdóttir",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2001-08-08",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "180k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "35072",
+            "externalId": "35072",
+            "name": "Alexandra Jóhannsdóttir",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2000-03-19",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "60k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "34388",
+            "externalId": "34388",
+            "name": "María Grós",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Iceland",
+                "Sweden"
+            ],
+            "dateOfBirth": "2003-02-05",
+            "foot": "right",
+            "height": "María Grós Djurgårdens IF DFF, Midfieldm",
+            "marketValue": "30k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "31041",
+            "externalId": "31041",
+            "name": "Hildur Antonsdóttir",
+            "position": "Defensive Midfield",
+            "age": 30,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "1995-09-18",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "70k",
+            "contract": null
+        },
+        {
+            "id": "35136",
+            "externalId": "35136",
+            "name": "Birta Georgsdóttir",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2002-08-23",
+            "foot": "right",
+            "height": "Birta Georgsdóttir Genoa CFC, Strikerm",
+            "marketValue": "40k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "11702",
+            "externalId": "11702",
+            "name": "Sandra María Jessen",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "1995-01-18",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "80k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "46446",
+            "externalId": "46446",
+            "name": "Sveindís Jónsdóttir",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Iceland",
+                "Ghana"
+            ],
+            "dateOfBirth": "2001-06-05",
+            "foot": "both",
+            "height": "1,78m",
+            "marketValue": "200k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "34289",
+            "externalId": "34289",
+            "name": "Hlín Eiríksdóttir",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2000-06-12",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "85k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "34181",
+            "externalId": "34181",
+            "name": "Linda Líf Boama",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Iceland",
+                "Ghana"
+            ],
+            "dateOfBirth": "2001-08-15",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "56279",
+            "externalId": "56279",
+            "name": "Emilía Kiær Ásgeirsdóttir",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Iceland",
+                "Denmark"
+            ],
+            "dateOfBirth": "2005-01-30",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "85k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "87614",
+            "externalId": "87614",
+            "name": "Thelma Karen Pálmadóttir",
+            "position": "Centre-Forward",
+            "age": 17,
+            "nationality": [
+                "Iceland"
+            ],
+            "dateOfBirth": "2008-04-18",
+            "foot": "right",
+            "height": "Thela Karen Páladóttir BK Häcken FF, Strikerm",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        }
+    ]
+}

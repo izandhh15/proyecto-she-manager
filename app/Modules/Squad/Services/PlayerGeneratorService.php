@@ -61,12 +61,14 @@ class PlayerGeneratorService
         $name = $data->name ?? $identity['name'];
         $nationality = $data->nationality ?? $identity['nationality'];
         $age = (int) $data->dateOfBirth->diffInYears($game->current_date ?? now());
+        $generatedExternalId = 'gen-' . Str::uuid()->toString();
 
         // Create the reference Player record
         $player = Player::create([
             'id' => Str::uuid()->toString(),
+            'transfermarkt_id' => $generatedExternalId,
             'external_source' => ExternalData::defaultSource(),
-            'external_id' => 'gen-' . Str::uuid()->toString(),
+            'external_id' => $generatedExternalId,
             'name' => $name,
             'nationality' => $nationality,
             'date_of_birth' => $data->dateOfBirth->format('Y-m-d'),

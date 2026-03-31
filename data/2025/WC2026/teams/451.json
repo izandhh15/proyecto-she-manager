@@ -40,7 +40,7 @@
             "externalId": "30339",
             "name": "Anna Moorhouse",
             "position": "Goalkeeper",
-            "age": 30,
+            "age": 31,
             "nationality": [
                 "England"
             ],
@@ -80,36 +80,6 @@
             "height": "1,71m",
             "marketValue": "575k",
             "contract": "2028-06-30"
-        },
-        {
-            "id": "37493",
-            "externalId": "37493",
-            "name": "Poppy Pattinson",
-            "position": "Central Midfield",
-            "age": 25,
-            "nationality": [
-                "England"
-            ],
-            "dateOfBirth": "2000-04-30",
-            "foot": "left",
-            "height": "1,67m",
-            "marketValue": "70k",
-            "contract": "2028-06-30"
-        },
-        {
-            "id": "35706",
-            "externalId": "35706",
-            "name": "Grace Fisk",
-            "position": "Central Midfield",
-            "age": 28,
-            "nationality": [
-                "England"
-            ],
-            "dateOfBirth": "1998-01-05",
-            "foot": "right",
-            "height": "1,72m",
-            "marketValue": "90k",
-            "contract": null
         },
         {
             "id": "33179",
@@ -179,7 +149,7 @@
             "externalId": "22175",
             "name": "Leah Williamson",
             "position": "Central Midfield",
-            "age": 28,
+            "age": 29,
             "nationality": [
                 "England"
             ],
@@ -220,33 +190,49 @@
             "contract": "2026-06-30"
         },
         {
-            "id": "22178",
-            "externalId": "22178",
-            "name": "Keira Walsh",
-            "position": "Defensive Midfield",
-            "age": 28,
+            "id": "84184",
+            "externalId": "84184",
+            "name": "Erica Parkinson",
+            "position": "Central Midfield",
+            "age": 17,
             "nationality": [
-                "England"
+                "England",
+                "Japan"
             ],
-            "dateOfBirth": "1997-04-08",
+            "dateOfBirth": "2008-04-18",
             "foot": "right",
-            "height": "1,67m",
-            "marketValue": "650k",
-            "contract": "2029-06-30"
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
         },
         {
-            "id": "35057",
-            "externalId": "35057",
-            "name": "Jess Park",
-            "position": "Attacking Midfield",
-            "age": 24,
+            "id": "57286",
+            "externalId": "57286",
+            "name": "Lucia Kendall",
+            "position": "Central Midfield",
+            "age": 21,
             "nationality": [
                 "England"
             ],
-            "dateOfBirth": "2001-10-21",
+            "dateOfBirth": "2004-05-20",
             "foot": "right",
-            "height": "1,61m",
-            "marketValue": "450k",
+            "height": "1,70m",
+            "marketValue": "150k",
+            "contract": null
+        },
+        {
+            "id": "50200",
+            "externalId": "50200",
+            "name": "Grace Clinton",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "England"
+            ],
+            "dateOfBirth": "2003-03-31",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "600k",
             "contract": "2029-06-30"
         },
         {
@@ -266,64 +252,49 @@
             "contract": "2027-06-30"
         },
         {
-            "id": "50200",
-            "externalId": "50200",
-            "name": "Grace Clinton",
-            "position": "Central Midfield",
-            "age": 22,
+            "id": "35057",
+            "externalId": "35057",
+            "name": "Jess Park",
+            "position": "Attacking Midfield",
+            "age": 24,
             "nationality": [
                 "England"
             ],
-            "dateOfBirth": "2003-03-31",
+            "dateOfBirth": "2001-10-21",
             "foot": "right",
-            "height": "1,65m",
-            "marketValue": "600k",
+            "height": "1,61m",
+            "marketValue": "450k",
             "contract": "2029-06-30"
         },
         {
-            "id": "57286",
-            "externalId": "57286",
-            "name": "Lucia Kendall",
-            "position": "Central Midfield",
-            "age": 21,
+            "id": "22178",
+            "externalId": "22178",
+            "name": "Keira Walsh",
+            "position": "Defensive Midfield",
+            "age": 28,
             "nationality": [
                 "England"
             ],
-            "dateOfBirth": "2004-05-20",
+            "dateOfBirth": "1997-04-08",
             "foot": "right",
-            "height": "1,70m",
-            "marketValue": "150k",
-            "contract": null
+            "height": "1,67m",
+            "marketValue": "650k",
+            "contract": "2029-06-30"
         },
         {
-            "id": "30397",
-            "externalId": "30397",
-            "name": "Alessia Russo",
+            "id": "12385",
+            "externalId": "12385",
+            "name": "Beth Mead",
             "position": "Central Midfield",
-            "age": 27,
+            "age": 30,
             "nationality": [
                 "England"
             ],
-            "dateOfBirth": "1999-02-08",
+            "dateOfBirth": "1995-05-09",
             "foot": "right",
-            "height": "1,74m",
-            "marketValue": "1.3m",
-            "contract": null
-        },
-        {
-            "id": "33433",
-            "externalId": "33433",
-            "name": "Lauren Hemp",
-            "position": "Central Midfield",
-            "age": 25,
-            "nationality": [
-                "England"
-            ],
-            "dateOfBirth": "2000-08-07",
-            "foot": "left",
-            "height": "1,64m",
-            "marketValue": "825k",
-            "contract": "2027-06-30"
+            "height": "1,63m",
+            "marketValue": "425k",
+            "contract": "2026-06-30"
         },
         {
             "id": "33810",
@@ -341,6 +312,21 @@
             "contract": "2030-06-30"
         },
         {
+            "id": "33433",
+            "externalId": "33433",
+            "name": "Lauren Hemp",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "England"
+            ],
+            "dateOfBirth": "2000-08-07",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "825k",
+            "contract": "2027-06-30"
+        },
+        {
             "id": "22176",
             "externalId": "22176",
             "name": "Chloe Kelly",
@@ -356,21 +342,6 @@
             "contract": "2028-06-30"
         },
         {
-            "id": "47021",
-            "externalId": "47021",
-            "name": "Aggie Beever-Jones",
-            "position": "Central Midfield",
-            "age": 22,
-            "nationality": [
-                "England"
-            ],
-            "dateOfBirth": "2003-07-27",
-            "foot": "right",
-            "height": "1,73m",
-            "marketValue": "600k",
-            "contract": "2026-06-30"
-        },
-        {
             "id": "63546",
             "externalId": "63546",
             "name": "Freya Godfrey",
@@ -384,6 +355,21 @@
             "height": "Freya Godfrey London City Lionesses, Strikerm",
             "marketValue": "80k",
             "contract": "2028-06-30"
+        },
+        {
+            "id": "30397",
+            "externalId": "30397",
+            "name": "Alessia Russo",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "England"
+            ],
+            "dateOfBirth": "1999-02-08",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "1.3m",
+            "contract": null
         }
     ]
 }

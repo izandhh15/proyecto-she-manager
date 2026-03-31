@@ -2,7 +2,7 @@
     "id": "734",
     "externalId": "734",
     "transfermarktId": "734",
-    "name": "Scotland",
+    "name": "Scottland",
     "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
     "players": [
         {
@@ -107,7 +107,7 @@
                 "Scottland"
             ],
             "dateOfBirth": "2001-07-26",
-            "foot": "left",
+            "foot": "right",
             "height": "Ea Lawton Celtic FC, Defencem",
             "marketValue": "50k",
             "contract": "2027-06-30"
@@ -137,7 +137,7 @@
                 "Scottland"
             ],
             "dateOfBirth": "2000-03-07",
-            "foot": "left",
+            "foot": "right",
             "height": "Ay Muir Glasgow City FC, Defencem",
             "marketValue": "50k",
             "contract": "2026-06-30"
@@ -167,10 +167,25 @@
                 "Scottland"
             ],
             "dateOfBirth": "2002-08-31",
-            "foot": "left",
+            "foot": "right",
             "height": "1,88m",
             "marketValue": "50k",
             "contract": null
+        },
+        {
+            "id": "45147",
+            "externalId": "45147",
+            "name": "Leah Eddie",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2001-01-23",
+            "foot": "right",
+            "height": "Leah Eddie Rangers FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
         },
         {
             "id": "22138",
@@ -215,21 +230,6 @@
             "foot": "left",
             "height": "1,73m",
             "marketValue": "800k",
-            "contract": "2026-06-30"
-        },
-        {
-            "id": "63284",
-            "externalId": "63284",
-            "name": "Jodi McLeary",
-            "position": "Central Midfield",
-            "age": 20,
-            "nationality": [
-                "Scottland"
-            ],
-            "dateOfBirth": "2005-06-01",
-            "foot": "right",
-            "height": "Jodi McLeary Rangers FC, Midfieldm",
-            "marketValue": "50k",
             "contract": "2026-06-30"
         },
         {
@@ -292,6 +292,21 @@
             "height": "Mia McAulay Rangers FC, Strikerm",
             "marketValue": "50k",
             "contract": null
+        },
+        {
+            "id": "45146",
+            "externalId": "45146",
+            "name": "Eilidh Adams",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Scottland"
+            ],
+            "dateOfBirth": "2004-04-06",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
         },
         {
             "id": "42980",

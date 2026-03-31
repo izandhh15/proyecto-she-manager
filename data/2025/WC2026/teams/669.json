@@ -1,0 +1,84 @@
+{
+    "id": "669",
+    "externalId": "669",
+    "transfermarktId": "669",
+    "name": "Malawi",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "110783",
+            "externalId": "110783",
+            "name": "Faith Chinzimu",
+            "position": "Defensive Midfield",
+            "age": 19,
+            "nationality": [
+                "Malawi"
+            ],
+            "dateOfBirth": "2007-02-12",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "30k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "30050",
+            "externalId": "30050",
+            "name": "Tabitha Chawinga",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Malawi"
+            ],
+            "dateOfBirth": "1996-05-22",
+            "foot": "left",
+            "height": "1,72m",
+            "marketValue": "700k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32512",
+            "externalId": "32512",
+            "name": "Temwa Chawinga",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Malawi"
+            ],
+            "dateOfBirth": "1998-09-20",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "900k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "34423",
+            "externalId": "34423",
+            "name": "Sabinah Thom",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Malawi"
+            ],
+            "dateOfBirth": "1996-03-03",
+            "foot": "right",
+            "height": "Sabinah Tho vereinslos, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "104509",
+            "externalId": "104509",
+            "name": "Rose Kadzere",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Malawi"
+            ],
+            "dateOfBirth": "2006-06-16",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "45k",
+            "contract": null
+        }
+    ]
+}

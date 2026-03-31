@@ -1,0 +1,196 @@
+{
+    "id": "704",
+    "externalId": "704",
+    "transfermarktId": "704",
+    "name": "Palästina",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "54791",
+            "externalId": "54791",
+            "name": "Dima Al Ramhe",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Palästina",
+                "Israel"
+            ],
+            "dateOfBirth": "2001-11-23",
+            "foot": "right",
+            "height": "Dia Al Rahe FC Boatot Tara, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56815",
+            "externalId": "56815",
+            "name": "Lolo Nasr",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Palästina",
+                "Sweden"
+            ],
+            "dateOfBirth": "2004-11-04",
+            "foot": "right",
+            "height": "Lolo Nasr Al Ahly FC Woen, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63351",
+            "externalId": "63351",
+            "name": "Sara Al Shakhshir",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Palästina"
+            ],
+            "dateOfBirth": "2004-04-26",
+            "foot": "right",
+            "height": "Sara Al Shakhshir unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63354",
+            "externalId": "63354",
+            "name": "Nadin Elias",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Palästina",
+                "Israel"
+            ],
+            "dateOfBirth": "1995-05-31",
+            "foot": "right",
+            "height": "Nadin Elias Hapoel Ironi Bnei Ibillin, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63355",
+            "externalId": "63355",
+            "name": "Sireen Ghattas",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Palästina"
+            ],
+            "dateOfBirth": "2001-05-29",
+            "foot": "right",
+            "height": "Sireen Ghattas Pyraids FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63356",
+            "externalId": "63356",
+            "name": "Emily Ibrahim",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Palästina"
+            ],
+            "dateOfBirth": "2003-07-30",
+            "foot": "right",
+            "height": "Eily Ibrahi unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63368",
+            "externalId": "63368",
+            "name": "Jeniver Shattara",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Palästina"
+            ],
+            "dateOfBirth": "2003-05-09",
+            "foot": "right",
+            "height": "Jeniver Shattara unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75167",
+            "externalId": "75167",
+            "name": "Rimma Musabeh",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Palästina",
+                "Moldova"
+            ],
+            "dateOfBirth": "2001-09-06",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "77523",
+            "externalId": "77523",
+            "name": "Dima Kayal",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Palästina",
+                "Israel"
+            ],
+            "dateOfBirth": "1997-10-15",
+            "foot": "right",
+            "height": "Dia Kayal FC Boatot Tara, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105396",
+            "externalId": "105396",
+            "name": "Etaf Al-Sawi",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Palästina",
+                "Jordan"
+            ],
+            "dateOfBirth": "2003-01-08",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "50503",
+            "externalId": "50503",
+            "name": "Nour Youssef",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Palästina",
+                "Germany"
+            ],
+            "dateOfBirth": "2005-07-18",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63367",
+            "externalId": "63367",
+            "name": "Hala Sarawi",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Palästina"
+            ],
+            "dateOfBirth": "2003-02-14",
+            "foot": "right",
+            "height": "Hala Sarawi Pyraids FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

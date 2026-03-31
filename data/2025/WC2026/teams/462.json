@@ -51,19 +51,19 @@
             "contract": "2029-06-30"
         },
         {
-            "id": "35459",
-            "externalId": "35459",
-            "name": "Mathilde Harviken",
+            "id": "38439",
+            "externalId": "38439",
+            "name": "Marthine Østenstad",
             "position": "Central Midfield",
-            "age": 24,
+            "age": 25,
             "nationality": [
                 "Norway"
             ],
-            "dateOfBirth": "2001-12-29",
-            "foot": "left",
-            "height": "1,74m",
-            "marketValue": "130k",
-            "contract": "2027-06-30"
+            "dateOfBirth": "2001-03-18",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "75k",
+            "contract": "2028-06-30"
         },
         {
             "id": "20033",
@@ -126,19 +126,34 @@
             "contract": "2027-06-30"
         },
         {
-            "id": "32868",
-            "externalId": "32868",
-            "name": "Emilie Woldvik",
+            "id": "35459",
+            "externalId": "35459",
+            "name": "Mathilde Harviken",
             "position": "Central Midfield",
-            "age": 27,
+            "age": 24,
             "nationality": [
                 "Norway"
             ],
-            "dateOfBirth": "1999-01-08",
-            "foot": "right",
-            "height": "1,68m",
-            "marketValue": "55k",
+            "dateOfBirth": "2001-12-29",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "130k",
             "contract": "2027-06-30"
+        },
+        {
+            "id": "28339",
+            "externalId": "28339",
+            "name": "Frida Maanum",
+            "position": "Attacking Midfield",
+            "age": 26,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1999-07-16",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "400k",
+            "contract": null
         },
         {
             "id": "60828",
@@ -156,21 +171,6 @@
             "contract": null
         },
         {
-            "id": "44029",
-            "externalId": "44029",
-            "name": "Emma Stølen Godø",
-            "position": "Central Midfield",
-            "age": 25,
-            "nationality": [
-                "Norway"
-            ],
-            "dateOfBirth": "2000-05-31",
-            "foot": "right",
-            "height": "Ea Stølen Godø Juventus FC, Midfieldm",
-            "marketValue": "140k",
-            "contract": "2027-06-30"
-        },
-        {
             "id": "39716",
             "externalId": "39716",
             "name": "Julie Blakstad",
@@ -184,6 +184,21 @@
             "height": "1,70m",
             "marketValue": "200k",
             "contract": null
+        },
+        {
+            "id": "38433",
+            "externalId": "38433",
+            "name": "Emilie Joramo",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2002-01-13",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "150k",
+            "contract": "2026-06-30"
         },
         {
             "id": "38430",
@@ -214,21 +229,6 @@
             "height": "1,67m",
             "marketValue": "150k",
             "contract": "2028-06-30"
-        },
-        {
-            "id": "28339",
-            "externalId": "28339",
-            "name": "Frida Maanum",
-            "position": "Attacking Midfield",
-            "age": 26,
-            "nationality": [
-                "Norway"
-            ],
-            "dateOfBirth": "1999-07-16",
-            "foot": "right",
-            "height": "1,75m",
-            "marketValue": "400k",
-            "contract": null
         },
         {
             "id": "15248",
@@ -273,6 +273,21 @@
             "foot": "both",
             "height": "1,71m",
             "marketValue": "700k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "6124",
+            "externalId": "6124",
+            "name": "Ada Hegerberg",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "1995-07-10",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "575k",
             "contract": "2027-06-30"
         },
         {
@@ -321,6 +336,21 @@
             "contract": "2027-12-31"
         },
         {
+            "id": "47783",
+            "externalId": "47783",
+            "name": "Cathinka Tandberg",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Norway"
+            ],
+            "dateOfBirth": "2004-06-18",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "200k",
+            "contract": null
+        },
+        {
             "id": "6143",
             "externalId": "6143",
             "name": "Caroline Graham",
@@ -334,21 +364,6 @@
             "height": "1,75m",
             "marketValue": "1.1m",
             "contract": "2026-06-30"
-        },
-        {
-            "id": "6124",
-            "externalId": "6124",
-            "name": "Ada Hegerberg",
-            "position": "Central Midfield",
-            "age": 30,
-            "nationality": [
-                "Norway"
-            ],
-            "dateOfBirth": "1995-07-10",
-            "foot": "right",
-            "height": "1,76m",
-            "marketValue": "575k",
-            "contract": "2027-06-30"
         }
     ]
 }

@@ -1,0 +1,343 @@
+{
+    "id": "672",
+    "externalId": "672",
+    "transfermarktId": "672",
+    "name": "Mali",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "93152",
+            "externalId": "93152",
+            "name": "Fatoumata Karentao",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1990-11-08",
+            "foot": "right",
+            "height": "Fatouata Karentao USFAS, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110407",
+            "externalId": "110407",
+            "name": "Alima Cissé",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Alia Cissé unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110260",
+            "externalId": "110260",
+            "name": "Adoudou Konaté",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1994-04-14",
+            "foot": "right",
+            "height": "Adoudou Konaté Ittihad Tanger FF, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93029",
+            "externalId": "93029",
+            "name": "Aïssata Bengaly",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "2000-11-11",
+            "foot": "right",
+            "height": "Aïssata Bengaly Athlético FC d’Abidjan, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65835",
+            "externalId": "65835",
+            "name": "Coulouba Sogoré",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1997-06-03",
+            "foot": "left",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "82811",
+            "externalId": "82811",
+            "name": "Fatou Dembélé",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "2000-11-30",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "40k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "6086",
+            "externalId": "6086",
+            "name": "Teninsoun Sissoko",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Mali",
+                "France"
+            ],
+            "dateOfBirth": "1992-09-02",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "59994",
+            "externalId": "59994",
+            "name": "Yakaré Niakaté",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Mali",
+                "France"
+            ],
+            "dateOfBirth": "1997-01-12",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93156",
+            "externalId": "93156",
+            "name": "Maïmouna Traoré",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1998-12-31",
+            "foot": "left",
+            "height": "Maïouna Traoré USFAS, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "88957",
+            "externalId": "88957",
+            "name": "Aïcha Samaké",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1994-09-13",
+            "foot": "right",
+            "height": "Aïcha Saaké USFAS, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "60113",
+            "externalId": "60113",
+            "name": "Coumba Dembele",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Mali",
+                "France"
+            ],
+            "dateOfBirth": "2001-10-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66754",
+            "externalId": "66754",
+            "name": "Fatoumata Diarra",
+            "position": "Central Midfield",
+            "age": 39,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1986-04-15",
+            "foot": "right",
+            "height": "Fatouata Diarra Tausi FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "17647",
+            "externalId": "17647",
+            "name": "Kani Konté",
+            "position": "Central Midfield",
+            "age": 36,
+            "nationality": [
+                "Mali",
+                "France"
+            ],
+            "dateOfBirth": "1989-04-13",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93154",
+            "externalId": "93154",
+            "name": "Oumou Koné",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1999-12-20",
+            "foot": "right",
+            "height": "Ouou Koné USFAS, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "88956",
+            "externalId": "88956",
+            "name": "Agueissa Diarra",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1998-07-30",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "110257",
+            "externalId": "110257",
+            "name": "Salimata Diarra",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1994-10-24",
+            "foot": "right",
+            "height": "Saliata Diarra RS Berkane, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110258",
+            "externalId": "110258",
+            "name": "Hawa Traoré",
+            "position": "Centre-Forward",
+            "age": 15,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "2010-09-23",
+            "foot": "right",
+            "height": "Hawa Traoré USFAS, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40666",
+            "externalId": "40666",
+            "name": "Aïssata Traoré",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1997-09-09",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "80k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "110259",
+            "externalId": "110259",
+            "name": "Kadidiatou Diabaté",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "2007-02-05",
+            "foot": "right",
+            "height": "Kadidiatou Diabaté USFAS, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110261",
+            "externalId": "110261",
+            "name": "Fatoumata Niakaté",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "2006-12-22",
+            "foot": "right",
+            "height": "Fatouata Niakaté FC Metz U19, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66696",
+            "externalId": "66696",
+            "name": "Saratou Traoré",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "2002-09-27",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "110262",
+            "externalId": "110262",
+            "name": "Djenaba Baradji",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Mali"
+            ],
+            "dateOfBirth": "1995-12-16",
+            "foot": "right",
+            "height": "Djenaba Baradji FC Mantois 78, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

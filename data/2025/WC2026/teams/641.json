@@ -1,0 +1,275 @@
+{
+    "id": "641",
+    "externalId": "641",
+    "transfermarktId": "641",
+    "name": "Comoros",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "68039",
+            "externalId": "68039",
+            "name": "Aïcha Saïd",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2005-10-25",
+            "foot": "right",
+            "height": "Aïcha Saïd Olypique de Marseille U19, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40798",
+            "externalId": "40798",
+            "name": "Assimina Maoulida",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2002-01-30",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "105700",
+            "externalId": "105700",
+            "name": "Dalila Mohamed",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Comoros"
+            ],
+            "dateOfBirth": "2005-07-02",
+            "foot": "right",
+            "height": "Dalila Mohaed unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105698",
+            "externalId": "105698",
+            "name": "Nourouzamane Ahmed",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Comoros"
+            ],
+            "dateOfBirth": "2004-03-16",
+            "foot": "right",
+            "height": "Nourouzaane Ahed unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105697",
+            "externalId": "105697",
+            "name": "Dalila Adinane",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Comoros"
+            ],
+            "dateOfBirth": "1997-11-20",
+            "foot": "right",
+            "height": "Dalila Adinane unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105696",
+            "externalId": "105696",
+            "name": "Nasrin Hadharay",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2003-08-18",
+            "foot": "right",
+            "height": "Nasrin Hadharay Ecole des Sports du 16èe, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81176",
+            "externalId": "81176",
+            "name": "Dioré Saïd",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2003-05-23",
+            "foot": "right",
+            "height": "Dioré Saïd GPSO 92 Issy U19, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64140",
+            "externalId": "64140",
+            "name": "Alicia Chanfi",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2002-11-28",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30798",
+            "externalId": "30798",
+            "name": "Aliya Saïd",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "1998-02-14",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105699",
+            "externalId": "105699",
+            "name": "Yousra Ahamadi",
+            "position": "Defensive Midfield",
+            "age": 22,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2003-10-05",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105702",
+            "externalId": "105702",
+            "name": "Nourdati Boinali",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Comoros"
+            ],
+            "dateOfBirth": "1999-10-02",
+            "foot": "right",
+            "height": "Nourdati Boinali unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "82422",
+            "externalId": "82422",
+            "name": "Zaharouna Haoudadji",
+            "position": "Second Striker",
+            "age": 25,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2000-06-03",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75902",
+            "externalId": "75902",
+            "name": "Esteline Anduma",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2004-09-18",
+            "foot": "right",
+            "height": "Esteline Andua GPSO 92 Issy, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105701",
+            "externalId": "105701",
+            "name": "Haloua Ahamada",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "1995-01-24",
+            "foot": "right",
+            "height": "Haloua Ahaada CPB Bréquigny Rennes, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105703",
+            "externalId": "105703",
+            "name": "Saminat Abdou Mgomri",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Comoros",
+                "France"
+            ],
+            "dateOfBirth": "2005-06-08",
+            "foot": "right",
+            "height": "Sainat Abdou Mgori Olypique de Marseille B, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105704",
+            "externalId": "105704",
+            "name": "Anllaouia Ali",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Comoros"
+            ],
+            "dateOfBirth": "2003-03-09",
+            "foot": "right",
+            "height": "Anllaouia Ali unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105705",
+            "externalId": "105705",
+            "name": "Nasrati Saïd Ali",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Comoros"
+            ],
+            "dateOfBirth": "2006-08-12",
+            "foot": "right",
+            "height": "Nasrati Saïd Ali unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

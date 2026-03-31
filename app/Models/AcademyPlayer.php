@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int|null $initial_physical
  * @property-read \App\Models\Game $game
  * @property-read int $age
- * @property-read array|null $nationality_flag
+ * @property-read array{name: string, code: string, display_name: string}|null $nationality_flag
  * @property-read int $overall
  * @property-read array $position_display
  * @property-read string $position_group
@@ -168,6 +168,7 @@ class AcademyPlayer extends Model
         return [
             'name' => $nationalities[0],
             'code' => $code,
+            'display_name' => CountryCodeMapper::displayName($nationalities[0]),
         ];
     }
 

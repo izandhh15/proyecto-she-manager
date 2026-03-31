@@ -1,0 +1,39 @@
+{
+    "id": "513",
+    "externalId": "513",
+    "transfermarktId": "513",
+    "name": "Benin",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "115873",
+            "externalId": "115873",
+            "name": "Diane Ogoun",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Benin"
+            ],
+            "dateOfBirth": "2001-06-08",
+            "foot": "right",
+            "height": "Diane Ogoun Reinas de Bioko FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "78486",
+            "externalId": "78486",
+            "name": "Aude Gbedjissi",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Benin"
+            ],
+            "dateOfBirth": "1998-12-08",
+            "foot": "right",
+            "height": "Aude Gbedjissi RC Lens, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

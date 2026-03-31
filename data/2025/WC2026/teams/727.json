@@ -1,0 +1,254 @@
+{
+    "id": "727",
+    "externalId": "727",
+    "transfermarktId": "727",
+    "name": "Samoa",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "96178",
+            "externalId": "96178",
+            "name": "Xeyana Salanoa",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Samoa",
+                "United States"
+            ],
+            "dateOfBirth": "2007-06-20",
+            "foot": "right",
+            "height": "Xeyana Salanoa unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110239",
+            "externalId": "110239",
+            "name": "Kamy Anaya",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2004-04-26",
+            "foot": "right",
+            "height": "Kay Anaya unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38000",
+            "externalId": "38000",
+            "name": "Meripa Seumanutafa",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2001-12-11",
+            "foot": "right",
+            "height": "Meripa Seuanutafa Papakura City FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74763",
+            "externalId": "74763",
+            "name": "Alisa Tuatagaloa",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2001-05-08",
+            "foot": "right",
+            "height": "Alisa Tuatagaloa unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110241",
+            "externalId": "110241",
+            "name": "Gracie Va’afusuaga",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2002-01-23",
+            "foot": "right",
+            "height": "Gracie Va’afusuaga unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96185",
+            "externalId": "96185",
+            "name": "Alexandrea Ape-Paia",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2005-08-07",
+            "foot": "right",
+            "height": "Alexandrea Ape-Paia unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110243",
+            "externalId": "110243",
+            "name": "Tielua Baptista",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2007-04-12",
+            "foot": "right",
+            "height": "Tielua Baptista unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74769",
+            "externalId": "74769",
+            "name": "Lianna Soifua",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Samoa",
+                "United States"
+            ],
+            "dateOfBirth": "2000-09-06",
+            "foot": "right",
+            "height": "Lianna Soifua unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96180",
+            "externalId": "96180",
+            "name": "Jaedeci Uluvili",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2001-02-06",
+            "foot": "right",
+            "height": "Jaedeci Uluvili unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96189",
+            "externalId": "96189",
+            "name": "Malia Jessop",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2007-04-06",
+            "foot": "right",
+            "height": "Malia Jessop unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37122",
+            "externalId": "37122",
+            "name": "Monique Fischer",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Samoa",
+                "New Zealand"
+            ],
+            "dateOfBirth": "1991-12-19",
+            "foot": "right",
+            "height": "Monique Fischer vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96179",
+            "externalId": "96179",
+            "name": "Xevani Salanoa",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Samoa",
+                "United States"
+            ],
+            "dateOfBirth": "2004-10-17",
+            "foot": "right",
+            "height": "Xevani Salanoa unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110237",
+            "externalId": "110237",
+            "name": "Oteta Kitiona",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2005-05-30",
+            "foot": "right",
+            "height": "Oteta Kitiona unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96187",
+            "externalId": "96187",
+            "name": "Lilly Dowsing",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Samoa",
+                "New Zealand"
+            ],
+            "dateOfBirth": "2006-11-28",
+            "foot": "right",
+            "height": "Lilly Dowsing unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74776",
+            "externalId": "74776",
+            "name": "Sariah Taeoalii",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2006-05-07",
+            "foot": "right",
+            "height": "Sariah Taeoalii unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96184",
+            "externalId": "96184",
+            "name": "Arianna Skeers",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Samoa"
+            ],
+            "dateOfBirth": "2006-07-20",
+            "foot": "right",
+            "height": "Arianna Skeers unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

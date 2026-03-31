@@ -344,7 +344,7 @@
                     "name": "Inès Benyahia",
                     "position": "Attacking Midfield",
                     "number": "25",
-                    "age": 22,
+                    "age": 23,
                     "nationality": [
                         "France"
                     ],
@@ -477,8 +477,8 @@
             "transfermarktId": "254",
             "name": "Paris Saint-Germain",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/254.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Jean Bouin",
+            "stadiumSeats": "20000",
             "players": [
                 {
                     "id": "11644",
@@ -807,6 +807,22 @@
                     "contract": "2026-06-30"
                 },
                 {
+                    "id": "96453",
+                    "externalId": "96453",
+                    "name": "Gabrielle Le Roux",
+                    "position": "Central Midfield",
+                    "number": "37",
+                    "age": 17,
+                    "nationality": [
+                        "France"
+                    ],
+                    "dateOfBirth": "2008-08-16",
+                    "foot": "right",
+                    "height": "1,66m",
+                    "marketValue": "186k",
+                    "contract": null
+                },
+                {
                     "id": "23095",
                     "externalId": "23095",
                     "name": "Rasheedat Ajibade",
@@ -899,7 +915,23 @@
                     "dateOfBirth": "2008-07-12",
                     "foot": "right",
                     "height": "1,67m",
-                    "marketValue": "230k",
+                    "marketValue": "213k",
+                    "contract": null
+                },
+                {
+                    "id": "117948",
+                    "externalId": "117948",
+                    "name": "Marie Estella Lafontaine",
+                    "position": "Centre-Forward",
+                    "number": "47",
+                    "age": 17,
+                    "nationality": [
+                        "France"
+                    ],
+                    "dateOfBirth": "2009-01-23",
+                    "foot": "right",
+                    "height": "1,68m",
+                    "marketValue": "213k",
                     "contract": null
                 }
             ]
@@ -910,8 +942,8 @@
             "transfermarktId": "6328",
             "name": "Paris FC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6328.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Robert Bobin",
+            "stadiumSeats": "18850",
             "players": [
                 {
                     "id": "43009",
@@ -1451,8 +1483,8 @@
             "transfermarktId": "1320",
             "name": "Dijon FCO",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/1320.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Gaston-Gérard",
+            "stadiumSeats": "15459",
             "players": [
                 {
                     "id": "26253",
@@ -1716,7 +1748,7 @@
                     "name": "Yanwen Wang",
                     "position": "Attacking Midfield",
                     "number": "12",
-                    "age": 26,
+                    "age": 27,
                     "nationality": [
                         "China"
                     ],
@@ -1847,8 +1879,8 @@
             "transfermarktId": "6650",
             "name": "FC Nantes",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6650.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Marcel-Saupin",
+            "stadiumSeats": "1880",
             "players": [
                 {
                     "id": "49277",
@@ -2216,8 +2248,8 @@
             "transfermarktId": "6327",
             "name": "FC Fleury 91",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6327.png",
-            "stadiumName": "Stade Robert-Bobin",
-            "stadiumSeats": "18845",
+            "stadiumName": "Stade Auguste Gentelet",
+            "stadiumSeats": "2000",
             "players": [
                 {
                     "id": "29992",
@@ -2631,8 +2663,8 @@
             "transfermarktId": "7214",
             "name": "RC Strasbourg",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/7214.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Jean-Nicolas Muller",
+            "stadiumSeats": "500",
             "players": [
                 {
                     "id": "36298",
@@ -3079,8 +3111,8 @@
             "transfermarktId": "299",
             "name": "Montpellier HSC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/299.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade de la Mosson",
+            "stadiumSeats": "32939",
             "players": [
                 {
                     "id": "19079",
@@ -3591,8 +3623,8 @@
             "transfermarktId": "6896",
             "name": "Le Havre AC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6896.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Océane",
+            "stadiumSeats": "25178",
             "players": [
                 {
                     "id": "31184",
@@ -4056,8 +4088,8 @@
             "transfermarktId": "498",
             "name": "AS Saint-Étienne",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/498.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Salif-Keita",
+            "stadiumSeats": "1250",
             "players": [
                 {
                     "id": "60247",
@@ -4504,8 +4536,8 @@
             "transfermarktId": "4696",
             "name": "Olympique de Marseille",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/4696.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade OM Campus - Roger Scotti",
+            "stadiumSeats": "1000",
             "players": [
                 {
                     "id": "31406",
@@ -4999,8 +5031,8 @@
             "transfermarktId": "8038",
             "name": "RC Lens",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/8038.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stade Bollaert-Delelis",
+            "stadiumSeats": "38223",
             "players": [
                 {
                     "id": "107519",
@@ -5031,7 +5063,7 @@
                     "dateOfBirth": "2007-05-14",
                     "foot": "right",
                     "height": "1,73m",
-                    "marketValue": "7k",
+                    "marketValue": "8k",
                     "contract": null
                 },
                 {
@@ -5047,39 +5079,23 @@
                     "dateOfBirth": "1999-12-12",
                     "foot": "left",
                     "height": "1,72m",
-                    "marketValue": "7k",
+                    "marketValue": "8k",
                     "contract": null
                 },
                 {
-                    "id": "88306",
-                    "externalId": "88306",
-                    "name": "Doreen Norden",
-                    "position": "Centre-Back",
-                    "number": null,
-                    "age": 21,
+                    "id": "118022",
+                    "externalId": "118022",
+                    "name": "Chelsy Yvart",
+                    "position": "Goalkeeper",
+                    "number": "40",
+                    "age": 16,
                     "nationality": [
                         "France"
                     ],
-                    "dateOfBirth": "2005-01-30",
+                    "dateOfBirth": "2009-05-06",
                     "foot": "right",
-                    "height": "1,69m",
-                    "marketValue": "9k",
-                    "contract": null
-                },
-                {
-                    "id": "78168",
-                    "externalId": "78168",
-                    "name": "Laura Obrecht",
-                    "position": "Centre-Back",
-                    "number": null,
-                    "age": 20,
-                    "nationality": [
-                        "France"
-                    ],
-                    "dateOfBirth": "2006-01-20",
-                    "foot": "right",
-                    "height": "1,69m",
-                    "marketValue": "9k",
+                    "height": "1,73m",
+                    "marketValue": "8k",
                     "contract": null
                 },
                 {
@@ -5229,38 +5245,6 @@
                     "contract": "2026-06-30"
                 },
                 {
-                    "id": "87248",
-                    "externalId": "87248",
-                    "name": "Sasha Pinot",
-                    "position": "Central Midfield",
-                    "number": null,
-                    "age": 20,
-                    "nationality": [
-                        "France"
-                    ],
-                    "dateOfBirth": "2006-02-18",
-                    "foot": "right",
-                    "height": "1,66m",
-                    "marketValue": "9k",
-                    "contract": null
-                },
-                {
-                    "id": "83810",
-                    "externalId": "83810",
-                    "name": "Agathe Hautcoeur",
-                    "position": "Central Midfield",
-                    "number": null,
-                    "age": 20,
-                    "nationality": [
-                        "France"
-                    ],
-                    "dateOfBirth": "2006-01-23",
-                    "foot": "right",
-                    "height": "1,66m",
-                    "marketValue": "9k",
-                    "contract": null
-                },
-                {
                     "id": "40822",
                     "externalId": "40822",
                     "name": "Tess David",
@@ -5288,6 +5272,22 @@
                     ],
                     "dateOfBirth": "1998-12-08",
                     "foot": "right",
+                    "height": "1,66m",
+                    "marketValue": "9k",
+                    "contract": null
+                },
+                {
+                    "id": "117949",
+                    "externalId": "117949",
+                    "name": "Asma Merzougui",
+                    "position": "Central Midfield",
+                    "number": "8",
+                    "age": 23,
+                    "nationality": [
+                        "Canada"
+                    ],
+                    "dateOfBirth": "2002-05-04",
+                    "foot": "left",
                     "height": "1,66m",
                     "marketValue": "9k",
                     "contract": null
@@ -5323,6 +5323,22 @@
                     "height": "1,66m",
                     "marketValue": "9k",
                     "contract": "2026-06-30"
+                },
+                {
+                    "id": "116665",
+                    "externalId": "116665",
+                    "name": "Lizzy Millequant",
+                    "position": "Central Midfield",
+                    "number": "23",
+                    "age": 18,
+                    "nationality": [
+                        "France"
+                    ],
+                    "dateOfBirth": "2007-06-23",
+                    "foot": "right",
+                    "height": "1,66m",
+                    "marketValue": "9k",
+                    "contract": null
                 },
                 {
                     "id": "35552",
@@ -5386,7 +5402,7 @@
                     "dateOfBirth": "2006-04-05",
                     "foot": "right",
                     "height": "1,61m",
-                    "marketValue": "9k",
+                    "marketValue": "10k",
                     "contract": null
                 },
                 {
@@ -5404,22 +5420,6 @@
                     "height": "1,69m",
                     "marketValue": "20k",
                     "contract": "2026-06-30"
-                },
-                {
-                    "id": "116665",
-                    "externalId": "116665",
-                    "name": "Lizzy Millequant",
-                    "position": "Centre-Forward",
-                    "number": "23",
-                    "age": 18,
-                    "nationality": [
-                        "France"
-                    ],
-                    "dateOfBirth": "2007-06-23",
-                    "foot": "right",
-                    "height": "1,68m",
-                    "marketValue": "10k",
-                    "contract": null
                 },
                 {
                     "id": "81008",
@@ -5450,7 +5450,7 @@
                     "dateOfBirth": "2009-10-15",
                     "foot": "right",
                     "height": "1,68m",
-                    "marketValue": "10k",
+                    "marketValue": "11k",
                     "contract": null
                 }
             ]

@@ -1,0 +1,234 @@
+{
+    "id": "605",
+    "externalId": "605",
+    "transfermarktId": "605",
+    "name": "Guatemala",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "69010",
+            "externalId": "69010",
+            "name": "Alexia Estrada",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "2001-01-29",
+            "foot": "right",
+            "height": "Alexia Estrada Olypic Club, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45162",
+            "externalId": "45162",
+            "name": "Jezmin Castellanos",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "2002-11-07",
+            "foot": "right",
+            "height": "Jezin Castellanos UNIFUT Rosal, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69012",
+            "externalId": "69012",
+            "name": "Naylea Priego",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "2003-05-09",
+            "foot": "right",
+            "height": "Naylea Priego UNIFUT Rosal, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69008",
+            "externalId": "69008",
+            "name": "Gloria Aguilar",
+            "position": "Centre-Back",
+            "age": 36,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "1990-03-12",
+            "foot": "right",
+            "height": "Gloria Aguilar UNIFUT Rosal, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69016",
+            "externalId": "69016",
+            "name": "Brithney Gutiérrez",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "1999-05-21",
+            "foot": "right",
+            "height": "Brithney Gutiérrez UNIFUT Rosal, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69011",
+            "externalId": "69011",
+            "name": "Yuvitza Mayén",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "1999-07-26",
+            "foot": "right",
+            "height": "Yuvitza Mayén UNIFUT Rosal, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45184",
+            "externalId": "45184",
+            "name": "Beverly Reyes",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "2001-01-03",
+            "foot": "right",
+            "height": "Beverly Reyes Club Deportivo Xela, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69017",
+            "externalId": "69017",
+            "name": "Vivian Herrera",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "1996-05-06",
+            "foot": "right",
+            "height": "Vivian Herrera UNIFUT Rosal, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69015",
+            "externalId": "69015",
+            "name": "Madelyn Ventura",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "1997-02-13",
+            "foot": "right",
+            "height": "Madelyn Ventura Club Deportivo Suchitepéquez, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45191",
+            "externalId": "45191",
+            "name": "Lesly Ventura",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "2003-05-22",
+            "foot": "right",
+            "height": "Lesly Ventura Cobaneras FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69009",
+            "externalId": "69009",
+            "name": "Lisbeth Aguilar",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lisbeth Aguilar unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69019",
+            "externalId": "69019",
+            "name": "Aisha Solórzano",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "1998-04-13",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13463",
+            "externalId": "13463",
+            "name": "María Monterroso",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "1993-11-30",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "45164",
+            "externalId": "45164",
+            "name": "Celsa Cruz",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "2003-09-12",
+            "foot": "right",
+            "height": "Celsa Cruz CSD Izabal, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45183",
+            "externalId": "45183",
+            "name": "María Recinos",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Guatemala"
+            ],
+            "dateOfBirth": "2000-01-12",
+            "foot": "right",
+            "height": "María Recinos UNIFUT Rosal, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

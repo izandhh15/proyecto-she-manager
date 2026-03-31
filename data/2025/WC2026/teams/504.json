@@ -1,0 +1,24 @@
+{
+    "id": "504",
+    "externalId": "504",
+    "transfermarktId": "504",
+    "name": "Ethiopia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "47233",
+            "externalId": "47233",
+            "name": "Loza Abera",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Ethiopia"
+            ],
+            "dateOfBirth": "1997-10-02",
+            "foot": "right",
+            "height": "Loza Abera DC Power FC, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

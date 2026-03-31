@@ -90,7 +90,7 @@
                 "South Africa"
             ],
             "dateOfBirth": "1999-05-22",
-            "foot": "left",
+            "foot": "right",
             "height": "1,59m",
             "marketValue": "50k",
             "contract": "2028-06-30"
@@ -105,7 +105,7 @@
                 "South Africa"
             ],
             "dateOfBirth": "1993-04-17",
-            "foot": "left",
+            "foot": "right",
             "height": "Regina Mogolola JVW FC, Defencem",
             "marketValue": "50k",
             "contract": null
@@ -400,7 +400,7 @@
             "externalId": "110256",
             "name": "Ronnel Donnelly",
             "position": "Centre-Forward",
-            "age": 21,
+            "age": 22,
             "nationality": [
                 "South Africa"
             ],

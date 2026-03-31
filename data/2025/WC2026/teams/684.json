@@ -1,0 +1,324 @@
+{
+    "id": "684",
+    "externalId": "684",
+    "transfermarktId": "684",
+    "name": "Mongolia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "63316",
+            "externalId": "63316",
+            "name": "Tsendjav Erdenebileg",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2002-05-05",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91496",
+            "externalId": "91496",
+            "name": "Ijilmurun Munkhbaatar",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2005-04-24",
+            "foot": "right",
+            "height": "Ijilurun Munkhbaatar FC Kharaatsai, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91497",
+            "externalId": "91497",
+            "name": "Zambaga Tumurbat",
+            "position": "Goalkeeper",
+            "age": 17,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2008-05-02",
+            "foot": "right",
+            "height": "Zabaga Tuurbat FC Kharaatsai, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63302",
+            "externalId": "63302",
+            "name": "Khuslen Munkh-Erdene",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2005-04-01",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91498",
+            "externalId": "91498",
+            "name": "Baigalimaa Enkhbat",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2002-04-14",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63298",
+            "externalId": "63298",
+            "name": "Namuun Bayarsaikhan",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "1991-11-18",
+            "foot": "right",
+            "height": "Nauun Bayarsaikhan Khovd Western FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63307",
+            "externalId": "63307",
+            "name": "Altantuya Altansukh",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "1996-09-29",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91491",
+            "externalId": "91491",
+            "name": "Amanda Khishigtsengel",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2004-12-30",
+            "foot": "right",
+            "height": "Aanda Khishigtsengel FC Kharaatsai, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91492",
+            "externalId": "91492",
+            "name": "Enerel Sukhbat",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2007-06-19",
+            "foot": "right",
+            "height": "Enerel Sukhbat FC Kharaatsai, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91494",
+            "externalId": "91494",
+            "name": "Azzaya Enkhbayar",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2004-11-13",
+            "foot": "right",
+            "height": "Azzaya Enkhbayar FC Kharaatsai, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91499",
+            "externalId": "91499",
+            "name": "Solongo Uuriinbayar",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2000-01-18",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91493",
+            "externalId": "91493",
+            "name": "Khaliut Munkhgarid",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2007-07-06",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63314",
+            "externalId": "63314",
+            "name": "Tsasan-Okhin Orogdol",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "1997-09-21",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63299",
+            "externalId": "63299",
+            "name": "Enkhjin Tulgabadrakh",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2000-09-29",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91495",
+            "externalId": "91495",
+            "name": "Nandin-Erdene Bayarmagnai",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2005-01-16",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63305",
+            "externalId": "63305",
+            "name": "Solongo Chinbaatar",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2003-08-14",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91488",
+            "externalId": "91488",
+            "name": "Zolzaya Sarangerel",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2005-07-13",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91489",
+            "externalId": "91489",
+            "name": "Undrakh Ulziibayar",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "1998-07-20",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91490",
+            "externalId": "91490",
+            "name": "Ankhtuya Enkhbold",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2007-06-07",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63312",
+            "externalId": "63312",
+            "name": "Namuunaa Narmandakh",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "1999-08-12",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63300",
+            "externalId": "63300",
+            "name": "Enkhmargad Enkhbaatar",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Mongolia"
+            ],
+            "dateOfBirth": "2003-03-20",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

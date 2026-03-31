@@ -46,28 +46,21 @@ final class SelectTeam
         $hasTournamentMode = Competition::where('id', 'WC2026')->exists();
 
         if ($hasTournamentMode) {
-            $mappingPath = base_path('data/2025/WC2026/team_mapping.json');
+            $allWcTeams = Team::query()
+                ->where('type', 'national')
+                ->whereNotNull('external_id')
+                ->orderBy('name')
+                ->get()
+                ->values();
 
-            if (file_exists($mappingPath)) {
-                $teamMapping = json_decode(file_get_contents($mappingPath), true);
+            $featuredCountries = ['es', 'ar', 'br', 'gb-eng', 'fr', 'de', 'pt', 'nl', 'it', 'us'];
+            $wcFeaturedTeams = $allWcTeams
+                ->filter(fn (Team $team) => in_array(strtolower((string) $team->country), $featuredCountries, true))
+                ->values();
 
-                $uuids = collect($teamMapping)
-                    ->reject(fn ($entry) => $entry['is_placeholder'] ?? false)
-                    ->pluck('uuid')
-                    ->all();
-
-                $allWcTeams = Team::whereIn('id', $uuids)->get()->sortBy('name')->values();
-
-                // Featured national teams shown as larger cards
-                $featuredCodes = ['ESP', 'ARG', 'BRA', 'ENG', 'FRA', 'GER', 'POR', 'NED', 'ITA'];
-                $featuredUuids = collect($teamMapping)
-                    ->only($featuredCodes)
-                    ->pluck('uuid')
-                    ->all();
-
-                $wcFeaturedTeams = $allWcTeams->filter(fn ($t) => in_array($t->id, $featuredUuids))->values();
-                $wcTeams = $allWcTeams->reject(fn ($t) => in_array($t->id, $featuredUuids))->values();
-            }
+            $wcTeams = $allWcTeams
+                ->reject(fn (Team $team) => in_array($team->id, $wcFeaturedTeams->pluck('id')->all(), true))
+                ->values();
         }
 
         return view('select-team', [

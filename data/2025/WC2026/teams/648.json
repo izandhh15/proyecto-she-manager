@@ -1,0 +1,309 @@
+{
+    "id": "648",
+    "externalId": "648",
+    "transfermarktId": "648",
+    "name": "Laos",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "66991",
+            "externalId": "66991",
+            "name": "Bangon Phonexay",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2002-01-19",
+            "foot": "right",
+            "height": "Bangon Phonexay Young Elephants FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67000",
+            "externalId": "67000",
+            "name": "Phetlavanh Xaiyaphetdala",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2002-05-27",
+            "foot": "right",
+            "height": "Phetlavanh Xaiyaphetdala Young Elephants FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66996",
+            "externalId": "66996",
+            "name": "Phatthalavady Sophothirath",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2003-09-17",
+            "foot": "right",
+            "height": "Phatthalavady Sophothirath Young Elephants FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66999",
+            "externalId": "66999",
+            "name": "Vilinthone Vongsengthong",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2001-11-11",
+            "foot": "right",
+            "height": "Vilinthone Vongsengthong Young Elephants FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66988",
+            "externalId": "66988",
+            "name": "Vilaivanh Panyanouvong",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2001-07-25",
+            "foot": "right",
+            "height": "Vilaivanh Panyanouvong unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66985",
+            "externalId": "66985",
+            "name": "Lae Inthavong",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "1998-04-09",
+            "foot": "right",
+            "height": "Lae Inthavong unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66984",
+            "externalId": "66984",
+            "name": "Saysamone Inthaphone",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2003-05-29",
+            "foot": "right",
+            "height": "Saysaone Inthaphone unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66983",
+            "externalId": "66983",
+            "name": "Anouta Chanthithong",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2001-08-16",
+            "foot": "right",
+            "height": "Anouta Chanthithong Young Elephants FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66981",
+            "externalId": "66981",
+            "name": "Chaikham",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2004-04-24",
+            "foot": "right",
+            "height": "Chaikha Master 7 FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66982",
+            "externalId": "66982",
+            "name": "Daohueng Chanthala",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2002-09-02",
+            "foot": "right",
+            "height": "Daohueng Chanthala unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66989",
+            "externalId": "66989",
+            "name": "Kemmy Phatdala",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2002-03-19",
+            "foot": "right",
+            "height": "Key Phatdala Young Elephants FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66998",
+            "externalId": "66998",
+            "name": "Phanykone Vannalath",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "1995-11-06",
+            "foot": "right",
+            "height": "Phanykone Vannalath unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66986",
+            "externalId": "66986",
+            "name": "Vady Inthiya",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2001-03-15",
+            "foot": "right",
+            "height": "Vady Inthiya unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66987",
+            "externalId": "66987",
+            "name": "Phoutsady Louang Amath",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2002-12-04",
+            "foot": "right",
+            "height": "Phoutsady Louang Aath unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66993",
+            "externalId": "66993",
+            "name": "Panatda Phothisane",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2003-10-10",
+            "foot": "right",
+            "height": "Panatda Phothisane Young Elephants FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66995",
+            "externalId": "66995",
+            "name": "Dalavone Sophabmisay",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2002-08-16",
+            "foot": "right",
+            "height": "Dalavone Sophabisay unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66990",
+            "externalId": "66990",
+            "name": "Phonethip Phommachanh",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2002-02-26",
+            "foot": "right",
+            "height": "Phonethip Phoachanh unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66997",
+            "externalId": "66997",
+            "name": "Phimpha Thongsavang",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2003-07-05",
+            "foot": "right",
+            "height": "Phipha Thongsavang unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66994",
+            "externalId": "66994",
+            "name": "Chinda Sihalath",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2005-11-27",
+            "foot": "right",
+            "height": "Chinda Sihalath Master 7 FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66992",
+            "externalId": "66992",
+            "name": "Sengdeuan Phongphailath",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Laos"
+            ],
+            "dateOfBirth": "2005-12-22",
+            "foot": "right",
+            "height": "Sengdeuan Phongphailath Master 7 FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

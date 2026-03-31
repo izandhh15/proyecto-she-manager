@@ -1,0 +1,384 @@
+{
+    "id": "510",
+    "externalId": "510",
+    "transfermarktId": "510",
+    "name": "Barbados",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "69278",
+            "externalId": "69278",
+            "name": "Kamillah Burke",
+            "position": "Goalkeeper",
+            "age": 37,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1988-09-19",
+            "foot": "right",
+            "height": "Kaillah Burke unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69288",
+            "externalId": "69288",
+            "name": "Rhea Holder",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1992-08-28",
+            "foot": "right",
+            "height": "Rhea Holder unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69289",
+            "externalId": "69289",
+            "name": "Tamisha Marshall",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Taisha Marshall unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69285",
+            "externalId": "69285",
+            "name": "Brittany Branker-White",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Brittany Branker-White unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69287",
+            "externalId": "69287",
+            "name": "Moesha Goodman",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1999-09-23",
+            "foot": "right",
+            "height": "Moesha Goodan unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69279",
+            "externalId": "69279",
+            "name": "Adrienne Forde",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1998-01-04",
+            "foot": "right",
+            "height": "Adrienne Forde unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69292",
+            "externalId": "69292",
+            "name": "Danielle Whitehall",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Danielle Whitehall unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44637",
+            "externalId": "44637",
+            "name": "Olianna Bishop",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2004-10-14",
+            "foot": "right",
+            "height": "Olianna Bishop unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44650",
+            "externalId": "44650",
+            "name": "Keinelle Johnson",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2003-10-22",
+            "foot": "right",
+            "height": "Keinelle Johnson unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44653",
+            "externalId": "44653",
+            "name": "Tanija Maughn",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2004-01-13",
+            "foot": "right",
+            "height": "Tanija Maughn unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44657",
+            "externalId": "44657",
+            "name": "Acacia Small",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2002-02-16",
+            "foot": "right",
+            "height": "Acacia Sall unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69284",
+            "externalId": "69284",
+            "name": "Alyssa Yard",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1992-05-08",
+            "foot": "right",
+            "height": "Alyssa Yard unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69290",
+            "externalId": "69290",
+            "name": "Shonelle Stephens",
+            "position": "Centre-Back",
+            "age": 42,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1984-01-08",
+            "foot": "right",
+            "height": "Shonelle Stephens unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44666",
+            "externalId": "44666",
+            "name": "Daphne Watson-James",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2004-06-05",
+            "foot": "right",
+            "height": "Daphne Watson-Jaes unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44642",
+            "externalId": "44642",
+            "name": "Kerisha Catlyn",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2004-09-25",
+            "foot": "right",
+            "height": "Kerisha Catlyn unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69282",
+            "externalId": "69282",
+            "name": "Ashanee Thompson",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1996-11-19",
+            "foot": "right",
+            "height": "Ashanee Thopson unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72371",
+            "externalId": "72371",
+            "name": "Shante Padmore",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1999-08-10",
+            "foot": "right",
+            "height": "Shante Padore unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44639",
+            "externalId": "44639",
+            "name": "Tiana Bynoe",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2000-10-07",
+            "foot": "right",
+            "height": "Tiana Bynoe unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69283",
+            "externalId": "69283",
+            "name": "Soraya Toppin-Herbert",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1994-07-01",
+            "foot": "right",
+            "height": "Soraya Toppin-Herbert unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69291",
+            "externalId": "69291",
+            "name": "Tiffany White",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1997-01-30",
+            "foot": "right",
+            "height": "Tiffany White unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44651",
+            "externalId": "44651",
+            "name": "Marissa King",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2001-07-02",
+            "foot": "right",
+            "height": "Marissa King unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69281",
+            "externalId": "69281",
+            "name": "Rianna Cyrus",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "1999-11-29",
+            "foot": "right",
+            "height": "Rianna Cyrus Weyouth Wales, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69280",
+            "externalId": "69280",
+            "name": "Makela Alleyne",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Makela Alleyne unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69286",
+            "externalId": "69286",
+            "name": "Cheyanna Burnett-Griffith",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44645",
+            "externalId": "44645",
+            "name": "Rayna Cummins",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Barbados"
+            ],
+            "dateOfBirth": "2005-03-14",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

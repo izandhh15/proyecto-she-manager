@@ -1,0 +1,355 @@
+{
+    "id": "654",
+    "externalId": "654",
+    "transfermarktId": "654",
+    "name": "Latvia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "92900",
+            "externalId": "92900",
+            "name": "Aleksandra Torgošova",
+            "position": "Goalkeeper",
+            "age": 17,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2008-12-05",
+            "foot": "right",
+            "height": "Aleksandra Torgošova Riga FC Woen, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63705",
+            "externalId": "63705",
+            "name": "Elza Strazdiņa",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2006-12-29",
+            "foot": "right",
+            "height": "Elza Strazdiņa Piteå IF, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "61828",
+            "externalId": "61828",
+            "name": "Marina Teļukeviča",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2005-09-19",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117520",
+            "externalId": "117520",
+            "name": "Evelīna Arseno",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2003-10-15",
+            "foot": "right",
+            "height": "Evelīna Arseno unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81902",
+            "externalId": "81902",
+            "name": "Alise Baltrušaite",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2007-10-26",
+            "foot": "right",
+            "height": "Alise Baltrušaite FK Iecava/FK Olaine, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72022",
+            "externalId": "72022",
+            "name": "Uma Upīte",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2007-11-19",
+            "foot": "right",
+            "height": "Ua Upīte FS Metta, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72015",
+            "externalId": "72015",
+            "name": "Līva Šteinberga",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2007-07-28",
+            "foot": "right",
+            "height": "Līva Šteinberga Riga FC Woen, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10800",
+            "externalId": "10800",
+            "name": "Anastasija Ročāne",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Latvia",
+                "Estonia"
+            ],
+            "dateOfBirth": "1992-06-07",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41127",
+            "externalId": "41127",
+            "name": "Sofija Gergeležiu",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2003-08-31",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28867",
+            "externalId": "28867",
+            "name": "Sandra Voitāne",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "1999-09-16",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "15k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "46827",
+            "externalId": "46827",
+            "name": "Katrīna Daņilova",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2004-05-10",
+            "foot": "right",
+            "height": "Katrīna Daņilova Riga FC Woen, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46595",
+            "externalId": "46595",
+            "name": "Diāna Suvītra",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2002-01-09",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71080",
+            "externalId": "71080",
+            "name": "Alīna Ansone",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2006-02-02",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72021",
+            "externalId": "72021",
+            "name": "Nikola Preijere",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2007-04-12",
+            "foot": "right",
+            "height": "Nikola Preijere Riga FC Woen, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32678",
+            "externalId": "32678",
+            "name": "Anna Valaka",
+            "position": "Defensive Midfield",
+            "age": 26,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "1999-11-14",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74814",
+            "externalId": "74814",
+            "name": "Monika Štube",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "1999-09-15",
+            "foot": "right",
+            "height": "Monika Štube Bradford City, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92888",
+            "externalId": "92888",
+            "name": "Annija Andersone",
+            "position": "Attacking Midfield",
+            "age": 17,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2008-10-31",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51868",
+            "externalId": "51868",
+            "name": "Signija Šenberga",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2003-03-13",
+            "foot": "right",
+            "height": "Signija Šenberga Riga FC Woen, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61827",
+            "externalId": "61827",
+            "name": "Anastasija Poļuhoviča",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2005-03-06",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63707",
+            "externalId": "63707",
+            "name": "Santa Vuškāne",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2005-11-22",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "40044",
+            "externalId": "40044",
+            "name": "Karlīna Miksone",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2000-03-21",
+            "foot": "right",
+            "height": "1,83m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31203",
+            "externalId": "31203",
+            "name": "Viktorija Zaičikova",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "2000-08-04",
+            "foot": "right",
+            "height": "Viktorija Zaičikova ÍBV Vestannaeyjar, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "31195",
+            "externalId": "31195",
+            "name": "Olga Ševcova",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Latvia"
+            ],
+            "dateOfBirth": "1992-11-26",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

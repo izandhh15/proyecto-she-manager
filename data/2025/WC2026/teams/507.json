@@ -1,0 +1,356 @@
+{
+    "id": "507",
+    "externalId": "507",
+    "transfermarktId": "507",
+    "name": "Bahrain",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "65962",
+            "externalId": "65962",
+            "name": "Huda Ali Salman",
+            "position": "Goalkeeper",
+            "age": 37,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1988-09-21",
+            "foot": "right",
+            "height": "Huda Ali Salan unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65954",
+            "externalId": "65954",
+            "name": "Zahra Nezar Ali",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2003-08-12",
+            "foot": "right",
+            "height": "Zahra Nezar Ali unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65945",
+            "externalId": "65945",
+            "name": "Khulood Saleh Abdulla",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1997-11-13",
+            "foot": "right",
+            "height": "Khulood Saleh Abdulla unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65951",
+            "externalId": "65951",
+            "name": "Alyaa Juma Al Mudhahki",
+            "position": "Centre-Back",
+            "age": 36,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1989-07-03",
+            "foot": "right",
+            "height": "Alyaa Jua Al Mudhahki unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65966",
+            "externalId": "65966",
+            "name": "Manar Ebrahim Yaqoob",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1994-07-27",
+            "foot": "right",
+            "height": "Manar Ebrahi Yaqoob unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65957",
+            "externalId": "65957",
+            "name": "Fatema Abdulhameed Isa",
+            "position": "Centre-Back",
+            "age": 35,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1990-12-14",
+            "foot": "right",
+            "height": "Fatea Abdulhaeed Isa unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65959",
+            "externalId": "65959",
+            "name": "Marwa Mohamed Mubarak",
+            "position": "Centre-Back",
+            "age": 37,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1988-09-13",
+            "foot": "right",
+            "height": "Marwa Mohaed Mubarak unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65947",
+            "externalId": "65947",
+            "name": "Rawan Nabeel Al Ali",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2000-10-26",
+            "foot": "right",
+            "height": "Rawan Nabeel Al Ali unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65952",
+            "externalId": "65952",
+            "name": "Fatema Hamad Mohamed",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1998-09-19",
+            "foot": "right",
+            "height": "Fatea Haad Mohaed unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65958",
+            "externalId": "65958",
+            "name": "Farah Jehad Khaled",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2002-12-18",
+            "foot": "right",
+            "height": "Farah Jehad Khaled unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65946",
+            "externalId": "65946",
+            "name": "Sara Mohamed Al Aiwi",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2003-06-25",
+            "foot": "right",
+            "height": "Sara Mohaed Al Aiwi unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65955",
+            "externalId": "65955",
+            "name": "Dana Bassem Charafeddine",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2003-03-09",
+            "foot": "right",
+            "height": "Dana Basse Charafeddine unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65949",
+            "externalId": "65949",
+            "name": "Shaikha Alanood Al Khalifa",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1992-07-10",
+            "foot": "right",
+            "height": "Shaikha Alanood Al Khalifa unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65965",
+            "externalId": "65965",
+            "name": "Yasmeen Fayez Tobellah",
+            "position": "Central Midfield",
+            "age": 36,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1989-09-17",
+            "foot": "right",
+            "height": "Yaseen Fayez Tobellah unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65953",
+            "externalId": "65953",
+            "name": "Wesal Ahmed Al Yassi",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2000-07-05",
+            "foot": "right",
+            "height": "Wesal Ahed Al Yassi unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65950",
+            "externalId": "65950",
+            "name": "Eman Rashed Al Khattal",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1999-03-14",
+            "foot": "right",
+            "height": "Ean Rashed Al Khattal unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65956",
+            "externalId": "65956",
+            "name": "Hana Ahmed Hafez",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Bahrain",
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2003-09-29",
+            "foot": "right",
+            "height": "Hana Ahed Hafez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65961",
+            "externalId": "65961",
+            "name": "Leleya Jaweed Sabkar",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2002-07-15",
+            "foot": "right",
+            "height": "Leleya Jaweed Sabkar unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65960",
+            "externalId": "65960",
+            "name": "Sama Amjad Qasem",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2006-01-15",
+            "foot": "right",
+            "height": "Saa Ajad Qase unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65963",
+            "externalId": "65963",
+            "name": "Amira Bader Sowar",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1998-01-18",
+            "foot": "right",
+            "height": "Aira Bader Sowar unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65948",
+            "externalId": "65948",
+            "name": "Hessa Reyadh Al Isa",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "1995-08-30",
+            "foot": "right",
+            "height": "Hessa Reyadh Al Isa unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65964",
+            "externalId": "65964",
+            "name": "Rose Fayez Tobellah",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Bahrain",
+                "United States"
+            ],
+            "dateOfBirth": "1998-01-28",
+            "foot": "right",
+            "height": "Rose Fayez Tobellah unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65944",
+            "externalId": "65944",
+            "name": "Manayer Ahmed Thani",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Bahrain"
+            ],
+            "dateOfBirth": "2004-05-03",
+            "foot": "right",
+            "height": "Manayer Ahed Thani unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

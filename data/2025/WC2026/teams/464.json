@@ -1,0 +1,355 @@
+{
+    "id": "464",
+    "externalId": "464",
+    "transfermarktId": "464",
+    "name": "Russia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "19805",
+            "externalId": "19805",
+            "name": "Yuliya Grichenko",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "1990-03-10",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34782",
+            "externalId": "34782",
+            "name": "Diana Ponomareva",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "1998-10-13",
+            "foot": "right",
+            "height": "1,82m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "55381",
+            "externalId": "55381",
+            "name": "Varvara Dudorova",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2005-06-09",
+            "foot": "right",
+            "height": "Varvara Dudorova FK Chertanovo, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44343",
+            "externalId": "44343",
+            "name": "Ksenia Oleksyuk",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2003-03-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84899",
+            "externalId": "84899",
+            "name": "Azalia Zalmieva",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2006-08-11",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65900",
+            "externalId": "65900",
+            "name": "Vladislava Butkevich",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2006-09-12",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46746",
+            "externalId": "46746",
+            "name": "Kseniya Dolgova",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2004-11-14",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46071",
+            "externalId": "46071",
+            "name": "Elizaveta Semenova",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2004-06-18",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "984",
+            "externalId": "984",
+            "name": "Anna Kozhnikova",
+            "position": "Central Midfield",
+            "age": 38,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "1987-07-10",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40505",
+            "externalId": "40505",
+            "name": "Yulia Pleshkova",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2002-01-15",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39209",
+            "externalId": "39209",
+            "name": "Valentina Smirnova",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2002-10-25",
+            "foot": "both",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34971",
+            "externalId": "34971",
+            "name": "Veronika Kuropatkina",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "1999-09-03",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34791",
+            "externalId": "34791",
+            "name": "Alsu Abdullina",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2001-04-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "34783",
+            "externalId": "34783",
+            "name": "Ksenia Dzhinikashwili",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "1997-08-04",
+            "foot": "right",
+            "height": "Ksenia Dzhinikashwili Zenit St. Petersburg, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40206",
+            "externalId": "40206",
+            "name": "Medeya Zharkova",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2003-07-12",
+            "foot": "both",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40102",
+            "externalId": "40102",
+            "name": "Nataliya Trofimova",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2003-03-14",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34794",
+            "externalId": "34794",
+            "name": "Kristina Komissarova",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2001-02-24",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "57686",
+            "externalId": "57686",
+            "name": "Alina Shkalova",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2005-03-21",
+            "foot": "right",
+            "height": "Alina Shkalova FK Chertanovo U21, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "60056",
+            "externalId": "60056",
+            "name": "Darina Ishmukhametova",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2005-11-03",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84900",
+            "externalId": "84900",
+            "name": "Marine Achoyan",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Russia",
+                "Armenia"
+            ],
+            "dateOfBirth": "2007-01-16",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45610",
+            "externalId": "45610",
+            "name": "Tatyana Morina",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "1993-07-09",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63536",
+            "externalId": "63536",
+            "name": "Arina Shuba",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2006-04-13",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63541",
+            "externalId": "63541",
+            "name": "Kira Petukhova",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Russia"
+            ],
+            "dateOfBirth": "2006-05-24",
+            "foot": "right",
+            "height": "Kira Petukhova Spartak Moskau, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

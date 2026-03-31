@@ -1,0 +1,444 @@
+{
+    "id": "821",
+    "externalId": "821",
+    "transfermarktId": "821",
+    "name": "United Arab Emirates",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "67275",
+            "externalId": "67275",
+            "name": "Badriya Al Mansoori",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1998-06-16",
+            "foot": "right",
+            "height": "Badriya Al Mansoori unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67276",
+            "externalId": "67276",
+            "name": "Aya Walid",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2005-01-04",
+            "foot": "right",
+            "height": "Aya Walid unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67274",
+            "externalId": "67274",
+            "name": "Maha Al Balooshi",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2004-05-17",
+            "foot": "right",
+            "height": "Maha Al Balooshi Abu Dhabi Country Club, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69859",
+            "externalId": "69859",
+            "name": "Shaikha Mohamed",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2002-02-21",
+            "foot": "right",
+            "height": "Shaikha Mohaed unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67289",
+            "externalId": "67289",
+            "name": "Amina Al Hosani",
+            "position": "Centre-Back",
+            "age": 39,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1986-08-18",
+            "foot": "right",
+            "height": "Aina Al Hosani unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67292",
+            "externalId": "67292",
+            "name": "Salha Rashid",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2001-05-26",
+            "foot": "right",
+            "height": "Salha Rashid Abu Dhabi Country Club, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67290",
+            "externalId": "67290",
+            "name": "Eida Al Shehhi",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2001-03-07",
+            "foot": "right",
+            "height": "Eida Al Shehhi unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67288",
+            "externalId": "67288",
+            "name": "Rawan Al Hammadi",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2002-11-12",
+            "foot": "right",
+            "height": "Rawan Al Haadi Abu Dhabi Country Club, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67291",
+            "externalId": "67291",
+            "name": "Fatima Jassim",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2002-04-23",
+            "foot": "right",
+            "height": "Fatia Jassi Karachi City WFC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67287",
+            "externalId": "67287",
+            "name": "Sara Al Balooshi",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2002-10-04",
+            "foot": "right",
+            "height": "Sara Al Balooshi unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67286",
+            "externalId": "67286",
+            "name": "Nehal Abdelaziz",
+            "position": "Centre-Back",
+            "age": 47,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1978-04-18",
+            "foot": "right",
+            "height": "Nehal Abdelaziz unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67295",
+            "externalId": "67295",
+            "name": "Ghanima Rashid",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2003-10-22",
+            "foot": "right",
+            "height": "Ghania Rashid Abu Dhabi Country Club, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67293",
+            "externalId": "67293",
+            "name": "Fatima Ghulam",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2004-10-25",
+            "foot": "right",
+            "height": "Fatia Ghula Abu Dhabi Country Club, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67294",
+            "externalId": "67294",
+            "name": "Aysha Gheyath",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2005-05-18",
+            "foot": "right",
+            "height": "Aysha Gheyath unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69860",
+            "externalId": "69860",
+            "name": "Maryam Al Blooshi",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2002-04-02",
+            "foot": "right",
+            "height": "Marya Al Blooshi unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69856",
+            "externalId": "69856",
+            "name": "Najla Essa",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2005-01-30",
+            "foot": "right",
+            "height": "Najla Essa unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69858",
+            "externalId": "69858",
+            "name": "Aalya Humaid",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2003-10-31",
+            "foot": "right",
+            "height": "Aalya Huaid unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67281",
+            "externalId": "67281",
+            "name": "Al Anoud Al Adwan",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1993-11-26",
+            "foot": "right",
+            "height": "Al Anoud Al Adwan unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67285",
+            "externalId": "67285",
+            "name": "Shahed Khaled",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2003-02-14",
+            "foot": "right",
+            "height": "Shahed Khaled Abu Dhabi Country Club, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67282",
+            "externalId": "67282",
+            "name": "Nouf Al Adwan",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1996-11-14",
+            "foot": "right",
+            "height": "Nouf Al Adwan Karachi City WFC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67283",
+            "externalId": "67283",
+            "name": "Areej Al Hammadi",
+            "position": "Central Midfield",
+            "age": 40,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1986-02-13",
+            "foot": "right",
+            "height": "Areej Al Haadi Abu Dhabi Country Club, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67284",
+            "externalId": "67284",
+            "name": "Aliyah Hameed",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2003-10-31",
+            "foot": "right",
+            "height": "Aliyah Haeed unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69862",
+            "externalId": "69862",
+            "name": "Maryam Al Mesmari",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2005-01-25",
+            "foot": "right",
+            "height": "Marya Al Mesari unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69861",
+            "externalId": "69861",
+            "name": "Dhabia Al Hattawi",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2004-01-16",
+            "foot": "right",
+            "height": "Dhabia Al Hattawi unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69857",
+            "externalId": "69857",
+            "name": "Asma Al Muntaser",
+            "position": "Centre-Forward",
+            "age": 38,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1988-03-28",
+            "foot": "right",
+            "height": "Asa Al Muntaser unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67279",
+            "externalId": "67279",
+            "name": "Naeema Ibrahim",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1999-12-30",
+            "foot": "right",
+            "height": "Naeea Ibrahi unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67278",
+            "externalId": "67278",
+            "name": "Afra Al Mheiri",
+            "position": "Centre-Forward",
+            "age": 34,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1991-05-15",
+            "foot": "right",
+            "height": "Afra Al Mheiri unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67280",
+            "externalId": "67280",
+            "name": "Amal Wael",
+            "position": "Centre-Forward",
+            "age": 34,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "1991-06-07",
+            "foot": "right",
+            "height": "Aal Wael unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67277",
+            "externalId": "67277",
+            "name": "Layla Al Mheiri",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "United Arab Emirates"
+            ],
+            "dateOfBirth": "2001-04-22",
+            "foot": "right",
+            "height": "Layla Al Mheiri unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

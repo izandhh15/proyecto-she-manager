@@ -17,6 +17,7 @@ class ImportSoccerdonnaNationalTeams extends Command
                             {team?* : FIFA codes or country names to import (default: all real teams in the competition CSV)}
                             {--season=2025 : Season folder to update}
                             {--competition=WC2026 : Competition folder to update}
+                            {--all-published : Import every women national team currently published by Soccerdonna}
                             {--dry-run : Fetch and parse without writing files}
                             {--team-limit= : Limit imported teams for testing}
                             {--sleep-ms=150 : Delay between HTTP requests in milliseconds}';
@@ -70,6 +71,7 @@ class ImportSoccerdonnaNationalTeams extends Command
         $requestedTeams = $this->argument('team');
         $season = (string) $this->option('season');
         $competition = Str::upper((string) $this->option('competition'));
+        $allPublished = (bool) $this->option('all-published');
         $dryRun = (bool) $this->option('dry-run');
         $teamLimit = $this->option('team-limit');
         $teamLimit = $teamLimit !== null ? max(1, (int) $teamLimit) : null;
@@ -78,7 +80,7 @@ class ImportSoccerdonnaNationalTeams extends Command
         $this->sleepMs = max(0, (int) $this->option('sleep-ms'));
 
         try {
-            $this->importCompetition($competition, $season, $requestedTeams, $teamLimit, $dryRun);
+            $this->importCompetition($competition, $season, $requestedTeams, $teamLimit, $dryRun, $allPublished);
         } catch (\Throwable $e) {
             $this->error("FAILED {$competition}: {$e->getMessage()}");
             $this->error("  at {$e->getFile()}:{$e->getLine()}");
@@ -92,17 +94,17 @@ class ImportSoccerdonnaNationalTeams extends Command
     /**
      * @param  array<int, string>  $requestedTeams
      */
-    private function importCompetition(string $competition, string $season, array $requestedTeams, ?int $teamLimit, bool $dryRun): void
+    private function importCompetition(string $competition, string $season, array $requestedTeams, ?int $teamLimit, bool $dryRun, bool $allPublished): void
     {
         $teamsDir = base_path("data/{$season}/{$competition}/teams");
         $rawTeamsPath = base_path("data/{$season}/{$competition}/raw/teams.csv");
 
-        if (! file_exists($rawTeamsPath)) {
+        if (! $allPublished && ! file_exists($rawTeamsPath)) {
             throw new \RuntimeException("Competition CSV not found: {$rawTeamsPath}");
         }
 
-        $csvTeams = $this->loadCompetitionTeams($rawTeamsPath);
-        if (! empty($requestedTeams)) {
+        $csvTeams = $allPublished ? [] : $this->loadCompetitionTeams($rawTeamsPath);
+        if (! $allPublished && ! empty($requestedTeams)) {
             $csvTeams = array_values(array_filter(
                 $csvTeams,
                 fn (array $team) => $this->matchesRequestedTeam($team, $requestedTeams)
@@ -113,18 +115,57 @@ class ImportSoccerdonnaNationalTeams extends Command
             }
         }
 
-        if ($teamLimit !== null) {
+        if (! $allPublished && $teamLimit !== null) {
             $csvTeams = array_slice($csvTeams, 0, $teamLimit);
         }
 
         $existingByName = $this->loadExistingTeamFiles($teamsDir);
         $refs = $this->fetchNationalTeamRefs(self::NATIONAL_TEAMS_URL);
 
+        if ($allPublished) {
+            if (! empty($requestedTeams)) {
+                $refs = array_values(array_filter(
+                    $refs,
+                    fn (array $ref) => $this->matchesRequestedNationalTeamRef($ref, $requestedTeams)
+                ));
+
+                if (empty($refs)) {
+                    throw new \RuntimeException('None of the requested teams were found on Soccerdonna.');
+                }
+            }
+
+            if ($teamLimit !== null) {
+                $refs = array_slice($refs, 0, $teamLimit);
+            }
+        }
+
         $this->newLine();
-        $this->info("Importing {$competition} national teams from Soccerdonna...");
+        $this->info('Importing ' . ($allPublished ? 'all published' : $competition) . ' national teams from Soccerdonna...');
 
         $payloads = [];
         $unmatched = [];
+
+        if ($allPublished) {
+            foreach ($refs as $index => $ref) {
+                $this->line(sprintf('  [%d/%d] %s', $index + 1, count($refs), $ref['name']));
+
+                $players = $this->fetchNationalTeamPlayers($ref['squad_url'], $ref['name']);
+
+                $payloads[] = [
+                    'filename' => "{$ref['id']}.json",
+                    'club' => [
+                        'id' => $ref['id'],
+                        'externalId' => $ref['id'],
+                        'transfermarktId' => $ref['id'],
+                        'name' => $ref['name'],
+                        'image' => $ref['image'] ?? ($existingByName[$ref['name']]['image'] ?? null),
+                        'players' => $players,
+                        '_market_value_total_eur' => null,
+                        '_market_value_average_eur' => null,
+                    ],
+                ];
+            }
+        }
 
         foreach ($csvTeams as $index => $team) {
             $ref = $this->matchNationalTeamRef($team, $refs);
@@ -241,6 +282,22 @@ class ImportSoccerdonnaNationalTeams extends Command
         $normalizedRequested = array_map(fn (string $value) => $this->normalizeName($value), $requestedTeams);
 
         return in_array($this->normalizeName($team['name']), $normalizedRequested, true);
+    }
+
+    /**
+     * @param  array{id: string, name: string, normalized_name: string, country_code: ?string, image: ?string, squad_url: string}  $ref
+     * @param  array<int, string>  $requestedTeams
+     */
+    private function matchesRequestedNationalTeamRef(array $ref, array $requestedTeams): bool
+    {
+        $requestedCodes = array_map(fn (string $value) => Str::upper(trim($value)), $requestedTeams);
+        if (in_array(Str::upper((string) ($ref['country_code'] ?? '')), $requestedCodes, true)) {
+            return true;
+        }
+
+        $normalizedRequested = array_map(fn (string $value) => $this->normalizeName($value), $requestedTeams);
+
+        return in_array($ref['normalized_name'], $normalizedRequested, true);
     }
 
     /**

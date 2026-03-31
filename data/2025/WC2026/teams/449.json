@@ -1,0 +1,399 @@
+{
+    "id": "449",
+    "externalId": "449",
+    "transfermarktId": "449",
+    "name": "China",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "44140",
+            "externalId": "44140",
+            "name": "Yu Zhu",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1997-07-23",
+            "foot": "right",
+            "height": "1,85m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23126",
+            "externalId": "23126",
+            "name": "Shimeng Peng",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1998-05-12",
+            "foot": "right",
+            "height": "1,83m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59442",
+            "externalId": "59442",
+            "name": "Chen Chen",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1993-06-26",
+            "foot": "right",
+            "height": "1,87m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23114",
+            "externalId": "23114",
+            "name": "Ying Wang",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1997-11-18",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35861",
+            "externalId": "35861",
+            "name": "Qiaozhu Chen",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1999-09-08",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "59461",
+            "externalId": "59461",
+            "name": "Linlin Wang",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "2000-08-04",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16753",
+            "externalId": "16753",
+            "name": "Haiyan Wu",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1993-02-26",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18043",
+            "externalId": "18043",
+            "name": "Mengwen Li",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1995-03-28",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "16767",
+            "externalId": "16767",
+            "name": "Xin Zhang",
+            "position": "Defensive Midfield",
+            "age": 33,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1992-05-23",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16763",
+            "externalId": "16763",
+            "name": "Shuang Wang",
+            "position": "Attacking Midfield",
+            "age": 31,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1995-01-23",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23132",
+            "externalId": "23132",
+            "name": "Wei Yao",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1997-09-01",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35867",
+            "externalId": "35867",
+            "name": "Yanwen Wang",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1999-03-27",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "56736",
+            "externalId": "56736",
+            "name": "Qingtong Li",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1999-04-14",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "69471",
+            "externalId": "69471",
+            "name": "Aifang Wang",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "2006-01-15",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23116",
+            "externalId": "23116",
+            "name": "Jing Liu",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1998-04-28",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107841",
+            "externalId": "107841",
+            "name": "Zongmei Xie",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "2006-04-26",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35881",
+            "externalId": "35881",
+            "name": "Linyan Zhang",
+            "position": "Attacking Midfield",
+            "age": 25,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "2001-01-16",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "59620",
+            "externalId": "59620",
+            "name": "Yatong Lyu",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1996-11-04",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "6005",
+            "externalId": "6005",
+            "name": "Rui Zhang",
+            "position": "Central Midfield",
+            "age": 37,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1989-01-17",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59391",
+            "externalId": "59391",
+            "name": "Wurigumula",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1996-08-26",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44046",
+            "externalId": "44046",
+            "name": "Chengshu Wu",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1996-08-26",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "90k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35863",
+            "externalId": "35863",
+            "name": "Kun Jin",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1999-10-04",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18068",
+            "externalId": "18068",
+            "name": "Jiali Tang",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1995-03-16",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "59627",
+            "externalId": "59627",
+            "name": "Chengxue Zhang",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "1995-12-02",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71242",
+            "externalId": "71242",
+            "name": "Ziqin Shao",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "2003-02-24",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "59626",
+            "externalId": "59626",
+            "name": "Cong Yuan",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "China"
+            ],
+            "dateOfBirth": "2000-04-17",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

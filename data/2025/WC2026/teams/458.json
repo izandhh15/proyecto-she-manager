@@ -103,7 +103,7 @@
             "externalId": "23058",
             "name": "Kimberly Rodríguez",
             "position": "Centre-Back",
-            "age": 26,
+            "age": 27,
             "nationality": [
                 "Mexico",
                 "United States"
@@ -124,7 +124,7 @@
                 "Mexico"
             ],
             "dateOfBirth": "1993-02-16",
-            "foot": "left",
+            "foot": "right",
             "height": "1,64m",
             "marketValue": "50k",
             "contract": null
@@ -170,7 +170,7 @@
                 "Mexico"
             ],
             "dateOfBirth": "2002-12-14",
-            "foot": "left",
+            "foot": "right",
             "height": "1,64m",
             "marketValue": "50k",
             "contract": null

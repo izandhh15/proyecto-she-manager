@@ -60,7 +60,7 @@
                 "Belgium"
             ],
             "dateOfBirth": "2004-04-15",
-            "foot": "left",
+            "foot": "right",
             "height": "Ay Littel Club YLA, Defencem",
             "marketValue": "50k",
             "contract": null
@@ -75,7 +75,7 @@
                 "Belgium"
             ],
             "dateOfBirth": "2005-07-22",
-            "foot": "left",
+            "foot": "right",
             "height": "Saar Janssen OH Leuven Woen, Defencem",
             "marketValue": "50k",
             "contract": "2027-06-30"
@@ -120,7 +120,7 @@
                 "Belgium"
             ],
             "dateOfBirth": "2001-10-20",
-            "foot": "left",
+            "foot": "right",
             "height": "1,62m",
             "marketValue": "50k",
             "contract": "2026-06-30"
@@ -266,7 +266,7 @@
             "externalId": "23420",
             "name": "Elena Dhont",
             "position": "Centre-Forward",
-            "age": 27,
+            "age": 28,
             "nationality": [
                 "Belgium"
             ],

@@ -1,0 +1,41 @@
+{
+    "id": "629",
+    "externalId": "629",
+    "transfermarktId": "629",
+    "name": "American Virgin Islands",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "87396",
+            "externalId": "87396",
+            "name": "Kelsey Hill",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "American Virgin Islands",
+                "United States"
+            ],
+            "dateOfBirth": "1999-08-11",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "10k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "102091",
+            "externalId": "102091",
+            "name": "Naya Vialva",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "American Virgin Islands",
+                "United States"
+            ],
+            "dateOfBirth": "2001-09-02",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

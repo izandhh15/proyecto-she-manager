@@ -1,0 +1,310 @@
+{
+    "id": "486",
+    "externalId": "486",
+    "transfermarktId": "486",
+    "name": "American Samoa",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "97054",
+            "externalId": "97054",
+            "name": "Nette Liu",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Nette Liu unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96410",
+            "externalId": "96410",
+            "name": "Susan Godinet",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Susan Godinet unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96412",
+            "externalId": "96412",
+            "name": "Precious Toilolo",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Precious Toilolo unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97051",
+            "externalId": "97051",
+            "name": "Lilian Felise",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lilian Felise unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97052",
+            "externalId": "97052",
+            "name": "Veronica Iupati",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Veronica Iupati unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "113905",
+            "externalId": "113905",
+            "name": "Brielle Tautua",
+            "position": "Central Midfield",
+            "age": 15,
+            "nationality": [
+                "American Samoa",
+                "Samoa"
+            ],
+            "dateOfBirth": "2010-10-09",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97056",
+            "externalId": "97056",
+            "name": "Severina Mana’o",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Severina Mana’o unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97061",
+            "externalId": "97061",
+            "name": "Gracious Toilolo",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Gracious Toilolo unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97154",
+            "externalId": "97154",
+            "name": "Aggie Pati",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Aggie Pati unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96411",
+            "externalId": "96411",
+            "name": "Alma Mana'o",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": "1994-07-22",
+            "foot": "right",
+            "height": "Ala Mana'o unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97062",
+            "externalId": "97062",
+            "name": "Aaliyah Tu’ua",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Aaliyah Tu’ua unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97055",
+            "externalId": "97055",
+            "name": "Elcy Lui",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Elcy Lui unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97049",
+            "externalId": "97049",
+            "name": "Angela Ah Fook",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Angela Ah Fook unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97058",
+            "externalId": "97058",
+            "name": "Meleane Naa",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Meleane Naa unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97063",
+            "externalId": "97063",
+            "name": "Lela Waetin",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lela Waetin unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97059",
+            "externalId": "97059",
+            "name": "Morgan Patea",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Morgan Patea unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97155",
+            "externalId": "97155",
+            "name": "Ariana Vaeao",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Ariana Vaeao unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97053",
+            "externalId": "97053",
+            "name": "Tehea Lealofi",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Tehea Lealofi unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "97057",
+            "externalId": "97057",
+            "name": "Topelei Matoka",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Topelei Matoka unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96414",
+            "externalId": "96414",
+            "name": "Olivia Vaiomoungaa",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "American Samoa"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Olivia Vaiooungaa unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

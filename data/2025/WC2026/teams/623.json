@@ -1,0 +1,406 @@
+{
+    "id": "623",
+    "externalId": "623",
+    "transfermarktId": "623",
+    "name": "Israel",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "16708",
+            "externalId": "16708",
+            "name": "Fortuna Rubin",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "1996-06-04",
+            "foot": "right",
+            "height": "Fortuna Rubin vereinslos, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65100",
+            "externalId": "65100",
+            "name": "Noa Kosak",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2006-04-10",
+            "foot": "right",
+            "height": "Noa Kosak Hapoel Kataon Jerusale Acadey, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51855",
+            "externalId": "51855",
+            "name": "Marom Keren",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "1995-10-10",
+            "foot": "right",
+            "height": "Maro Keren Maccabi Kishronot Hadera, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22230",
+            "externalId": "22230",
+            "name": "Shani David",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "1991-06-07",
+            "foot": "right",
+            "height": "Shani David Maccabi Kishronot Hadera, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81897",
+            "externalId": "81897",
+            "name": "Ziv Roth Hazan",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2007-10-04",
+            "foot": "right",
+            "height": "Ziv Roth Hazan FC Kiryat Gat, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44490",
+            "externalId": "44490",
+            "name": "Itaf Alkisi",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2001-10-01",
+            "foot": "right",
+            "height": "Itaf Alkisi FC Kiryat Gat, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45483",
+            "externalId": "45483",
+            "name": "Tal Faingezicht",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2001-05-11",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64767",
+            "externalId": "64767",
+            "name": "Asia Dercksen",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Israel",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2004-09-20",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47294",
+            "externalId": "47294",
+            "name": "Hili Shalom",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2003-04-28",
+            "foot": "right",
+            "height": "Hili Shalo Hapoel Kataon Jerusale, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "20348",
+            "externalId": "20348",
+            "name": "Eden Avital",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "1997-03-25",
+            "foot": "left",
+            "height": "Eden Avital Hapoel Tel Aviv, Midfieldm",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "94492",
+            "externalId": "94492",
+            "name": "Maayan Ben Israel",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2008-05-14",
+            "foot": "right",
+            "height": "Maayan Ben Israel FC Kiryat Gat, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "94464",
+            "externalId": "94464",
+            "name": "Talma Tal",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2006-10-15",
+            "foot": "right",
+            "height": "Tala Tal ASA Tel Aviv, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81890",
+            "externalId": "81890",
+            "name": "Adee Hadas Goulden",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2007-03-05",
+            "foot": "right",
+            "height": "Adee Hadas Goulden Santa Clara Broncos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "55855",
+            "externalId": "55855",
+            "name": "Maia Cabrera",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Israel",
+                "Dominican Republic"
+            ],
+            "dateOfBirth": "1999-07-17",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51853",
+            "externalId": "51853",
+            "name": "Vital Kats",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Israel",
+                "Canada"
+            ],
+            "dateOfBirth": "1999-11-18",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "47297",
+            "externalId": "47297",
+            "name": "Talia Sommer",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Israel",
+                "United States"
+            ],
+            "dateOfBirth": "2004-02-19",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "30k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "46436",
+            "externalId": "46436",
+            "name": "Noa Selimhodžić",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Israel",
+                "Croatia"
+            ],
+            "dateOfBirth": "2003-10-15",
+            "foot": "right",
+            "height": "Noa Selihodžić FC Kiryat Gat, Midfieldm",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "46431",
+            "externalId": "46431",
+            "name": "Zohar Cohen",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2002-03-23",
+            "foot": "right",
+            "height": "Zohar Cohen Hapoel Tel Aviv, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "41038",
+            "externalId": "41038",
+            "name": "Shira Elinav",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2000-04-26",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35304",
+            "externalId": "35304",
+            "name": "Marian Awad",
+            "position": "Defensive Midfield",
+            "age": 29,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "1996-10-29",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29037",
+            "externalId": "29037",
+            "name": "Hadas Morin",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "1999-06-30",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71010",
+            "externalId": "71010",
+            "name": "Michaela Workou",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Israel",
+                "Ethiopia"
+            ],
+            "dateOfBirth": "2006-10-12",
+            "foot": "right",
+            "height": "Michaela Workou Hapoel Kataon Jerusale, Strikerm",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "36141",
+            "externalId": "36141",
+            "name": "Rachel Steinschneider",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "1994-02-10",
+            "foot": "right",
+            "height": "Rachel Steinschneider Hapoel Kataon Jerusale, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84035",
+            "externalId": "84035",
+            "name": "Smadar Cohen",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2006-04-07",
+            "foot": "right",
+            "height": "Sadar Cohen Hapoel Kataon Jerusale, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "87274",
+            "externalId": "87274",
+            "name": "Tamar Goren",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Israel"
+            ],
+            "dateOfBirth": "2008-03-09",
+            "foot": "right",
+            "height": "Taar Goren 1. FSV Mainz 05, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "100988",
+            "externalId": "100988",
+            "name": "Elis Nemtsov Blokhin",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Israel",
+                "Canada"
+            ],
+            "dateOfBirth": "2002-01-14",
+            "foot": "both",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

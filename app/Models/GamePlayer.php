@@ -63,7 +63,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property-read string $formatted_wage
  * @property-read string $name
  * @property-read array|null $nationality
- * @property-read array{name: string, flag: string}|null $nationality_flag
+ * @property-read array{name: string, code: string, display_name: string}|null $nationality_flag
  * @property-read int $overall_score
  * @property-read int $physical_ability
  * @property-read string $position_abbreviation
@@ -819,6 +819,7 @@ class GamePlayer extends Model
         return [
             'name' => $nationalities[0],
             'code' => $code,
+            'display_name' => CountryCodeMapper::displayName($nationalities[0]),
         ];
     }
 }

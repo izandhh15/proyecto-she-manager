@@ -40,6 +40,12 @@ class SeedWorldCupData extends Command
     /** @var array<string, string> team_name from JSON â†’ external_id (filename) */
     private array $jsonTeamNames = [];
 
+    /** @var array<string, string> normalized team name from JSON => external_id (filename) */
+    private array $jsonTeamNamesNormalized = [];
+
+    /** @var array<string, array{name: string, country: string|null, image: string|null}> external_id => team data */
+    private array $jsonTeams = [];
+
     public function handle(): int
     {
         if ($this->option('fresh')) {
@@ -49,7 +55,7 @@ class SeedWorldCupData extends Command
         if (!$this->parseCSVs()) {
             return CommandAlias::FAILURE;
         }
-        $this->loadJsonTeamNames();
+        $this->loadJsonTeams();
         $this->seedCompetition();
         $teamMapping = $this->seedTeams();
         $playerCount = $this->seedPlayers();
@@ -165,7 +171,7 @@ class SeedWorldCupData extends Command
         return true;
     }
 
-    private function loadJsonTeamNames(): void
+    private function loadJsonTeams(): void
     {
         $basePath = base_path('data/2025/WC2026/teams');
         if (!is_dir($basePath)) {
@@ -184,6 +190,12 @@ class SeedWorldCupData extends Command
             }
             $tmId = pathinfo($filePath, PATHINFO_FILENAME);
             $this->jsonTeamNames[$data['name']] = $tmId;
+            $this->jsonTeamNamesNormalized[$this->normalizeTeamName($data['name'])] = $tmId;
+            $this->jsonTeams[$tmId] = [
+                'name' => $data['name'],
+                'country' => CountryCodeMapper::toCode($data['name']),
+                'image' => $data['image'] ?? null,
+            ];
         }
     }
 
@@ -215,47 +227,93 @@ class SeedWorldCupData extends Command
     {
         $this->info('Seeding teams...');
         $teamMapping = [];
+        $jsonTeamIdsByExternalId = [];
+
+        foreach ($this->jsonTeams as $externalId => $jsonTeam) {
+            $countryCode = $jsonTeam['country'];
+            $existing = DB::table('teams')
+                ->where('type', 'national')
+                ->where(function ($query) use ($externalId, $countryCode) {
+                    $query->where('external_id', $externalId);
+
+                    if ($countryCode) {
+                        $query->orWhere('country', $countryCode);
+                    }
+                })
+                ->first();
+
+            $teamId = $existing->id ?? Str::uuid()->toString();
+            $payload = [
+                'external_source' => ExternalData::defaultSource(),
+                'external_id' => $externalId,
+                'type' => 'national',
+                'name' => $jsonTeam['name'],
+                'country' => $countryCode ?? 'TBD',
+                'image' => $jsonTeam['image'],
+                'stadium_name' => null,
+                'stadium_seats' => 0,
+                'colors' => json_encode(TeamColors::get($jsonTeam['name'])),
+            ];
+
+            if ($existing) {
+                DB::table('teams')->where('id', $teamId)->update($payload);
+            } else {
+                DB::table('teams')->insert(['id' => $teamId, ...$payload]);
+            }
+
+            $jsonTeamIdsByExternalId[$externalId] = $teamId;
+        }
 
         foreach ($this->csvTeams as $csvId => $team) {
             $countryCode = CountryCodeMapper::toCode($team['team_name']);
-            $externalId = $this->jsonTeamNames[$team['team_name']] ?? null;
+            $externalId = $this->jsonTeamNames[$team['team_name']]
+                ?? $this->jsonTeamNamesNormalized[$this->normalizeTeamName($team['team_name'])]
+                ?? null;
 
-            // Check for existing team by country code (for non-placeholders)
-            $existing = null;
-            if ($countryCode && !$team['is_placeholder']) {
-                $existing = DB::table('teams')
-                    ->where('type', 'national')
-                    ->where('country', $countryCode)
-                    ->first();
-            }
-
-            if ($existing) {
-                $teamId = $existing->id;
-                $updateData = [];
-                if ($externalId && !$existing->external_id) {
-                    $updateData['external_source'] = ExternalData::defaultSource();
-                    $updateData['external_id'] = $externalId;
-                }
-                if (!$existing->colors) {
-                    $updateData['colors'] = json_encode(TeamColors::get($team['team_name']));
-                }
-                if (!empty($updateData)) {
-                    DB::table('teams')->where('id', $teamId)->update($updateData);
-                }
-            } else {
-                $teamId = Str::uuid()->toString();
-                DB::table('teams')->insert([
-                    'id' => $teamId,
-                    'external_source' => $externalId ? ExternalData::defaultSource() : null,
-                    'external_id' => $externalId,
-                    'type' => 'national',
+            if ($externalId && isset($jsonTeamIdsByExternalId[$externalId])) {
+                $teamId = $jsonTeamIdsByExternalId[$externalId];
+                DB::table('teams')->where('id', $teamId)->update([
                     'name' => $team['team_name'],
-                    'country' => $countryCode ?? 'TBD',
-                    'image' => null,
-                    'stadium_name' => null,
-                    'stadium_seats' => 0,
+                    'country' => $countryCode ?? ($this->jsonTeams[$externalId]['country'] ?? 'TBD'),
                     'colors' => json_encode(TeamColors::get($team['team_name'])),
                 ]);
+            } else {
+                $existing = null;
+                if ($countryCode && !$team['is_placeholder']) {
+                    $existing = DB::table('teams')
+                        ->where('type', 'national')
+                        ->where('country', $countryCode)
+                        ->first();
+                }
+
+                if ($existing) {
+                    $teamId = $existing->id;
+                    $updateData = [];
+                    if ($externalId && !$existing->external_id) {
+                        $updateData['external_source'] = ExternalData::defaultSource();
+                        $updateData['external_id'] = $externalId;
+                    }
+                    if (!$existing->colors) {
+                        $updateData['colors'] = json_encode(TeamColors::get($team['team_name']));
+                    }
+                    if (!empty($updateData)) {
+                        DB::table('teams')->where('id', $teamId)->update($updateData);
+                    }
+                } else {
+                    $teamId = Str::uuid()->toString();
+                    DB::table('teams')->insert([
+                        'id' => $teamId,
+                        'external_source' => $externalId ? ExternalData::defaultSource() : null,
+                        'external_id' => $externalId,
+                        'type' => 'national',
+                        'name' => $team['team_name'],
+                        'country' => $countryCode ?? 'TBD',
+                        'image' => null,
+                        'stadium_name' => null,
+                        'stadium_seats' => 0,
+                        'colors' => json_encode(TeamColors::get($team['team_name'])),
+                    ]);
+                }
             }
 
             // Link to competition
@@ -278,7 +336,8 @@ class SeedWorldCupData extends Command
             ];
         }
 
-        $this->line("  Teams seeded: " . count($teamMapping));
+        $this->line("  Tournament teams seeded: " . count($teamMapping));
+        $this->line("  Total national teams available: " . count($this->jsonTeams));
 
         return $teamMapping;
     }
@@ -569,6 +628,11 @@ class SeedWorldCupData extends Command
         }
 
         return $candidate->toDateString();
+    }
+
+    private function normalizeTeamName(string $value): string
+    {
+        return Str::lower(Str::slug(Str::ascii($value), ''));
     }
 
     private function normalizeCsvCell(string $value): string

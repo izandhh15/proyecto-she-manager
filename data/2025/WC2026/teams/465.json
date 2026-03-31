@@ -1,0 +1,343 @@
+{
+    "id": "465",
+    "externalId": "465",
+    "transfermarktId": "465",
+    "name": "Sweden",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "13929",
+            "externalId": "13929",
+            "name": "Tove Enblom",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1994-11-20",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "65k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "20624",
+            "externalId": "20624",
+            "name": "Jennifer Falk",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1993-04-26",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "21961",
+            "externalId": "21961",
+            "name": "Moa Öhman",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1998-06-25",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "75k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "7753",
+            "externalId": "7753",
+            "name": "Fridolina Rolfö",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1993-11-24",
+            "foot": "left",
+            "height": "1,78m",
+            "marketValue": "450k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "67220",
+            "externalId": "67220",
+            "name": "Bella Andersson",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2006-07-12",
+            "foot": "left",
+            "height": "1,83m",
+            "marketValue": "125k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "65685",
+            "externalId": "65685",
+            "name": "Smilla Holmberg",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2006-10-11",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "375k",
+            "contract": null
+        },
+        {
+            "id": "54745",
+            "externalId": "54745",
+            "name": "Sofia Reidy",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2004-03-15",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "85k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "45176",
+            "externalId": "45176",
+            "name": "Hanna Wijk",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2003-12-15",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "175k",
+            "contract": null
+        },
+        {
+            "id": "45175",
+            "externalId": "45175",
+            "name": "Elma Junttila Nelhage",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2003-05-21",
+            "foot": "left",
+            "height": "1,78m",
+            "marketValue": "80k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39369",
+            "externalId": "39369",
+            "name": "Hanna Lundkvist",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2002-07-17",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "120k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "37468",
+            "externalId": "37468",
+            "name": "Amanda Nildén",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1998-08-07",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "200k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "34924",
+            "externalId": "34924",
+            "name": "Hanna Bennison",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2002-10-16",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "260k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "27805",
+            "externalId": "27805",
+            "name": "Julia Zigiotti Olme",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Sweden",
+                "Italy"
+            ],
+            "dateOfBirth": "1997-12-24",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "175k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "53724",
+            "externalId": "53724",
+            "name": "Matilda Vinberg",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2003-03-16",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "90k",
+            "contract": null
+        },
+        {
+            "id": "22436",
+            "externalId": "22436",
+            "name": "Filippa Angeldahl",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1997-07-14",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "575k",
+            "contract": null
+        },
+        {
+            "id": "34921",
+            "externalId": "34921",
+            "name": "Evelyn Ijeh",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Sweden",
+                "Nigeria"
+            ],
+            "dateOfBirth": "2001-08-12",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "130k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "45047",
+            "externalId": "45047",
+            "name": "Rosa Kafaji",
+            "position": "Second Striker",
+            "age": 22,
+            "nationality": [
+                "Sweden",
+                "Iraq"
+            ],
+            "dateOfBirth": "2003-07-05",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "200k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "27808",
+            "externalId": "27808",
+            "name": "Rebecka Blomqvist",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1997-07-24",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "175k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "49077",
+            "externalId": "49077",
+            "name": "Monica Jusu Bah",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2003-05-16",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "70k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "22573",
+            "externalId": "22573",
+            "name": "Johanna Rytting Kaneryd",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "1997-02-12",
+            "foot": "both",
+            "height": "1,64m",
+            "marketValue": "540k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "68",
+            "externalId": "68",
+            "name": "Kosovare Asllani",
+            "position": "Centre-Forward",
+            "age": 36,
+            "nationality": [
+                "Sweden",
+                "Kosovo"
+            ],
+            "dateOfBirth": "1989-07-29",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "125k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "80528",
+            "externalId": "80528",
+            "name": "Felicia Schröder",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Sweden"
+            ],
+            "dateOfBirth": "2007-04-13",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "500k",
+            "contract": "2029-06-30"
+        }
+    ]
+}

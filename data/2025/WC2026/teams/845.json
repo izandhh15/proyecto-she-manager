@@ -1,0 +1,401 @@
+{
+    "id": "845",
+    "externalId": "845",
+    "transfermarktId": "845",
+    "name": "Cyprus",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "110447",
+            "externalId": "110447",
+            "name": "Galini Zachariou",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Cyprus",
+                "Greece"
+            ],
+            "dateOfBirth": "2004-08-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "39826",
+            "externalId": "39826",
+            "name": "Georgia Katsonouri",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2001-05-27",
+            "foot": "right",
+            "height": "Georgia Katsonouri CD Argual Mansilla B, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "44002",
+            "externalId": "44002",
+            "name": "Maria Matthaiou",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "1997-04-26",
+            "foot": "right",
+            "height": "Maria Matthaiou Athlone Town, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2026-11-30"
+        },
+        {
+            "id": "72387",
+            "externalId": "72387",
+            "name": "Antriana Mila",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2006-10-14",
+            "foot": "right",
+            "height": "Antriana Mila Apollon Ladies FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35259",
+            "externalId": "35259",
+            "name": "Steffi Hardy",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Cyprus",
+                "England"
+            ],
+            "dateOfBirth": "1996-06-29",
+            "foot": "left",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "39817",
+            "externalId": "39817",
+            "name": "Korina Paola Adamou",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2002-07-06",
+            "foot": "right",
+            "height": "Korina Paola Adaou Lakataia FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39821",
+            "externalId": "39821",
+            "name": "Chara Charalambous",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2000-03-24",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39829",
+            "externalId": "39829",
+            "name": "Chryso Michael",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2001-09-12",
+            "foot": "right",
+            "height": "Chryso Michael Aris Ladies FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "94951",
+            "externalId": "94951",
+            "name": "Andrea Cusick",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2006-12-21",
+            "foot": "right",
+            "height": "Andrea Cusick Aris Ladies FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "77037",
+            "externalId": "77037",
+            "name": "Chrystalla Charalambous",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "1994-03-12",
+            "foot": "right",
+            "height": "Chrystalla Charalabous Lakataia FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16725",
+            "externalId": "16725",
+            "name": "Marilena Georgiou",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "1996-06-19",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "46383",
+            "externalId": "46383",
+            "name": "Lia Siakalli",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2003-06-27",
+            "foot": "left",
+            "height": "Lia Siakalli Aris Ladies FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46379",
+            "externalId": "46379",
+            "name": "Thekla Andreou",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2002-06-12",
+            "foot": "right",
+            "height": "Thekla Andreou vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117713",
+            "externalId": "117713",
+            "name": "Mariam Simeou",
+            "position": "Central Midfield",
+            "age": 15,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2010-12-13",
+            "foot": "right",
+            "height": "Maria Sieou unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117712",
+            "externalId": "117712",
+            "name": "Eleftheria Poulli",
+            "position": "Central Midfield",
+            "age": 15,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2010-12-01",
+            "foot": "right",
+            "height": "Eleftheria Poulli Pafos FC Ladies, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "99353",
+            "externalId": "99353",
+            "name": "Sophia McBeth",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2006-09-15",
+            "foot": "right",
+            "height": "Sophia McBeth Aris Ladies FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "51162",
+            "externalId": "51162",
+            "name": "Maria Panagiotou",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2005-02-05",
+            "foot": "right",
+            "height": "Maria Panagiotou AEK, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46382",
+            "externalId": "46382",
+            "name": "Eirini Michail",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2002-07-12",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44007",
+            "externalId": "44007",
+            "name": "Filippa Savva",
+            "position": "Defensive Midfield",
+            "age": 26,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "1999-05-28",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "44006",
+            "externalId": "44006",
+            "name": "Sara Papadopoulou",
+            "position": "Central Midfield",
+            "age": 38,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "1987-10-16",
+            "foot": "right",
+            "height": "Sara Papadopoulou Oonia Nikosia, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39820",
+            "externalId": "39820",
+            "name": "Maria Astaniou",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2002-04-18",
+            "foot": "right",
+            "height": "Maria Astaniou Oonia Nikosia, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36254",
+            "externalId": "36254",
+            "name": "Elena Aristodimou",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2002-01-25",
+            "foot": "right",
+            "height": "1,53m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "20279",
+            "externalId": "20279",
+            "name": "Lou Chrysostomou",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "1992-10-10",
+            "foot": "right",
+            "height": "Lou Chrysostoou Aris Ladies FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72390",
+            "externalId": "72390",
+            "name": "Marilia Constantinou",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2006-07-20",
+            "foot": "right",
+            "height": "Marilia Constantinou Oklahoa Wesleyan Eagles, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117711",
+            "externalId": "117711",
+            "name": "Antriana Christofi",
+            "position": "Centre-Forward",
+            "age": 16,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "2009-08-04",
+            "foot": "right",
+            "height": "Antriana Christofi Pafos FC Ladies, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "20283",
+            "externalId": "20283",
+            "name": "Andri Violari",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Cyprus"
+            ],
+            "dateOfBirth": "1996-09-27",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

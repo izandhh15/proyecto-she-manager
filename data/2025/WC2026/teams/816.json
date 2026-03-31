@@ -1,0 +1,358 @@
+{
+    "id": "816",
+    "externalId": "816",
+    "transfermarktId": "816",
+    "name": "Hungary",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "84257",
+            "externalId": "84257",
+            "name": "Lauren Brzykcy",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Hungary",
+                "United States"
+            ],
+            "dateOfBirth": "1999-11-08",
+            "foot": "left",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "28227",
+            "externalId": "28227",
+            "name": "Barbara Bíró",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "1995-05-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39886",
+            "externalId": "39886",
+            "name": "Anna Terestyényi",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2001-03-22",
+            "foot": "right",
+            "height": "Anna Terestyényi Újpest FC, Goalkeeperm",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "61793",
+            "externalId": "61793",
+            "name": "Georgina Pataki",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Hungary",
+                "Serbia"
+            ],
+            "dateOfBirth": "2004-03-13",
+            "foot": "right",
+            "height": "Georgina Pataki MTK Budapest, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "51933",
+            "externalId": "51933",
+            "name": "Hanna Németh",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "1998-09-17",
+            "foot": "both",
+            "height": "1,80m",
+            "marketValue": "70k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "42721",
+            "externalId": "42721",
+            "name": "Laura Palakovics",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2002-04-16",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2025-12-31"
+        },
+        {
+            "id": "42719",
+            "externalId": "42719",
+            "name": "Beatrix Fördős",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2002-01-07",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "65k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40154",
+            "externalId": "40154",
+            "name": "Virág Nagy",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2001-07-04",
+            "foot": "right",
+            "height": "Virág Nagy OH Leuven Woen, Defencem",
+            "marketValue": "15k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "40147",
+            "externalId": "40147",
+            "name": "Laura Kovács",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2000-06-15",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40157",
+            "externalId": "40157",
+            "name": "Sára Pusztai",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2001-11-16",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "8759",
+            "externalId": "8759",
+            "name": "Henrietta Csiszár",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "1994-05-15",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "39570",
+            "externalId": "39570",
+            "name": "Anna Csiki",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "1999-11-14",
+            "foot": "left",
+            "height": "1,79m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "26816",
+            "externalId": "26816",
+            "name": "Diána Csányi",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "1998-03-20",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47408",
+            "externalId": "47408",
+            "name": "Csilla Savanya",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2004-04-17",
+            "foot": "left",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48017",
+            "externalId": "48017",
+            "name": "Fanni Nagy",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2003-01-03",
+            "foot": "right",
+            "height": "Fanni Nagy SKN St. Pölten Frauen, Midfieldm",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "40194",
+            "externalId": "40194",
+            "name": "Viktória Nagy",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Hungary",
+                "Slovakia"
+            ],
+            "dateOfBirth": "2001-06-15",
+            "foot": "right",
+            "height": "Viktória Nagy Ferencvárosi TC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73123",
+            "externalId": "73123",
+            "name": "Borbála Vincze",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2007-07-22",
+            "foot": "right",
+            "height": "Borbála Vincze FC Zürich, Strikerm",
+            "marketValue": "50k",
+            "contract": "2030-06-30"
+        },
+        {
+            "id": "48145",
+            "externalId": "48145",
+            "name": "Zsófia Mayer",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2005-01-05",
+            "foot": "right",
+            "height": "Zsófia Mayer Puskás Akadéia FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47405",
+            "externalId": "47405",
+            "name": "Emőke Pápai",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2003-06-24",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "75k",
+            "contract": null
+        },
+        {
+            "id": "44597",
+            "externalId": "44597",
+            "name": "Dóra Süle",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "1998-09-20",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40156",
+            "externalId": "40156",
+            "name": "Brigitta Pulins",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Hungary",
+                "Canada"
+            ],
+            "dateOfBirth": "2000-03-15",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "20k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "33420",
+            "externalId": "33420",
+            "name": "Vanessza Nagy",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "2002-02-13",
+            "foot": "left",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "19133",
+            "externalId": "19133",
+            "name": "Zsanett Kaján",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Hungary"
+            ],
+            "dateOfBirth": "1997-09-16",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "30k",
+            "contract": null
+        }
+    ]
+}

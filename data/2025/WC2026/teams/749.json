@@ -1,0 +1,310 @@
+{
+    "id": "749",
+    "externalId": "749",
+    "transfermarktId": "749",
+    "name": "Slovenia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "26849",
+            "externalId": "26849",
+            "name": "Sara Nemet",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1998-02-06",
+            "foot": "right",
+            "height": "Sara Neet ŽNK Mura, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47326",
+            "externalId": "47326",
+            "name": "Iva Kocijan",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2004-05-10",
+            "foot": "right",
+            "height": "Iva Kocijan ŽNK Radolje, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33602",
+            "externalId": "33602",
+            "name": "Zala Meršnik",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2001-06-07",
+            "foot": "both",
+            "height": "1,79m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "63419",
+            "externalId": "63419",
+            "name": "Tinkara Testen",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2006-01-13",
+            "foot": "right",
+            "height": "Tinkara Testen SL Benfica B, Defencem",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "14850",
+            "externalId": "14850",
+            "name": "Kaja Eržen",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1994-08-21",
+            "foot": "right",
+            "height": "Kaja Eržen Ternana Woen, Defencem",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "53170",
+            "externalId": "53170",
+            "name": "Izabela Križaj",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2000-05-11",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "33600",
+            "externalId": "33600",
+            "name": "Sara Agrež",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2000-12-09",
+            "foot": "left",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35311",
+            "externalId": "35311",
+            "name": "Lana Golob",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1999-10-26",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "30k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "35316",
+            "externalId": "35316",
+            "name": "Kaja Korošec",
+            "position": "Defensive Midfield",
+            "age": 24,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2001-11-17",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "150k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "63415",
+            "externalId": "63415",
+            "name": "Zara Kramžar",
+            "position": "Attacking Midfield",
+            "age": 20,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2006-01-10",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "95k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "36147",
+            "externalId": "36147",
+            "name": "Zala Vindišar",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2000-05-31",
+            "foot": "right",
+            "height": "Zala Vindišar ŽNK Mura, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35601",
+            "externalId": "35601",
+            "name": "Mirjam Kastelec",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2002-09-10",
+            "foot": "right",
+            "height": "Mirja Kastelec ŽNK Ljubljana, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "4464",
+            "externalId": "4464",
+            "name": "Dominika Čonč",
+            "position": "Defensive Midfield",
+            "age": 33,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1993-01-01",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "20364",
+            "externalId": "20364",
+            "name": "Sara Ketiš",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1996-09-16",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "13k",
+            "contract": null
+        },
+        {
+            "id": "11672",
+            "externalId": "11672",
+            "name": "Mateja Zver",
+            "position": "Central Midfield",
+            "age": 38,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1988-03-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "15k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35317",
+            "externalId": "35317",
+            "name": "Zala Kuštrin",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1998-06-18",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "45k",
+            "contract": null
+        },
+        {
+            "id": "38130",
+            "externalId": "38130",
+            "name": "Maja Sternad",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Slovenia",
+                "Germany"
+            ],
+            "dateOfBirth": "2003-12-28",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "47325",
+            "externalId": "47325",
+            "name": "Nina Kajzba",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2004-04-04",
+            "foot": "right",
+            "height": "Nina Kajzba Standard Feina, Strikerm",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "32652",
+            "externalId": "32652",
+            "name": "Adrijana Mori",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "2000-08-17",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "30537",
+            "externalId": "30537",
+            "name": "Lara Prašnikar",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Slovenia"
+            ],
+            "dateOfBirth": "1998-08-08",
+            "foot": "both",
+            "height": "1,71m",
+            "marketValue": "190k",
+            "contract": "2027-12-31"
+        }
+    ]
+}

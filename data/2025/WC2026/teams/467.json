@@ -2,7 +2,7 @@
     "id": "467",
     "externalId": "467",
     "transfermarktId": "467",
-    "name": "South Korea",
+    "name": "Korea, South",
     "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
     "players": [
         {
@@ -60,7 +60,7 @@
                 "Korea, South"
             ],
             "dateOfBirth": "1998-10-07",
-            "foot": "left",
+            "foot": "right",
             "height": "1,65m",
             "marketValue": "50k",
             "contract": null
@@ -70,12 +70,12 @@
             "externalId": "44044",
             "name": "Hye-jeong Park",
             "position": "Centre-Back",
-            "age": 25,
+            "age": 26,
             "nationality": [
                 "Korea, South"
             ],
             "dateOfBirth": "2000-03-30",
-            "foot": "left",
+            "foot": "right",
             "height": "1,62m",
             "marketValue": "50k",
             "contract": null
@@ -90,7 +90,7 @@
                 "Korea, South"
             ],
             "dateOfBirth": "1999-10-09",
-            "foot": "left",
+            "foot": "right",
             "height": "1,70m",
             "marketValue": "50k",
             "contract": null
@@ -105,7 +105,7 @@
                 "Korea, South"
             ],
             "dateOfBirth": "1997-01-24",
-            "foot": "left",
+            "foot": "right",
             "height": "1,70m",
             "marketValue": "50k",
             "contract": null
@@ -135,7 +135,7 @@
                 "Korea, South"
             ],
             "dateOfBirth": "2000-06-03",
-            "foot": "left",
+            "foot": "right",
             "height": "1,71m",
             "marketValue": "50k",
             "contract": null
@@ -180,7 +180,7 @@
                 "Korea, South"
             ],
             "dateOfBirth": "1999-10-29",
-            "foot": "left",
+            "foot": "right",
             "height": "1,70m",
             "marketValue": "50k",
             "contract": null
@@ -195,7 +195,7 @@
                 "Korea, South"
             ],
             "dateOfBirth": "2003-08-21",
-            "foot": "left",
+            "foot": "right",
             "height": "1,70m",
             "marketValue": "50k",
             "contract": null
@@ -386,7 +386,7 @@
             "externalId": "38076",
             "name": "Eun-young Lee",
             "position": "Central Midfield",
-            "age": 23,
+            "age": 24,
             "nationality": [
                 "Korea, South"
             ],

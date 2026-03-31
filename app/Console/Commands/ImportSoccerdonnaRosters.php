@@ -119,6 +119,7 @@ class ImportSoccerdonnaRosters extends Command
             $this->line(sprintf('  [%d/%d] %s', $index + 1, count($clubRefs), $clubRef['name']));
             $players = $this->fetchClubPlayers($clubRef['squad_url']);
             $existingClub = $existingByKey->get($this->normalizeName($clubRef['name']));
+            $stadiumData = $this->fetchClubStadiumData($clubRef['stadium_url']);
 
             $clubs[] = [
                 'id' => $clubRef['id'],
@@ -126,8 +127,8 @@ class ImportSoccerdonnaRosters extends Command
                 'transfermarktId' => $clubRef['id'],
                 'name' => $clubRef['name'],
                 'image' => $clubRef['image'] ?? ($existingClub['image'] ?? null),
-                'stadiumName' => $existingClub['stadiumName'] ?? null,
-                'stadiumSeats' => $existingClub['stadiumSeats'] ?? null,
+                'stadiumName' => $stadiumData['name'] ?? ($existingClub['stadiumName'] ?? null),
+                'stadiumSeats' => $stadiumData['capacity'] ?? ($existingClub['stadiumSeats'] ?? null),
                 'players' => $players,
                 '_market_value_total_eur' => $clubRef['market_value_total_eur'],
                 '_market_value_average_eur' => $clubRef['market_value_average_eur'],
@@ -158,7 +159,7 @@ class ImportSoccerdonnaRosters extends Command
     }
 
     /**
-     * @return array<int, array{id: string, name: string, image: ?string, squad_url: string, market_value_total_eur: ?int, market_value_average_eur: ?int}>
+     * @return array<int, array{id: string, name: string, image: ?string, squad_url: string, stadium_url: string, market_value_total_eur: ?int, market_value_average_eur: ?int}>
      */
     private function fetchCompetitionClubRefs(string $url): array
     {
@@ -198,6 +199,7 @@ class ImportSoccerdonnaRosters extends Command
                     ? $this->absoluteUrl($crest->attributes->getNamedItem('src')->nodeValue)
                     : null,
                 'squad_url' => $this->absoluteUrl(str_replace('/startseite/', '/kader/', $href)),
+                'stadium_url' => $this->absoluteUrl(str_replace('/startseite/', '/stadion/', $href)),
                 'market_value_total_eur' => $cells->length >= 5 ? $this->parseEuroAmount($cells->item(4)->textContent) : null,
                 'market_value_average_eur' => $cells->length >= 6 ? $this->parseEuroAmount($cells->item(5)->textContent) : null,
             ];
@@ -265,6 +267,46 @@ class ImportSoccerdonnaRosters extends Command
         }
 
         return $players;
+    }
+
+    /**
+     * @return array{name?: string, capacity?: string}
+     */
+    private function fetchClubStadiumData(?string $url): array
+    {
+        if ($url === null || $url === '') {
+            return [];
+        }
+
+        try {
+            $xpath = $this->loadXPath($this->fetchHtml($url));
+            $table = $xpath->query("//td[normalize-space()='Stadium name:']/ancestor::table[1]")->item(0);
+
+            if (! $table) {
+                return [];
+            }
+
+            $stadiumName = $this->cleanText(
+                $xpath->query(".//tr[td[normalize-space()='Stadium name:']]/td[last()]", $table)->item(0)?->textContent ?? ''
+            );
+
+            $capacity = $this->cleanText(
+                $xpath->query(".//tr[td[normalize-space()='Total capacity:']]/td[last()]", $table)->item(0)?->textContent ?? ''
+            );
+
+            if ($capacity === '') {
+                $capacity = $this->cleanText(
+                    $xpath->query(".//tr[td[normalize-space()='Seats:']]/td[last()]", $table)->item(0)?->textContent ?? ''
+                );
+            }
+
+            return array_filter([
+                'name' => $stadiumName !== '' ? $stadiumName : null,
+                'capacity' => $this->normalizeStadiumCapacity($capacity),
+            ], static fn ($value) => $value !== null);
+        } catch (\Throwable) {
+            return [];
+        }
     }
 
     /**
@@ -479,6 +521,18 @@ class ImportSoccerdonnaRosters extends Command
     private function normalizeMarketValue(?string $value): ?string
     {
         return $this->formatMarketValueEuros($this->parseEuroAmount($value));
+    }
+
+    private function normalizeStadiumCapacity(?string $value): ?string
+    {
+        $value = $this->cleanText($value);
+        if ($value === '' || $value === '-' || $value === '?') {
+            return null;
+        }
+
+        $digits = preg_replace('/\D+/', '', $value);
+
+        return $digits !== '' ? $digits : null;
     }
 
     private function mapPosition(?string ...$candidates): string

@@ -46,6 +46,7 @@ class CountryCodeMapper
         'Bosnia and Herzegovina' => 'ba',
         'Bosnia-Herzegovina' => 'ba',
         'Botswana' => 'bw',
+        'Botsuana' => 'bw',
         'Bouvet Island' => 'bv',
         'Brazil' => 'br',
         'British Indian Ocean Territory' => 'io',
@@ -75,7 +76,9 @@ class CountryCodeMapper
         'Congo, Democratic Republic of the' => 'cd',
         'DR Congo' => 'cd',
         'Democratic Republic of Congo' => 'cd',
+        'Congo DR' => 'cd',
         'Cook Islands' => 'ck',
+        'Cookinseln' => 'ck',
         'Costa Rica' => 'cr',
         "CÃ´te d'Ivoire" => 'ci',
         "Cote d'Ivoire" => 'ci',
@@ -109,6 +112,7 @@ class CountryCodeMapper
         'Falkland Islands' => 'fk',
         'Falkland Islands (Malvinas)' => 'fk',
         'Faroe Islands' => 'fo',
+        'Faroe Island' => 'fo',
         'Fiji' => 'fj',
         'Finland' => 'fi',
         'France' => 'fr',
@@ -143,6 +147,7 @@ class CountryCodeMapper
         'Vatican City' => 'va',
         'Honduras' => 'hn',
         'Hong Kong' => 'hk',
+        'Hongkong' => 'hk',
         'Hungary' => 'hu',
 
         // I
@@ -171,6 +176,7 @@ class CountryCodeMapper
         'Kiribati' => 'ki',
         'Korea, Democratic People\'s Republic of' => 'kp',
         'North Korea' => 'kp',
+        'Korea, North' => 'kp',
         'Korea, Republic of' => 'kr',
         'South Korea' => 'kr',
         'Korea, South' => 'kr',
@@ -226,6 +232,7 @@ class CountryCodeMapper
         'Netherlands, Kingdom of the' => 'nl',
         'Holland' => 'nl',
         'New Caledonia' => 'nc',
+        'Neukaledonien' => 'nc',
         'New Zealand' => 'nz',
         'Nicaragua' => 'ni',
         'Niger' => 'ne',
@@ -245,6 +252,7 @@ class CountryCodeMapper
         'Palau' => 'pw',
         'Palestine' => 'ps',
         'Palestine, State of' => 'ps',
+        'Palästina' => 'ps',
         'Panama' => 'pa',
         'Papua New Guinea' => 'pg',
         'Paraguay' => 'py',
@@ -366,11 +374,20 @@ class CountryCodeMapper
         // Football-specific: UK constituent countries (have separate football teams)
         'England' => 'gb-eng',
         'Scotland' => 'gb-sct',
+        'Scottland' => 'gb-sct',
         'Wales' => 'gb-wls',
         'Northern Ireland' => 'gb-nir',
 
         // Kosovo (not in ISO but recognized by FIFA)
         'Kosovo' => 'xk',
+        'American Virgin Islands' => 'vi',
+        'Chinese Taipei (Taiwan)' => 'tw',
+        'Southern Sudan' => 'ss',
+        'St. Kitts &Nevis' => 'kn',
+        'St. Vincent & Grenadinen' => 'vc',
+        'Tahiti' => 'pf',
+        'Turks- and Caicosinseln' => 'tc',
+        'Türkiye' => 'tr',
     ];
 
     /**
@@ -379,6 +396,18 @@ class CountryCodeMapper
     public static function toCode(string $countryName): ?string
     {
         return self::$countryToCode[$countryName] ?? null;
+    }
+
+    /**
+     * Return the translated country name when available, otherwise keep the
+     * original source name instead of exposing the translation key.
+     */
+    public static function displayName(string $countryName): string
+    {
+        $translationKey = "countries.{$countryName}";
+        $translated = __($translationKey);
+
+        return $translated === $translationKey ? $countryName : $translated;
     }
 
     /**

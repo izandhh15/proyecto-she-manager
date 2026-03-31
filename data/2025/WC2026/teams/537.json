@@ -1,0 +1,340 @@
+{
+    "id": "537",
+    "externalId": "537",
+    "transfermarktId": "537",
+    "name": "Georgia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "31642",
+            "externalId": "31642",
+            "name": "Teona Sukhashvili",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "1994-02-06",
+            "foot": "right",
+            "height": "Teona Sukhashvili WFC Lusso Nike, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31754",
+            "externalId": "31754",
+            "name": "Tatia Gabunia",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2000-07-07",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63169",
+            "externalId": "63169",
+            "name": "Eka Tabagari",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2003-10-22",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44488",
+            "externalId": "44488",
+            "name": "Svetlana Gabelaia",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2002-04-19",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "7592",
+            "externalId": "7592",
+            "name": "Tamari Tatuashvili",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "1991-04-12",
+            "foot": "left",
+            "height": "Taari Tatuashvili WFC Lusso Nike, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31661",
+            "externalId": "31661",
+            "name": "Nino Chkhartishvili",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "1999-01-25",
+            "foot": "right",
+            "height": "Nino Chkhartishvili KSK Lanchkhuti, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32622",
+            "externalId": "32622",
+            "name": "Salome Gasviani",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Georgia",
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2001-01-30",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63599",
+            "externalId": "63599",
+            "name": "Elene Enjibadze",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2005-02-12",
+            "foot": "left",
+            "height": "Elene Enjibadze WFC Lusso Nike, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41090",
+            "externalId": "41090",
+            "name": "Ani Akobidze",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2003-02-12",
+            "foot": "right",
+            "height": "Ani Akobidze WFC Lusso Nike, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41102",
+            "externalId": "41102",
+            "name": "Gvantsa Kadagishvili",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2002-05-28",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44491",
+            "externalId": "44491",
+            "name": "Mariam Kalandadze",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2000-12-19",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41106",
+            "externalId": "41106",
+            "name": "Sopiko Narsia",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2000-05-03",
+            "foot": "right",
+            "height": "Sopiko Narsia WFC Lusso Nike, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84850",
+            "externalId": "84850",
+            "name": "Keso Metonidze",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2008-11-21",
+            "foot": "right",
+            "height": "Keso Metonidze KSK Racha, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71033",
+            "externalId": "71033",
+            "name": "Natia Jojua",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2007-03-30",
+            "foot": "right",
+            "height": "Natia Jojua WFC Lusso Nike, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71032",
+            "externalId": "71032",
+            "name": "Tinatin Ambalia",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2006-11-03",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42717",
+            "externalId": "42717",
+            "name": "Natia Danelia",
+            "position": "Defensive Midfield",
+            "age": 22,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2003-09-23",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41092",
+            "externalId": "41092",
+            "name": "Maiko Bebia",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2003-05-20",
+            "foot": "both",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "32641",
+            "externalId": "32641",
+            "name": "Irina Khaburdzania",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "1999-10-25",
+            "foot": "right",
+            "height": "Irina Khaburdzania WFC Lusso Nike, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "21578",
+            "externalId": "21578",
+            "name": "Ana Cheminava",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "1996-02-01",
+            "foot": "both",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "15292",
+            "externalId": "15292",
+            "name": "Nino Pasikashvili",
+            "position": "Defensive Midfield",
+            "age": 34,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "1991-12-04",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41105",
+            "externalId": "41105",
+            "name": "Lizi Mtskerashvili",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "2003-02-17",
+            "foot": "right",
+            "height": "Lizi Mtskerashvili WFC Lusso Nike, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "21576",
+            "externalId": "21576",
+            "name": "Teona Bakradze",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Georgia"
+            ],
+            "dateOfBirth": "1996-01-24",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

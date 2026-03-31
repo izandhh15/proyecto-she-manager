@@ -1,0 +1,39 @@
+{
+    "id": "5578",
+    "externalId": "5578",
+    "transfermarktId": "5578",
+    "name": "Afghanistan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "51484",
+            "externalId": "51484",
+            "name": "Mena Ahmadi",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Afghanistan"
+            ],
+            "dateOfBirth": "1997-03-20",
+            "foot": "right",
+            "height": "Mena Ahadi vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92764",
+            "externalId": "92764",
+            "name": "Aziza Zada",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Afghanistan"
+            ],
+            "dateOfBirth": "2005-04-30",
+            "foot": "right",
+            "height": "Aziza Zada Associação Desportiva de Esposende, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

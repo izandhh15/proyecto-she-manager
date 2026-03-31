@@ -1,0 +1,475 @@
+{
+    "id": "523",
+    "externalId": "523",
+    "transfermarktId": "523",
+    "name": "Bulgaria",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "47416",
+            "externalId": "47416",
+            "name": "Milena Karakoleva",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2004-04-03",
+            "foot": "right",
+            "height": "Milena Karakoleva FC Sportika Blagoevgrad, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117490",
+            "externalId": "117490",
+            "name": "Gabriela Genova",
+            "position": "Goalkeeper",
+            "age": 17,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2008-06-13",
+            "foot": "right",
+            "height": "Gabriela Genova PFC Ludogorets Razgrad, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81549",
+            "externalId": "81549",
+            "name": "Martina Ilieva",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2007-02-08",
+            "foot": "right",
+            "height": "Martina Ilieva PFC Ludogorets Razgrad, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32629",
+            "externalId": "32629",
+            "name": "Yanitsa Ivanova",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2001-01-05",
+            "foot": "right",
+            "height": "Yanitsa Ivanova NSA Sofia, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40069",
+            "externalId": "40069",
+            "name": "Silviya Kefalova",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2001-06-06",
+            "foot": "right",
+            "height": "Silviya Kefalova NSA Sofia, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64047",
+            "externalId": "64047",
+            "name": "Yoana Stankova",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2005-08-20",
+            "foot": "right",
+            "height": "Yoana Stankova FC Luezzane Feinile, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64039",
+            "externalId": "64039",
+            "name": "Bianka Demirova",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2006-07-08",
+            "foot": "right",
+            "height": "Bianka Deirova PFC Ludogorets Razgrad, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10069",
+            "externalId": "10069",
+            "name": "Nikoleta Boycheva",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1994-08-20",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47491",
+            "externalId": "47491",
+            "name": "Kristiana Karaivanova",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2004-07-11",
+            "foot": "right",
+            "height": "Kristiana Karaivanova Frosinone Calcio, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10597",
+            "externalId": "10597",
+            "name": "Simona Rumyanova Stefanova",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1993-09-03",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "17892",
+            "externalId": "17892",
+            "name": "Veronika Gotseva",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1993-05-29",
+            "foot": "right",
+            "height": "Veronika Gotseva vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "115446",
+            "externalId": "115446",
+            "name": "Yoanna Popova",
+            "position": "Central Midfield",
+            "age": 15,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2010-04-07",
+            "foot": "right",
+            "height": "Yoanna Popova NSA Sofia, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101634",
+            "externalId": "101634",
+            "name": "Yana Yordanova",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2003-02-20",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "99617",
+            "externalId": "99617",
+            "name": "Teodora Todorova",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2006-09-19",
+            "foot": "right",
+            "height": "Teodora Todorova PFC Ludogorets Razgrad, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71026",
+            "externalId": "71026",
+            "name": "Eva Atanasova",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2005-06-05",
+            "foot": "right",
+            "height": "Eva Atanasova PFC Ludogorets Razgrad, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64045",
+            "externalId": "64045",
+            "name": "Rona Mihaylova",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2006-10-15",
+            "foot": "right",
+            "height": "Rona Mihaylova NSA Sofia, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "62678",
+            "externalId": "62678",
+            "name": "Nadezhda Ivanova",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2004-12-17",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41641",
+            "externalId": "41641",
+            "name": "İsmigül Yalçıner",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Bulgaria",
+                "Turkey"
+            ],
+            "dateOfBirth": "1994-10-20",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "40428",
+            "externalId": "40428",
+            "name": "Zdravka Parapunova",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2003-08-06",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36056",
+            "externalId": "36056",
+            "name": "Leonora Zheleva",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1999-05-13",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32655",
+            "externalId": "32655",
+            "name": "Ivana Naydenova",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2001-12-21",
+            "foot": "right",
+            "height": "Ivana Naydenova Frosinone Calcio, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31057",
+            "externalId": "31057",
+            "name": "Lora Petrova",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1998-10-12",
+            "foot": "right",
+            "height": "Lora Petrova Res Donna Roa FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47489",
+            "externalId": "47489",
+            "name": "Bozhidara Ivanova",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2004-11-10",
+            "foot": "right",
+            "height": "Bozhidara Ivanova NSA Sofia, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40427",
+            "externalId": "40427",
+            "name": "Dimitra Ivanova",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2004-01-26",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40072",
+            "externalId": "40072",
+            "name": "Aleksandra Yaneva",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2001-02-24",
+            "foot": "right",
+            "height": "Aleksandra Yaneva Swieqi United FC, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64050",
+            "externalId": "64050",
+            "name": "Polina Demirova",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2006-07-08",
+            "foot": "right",
+            "height": "Polina Deirova PFC Ludogorets Razgrad, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65243",
+            "externalId": "65243",
+            "name": "Polina Rasina",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1999-03-12",
+            "foot": "right",
+            "height": "Polina Rasina NSA Sofia, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40071",
+            "externalId": "40071",
+            "name": "Antonina Shopska",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2001-01-17",
+            "foot": "right",
+            "height": "Antonina Shopska ŽFK Kaenica Sasa, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81546",
+            "externalId": "81546",
+            "name": "Nikol Dimanova",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "2007-07-25",
+            "foot": "right",
+            "height": "Nikol Dianova Soroksár SC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16630",
+            "externalId": "16630",
+            "name": "Evdokia Popadinova",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1996-10-26",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "28819",
+            "externalId": "28819",
+            "name": "Yuliana Aleksandrova",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Bulgaria"
+            ],
+            "dateOfBirth": "1999-02-21",
+            "foot": "right",
+            "height": "Yuliana Aleksandrova NSA Sofia, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

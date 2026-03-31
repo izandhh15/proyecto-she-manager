@@ -1,0 +1,358 @@
+{
+    "id": "500",
+    "externalId": "500",
+    "transfermarktId": "500",
+    "name": "Azerbaijan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "18109",
+            "externalId": "18109",
+            "name": "Aytaj Sharifova",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "1997-01-08",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "46120",
+            "externalId": "46120",
+            "name": "Nargiz Aliyeva",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2002-03-22",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "18106",
+            "externalId": "18106",
+            "name": "Günay Ismayilova",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "1998-03-08",
+            "foot": "left",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41607",
+            "externalId": "41607",
+            "name": "Yeliz Açar",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Azerbaijan",
+                "Turkey"
+            ],
+            "dateOfBirth": "1997-12-19",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2027-05-31"
+        },
+        {
+            "id": "65161",
+            "externalId": "65161",
+            "name": "Aydan Hasanova",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2006-01-26",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47344",
+            "externalId": "47344",
+            "name": "Milana Rahimova",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2004-04-29",
+            "foot": "left",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47341",
+            "externalId": "47341",
+            "name": "Alina Nahmadova",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2003-11-03",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47340",
+            "externalId": "47340",
+            "name": "Aysun Muradova",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2003-11-18",
+            "foot": "left",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44503",
+            "externalId": "44503",
+            "name": "Nigar Mirzaliyeva",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2002-04-28",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "25k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "44502",
+            "externalId": "44502",
+            "name": "Vusala Hajiyeva",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "1999-10-03",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "40720",
+            "externalId": "40720",
+            "name": "Nargiz Hajiyeva",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Azerbaijan",
+                "Turkey"
+            ],
+            "dateOfBirth": "1991-04-12",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39844",
+            "externalId": "39844",
+            "name": "Ayshan Ahmadova",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2000-05-05",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "18142",
+            "externalId": "18142",
+            "name": "Kamilla Mammadova",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "1996-08-31",
+            "foot": "both",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41581",
+            "externalId": "41581",
+            "name": "Kristina Bakarandze",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Azerbaijan",
+                "Georgia"
+            ],
+            "dateOfBirth": "1998-05-19",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40696",
+            "externalId": "40696",
+            "name": "Peritan Bozdağ",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Azerbaijan",
+                "Turkey"
+            ],
+            "dateOfBirth": "1999-06-15",
+            "foot": "both",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "39855",
+            "externalId": "39855",
+            "name": "Vusala Seyfaddinova",
+            "position": "Defensive Midfield",
+            "age": 26,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2000-03-11",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34988",
+            "externalId": "34988",
+            "name": "Sevinj Jafarzade",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "1994-06-01",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "34982",
+            "externalId": "34982",
+            "name": "Mana Mollayeva",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "1998-03-19",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18140",
+            "externalId": "18140",
+            "name": "Zhala Mahsimova",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "1996-09-02",
+            "foot": "both",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "92598",
+            "externalId": "92598",
+            "name": "Madina Jurugova",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2007-06-29",
+            "foot": "right",
+            "height": "Madina Jurugova Neftçi PFK, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46585",
+            "externalId": "46585",
+            "name": "Joshguna Aliyeva",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2002-03-22",
+            "foot": "left",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84838",
+            "externalId": "84838",
+            "name": "Khanim Asadova",
+            "position": "Centre-Forward",
+            "age": 17,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2008-08-20",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84839",
+            "externalId": "84839",
+            "name": "Ayshan Salamzada",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Azerbaijan"
+            ],
+            "dateOfBirth": "2008-02-04",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

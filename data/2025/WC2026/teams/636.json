@@ -1,0 +1,219 @@
+{
+    "id": "636",
+    "externalId": "636",
+    "transfermarktId": "636",
+    "name": "Kenya",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "45464",
+            "externalId": "45464",
+            "name": "Judith Osimbo",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Judith Osibo unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "57008",
+            "externalId": "57008",
+            "name": "Annette Kundu",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1996-12-17",
+            "foot": "right",
+            "height": "Annette Kundu AEL Liassol, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66560",
+            "externalId": "66560",
+            "name": "Lilian Onyango",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1999-06-13",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "15k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "57007",
+            "externalId": "57007",
+            "name": "Ruth Ingosi",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1993-12-19",
+            "foot": "right",
+            "height": "Ruth Ingosi vereinslos, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66545",
+            "externalId": "66545",
+            "name": "Norah Anne",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "2002-09-15",
+            "foot": "right",
+            "height": "Norah Anne Vihiga Queens FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66552",
+            "externalId": "66552",
+            "name": "Enez Mango",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1993-07-01",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "104311",
+            "externalId": "104311",
+            "name": "Elizabeth Ochaka",
+            "position": "Centre-Back",
+            "age": 16,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "2009-06-09",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45462",
+            "externalId": "45462",
+            "name": "Vivian Nasaka",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1999-12-19",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66546",
+            "externalId": "66546",
+            "name": "Mercyline Anyango",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1995-04-30",
+            "foot": "right",
+            "height": "Mercyline Anyango vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66556",
+            "externalId": "66556",
+            "name": "Lorna Nyarinda",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "2000-10-13",
+            "foot": "right",
+            "height": "Lorna Nyarinda Kenya Police Bullets, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66565",
+            "externalId": "66565",
+            "name": "Merceline Wayodi",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1995-07-05",
+            "foot": "right",
+            "height": "Merceline Wayodi Vihiga Queens FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45468",
+            "externalId": "45468",
+            "name": "Jereko",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "1997-09-04",
+            "foot": "right",
+            "height": "Jereko HB Køge, Midfieldm",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "58743",
+            "externalId": "58743",
+            "name": "Elizabeth Wambui",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65002",
+            "externalId": "65002",
+            "name": "Violet Nanjala",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Kenya"
+            ],
+            "dateOfBirth": "2000-01-20",
+            "foot": "right",
+            "height": "Violet Nanjala Vihiga Queens FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

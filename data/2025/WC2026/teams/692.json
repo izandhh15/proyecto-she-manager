@@ -1,0 +1,327 @@
+{
+    "id": "692",
+    "externalId": "692",
+    "transfermarktId": "692",
+    "name": "Neukaledonien",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "38037",
+            "externalId": "38037",
+            "name": "Lorenza Hnamano",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2002-09-29",
+            "foot": "right",
+            "height": "Lorenza Hnaano FCN Gaïtcha, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74895",
+            "externalId": "74895",
+            "name": "Irène Nigote",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "1995-10-10",
+            "foot": "right",
+            "height": "Irène Nigote AS Acadéie Féinine, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74901",
+            "externalId": "74901",
+            "name": "Laurenda Simane",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2006-06-03",
+            "foot": "right",
+            "height": "Laurenda Siane Acadéie FCF, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74907",
+            "externalId": "74907",
+            "name": "Josette Mole",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2003-11-09",
+            "foot": "right",
+            "height": "Josette Mole SC Ne Drehu, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74905",
+            "externalId": "74905",
+            "name": "Marielle Haocas",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "1993-06-09",
+            "foot": "right",
+            "height": "Marielle Haocas Hienghène Sport, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74893",
+            "externalId": "74893",
+            "name": "Lola Delavault",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Neukaledonien",
+                "France"
+            ],
+            "dateOfBirth": "2003-07-10",
+            "foot": "right",
+            "height": "Lola Delavault FF Nîes, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74894",
+            "externalId": "74894",
+            "name": "Laëtitia Leme",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2004-02-13",
+            "foot": "right",
+            "height": "Laëtitia Lee AS Acadéie Féinine, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74904",
+            "externalId": "74904",
+            "name": "Clémence Friocourt",
+            "position": "Centre-Back",
+            "age": 36,
+            "nationality": [
+                "Neukaledonien",
+                "France"
+            ],
+            "dateOfBirth": "1990-01-25",
+            "foot": "right",
+            "height": "Cléence Friocourt Hienghène Sport, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74906",
+            "externalId": "74906",
+            "name": "Marthe Katrawa",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2002-11-20",
+            "foot": "right",
+            "height": "Marthe Katrawa SC Ne Drehu, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75130",
+            "externalId": "75130",
+            "name": "Drounuhe Sakilia",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2005-08-30",
+            "foot": "right",
+            "height": "Drounuhe Sakilia unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38046",
+            "externalId": "38046",
+            "name": "Shaya Ihmeling",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "1999-01-09",
+            "foot": "right",
+            "height": "Shaya Iheling FC Porto Portugais Aiens, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74900",
+            "externalId": "74900",
+            "name": "Thérèse Pawawi",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2005-07-08",
+            "foot": "right",
+            "height": "Thérèse Pawawi Acadéie FCF, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74897",
+            "externalId": "74897",
+            "name": "Christine Alikie",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2005-09-24",
+            "foot": "right",
+            "height": "Christine Alikie Acadéie FCF, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74896",
+            "externalId": "74896",
+            "name": "Alice Wenessia",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "1999-07-24",
+            "foot": "right",
+            "height": "Alice Wenessia AS Acadéie Féinine, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74899",
+            "externalId": "74899",
+            "name": "Elodie Hmej",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2005-01-12",
+            "foot": "right",
+            "height": "Elodie Hej Acadéie FCF, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74903",
+            "externalId": "74903",
+            "name": "Maryline Wassin",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2006-02-01",
+            "foot": "right",
+            "height": "Maryline Wassin Acadéie FCF, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75131",
+            "externalId": "75131",
+            "name": "Suzanne Ihmeling",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2005-08-12",
+            "foot": "right",
+            "height": "Suzanne Iheling unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74902",
+            "externalId": "74902",
+            "name": "Claudia Wassin",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2006-02-01",
+            "foot": "right",
+            "height": "Claudia Wassin Acadéie FCF, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38055",
+            "externalId": "38055",
+            "name": "Jackie Pahoa",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2001-11-05",
+            "foot": "right",
+            "height": "Jackie Pahoa AS Acadéie Féinine, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74908",
+            "externalId": "74908",
+            "name": "Jennifer Neporo",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Neukaledonien"
+            ],
+            "dateOfBirth": "2004-01-09",
+            "foot": "right",
+            "height": "Jennifer Neporo AS Wetr, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65458",
+            "externalId": "65458",
+            "name": "Sarah Uregei",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Neukaledonien",
+                "France"
+            ],
+            "dateOfBirth": "1997-07-02",
+            "foot": "right",
+            "height": "Sarah Uregei US Coloiers, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -32,7 +32,7 @@
                 "France"
             ],
             "dateOfBirth": "2005-01-18",
-            "foot": "left",
+            "foot": "right",
             "height": "1,67m",
             "marketValue": "50k",
             "contract": null
@@ -256,7 +256,7 @@
             "foot": "left",
             "height": "1,79m",
             "marketValue": "50k",
-            "contract": "2026-05-31"
+            "contract": null
         },
         {
             "id": "105833",
@@ -294,7 +294,7 @@
             "externalId": "110128",
             "name": "Inès Khiri",
             "position": "Centre-Forward",
-            "age": 26,
+            "age": 27,
             "nationality": [
                 "Algeria",
                 "France"

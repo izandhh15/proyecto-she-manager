@@ -113,22 +113,6 @@
             "contract": "2026-06-30"
         },
         {
-            "id": "51378",
-            "externalId": "51378",
-            "name": "Laia Ballesté",
-            "position": "Central Midfield",
-            "age": 27,
-            "nationality": [
-                "Switzerland",
-                "Spain"
-            ],
-            "dateOfBirth": "1999-02-22",
-            "foot": "right",
-            "height": "1,72m",
-            "marketValue": "40k",
-            "contract": "2026-06-30"
-        },
-        {
             "id": "72668",
             "externalId": "72668",
             "name": "Sydney Schertenleib",
@@ -190,6 +174,22 @@
             "height": "1,60m",
             "marketValue": "450k",
             "contract": "2029-06-30"
+        },
+        {
+            "id": "58893",
+            "externalId": "58893",
+            "name": "Smilla Vallotto",
+            "position": "Attacking Midfield",
+            "age": 22,
+            "nationality": [
+                "Switzerland",
+                "Norway"
+            ],
+            "dateOfBirth": "2004-03-23",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "175k",
+            "contract": "2028-06-30"
         },
         {
             "id": "39480",
@@ -266,21 +266,6 @@
             "foot": "right",
             "height": "1,73m",
             "marketValue": "90k",
-            "contract": "2027-06-30"
-        },
-        {
-            "id": "30831",
-            "externalId": "30831",
-            "name": "Seraina Piubel",
-            "position": "Attacking Midfield",
-            "age": 25,
-            "nationality": [
-                "Switzerland"
-            ],
-            "dateOfBirth": "2000-06-02",
-            "foot": "both",
-            "height": "1,68m",
-            "marketValue": "70k",
             "contract": "2027-06-30"
         },
         {

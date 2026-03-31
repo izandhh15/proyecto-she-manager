@@ -1,0 +1,55 @@
+{
+    "id": "488",
+    "externalId": "488",
+    "transfermarktId": "488",
+    "name": "Angola",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "68361",
+            "externalId": "68361",
+            "name": "Alexandra Soares",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Angola",
+                "Portugal"
+            ],
+            "dateOfBirth": "2001-02-05",
+            "foot": "right",
+            "height": "Alexandra Soares vereinslos, Strikerm",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "93834",
+            "externalId": "93834",
+            "name": "Patrícia Seteco",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Angola"
+            ],
+            "dateOfBirth": "1992-09-26",
+            "foot": "right",
+            "height": "1,86m",
+            "marketValue": "50k",
+            "contract": "2026-11-30"
+        },
+        {
+            "id": "105706",
+            "externalId": "105706",
+            "name": "Flora Marta Lacho",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Angola"
+            ],
+            "dateOfBirth": "1999-03-16",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

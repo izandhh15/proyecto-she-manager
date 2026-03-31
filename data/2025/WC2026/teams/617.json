@@ -1,0 +1,399 @@
+{
+    "id": "617",
+    "externalId": "617",
+    "transfermarktId": "617",
+    "name": "India",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "45705",
+            "externalId": "45705",
+            "name": "Elangbam Panthoi Chanu",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1996-02-01",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45750",
+            "externalId": "45750",
+            "name": "Sowmiya Narayansamy",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2000-07-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45749",
+            "externalId": "45749",
+            "name": "Shreya Hooda",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1999-05-25",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45751",
+            "externalId": "45751",
+            "name": "Sweety Devi Ngangbam",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1999-12-01",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79067",
+            "externalId": "79067",
+            "name": "Astam Oraon",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2005-02-05",
+            "foot": "right",
+            "height": "1,51m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65240",
+            "externalId": "65240",
+            "name": "Shilky Hemam",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2005-11-23",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "117291",
+            "externalId": "117291",
+            "name": "Juli Kishan",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1999-05-08",
+            "foot": "right",
+            "height": "Juli Kishan Nita Football Acadey, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107216",
+            "externalId": "107216",
+            "name": "Nirmala Devi Phanjoubam",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2003-03-02",
+            "foot": "right",
+            "height": "Nirala Devi Phanjouba Sethu FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45794",
+            "externalId": "45794",
+            "name": "Sarita Yumnam",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2002-02-04",
+            "foot": "right",
+            "height": "Sarita Yuna East Bengal FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45754",
+            "externalId": "45754",
+            "name": "Sangita Basfore",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1996-07-12",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45807",
+            "externalId": "45807",
+            "name": "Soumya Guguloth",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2001-01-18",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58024",
+            "externalId": "58024",
+            "name": "Martina Thokchom",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2004-07-13",
+            "foot": "right",
+            "height": "Martina Thokcho Gokula Kerala FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45762",
+            "externalId": "45762",
+            "name": "Manisha Kalyan",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2001-11-27",
+            "foot": "left",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "117254",
+            "externalId": "117254",
+            "name": "Jasoda Munda",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2001-04-03",
+            "foot": "right",
+            "height": "Jasoda Munda Odisha FC Woen, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110356",
+            "externalId": "110356",
+            "name": "Aveka Singh",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2003-12-30",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117293",
+            "externalId": "117293",
+            "name": "Sanfida Nongrum",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2005-04-26",
+            "foot": "right",
+            "height": "Sanfida Nongru Garhwal United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46037",
+            "externalId": "46037",
+            "name": "Sushmita Lepcha",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1996-03-19",
+            "foot": "right",
+            "height": "Sushita Lepcha East Bengal FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79062",
+            "externalId": "79062",
+            "name": "Babina Lisham",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2005-02-01",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117256",
+            "externalId": "117256",
+            "name": "Kaviya Pakkirisamy",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2002-12-23",
+            "foot": "right",
+            "height": "Kaviya Pakkirisay Sethu FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45727",
+            "externalId": "45727",
+            "name": "Sanju Yadav",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1997-09-12",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45802",
+            "externalId": "45802",
+            "name": "Karishma Purushottam",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2001-08-04",
+            "foot": "right",
+            "height": "Karisha Purushotta Sreebhui FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45739",
+            "externalId": "45739",
+            "name": "Pyari Xaxa",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1997-05-18",
+            "foot": "right",
+            "height": "Pyari Xaxa Odisha FC Woen, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45760",
+            "externalId": "45760",
+            "name": "Grace Dangmei",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "1996-02-05",
+            "foot": "right",
+            "height": "1,53m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79068",
+            "externalId": "79068",
+            "name": "Lynda Serto",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2005-02-28",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117248",
+            "externalId": "117248",
+            "name": "Rimpa Haldar",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2005-02-06",
+            "foot": "right",
+            "height": "Ripa Haldar Sreebhui FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117255",
+            "externalId": "117255",
+            "name": "Malavika Prasad",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "India"
+            ],
+            "dateOfBirth": "2003-11-12",
+            "foot": "right",
+            "height": "Malavika Prasad Sethu FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

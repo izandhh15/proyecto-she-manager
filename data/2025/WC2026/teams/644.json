@@ -1,0 +1,354 @@
+{
+    "id": "644",
+    "externalId": "644",
+    "transfermarktId": "644",
+    "name": "Cuba",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "44739",
+            "externalId": "44739",
+            "name": "Elika Acea",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2003-06-04",
+            "foot": "right",
+            "height": "Elika Acea FC Cienfuegos, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44745",
+            "externalId": "44745",
+            "name": "Alianne Matamoro",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2000-01-19",
+            "foot": "right",
+            "height": "Alianne Mataoro CSD Municipal, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45087",
+            "externalId": "45087",
+            "name": "Yerly Palma",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2002-03-14",
+            "foot": "right",
+            "height": "Yerly Pala FC Caaguey, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44740",
+            "externalId": "44740",
+            "name": "Analía Céspedes",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2001-09-14",
+            "foot": "right",
+            "height": "Analía Céspedes unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44970",
+            "externalId": "44970",
+            "name": "Gianna Borrego",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2000-10-07",
+            "foot": "right",
+            "height": "Gianna Borrego unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44990",
+            "externalId": "44990",
+            "name": "Dayamis Chinea",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2002-09-15",
+            "foot": "right",
+            "height": "Dayais Chinea FC Villa Clara, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44741",
+            "externalId": "44741",
+            "name": "Yusnelvis Espinosa",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2000-02-14",
+            "foot": "right",
+            "height": "Yusnelvis Espinosa unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69130",
+            "externalId": "69130",
+            "name": "Daniela Martínez",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Daniela Martínez unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69128",
+            "externalId": "69128",
+            "name": "Lizandra González",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "1998-07-21",
+            "foot": "right",
+            "height": "Lizandra González unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13515",
+            "externalId": "13515",
+            "name": "Yarisleidy Mena",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "1994-02-17",
+            "foot": "right",
+            "height": "Yarisleidy Mena unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69131",
+            "externalId": "69131",
+            "name": "Laura Moreno",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "1993-09-18",
+            "foot": "right",
+            "height": "Laura Moreno unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13520",
+            "externalId": "13520",
+            "name": "María Pérez",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "1992-09-07",
+            "foot": "right",
+            "height": "María Pérez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13519",
+            "externalId": "13519",
+            "name": "Rachel Peláez",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "1993-05-05",
+            "foot": "right",
+            "height": "Rachel Peláez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70080",
+            "externalId": "70080",
+            "name": "Elizabeth Zara",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2002-05-26",
+            "foot": "right",
+            "height": "Elizabeth Zara FC Holguin, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44961",
+            "externalId": "44961",
+            "name": "Maria Álvarez",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2000-03-28",
+            "foot": "right",
+            "height": "Maria Álvarez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69127",
+            "externalId": "69127",
+            "name": "Ana Fernández",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Ana Fernández unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45081",
+            "externalId": "45081",
+            "name": "Eunises Núñez",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2000-01-24",
+            "foot": "right",
+            "height": "Eunises Núñez unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45107",
+            "externalId": "45107",
+            "name": "Katheryn Rodríguez",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2002-09-10",
+            "foot": "right",
+            "height": "Katheryn Rodríguez FC Villa Clara, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45135",
+            "externalId": "45135",
+            "name": "Eliane Valdez",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2001-07-19",
+            "foot": "right",
+            "height": "Eliane Valdez unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69129",
+            "externalId": "69129",
+            "name": "Yeranis Lee",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "1999-03-24",
+            "foot": "right",
+            "height": "Yeranis Lee unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45004",
+            "externalId": "45004",
+            "name": "Ismelis del Toro",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2001-04-07",
+            "foot": "right",
+            "height": "Iselis del Toro unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70081",
+            "externalId": "70081",
+            "name": "Sabrina Bahamonte",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2004-12-30",
+            "foot": "right",
+            "height": "Sabrina Bahaonte Pinar del Rio FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45071",
+            "externalId": "45071",
+            "name": "Maristania Mengana",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Cuba"
+            ],
+            "dateOfBirth": "2000-01-05",
+            "foot": "right",
+            "height": "Maristania Mengana unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -1,0 +1,295 @@
+{
+    "id": "715",
+    "externalId": "715",
+    "transfermarktId": "715",
+    "name": "Puerto Rico",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "45109",
+            "externalId": "45109",
+            "name": "Cristina Roque",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2001-11-06",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "25k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "72197",
+            "externalId": "72197",
+            "name": "Madison Cox",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "1995-10-24",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "90836",
+            "externalId": "90836",
+            "name": "Amber DiOrio",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "1999-10-21",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "82953",
+            "externalId": "82953",
+            "name": "Verónica García",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "1999-12-23",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70007",
+            "externalId": "70007",
+            "name": "Emma González",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2004-05-07",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69330",
+            "externalId": "69330",
+            "name": "Imani Morlock",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "1997-06-14",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45138",
+            "externalId": "45138",
+            "name": "Idelys Vázquez",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2000-09-21",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45131",
+            "externalId": "45131",
+            "name": "Cristina Torres",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Puerto Rico"
+            ],
+            "dateOfBirth": "2000-10-03",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72198",
+            "externalId": "72198",
+            "name": "JoJo Cotto",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2000-01-15",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "82955",
+            "externalId": "82955",
+            "name": "Jailene de Jesús",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2003-05-10",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "86671",
+            "externalId": "86671",
+            "name": "Abigail Koly",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2004-09-11",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107206",
+            "externalId": "107206",
+            "name": "Melanie Herrera",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Puerto Rico"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Melanie Herrera unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69336",
+            "externalId": "69336",
+            "name": "Jessica Torres",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2004-11-04",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69849",
+            "externalId": "69849",
+            "name": "Jaydah Bedoya",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Puerto Rico",
+                "Ecuador"
+            ],
+            "dateOfBirth": "2002-03-20",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "57390",
+            "externalId": "57390",
+            "name": "Danielle Marcano",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "1997-08-20",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "25900",
+            "externalId": "25900",
+            "name": "Gloria Douglas",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "1992-05-24",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "86672",
+            "externalId": "86672",
+            "name": "Kennedy García",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2005-02-16",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "86677",
+            "externalId": "86677",
+            "name": "Jocelyn Chinea",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Puerto Rico",
+                "United States"
+            ],
+            "dateOfBirth": "2005-08-02",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

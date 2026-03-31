@@ -149,7 +149,8 @@
                     "number": "23",
                     "age": 19,
                     "nationality": [
-                        "Spain"
+                        "Spain",
+                        "Guine"
                     ],
                     "dateOfBirth": "2006-12-11",
                     "foot": "right",
@@ -537,7 +538,7 @@
             "transfermarktId": "6551",
             "name": "Real Madrid CF",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6551.png",
-            "stadiumName": "Estadio Alfredo Di Stefano",
+            "stadiumName": "Estadio Alfredo Di Stéfano",
             "stadiumSeats": "6000",
             "players": [
                 {
@@ -1060,7 +1061,7 @@
             "transfermarktId": "1129",
             "name": "Atlético de Madrid",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/1129.png",
-            "stadiumName": "centro deportivo Riyadh Air Alcalá de Henares",
+            "stadiumName": "Estadio Atlético de Madrid CD Alcalá de Henares",
             "stadiumSeats": "2700",
             "players": [
                 {
@@ -1505,8 +1506,8 @@
             "transfermarktId": "44",
             "name": "Athletic Club",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/44.png",
-            "stadiumName": "Instalaciones de Lezama (Campo 2)",
-            "stadiumSeats": "3250",
+            "stadiumName": "Instalaciones de Lezama - Campo 2",
+            "stadiumSeats": "2800",
             "players": [
                 {
                     "id": "58197",
@@ -1578,7 +1579,7 @@
                     "name": "Maddi Torre",
                     "position": "Centre-Back",
                     "number": "2",
-                    "age": 29,
+                    "age": 30,
                     "nationality": [
                         "Spain"
                     ],
@@ -1779,7 +1780,7 @@
                     "foot": "right",
                     "height": "1,65m",
                     "marketValue": "80k",
-                    "contract": "2026-06-30"
+                    "contract": "2030-06-30"
                 },
                 {
                     "id": "47653",
@@ -1966,8 +1967,8 @@
             "transfermarktId": "1135",
             "name": "Real Sociedad",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/1135.png",
-            "stadiumName": "Campo José Luis Orbegozo",
-            "stadiumSeats": "2500",
+            "stadiumName": "Instalaciones de Zubieta Z7 H.N.",
+            "stadiumSeats": "4000",
             "players": [
                 {
                     "id": "78404",
@@ -2394,7 +2395,7 @@
             "name": "CD Tenerife Femenino",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/16818.png",
             "stadiumName": "Estadio Heliodoro Rodríguez López",
-            "stadiumSeats": "22824",
+            "stadiumSeats": "22948",
             "players": [
                 {
                     "id": "30436",
@@ -2603,7 +2604,23 @@
                     "dateOfBirth": "2004-08-04",
                     "foot": "right",
                     "height": "1,68m",
-                    "marketValue": "45k",
+                    "marketValue": "43k",
+                    "contract": null
+                },
+                {
+                    "id": "48812",
+                    "externalId": "48812",
+                    "name": "Lidia Sánchez",
+                    "position": "Centre-Back",
+                    "number": "34",
+                    "age": 21,
+                    "nationality": [
+                        "Spain"
+                    ],
+                    "dateOfBirth": "2005-01-23",
+                    "foot": "right",
+                    "height": "1,68m",
+                    "marketValue": "10k",
                     "contract": null
                 },
                 {
@@ -2699,7 +2716,7 @@
                     "dateOfBirth": "2006-10-14",
                     "foot": "right",
                     "height": "1,64m",
-                    "marketValue": "45k",
+                    "marketValue": "43k",
                     "contract": null
                 },
                 {
@@ -2812,7 +2829,7 @@
                     "dateOfBirth": "2004-11-22",
                     "foot": "right",
                     "height": "1,67m",
-                    "marketValue": "51k",
+                    "marketValue": "50k",
                     "contract": null
                 }
             ]
@@ -2823,8 +2840,8 @@
             "transfermarktId": "1140",
             "name": "Sevilla FC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/1140.png",
-            "stadiumName": " Estadio Jesús Navas",
-            "stadiumSeats": "8000",
+            "stadiumName": "Ciudad Deportiva - Estadio Jesús Navas",
+            "stadiumSeats": "7000",
             "players": [
                 {
                     "id": "5052",
@@ -3252,8 +3269,8 @@
             "transfermarktId": "5649",
             "name": "Madrid CFF",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/5649.png",
-            "stadiumName": " Estadio Fernando Torres",
-            "stadiumSeats": "5400",
+            "stadiumName": "Estadio Municipal Fernando Torres",
+            "stadiumSeats": "3000",
             "players": [
                 {
                     "id": "40291",
@@ -3696,8 +3713,8 @@
             "transfermarktId": "7278",
             "name": "Deportivo La Coruña",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/7278.png",
-            "stadiumName": "Ciudad deportiva de Abegondo",
-            "stadiumSeats": "1000",
+            "stadiumName": "Estadio Abanca-Riazor",
+            "stadiumSeats": "34611",
             "players": [
                 {
                     "id": "40952",
@@ -4188,8 +4205,8 @@
             "transfermarktId": "17008",
             "name": "FC Badalona Women",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/17008.png",
-            "stadiumName": "Estadi Municipal de Badalona",
-            "stadiumSeats": "4170",
+            "stadiumName": "Estadi Municipal Palamós Costa Brava",
+            "stadiumSeats": "3724",
             "players": [
                 {
                     "id": "37846",
@@ -4236,7 +4253,39 @@
                     "dateOfBirth": "2007-02-22",
                     "foot": "right",
                     "height": "1,70m",
-                    "marketValue": "30k",
+                    "marketValue": "28k",
+                    "contract": null
+                },
+                {
+                    "id": "96896",
+                    "externalId": "96896",
+                    "name": "Noa Malagelada",
+                    "position": "Goalkeeper",
+                    "number": "32",
+                    "age": null,
+                    "nationality": [
+                        "Spain"
+                    ],
+                    "dateOfBirth": null,
+                    "foot": "right",
+                    "height": "1,70m",
+                    "marketValue": "10k",
+                    "contract": null
+                },
+                {
+                    "id": "116160",
+                    "externalId": "116160",
+                    "name": "Laia Rius",
+                    "position": "Goalkeeper",
+                    "number": "41",
+                    "age": null,
+                    "nationality": [
+                        "Spain"
+                    ],
+                    "dateOfBirth": null,
+                    "foot": "right",
+                    "height": "1,70m",
+                    "marketValue": "28k",
                     "contract": null
                 },
                 {
@@ -4349,6 +4398,22 @@
                     "foot": "right",
                     "height": "1,64m",
                     "marketValue": "25k",
+                    "contract": null
+                },
+                {
+                    "id": "73254",
+                    "externalId": "73254",
+                    "name": "Laia Abdón",
+                    "position": "Centre-Back",
+                    "number": "29",
+                    "age": 19,
+                    "nationality": [
+                        "Spain"
+                    ],
+                    "dateOfBirth": "2007-02-22",
+                    "foot": "right",
+                    "height": "1,68m",
+                    "marketValue": "10k",
                     "contract": null
                 },
                 {
@@ -4470,7 +4535,7 @@
                     "name": "Ana González",
                     "position": "Defensive Midfield",
                     "number": "20",
-                    "age": 30,
+                    "age": 31,
                     "nationality": [
                         "Spain"
                     ],
@@ -4606,7 +4671,23 @@
                     "dateOfBirth": "2006-11-10",
                     "foot": "right",
                     "height": "1,67m",
-                    "marketValue": "41k",
+                    "marketValue": "38k",
+                    "contract": null
+                },
+                {
+                    "id": "85560",
+                    "externalId": "85560",
+                    "name": "Andrea Cano",
+                    "position": "Centre-Forward",
+                    "number": "30",
+                    "age": 19,
+                    "nationality": [
+                        "Spain"
+                    ],
+                    "dateOfBirth": "2006-06-17",
+                    "foot": "both",
+                    "height": "1,67m",
+                    "marketValue": "38k",
                     "contract": null
                 },
                 {
@@ -4625,22 +4706,6 @@
                     "height": "1,68m",
                     "marketValue": "25k",
                     "contract": null
-                },
-                {
-                    "id": "85560",
-                    "externalId": "85560",
-                    "name": "Andrea Cano",
-                    "position": "Centre-Forward",
-                    "number": "30",
-                    "age": 19,
-                    "nationality": [
-                        "Spain"
-                    ],
-                    "dateOfBirth": "2006-06-17",
-                    "foot": "both",
-                    "height": "1,67m",
-                    "marketValue": "41k",
-                    "contract": null
                 }
             ]
         },
@@ -4651,7 +4716,7 @@
             "name": "RCD Espanyol",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/552.png",
             "stadiumName": "Ciudad Deportiva Dani Jarque",
-            "stadiumSeats": "1520",
+            "stadiumSeats": "6000",
             "players": [
                 {
                     "id": "29194",
@@ -4996,7 +5061,7 @@
                     "name": "Olivia Fergusson",
                     "position": "Centre-Forward",
                     "number": "18",
-                    "age": 30,
+                    "age": 31,
                     "nationality": [
                         "England"
                     ],
@@ -5079,7 +5144,7 @@
             "transfermarktId": "210",
             "name": "Levante UD",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/210.png",
-            "stadiumName": "Ciudad Deportiva de Buñol",
+            "stadiumName": "Ciudad Deportiva de Buñol - Campo 1",
             "stadiumSeats": "3000",
             "players": [
                 {
@@ -5289,22 +5354,6 @@
                     "foot": "right",
                     "height": "1,70m",
                     "marketValue": "30k",
-                    "contract": null
-                },
-                {
-                    "id": "69643",
-                    "externalId": "69643",
-                    "name": "Daniela Castellanos",
-                    "position": "Central Midfield",
-                    "number": "7",
-                    "age": 23,
-                    "nationality": [
-                        "Colombia"
-                    ],
-                    "dateOfBirth": "2003-03-03",
-                    "foot": "right",
-                    "height": "1,63m",
-                    "marketValue": "25k",
                     "contract": null
                 },
                 {
@@ -5523,7 +5572,7 @@
             "transfermarktId": "4897",
             "name": "Granada CF",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/4897.png",
-            "stadiumName": "Ciudad Deportiva del Granada",
+            "stadiumName": "Estadio de la Juventud de Granada",
             "stadiumSeats": "600",
             "players": [
                 {
@@ -5902,8 +5951,8 @@
             "transfermarktId": "1133",
             "name": "SD Eibar",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/1133.png",
-            "stadiumName": "Ciudad Deportiva de Areitio",
-            "stadiumSeats": "8164",
+            "stadiumName": "Estadio Municipal de Ipurúa",
+            "stadiumSeats": "8154",
             "players": [
                 {
                     "id": "53903",
@@ -6265,7 +6314,7 @@
             "transfermarktId": "7543",
             "name": "Alhama CF",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/7543.png",
-            "stadiumName": "Estadio Francisco Artés Carrasco",
+            "stadiumName": "Estadio Municipal Francisco Artés Carrasco",
             "stadiumSeats": "8120",
             "players": [
                 {
@@ -6880,7 +6929,7 @@
                     "name": "Cata Ongaro",
                     "position": "Central Midfield",
                     "number": "5",
-                    "age": 22,
+                    "age": 23,
                     "nationality": [
                         "Argentina"
                     ],

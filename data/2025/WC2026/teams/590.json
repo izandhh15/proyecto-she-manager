@@ -1,0 +1,54 @@
+{
+    "id": "590",
+    "externalId": "590",
+    "transfermarktId": "590",
+    "name": "Gabon",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "66679",
+            "externalId": "66679",
+            "name": "Reine Edzoumou",
+            "position": "Defensive Midfield",
+            "age": 30,
+            "nationality": [
+                "Gabon"
+            ],
+            "dateOfBirth": "1996-02-01",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46511",
+            "externalId": "46511",
+            "name": "Aristelle Yog-Atouth",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Gabon"
+            ],
+            "dateOfBirth": "1994-04-20",
+            "foot": "right",
+            "height": "Aristelle Yog-Atouth vereinslos, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "88240",
+            "externalId": "88240",
+            "name": "Victoire Biatholi",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Gabon"
+            ],
+            "dateOfBirth": "2003-05-14",
+            "foot": "right",
+            "height": "Victoire Biatholi Aris Ladies FC, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

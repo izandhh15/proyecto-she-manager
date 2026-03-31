@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Support\CountryCodeMapper;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -102,7 +103,7 @@ class Team extends Model
         $name = $this->attributes['name'] ?? '';
 
         if (($this->attributes['type'] ?? 'club') === 'national') {
-            return __("countries.{$name}") ?? $name;
+            return CountryCodeMapper::displayName($name);
         }
 
         return $name;
@@ -112,7 +113,11 @@ class Team extends Model
     {
         // National teams use flag SVGs
         if (($this->attributes['type'] ?? 'club') === 'national') {
-            return Storage::disk('assets')->url('flags/' . strtolower($this->country) . '.svg');
+            $flagCode = $this->resolveNationalFlagCode();
+
+            return $flagCode !== null
+                ? Storage::disk('assets')->url("flags/{$flagCode}.svg")
+                : null;
         }
 
         $originalUrl = $this->attributes['image'] ?? null;
@@ -131,6 +136,31 @@ class Team extends Model
         }
 
         return $originalUrl;
+    }
+
+    private function resolveNationalFlagCode(): ?string
+    {
+        $rawCountry = trim((string) ($this->attributes['country'] ?? ''));
+        $rawName = trim((string) ($this->attributes['name'] ?? ''));
+
+        $directCountryCode = $rawCountry !== '' ? strtolower($rawCountry) : null;
+        if (in_array($directCountryCode, ['tbd', 'xx'], true)) {
+            $directCountryCode = null;
+        }
+
+        $candidates = array_filter(array_unique([
+            $directCountryCode,
+            $rawCountry !== '' ? CountryCodeMapper::toCode($rawCountry) : null,
+            $rawName !== '' ? CountryCodeMapper::toCode($rawName) : null,
+        ]));
+
+        foreach ($candidates as $candidate) {
+            if (file_exists(public_path("flags/{$candidate}.svg"))) {
+                return $candidate;
+            }
+        }
+
+        return null;
     }
 
     private function resolveNamedLocalCrestPath(): ?string

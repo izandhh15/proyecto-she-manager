@@ -1,0 +1,358 @@
+{
+    "id": "680",
+    "externalId": "680",
+    "transfermarktId": "680",
+    "name": "Macedonia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "30543",
+            "externalId": "30543",
+            "name": "Viktorija Pančurova",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "1999-12-25",
+            "foot": "right",
+            "height": "Viktorija Pančurova ŽFK Brera Tiverija, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84724",
+            "externalId": "84724",
+            "name": "Vedrana Komnenova",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2007-12-23",
+            "foot": "right",
+            "height": "Vedrana Konenova ŽFK Ljuboten, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64833",
+            "externalId": "64833",
+            "name": "Berna Kabakči",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Macedonia",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2004-05-26",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84729",
+            "externalId": "84729",
+            "name": "Mila Paneva",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2008-01-29",
+            "foot": "right",
+            "height": "Mila Paneva ŽFK Skopje 2014, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30536",
+            "externalId": "30536",
+            "name": "Pavlinka Nikolovska",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "1998-03-04",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30580",
+            "externalId": "30580",
+            "name": "Ane Bošeska",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "1997-07-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41121",
+            "externalId": "41121",
+            "name": "Elena Paneska",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2002-07-10",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45508",
+            "externalId": "45508",
+            "name": "Hristina Joševska",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2000-12-27",
+            "foot": "right",
+            "height": "Hristina Joševska ŽFK Skopje 2014, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65145",
+            "externalId": "65145",
+            "name": "Katerina Petkova",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2006-03-20",
+            "foot": "right",
+            "height": "Katerina Petkova ŽFK Spartak Subotica, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81428",
+            "externalId": "81428",
+            "name": "Kristina Krsteva",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2007-12-11",
+            "foot": "right",
+            "height": "Kristina Krsteva ŽFK Skopje 2014, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81440",
+            "externalId": "81440",
+            "name": "Vaska Vasileva",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2007-01-15",
+            "foot": "right",
+            "height": "Vaska Vasileva ŽFK Kaenica Sasa, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92692",
+            "externalId": "92692",
+            "name": "Andrea Kolovska",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2008-08-18",
+            "foot": "right",
+            "height": "Andrea Kolovska ŽFK Istatov, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84726",
+            "externalId": "84726",
+            "name": "Teona Galabovska",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2008-01-18",
+            "foot": "right",
+            "height": "Teona Galabovska ŽFK Brera Tiverija, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83261",
+            "externalId": "83261",
+            "name": "Simona Meijer",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Macedonia",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2005-06-16",
+            "foot": "left",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "20261",
+            "externalId": "20261",
+            "name": "Aleksandra Markovska",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "1997-05-04",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "47227",
+            "externalId": "47227",
+            "name": "Bojana Petkova",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2003-12-23",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45510",
+            "externalId": "45510",
+            "name": "Hava Mustafa",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "1997-09-20",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92695",
+            "externalId": "92695",
+            "name": "Eva Veličkovska",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2008-09-14",
+            "foot": "right",
+            "height": "Eva Veličkovska ŽFK Ljuboten, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92694",
+            "externalId": "92694",
+            "name": "Kalina Popeski",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Macedonia",
+                "Serbia"
+            ],
+            "dateOfBirth": "2008-04-28",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65170",
+            "externalId": "65170",
+            "name": "Jovana Pavlovska",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2006-09-11",
+            "foot": "right",
+            "height": "Jovana Pavlovska ŽFK AS United, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92690",
+            "externalId": "92690",
+            "name": "Melanija Grozdanova",
+            "position": "Centre-Forward",
+            "age": 17,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2008-12-27",
+            "foot": "right",
+            "height": "Melanija Grozdanova ŽFK Ljuboten, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84730",
+            "externalId": "84730",
+            "name": "Nastasja Nakova",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Macedonia"
+            ],
+            "dateOfBirth": "2008-03-26",
+            "foot": "right",
+            "height": "Nastasja Nakova ŽFK Ljuboten, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30535",
+            "externalId": "30535",
+            "name": "Ulza Maksuti",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Macedonia",
+                "Albania"
+            ],
+            "dateOfBirth": "1999-07-08",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

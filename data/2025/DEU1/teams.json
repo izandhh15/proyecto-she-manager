@@ -8,8 +8,8 @@
             "transfermarktId": "57",
             "name": "FC Bayern München",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/57.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "FC Bayern Campus",
+            "stadiumSeats": "2500",
             "players": [
                 {
                     "id": "31440",
@@ -58,6 +58,22 @@
                     "height": "1,75m",
                     "marketValue": "35k",
                     "contract": "2027-06-30"
+                },
+                {
+                    "id": "89672",
+                    "externalId": "89672",
+                    "name": "Julia Kreuzpaintner",
+                    "position": "Goalkeeper",
+                    "number": "44",
+                    "age": 18,
+                    "nationality": [
+                        "Germany"
+                    ],
+                    "dateOfBirth": "2008-02-14",
+                    "foot": "right",
+                    "height": "1,75m",
+                    "marketValue": "236k",
+                    "contract": null
                 },
                 {
                     "id": "35912",
@@ -201,7 +217,7 @@
                     "dateOfBirth": "2008-05-10",
                     "foot": "right",
                     "height": "1,71m",
-                    "marketValue": "287k",
+                    "marketValue": "278k",
                     "contract": "2027-06-30"
                 },
                 {
@@ -377,7 +393,7 @@
                     "dateOfBirth": "2001-05-06",
                     "foot": "right",
                     "height": "1,62m",
-                    "marketValue": "316k",
+                    "marketValue": "305k",
                     "contract": null
                 },
                 {
@@ -393,7 +409,7 @@
                     "dateOfBirth": "2007-05-07",
                     "foot": "right",
                     "height": "1,72m",
-                    "marketValue": "287k",
+                    "marketValue": "278k",
                     "contract": "2027-06-30"
                 },
                 {
@@ -409,7 +425,7 @@
                     "dateOfBirth": "2008-02-26",
                     "foot": "right",
                     "height": "1,68m",
-                    "marketValue": "287k",
+                    "marketValue": "278k",
                     "contract": null
                 },
                 {
@@ -487,8 +503,8 @@
             "transfermarktId": "407",
             "name": "VfL Wolfsburg",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/407.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "AOK Stadion",
+            "stadiumSeats": "5200",
             "players": [
                 {
                     "id": "30714",
@@ -635,7 +651,7 @@
                     "foot": "both",
                     "height": "1,83m",
                     "marketValue": "160k",
-                    "contract": "2026-06-30"
+                    "contract": "2028-06-30"
                 },
                 {
                     "id": "20745",
@@ -950,8 +966,8 @@
             "transfermarktId": "104",
             "name": "Eintracht Frankfurt",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/104.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadion am Brentanobad",
+            "stadiumSeats": "5650",
             "players": [
                 {
                     "id": "35389",
@@ -1201,7 +1217,7 @@
                     "name": "Eleni Markou",
                     "position": "Defensive Midfield",
                     "number": "3",
-                    "age": 30,
+                    "age": 31,
                     "nationality": [
                         "Greece"
                     ],
@@ -1446,8 +1462,8 @@
             "transfermarktId": "56",
             "name": "Bayer 04 Leverkusen",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/56.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Ulrich-Haberland-Stadion",
+            "stadiumSeats": "3200",
             "players": [
                 {
                     "id": "21830",
@@ -1957,8 +1973,8 @@
             "transfermarktId": "18",
             "name": "TSG 1899 Hoffenheim",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/18.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Ensinger-Stadion",
+            "stadiumSeats": "2000",
             "players": [
                 {
                     "id": "37668",
@@ -2087,7 +2103,7 @@
                     "foot": "right",
                     "height": "1,68m",
                     "marketValue": "90k",
-                    "contract": "2026-06-30"
+                    "contract": "2028-06-30"
                 },
                 {
                     "id": "43206",
@@ -2467,8 +2483,8 @@
             "transfermarktId": "6053",
             "name": "RB Leipzig",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6053.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "RB-Trainingszentrum (Cottaweg), Rasenplatz",
+            "stadiumSeats": "1000",
             "players": [
                 {
                     "id": "30076",
@@ -2659,7 +2675,7 @@
                     "dateOfBirth": "2005-05-16",
                     "foot": "both",
                     "height": "1,68m",
-                    "marketValue": "68k",
+                    "marketValue": "69k",
                     "contract": null
                 },
                 {
@@ -2826,23 +2842,6 @@
                     "contract": "2028-06-30"
                 },
                 {
-                    "id": "108902",
-                    "externalId": "108902",
-                    "name": "Persis Oteng",
-                    "position": "Centre-Forward",
-                    "number": "9",
-                    "age": 20,
-                    "nationality": [
-                        "Ghana",
-                        "Netherlands"
-                    ],
-                    "dateOfBirth": "2005-11-03",
-                    "foot": "right",
-                    "height": "1,69m",
-                    "marketValue": "40k",
-                    "contract": "2028-06-30"
-                },
-                {
                     "id": "30740",
                     "externalId": "30740",
                     "name": "Marleen Schimmer",
@@ -2899,8 +2898,8 @@
             "transfermarktId": "11",
             "name": "1. FC Union Berlin",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/11.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Stadion an der alten Försterei",
+            "stadiumSeats": "22012",
             "players": [
                 {
                     "id": "13989",
@@ -3117,7 +3116,7 @@
                     "name": "Fatma Şakar",
                     "position": "Centre-Back",
                     "number": "24",
-                    "age": 26,
+                    "age": 27,
                     "nationality": [
                         "Turkey",
                         "Germany"
@@ -3460,8 +3459,8 @@
             "transfermarktId": "421",
             "name": "SV Werder Bremen",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/421.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Platz 11",
+            "stadiumSeats": "5500",
             "players": [
                 {
                     "id": "15174",
@@ -3925,7 +3924,7 @@
             "transfermarktId": "163",
             "name": "Hamburger SV",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/163.png",
-            "stadiumName": null,
+            "stadiumName": "Trainingsplatz am Volksparkstadion",
             "stadiumSeats": null,
             "players": [
                 {
@@ -4483,8 +4482,8 @@
             "transfermarktId": "304",
             "name": "SGS Essen",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/304.png",
-            "stadiumName": "Stadion Essen",
-            "stadiumSeats": "20650",
+            "stadiumName": "Stadion Stadion an der Hafenstraße",
+            "stadiumSeats": "20000",
             "players": [
                 {
                     "id": "31407",
@@ -5009,8 +5008,8 @@
             "transfermarktId": "5",
             "name": "1. FC Köln",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/5.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Franz-Kremer-Stadion",
+            "stadiumSeats": "5457",
             "players": [
                 {
                     "id": "1703",
@@ -5095,7 +5094,7 @@
                 {
                     "id": "67790",
                     "externalId": "67790",
-                    "name": "Lina Szaraz",
+                    "name": "Lina Száraz",
                     "position": "Centre-Back",
                     "number": null,
                     "age": 18,
@@ -5395,7 +5394,7 @@
                     "foot": "right",
                     "height": "1,70m",
                     "marketValue": "43k",
-                    "contract": null
+                    "contract": "2028-06-30"
                 },
                 {
                     "id": "11702",
@@ -5518,8 +5517,8 @@
             "transfermarktId": "8",
             "name": "1. FC Nürnberg",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/8.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Max-Morlock-Stadion",
+            "stadiumSeats": "50000",
             "players": [
                 {
                     "id": "87607",
@@ -5995,8 +5994,8 @@
             "transfermarktId": "292",
             "name": "SC Freiburg",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/292.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Dreisamstadion",
+            "stadiumSeats": "24000",
             "players": [
                 {
                     "id": "136",
@@ -6020,7 +6019,7 @@
                     "name": "Sarah-Lisa Dübel",
                     "position": "Goalkeeper",
                     "number": "32",
-                    "age": 27,
+                    "age": 28,
                     "nationality": [
                         "Germany"
                     ],
@@ -6220,7 +6219,7 @@
                     "foot": "right",
                     "height": "1,67m",
                     "marketValue": "50k",
-                    "contract": "2026-06-30"
+                    "contract": null
                 },
                 {
                     "id": "43215",
@@ -6390,8 +6389,8 @@
             "transfermarktId": "6695",
             "name": "FC Carl Zeiss Jena",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/6695.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Ernst-Abbe-Sportfeld",
+            "stadiumSeats": "10445",
             "players": [
                 {
                     "id": "70628",
@@ -6624,7 +6623,7 @@
                     "name": "Nike Andersson",
                     "position": "Central Midfield",
                     "number": "6",
-                    "age": 23,
+                    "age": 24,
                     "nationality": [
                         "Germany"
                     ],

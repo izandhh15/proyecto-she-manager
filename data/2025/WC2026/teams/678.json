@@ -1,0 +1,54 @@
+{
+    "id": "678",
+    "externalId": "678",
+    "transfermarktId": "678",
+    "name": "Mauritius",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "105642",
+            "externalId": "105642",
+            "name": "Chaya Codoychurn",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Mauritius"
+            ],
+            "dateOfBirth": "2004-03-23",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105644",
+            "externalId": "105644",
+            "name": "Julie Gopal",
+            "position": "Defensive Midfield",
+            "age": 19,
+            "nationality": [
+                "Mauritius"
+            ],
+            "dateOfBirth": "2006-04-10",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105647",
+            "externalId": "105647",
+            "name": "Fiona Felicite",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Mauritius"
+            ],
+            "dateOfBirth": "2002-10-01",
+            "foot": "right",
+            "height": "Fiona Felicite unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

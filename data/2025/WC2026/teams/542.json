@@ -1,0 +1,375 @@
+{
+    "id": "542",
+    "externalId": "542",
+    "transfermarktId": "542",
+    "name": "Congo DR",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "49289",
+            "externalId": "49289",
+            "name": "Djanaë Longo",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Congo DR",
+                "France"
+            ],
+            "dateOfBirth": "2000-12-21",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "57822",
+            "externalId": "57822",
+            "name": "Fideline Ngoy",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1991-03-31",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110215",
+            "externalId": "110215",
+            "name": "Ruth Khonde",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1998-01-10",
+            "foot": "right",
+            "height": "Ruth Khonde TP Mazebe, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "80866",
+            "externalId": "80866",
+            "name": "Bélange Nzumba",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1997-12-16",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110205",
+            "externalId": "110205",
+            "name": "Aimeraude Mawanda",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1998-03-25",
+            "foot": "right",
+            "height": "Aieraude Mawanda TP Mazebe, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110206",
+            "externalId": "110206",
+            "name": "Kristal Iyombe",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "2002-01-28",
+            "foot": "right",
+            "height": "Kristal Iyobe AS Monaco FF, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110214",
+            "externalId": "110214",
+            "name": "Wivine Kahambu",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "2003-02-01",
+            "foot": "right",
+            "height": "Wivine Kahabu TP Mazebe, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "12272",
+            "externalId": "12272",
+            "name": "Éva Sumo",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Congo DR",
+                "France"
+            ],
+            "dateOfBirth": "1993-12-07",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "82980",
+            "externalId": "82980",
+            "name": "Bénie Kubiena",
+            "position": "Defensive Midfield",
+            "age": 26,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1999-05-07",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66686",
+            "externalId": "66686",
+            "name": "Marlêne Yav",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1996-01-25",
+            "foot": "both",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61303",
+            "externalId": "61303",
+            "name": "Esther Siluvangi",
+            "position": "Defensive Midfield",
+            "age": 25,
+            "nationality": [
+                "Congo DR",
+                "France"
+            ],
+            "dateOfBirth": "2001-02-08",
+            "foot": "right",
+            "height": "Esther Siluvangi Le Mans FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110212",
+            "externalId": "110212",
+            "name": "Ruth Bulala",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "2004-04-08",
+            "foot": "right",
+            "height": "Ruth Bulala AAS Sarcelles, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65798",
+            "externalId": "65798",
+            "name": "Anastasia Soulac",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Congo DR",
+                "France"
+            ],
+            "dateOfBirth": "2003-11-25",
+            "foot": "right",
+            "height": "Anastasia Soulac OGC Nice, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83273",
+            "externalId": "83273",
+            "name": "Naomie Kaba Kaba",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1998-04-04",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64997",
+            "externalId": "64997",
+            "name": "Grâce Mfwamba",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1998-09-17",
+            "foot": "right",
+            "height": "Grâce Mfwaba Al-Taraji, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "80911",
+            "externalId": "80911",
+            "name": "Falonne Pambani",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1994-08-02",
+            "foot": "both",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58174",
+            "externalId": "58174",
+            "name": "Flavine Mawete",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1997-06-22",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "35k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "110213",
+            "externalId": "110213",
+            "name": "Esther Dikisha",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1998-12-31",
+            "foot": "right",
+            "height": "Esther Dikisha TP Mazebe, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66602",
+            "externalId": "66602",
+            "name": "Ruth Kipoyi",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1997-10-15",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83356",
+            "externalId": "83356",
+            "name": "Olga Massombo",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Congo DR",
+                "Canada"
+            ],
+            "dateOfBirth": "1999-04-20",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "95034",
+            "externalId": "95034",
+            "name": "Merveille Kanjinga",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "2003-02-01",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "300k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "110216",
+            "externalId": "110216",
+            "name": "Sarah Yasongamo",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "1998-08-15",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "66412",
+            "externalId": "66412",
+            "name": "Déborah Ngalula",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Congo DR"
+            ],
+            "dateOfBirth": "2002-05-25",
+            "foot": "right",
+            "height": "Déborah Ngalula La Roche Vendée, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33634",
+            "externalId": "33634",
+            "name": "Gloria Mabomba",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Congo DR",
+                "Netherlands"
+            ],
+            "dateOfBirth": "1998-03-19",
+            "foot": "right",
+            "height": "Gloria Maboba Stade Auxerrois, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

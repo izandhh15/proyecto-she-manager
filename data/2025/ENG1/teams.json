@@ -3,13 +3,491 @@
     "name": "Women's Super League",
     "clubs": [
         {
+            "id": "36",
+            "externalId": "36",
+            "transfermarktId": "36",
+            "name": "Arsenal FC",
+            "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/36.png",
+            "stadiumName": "Emirates Stadium",
+            "stadiumSeats": "60704",
+            "players": [
+                {
+                    "id": "10352",
+                    "externalId": "10352",
+                    "name": "Manuela Zinsberger",
+                    "position": "Goalkeeper",
+                    "number": "1",
+                    "age": 30,
+                    "nationality": [
+                        "Austria"
+                    ],
+                    "dateOfBirth": "1995-10-19",
+                    "foot": "right",
+                    "height": "1,78m",
+                    "marketValue": "100k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "27132",
+                    "externalId": "27132",
+                    "name": "Barbora Votíková",
+                    "position": "Goalkeeper",
+                    "number": "13",
+                    "age": 29,
+                    "nationality": [
+                        "Czech Republic"
+                    ],
+                    "dateOfBirth": "1996-09-13",
+                    "foot": "right",
+                    "height": "1,78m",
+                    "marketValue": "35k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "34025",
+                    "externalId": "34025",
+                    "name": "Daphne van Domselaar",
+                    "position": "Goalkeeper",
+                    "number": "14",
+                    "age": 26,
+                    "nationality": [
+                        "Netherlands"
+                    ],
+                    "dateOfBirth": "2000-03-06",
+                    "foot": "right",
+                    "height": "1,76m",
+                    "marketValue": "170k",
+                    "contract": null
+                },
+                {
+                    "id": "29441",
+                    "externalId": "29441",
+                    "name": "Anneke Borbe",
+                    "position": "Goalkeeper",
+                    "number": "28",
+                    "age": 25,
+                    "nationality": [
+                        "Germany"
+                    ],
+                    "dateOfBirth": "2000-09-17",
+                    "foot": "right",
+                    "height": "1,80m",
+                    "marketValue": "70k",
+                    "contract": null
+                },
+                {
+                    "id": "72230",
+                    "externalId": "72230",
+                    "name": "Naomi Williams",
+                    "position": "Goalkeeper",
+                    "number": "40",
+                    "age": 21,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "2004-10-24",
+                    "foot": "right",
+                    "height": "1,71m",
+                    "marketValue": "25k",
+                    "contract": null
+                },
+                {
+                    "id": "90581",
+                    "externalId": "90581",
+                    "name": "Amy Liddiard",
+                    "position": "Goalkeeper",
+                    "number": "53",
+                    "age": 17,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "2008-10-08",
+                    "foot": "right",
+                    "height": "1,77m",
+                    "marketValue": "311k",
+                    "contract": null
+                },
+                {
+                    "id": "35745",
+                    "externalId": "35745",
+                    "name": "Emily Fox",
+                    "position": "Centre-Back",
+                    "number": "2",
+                    "age": 27,
+                    "nationality": [
+                        "United States"
+                    ],
+                    "dateOfBirth": "1998-07-05",
+                    "foot": "left",
+                    "height": "1,65m",
+                    "marketValue": "650k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "28690",
+                    "externalId": "28690",
+                    "name": "Lotte Wubben-Moy",
+                    "position": "Centre-Back",
+                    "number": "3",
+                    "age": 27,
+                    "nationality": [
+                        "England",
+                        "Netherlands"
+                    ],
+                    "dateOfBirth": "1999-01-11",
+                    "foot": "right",
+                    "height": "1,78m",
+                    "marketValue": "350k",
+                    "contract": "2028-06-30"
+                },
+                {
+                    "id": "35558",
+                    "externalId": "35558",
+                    "name": "Laia Codina",
+                    "position": "Centre-Back",
+                    "number": "5",
+                    "age": 26,
+                    "nationality": [
+                        "Spain"
+                    ],
+                    "dateOfBirth": "2000-01-22",
+                    "foot": "right",
+                    "height": "1,71m",
+                    "marketValue": "275k",
+                    "contract": "2027-06-30"
+                },
+                {
+                    "id": "22175",
+                    "externalId": "22175",
+                    "name": "Leah Williamson",
+                    "position": "Centre-Back",
+                    "number": "6",
+                    "age": 29,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "1997-03-29",
+                    "foot": "right",
+                    "height": "1,71m",
+                    "marketValue": "750k",
+                    "contract": null
+                },
+                {
+                    "id": "275",
+                    "externalId": "275",
+                    "name": "Steph Catley",
+                    "position": "Centre-Back",
+                    "number": "7",
+                    "age": 32,
+                    "nationality": [
+                        "Australia"
+                    ],
+                    "dateOfBirth": "1994-01-26",
+                    "foot": "left",
+                    "height": "1,71m",
+                    "marketValue": "450k",
+                    "contract": null
+                },
+                {
+                    "id": "20344",
+                    "externalId": "20344",
+                    "name": "Katie McCabe",
+                    "position": "Centre-Back",
+                    "number": "11",
+                    "age": 30,
+                    "nationality": [
+                        "Ireland"
+                    ],
+                    "dateOfBirth": "1995-09-21",
+                    "foot": "left",
+                    "height": "1,68m",
+                    "marketValue": "550k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "30409",
+                    "externalId": "30409",
+                    "name": "Taylor Hinds",
+                    "position": "Centre-Back",
+                    "number": "24",
+                    "age": 26,
+                    "nationality": [
+                        "England",
+                        "Jamaica"
+                    ],
+                    "dateOfBirth": "1999-04-25",
+                    "foot": "left",
+                    "height": "1,61m",
+                    "marketValue": "175k",
+                    "contract": "2028-06-30"
+                },
+                {
+                    "id": "74064",
+                    "externalId": "74064",
+                    "name": "Katie Reid",
+                    "position": "Centre-Back",
+                    "number": "26",
+                    "age": 19,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "2006-09-25",
+                    "foot": "right",
+                    "height": "1,80m",
+                    "marketValue": "60k",
+                    "contract": null
+                },
+                {
+                    "id": "65685",
+                    "externalId": "65685",
+                    "name": "Smilla Holmberg",
+                    "position": "Centre-Back",
+                    "number": "31",
+                    "age": 19,
+                    "nationality": [
+                        "Sweden"
+                    ],
+                    "dateOfBirth": "2006-10-11",
+                    "foot": "right",
+                    "height": "1,71m",
+                    "marketValue": "375k",
+                    "contract": null
+                },
+                {
+                    "id": "85575",
+                    "externalId": "85575",
+                    "name": "Sophie Harwood",
+                    "position": "Centre-Back",
+                    "number": "44",
+                    "age": 18,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "2007-12-23",
+                    "foot": "right",
+                    "height": "1,67m",
+                    "marketValue": "366k",
+                    "contract": null
+                },
+                {
+                    "id": "20817",
+                    "externalId": "20817",
+                    "name": "Mariona Caldentey",
+                    "position": "Attacking Midfield",
+                    "number": "8",
+                    "age": 30,
+                    "nationality": [
+                        "Spain"
+                    ],
+                    "dateOfBirth": "1996-03-19",
+                    "foot": "right",
+                    "height": "1,66m",
+                    "marketValue": "1.3m",
+                    "contract": "2027-06-30"
+                },
+                {
+                    "id": "2583",
+                    "externalId": "2583",
+                    "name": "Kim Little",
+                    "position": "Central Midfield",
+                    "number": "10",
+                    "age": 35,
+                    "nationality": [
+                        "Scottland"
+                    ],
+                    "dateOfBirth": "1990-06-29",
+                    "foot": "right",
+                    "height": "1,61m",
+                    "marketValue": "100k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "28339",
+                    "externalId": "28339",
+                    "name": "Frida Maanum",
+                    "position": "Attacking Midfield",
+                    "number": "12",
+                    "age": 26,
+                    "nationality": [
+                        "Norway"
+                    ],
+                    "dateOfBirth": "1999-07-16",
+                    "foot": "right",
+                    "height": "1,75m",
+                    "marketValue": "400k",
+                    "contract": null
+                },
+                {
+                    "id": "33573",
+                    "externalId": "33573",
+                    "name": "Victoria Pelova",
+                    "position": "Central Midfield",
+                    "number": "21",
+                    "age": 26,
+                    "nationality": [
+                        "Netherlands"
+                    ],
+                    "dateOfBirth": "1999-06-03",
+                    "foot": "right",
+                    "height": "1,63m",
+                    "marketValue": "275k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "39199",
+                    "externalId": "39199",
+                    "name": "Kyra Cooney-Cross",
+                    "position": "Defensive Midfield",
+                    "number": "32",
+                    "age": 24,
+                    "nationality": [
+                        "Australia"
+                    ],
+                    "dateOfBirth": "2002-02-15",
+                    "foot": "right",
+                    "height": "1,65m",
+                    "marketValue": "250k",
+                    "contract": "2027-06-30"
+                },
+                {
+                    "id": "112664",
+                    "externalId": "112664",
+                    "name": "Bryony Brodie",
+                    "position": "Central Midfield",
+                    "number": "67",
+                    "age": 16,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "2009-05-28",
+                    "foot": "right",
+                    "height": "1,65m",
+                    "marketValue": "366k",
+                    "contract": null
+                },
+                {
+                    "id": "12385",
+                    "externalId": "12385",
+                    "name": "Beth Mead",
+                    "position": "Centre-Forward",
+                    "number": "9",
+                    "age": 30,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "1995-05-09",
+                    "foot": "right",
+                    "height": "1,63m",
+                    "marketValue": "425k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "43997",
+                    "externalId": "43997",
+                    "name": "Olivia Smith",
+                    "position": "Centre-Forward",
+                    "number": "15",
+                    "age": 21,
+                    "nationality": [
+                        "Canada"
+                    ],
+                    "dateOfBirth": "2004-08-05",
+                    "foot": "right",
+                    "height": "1,63m",
+                    "marketValue": "500k",
+                    "contract": "2029-06-30"
+                },
+                {
+                    "id": "22176",
+                    "externalId": "22176",
+                    "name": "Chloe Kelly",
+                    "position": "Centre-Forward",
+                    "number": "18",
+                    "age": 28,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "1998-01-15",
+                    "foot": "both",
+                    "height": "1,68m",
+                    "marketValue": "900k",
+                    "contract": "2028-06-30"
+                },
+                {
+                    "id": "7059",
+                    "externalId": "7059",
+                    "name": "Caitlin Foord",
+                    "position": "Centre-Forward",
+                    "number": "19",
+                    "age": 31,
+                    "nationality": [
+                        "Australia"
+                    ],
+                    "dateOfBirth": "1994-11-11",
+                    "foot": "left",
+                    "height": "1,69m",
+                    "marketValue": "425k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "30397",
+                    "externalId": "30397",
+                    "name": "Alessia Russo",
+                    "position": "Centre-Forward",
+                    "number": "23",
+                    "age": 27,
+                    "nationality": [
+                        "England"
+                    ],
+                    "dateOfBirth": "1999-02-08",
+                    "foot": "right",
+                    "height": "1,74m",
+                    "marketValue": "1.3m",
+                    "contract": null
+                },
+                {
+                    "id": "18812",
+                    "externalId": "18812",
+                    "name": "Stina Blackstenius",
+                    "position": "Centre-Forward",
+                    "number": "25",
+                    "age": 30,
+                    "nationality": [
+                        "Sweden"
+                    ],
+                    "dateOfBirth": "1996-02-05",
+                    "foot": "right",
+                    "height": "1,75m",
+                    "marketValue": "400k",
+                    "contract": "2026-06-30"
+                },
+                {
+                    "id": "71123",
+                    "externalId": "71123",
+                    "name": "Michelle Agyemang",
+                    "position": "Centre-Forward",
+                    "number": "29",
+                    "age": 20,
+                    "nationality": [
+                        "England",
+                        "Ghana"
+                    ],
+                    "dateOfBirth": "2006-02-03",
+                    "foot": "right",
+                    "height": "1,69m",
+                    "marketValue": "300k",
+                    "contract": null
+                }
+            ]
+        },
+        {
             "id": "87",
             "externalId": "87",
             "transfermarktId": "87",
             "name": "Chelsea FC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/87.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Kingsmeadow",
+            "stadiumSeats": "4850",
             "players": [
                 {
                     "id": "34499",
@@ -220,7 +698,7 @@
                     "dateOfBirth": "2008-12-19",
                     "foot": "right",
                     "height": "1,70m",
-                    "marketValue": "385k",
+                    "marketValue": "373k",
                     "contract": null
                 },
                 {
@@ -254,23 +732,6 @@
                     "height": "1,62m",
                     "marketValue": "350k",
                     "contract": "2027-06-30"
-                },
-                {
-                    "id": "46925",
-                    "externalId": "46925",
-                    "name": "Catarina Macário",
-                    "position": "Attacking Midfield",
-                    "number": "9",
-                    "age": 26,
-                    "nationality": [
-                        "United States",
-                        "Brazil"
-                    ],
-                    "dateOfBirth": "1999-10-04",
-                    "foot": "right",
-                    "height": "1,65m",
-                    "marketValue": "700k",
-                    "contract": "2026-06-30"
                 },
                 {
                     "id": "54876",
@@ -333,7 +794,7 @@
                     "dateOfBirth": "2009-11-26",
                     "foot": "right",
                     "height": "1,65m",
-                    "marketValue": "385k",
+                    "marketValue": "373k",
                     "contract": null
                 },
                 {
@@ -462,485 +923,7 @@
                     "dateOfBirth": "2008-01-06",
                     "foot": "right",
                     "height": "1,67m",
-                    "marketValue": "442k",
-                    "contract": null
-                }
-            ]
-        },
-        {
-            "id": "36",
-            "externalId": "36",
-            "transfermarktId": "36",
-            "name": "Arsenal FC",
-            "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/36.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
-            "players": [
-                {
-                    "id": "10352",
-                    "externalId": "10352",
-                    "name": "Manuela Zinsberger",
-                    "position": "Goalkeeper",
-                    "number": "1",
-                    "age": 30,
-                    "nationality": [
-                        "Austria"
-                    ],
-                    "dateOfBirth": "1995-10-19",
-                    "foot": "right",
-                    "height": "1,78m",
-                    "marketValue": "100k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "27132",
-                    "externalId": "27132",
-                    "name": "Barbora Votíková",
-                    "position": "Goalkeeper",
-                    "number": "13",
-                    "age": 29,
-                    "nationality": [
-                        "Czech Republic"
-                    ],
-                    "dateOfBirth": "1996-09-13",
-                    "foot": "right",
-                    "height": "1,78m",
-                    "marketValue": "35k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "34025",
-                    "externalId": "34025",
-                    "name": "Daphne van Domselaar",
-                    "position": "Goalkeeper",
-                    "number": "14",
-                    "age": 26,
-                    "nationality": [
-                        "Netherlands"
-                    ],
-                    "dateOfBirth": "2000-03-06",
-                    "foot": "right",
-                    "height": "1,76m",
-                    "marketValue": "170k",
-                    "contract": null
-                },
-                {
-                    "id": "29441",
-                    "externalId": "29441",
-                    "name": "Anneke Borbe",
-                    "position": "Goalkeeper",
-                    "number": "28",
-                    "age": 25,
-                    "nationality": [
-                        "Germany"
-                    ],
-                    "dateOfBirth": "2000-09-17",
-                    "foot": "right",
-                    "height": "1,80m",
-                    "marketValue": "70k",
-                    "contract": null
-                },
-                {
-                    "id": "72230",
-                    "externalId": "72230",
-                    "name": "Naomi Williams",
-                    "position": "Goalkeeper",
-                    "number": "40",
-                    "age": 21,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "2004-10-24",
-                    "foot": "right",
-                    "height": "1,71m",
-                    "marketValue": "25k",
-                    "contract": null
-                },
-                {
-                    "id": "90581",
-                    "externalId": "90581",
-                    "name": "Amy Liddiard",
-                    "position": "Goalkeeper",
-                    "number": "53",
-                    "age": 17,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "2008-10-08",
-                    "foot": "right",
-                    "height": "1,77m",
-                    "marketValue": "311k",
-                    "contract": null
-                },
-                {
-                    "id": "35745",
-                    "externalId": "35745",
-                    "name": "Emily Fox",
-                    "position": "Centre-Back",
-                    "number": "2",
-                    "age": 27,
-                    "nationality": [
-                        "United States"
-                    ],
-                    "dateOfBirth": "1998-07-05",
-                    "foot": "left",
-                    "height": "1,65m",
-                    "marketValue": "650k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "28690",
-                    "externalId": "28690",
-                    "name": "Lotte Wubben-Moy",
-                    "position": "Centre-Back",
-                    "number": "3",
-                    "age": 27,
-                    "nationality": [
-                        "England",
-                        "Netherlands"
-                    ],
-                    "dateOfBirth": "1999-01-11",
-                    "foot": "right",
-                    "height": "1,78m",
-                    "marketValue": "350k",
-                    "contract": "2028-06-30"
-                },
-                {
-                    "id": "35558",
-                    "externalId": "35558",
-                    "name": "Laia Codina",
-                    "position": "Centre-Back",
-                    "number": "5",
-                    "age": 26,
-                    "nationality": [
-                        "Spain"
-                    ],
-                    "dateOfBirth": "2000-01-22",
-                    "foot": "right",
-                    "height": "1,71m",
-                    "marketValue": "275k",
-                    "contract": "2027-06-30"
-                },
-                {
-                    "id": "22175",
-                    "externalId": "22175",
-                    "name": "Leah Williamson",
-                    "position": "Centre-Back",
-                    "number": "6",
-                    "age": 28,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "1997-03-29",
-                    "foot": "right",
-                    "height": "1,71m",
-                    "marketValue": "750k",
-                    "contract": null
-                },
-                {
-                    "id": "275",
-                    "externalId": "275",
-                    "name": "Steph Catley",
-                    "position": "Centre-Back",
-                    "number": "7",
-                    "age": 32,
-                    "nationality": [
-                        "Australia"
-                    ],
-                    "dateOfBirth": "1994-01-26",
-                    "foot": "left",
-                    "height": "1,71m",
-                    "marketValue": "450k",
-                    "contract": null
-                },
-                {
-                    "id": "20344",
-                    "externalId": "20344",
-                    "name": "Katie McCabe",
-                    "position": "Centre-Back",
-                    "number": "11",
-                    "age": 30,
-                    "nationality": [
-                        "Ireland"
-                    ],
-                    "dateOfBirth": "1995-09-21",
-                    "foot": "left",
-                    "height": "1,68m",
-                    "marketValue": "550k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "30409",
-                    "externalId": "30409",
-                    "name": "Taylor Hinds",
-                    "position": "Centre-Back",
-                    "number": "24",
-                    "age": 26,
-                    "nationality": [
-                        "England",
-                        "Jamaica"
-                    ],
-                    "dateOfBirth": "1999-04-25",
-                    "foot": "left",
-                    "height": "1,61m",
-                    "marketValue": "175k",
-                    "contract": "2028-06-30"
-                },
-                {
-                    "id": "74064",
-                    "externalId": "74064",
-                    "name": "Katie Reid",
-                    "position": "Centre-Back",
-                    "number": "26",
-                    "age": 19,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "2006-09-25",
-                    "foot": "right",
-                    "height": "1,80m",
-                    "marketValue": "60k",
-                    "contract": null
-                },
-                {
-                    "id": "65685",
-                    "externalId": "65685",
-                    "name": "Smilla Holmberg",
-                    "position": "Centre-Back",
-                    "number": "31",
-                    "age": 19,
-                    "nationality": [
-                        "Sweden"
-                    ],
-                    "dateOfBirth": "2006-10-11",
-                    "foot": "right",
-                    "height": "1,71m",
-                    "marketValue": "375k",
-                    "contract": null
-                },
-                {
-                    "id": "85575",
-                    "externalId": "85575",
-                    "name": "Sophie Harwood",
-                    "position": "Centre-Back",
-                    "number": "44",
-                    "age": 18,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "2007-12-23",
-                    "foot": "right",
-                    "height": "1,67m",
-                    "marketValue": "366k",
-                    "contract": null
-                },
-                {
-                    "id": "20817",
-                    "externalId": "20817",
-                    "name": "Mariona Caldentey",
-                    "position": "Attacking Midfield",
-                    "number": "8",
-                    "age": 30,
-                    "nationality": [
-                        "Spain"
-                    ],
-                    "dateOfBirth": "1996-03-19",
-                    "foot": "right",
-                    "height": "1,66m",
-                    "marketValue": "1.3m",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "2583",
-                    "externalId": "2583",
-                    "name": "Kim Little",
-                    "position": "Central Midfield",
-                    "number": "10",
-                    "age": 35,
-                    "nationality": [
-                        "Scottland"
-                    ],
-                    "dateOfBirth": "1990-06-29",
-                    "foot": "right",
-                    "height": "1,61m",
-                    "marketValue": "100k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "28339",
-                    "externalId": "28339",
-                    "name": "Frida Maanum",
-                    "position": "Attacking Midfield",
-                    "number": "12",
-                    "age": 26,
-                    "nationality": [
-                        "Norway"
-                    ],
-                    "dateOfBirth": "1999-07-16",
-                    "foot": "right",
-                    "height": "1,75m",
-                    "marketValue": "400k",
-                    "contract": null
-                },
-                {
-                    "id": "33573",
-                    "externalId": "33573",
-                    "name": "Victoria Pelova",
-                    "position": "Central Midfield",
-                    "number": "21",
-                    "age": 26,
-                    "nationality": [
-                        "Netherlands"
-                    ],
-                    "dateOfBirth": "1999-06-03",
-                    "foot": "right",
-                    "height": "1,63m",
-                    "marketValue": "275k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "39199",
-                    "externalId": "39199",
-                    "name": "Kyra Cooney-Cross",
-                    "position": "Defensive Midfield",
-                    "number": "32",
-                    "age": 24,
-                    "nationality": [
-                        "Australia"
-                    ],
-                    "dateOfBirth": "2002-02-15",
-                    "foot": "right",
-                    "height": "1,65m",
-                    "marketValue": "250k",
-                    "contract": null
-                },
-                {
-                    "id": "112664",
-                    "externalId": "112664",
-                    "name": "Bryony Brodie",
-                    "position": "Central Midfield",
-                    "number": "67",
-                    "age": 16,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "2009-05-28",
-                    "foot": "right",
-                    "height": "1,65m",
-                    "marketValue": "366k",
-                    "contract": null
-                },
-                {
-                    "id": "12385",
-                    "externalId": "12385",
-                    "name": "Beth Mead",
-                    "position": "Centre-Forward",
-                    "number": "9",
-                    "age": 30,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "1995-05-09",
-                    "foot": "right",
-                    "height": "1,63m",
-                    "marketValue": "425k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "43997",
-                    "externalId": "43997",
-                    "name": "Olivia Smith",
-                    "position": "Centre-Forward",
-                    "number": "15",
-                    "age": 21,
-                    "nationality": [
-                        "Canada"
-                    ],
-                    "dateOfBirth": "2004-08-05",
-                    "foot": "right",
-                    "height": "1,63m",
-                    "marketValue": "500k",
-                    "contract": "2029-06-30"
-                },
-                {
-                    "id": "22176",
-                    "externalId": "22176",
-                    "name": "Chloe Kelly",
-                    "position": "Centre-Forward",
-                    "number": "18",
-                    "age": 28,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "1998-01-15",
-                    "foot": "both",
-                    "height": "1,68m",
-                    "marketValue": "900k",
-                    "contract": "2028-06-30"
-                },
-                {
-                    "id": "7059",
-                    "externalId": "7059",
-                    "name": "Caitlin Foord",
-                    "position": "Centre-Forward",
-                    "number": "19",
-                    "age": 31,
-                    "nationality": [
-                        "Australia"
-                    ],
-                    "dateOfBirth": "1994-11-11",
-                    "foot": "left",
-                    "height": "1,69m",
-                    "marketValue": "425k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "30397",
-                    "externalId": "30397",
-                    "name": "Alessia Russo",
-                    "position": "Centre-Forward",
-                    "number": "23",
-                    "age": 27,
-                    "nationality": [
-                        "England"
-                    ],
-                    "dateOfBirth": "1999-02-08",
-                    "foot": "right",
-                    "height": "1,74m",
-                    "marketValue": "1.3m",
-                    "contract": null
-                },
-                {
-                    "id": "18812",
-                    "externalId": "18812",
-                    "name": "Stina Blackstenius",
-                    "position": "Centre-Forward",
-                    "number": "25",
-                    "age": 30,
-                    "nationality": [
-                        "Sweden"
-                    ],
-                    "dateOfBirth": "1996-02-05",
-                    "foot": "right",
-                    "height": "1,75m",
-                    "marketValue": "400k",
-                    "contract": "2026-06-30"
-                },
-                {
-                    "id": "71123",
-                    "externalId": "71123",
-                    "name": "Michelle Agyemang",
-                    "position": "Centre-Forward",
-                    "number": "29",
-                    "age": 20,
-                    "nationality": [
-                        "England",
-                        "Ghana"
-                    ],
-                    "dateOfBirth": "2006-02-03",
-                    "foot": "right",
-                    "height": "1,69m",
-                    "marketValue": "300k",
+                    "marketValue": "429k",
                     "contract": null
                 }
             ]
@@ -951,8 +934,8 @@
             "transfermarktId": "990",
             "name": "Manchester City",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/990.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Joie Stadium",
+            "stadiumSeats": "7000",
             "players": [
                 {
                     "id": "35719",
@@ -1185,7 +1168,7 @@
                     "name": "Grace Clinton",
                     "position": "Central Midfield",
                     "number": "6",
-                    "age": 22,
+                    "age": 23,
                     "nationality": [
                         "England"
                     ],
@@ -1462,8 +1445,8 @@
             "transfermarktId": "4458",
             "name": "Manchester United",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/4458.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Leigh Sports Village",
+            "stadiumSeats": "12000",
             "players": [
                 {
                     "id": "33813",
@@ -1879,8 +1862,8 @@
             "transfermarktId": "1439",
             "name": "Tottenham Hotspur",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/1439.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "BetWright Stadium",
+            "stadiumSeats": "9271",
             "players": [
                 {
                     "id": "30744",
@@ -2168,7 +2151,7 @@
                     "foot": "both",
                     "height": "1,70m",
                     "marketValue": "90k",
-                    "contract": "2026-06-30"
+                    "contract": null
                 },
                 {
                     "id": "52669",
@@ -2355,8 +2338,8 @@
             "transfermarktId": "215",
             "name": "Liverpool FC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/215.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "BrewDog Stadium",
+            "stadiumSeats": "18000",
             "players": [
                 {
                     "id": "4391",
@@ -2939,7 +2922,7 @@
                     "name": "Isa Kardinaal",
                     "position": "Centre-Back",
                     "number": "4",
-                    "age": 20,
+                    "age": 21,
                     "nationality": [
                         "Netherlands"
                     ],
@@ -3280,8 +3263,8 @@
             "transfermarktId": "897",
             "name": "Aston Villa",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/897.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Villa Park",
+            "stadiumSeats": "42095",
             "players": [
                 {
                     "id": "17039",
@@ -3759,8 +3742,8 @@
             "transfermarktId": "932",
             "name": "Brighton & Hove Albion",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/932.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Broadfield Stadium",
+            "stadiumSeats": "6134",
             "players": [
                 {
                     "id": "35771",
@@ -4236,8 +4219,8 @@
             "transfermarktId": "108",
             "name": "Everton FC",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/108.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Goodison Park",
+            "stadiumSeats": "39414",
             "players": [
                 {
                     "id": "41205",
@@ -4684,8 +4667,8 @@
             "transfermarktId": "1059",
             "name": "West Ham United",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/1059.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "Chigwell Construction",
+            "stadiumSeats": "6078",
             "players": [
                 {
                     "id": "39538",
@@ -5104,8 +5087,8 @@
             "transfermarktId": "980",
             "name": "Leicester City",
             "image": "https://www.soccerdonna.de/static/bilder_sd/wappen/980.png",
-            "stadiumName": null,
-            "stadiumSeats": null,
+            "stadiumName": "King Power Stadium",
+            "stadiumSeats": "32261",
             "players": [
                 {
                     "id": "21642",

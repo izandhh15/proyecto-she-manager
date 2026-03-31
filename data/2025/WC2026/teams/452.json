@@ -1,0 +1,371 @@
+{
+    "id": "452",
+    "externalId": "452",
+    "transfermarktId": "452",
+    "name": "Finland",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "34838",
+            "externalId": "34838",
+            "name": "Anna Koivunen",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2001-11-06",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "80k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "34730",
+            "externalId": "34730",
+            "name": "Anna Tamminen",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1994-10-30",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "75k",
+            "contract": null
+        },
+        {
+            "id": "26253",
+            "externalId": "26253",
+            "name": "Katriina Talaslahti",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2000-09-21",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "100k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "14310",
+            "externalId": "14310",
+            "name": "Emma Koivisto",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1994-09-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "80k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "53013",
+            "externalId": "53013",
+            "name": "Helmi Raijas",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2005-06-11",
+            "foot": "right",
+            "height": "Heli Raijas Växjö DFF, Defencem",
+            "marketValue": "45k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "46728",
+            "externalId": "46728",
+            "name": "Jasmin Mansaray",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2004-12-27",
+            "foot": "right",
+            "height": "Jasin Mansaray Lillestrø SK Kvinner, Defencem",
+            "marketValue": "15k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "34661",
+            "externalId": "34661",
+            "name": "Emmi Siren",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2001-02-23",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "90k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "32767",
+            "externalId": "32767",
+            "name": "Eva Nyström",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1999-11-29",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "29208",
+            "externalId": "29208",
+            "name": "Nea Lehtola",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1998-10-24",
+            "foot": "both",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "28751",
+            "externalId": "28751",
+            "name": "Maaria Roth",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1997-06-13",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "30k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "20769",
+            "externalId": "20769",
+            "name": "Julia Tunturi",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Finland",
+                "Sweden"
+            ],
+            "dateOfBirth": "1996-04-25",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "45k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "23906",
+            "externalId": "23906",
+            "name": "Olga Ahtinen",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1997-08-15",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "90k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "34662",
+            "externalId": "34662",
+            "name": "Oona Siren",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2001-02-23",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "34748",
+            "externalId": "34748",
+            "name": "Eveliina Summanen",
+            "position": "Defensive Midfield",
+            "age": 27,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1998-05-29",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "140k",
+            "contract": null
+        },
+        {
+            "id": "16671",
+            "externalId": "16671",
+            "name": "Ria Öling",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1994-09-15",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "70k",
+            "contract": null
+        },
+        {
+            "id": "35064",
+            "externalId": "35064",
+            "name": "Katariina Kosola",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2001-02-24",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "85k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "35065",
+            "externalId": "35065",
+            "name": "Vilma Koivisto",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2002-11-21",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "65k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "59025",
+            "externalId": "59025",
+            "name": "Milja Kiviranta",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2006-05-15",
+            "foot": "right",
+            "height": "Milja Kiviranta HJK, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "38773",
+            "externalId": "38773",
+            "name": "Paulina Nyström",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Finland",
+                "Sweden"
+            ],
+            "dateOfBirth": "2000-08-17",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "60k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "43374",
+            "externalId": "43374",
+            "name": "Oona Sevenius",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2004-04-28",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "80k",
+            "contract": null
+        },
+        {
+            "id": "16668",
+            "externalId": "16668",
+            "name": "Sanni Franssi",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1995-03-19",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "100k",
+            "contract": null
+        },
+        {
+            "id": "49534",
+            "externalId": "49534",
+            "name": "Lotta Lindström",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2004-09-10",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "4895",
+            "externalId": "4895",
+            "name": "Adelina Engman",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "1994-10-11",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "35k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "58995",
+            "externalId": "58995",
+            "name": "Lilli Halttunen",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Finland"
+            ],
+            "dateOfBirth": "2005-07-01",
+            "foot": "right",
+            "height": "Lilli Halttunen Brøndby IF, Strikerm",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        }
+    ]
+}

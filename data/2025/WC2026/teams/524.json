@@ -1,0 +1,384 @@
+{
+    "id": "524",
+    "externalId": "524",
+    "transfermarktId": "524",
+    "name": "Burkina Faso",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "74284",
+            "externalId": "74284",
+            "name": "Aminata Korogo",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1999-10-28",
+            "foot": "right",
+            "height": "Ainata Korogo AS Les Oisillons, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74265",
+            "externalId": "74265",
+            "name": "Mariam Ouattara",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2003-03-31",
+            "foot": "right",
+            "height": "Maria Ouattara US des Forces Arées, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74289",
+            "externalId": "74289",
+            "name": "Ami Sanou",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1989-12-31",
+            "foot": "right",
+            "height": "Ai Sanou AO Étincelle du Faso, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74292",
+            "externalId": "74292",
+            "name": "Madina Traoré",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2001-08-16",
+            "foot": "right",
+            "height": "Madina Traoré AO Étincelle du Faso, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74287",
+            "externalId": "74287",
+            "name": "Assanatou Nako",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1998-04-27",
+            "foot": "right",
+            "height": "Assanatou Nako US des Forces Arées, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74285",
+            "externalId": "74285",
+            "name": "Rabiatou Koudougou",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2004-04-20",
+            "foot": "right",
+            "height": "Rabiatou Koudougou Racing Club Bobo-Dioulasso, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74279",
+            "externalId": "74279",
+            "name": "Alimata Bélem",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2004-09-02",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "35k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "74293",
+            "externalId": "74293",
+            "name": "Diamilatou Zongo",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2001-06-21",
+            "foot": "right",
+            "height": "Diailatou Zongo Racing Club Bobo-Dioulasso, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74288",
+            "externalId": "74288",
+            "name": "Madina Rouamba",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2001-12-01",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74337",
+            "externalId": "74337",
+            "name": "Chantal Zongo",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1997-11-25",
+            "foot": "right",
+            "height": "Chantal Zongo AS Les Oisillons, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74291",
+            "externalId": "74291",
+            "name": "Stéphanie Sow",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1995-11-02",
+            "foot": "right",
+            "height": "Stéphanie Sow US des Forces Arées, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74286",
+            "externalId": "74286",
+            "name": "Aimata Nacoulma",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2001-02-27",
+            "foot": "right",
+            "height": "Aiata Nacoula AS Les Oisillons, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74290",
+            "externalId": "74290",
+            "name": "Jacqueline Sédogo",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2002-07-25",
+            "foot": "right",
+            "height": "Jacqueline Sédogo Sparks, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74297",
+            "externalId": "74297",
+            "name": "Rasmata Sawadogo",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2003-01-01",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "74295",
+            "externalId": "74295",
+            "name": "Charlotte Millogo",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1998-07-14",
+            "foot": "right",
+            "height": "Charlotte Millogo US des Forces Arées, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74282",
+            "externalId": "74282",
+            "name": "Adèle Kabré",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2004-12-30",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "49099",
+            "externalId": "49099",
+            "name": "Juliette Nana",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2000-08-16",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74281",
+            "externalId": "74281",
+            "name": "Mounifatou Helby",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2005-11-20",
+            "foot": "right",
+            "height": "Mounifatou Helby AS Les Oisillons, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74283",
+            "externalId": "74283",
+            "name": "Félicité Kafando",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1996-06-17",
+            "foot": "right",
+            "height": "Félicité Kafando Sparks, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74298",
+            "externalId": "74298",
+            "name": "Adama Congo",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "2004-04-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74294",
+            "externalId": "74294",
+            "name": "Mouniratou Compaoré",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1997-11-26",
+            "foot": "right",
+            "height": "Mouniratou Copaoré US des Forces Arées, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74302",
+            "externalId": "74302",
+            "name": "Fadiratou Tarnagda",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1998-09-14",
+            "foot": "right",
+            "height": "Fadiratou Tarnagda AS Les Oisillons, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74296",
+            "externalId": "74296",
+            "name": "Balkissa Sawadogo",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1998-10-02",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74300",
+            "externalId": "74300",
+            "name": "Limata Nikiéma",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1995-06-07",
+            "foot": "right",
+            "height": "Liata Nikiéa Hassania Agadir, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74303",
+            "externalId": "74303",
+            "name": "Justine Zongo",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Burkina Faso"
+            ],
+            "dateOfBirth": "1998-12-31",
+            "foot": "right",
+            "height": "Justine Zongo AO Étincelle du Faso, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

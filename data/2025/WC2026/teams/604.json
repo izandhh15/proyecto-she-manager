@@ -1,0 +1,312 @@
+{
+    "id": "604",
+    "externalId": "604",
+    "transfermarktId": "604",
+    "name": "Guam",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "67253",
+            "externalId": "67253",
+            "name": "Kiarra Hutcherson",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2003-03-13",
+            "foot": "right",
+            "height": "Kiarra Hutcherson unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67254",
+            "externalId": "67254",
+            "name": "Tristyana Santos",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2004-04-01",
+            "foot": "right",
+            "height": "Tristyana Santos unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67255",
+            "externalId": "67255",
+            "name": "Gabrielle Moser",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2005-06-22",
+            "foot": "right",
+            "height": "Gabrielle Moser unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67260",
+            "externalId": "67260",
+            "name": "Emma Foley",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Guam",
+                "United States"
+            ],
+            "dateOfBirth": "2003-11-12",
+            "foot": "right",
+            "height": "Ea Foley unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67259",
+            "externalId": "67259",
+            "name": "Sabrina Kenney",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2001-04-16",
+            "foot": "right",
+            "height": "Sabrina Kenney unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67257",
+            "externalId": "67257",
+            "name": "Ariya Cruz",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "1999-01-09",
+            "foot": "right",
+            "height": "Ariya Cruz Bank of Gua Strykers FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67258",
+            "externalId": "67258",
+            "name": "Samantha Kenney",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2004-01-18",
+            "foot": "right",
+            "height": "Saantha Kenney unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67268",
+            "externalId": "67268",
+            "name": "Jenna Merrill",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Guam",
+                "United States"
+            ],
+            "dateOfBirth": "1992-04-22",
+            "foot": "right",
+            "height": "Jenna Merrill Stallion Laguna FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67266",
+            "externalId": "67266",
+            "name": "Yae Kawauchi",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2000-01-24",
+            "foot": "right",
+            "height": "Yae Kawauchi Bank of Gua Strykers FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67270",
+            "externalId": "67270",
+            "name": "Inyssa Perez",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Guam",
+                "United States"
+            ],
+            "dateOfBirth": "1994-07-22",
+            "foot": "right",
+            "height": "Inyssa Perez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67263",
+            "externalId": "67263",
+            "name": "Caylani Estoy",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2000-02-21",
+            "foot": "right",
+            "height": "Caylani Estoy unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67264",
+            "externalId": "67264",
+            "name": "Olivia Haddock",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2005-12-31",
+            "foot": "right",
+            "height": "Olivia Haddock Bank of Gua Strykers FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67262",
+            "externalId": "67262",
+            "name": "Hannah Cruz",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2001-01-14",
+            "foot": "right",
+            "height": "Hannah Cruz Bank of Gua Strykers FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67271",
+            "externalId": "67271",
+            "name": "Shyann Roberto",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2002-01-10",
+            "foot": "right",
+            "height": "Shyann Roberto unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67269",
+            "externalId": "67269",
+            "name": "Colleen Naden",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "1999-06-10",
+            "foot": "right",
+            "height": "Colleen Naden unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67261",
+            "externalId": "67261",
+            "name": "Elisha Benavente",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "1996-01-20",
+            "foot": "right",
+            "height": "Elisha Benavente Bank of Gua Strykers FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67267",
+            "externalId": "67267",
+            "name": "Brianne León Guerrero",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2001-05-14",
+            "foot": "right",
+            "height": "Brianne León Guerrero unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67272",
+            "externalId": "67272",
+            "name": "Franshay Shippey",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "1998-03-23",
+            "foot": "right",
+            "height": "Franshay Shippey unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67273",
+            "externalId": "67273",
+            "name": "April Talledo",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "1996-04-19",
+            "foot": "right",
+            "height": "April Talledo unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67265",
+            "externalId": "67265",
+            "name": "Asia Jackson",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Guam"
+            ],
+            "dateOfBirth": "2001-07-31",
+            "foot": "right",
+            "height": "Asia Jackson unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

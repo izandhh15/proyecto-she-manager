@@ -1,0 +1,24 @@
+{
+    "id": "642",
+    "externalId": "642",
+    "transfermarktId": "642",
+    "name": "Congo",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "115129",
+            "externalId": "115129",
+            "name": "Flore Ngoma",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Congo"
+            ],
+            "dateOfBirth": "1999-12-15",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

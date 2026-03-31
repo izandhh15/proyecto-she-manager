@@ -90,7 +90,7 @@
                 "Argentina"
             ],
             "dateOfBirth": "2001-04-04",
-            "foot": "left",
+            "foot": "right",
             "height": "1,72m",
             "marketValue": "50k",
             "contract": null
@@ -222,7 +222,7 @@
             "externalId": "54323",
             "name": "Cata Ongaro",
             "position": "Central Midfield",
-            "age": 22,
+            "age": 23,
             "nationality": [
                 "Argentina"
             ],
@@ -274,7 +274,7 @@
             ],
             "dateOfBirth": "2000-01-26",
             "foot": "right",
-            "height": "1,75m",
+            "height": "1,70m",
             "marketValue": "20k",
             "contract": "2026-06-30"
         },

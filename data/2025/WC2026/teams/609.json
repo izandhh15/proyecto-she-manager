@@ -1,0 +1,405 @@
+{
+    "id": "609",
+    "externalId": "609",
+    "transfermarktId": "609",
+    "name": "Guyana",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "21745",
+            "externalId": "21745",
+            "name": "Chanté Sandiford",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Guyana",
+                "United States"
+            ],
+            "dateOfBirth": "1990-01-08",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68921",
+            "externalId": "68921",
+            "name": "Natalie Nedd",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Natalie Nedd Graceland Yellowjackets, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45333",
+            "externalId": "45333",
+            "name": "Raven Edwards-Dowdall",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "2000-05-14",
+            "foot": "right",
+            "height": "Raven Edwards-Dowdall vereinslos, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68913",
+            "externalId": "68913",
+            "name": "Sydney Cummings",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Guyana",
+                "United States"
+            ],
+            "dateOfBirth": "1999-03-05",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45354",
+            "externalId": "45354",
+            "name": "Rylee Traicoff",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "2001-11-09",
+            "foot": "right",
+            "height": "Rylee Traicoff unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68915",
+            "externalId": "68915",
+            "name": "Kayla de Souza",
+            "position": "Centre-Back",
+            "age": 36,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "1990-03-07",
+            "foot": "right",
+            "height": "Kayla de Souza unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68916",
+            "externalId": "68916",
+            "name": "Ghilene Joseph",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Guyana",
+                "United States"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68917",
+            "externalId": "68917",
+            "name": "Justine Rodrigues",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "1993-03-17",
+            "foot": "right",
+            "height": "Justine Rodrigues unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72375",
+            "externalId": "72375",
+            "name": "Briana de Souza",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "1991-05-22",
+            "foot": "right",
+            "height": "Briana de Souza unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68920",
+            "externalId": "68920",
+            "name": "Shennel Daniels",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Shennel Daniels unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68914",
+            "externalId": "68914",
+            "name": "Reece Scott",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Reece Scott Grabling State Tigers, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45351",
+            "externalId": "45351",
+            "name": "Tiandi Smith",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "2001-11-24",
+            "foot": "right",
+            "height": "Tiandi Sith unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68922",
+            "externalId": "68922",
+            "name": "Lakeisha Pearson",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lakeisha Pearson unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68918",
+            "externalId": "68918",
+            "name": "Hannah Baptiste",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Hannah Baptiste unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16922",
+            "externalId": "16922",
+            "name": "Brittany Persaud",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Guyana",
+                "United States"
+            ],
+            "dateOfBirth": "1990-04-01",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45339",
+            "externalId": "45339",
+            "name": "Stefani Kouzas",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "2002-01-10",
+            "foot": "right",
+            "height": "Stefani Kouzas unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45331",
+            "externalId": "45331",
+            "name": "Brianne Desa",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "2000-07-06",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68924",
+            "externalId": "68924",
+            "name": "Mariam El-Masri",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "1991-06-20",
+            "foot": "right",
+            "height": "Maria El-Masri unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45323",
+            "externalId": "45323",
+            "name": "Shanice Alfred",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Guyana",
+                "Canada"
+            ],
+            "dateOfBirth": "2001-08-29",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68925",
+            "externalId": "68925",
+            "name": "Cameo Hazlewood",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Caeo Hazlewood unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69576",
+            "externalId": "69576",
+            "name": "Shaylynn Bentley",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Shaylynn Bentley unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "57337",
+            "externalId": "57337",
+            "name": "Otesha Charles",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Guyana",
+                "England"
+            ],
+            "dateOfBirth": "1993-09-14",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68923",
+            "externalId": "68923",
+            "name": "Annalisa Vincent",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Annalisa Vincent unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68919",
+            "externalId": "68919",
+            "name": "Calaigh Copland",
+            "position": "Centre-Forward",
+            "age": 39,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": "1987-03-12",
+            "foot": "right",
+            "height": "Calaigh Copland unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69641",
+            "externalId": "69641",
+            "name": "Neema Liverpool",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Neea Liverpool unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68926",
+            "externalId": "68926",
+            "name": "Shyla Murray",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Guyana"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Shyla Murray unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

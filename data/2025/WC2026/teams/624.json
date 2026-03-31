@@ -1,0 +1,372 @@
+{
+    "id": "624",
+    "externalId": "624",
+    "transfermarktId": "624",
+    "name": "Jamaica",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "2592",
+            "externalId": "2592",
+            "name": "Rebecca Spencer",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "Jamaica",
+                "England"
+            ],
+            "dateOfBirth": "1991-02-22",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "33992",
+            "externalId": "33992",
+            "name": "Sydney Schneider",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "1999-08-31",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "69968",
+            "externalId": "69968",
+            "name": "Liya Brooks",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "2005-05-17",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "99633",
+            "externalId": "99633",
+            "name": "Naya Cardoza",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Jamaica",
+                "Canada"
+            ],
+            "dateOfBirth": "2004-11-02",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "27213",
+            "externalId": "27213",
+            "name": "Konya Plummer",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Jamaica"
+            ],
+            "dateOfBirth": "1997-08-02",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "89218",
+            "externalId": "89218",
+            "name": "Tianna Harris",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Jamaica",
+                "Canada"
+            ],
+            "dateOfBirth": "2000-02-07",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "69987",
+            "externalId": "69987",
+            "name": "Kameron Simmonds",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "2003-12-06",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "35k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "38135",
+            "externalId": "38135",
+            "name": "Allyson Swaby",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "1996-10-03",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "38822",
+            "externalId": "38822",
+            "name": "Chantelle Swaby",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "1998-08-06",
+            "foot": "both",
+            "height": "1,78m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "19188",
+            "externalId": "19188",
+            "name": "Jade Bailey",
+            "position": "Defensive Midfield",
+            "age": 30,
+            "nationality": [
+                "Jamaica",
+                "England"
+            ],
+            "dateOfBirth": "1995-11-11",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69973",
+            "externalId": "69973",
+            "name": "Shaneil Buckley",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Jamaica"
+            ],
+            "dateOfBirth": "2005-05-20",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64525",
+            "externalId": "64525",
+            "name": "Kiki van Zanten",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "2001-08-25",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "35k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "62995",
+            "externalId": "62995",
+            "name": "Izzy Groves",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Jamaica",
+                "Canada"
+            ],
+            "dateOfBirth": "1999-06-07",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44228",
+            "externalId": "44228",
+            "name": "Peyton McNamara",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "2002-02-22",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38151",
+            "externalId": "38151",
+            "name": "Deneisha Blackwood",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Jamaica"
+            ],
+            "dateOfBirth": "1997-03-07",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33966",
+            "externalId": "33966",
+            "name": "Sade Adamolekun",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "2001-02-21",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22171",
+            "externalId": "22171",
+            "name": "Atlanta Primus",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Jamaica",
+                "England"
+            ],
+            "dateOfBirth": "1997-04-21",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38803",
+            "externalId": "38803",
+            "name": "Kayla McKenna",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "1996-09-03",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69787",
+            "externalId": "69787",
+            "name": "Natasha Thomas",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Jamaica",
+                "England"
+            ],
+            "dateOfBirth": "1995-12-19",
+            "foot": "right",
+            "height": "Natasha Thoas Ipswich Town, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38150",
+            "externalId": "38150",
+            "name": "Khadija Shaw",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Jamaica"
+            ],
+            "dateOfBirth": "1997-01-31",
+            "foot": "both",
+            "height": "1,80m",
+            "marketValue": "725k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38149",
+            "externalId": "38149",
+            "name": "Trudi Carter",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Jamaica"
+            ],
+            "dateOfBirth": "1994-11-18",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34582",
+            "externalId": "34582",
+            "name": "Shania Hayles",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Jamaica",
+                "England"
+            ],
+            "dateOfBirth": "1999-12-22",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "15k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "82982",
+            "externalId": "82982",
+            "name": "Solai Washington",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Jamaica",
+                "United States"
+            ],
+            "dateOfBirth": "2005-10-01",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        }
+    ]
+}

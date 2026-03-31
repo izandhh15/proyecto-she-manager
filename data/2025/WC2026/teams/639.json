@@ -1,0 +1,25 @@
+{
+    "id": "639",
+    "externalId": "639",
+    "transfermarktId": "639",
+    "name": "Kyrgyzstan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "16626",
+            "externalId": "16626",
+            "name": "Alina Litvinenko",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Kyrgyzstan",
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1995-12-17",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

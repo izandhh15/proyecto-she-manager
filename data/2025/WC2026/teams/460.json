@@ -1,0 +1,298 @@
+{
+    "id": "460",
+    "externalId": "460",
+    "transfermarktId": "460",
+    "name": "Nigeria",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "105454",
+            "externalId": "105454",
+            "name": "Rachael Unachukwu",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2005-12-17",
+            "foot": "right",
+            "height": "Rachael Unachukwu Nasarawa Aazons, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101820",
+            "externalId": "101820",
+            "name": "Anderline Mgbechi",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2005-11-30",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35771",
+            "externalId": "35771",
+            "name": "Chiamaka Nnadozie",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2000-12-08",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "125k",
+            "contract": null
+        },
+        {
+            "id": "59011",
+            "externalId": "59011",
+            "name": "Oluwatosin Demehin",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2002-03-13",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "45k",
+            "contract": null
+        },
+        {
+            "id": "98198",
+            "externalId": "98198",
+            "name": "Shukurat Oladipo",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2004-09-22",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "35k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "78797",
+            "externalId": "78797",
+            "name": "Miracle Usani",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2007-06-20",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "6529",
+            "externalId": "6529",
+            "name": "Osinachi Ohale",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "1991-12-21",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56739",
+            "externalId": "56739",
+            "name": "Michelle Alozie",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Nigeria",
+                "United States"
+            ],
+            "dateOfBirth": "1997-04-28",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "80k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "35764",
+            "externalId": "35764",
+            "name": "Christy Ucheibe",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2000-12-25",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22177",
+            "externalId": "22177",
+            "name": "Ashleigh Plumptre",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Nigeria",
+                "England"
+            ],
+            "dateOfBirth": "1998-05-08",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66726",
+            "externalId": "66726",
+            "name": "Deborah Abiodun",
+            "position": "Defensive Midfield",
+            "age": 22,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2003-11-02",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "40k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "72071",
+            "externalId": "72071",
+            "name": "Joe Echegini",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Nigeria",
+                "England"
+            ],
+            "dateOfBirth": "2001-03-22",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "375k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "78783",
+            "externalId": "78783",
+            "name": "Taiwo Afolabi",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2007-03-02",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56280",
+            "externalId": "56280",
+            "name": "Joy Omewa",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2002-12-01",
+            "foot": "left",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "61400",
+            "externalId": "61400",
+            "name": "Esther Okoronkwo",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Nigeria",
+                "United States"
+            ],
+            "dateOfBirth": "1997-03-27",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "25k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "64437",
+            "externalId": "64437",
+            "name": "Florence Ijamilusi",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "2001-05-30",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "23095",
+            "externalId": "23095",
+            "name": "Rasheedat Ajibade",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "1999-12-08",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "425k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "18176",
+            "externalId": "18176",
+            "name": "Chinwendu Ihezuo",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "1997-04-30",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "17003",
+            "externalId": "17003",
+            "name": "Asisat Oshoala",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Nigeria"
+            ],
+            "dateOfBirth": "1994-10-09",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "280k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

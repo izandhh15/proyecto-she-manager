@@ -1,0 +1,403 @@
+{
+    "id": "497",
+    "externalId": "497",
+    "transfermarktId": "497",
+    "name": "Aruba",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "69622",
+            "externalId": "69622",
+            "name": "Andreina Arismendy-Cuevas",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Andreina Arisendy-Cuevas unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72175",
+            "externalId": "72175",
+            "name": "Hadassah Kock",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": "2005-03-10",
+            "foot": "right",
+            "height": "Hadassah Kock unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69640",
+            "externalId": "69640",
+            "name": "Marietje Werleman-Kock",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Marietje Werlean-Kock unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69631",
+            "externalId": "69631",
+            "name": "Lyxienne Loopstok",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lyxienne Loopstok unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "20586",
+            "externalId": "20586",
+            "name": "Soraya Verhoeve",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Aruba",
+                "Netherlands"
+            ],
+            "dateOfBirth": "1997-12-28",
+            "foot": "right",
+            "height": "Soraya Verhoeve FC Utrecht, Defencem",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "72174",
+            "externalId": "72174",
+            "name": "Joya Tromp",
+            "position": "Centre-Back",
+            "age": 17,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": "2008-11-21",
+            "foot": "right",
+            "height": "Joya Trop unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69629",
+            "externalId": "69629",
+            "name": "Dyviënne Henriquez",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Dyviënne Henriquez unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16274",
+            "externalId": "16274",
+            "name": "Chameral Luitjes",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": "1994-09-18",
+            "foot": "right",
+            "height": "Chaeral Luitjes unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69637",
+            "externalId": "69637",
+            "name": "Josrine Saladin",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Josrine Saladin unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69634",
+            "externalId": "69634",
+            "name": "Lydienn Martha",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lydienn Martha unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69628",
+            "externalId": "69628",
+            "name": "Genesis Hazel",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Genesis Hazel unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69639",
+            "externalId": "69639",
+            "name": "Munjeuline Tromp",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Munjeuline Trop unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69633",
+            "externalId": "69633",
+            "name": "Latisha Martha",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Latisha Martha unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16275",
+            "externalId": "16275",
+            "name": "Donnevier Luitjes",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": "1995-12-21",
+            "foot": "right",
+            "height": "Donnevier Luitjes unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69621",
+            "externalId": "69621",
+            "name": "Izaline Angela",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Izaline Angela unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69636",
+            "externalId": "69636",
+            "name": "Isabella Netto",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Isabella Netto unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69623",
+            "externalId": "69623",
+            "name": "Christy-Ann Brete",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Christy-Ann Brete unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69638",
+            "externalId": "69638",
+            "name": "Lilianne Saladin",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lilianne Saladin unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69625",
+            "externalId": "69625",
+            "name": "Ashley Douglas",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Ashley Douglas unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69635",
+            "externalId": "69635",
+            "name": "Edriana Molina Gonzalez",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Edriana Molina Gonzalez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16284",
+            "externalId": "16284",
+            "name": "Jessica Rivero",
+            "position": "Central Midfield",
+            "age": 37,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": "1988-10-03",
+            "foot": "right",
+            "height": "Jessica Rivero unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "87168",
+            "externalId": "87168",
+            "name": "Bonny Lammers",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Aruba",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2003-12-19",
+            "foot": "right",
+            "height": "Bonny Laers De Graafschap, Strikerm",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "69626",
+            "externalId": "69626",
+            "name": "Aisse Gumbs",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Aruba",
+                "Netherlands"
+            ],
+            "dateOfBirth": "1997-08-06",
+            "foot": "right",
+            "height": "Aisse Gubs Acharnaikos AO, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69624",
+            "externalId": "69624",
+            "name": "Tarianna Doornkamp",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Tarianna Doornkap unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69630",
+            "externalId": "69630",
+            "name": "Stacey Lampe",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Aruba"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Stacey Lape unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29981",
+            "externalId": "29981",
+            "name": "Vanessa Susanna",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Aruba",
+                "Netherlands"
+            ],
+            "dateOfBirth": "1997-07-29",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "15k",
+            "contract": null
+        }
+    ]
+}

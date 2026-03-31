@@ -17,6 +17,7 @@
 
     $positionDisplay = $gamePlayer->position_display;
     $nationalityFlag = $gamePlayer->nationality_flag;
+    $primaryNationality = $gamePlayer->nationality[0] ?? null;
     $devStatus = $gamePlayer->developmentStatus($game->current_date);
 
     $devLabels = [
@@ -58,10 +59,12 @@
         {{-- Info --}}
         <div class="flex-1 min-w-0">
             <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
-                @if($nationalityFlag)
+                @if($primaryNationality)
                     <span class="inline-flex items-center gap-1.5">
-                        <img src="{{ Storage::disk('assets')->url('flags/' . $nationalityFlag['code'] . '.svg') }}" class="w-4 h-3 rounded-sm shadow-xs">
-                        {{ __('countries.' . $nationalityFlag['name']) }}
+                        @if($nationalityFlag)
+                            <img src="{{ Storage::disk('assets')->url('flags/' . $nationalityFlag['code'] . '.svg') }}" class="w-4 h-3 rounded-sm shadow-xs">
+                        @endif
+                        {{ $nationalityFlag['display_name'] ?? \App\Support\CountryCodeMapper::displayName($primaryNationality) }}
                     </span>
                 @endif
                 @if($gamePlayer->team && $isCareerMode)

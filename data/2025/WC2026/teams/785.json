@@ -1,0 +1,384 @@
+{
+    "id": "785",
+    "externalId": "785",
+    "transfermarktId": "785",
+    "name": "Tanzania",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "80916",
+            "externalId": "80916",
+            "name": "Janeth Simba",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2003-11-05",
+            "foot": "right",
+            "height": "Janeth Siba Siba Queens SC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58155",
+            "externalId": "58155",
+            "name": "Najiat Abass",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "1997-04-02",
+            "foot": "right",
+            "height": "Najiat Abass JKT Queens, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93051",
+            "externalId": "93051",
+            "name": "Asha Mrisho",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2004-02-10",
+            "foot": "right",
+            "height": "Asha Mrisho JKT Queens, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110264",
+            "externalId": "110264",
+            "name": "Nusra Hamsi Jafari",
+            "position": "Goalkeeper",
+            "age": 15,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2010-12-20",
+            "foot": "right",
+            "height": "Nusra Hasi Jafari Alliance Girls, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "109847",
+            "externalId": "109847",
+            "name": "Lidya Kabambo",
+            "position": "Centre-Back",
+            "age": 17,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2008-11-27",
+            "foot": "right",
+            "height": "Lidya Kababo JKT Queens, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48817",
+            "externalId": "48817",
+            "name": "Maimuna Kaimu",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "1995-08-28",
+            "foot": "right",
+            "height": "1,50m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58153",
+            "externalId": "58153",
+            "name": "Stumai Athumani",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "1997-08-25",
+            "foot": "right",
+            "height": "Stuai Athuani JKT Queens, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48819",
+            "externalId": "48819",
+            "name": "Julitha Singano",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2001-02-08",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "109850",
+            "externalId": "109850",
+            "name": "Ester Maseke",
+            "position": "Centre-Back",
+            "age": 17,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2008-06-03",
+            "foot": "right",
+            "height": "Ester Maseke JKT Queens, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48818",
+            "externalId": "48818",
+            "name": "Violeth Mwamakamba",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2005-02-09",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79106",
+            "externalId": "79106",
+            "name": "Christer Bahera",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2005-11-17",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48784",
+            "externalId": "48784",
+            "name": "Fatuma Issa",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "1995-04-09",
+            "foot": "right",
+            "height": "Fatua Issa Siba Queens SC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93046",
+            "externalId": "93046",
+            "name": "Anastazia Katunzi",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "1996-01-29",
+            "foot": "both",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93048",
+            "externalId": "93048",
+            "name": "Donisia Minja",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "1996-08-09",
+            "foot": "right",
+            "height": "Donisia Minja JKT Queens, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54844",
+            "externalId": "54844",
+            "name": "Aisha Mnunka",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2005-07-26",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91310",
+            "externalId": "91310",
+            "name": "Diana Msewa",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2001-11-13",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "58161",
+            "externalId": "58161",
+            "name": "Janeth Pangamwene",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2000-11-27",
+            "foot": "right",
+            "height": "Janeth Pangawene JKT Queens, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "109857",
+            "externalId": "109857",
+            "name": "Asha Omary",
+            "position": "Central Midfield",
+            "age": 16,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2009-05-05",
+            "foot": "right",
+            "height": "Asha Oary Yanga Princess, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110263",
+            "externalId": "110263",
+            "name": "Elizabeth Chenge",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2001-07-25",
+            "foot": "right",
+            "height": "Elizabeth Chenge JKT Queens, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54896",
+            "externalId": "54896",
+            "name": "Hasnath Ubamba",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2006-07-08",
+            "foot": "both",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48823",
+            "externalId": "48823",
+            "name": "Opah Clement",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2001-02-14",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "93050",
+            "externalId": "93050",
+            "name": "Jamila Rajabu",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2007-11-10",
+            "foot": "right",
+            "height": "Jaila Rajabu JKT Queens, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54847",
+            "externalId": "54847",
+            "name": "Clara Luvanga",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2005-02-25",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58159",
+            "externalId": "58159",
+            "name": "Enekia Lunyamila",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2002-04-20",
+            "foot": "right",
+            "height": "Enekia Lunyaila FC Juárez, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "93043",
+            "externalId": "93043",
+            "name": "Winfrida Gerald",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Tanzania"
+            ],
+            "dateOfBirth": "2008-02-26",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

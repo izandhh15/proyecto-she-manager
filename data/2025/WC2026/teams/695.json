@@ -1,0 +1,374 @@
+{
+    "id": "695",
+    "externalId": "695",
+    "transfermarktId": "695",
+    "name": "Nicaragua",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "67894",
+            "externalId": "67894",
+            "name": "Bethania Aburto",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1990-02-05",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67893",
+            "externalId": "67893",
+            "name": "Ángela Gutiérrez",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1990-03-11",
+            "foot": "right",
+            "height": "Ángela Gutiérrez unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31682",
+            "externalId": "31682",
+            "name": "Erica Cunningham",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Nicaragua",
+                "United States"
+            ],
+            "dateOfBirth": "1993-03-25",
+            "foot": "right",
+            "height": "Erica Cunningha vereinslos, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33961",
+            "externalId": "33961",
+            "name": "Kesly Pérez",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2000-05-09",
+            "foot": "right",
+            "height": "Kesly Pérez unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33951",
+            "externalId": "33951",
+            "name": "Yorcelly Humphreys",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2001-09-03",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33948",
+            "externalId": "33948",
+            "name": "Sheyla Flores",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1998-05-15",
+            "foot": "right",
+            "height": "Sheyla Flores unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "98620",
+            "externalId": "98620",
+            "name": "Hannah Lee",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Nicaragua",
+                "United States"
+            ],
+            "dateOfBirth": "2000-10-28",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72877",
+            "externalId": "72877",
+            "name": "Stella Villalta",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Nicaragua",
+                "United States"
+            ],
+            "dateOfBirth": "2005-10-27",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67363",
+            "externalId": "67363",
+            "name": "Reyna Hernández",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1998-05-30",
+            "foot": "right",
+            "height": "Reyna Hernández unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67362",
+            "externalId": "67362",
+            "name": "Mayqueling Márquez",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2000-02-29",
+            "foot": "right",
+            "height": "Mayqueling Márquez Santa Fé FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33949",
+            "externalId": "33949",
+            "name": "Jaclyn Gilday",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2000-11-12",
+            "foot": "right",
+            "height": "Jaclyn Gilday unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33956",
+            "externalId": "33956",
+            "name": "Natalie Orellana",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Nicaragua",
+                "United States"
+            ],
+            "dateOfBirth": "2001-02-04",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45066",
+            "externalId": "45066",
+            "name": "Heyssell Martínez",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2001-05-10",
+            "foot": "right",
+            "height": "Heyssell Martínez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67364",
+            "externalId": "67364",
+            "name": "Simrry Villareyna",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1994-11-17",
+            "foot": "right",
+            "height": "Sirry Villareyna unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45118",
+            "externalId": "45118",
+            "name": "Nathaly Silva",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Nicaragua",
+                "United States"
+            ],
+            "dateOfBirth": "2001-08-15",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69944",
+            "externalId": "69944",
+            "name": "Mayqueling Márquez",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2000-02-20",
+            "foot": "right",
+            "height": "Mayqueling Márquez Spielerin löschen, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33958",
+            "externalId": "33958",
+            "name": "Hormyne Paiz",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1999-07-22",
+            "foot": "right",
+            "height": "Horyne Paiz unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67895",
+            "externalId": "67895",
+            "name": "Jansy Aguirre",
+            "position": "Centre-Forward",
+            "age": 35,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1991-02-18",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70115",
+            "externalId": "70115",
+            "name": "Inés Navarrete",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2004-01-03",
+            "foot": "right",
+            "height": "Inés Navarrete Juventus FC (NCA), Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70119",
+            "externalId": "70119",
+            "name": "Niurka Molina",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2003-06-11",
+            "foot": "right",
+            "height": "Niurka Molina Atletico Sootillo, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72380",
+            "externalId": "72380",
+            "name": "Doriana Aguilar",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1994-01-02",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33954",
+            "externalId": "33954",
+            "name": "Lisbeth Moreno",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2000-08-06",
+            "foot": "right",
+            "height": "Lisbeth Moreno unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67896",
+            "externalId": "67896",
+            "name": "Joseling Berríos",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1993-12-03",
+            "foot": "right",
+            "height": "Joseling Berríos unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44979",
+            "externalId": "44979",
+            "name": "Dayana Calero",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Nicaragua"
+            ],
+            "dateOfBirth": "2002-05-01",
+            "foot": "right",
+            "height": "Dayana Calero UNAN Managua, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

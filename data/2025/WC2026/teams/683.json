@@ -1,0 +1,340 @@
+{
+    "id": "683",
+    "externalId": "683",
+    "transfermarktId": "683",
+    "name": "Moldova",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "10584",
+            "externalId": "10584",
+            "name": "Natalia Munteanu",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1993-12-01",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "92669",
+            "externalId": "92669",
+            "name": "Olesia Ostapciuc",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2008-01-12",
+            "foot": "right",
+            "height": "Olesia Ostapciuc CF Nistru Cioburciu, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30310",
+            "externalId": "30310",
+            "name": "Margarita Panova",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1998-01-31",
+            "foot": "right",
+            "height": "Margarita Panova FK TransINVEST, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "108243",
+            "externalId": "108243",
+            "name": "Natalia Tutunaru",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2002-08-26",
+            "foot": "right",
+            "height": "Natalia Tutunaru Rabla Woen, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31543",
+            "externalId": "31543",
+            "name": "Anastasia Sivolobova",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1998-08-14",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32755",
+            "externalId": "32755",
+            "name": "Daniela Mardari",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2001-06-02",
+            "foot": "right",
+            "height": "Daniela Mardari CS Gloria 2018 Bistrița-Năsăud, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65202",
+            "externalId": "65202",
+            "name": "Felicia Guțu",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2005-08-31",
+            "foot": "right",
+            "height": "Felicia Guțu CS Gloria 2018 Bistrița-Năsăud, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64784",
+            "externalId": "64784",
+            "name": "Valeria Vîrlan",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2004-12-04",
+            "foot": "right",
+            "height": "Valeria Vîrlan ACS Sporting Banat, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63064",
+            "externalId": "63064",
+            "name": "Andreea Costin",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2002-08-22",
+            "foot": "right",
+            "height": "Andreea Costin Rot Weiss Rankweil, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46363",
+            "externalId": "46363",
+            "name": "Carina Doiban",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2002-07-04",
+            "foot": "right",
+            "height": "Carina Doiban ACS Vasas Feina FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16675",
+            "externalId": "16675",
+            "name": "Cristina Cerescu",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1995-03-06",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83156",
+            "externalId": "83156",
+            "name": "Vanessa Manoil",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Moldova",
+                "Canada"
+            ],
+            "dateOfBirth": "2005-01-14",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44779",
+            "externalId": "44779",
+            "name": "Mihaela Gamarț",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2004-01-07",
+            "foot": "right",
+            "height": "Mihaela Gaarț ŽFK Kaenica Sasa, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44774",
+            "externalId": "44774",
+            "name": "Elina Coceanovschi",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2003-09-14",
+            "foot": "right",
+            "height": "Elina Coceanovschi Unirea Alba Iulia, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44772",
+            "externalId": "44772",
+            "name": "Anastasia Cernitu",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2004-05-10",
+            "foot": "right",
+            "height": "Anastasia Cernitu FK TransINVEST, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "44768",
+            "externalId": "44768",
+            "name": "Mădălina Bădiceanu",
+            "position": "Defensive Midfield",
+            "age": 22,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2003-12-01",
+            "foot": "right",
+            "height": "Mădălina Bădiceanu Modena FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30316",
+            "externalId": "30316",
+            "name": "Carolina Țabur",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1998-12-28",
+            "foot": "both",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "20354",
+            "externalId": "20354",
+            "name": "Anastasia Toma",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1996-02-11",
+            "foot": "right",
+            "height": "Anastasia Toa Agarista CSF Anenii Noi 2020, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44775",
+            "externalId": "44775",
+            "name": "Iuliana Colnic",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2004-07-27",
+            "foot": "right",
+            "height": "Iuliana Colnic unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "55921",
+            "externalId": "55921",
+            "name": "Veronica Cojuhari",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1998-10-03",
+            "foot": "right",
+            "height": "Veronica Cojuhari vereinslos, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28919",
+            "externalId": "28919",
+            "name": "Claudia Chiper",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "1995-06-16",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "92899",
+            "externalId": "92899",
+            "name": "Victoria Rubanovici",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Moldova"
+            ],
+            "dateOfBirth": "2008-02-21",
+            "foot": "right",
+            "height": "Victoria Rubanovici CS Gloria 2018 Bistrița-Năsăud, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

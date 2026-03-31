@@ -16,7 +16,7 @@ return [
     'injury_hamstring_tear' => 'rotura de isquiotibial',
     'injury_knee_contusion' => 'contusión de rodilla',
     'injury_metatarsal_fracture' => 'fractura de metatarso',
-    'injury_acl_tear' => 'rotura de ligamento cruzado',
+    'injury_acl_tear' => 'rotura de ligamento cruzado anterior',
     'injury_achilles_rupture' => 'rotura del tendón de Aquiles',
 
     // Player injuries

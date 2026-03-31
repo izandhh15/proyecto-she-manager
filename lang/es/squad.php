@@ -125,7 +125,7 @@ return [
     'injury_hamstring_tear' => 'Rotura de isquiotibial',
     'injury_knee_contusion' => 'Contusión de rodilla',
     'injury_metatarsal_fracture' => 'Fractura de metatarso',
-    'injury_acl_tear' => 'Rotura de ligamento cruzado',
+    'injury_acl_tear' => 'Rotura de ligamento cruzado anterior',
     'injury_achilles_rupture' => 'Rotura del tendón de Aquiles',
 
     // Development page

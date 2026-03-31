@@ -64,6 +64,8 @@ class PlayerGeneratorServiceTest extends TestCase
         $this->assertEquals(65, $player->technical_ability);
         $this->assertEquals(70, $player->physical_ability);
         $this->assertEquals($dateOfBirth->toDateString(), $player->date_of_birth->toDateString());
+        $this->assertNotNull($player->transfermarkt_id);
+        $this->assertSame($player->transfermarkt_id, $player->external_id);
 
         // Contract should be 3 years from season
         $this->assertEquals(2027, $gamePlayer->contract_until->year);

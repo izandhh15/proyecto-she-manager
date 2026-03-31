@@ -1,0 +1,356 @@
+{
+    "id": "531",
+    "externalId": "531",
+    "transfermarktId": "531",
+    "name": "Costa Rica",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "25319",
+            "externalId": "25319",
+            "name": "Noelia Bermúdez",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1994-09-20",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "18k",
+            "contract": null
+        },
+        {
+            "id": "39451",
+            "externalId": "39451",
+            "name": "Daniela Solera",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1997-07-21",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73889",
+            "externalId": "73889",
+            "name": "Marilenis Oporta",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Costa Rica",
+                "Nicaragua"
+            ],
+            "dateOfBirth": "1998-03-24",
+            "foot": "right",
+            "height": "Marilenis Oporta LD Alajuelense, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22919",
+            "externalId": "22919",
+            "name": "María Paula Coto",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1998-03-02",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72932",
+            "externalId": "72932",
+            "name": "Jimena González",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "2005-12-31",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22947",
+            "externalId": "22947",
+            "name": "Fabiola Villalobos",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1998-03-13",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "25318",
+            "externalId": "25318",
+            "name": "Mariana Benavides",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1994-12-26",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "25332",
+            "externalId": "25332",
+            "name": "María José Morales",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1996-02-22",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "27239",
+            "externalId": "27239",
+            "name": "Gabriela Guillén",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1992-03-01",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33863",
+            "externalId": "33863",
+            "name": "Stephannie Blanco",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "2000-12-13",
+            "foot": "both",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "33867",
+            "externalId": "33867",
+            "name": "Catalina Estrada",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1998-10-11",
+            "foot": "right",
+            "height": "1,52m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13536",
+            "externalId": "13536",
+            "name": "Katherine Alvarado",
+            "position": "Defensive Midfield",
+            "age": 34,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1991-04-11",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73887",
+            "externalId": "73887",
+            "name": "Emily Flores",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "2001-11-19",
+            "foot": "right",
+            "height": "Eily Flores Querétaro FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63025",
+            "externalId": "63025",
+            "name": "Alexandra Pinell",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "2002-10-18",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33872",
+            "externalId": "33872",
+            "name": "Cristel Sandí",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1998-01-23",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22944",
+            "externalId": "22944",
+            "name": "Emilie Valenciano",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1997-02-15",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22910",
+            "externalId": "22910",
+            "name": "Yaniela Arias",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1998-04-25",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13523",
+            "externalId": "13523",
+            "name": "Rocky Rodríguez",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1993-10-28",
+            "foot": "left",
+            "height": "1,66m",
+            "marketValue": "55k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "33870",
+            "externalId": "33870",
+            "name": "María Paula Salas",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "2002-07-12",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "33864",
+            "externalId": "33864",
+            "name": "Priscila Chinchilla",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "2001-07-11",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30837",
+            "externalId": "30837",
+            "name": "Anna Gilbertson",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Costa Rica",
+                "United States"
+            ],
+            "dateOfBirth": "1994-08-09",
+            "foot": "right",
+            "height": "Anna Gilbertson LD Alajuelense, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22945",
+            "externalId": "22945",
+            "name": "Sofía Varela",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "1998-03-28",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72921",
+            "externalId": "72921",
+            "name": "Verónica Matarrita",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Costa Rica"
+            ],
+            "dateOfBirth": "2005-11-05",
+            "foot": "right",
+            "height": "Verónica Matarrita CA River Plate, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

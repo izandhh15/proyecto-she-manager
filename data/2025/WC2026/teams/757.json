@@ -1,0 +1,464 @@
+{
+    "id": "757",
+    "externalId": "757",
+    "transfermarktId": "757",
+    "name": "St. Kitts &Nevis",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "72719",
+            "externalId": "72719",
+            "name": "Ky-Moyen Grant",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2006-08-26",
+            "foot": "right",
+            "height": "Ky-Moyen Grant Bath United FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44213",
+            "externalId": "44213",
+            "name": "Craivecia Sutton",
+            "position": "Goalkeeper",
+            "age": 24,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2001-09-01",
+            "foot": "right",
+            "height": "Craivecia Sutton Cayon FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44190",
+            "externalId": "44190",
+            "name": "Kyra Dickinson",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1993-01-03",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44191",
+            "externalId": "44191",
+            "name": "Quinn Josiah",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2000-05-04",
+            "foot": "right",
+            "height": "Quinn Josiah vereinslos, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72201",
+            "externalId": "72201",
+            "name": "Kewandra McCall",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Kewandra McCall unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69362",
+            "externalId": "69362",
+            "name": "Dalencia Roberts",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1998-02-05",
+            "foot": "right",
+            "height": "Dalencia Roberts unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69360",
+            "externalId": "69360",
+            "name": "Rozel Liburd",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Rozel Liburd unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44211",
+            "externalId": "44211",
+            "name": "Kaleah Smith",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2001-06-28",
+            "foot": "right",
+            "height": "Kaleah Sith York Lions, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69742",
+            "externalId": "69742",
+            "name": "Olujede Bridgewater",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2002-01-04",
+            "foot": "right",
+            "height": "Olujede Bridgewater unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44195",
+            "externalId": "44195",
+            "name": "Iyanla Bailey-Williams",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "St. Kitts &Nevis",
+                "Puerto Rico"
+            ],
+            "dateOfBirth": "2002-08-10",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44202",
+            "externalId": "44202",
+            "name": "Shitoncia Stapleton",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2001-02-13",
+            "foot": "right",
+            "height": "Shitoncia Stapleton Newtown United, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72715",
+            "externalId": "72715",
+            "name": "Sherema Blake",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2007-09-01",
+            "foot": "right",
+            "height": "Sherea Blake Ras Village Superstar FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44206",
+            "externalId": "44206",
+            "name": "Cloey Uddenberg",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "St. Kitts &Nevis",
+                "Canada"
+            ],
+            "dateOfBirth": "2002-11-13",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "70070",
+            "externalId": "70070",
+            "name": "Kayzg Boyles",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2006-11-23",
+            "foot": "right",
+            "height": "Kayzg Boyles Newtown United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70069",
+            "externalId": "70069",
+            "name": "Shenica Francis",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2005-03-04",
+            "foot": "right",
+            "height": "Shenica Francis St. Pauls FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44864",
+            "externalId": "44864",
+            "name": "Khalia Joseph",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2003-07-13",
+            "foot": "right",
+            "height": "Khalia Joseph unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44193",
+            "externalId": "44193",
+            "name": "Christi-Anne Mills",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2002-07-27",
+            "foot": "right",
+            "height": "Christi-Anne Mills Newtown United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44214",
+            "externalId": "44214",
+            "name": "Allison Williams",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1998-03-15",
+            "foot": "right",
+            "height": "Allison Willias vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69358",
+            "externalId": "69358",
+            "name": "Lavern Francis",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1991-06-10",
+            "foot": "right",
+            "height": "Lavern Francis unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44198",
+            "externalId": "44198",
+            "name": "Leranja Wilkinson",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1996-02-05",
+            "foot": "right",
+            "height": "Leranja Wilkinson Newtown United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44200",
+            "externalId": "44200",
+            "name": "Tarvia Phillip",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1995-11-12",
+            "foot": "right",
+            "height": "Tarvia Phillip Conaree FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69361",
+            "externalId": "69361",
+            "name": "Shinell McCalla",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1994-05-04",
+            "foot": "right",
+            "height": "Shinell McCalla unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69359",
+            "externalId": "69359",
+            "name": "Aravinda Hughes",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Aravinda Hughes unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44857",
+            "externalId": "44857",
+            "name": "Jollincia Clarke",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2000-02-29",
+            "foot": "right",
+            "height": "Jollincia Clarke unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44217",
+            "externalId": "44217",
+            "name": "Jarencia Jeffers",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "2001-08-23",
+            "foot": "right",
+            "height": "Jarencia Jeffers Ras Village Superstar FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36005",
+            "externalId": "36005",
+            "name": "Phoenetia Browne",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "St. Kitts &Nevis",
+                "United States"
+            ],
+            "dateOfBirth": "1994-04-22",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "69357",
+            "externalId": "69357",
+            "name": "Katelyn Forbes",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1997-08-19",
+            "foot": "right",
+            "height": "Katelyn Forbes unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44197",
+            "externalId": "44197",
+            "name": "Caroline Springer",
+            "position": "Centre-Forward",
+            "age": 36,
+            "nationality": [
+                "St. Kitts &Nevis"
+            ],
+            "dateOfBirth": "1990-03-22",
+            "foot": "right",
+            "height": "Caroline Springer Ras Village Superstar FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44212",
+            "externalId": "44212",
+            "name": "Ellie Stokes",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "St. Kitts &Nevis",
+                "United States"
+            ],
+            "dateOfBirth": "2003-11-21",
+            "foot": "right",
+            "height": "Ellie Stokes St. Mary’s Power, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44192",
+            "externalId": "44192",
+            "name": "Brittney Lawrence",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "St. Kitts &Nevis",
+                "Canada"
+            ],
+            "dateOfBirth": "1995-08-18",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

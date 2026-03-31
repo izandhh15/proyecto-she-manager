@@ -1,0 +1,370 @@
+{
+    "id": "461",
+    "externalId": "461",
+    "transfermarktId": "461",
+    "name": "Korea, North",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "92195",
+            "externalId": "92195",
+            "name": "Ju-mi Pak",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-07-01",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37867",
+            "externalId": "37867",
+            "name": "Son-gum Yu",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-11-08",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117433",
+            "externalId": "117433",
+            "name": "Jong-sun Kim",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-10-13",
+            "foot": "right",
+            "height": "Jong-sun Ki April 25 SC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92190",
+            "externalId": "92190",
+            "name": "Myong-gum Ri",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-01-01",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "23029",
+            "externalId": "23029",
+            "name": "Kum-hyang Ri",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2001-04-22",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102118",
+            "externalId": "102118",
+            "name": "Sol-song Oh",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2004-06-30",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117431",
+            "externalId": "117431",
+            "name": "Pom-mi Jo",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-03-26",
+            "foot": "right",
+            "height": "Po-i Jo April 25 SC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92194",
+            "externalId": "92194",
+            "name": "Hye-gyong Ri",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "1999-09-24",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35913",
+            "externalId": "35913",
+            "name": "Kuk-hyang An",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2001-03-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92191",
+            "externalId": "92191",
+            "name": "Yu-jong Myong",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-08-29",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102115",
+            "externalId": "102115",
+            "name": "Song-gyong Kim",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2005-02-12",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102112",
+            "externalId": "102112",
+            "name": "Ryong-jong Jon",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2004-07-25",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117435",
+            "externalId": "117435",
+            "name": "Chun-sim Song",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Chun-si Song April 25 SC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102104",
+            "externalId": "102104",
+            "name": "Un-yong Chae",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2004-04-12",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92196",
+            "externalId": "92196",
+            "name": "Hye-yong Kim",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-03-11",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "114566",
+            "externalId": "114566",
+            "name": "Pok-yong An",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2002-01-10",
+            "foot": "right",
+            "height": "Pok-yong An April 25 SC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102105",
+            "externalId": "102105",
+            "name": "Il-son Choe",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2007-01-01",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35924",
+            "externalId": "35924",
+            "name": "Hak Ri",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2002-06-12",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117429",
+            "externalId": "117429",
+            "name": "Jin-hong Han",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2002-02-16",
+            "foot": "right",
+            "height": "Jin-hong Han April 25 SC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92193",
+            "externalId": "92193",
+            "name": "Song-ok Hong",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2003-08-21",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102110",
+            "externalId": "102110",
+            "name": "Yu-yong Hwang",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2006-04-13",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35918",
+            "externalId": "35918",
+            "name": "Kyong-yong Kim",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2002-01-02",
+            "foot": "both",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102123",
+            "externalId": "102123",
+            "name": "Hyang Sin",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Korea, North"
+            ],
+            "dateOfBirth": "2005-07-09",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44323",
+            "externalId": "44323",
+            "name": "Song-a Ri",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Korea, North",
+                "Japan"
+            ],
+            "dateOfBirth": "1999-06-22",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

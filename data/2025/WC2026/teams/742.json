@@ -1,0 +1,39 @@
+{
+    "id": "742",
+    "externalId": "742",
+    "transfermarktId": "742",
+    "name": "Zimbabwe",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "59270",
+            "externalId": "59270",
+            "name": "Danai Bhobho",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Zimbabwe"
+            ],
+            "dateOfBirth": "1992-12-01",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30847",
+            "externalId": "30847",
+            "name": "Emmaculate Msipa",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Zimbabwe"
+            ],
+            "dateOfBirth": "1992-06-07",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

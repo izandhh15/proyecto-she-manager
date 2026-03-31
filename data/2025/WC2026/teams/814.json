@@ -1,0 +1,160 @@
+{
+    "id": "814",
+    "externalId": "814",
+    "transfermarktId": "814",
+    "name": "Uganda",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "58439",
+            "externalId": "58439",
+            "name": "Ruth Aturo",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "1995-07-19",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74373",
+            "externalId": "74373",
+            "name": "Daisy Nakaziro",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "1997-09-22",
+            "foot": "right",
+            "height": "Daisy Nakaziro Uganda Martyrs Lubaga, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106741",
+            "externalId": "106741",
+            "name": "Shadia Nankya",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "2001-11-25",
+            "foot": "right",
+            "height": "Shadia Nankya Le Havre AC, Defencem",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39207",
+            "externalId": "39207",
+            "name": "Violah Nambi",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Uganda",
+                "Sweden"
+            ],
+            "dateOfBirth": "1995-07-24",
+            "foot": "right",
+            "height": "Violah Nabi Åland United, Midfieldm",
+            "marketValue": "25k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "66553",
+            "externalId": "66553",
+            "name": "Joan Nabirye",
+            "position": "Defensive Midfield",
+            "age": 27,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "1998-06-25",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74369",
+            "externalId": "74369",
+            "name": "Phiona Nabbumba",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "2000-07-20",
+            "foot": "right",
+            "height": "1,83m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36010",
+            "externalId": "36010",
+            "name": "Fazila Ikwaput",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "1997-08-05",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74363",
+            "externalId": "74363",
+            "name": "Joanita Ainembabazi",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "1999-03-03",
+            "foot": "right",
+            "height": "Joanita Ainebabazi Rines SS, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69250",
+            "externalId": "69250",
+            "name": "Resty Nanziri",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "1997-08-29",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74378",
+            "externalId": "74378",
+            "name": "Zaina Nandede",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Uganda"
+            ],
+            "dateOfBirth": "2003-10-15",
+            "foot": "right",
+            "height": "Zaina Nandede Kapala Queens, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

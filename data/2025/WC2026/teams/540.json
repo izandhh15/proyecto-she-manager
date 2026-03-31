@@ -1,0 +1,312 @@
+{
+    "id": "540",
+    "externalId": "540",
+    "transfermarktId": "540",
+    "name": "Dominican Republic",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "66023",
+            "externalId": "66023",
+            "name": "Odaliana Gómez",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2004-06-16",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68957",
+            "externalId": "68957",
+            "name": "Paloma Peña",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2005-02-20",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "104260",
+            "externalId": "104260",
+            "name": "Livia de León",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Dominican Republic",
+                "Canada"
+            ],
+            "dateOfBirth": "2007-10-04",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30325",
+            "externalId": "30325",
+            "name": "Brianne Reed",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "1994-05-02",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "86698",
+            "externalId": "86698",
+            "name": "Stella Tapia",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2005-02-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45065",
+            "externalId": "45065",
+            "name": "Gabriella Marte",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2003-01-27",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38493",
+            "externalId": "38493",
+            "name": "Gabriella Cuevas",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "1993-08-15",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45008",
+            "externalId": "45008",
+            "name": "Giovanna Dionicio",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2001-09-20",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44996",
+            "externalId": "44996",
+            "name": "Nadia Colón",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2002-09-08",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45086",
+            "externalId": "45086",
+            "name": "Jazlyn Oviedo",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2002-03-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66029",
+            "externalId": "66029",
+            "name": "Kathrynn González",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2000-07-12",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44972",
+            "externalId": "44972",
+            "name": "Yomerci Brito",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Dominican Republic",
+                "Colombia"
+            ],
+            "dateOfBirth": "2001-08-11",
+            "foot": "right",
+            "height": "Yoerci Brito Club 5 de Abril, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "104259",
+            "externalId": "104259",
+            "name": "Natalie Bruno",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2007-08-05",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73801",
+            "externalId": "73801",
+            "name": "Jaylen Vallecillo",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Dominican Republic",
+                "Honduras"
+            ],
+            "dateOfBirth": "2006-04-23",
+            "foot": "right",
+            "height": "Jaylen Vallecillo East Meadow SC Acadey, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68963",
+            "externalId": "68963",
+            "name": "Angelina Vargas",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2005-07-06",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66024",
+            "externalId": "66024",
+            "name": "Winibian Peralta",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Dominican Republic"
+            ],
+            "dateOfBirth": "1997-03-19",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44964",
+            "externalId": "44964",
+            "name": "Mía Asenjo",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2003-03-07",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "45085",
+            "externalId": "45085",
+            "name": "Alyssa Oviedo",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2000-08-18",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "86708",
+            "externalId": "86708",
+            "name": "Jazmín Jackson",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Dominican Republic",
+                "United States"
+            ],
+            "dateOfBirth": "2004-11-24",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

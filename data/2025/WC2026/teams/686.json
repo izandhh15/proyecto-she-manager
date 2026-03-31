@@ -1,0 +1,39 @@
+{
+    "id": "686",
+    "externalId": "686",
+    "transfermarktId": "686",
+    "name": "Mozambique",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "80181",
+            "externalId": "80181",
+            "name": "Alicia Assubuji",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Mozambique"
+            ],
+            "dateOfBirth": "2003-04-30",
+            "foot": "right",
+            "height": "Alicia Assubuji Associação Desportiva Souselas, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56281",
+            "externalId": "56281",
+            "name": "Lúcia Leila Moçambique",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Mozambique"
+            ],
+            "dateOfBirth": "1993-12-22",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

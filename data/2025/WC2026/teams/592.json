@@ -1,0 +1,191 @@
+{
+    "id": "592",
+    "externalId": "592",
+    "transfermarktId": "592",
+    "name": "The Gambia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "18122",
+            "externalId": "18122",
+            "name": "Mariama Ceesay",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "1998-01-22",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18130",
+            "externalId": "18130",
+            "name": "Aminata Gaye",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "1996-03-03",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18128",
+            "externalId": "18128",
+            "name": "Fatou Fatty",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "1997-11-11",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72088",
+            "externalId": "72088",
+            "name": "Ruggy Joof",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "2001-04-13",
+            "foot": "right",
+            "height": "Ruggy Joof Deterine Girls FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "50082",
+            "externalId": "50082",
+            "name": "Manyima Stevelmans",
+            "position": "Defensive Midfield",
+            "age": 25,
+            "nationality": [
+                "The Gambia",
+                "Netherlands"
+            ],
+            "dateOfBirth": "2000-10-31",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72080",
+            "externalId": "72080",
+            "name": "Bintou Ceesay",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "2001-02-18",
+            "foot": "right",
+            "height": "Bintou Ceesay Police FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72082",
+            "externalId": "72082",
+            "name": "Mbassey Darboe",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "1998-05-20",
+            "foot": "right",
+            "height": "Mbassey Darboe Deterine Girls FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72094",
+            "externalId": "72094",
+            "name": "Kumba Kuyateh",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "2002-10-30",
+            "foot": "right",
+            "height": "Kuba Kuyateh Red Scorpions, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "18135",
+            "externalId": "18135",
+            "name": "Isatou Jallow",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "1997-10-10",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "40238",
+            "externalId": "40238",
+            "name": "Fatou Kanteh",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "The Gambia",
+                "Spain"
+            ],
+            "dateOfBirth": "1997-07-02",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "72085",
+            "externalId": "72085",
+            "name": "Catherine Jatta",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "2001-11-21",
+            "foot": "right",
+            "height": "Catherine Jatta Deterine Girls FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72095",
+            "externalId": "72095",
+            "name": "Fatou Sonko",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "The Gambia"
+            ],
+            "dateOfBirth": "2001-01-16",
+            "foot": "right",
+            "height": "Fatou Sonko Police FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

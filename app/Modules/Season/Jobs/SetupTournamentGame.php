@@ -8,7 +8,6 @@ use App\Modules\Player\Services\PlayerDevelopmentService;
 use App\Modules\Player\Services\PlayerTierService;
 use App\Modules\Competition\Services\StandingsCalculator;
 use App\Models\CompetitionEntry;
-use App\Models\CompetitionTeam;
 use App\Models\Game;
 use App\Models\GameMatch;
 use Carbon\Carbon;
@@ -58,12 +57,10 @@ class SetupTournamentGame implements ShouldQueue
         // Build FIFA code â†’ Team UUID map from team_mapping.json
         $mappingPath = base_path('data/2025/WC2026/team_mapping.json');
         $mapping = json_decode(file_get_contents($mappingPath), true);
-        $teamKeyMap = collect($mapping)->mapWithKeys(
-            fn ($data, $fifaCode) => [$fifaCode => $data['uuid']]
-        )->toArray();
+        $teamKeyMap = $this->resolveTournamentTeamKeyMap($groupsData, $mapping);
 
         // Step 1: Create competition entries for all WC teams
-        $this->createCompetitionEntries();
+        $this->createCompetitionEntries($groupsData, $teamKeyMap);
 
         // Step 2: Create fixtures from groups.json
         $this->createFixtures($groupsData, $teamKeyMap);
@@ -90,26 +87,65 @@ class SetupTournamentGame implements ShouldQueue
             ->record($game->user_id, \App\Models\ActivationEvent::EVENT_SETUP_COMPLETED, $this->gameId, \App\Models\Game::MODE_TOURNAMENT);
     }
 
-    private function createCompetitionEntries(): void
+    private function createCompetitionEntries(array $groupsData, array $teamKeyMap): void
     {
         if (CompetitionEntry::where('game_id', $this->gameId)->exists()) {
             return;
         }
 
-        $competitionTeams = CompetitionTeam::where('competition_id', self::COMPETITION_ID)
-            ->where('season', '2025')
-            ->get();
-
-        $rows = $competitionTeams->map(fn ($ct) => [
+        $rows = collect($groupsData)
+            ->flatMap(fn (array $group) => $group['teams'] ?? [])
+            ->map(fn (string $teamKey) => $teamKeyMap[$teamKey] ?? null)
+            ->filter()
+            ->unique()
+            ->map(fn (string $teamId) => [
             'game_id' => $this->gameId,
             'competition_id' => self::COMPETITION_ID,
-            'team_id' => $ct->team_id,
+            'team_id' => $teamId,
             'entry_round' => 1,
-        ])->toArray();
+        ])->values()->toArray();
 
         foreach (array_chunk($rows, 100) as $chunk) {
             CompetitionEntry::insert($chunk);
         }
+    }
+
+    private function resolveTournamentTeamKeyMap(array $groupsData, array $mapping): array
+    {
+        $teamKeyMap = collect($mapping)->mapWithKeys(
+            fn ($data, $fifaCode) => [$fifaCode => $data['uuid']]
+        )->toArray();
+
+        if (in_array($this->teamId, $teamKeyMap, true)) {
+            return $teamKeyMap;
+        }
+
+        $replacementKey = $this->findTournamentReplacementKey($groupsData, $mapping);
+        if ($replacementKey === null) {
+            return $teamKeyMap;
+        }
+
+        $teamKeyMap[$replacementKey] = $this->teamId;
+
+        return $teamKeyMap;
+    }
+
+    private function findTournamentReplacementKey(array $groupsData, array $mapping): ?string
+    {
+        foreach ($mapping as $teamKey => $teamData) {
+            if ($teamData['is_placeholder'] ?? false) {
+                return $teamKey;
+            }
+        }
+
+        foreach (array_reverse(array_keys($groupsData)) as $groupLabel) {
+            $teams = $groupsData[$groupLabel]['teams'] ?? [];
+            if (! empty($teams)) {
+                return end($teams) ?: null;
+            }
+        }
+
+        return null;
     }
 
     private function createFixtures(array $groupsData, array $teamKeyMap): void
@@ -204,7 +240,15 @@ class SetupTournamentGame implements ShouldQueue
 
         $basePath = base_path('data/2025/WC2026/teams');
         $allPlayers = Player::all()->keyBy('external_id');
-        $teamsById = Team::whereIn('id', collect($teamMapping)->pluck('uuid')->all())->get()->keyBy('id');
+        $teamIdsForSquads = collect($teamMapping)
+            ->pluck('uuid')
+            ->push($this->teamId)
+            ->filter()
+            ->unique()
+            ->values()
+            ->all();
+
+        $teamsById = Team::whereIn('id', $teamIdsForSquads)->get()->keyBy('id');
         $playerRows = [];
 
         // Only process teams that have an external_id (i.e., have JSON roster files)

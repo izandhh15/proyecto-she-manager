@@ -1,0 +1,354 @@
+{
+    "id": "671",
+    "externalId": "671",
+    "transfermarktId": "671",
+    "name": "Maldives",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "67024",
+            "externalId": "67024",
+            "name": "Aminath Leeza",
+            "position": "Goalkeeper",
+            "age": 39,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1986-11-25",
+            "foot": "right",
+            "height": "Ainath Leeza unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67018",
+            "externalId": "67018",
+            "name": "Saiga Hussain",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1993-03-26",
+            "foot": "right",
+            "height": "Saiga Hussain unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69749",
+            "externalId": "69749",
+            "name": "Fathimath Nashayaa Nazim",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2002-10-09",
+            "foot": "right",
+            "height": "Fathiath Nashayaa Nazi unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67015",
+            "externalId": "67015",
+            "name": "Zulaikha Habeeb",
+            "position": "Centre-Back",
+            "age": 37,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1988-08-23",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69844",
+            "externalId": "69844",
+            "name": "Mariyam Sara",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Mariya Sara unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69752",
+            "externalId": "69752",
+            "name": "Aishath Raveena",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Aishath Raveena unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69750",
+            "externalId": "69750",
+            "name": "Rishma Abdullah",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Risha Abdullah unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67045",
+            "externalId": "67045",
+            "name": "Fathimath Theeba",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2000-05-23",
+            "foot": "right",
+            "height": "Fathiath Theeba unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67023",
+            "externalId": "67023",
+            "name": "Fathimath Thaany Latheef",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2001-07-03",
+            "foot": "right",
+            "height": "Fathiath Thaany Latheef unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67016",
+            "externalId": "67016",
+            "name": "Hawwa Haneefa",
+            "position": "Centre-Back",
+            "age": 36,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1990-01-31",
+            "foot": "right",
+            "height": "1,45m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69748",
+            "externalId": "69748",
+            "name": "Aishath Althaf Mohamed",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Aishath Althaf Mohaed unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69744",
+            "externalId": "69744",
+            "name": "Abdul Hannan Maeesha",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2000-07-11",
+            "foot": "right",
+            "height": "Abdul Hannan Maeesha unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69746",
+            "externalId": "69746",
+            "name": "Fathimath Shaaiga Aboobakuru",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Fathiath Shaaiga Aboobakuru unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67042",
+            "externalId": "67042",
+            "name": "Thaufeeq Shahula",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1992-12-08",
+            "foot": "right",
+            "height": "Thaufeeq Shahula unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67039",
+            "externalId": "67039",
+            "name": "Fathimath Saliya",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1991-03-21",
+            "foot": "right",
+            "height": "Fathiath Saliya unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67033",
+            "externalId": "67033",
+            "name": "Mariyam Rifa",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1992-08-29",
+            "foot": "right",
+            "height": "Mariya Rifa unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67038",
+            "externalId": "67038",
+            "name": "Fathimath Saina",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "1998-10-26",
+            "foot": "right",
+            "height": "Fathiath Saina unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69745",
+            "externalId": "69745",
+            "name": "Fathimath Inaasha Adam",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Fathiath Inaasha Ada unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69751",
+            "externalId": "69751",
+            "name": "Mariyam Leen Ahmed",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Mariya Leen Ahed unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69747",
+            "externalId": "69747",
+            "name": "Mariyam Hameeza",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2004-06-19",
+            "foot": "right",
+            "height": "Mariya Haeeza unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67043",
+            "externalId": "67043",
+            "name": "Aishath Siuna",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2003-09-09",
+            "foot": "right",
+            "height": "Aishath Siuna unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67046",
+            "externalId": "67046",
+            "name": "Mariyam Wishaya Wildhan",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2001-12-16",
+            "foot": "right",
+            "height": "Mariya Wishaya Wildhan unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67029",
+            "externalId": "67029",
+            "name": "Mariyam Noora",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Maldives"
+            ],
+            "dateOfBirth": "2002-09-04",
+            "foot": "right",
+            "height": "Mariya Noora unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

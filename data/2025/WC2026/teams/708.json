@@ -10,7 +10,7 @@
             "externalId": "25227",
             "name": "Cristina Recalde",
             "position": "Goalkeeper",
-            "age": 31,
+            "age": 32,
             "nationality": [
                 "Paraguay"
             ],
@@ -61,7 +61,7 @@
                 "Brazil"
             ],
             "dateOfBirth": "2002-02-18",
-            "foot": "left",
+            "foot": "right",
             "height": "1,74m",
             "marketValue": "50k",
             "contract": "2027-12-31"
@@ -151,7 +151,7 @@
                 "Paraguay"
             ],
             "dateOfBirth": "2000-11-04",
-            "foot": "left",
+            "foot": "right",
             "height": "1,60m",
             "marketValue": "50k",
             "contract": null
@@ -166,7 +166,7 @@
                 "Paraguay"
             ],
             "dateOfBirth": "2002-04-18",
-            "foot": "left",
+            "foot": "right",
             "height": "1,65m",
             "marketValue": "50k",
             "contract": null
@@ -206,7 +206,7 @@
             "externalId": "91697",
             "name": "Diana Benítez",
             "position": "Central Midfield",
-            "age": 18,
+            "age": 19,
             "nationality": [
                 "Paraguay"
             ],

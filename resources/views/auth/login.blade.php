@@ -1,42 +1,88 @@
 <x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+    <div class="space-y-8">
+        <div class="space-y-3">
+            <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.26em] text-text-secondary">
+                Acceso al juego
+            </div>
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
-
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('auth.Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <div class="space-y-2">
+                <h2 class="font-heading text-4xl leading-none tracking-tight text-white sm:text-5xl">
+                    Entra al banquillo.
+                </h2>
+                <p class="max-w-lg text-sm leading-6 text-text-body sm:text-base">
+                    Accede a tus partidas y enseña plantilla, mercado, finanzas y competicion con una pantalla de entrada limpia, rapida y lista para demo.
+                </p>
+            </div>
         </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('auth.Password')" />
+        <x-auth-session-status class="rounded-2xl border border-success-tint-border bg-success-tint px-4 py-3 text-sm text-accent-green" :status="session('status')" />
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
+        <form method="POST" action="{{ route('login') }}" class="space-y-5">
+            @csrf
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+            <div class="space-y-2">
+                <x-input-label for="email" class="text-xs font-semibold uppercase tracking-[0.22em] text-text-muted" :value="__('auth.Email')" />
+                <x-text-input
+                    id="email"
+                    class="mt-0 w-full bg-surface-900/80 px-4 py-3 text-base"
+                    type="email"
+                    name="email"
+                    :value="old('email')"
+                    placeholder="tu@club.com"
+                    required
+                    autofocus
+                    autocomplete="username"
+                />
+                <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            </div>
 
-        <!-- Remember Me -->
-        <input id="remember_me" type="hidden" name="remember" value="true">
+            <div class="space-y-2">
+                <x-input-label for="password" class="text-xs font-semibold uppercase tracking-[0.22em] text-text-muted" :value="__('auth.Password')" />
 
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-text-secondary hover:text-text-primary rounded-md focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-accent-blue" href="{{ route('password.request') }}">
-                    {{ __('auth.Forgot your password?') }}
-                </a>
-            @endif
+                <x-text-input
+                    id="password"
+                    class="mt-0 w-full bg-surface-900/80 px-4 py-3 text-base"
+                    type="password"
+                    name="password"
+                    placeholder="Introduce tu contrasena"
+                    required
+                    autocomplete="current-password"
+                />
 
-            <x-primary-button class="w-full text-center block!">
-                {{ __('auth.Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
+                <x-input-error :messages="$errors->get('password')" class="mt-2" />
+            </div>
+
+            <input id="remember_me" type="hidden" name="remember" value="true">
+
+            <div class="rounded-2xl border border-white/8 bg-surface-900/70 p-4">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.24em] text-accent-gold">Que vas a enseñar</p>
+                <ul class="mt-3 space-y-2 text-sm text-text-secondary">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent-blue"></span>
+                        <span>Plantillas y progresion de equipo con acceso directo a la partida.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent-green"></span>
+                        <span>Finanzas, mercado y scouting sin pasos intermedios ni pantalla rota.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent-primary"></span>
+                        <span>Modo torneo y competiciones listas para abrir y compartir en directo.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                @if (Route::has('password.request'))
+                    <a class="text-sm text-text-secondary underline decoration-text-muted/60 underline-offset-4 transition hover:text-text-primary" href="{{ route('password.request') }}">
+                        {{ __('auth.Forgot your password?') }}
+                    </a>
+                @endif
+
+                <x-primary-button class="w-full justify-center sm:w-auto sm:min-w-[220px]">
+                    {{ __('auth.Log in') }}
+                </x-primary-button>
+            </div>
+        </form>
+    </div>
 </x-guest-layout>

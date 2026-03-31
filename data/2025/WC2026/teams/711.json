@@ -1,0 +1,424 @@
+{
+    "id": "711",
+    "externalId": "711",
+    "transfermarktId": "711",
+    "name": "Philippines",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "67106",
+            "externalId": "67106",
+            "name": "Olivia McDaniel",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "1997-10-14",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72291",
+            "externalId": "72291",
+            "name": "Nina Meollo",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Philippines",
+                "England"
+            ],
+            "dateOfBirth": "2004-06-23",
+            "foot": "right",
+            "height": "Nina Meollo Real Bedford, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "96504",
+            "externalId": "96504",
+            "name": "Leah Bradley",
+            "position": "Goalkeeper",
+            "age": 16,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2009-04-07",
+            "foot": "right",
+            "height": "Leah Bradley Wilington Haerheads FC Acadey, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67547",
+            "externalId": "67547",
+            "name": "Malea Cesar",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2003-12-09",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70513",
+            "externalId": "70513",
+            "name": "Jess Cowart",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "1999-10-30",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "67109",
+            "externalId": "67109",
+            "name": "Hali Long",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "1995-01-21",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "26643",
+            "externalId": "26643",
+            "name": "Angela Beard",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Philippines",
+                "Australia"
+            ],
+            "dateOfBirth": "1997-08-16",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "67107",
+            "externalId": "67107",
+            "name": "Sofia Wunsch",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "1999-02-16",
+            "foot": "left",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92466",
+            "externalId": "92466",
+            "name": "Ariana Markey",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2007-06-08",
+            "foot": "left",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101272",
+            "externalId": "101272",
+            "name": "Janae DeFazio",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2001-09-06",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "92465",
+            "externalId": "92465",
+            "name": "Natalie Oca",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2006-11-03",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "17041",
+            "externalId": "17041",
+            "name": "Jackie Sawicki",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Philippines",
+                "Canada"
+            ],
+            "dateOfBirth": "1992-11-14",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "28211",
+            "externalId": "28211",
+            "name": "Sara Eggesvik",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Philippines",
+                "Norway"
+            ],
+            "dateOfBirth": "1997-04-29",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "67544",
+            "externalId": "67544",
+            "name": "Carleigh Frilles",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2002-04-11",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "67097",
+            "externalId": "67097",
+            "name": "Anicka Castañeda",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Philippines"
+            ],
+            "dateOfBirth": "1999-12-16",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71913",
+            "externalId": "71913",
+            "name": "Kaya Hawkinson",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2000-04-17",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117246",
+            "externalId": "117246",
+            "name": "Jourdyn Curran",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2003-05-11",
+            "foot": "right",
+            "height": "Jourdyn Curran Vestri Ísafjördur, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "87523",
+            "externalId": "87523",
+            "name": "Isabella Pasion",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2006-11-28",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "35029",
+            "externalId": "35029",
+            "name": "Katrina Guillou",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "1993-12-13",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "109312",
+            "externalId": "109312",
+            "name": "Ava Villapando",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Philippines",
+                "Canada"
+            ],
+            "dateOfBirth": "2008-05-08",
+            "foot": "right",
+            "height": "Ava Villapando LSU Lady Tigers, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "108017",
+            "externalId": "108017",
+            "name": "Paige McSwigan",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2003-11-09",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117247",
+            "externalId": "117247",
+            "name": "Jael-Marie Guy",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2007-08-15",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67101",
+            "externalId": "67101",
+            "name": "Chandler McDaniel",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "1998-02-04",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "103934",
+            "externalId": "103934",
+            "name": "Alessandrea Carpio",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2002-03-04",
+            "foot": "right",
+            "height": "Alessandrea Carpio Kaya FC-Iloilo, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96510",
+            "externalId": "96510",
+            "name": "Alexa Pino",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2007-03-01",
+            "foot": "right",
+            "height": "Alexa Pino Kentucky Wildcats, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106643",
+            "externalId": "106643",
+            "name": "Mallie Ramirez",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Philippines",
+                "United States"
+            ],
+            "dateOfBirth": "2004-09-01",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

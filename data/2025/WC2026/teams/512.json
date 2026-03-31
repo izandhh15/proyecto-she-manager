@@ -1,0 +1,430 @@
+{
+    "id": "512",
+    "externalId": "512",
+    "transfermarktId": "512",
+    "name": "Belize",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "69154",
+            "externalId": "69154",
+            "name": "Jasmin Armstrong",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Jasin Arstrong unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69168",
+            "externalId": "69168",
+            "name": "Dennisa Pineda",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Dennisa Pineda unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72173",
+            "externalId": "72173",
+            "name": "Belinda Linarez",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Belinda Linarez unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69162",
+            "externalId": "69162",
+            "name": "Sharyn Enriquez",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Sharyn Enriquez unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72169",
+            "externalId": "72169",
+            "name": "Shante Chacon",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Shante Chacon unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69171",
+            "externalId": "69171",
+            "name": "Saudy Rivera",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Saudy Rivera unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69158",
+            "externalId": "69158",
+            "name": "Mikhaila Bowden",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "Belize",
+                "United States"
+            ],
+            "dateOfBirth": "1993-08-22",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69157",
+            "externalId": "69157",
+            "name": "Stephanie Barrientos",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Stephanie Barrientos unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69170",
+            "externalId": "69170",
+            "name": "Kursha Pollard",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Kursha Pollard unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69153",
+            "externalId": "69153",
+            "name": "Beatrice Alfaro",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": "1994-05-14",
+            "foot": "right",
+            "height": "Beatrice Alfaro unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69165",
+            "externalId": "69165",
+            "name": "Vaylene Lambert",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Vaylene Labert unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69161",
+            "externalId": "69161",
+            "name": "Jesselle Conorque",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Jesselle Conorque unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69166",
+            "externalId": "69166",
+            "name": "Gimayma Martinez",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Giaya Martinez unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69172",
+            "externalId": "69172",
+            "name": "Ashley Rodriguez",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Ashley Rodriguez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72171",
+            "externalId": "72171",
+            "name": "Florine Vasquez",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Florine Vasquez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69575",
+            "externalId": "69575",
+            "name": "Sabrina Eiley",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": "1998-01-27",
+            "foot": "right",
+            "height": "Sabrina Eiley unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69167",
+            "externalId": "69167",
+            "name": "Roshanny Narváez",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Roshanny Narváez unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69169",
+            "externalId": "69169",
+            "name": "Kelsy Polanco",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Kelsy Polanco unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72170",
+            "externalId": "72170",
+            "name": "Alisha Terry",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Alisha Terry unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69155",
+            "externalId": "69155",
+            "name": "Gisel Baeza",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": "1997-10-29",
+            "foot": "right",
+            "height": "Gisel Baeza unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72168",
+            "externalId": "72168",
+            "name": "Shendra Casimiro",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Shendra Casiiro unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69173",
+            "externalId": "69173",
+            "name": "Tanya Tuel",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Tanya Tuel unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69174",
+            "externalId": "69174",
+            "name": "Carlene Tillett",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Carlene Tillett unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69159",
+            "externalId": "69159",
+            "name": "Jayda Brown",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Jayda Brown Rochester FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69160",
+            "externalId": "69160",
+            "name": "Reah Burgess",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Reah Burgess unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72172",
+            "externalId": "72172",
+            "name": "Khalydia Velasquez",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Khalydia Velasquez unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69156",
+            "externalId": "69156",
+            "name": "Iamara Baptist",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Iaara Baptist unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69164",
+            "externalId": "69164",
+            "name": "Kaite Jones",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Belize"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Kaite Jones unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

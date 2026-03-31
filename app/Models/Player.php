@@ -43,6 +43,7 @@ class Player extends Model
     public $timestamps = false;
 
     protected $fillable = [
+        'transfermarkt_id',
         'external_source',
         'external_id',
         'name',

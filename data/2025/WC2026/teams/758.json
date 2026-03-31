@@ -1,0 +1,25 @@
+{
+    "id": "758",
+    "externalId": "758",
+    "transfermarktId": "758",
+    "name": "St. Lucia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "37397",
+            "externalId": "37397",
+            "name": "Jasmine Auguste",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "St. Lucia",
+                "England"
+            ],
+            "dateOfBirth": "1993-10-04",
+            "foot": "right",
+            "height": "Jasine Auguste Chatha Town, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -355,6 +355,33 @@ class LeagueFixtureGeneratorTest extends TestCase
         $this->generator->generate($this->makeTeams(20), $this->makeMatchdays(30));
     }
 
+    public function test_normalize_matchdays_trims_outdated_schedule_lengths(): void
+    {
+        $normalized = LeagueFixtureGenerator::normalizeMatchdays($this->makeMatchdays(38), 12);
+
+        $this->assertCount(22, $normalized);
+        $this->assertSame(1, $normalized[0]['round']);
+        $this->assertSame(22, $normalized[21]['round']);
+        $this->assertSame('01/08/25', $normalized[0]['date']);
+        $this->assertSame('22/08/25', $normalized[21]['date']);
+    }
+
+    public function test_normalize_matchdays_pads_short_schedule_lengths(): void
+    {
+        $normalized = LeagueFixtureGenerator::normalizeMatchdays([
+            ['round' => 1, 'date' => '2025-08-01'],
+            ['round' => 2, 'date' => '2025-08-08'],
+            ['round' => 3, 'date' => '2025-08-15'],
+            ['round' => 4, 'date' => '2025-08-22'],
+        ], 4);
+
+        $this->assertCount(6, $normalized);
+        $this->assertSame(5, $normalized[4]['round']);
+        $this->assertSame(6, $normalized[5]['round']);
+        $this->assertSame('2025-08-29', $normalized[4]['date']);
+        $this->assertSame('2025-09-05', $normalized[5]['date']);
+    }
+
     // ──────────────────────────────────────────────────────────────
     // Helpers
     // ──────────────────────────────────────────────────────────────

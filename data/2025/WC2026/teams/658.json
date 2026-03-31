@@ -1,0 +1,39 @@
+{
+    "id": "658",
+    "externalId": "658",
+    "transfermarktId": "658",
+    "name": "Liberia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "80744",
+            "externalId": "80744",
+            "name": "Jackie Touah",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Liberia"
+            ],
+            "dateOfBirth": "2004-04-17",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "80732",
+            "externalId": "80732",
+            "name": "Diamond Dahn",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Liberia"
+            ],
+            "dateOfBirth": "2004-02-21",
+            "foot": "right",
+            "height": "Diaond Dahn Deterine Girls FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -1,0 +1,404 @@
+{
+    "id": "824",
+    "externalId": "824",
+    "transfermarktId": "824",
+    "name": "Venezuela",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "109383",
+            "externalId": "109383",
+            "name": "Valeria Rebanales",
+            "position": "Goalkeeper",
+            "age": 16,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2009-08-25",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "65227",
+            "externalId": "65227",
+            "name": "Yessica Velásquez",
+            "position": "Goalkeeper",
+            "age": 36,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1989-07-28",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22914",
+            "externalId": "22914",
+            "name": "Nay Cáceres",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1999-11-18",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "45k",
+            "contract": null
+        },
+        {
+            "id": "22927",
+            "externalId": "22927",
+            "name": "Verónica Herrera",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Venezuela",
+                "Spain"
+            ],
+            "dateOfBirth": "2000-01-14",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "28548",
+            "externalId": "28548",
+            "name": "Yeni Giménez",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1996-05-03",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "42261",
+            "externalId": "42261",
+            "name": "Michelle Romero",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1997-06-12",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "13k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "113416",
+            "externalId": "113416",
+            "name": "Gilary Díaz",
+            "position": "Centre-Back",
+            "age": 17,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2008-10-24",
+            "foot": "right",
+            "height": "Gilary Díaz Caracas FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54912",
+            "externalId": "54912",
+            "name": "Raiderlin Carrasco",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2002-07-11",
+            "foot": "left",
+            "height": "1,59m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "113423",
+            "externalId": "113423",
+            "name": "Karlis Durán",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2006-07-01",
+            "foot": "right",
+            "height": "Karlis Durán Caracas FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101812",
+            "externalId": "101812",
+            "name": "Amanda Gugliotta",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2008-09-26",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "101809",
+            "externalId": "101809",
+            "name": "Melanie Chirinos",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2008-03-20",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92012",
+            "externalId": "92012",
+            "name": "Gellinott Reyes",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2006-10-31",
+            "foot": "right",
+            "height": "Gellinott Reyes Caracas FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70588",
+            "externalId": "70588",
+            "name": "Michi Apóstol",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2005-09-07",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "30k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "46501",
+            "externalId": "46501",
+            "name": "Bárbara Olivieri",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Venezuela",
+                "United States"
+            ],
+            "dateOfBirth": "2002-02-24",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "120k",
+            "contract": "2029-12-31"
+        },
+        {
+            "id": "46498",
+            "externalId": "46498",
+            "name": "Bárbara Martínez Flores",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2003-04-22",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "42260",
+            "externalId": "42260",
+            "name": "Lourdes Moreno",
+            "position": "Attacking Midfield",
+            "age": 29,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1997-01-25",
+            "foot": "both",
+            "height": "1,54m",
+            "marketValue": "13k",
+            "contract": null
+        },
+        {
+            "id": "42254",
+            "externalId": "42254",
+            "name": "Gaby García",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1997-04-02",
+            "foot": "right",
+            "height": "1,85m",
+            "marketValue": "450k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "38640",
+            "externalId": "38640",
+            "name": "Sonia O’Neill",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Venezuela",
+                "Italy"
+            ],
+            "dateOfBirth": "1994-08-19",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "31614",
+            "externalId": "31614",
+            "name": "Dayana Rodríguez",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2001-10-20",
+            "foot": "left",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "22938",
+            "externalId": "22938",
+            "name": "Daniuska Rodríguez",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1999-01-04",
+            "foot": "both",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "53328",
+            "externalId": "53328",
+            "name": "Mariana Speckmaier",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Venezuela",
+                "United States"
+            ],
+            "dateOfBirth": "1997-12-26",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "109308",
+            "externalId": "109308",
+            "name": "Ailing Herrera",
+            "position": "Centre-Forward",
+            "age": 17,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2008-07-15",
+            "foot": "right",
+            "height": "1,46m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "102098",
+            "externalId": "102098",
+            "name": "Genesis Hernández",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Venezuela",
+                "United States"
+            ],
+            "dateOfBirth": "2006-06-19",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "79390",
+            "externalId": "79390",
+            "name": "Génesis Flórez",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1998-08-22",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46496",
+            "externalId": "46496",
+            "name": "Enyer Higuera",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "2001-01-15",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22916",
+            "externalId": "22916",
+            "name": "Deyna Castellanos",
+            "position": "Second Striker",
+            "age": 26,
+            "nationality": [
+                "Venezuela"
+            ],
+            "dateOfBirth": "1999-04-18",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "100k",
+            "contract": "2026-12-31"
+        }
+    ]
+}

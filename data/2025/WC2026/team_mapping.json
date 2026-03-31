@@ -1,6 +1,6 @@
 {
     "MEX": {
-        "uuid": "6a6f35ec-1ed4-4224-86cc-bb414aa2e099",
+        "uuid": "d1a4f741-4a0a-4bd0-9a16-0ae9a6c823c0",
         "csv_id": 1,
         "name": "Mexico",
         "group": "A",
@@ -8,7 +8,7 @@
         "external_id": "458"
     },
     "RSA": {
-        "uuid": "fd6c1a1a-df8f-4bcb-810a-674f73ef01e1",
+        "uuid": "49e8ad45-243b-48d8-98e2-f39a041fdb7e",
         "csv_id": 2,
         "name": "South Africa",
         "group": "A",
@@ -16,15 +16,15 @@
         "external_id": "761"
     },
     "KOR": {
-        "uuid": "54350fa0-60e2-4365-88f9-00299f2939a6",
+        "uuid": "e21cb5df-d43d-4e64-83cf-48538492b80b",
         "csv_id": 3,
         "name": "South Korea",
         "group": "A",
         "is_placeholder": false,
-        "external_id": "467"
+        "external_id": null
     },
     "UEPD": {
-        "uuid": "6e5ef913-02c8-4697-8d4c-1a0787254587",
+        "uuid": "389c16ff-1706-46e7-8ffb-b5d68c2dfe28",
         "csv_id": 4,
         "name": "Winner UEFA Playoff D",
         "group": "A",
@@ -32,7 +32,7 @@
         "external_id": null
     },
     "CAN": {
-        "uuid": "6fffe0db-3e1c-4cd3-b409-3514ac049e05",
+        "uuid": "b9c71646-d737-44f0-b23b-02ebc4a4d5a7",
         "csv_id": 5,
         "name": "Canada",
         "group": "B",
@@ -40,7 +40,7 @@
         "external_id": "457"
     },
     "UEPA": {
-        "uuid": "f649aa1b-ce79-4d19-9cab-514d65633362",
+        "uuid": "e3989768-d458-425d-bf87-431198eda655",
         "csv_id": 6,
         "name": "Winner UEFA Playoff A",
         "group": "B",
@@ -48,7 +48,7 @@
         "external_id": null
     },
     "QAT": {
-        "uuid": "b6fcc38e-bf6c-43d6-9eae-b6e915ee12b0",
+        "uuid": "527d9297-1f61-4ed8-81a2-9cb7ec49b11e",
         "csv_id": 7,
         "name": "Qatar",
         "group": "B",
@@ -56,7 +56,7 @@
         "external_id": null
     },
     "SUI": {
-        "uuid": "06f761a0-cfc1-4a5e-812a-cbda9ef885a7",
+        "uuid": "ffc5eece-e0f5-4639-b90f-f8f4aedeeb88",
         "csv_id": 8,
         "name": "Switzerland",
         "group": "B",
@@ -64,7 +64,7 @@
         "external_id": "466"
     },
     "BRA": {
-        "uuid": "605e3544-4058-4b32-a539-a81164b7e711",
+        "uuid": "53246bbc-5994-4a3b-bf60-3891b28f3d1c",
         "csv_id": 9,
         "name": "Brazil",
         "group": "C",
@@ -72,7 +72,7 @@
         "external_id": "448"
     },
     "MAR": {
-        "uuid": "7a209324-f617-432e-80cf-549a9d820ec2",
+        "uuid": "c7cb41cd-59c3-4ced-b586-3eb46e724082",
         "csv_id": 10,
         "name": "Morocco",
         "group": "C",
@@ -80,7 +80,7 @@
         "external_id": "676"
     },
     "HAI": {
-        "uuid": "60d62225-5c87-4ccc-b50e-cea5b1ea8660",
+        "uuid": "827883d3-4ce1-4806-ae64-abee7912c2db",
         "csv_id": 11,
         "name": "Haiti",
         "group": "C",
@@ -88,15 +88,15 @@
         "external_id": "610"
     },
     "SCO": {
-        "uuid": "ba6b6f8c-05e6-4890-b7a6-d2f0cfbdc298",
+        "uuid": "2a5b2f3f-1947-4f7f-bc66-8ae3fc91121a",
         "csv_id": 12,
         "name": "Scotland",
         "group": "C",
         "is_placeholder": false,
-        "external_id": "734"
+        "external_id": null
     },
     "USA": {
-        "uuid": "1cd0c345-4c31-4021-af85-7cfd3f2a6ae8",
+        "uuid": "d78fa247-64b2-4939-bd48-98e3df82f1f9",
         "csv_id": 13,
         "name": "United States",
         "group": "D",
@@ -104,7 +104,7 @@
         "external_id": "468"
     },
     "PAR": {
-        "uuid": "54321b08-64a5-4459-8a5c-eb95a8b9b9ef",
+        "uuid": "20968fa5-8a14-47a5-a515-375179ccb8d6",
         "csv_id": 14,
         "name": "Paraguay",
         "group": "D",
@@ -112,7 +112,7 @@
         "external_id": "708"
     },
     "AUS": {
-        "uuid": "c58de08f-3fba-4ba3-a762-35dbc48c7b06",
+        "uuid": "d93532cb-25d3-483c-8754-a0b2c8196735",
         "csv_id": 15,
         "name": "Australia",
         "group": "D",
@@ -120,7 +120,7 @@
         "external_id": "446"
     },
     "UEPC": {
-        "uuid": "62951de8-e278-4a25-9856-58bd6984b5b8",
+        "uuid": "e4589a15-e205-48ce-8547-e613b29c84a1",
         "csv_id": 16,
         "name": "Winner UEFA Playoff C",
         "group": "D",
@@ -128,7 +128,7 @@
         "external_id": null
     },
     "GER": {
-        "uuid": "2a300ae6-e499-4ad4-b2bf-829053d2be3c",
+        "uuid": "59da818c-adb1-49d4-b5b4-7ba53ca3ae60",
         "csv_id": 17,
         "name": "Germany",
         "group": "E",
@@ -136,7 +136,7 @@
         "external_id": "444"
     },
     "CUR": {
-        "uuid": "4701d8f4-19ed-4624-afae-061b57b20063",
+        "uuid": "e456d891-d638-4eb7-8efb-af2788ce6503",
         "csv_id": 18,
         "name": "Curaçao",
         "group": "E",
@@ -144,15 +144,15 @@
         "external_id": "534"
     },
     "CIV": {
-        "uuid": "521d12ad-4224-4d8c-a571-67bff1bcfb98",
+        "uuid": "e455e412-03e2-479b-9e0f-03dbc444df17",
         "csv_id": 19,
         "name": "Ivory Coast",
         "group": "E",
         "is_placeholder": false,
-        "external_id": "548"
+        "external_id": null
     },
     "ECU": {
-        "uuid": "0b6bc221-9d05-4f47-aeaf-7a1dfee8b5b0",
+        "uuid": "e5d965dd-508f-470a-8928-abe2954dd897",
         "csv_id": 20,
         "name": "Ecuador",
         "group": "E",
@@ -160,7 +160,7 @@
         "external_id": "544"
     },
     "NED": {
-        "uuid": "4aefd528-f1f8-4397-8865-cd37cbe8978c",
+        "uuid": "2af484a2-d51f-4f69-b558-6b7d05258110",
         "csv_id": 21,
         "name": "Netherlands",
         "group": "F",
@@ -168,7 +168,7 @@
         "external_id": "459"
     },
     "JPN": {
-        "uuid": "997db7df-42ca-45bb-9d98-625277c148e4",
+        "uuid": "48afd467-b92f-4814-a894-d98120d949fb",
         "csv_id": 22,
         "name": "Japan",
         "group": "F",
@@ -176,7 +176,7 @@
         "external_id": "456"
     },
     "UEPB": {
-        "uuid": "34393cca-64f9-438d-840d-54befc60f340",
+        "uuid": "0a0d7a03-f497-49fd-99b5-97d82555f989",
         "csv_id": 23,
         "name": "Winner UEFA Playoff B",
         "group": "F",
@@ -184,7 +184,7 @@
         "external_id": null
     },
     "TUN": {
-        "uuid": "9e4d1651-7204-45ad-b0f7-514ac427c7e6",
+        "uuid": "30f221b1-56da-4374-b1f8-ca4603bfd69f",
         "csv_id": 24,
         "name": "Tunisia",
         "group": "F",
@@ -192,7 +192,7 @@
         "external_id": "806"
     },
     "BEL": {
-        "uuid": "fd8e30da-e999-4e69-ae01-95c40c075b4c",
+        "uuid": "079d2f45-952f-4a77-ad00-a02565666898",
         "csv_id": 25,
         "name": "Belgium",
         "group": "G",
@@ -200,7 +200,7 @@
         "external_id": "447"
     },
     "EGY": {
-        "uuid": "77f38a5d-2489-4874-9301-b72f300e6a36",
+        "uuid": "b7df676c-102d-476d-993b-a95f923804cb",
         "csv_id": 26,
         "name": "Egypt",
         "group": "G",
@@ -208,7 +208,7 @@
         "external_id": "480"
     },
     "IRN": {
-        "uuid": "5619d3fd-2602-45f1-a63d-094f382af27d",
+        "uuid": "67458c3d-e7ab-455c-95ee-bcbf1b4ecc7e",
         "csv_id": 27,
         "name": "Iran",
         "group": "G",
@@ -216,7 +216,7 @@
         "external_id": "620"
     },
     "NZL": {
-        "uuid": "bffd3555-5d8b-4de8-9ced-f65fe45b71fd",
+        "uuid": "b82eb5c0-de7b-4cb2-bc7b-0b1a5cc0db7c",
         "csv_id": 28,
         "name": "New Zealand",
         "group": "G",
@@ -224,7 +224,7 @@
         "external_id": "693"
     },
     "ESP": {
-        "uuid": "cdbe0f0f-a80f-447d-8fef-8db38d98eacb",
+        "uuid": "c6c2df62-44ef-4cc6-84e9-8051f16cf380",
         "csv_id": 29,
         "name": "Spain",
         "group": "H",
@@ -232,7 +232,7 @@
         "external_id": "751"
     },
     "CPV": {
-        "uuid": "5d8b83c5-5ddc-4c64-a98e-7fa83b3bf310",
+        "uuid": "fdb72599-c3f6-4264-a613-4abd0ba0010b",
         "csv_id": 30,
         "name": "Cape Verde",
         "group": "H",
@@ -240,7 +240,7 @@
         "external_id": null
     },
     "KSA": {
-        "uuid": "84a45961-fcef-46f0-8250-791e233e14c6",
+        "uuid": "848ae91d-392f-41fb-89f2-4485f76662cc",
         "csv_id": 31,
         "name": "Saudi Arabia",
         "group": "H",
@@ -248,7 +248,7 @@
         "external_id": null
     },
     "URU": {
-        "uuid": "25cc3841-be7a-4018-9078-6a33838f8e54",
+        "uuid": "ddfd89bb-6edd-4274-928c-2afe5fd14342",
         "csv_id": 32,
         "name": "Uruguay",
         "group": "H",
@@ -256,7 +256,7 @@
         "external_id": "819"
     },
     "FRA": {
-        "uuid": "d8d3460c-b620-466a-89a4-f6a4d7ea610f",
+        "uuid": "49243a9c-6ce2-4777-ab8d-132414539dc6",
         "csv_id": 33,
         "name": "France",
         "group": "I",
@@ -264,7 +264,7 @@
         "external_id": "453"
     },
     "SEN": {
-        "uuid": "fe92787e-804a-4403-a8a3-d3a6ff4b51d2",
+        "uuid": "33a60e18-8957-4ee6-9a17-d20670c7c798",
         "csv_id": 34,
         "name": "Senegal",
         "group": "I",
@@ -272,7 +272,7 @@
         "external_id": "735"
     },
     "FP02": {
-        "uuid": "b086230c-fc08-4ac8-87aa-1295f07835ad",
+        "uuid": "5be40838-a3a2-4a1d-aa46-9ebc8320335a",
         "csv_id": 35,
         "name": "Winner FIFA Playoff 2",
         "group": "I",
@@ -280,7 +280,7 @@
         "external_id": null
     },
     "NOR": {
-        "uuid": "3f71e8c3-3ccd-4037-82fd-75cf28071816",
+        "uuid": "50ed880f-e46a-4f71-a0a5-3ac885b1e8ed",
         "csv_id": 36,
         "name": "Norway",
         "group": "I",
@@ -288,7 +288,7 @@
         "external_id": "462"
     },
     "ARG": {
-        "uuid": "64ecbdbf-eca7-44f9-ba45-3161a40f361a",
+        "uuid": "e6c21552-0997-4f9f-a33a-674511d428ea",
         "csv_id": 37,
         "name": "Argentina",
         "group": "J",
@@ -296,7 +296,7 @@
         "external_id": "445"
     },
     "ALG": {
-        "uuid": "d376f31b-0a85-4972-b3d7-19ccc7f3d04e",
+        "uuid": "1ea38517-8c60-448f-bdf5-66ae81bee9fd",
         "csv_id": 38,
         "name": "Algeria",
         "group": "J",
@@ -304,7 +304,7 @@
         "external_id": "484"
     },
     "AUT": {
-        "uuid": "76565814-d156-46db-95ca-0c0362fde34c",
+        "uuid": "2baed53e-8bf7-4ba1-a973-a29dce2bd119",
         "csv_id": 39,
         "name": "Austria",
         "group": "J",
@@ -312,7 +312,7 @@
         "external_id": "463"
     },
     "JOR": {
-        "uuid": "218a1c99-3bd1-4199-8ce7-5482d8b1ab80",
+        "uuid": "c04f75d2-1042-4471-bfff-991935482247",
         "csv_id": 40,
         "name": "Jordan",
         "group": "J",
@@ -320,7 +320,7 @@
         "external_id": "627"
     },
     "POR": {
-        "uuid": "790dc0ad-76ba-4077-8946-44f3cea5fb0e",
+        "uuid": "786faba9-bfbd-4c68-a071-b933868d0885",
         "csv_id": 41,
         "name": "Portugal",
         "group": "K",
@@ -328,7 +328,7 @@
         "external_id": "713"
     },
     "FP01": {
-        "uuid": "bdcd1297-407e-4408-8045-72ed8cdcf6a6",
+        "uuid": "95440199-a14d-44d7-8666-c41eddb139e1",
         "csv_id": 42,
         "name": "Winner FIFA Playoff 1",
         "group": "K",
@@ -336,7 +336,7 @@
         "external_id": null
     },
     "UZB": {
-        "uuid": "9add9d45-b68a-49e8-937f-e96049eeaf53",
+        "uuid": "f9e96f6f-a298-4ce0-a790-b336cf625d77",
         "csv_id": 43,
         "name": "Uzbekistan",
         "group": "K",
@@ -344,7 +344,7 @@
         "external_id": "820"
     },
     "COL": {
-        "uuid": "52cda3b1-3160-4042-a84a-d3524708fc0f",
+        "uuid": "19308e21-6ee4-4aca-8c3e-6e6a97d0580e",
         "csv_id": 44,
         "name": "Colombia",
         "group": "K",
@@ -352,7 +352,7 @@
         "external_id": "640"
     },
     "ENG": {
-        "uuid": "1b1d172e-097b-4bbb-9cea-21e7d30720a4",
+        "uuid": "3fb6a742-a9f2-4a04-9830-7208a788cf71",
         "csv_id": 45,
         "name": "England",
         "group": "L",
@@ -360,7 +360,7 @@
         "external_id": "451"
     },
     "CRO": {
-        "uuid": "862149ca-d3d4-49df-bf24-f7e30281876d",
+        "uuid": "a2d56464-75cd-4e77-8d05-3450b4d5b069",
         "csv_id": 46,
         "name": "Croatia",
         "group": "L",
@@ -368,7 +368,7 @@
         "external_id": "643"
     },
     "GHA": {
-        "uuid": "09dad9c1-de3d-4374-a3f2-5e7fbd919f04",
+        "uuid": "27ac00f6-db3e-408f-8f96-e261f7dede26",
         "csv_id": 47,
         "name": "Ghana",
         "group": "L",
@@ -376,7 +376,7 @@
         "external_id": "454"
     },
     "PAN": {
-        "uuid": "5f11dbc0-df12-4064-bb3c-28dcf789cf06",
+        "uuid": "3667d43e-3bf0-4003-be10-47664a9ba481",
         "csv_id": 48,
         "name": "Panama",
         "group": "L",

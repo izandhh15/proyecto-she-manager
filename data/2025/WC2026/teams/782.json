@@ -1,0 +1,354 @@
+{
+    "id": "782",
+    "externalId": "782",
+    "transfermarktId": "782",
+    "name": "Tajikistan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "67036",
+            "externalId": "67036",
+            "name": "Sajjora Saidova",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1998-02-01",
+            "foot": "right",
+            "height": "Sajjora Saidova unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67020",
+            "externalId": "67020",
+            "name": "Adolatxon Komilova",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1997-11-19",
+            "foot": "right",
+            "height": "Adolatxon Koilova unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67030",
+            "externalId": "67030",
+            "name": "Dilnoza Nurova",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2003-07-01",
+            "foot": "right",
+            "height": "Dilnoza Nurova unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67027",
+            "externalId": "67027",
+            "name": "Munisa Mirzoeva",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2002-10-01",
+            "foot": "right",
+            "height": "Munisa Mirzoeva unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67021",
+            "externalId": "67021",
+            "name": "Lajlo Kuckinova",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2003-05-09",
+            "foot": "right",
+            "height": "Lajlo Kuckinova unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67025",
+            "externalId": "67025",
+            "name": "Karina Mirzoeva",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2004-03-12",
+            "foot": "right",
+            "height": "Karina Mirzoeva unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67017",
+            "externalId": "67017",
+            "name": "Şamsija Husejnova",
+            "position": "Centre-Back",
+            "age": 29,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1996-12-15",
+            "foot": "right",
+            "height": "Şasija Husejnova unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67009",
+            "externalId": "67009",
+            "name": "Niso Abdulloeva",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2003-12-24",
+            "foot": "right",
+            "height": "Niso Abdulloeva unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67037",
+            "externalId": "67037",
+            "name": "Saxina Saidova",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1999-12-16",
+            "foot": "right",
+            "height": "Saxina Saidova unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67048",
+            "externalId": "67048",
+            "name": "Barno Xoçazoda",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1999-09-09",
+            "foot": "right",
+            "height": "Barno Xoçazoda unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67012",
+            "externalId": "67012",
+            "name": "Benazir Çumaxonzoda",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2001-10-27",
+            "foot": "right",
+            "height": "Benazir Çuaxonzoda unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67013",
+            "externalId": "67013",
+            "name": "Madina Davljatova",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2004-06-01",
+            "foot": "right",
+            "height": "Madina Davljatova unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67044",
+            "externalId": "67044",
+            "name": "Natalja Sotnikova",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1994-07-02",
+            "foot": "right",
+            "height": "Natalja Sotnikova unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67032",
+            "externalId": "67032",
+            "name": "Farzona Raupova",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1997-09-14",
+            "foot": "right",
+            "height": "Farzona Raupova unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67022",
+            "externalId": "67022",
+            "name": "Çonona Kurbonova",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2000-07-18",
+            "foot": "right",
+            "height": "Çonona Kurbonova unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67049",
+            "externalId": "67049",
+            "name": "Nekubaxt Xudododova",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2002-02-23",
+            "foot": "right",
+            "height": "Nekubaxt Xudododova unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67026",
+            "externalId": "67026",
+            "name": "Munisa Mirzoeva",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2000-12-15",
+            "foot": "right",
+            "height": "Munisa Mirzoeva unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67035",
+            "externalId": "67035",
+            "name": "Zulajxo Safarova",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2000-07-21",
+            "foot": "right",
+            "height": "Zulajxo Safarova unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67040",
+            "externalId": "67040",
+            "name": "Mehrangez Şarifova",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1994-07-14",
+            "foot": "right",
+            "height": "Mehrangez Şarifova unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67014",
+            "externalId": "67014",
+            "name": "Madina Fozilova",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1996-05-01",
+            "foot": "right",
+            "height": "Madina Fozilova unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67047",
+            "externalId": "67047",
+            "name": "Lajlo Xalimova",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "1997-11-16",
+            "foot": "right",
+            "height": "Lajlo Xaliova unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67031",
+            "externalId": "67031",
+            "name": "Malika Qajumova",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2005-03-10",
+            "foot": "right",
+            "height": "Malika Qajuova unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66961",
+            "externalId": "66961",
+            "name": "Dildora Raxmonova",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Tajikistan"
+            ],
+            "dateOfBirth": "2003-11-26",
+            "foot": "right",
+            "height": "Dildora Raxonova unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

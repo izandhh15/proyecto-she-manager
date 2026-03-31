@@ -1,0 +1,399 @@
+{
+    "id": "519",
+    "externalId": "519",
+    "transfermarktId": "519",
+    "name": "Botsuana",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "98132",
+            "externalId": "98132",
+            "name": "Tlamelo Pheresi",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1996-11-30",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74232",
+            "externalId": "74232",
+            "name": "Sedilame Bosija",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1997-12-01",
+            "foot": "right",
+            "height": "Sedilae Bosija Maelodi Sundowns Ladies FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74234",
+            "externalId": "74234",
+            "name": "Lesego Moeng",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1998-02-03",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "74239",
+            "externalId": "74239",
+            "name": "Kesegofetse Mochawe",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1995-07-30",
+            "foot": "left",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74242",
+            "externalId": "74242",
+            "name": "Masego Montsho",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1991-06-15",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74248",
+            "externalId": "74248",
+            "name": "Golebaone Selebatso",
+            "position": "Centre-Back",
+            "age": 35,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1991-03-22",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74238",
+            "externalId": "74238",
+            "name": "Lone Gaofetoge",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2001-07-16",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74240",
+            "externalId": "74240",
+            "name": "Veronicah Mogotsi",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1992-08-21",
+            "foot": "right",
+            "height": "Veronicah Mogotsi Double Action, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110250",
+            "externalId": "110250",
+            "name": "Boitumelo Gammu",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1995-07-23",
+            "foot": "right",
+            "height": "Boituelo Gau Ongos Ladies, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74237",
+            "externalId": "74237",
+            "name": "Nancy Baeletsi",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1996-03-21",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "98133",
+            "externalId": "98133",
+            "name": "Leungo Senwelo",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2001-12-23",
+            "foot": "right",
+            "height": "Leungo Senwelo Mazotie FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74175",
+            "externalId": "74175",
+            "name": "Lesego Radiakanyo",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1999-06-27",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110247",
+            "externalId": "110247",
+            "name": "Obonetse Rathari",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2002-11-11",
+            "foot": "right",
+            "height": "Obonetse Rathari Gaborone United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74250",
+            "externalId": "74250",
+            "name": "Keitumetse Dithebe",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2002-07-17",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74231",
+            "externalId": "74231",
+            "name": "Esalenna Galekhutle",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2001-01-23",
+            "foot": "right",
+            "height": "Esalenna Galekhutle Willia Carey Crusaders, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74241",
+            "externalId": "74241",
+            "name": "Laone Moloi",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2000-11-26",
+            "foot": "right",
+            "height": "Laone Moloi Gaborone United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110249",
+            "externalId": "110249",
+            "name": "Tshegofatso Mosotho",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2002-06-19",
+            "foot": "right",
+            "height": "Tshegofatso Mosotho Mazotie FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110251",
+            "externalId": "110251",
+            "name": "Peggy Manewe",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2004-12-25",
+            "foot": "right",
+            "height": "Peggy Manewe Double Action, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "110252",
+            "externalId": "110252",
+            "name": "Maungo Maponga",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2004-02-24",
+            "foot": "right",
+            "height": "Maungo Maponga Gaborone United, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74258",
+            "externalId": "74258",
+            "name": "Refilwe Tholakele",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1996-01-26",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74249",
+            "externalId": "74249",
+            "name": "Mokgabo Thanda",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1993-04-03",
+            "foot": "right",
+            "height": "Mokgabo Thanda Green Buffaloes, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74253",
+            "externalId": "74253",
+            "name": "Michelle Abueng",
+            "position": "Centre-Forward",
+            "age": 24,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2001-05-06",
+            "foot": "right",
+            "height": "Michelle Abueng BDF XI, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74252",
+            "externalId": "74252",
+            "name": "Balotlhanyi Johannes",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1994-06-28",
+            "foot": "right",
+            "height": "Balotlhanyi Johannes Double Action, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74255",
+            "externalId": "74255",
+            "name": "Nondi Mahlasela",
+            "position": "Centre-Forward",
+            "age": 34,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "1991-12-25",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74254",
+            "externalId": "74254",
+            "name": "Gaonyadiwe Ontlametse",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2000-01-12",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "98129",
+            "externalId": "98129",
+            "name": "Yaone Modise",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Botsuana"
+            ],
+            "dateOfBirth": "2005-12-09",
+            "foot": "right",
+            "height": "Yaone Modise Gaborone United, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

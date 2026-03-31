@@ -6,6 +6,7 @@ use App\Models\Game;
 use App\Modules\Match\Jobs\ProcessMatchdayAdvance;
 use App\Modules\Season\Jobs\ProcessSeasonTransition;
 use App\Modules\Season\Jobs\SetupNewGame;
+use App\Modules\Season\Jobs\SetupTournamentGame;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 
@@ -25,13 +26,7 @@ class GameSetupStatus
 
         // Recovery: re-dispatch if initial game setup is stuck for > 2 minutes
         if (!$game->isSetupComplete() && !$setupFailed && $game->created_at->lt(now()->subMinutes(2))) {
-            SetupNewGame::dispatch(
-                gameId: $game->id,
-                teamId: $game->team_id,
-                competitionId: $game->competition_id,
-                season: $game->season,
-                gameMode: $game->game_mode ?? Game::MODE_CAREER,
-            );
+            $this->dispatchSetupRecovery($game);
         }
 
         // Recovery: clear flag if career actions are stuck for > 2 minutes
@@ -62,5 +57,25 @@ class GameSetupStatus
             ->where('payload', 'like', '%'.$gameId.'%')
             ->where('failed_at', '>=', now()->subMinutes(10))
             ->exists();
+    }
+
+    private function dispatchSetupRecovery(Game $game): void
+    {
+        if ($game->isTournamentMode()) {
+            SetupTournamentGame::dispatch(
+                gameId: $game->id,
+                teamId: $game->team_id,
+            );
+
+            return;
+        }
+
+        SetupNewGame::dispatch(
+            gameId: $game->id,
+            teamId: $game->team_id,
+            competitionId: $game->competition_id,
+            season: $game->season,
+            gameMode: $game->game_mode ?? Game::MODE_CAREER,
+        );
     }
 }

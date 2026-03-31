@@ -1,0 +1,415 @@
+{
+    "id": "455",
+    "externalId": "455",
+    "transfermarktId": "455",
+    "name": "Italy",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "11961",
+            "externalId": "11961",
+            "name": "Laura Giuliani",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1993-06-05",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "85k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22180",
+            "externalId": "22180",
+            "name": "Francesca Durante",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1997-02-12",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "34101",
+            "externalId": "34101",
+            "name": "Rachele Baldi",
+            "position": "Goalkeeper",
+            "age": 31,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1994-10-02",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "79553",
+            "externalId": "79553",
+            "name": "Federica D’Auria",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2003-08-27",
+            "foot": "right",
+            "height": "Federica D’Auria Lazio Woen, Defencem",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "9594",
+            "externalId": "9594",
+            "name": "Cecilia Salvai",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1993-12-02",
+            "foot": "left",
+            "height": "1,75m",
+            "marketValue": "90k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "9634",
+            "externalId": "9634",
+            "name": "Elena Linari",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1994-04-15",
+            "foot": "left",
+            "height": "1,73m",
+            "marketValue": "125k",
+            "contract": null
+        },
+        {
+            "id": "22179",
+            "externalId": "22179",
+            "name": "Lisa Boattin",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1997-05-03",
+            "foot": "left",
+            "height": "1,60m",
+            "marketValue": "130k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "29829",
+            "externalId": "29829",
+            "name": "Martina Lenzini",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1998-07-23",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "170k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "34106",
+            "externalId": "34106",
+            "name": "Lucia Di Guglielmo",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1997-06-26",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "120k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "34070",
+            "externalId": "34070",
+            "name": "Elisabetta Oliviero",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1997-07-18",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "85k",
+            "contract": null
+        },
+        {
+            "id": "30480",
+            "externalId": "30480",
+            "name": "Angelica Soffia",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2000-07-02",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30466",
+            "externalId": "30466",
+            "name": "Arianna Caruso",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1999-11-06",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "275k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "64974",
+            "externalId": "64974",
+            "name": "Giulia Dragoni",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2006-11-07",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "150k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64972",
+            "externalId": "64972",
+            "name": "Eva Schatzer",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2005-01-16",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "180k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "47156",
+            "externalId": "47156",
+            "name": "Matilde Pavan",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2004-06-12",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "120k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35098",
+            "externalId": "35098",
+            "name": "Emma Severini",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2003-07-18",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "100k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "30471",
+            "externalId": "30471",
+            "name": "Giada Greggi",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2000-02-18",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "180k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "22195",
+            "externalId": "22195",
+            "name": "Valentina Bergamaschi",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1997-01-22",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "130k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "22190",
+            "externalId": "22190",
+            "name": "Manuela Giugliano",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1997-08-18",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "350k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "30476",
+            "externalId": "30476",
+            "name": "Elisa Polli",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "2000-08-27",
+            "foot": "right",
+            "height": "Elisa Polli Inter Milano, Strikerm",
+            "marketValue": "140k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30470",
+            "externalId": "30470",
+            "name": "Benedetta Glionna",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1999-07-26",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "130k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "4541",
+            "externalId": "4541",
+            "name": "Cristiana Girelli",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1990-04-23",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "80k",
+            "contract": "2026-08-31"
+        },
+        {
+            "id": "30465",
+            "externalId": "30465",
+            "name": "Sofia Cantore",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1999-09-30",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "450k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "25078",
+            "externalId": "25078",
+            "name": "Michela Cambiaghi",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1996-02-04",
+            "foot": "left",
+            "height": "1,78m",
+            "marketValue": "120k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "47114",
+            "externalId": "47114",
+            "name": "Chiara Beccari",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Italy",
+                "San Marino"
+            ],
+            "dateOfBirth": "2004-09-27",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "240k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "22199",
+            "externalId": "22199",
+            "name": "Martina Piemonte",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1997-11-07",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "175k",
+            "contract": null
+        },
+        {
+            "id": "9577",
+            "externalId": "9577",
+            "name": "Barbara Bonansea",
+            "position": "Centre-Forward",
+            "age": 34,
+            "nationality": [
+                "Italy"
+            ],
+            "dateOfBirth": "1991-06-13",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "70k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

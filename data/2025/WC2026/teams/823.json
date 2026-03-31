@@ -1,0 +1,219 @@
+{
+    "id": "823",
+    "externalId": "823",
+    "transfermarktId": "823",
+    "name": "Vanuatu",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "74950",
+            "externalId": "74950",
+            "name": "Vanissa Wilson",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "1993-05-03",
+            "foot": "right",
+            "height": "Vanissa Wilson ABM Galaxy FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74933",
+            "externalId": "74933",
+            "name": "Nelly Kaltak",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2003-10-22",
+            "foot": "right",
+            "height": "Nelly Kaltak ABM Galaxy FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74929",
+            "externalId": "74929",
+            "name": "Limas Erikan",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2000-01-29",
+            "foot": "right",
+            "height": "Lias Erikan ABM Galaxy FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96205",
+            "externalId": "96205",
+            "name": "Nellie Vuti",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2005-05-04",
+            "foot": "right",
+            "height": "Nellie Vuti unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74930",
+            "externalId": "74930",
+            "name": "Noeline Erikan",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2001-12-24",
+            "foot": "right",
+            "height": "Noeline Erikan ABM Galaxy FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74936",
+            "externalId": "74936",
+            "name": "Noella Metoriki",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2003-01-28",
+            "foot": "right",
+            "height": "Noella Metoriki NRTC Woen’s, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96203",
+            "externalId": "96203",
+            "name": "Jesta Toka",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "1997-09-12",
+            "foot": "right",
+            "height": "Jesta Toka United Malapa, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96198",
+            "externalId": "96198",
+            "name": "Angelina Poida",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2006-11-26",
+            "foot": "right",
+            "height": "Angelina Poida unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74943",
+            "externalId": "74943",
+            "name": "Fevie Siehi",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "1994-04-08",
+            "foot": "right",
+            "height": "Fevie Siehi Huka 21, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74926",
+            "externalId": "74926",
+            "name": "Jane Alatoa",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "1999-04-14",
+            "foot": "right",
+            "height": "Jane Alatoa ABM Galaxy FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74947",
+            "externalId": "74947",
+            "name": "Rita Solomon",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2001-03-29",
+            "foot": "right",
+            "height": "Rita Soloon Erakor Golden Star, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96199",
+            "externalId": "96199",
+            "name": "Leimata Simon",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2000-12-19",
+            "foot": "right",
+            "height": "Leiata Sion unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74927",
+            "externalId": "74927",
+            "name": "Brenda Anis",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "1996-03-18",
+            "foot": "right",
+            "height": "Brenda Anis ABM Galaxy FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74941",
+            "externalId": "74941",
+            "name": "Henriette Sangul",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Vanuatu"
+            ],
+            "dateOfBirth": "2003-10-03",
+            "foot": "right",
+            "height": "Henriette Sangul NRTC Woen’s, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

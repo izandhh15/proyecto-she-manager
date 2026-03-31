@@ -1,0 +1,362 @@
+{
+    "id": "518",
+    "externalId": "518",
+    "transfermarktId": "518",
+    "name": "Bosnia-Herzegovina",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "112123",
+            "externalId": "112123",
+            "name": "Hana Karačić",
+            "position": "Goalkeeper",
+            "age": 17,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2009-01-19",
+            "foot": "right",
+            "height": "Hana Karačić SFK 2000 Sarajevo U17, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "61825",
+            "externalId": "61825",
+            "name": "Iman Dumanjić",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2005-01-16",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "56203",
+            "externalId": "56203",
+            "name": "Somea Položen",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "Sweden"
+            ],
+            "dateOfBirth": "2002-09-18",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "10829",
+            "externalId": "10829",
+            "name": "Melisa Hasanbegović",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "1995-04-13",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "79527",
+            "externalId": "79527",
+            "name": "Samra Muhić",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2006-10-06",
+            "foot": "right",
+            "height": "Sara Muhić Arna-Bjørnar Fotball, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "76483",
+            "externalId": "76483",
+            "name": "Andrea Ćule",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2002-03-23",
+            "foot": "right",
+            "height": "Andrea Ćule ŽF/NK Eina, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69831",
+            "externalId": "69831",
+            "name": "Ena Šabanagić",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "United States"
+            ],
+            "dateOfBirth": "1997-10-27",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "66320",
+            "externalId": "66320",
+            "name": "Lana Radulović",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2005-11-02",
+            "foot": "left",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61824",
+            "externalId": "61824",
+            "name": "Gloria Slišković",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2005-05-04",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "47093",
+            "externalId": "47093",
+            "name": "Marija Milinković",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2004-11-16",
+            "foot": "both",
+            "height": "1,81m",
+            "marketValue": "180k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "41900",
+            "externalId": "41900",
+            "name": "Aldina Hamzić",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2000-03-20",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "38837",
+            "externalId": "38837",
+            "name": "Emma Veletanlić",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "Denmark"
+            ],
+            "dateOfBirth": "2003-05-18",
+            "foot": "right",
+            "height": "1,83m",
+            "marketValue": "35k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "16691",
+            "externalId": "16691",
+            "name": "Selma Kapetanović",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "1996-12-09",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "53763",
+            "externalId": "53763",
+            "name": "Emina Ekić",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "United States"
+            ],
+            "dateOfBirth": "1999-06-06",
+            "foot": "both",
+            "height": "1,65m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "41810",
+            "externalId": "41810",
+            "name": "Sofija Krajšumović",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2002-07-12",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64679",
+            "externalId": "64679",
+            "name": "Nina Brnić",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2006-02-21",
+            "foot": "right",
+            "height": "Nina Brnić ŽNK Hajduk Split, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "26469",
+            "externalId": "26469",
+            "name": "Marija Aleksić",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "1997-08-11",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "73135",
+            "externalId": "73135",
+            "name": "Una Rankić",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "Serbia"
+            ],
+            "dateOfBirth": "2007-11-26",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "46350",
+            "externalId": "46350",
+            "name": "Elma Husić",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2002-03-04",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54800",
+            "externalId": "54800",
+            "name": "Vina Crnoja",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "Croatia"
+            ],
+            "dateOfBirth": "2000-03-08",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "20k",
+            "contract": null
+        },
+        {
+            "id": "41813",
+            "externalId": "41813",
+            "name": "Minela Gačanica",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Bosnia-Herzegovina"
+            ],
+            "dateOfBirth": "2000-03-09",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "21626",
+            "externalId": "21626",
+            "name": "Andrea Grebenar",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "Croatia"
+            ],
+            "dateOfBirth": "1997-11-07",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "5210",
+            "externalId": "5210",
+            "name": "Milena Nikolić",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Bosnia-Herzegovina",
+                "Serbia"
+            ],
+            "dateOfBirth": "1992-07-06",
+            "foot": "right",
+            "height": "1,84m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

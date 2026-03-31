@@ -1,0 +1,415 @@
+{
+    "id": "602",
+    "externalId": "602",
+    "transfermarktId": "602",
+    "name": "Grenada",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "68953",
+            "externalId": "68953",
+            "name": "Connie John",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "1990-11-21",
+            "foot": "right",
+            "height": "Connie John unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45144",
+            "externalId": "45144",
+            "name": "Tiranha Williams",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2000-11-16",
+            "foot": "right",
+            "height": "Tiranha Willias unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68962",
+            "externalId": "68962",
+            "name": "Rickisha Scott",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "1992-05-28",
+            "foot": "right",
+            "height": "Rickisha Scott unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "96326",
+            "externalId": "96326",
+            "name": "Naomi Bedeau",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Grenada",
+                "England"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Naoi Bedeau Oxford United, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44955",
+            "externalId": "44955",
+            "name": "Abigail Adewunmi",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2001-10-25",
+            "foot": "right",
+            "height": "Abigail Adewuni unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72165",
+            "externalId": "72165",
+            "name": "Keona Salandy",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2004-01-10",
+            "foot": "right",
+            "height": "Keona Salandy unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68955",
+            "externalId": "68955",
+            "name": "Carena Noel",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "1994-09-25",
+            "foot": "right",
+            "height": "Carena Noel unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45039",
+            "externalId": "45039",
+            "name": "Keldonna Jeffery",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2002-08-04",
+            "foot": "right",
+            "height": "Keldonna Jeffery unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68956",
+            "externalId": "68956",
+            "name": "Rachael Noel",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2004-11-24",
+            "foot": "right",
+            "height": "Rachael Noel unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45134",
+            "externalId": "45134",
+            "name": "Treasher Valcin",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2001-10-04",
+            "foot": "right",
+            "height": "Treasher Valcin unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45067",
+            "externalId": "45067",
+            "name": "Judy McIntosh",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2000-10-30",
+            "foot": "right",
+            "height": "Judy McIntosh unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45016",
+            "externalId": "45016",
+            "name": "Shanika Fleming",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-10-11",
+            "foot": "right",
+            "height": "Shanika Fleing unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45046",
+            "externalId": "45046",
+            "name": "Kristal Julien",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2000-02-28",
+            "foot": "right",
+            "height": "Kristal Julien unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68948",
+            "externalId": "68948",
+            "name": "Ronniellia Bubb",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-08-31",
+            "foot": "right",
+            "height": "Ronniellia Bubb unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68959",
+            "externalId": "68959",
+            "name": "Malia Ramdhanny",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2002-12-27",
+            "foot": "right",
+            "height": "Malia Radhanny unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72164",
+            "externalId": "72164",
+            "name": "Summa George",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Sua George unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68951",
+            "externalId": "68951",
+            "name": "Monique George",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-09-11",
+            "foot": "right",
+            "height": "Monique George unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68949",
+            "externalId": "68949",
+            "name": "Kim Fletcher",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-04-21",
+            "foot": "right",
+            "height": "Ki Fletcher unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72166",
+            "externalId": "72166",
+            "name": "Trishanna Stephens",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Trishanna Stephens unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45052",
+            "externalId": "45052",
+            "name": "Ruth Lewis",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-04-05",
+            "foot": "right",
+            "height": "Ruth Lewis unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68950",
+            "externalId": "68950",
+            "name": "Roniesha Frank",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "1997-09-09",
+            "foot": "right",
+            "height": "Roniesha Frank unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44986",
+            "externalId": "44986",
+            "name": "Sheranda Charles",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2002-05-07",
+            "foot": "right",
+            "height": "Sheranda Charles unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45041",
+            "externalId": "45041",
+            "name": "Shaniah Johnson",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-11-19",
+            "foot": "right",
+            "height": "Shaniah Johnson unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45094",
+            "externalId": "45094",
+            "name": "Shonika Phillip",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-12-01",
+            "foot": "right",
+            "height": "Shonika Phillip unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45124",
+            "externalId": "45124",
+            "name": "Erin Sylvester",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2002-12-11",
+            "foot": "right",
+            "height": "Erin Sylvester unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72163",
+            "externalId": "72163",
+            "name": "Grace John",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Grace John unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45036",
+            "externalId": "45036",
+            "name": "Nyah Hood",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Grenada"
+            ],
+            "dateOfBirth": "2003-06-29",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

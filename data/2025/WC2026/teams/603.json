@@ -1,0 +1,464 @@
+{
+    "id": "603",
+    "externalId": "603",
+    "transfermarktId": "603",
+    "name": "Greece",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "48578",
+            "externalId": "48578",
+            "name": "Ariana Anastasiadis",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Greece",
+                "Canada"
+            ],
+            "dateOfBirth": "2001-02-28",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "76709",
+            "externalId": "76709",
+            "name": "Styliani Katergiannaki",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2005-12-10",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "39989",
+            "externalId": "39989",
+            "name": "Zoi Nasi",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2000-04-28",
+            "foot": "right",
+            "height": "Zoi Nasi Panathinaikos AO, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "45492",
+            "externalId": "45492",
+            "name": "Dimitra Giannakouli",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1998-05-08",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "22106",
+            "externalId": "22106",
+            "name": "Stella Kotsaki",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1997-09-02",
+            "foot": "right",
+            "height": "Stella Kotsaki AO REA, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "28927",
+            "externalId": "28927",
+            "name": "Anastasia Gkatsou",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1997-10-13",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "48000",
+            "externalId": "48000",
+            "name": "Stacey Papadopoulos",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Greece",
+                "Australia"
+            ],
+            "dateOfBirth": "1996-12-17",
+            "foot": "right",
+            "height": "Stacey Papadopoulos Hibernian FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "47509",
+            "externalId": "47509",
+            "name": "Georgia Pavlopoulou",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2004-12-04",
+            "foot": "right",
+            "height": "Georgia Pavlopoulou AEK, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64823",
+            "externalId": "64823",
+            "name": "Maria Gkouni",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2004-09-26",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31121",
+            "externalId": "31121",
+            "name": "Maria Paterna",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2000-04-08",
+            "foot": "right",
+            "height": "Maria Paterna OFI Kreta, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31310",
+            "externalId": "31310",
+            "name": "Markella Koskeridou",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2000-05-15",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "76716",
+            "externalId": "76716",
+            "name": "Marina Theodoraki",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2007-04-30",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31658",
+            "externalId": "31658",
+            "name": "Eleni Saich",
+            "position": "Attacking Midfield",
+            "age": 25,
+            "nationality": [
+                "Greece",
+                "Germany"
+            ],
+            "dateOfBirth": "2001-02-09",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "63766",
+            "externalId": "63766",
+            "name": "Stamatia Ntarzanou",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2005-06-08",
+            "foot": "right",
+            "height": "Staatia Ntarzanou Pogoń Szczecin, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "63757",
+            "externalId": "63757",
+            "name": "Georgia Chalatsogianni",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2005-04-04",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46946",
+            "externalId": "46946",
+            "name": "Eleftheria Drakogiannaki",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2001-11-03",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "78508",
+            "externalId": "78508",
+            "name": "Sofia Zagkli",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2006-09-24",
+            "foot": "right",
+            "height": "Sofia Zagkli AEK, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "98033",
+            "externalId": "98033",
+            "name": "Athanasia Peiou",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1996-12-22",
+            "foot": "right",
+            "height": "Athanasia Peiou OFI Kreta, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "13944",
+            "externalId": "13944",
+            "name": "Athanasia Moraitou",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Greece",
+                "Germany"
+            ],
+            "dateOfBirth": "1997-04-02",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "12114",
+            "externalId": "12114",
+            "name": "Maria Mitkou",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1994-04-11",
+            "foot": "right",
+            "height": "Maria Mitkou PAOK FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "12097",
+            "externalId": "12097",
+            "name": "Eleni Kakambouki",
+            "position": "Central Midfield",
+            "age": 38,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1987-05-10",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107064",
+            "externalId": "107064",
+            "name": "Calliste Brookshire",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Greece",
+                "United States"
+            ],
+            "dateOfBirth": "2002-07-09",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "76718",
+            "externalId": "76718",
+            "name": "Ilektra Tzourtzevits",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2007-01-05",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "47508",
+            "externalId": "47508",
+            "name": "Ioanna Papatheodorou",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2003-11-27",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "47485",
+            "externalId": "47485",
+            "name": "Vasiliki Giannaka",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2004-10-13",
+            "foot": "right",
+            "height": "Vasiliki Giannaka PAOK FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42877",
+            "externalId": "42877",
+            "name": "Despina Chatzinikolaou",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1999-10-21",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31105",
+            "externalId": "31105",
+            "name": "Efthimia Brame",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "2000-01-20",
+            "foot": "right",
+            "height": "Efthiia Brae Asteras Tripolis, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30375",
+            "externalId": "30375",
+            "name": "Anastasia Spyridonidou",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1997-06-11",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30350",
+            "externalId": "30350",
+            "name": "Veatriki Sarri",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1998-01-01",
+            "foot": "left",
+            "height": "1,67m",
+            "marketValue": "40k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "12104",
+            "externalId": "12104",
+            "name": "Sophia Koggouli",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Greece"
+            ],
+            "dateOfBirth": "1991-07-26",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

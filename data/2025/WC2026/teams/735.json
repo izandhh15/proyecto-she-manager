@@ -84,16 +84,16 @@
             "id": "110193",
             "externalId": "110193",
             "name": "Aissatou Fall",
-            "position": "Centre-Back",
+            "position": "Central Midfield",
             "age": 18,
             "nationality": [
                 "Senegal"
             ],
             "dateOfBirth": "2007-12-01",
-            "foot": "left",
-            "height": "Aissatou Fall Kaolack FC, Defencem",
+            "foot": "right",
+            "height": "1,72m",
             "marketValue": "50k",
-            "contract": null
+            "contract": "2026-06-30"
         },
         {
             "id": "83317",
@@ -105,7 +105,7 @@
                 "Senegal"
             ],
             "dateOfBirth": "2004-01-10",
-            "foot": "left",
+            "foot": "right",
             "height": "Woliata Ndiaye Thonon Évian Grand Genève FC, Defencem",
             "marketValue": "50k",
             "contract": null
@@ -120,7 +120,7 @@
                 "Senegal"
             ],
             "dateOfBirth": "1998-04-20",
-            "foot": "left",
+            "foot": "right",
             "height": "Maty Cissokho Aigles de la Médina, Defencem",
             "marketValue": "50k",
             "contract": null
@@ -160,7 +160,7 @@
             "externalId": "110201",
             "name": "Meta Kandé",
             "position": "Centre-Back",
-            "age": 23,
+            "age": 24,
             "nationality": [
                 "Senegal"
             ],
@@ -220,7 +220,7 @@
             "externalId": "110198",
             "name": "Fatoumata Dramé",
             "position": "Central Midfield",
-            "age": 24,
+            "age": 25,
             "nationality": [
                 "Senegal"
             ],

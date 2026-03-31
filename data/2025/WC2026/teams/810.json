@@ -1,0 +1,354 @@
+{
+    "id": "810",
+    "externalId": "810",
+    "transfermarktId": "810",
+    "name": "Turks- and Caicosinseln",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "69580",
+            "externalId": "69580",
+            "name": "Brianna Burton",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Brianna Burton unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69582",
+            "externalId": "69582",
+            "name": "Jenny Corielan",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Jenny Corielan unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69578",
+            "externalId": "69578",
+            "name": "Crystal Jean Baptiste",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Crystal Jean Baptiste unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69589",
+            "externalId": "69589",
+            "name": "Jodee Harvey",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Jodee Harvey unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69592",
+            "externalId": "69592",
+            "name": "Christina Louisy",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Christina Louisy unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69597",
+            "externalId": "69597",
+            "name": "Rosaria Talbot",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Rosaria Talbot unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69588",
+            "externalId": "69588",
+            "name": "Kayley Hall",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Kayley Hall unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69591",
+            "externalId": "69591",
+            "name": "Carlleah Lewis",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Carlleah Lewis unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69596",
+            "externalId": "69596",
+            "name": "Keimari Simons",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Keiari Sions unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69584",
+            "externalId": "69584",
+            "name": "Syniah Forbes",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Syniah Forbes unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69595",
+            "externalId": "69595",
+            "name": "Patrice Senior",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Patrice Senior unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69594",
+            "externalId": "69594",
+            "name": "Irener Moline",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Irener Moline unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69579",
+            "externalId": "69579",
+            "name": "Alivia Brooks",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Alivia Brooks unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69583",
+            "externalId": "69583",
+            "name": "Kadine Delphin",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Kadine Delphin unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69586",
+            "externalId": "69586",
+            "name": "Rania Gardiner",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Rania Gardiner unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72108",
+            "externalId": "72108",
+            "name": "Gabriela Bruton",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Gabriela Bruton unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69590",
+            "externalId": "69590",
+            "name": "Vanessa Joseph",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Vanessa Joseph unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69587",
+            "externalId": "69587",
+            "name": "Scateline Gedeon-Dixon",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": "1991-11-29",
+            "foot": "right",
+            "height": "Scateline Gedeon-Dixon unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69581",
+            "externalId": "69581",
+            "name": "Chanile Butterfield",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": "1993-08-06",
+            "foot": "right",
+            "height": "Chanile Butterfield unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69585",
+            "externalId": "69585",
+            "name": "Evadne Gardiner",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Evadne Gardiner unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69598",
+            "externalId": "69598",
+            "name": "Krysann Wiliams",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Krysann Wilias unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72381",
+            "externalId": "72381",
+            "name": "Olivia Park",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Olivia Park unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69593",
+            "externalId": "69593",
+            "name": "Mikayla Marcellus",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Turks- and Caicosinseln"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Mikayla Marcellus unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -68,6 +68,11 @@ class InjuryService
         'Achilles rupture' => 'squad.injury_achilles_rupture',
     ];
 
+    private const SEASON_ENDING_INJURIES = [
+        'ACL tear',
+        'Achilles rupture',
+    ];
+
     private const INJURY_TYPES = [
         // Minor (1-2 weeks) - Very common
         'Muscle fatigue' => [
@@ -115,12 +120,12 @@ class InjuryService
         ],
         // Severe (20+ weeks) - Rare
         'ACL tear' => [
-            'weeks' => [24, 36],
+            'weeks' => [32, 52],
             'positions' => ['DF', 'MF', 'FW'],
             'weight' => 2,
         ],
         'Achilles rupture' => [
-            'weeks' => [20, 28],
+            'weeks' => [28, 40],
             'positions' => ['FW', 'MF', 'DF'],
             'weight' => 1,
         ],
@@ -281,6 +286,31 @@ class InjuryService
 
         // Minimum 1 week for any injury
         return max(1, $baseWeeks);
+    }
+
+    public static function resolveInjuryUntil(string $injuryType, int $weeksOut, Carbon $matchDate): Carbon
+    {
+        $injuryUntil = $matchDate->copy()->addWeeks($weeksOut);
+
+        if (! self::isSeasonEndingInjury($injuryType)) {
+            return $injuryUntil;
+        }
+
+        $seasonEnd = self::resolveSeasonEndDate($matchDate);
+
+        return $injuryUntil->lt($seasonEnd) ? $seasonEnd : $injuryUntil;
+    }
+
+    public static function isSeasonEndingInjury(string $injuryType): bool
+    {
+        return in_array($injuryType, self::SEASON_ENDING_INJURIES, true);
+    }
+
+    private static function resolveSeasonEndDate(Carbon $matchDate): Carbon
+    {
+        $seasonEndYear = $matchDate->month >= 7 ? $matchDate->year + 1 : $matchDate->year;
+
+        return $matchDate->copy()->setDate($seasonEndYear, 6, 30)->endOfDay();
     }
 
     /**

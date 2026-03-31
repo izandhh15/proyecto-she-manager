@@ -1,0 +1,396 @@
+{
+    "id": "621",
+    "externalId": "621",
+    "transfermarktId": "621",
+    "name": "Ireland",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "6393",
+            "externalId": "6393",
+            "name": "Grace Moloney",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Ireland",
+                "England"
+            ],
+            "dateOfBirth": "1993-03-01",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "44117",
+            "externalId": "44117",
+            "name": "Sophie Whitehouse",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Ireland",
+                "England"
+            ],
+            "dateOfBirth": "1996-10-10",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "41205",
+            "externalId": "41205",
+            "name": "Courtney Brosnan",
+            "position": "Goalkeeper",
+            "age": 30,
+            "nationality": [
+                "Ireland",
+                "United States"
+            ],
+            "dateOfBirth": "1995-11-10",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64060",
+            "externalId": "64060",
+            "name": "Tara O’Hanlon",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "2005-03-14",
+            "foot": "right",
+            "height": "Tara O’Hanlon Celtic FC, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "14123",
+            "externalId": "14123",
+            "name": "Aoife Mannion",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Ireland",
+                "England"
+            ],
+            "dateOfBirth": "1995-09-24",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "16685",
+            "externalId": "16685",
+            "name": "Chloe Mustaki",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Ireland",
+                "United States"
+            ],
+            "dateOfBirth": "1995-07-29",
+            "foot": "left",
+            "height": "1,64m",
+            "marketValue": "15k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "20344",
+            "externalId": "20344",
+            "name": "Katie McCabe",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1995-09-21",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "550k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "26142",
+            "externalId": "26142",
+            "name": "Caitlin Hayes",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Ireland",
+                "England"
+            ],
+            "dateOfBirth": "1995-09-22",
+            "foot": "right",
+            "height": "1,83m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "30414",
+            "externalId": "30414",
+            "name": "Anna Patten",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Ireland",
+                "England"
+            ],
+            "dateOfBirth": "1999-04-20",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "185k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "62972",
+            "externalId": "62972",
+            "name": "Jessie Stapleton",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "2005-02-07",
+            "foot": "right",
+            "height": "Jessie Stapleton Nottingha Forest, Defencem",
+            "marketValue": "20k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "45443",
+            "externalId": "45443",
+            "name": "Hayley Nolan",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1997-03-07",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "15k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "86286",
+            "externalId": "86286",
+            "name": "Aoibhe Brennan",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "2007-12-08",
+            "foot": "right",
+            "height": "Aoibhe Brennan Boheians, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-11-30"
+        },
+        {
+            "id": "5727",
+            "externalId": "5727",
+            "name": "Lucy Quinn",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Ireland",
+                "England"
+            ],
+            "dateOfBirth": "1993-09-29",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "64057",
+            "externalId": "64057",
+            "name": "Abbie Larkin",
+            "position": "Attacking Midfield",
+            "age": 20,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "2005-04-27",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "48558",
+            "externalId": "48558",
+            "name": "Marissa Sheva",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Ireland",
+                "United States"
+            ],
+            "dateOfBirth": "1997-04-22",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38585",
+            "externalId": "38585",
+            "name": "Tyler Toland",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "2001-08-08",
+            "foot": "right",
+            "height": "Tyler Toland Durha Woen FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32619",
+            "externalId": "32619",
+            "name": "Jamie Finn",
+            "position": "Defensive Midfield",
+            "age": 27,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1998-04-21",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "30554",
+            "externalId": "30554",
+            "name": "Megan Connolly",
+            "position": "Defensive Midfield",
+            "age": 29,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1997-03-07",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "55k",
+            "contract": null
+        },
+        {
+            "id": "10723",
+            "externalId": "10723",
+            "name": "Denise O’Sullivan",
+            "position": "Defensive Midfield",
+            "age": 32,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1994-02-04",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "110k",
+            "contract": null
+        },
+        {
+            "id": "6637",
+            "externalId": "6637",
+            "name": "Ruesha Littlejohn",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Ireland",
+                "Scottland"
+            ],
+            "dateOfBirth": "1990-07-03",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38849",
+            "externalId": "38849",
+            "name": "Kyra Carusa",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Ireland",
+                "United States"
+            ],
+            "dateOfBirth": "1995-11-14",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "43017",
+            "externalId": "43017",
+            "name": "Emily Murphy",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Ireland",
+                "England"
+            ],
+            "dateOfBirth": "2003-03-02",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38581",
+            "externalId": "38581",
+            "name": "Amber Barrett",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1996-01-16",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "40k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "32642",
+            "externalId": "32642",
+            "name": "Leanne Kiernan",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1999-04-27",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "190k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "53226",
+            "externalId": "53226",
+            "name": "Saoirse Noonan",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Ireland"
+            ],
+            "dateOfBirth": "1999-07-13",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

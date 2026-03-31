@@ -1,0 +1,489 @@
+{
+    "id": "634",
+    "externalId": "634",
+    "transfermarktId": "634",
+    "name": "Kazakhstan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "66509",
+            "externalId": "66509",
+            "name": "Assel Anuarbek",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2006-03-29",
+            "foot": "right",
+            "height": "Assel Anuarbek FC Ulytau, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54785",
+            "externalId": "54785",
+            "name": "Angelina Portnova",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2001-02-10",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "45829",
+            "externalId": "45829",
+            "name": "Nazim Ismailova",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2001-02-24",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "108567",
+            "externalId": "108567",
+            "name": "Nursaya Sultan",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2008-02-21",
+            "foot": "right",
+            "height": "Nursaya Sultan FC Ulytau, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "3901",
+            "externalId": "3901",
+            "name": "Yulia Myasnikova",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1993-06-13",
+            "foot": "left",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64832",
+            "externalId": "64832",
+            "name": "Anelya Sunkarova",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2003-12-18",
+            "foot": "right",
+            "height": "Anelya Sunkarova FC Astana, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71266",
+            "externalId": "71266",
+            "name": "Adeliya Bekkozhina",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2007-07-18",
+            "foot": "right",
+            "height": "Adeliya Bekkozhina Zhenis Astana, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45675",
+            "externalId": "45675",
+            "name": "Bibigul Nurusheva",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1994-04-02",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "45672",
+            "externalId": "45672",
+            "name": "Alexandra Burova",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2002-08-22",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "90240",
+            "externalId": "90240",
+            "name": "Kristina Shustova",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2004-05-04",
+            "foot": "right",
+            "height": "Kristina Shustova Yeliay Seey, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30285",
+            "externalId": "30285",
+            "name": "Mariya Demidova",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1996-08-28",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "98545",
+            "externalId": "98545",
+            "name": "Karina Botabek",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2006-04-06",
+            "foot": "right",
+            "height": "Karina Botabek FC Ulytau, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106790",
+            "externalId": "106790",
+            "name": "Assel Zholbolat",
+            "position": "Centre-Back",
+            "age": 16,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2009-05-30",
+            "foot": "right",
+            "height": "Assel Zholbolat FC Ulytau, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81877",
+            "externalId": "81877",
+            "name": "Elmira Abdullayeva",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2006-05-01",
+            "foot": "right",
+            "height": "Elira Abdullayeva FC Kairat, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "76516",
+            "externalId": "76516",
+            "name": "Karina Berikova",
+            "position": "Defensive Midfield",
+            "age": 21,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2004-07-21",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "108421",
+            "externalId": "108421",
+            "name": "Zhansezim Aysapar",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2008-07-04",
+            "foot": "right",
+            "height": "Zhansezi Aysapar FC Ulytau, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66518",
+            "externalId": "66518",
+            "name": "Kazyna Norbayeva",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2005-05-13",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66524",
+            "externalId": "66524",
+            "name": "Zhanelya Yerzhanova",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2006-07-07",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54783",
+            "externalId": "54783",
+            "name": "Anastassiya Nizamutdinova",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2000-07-05",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29855",
+            "externalId": "29855",
+            "name": "Karina Zhumabaikyzy",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1996-08-04",
+            "foot": "both",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29826",
+            "externalId": "29826",
+            "name": "Ksenia Khairulina",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1997-01-29",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10195",
+            "externalId": "10195",
+            "name": "Madina Zhanatayeva",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1991-05-03",
+            "foot": "right",
+            "height": "Madina Zhanatayeva FC Aktobe, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "66523",
+            "externalId": "66523",
+            "name": "Anastassiya Tyan",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2005-09-19",
+            "foot": "right",
+            "height": "Anastassiya Tyan WFC Toiris-Turan, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "62042",
+            "externalId": "62042",
+            "name": "Assem Karazhanova",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1997-10-08",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "78295",
+            "externalId": "78295",
+            "name": "Amina Bibossynova",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2005-12-05",
+            "foot": "right",
+            "height": "Aina Bibossynova 1. FFC Turbine Potsda II, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "81872",
+            "externalId": "81872",
+            "name": "Nazym Aldanazar",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2007-03-28",
+            "foot": "both",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34993",
+            "externalId": "34993",
+            "name": "Aida Gaistenova",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1994-05-21",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "84846",
+            "externalId": "84846",
+            "name": "Tomiris Rakhatzhan",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2007-05-01",
+            "foot": "right",
+            "height": "Toiris Rakhatzhan FC Kairat, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30530",
+            "externalId": "30530",
+            "name": "Asselkhan Turlybekova",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1998-12-18",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "94455",
+            "externalId": "94455",
+            "name": "Polina Tuchina",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2007-03-27",
+            "foot": "right",
+            "height": "Polina Tuchina FC Kairat, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106788",
+            "externalId": "106788",
+            "name": "Aru Yermagambetova",
+            "position": "Centre-Forward",
+            "age": 16,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "2009-05-08",
+            "foot": "right",
+            "height": "Aru Yeragabetova FC Kairat, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "11719",
+            "externalId": "11719",
+            "name": "Tokzhan Bekpenbet",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Kazakhstan"
+            ],
+            "dateOfBirth": "1994-05-18",
+            "foot": "right",
+            "height": "Tokzhan Bekpenbet FC Kairat, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

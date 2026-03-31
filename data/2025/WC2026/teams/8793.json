@@ -1,0 +1,41 @@
+{
+    "id": "8793",
+    "externalId": "8793",
+    "transfermarktId": "8793",
+    "name": "Southern Sudan",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "92258",
+            "externalId": "92258",
+            "name": "Amama Lowila",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Southern Sudan",
+                "Sudan"
+            ],
+            "dateOfBirth": "1998-07-11",
+            "foot": "right",
+            "height": "Aaa Lowila Yei Join Stars, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "95558",
+            "externalId": "95558",
+            "name": "Amy Lasu",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Southern Sudan",
+                "Kenya"
+            ],
+            "dateOfBirth": "1995-11-08",
+            "foot": "right",
+            "height": "Ay Lasu FK TransINVEST, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

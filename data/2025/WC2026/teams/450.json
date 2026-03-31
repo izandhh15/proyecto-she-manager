@@ -1,0 +1,355 @@
+{
+    "id": "450",
+    "externalId": "450",
+    "transfermarktId": "450",
+    "name": "Denmark",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "38840",
+            "externalId": "38840",
+            "name": "Freja Thisgaard",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2002-07-24",
+            "foot": "right",
+            "height": "Freja Thisgaard Napoli Woen, Goalkeeperm",
+            "marketValue": "30k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "33846",
+            "externalId": "33846",
+            "name": "Lene Christensen",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2000-02-04",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "40k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "36498",
+            "externalId": "36498",
+            "name": "Maja Bay",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1998-03-28",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "60k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "9323",
+            "externalId": "9323",
+            "name": "Simone Boye",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1992-03-03",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "9525",
+            "externalId": "9525",
+            "name": "Stine Ballisager",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1994-01-03",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "100k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "12585",
+            "externalId": "12585",
+            "name": "Stine Sandbech",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1996-01-24",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "45k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "37437",
+            "externalId": "37437",
+            "name": "Isabella Obaze",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Denmark",
+                "Nigeria"
+            ],
+            "dateOfBirth": "2002-10-30",
+            "foot": "right",
+            "height": "1,79m",
+            "marketValue": "150k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "27089",
+            "externalId": "27089",
+            "name": "Sara Thrige",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1996-05-15",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "45k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32577",
+            "externalId": "32577",
+            "name": "Sofie Svava",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2000-08-11",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "190k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "33171",
+            "externalId": "33171",
+            "name": "Sara Holmgaard",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1999-01-28",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "110k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "35474",
+            "externalId": "35474",
+            "name": "Emma Færge",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2000-12-06",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "75k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "62608",
+            "externalId": "62608",
+            "name": "Pernille Sanvig",
+            "position": "Defensive Midfield",
+            "age": 20,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2005-11-26",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "4546",
+            "externalId": "4546",
+            "name": "Pernille Harder",
+            "position": "Attacking Midfield",
+            "age": 33,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1992-11-15",
+            "foot": "both",
+            "height": "1,69m",
+            "marketValue": "700k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "37436",
+            "externalId": "37436",
+            "name": "Sofie Bredgaard",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2002-01-18",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "90k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "37428",
+            "externalId": "37428",
+            "name": "Kathrine Kühl",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2003-07-05",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "120k",
+            "contract": "2029-06-30"
+        },
+        {
+            "id": "35476",
+            "externalId": "35476",
+            "name": "Olivia Holdt",
+            "position": "Attacking Midfield",
+            "age": 24,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2001-06-07",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "150k",
+            "contract": null
+        },
+        {
+            "id": "34057",
+            "externalId": "34057",
+            "name": "Janni Thomsen",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2000-02-16",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "100k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "20739",
+            "externalId": "20739",
+            "name": "Frederikke Thøgersen",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1995-07-24",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "60k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "9488",
+            "externalId": "9488",
+            "name": "Sofie Junge",
+            "position": "Defensive Midfield",
+            "age": 33,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1992-04-24",
+            "foot": "both",
+            "height": "1,76m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "37288",
+            "externalId": "37288",
+            "name": "Cornelia Kramer",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2002-12-16",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "225k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "33847",
+            "externalId": "33847",
+            "name": "Mille Gejl",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1999-09-23",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "12486",
+            "externalId": "12486",
+            "name": "Amalie Vangsgaard",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "1996-11-29",
+            "foot": "right",
+            "height": "1,82m",
+            "marketValue": "100k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39105",
+            "externalId": "39105",
+            "name": "Cecilie Fløe",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Denmark"
+            ],
+            "dateOfBirth": "2001-10-08",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "60k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

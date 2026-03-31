@@ -1,0 +1,264 @@
+{
+    "id": "689",
+    "externalId": "689",
+    "transfermarktId": "689",
+    "name": "Namibia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "100802",
+            "externalId": "100802",
+            "name": "Melissa Matheus",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Melissa Matheus Beauties FC, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100800",
+            "externalId": "100800",
+            "name": "Utuzuvira Kahiriri",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "2004-12-02",
+            "foot": "right",
+            "height": "Utuzuvira Kahiriri Beauties FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100801",
+            "externalId": "100801",
+            "name": "Ndapewa Katuta",
+            "position": "Centre-Back",
+            "age": 39,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "1986-12-16",
+            "foot": "right",
+            "height": "Ndapewa Katuta Khoas Napol, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100806",
+            "externalId": "100806",
+            "name": "Emma Narises",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Ea Narises Ongos Ladies, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100805",
+            "externalId": "100805",
+            "name": "Lydianna Nanamus",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lydianna Nanaus Ongos Ladies, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100803",
+            "externalId": "100803",
+            "name": "Lovisa Mulunga",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Lovisa Mulunga Ongos Ladies, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100808",
+            "externalId": "100808",
+            "name": "Usuta Rutjindo",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "2000-04-18",
+            "foot": "right",
+            "height": "Usuta Rutjindo Ongos Ladies, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100793",
+            "externalId": "100793",
+            "name": "Twelikondjele Amukoto",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "1991-07-28",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100795",
+            "externalId": "100795",
+            "name": "Juliana Blou",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "1995-05-19",
+            "foot": "right",
+            "height": "Juliana Blou Ongos Ladies, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "31076",
+            "externalId": "31076",
+            "name": "Zenatha Coleman",
+            "position": "Attacking Midfield",
+            "age": 32,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "1993-09-25",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100809",
+            "externalId": "100809",
+            "name": "Anna-Ida Somses",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Anna-Ida Soses V-Power Angels, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100798",
+            "externalId": "100798",
+            "name": "Elmarie Fredericks",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Elarie Fredericks Ongos Ladies, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100815",
+            "externalId": "100815",
+            "name": "Ivone Kooper",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Ivone Kooper Ongos Ladies, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100807",
+            "externalId": "100807",
+            "name": "Memory Ngonda",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Meory Ngonda Ongos Ladies, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100817",
+            "externalId": "100817",
+            "name": "Anna Shikusho",
+            "position": "Centre-Forward",
+            "age": 30,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "1995-04-05",
+            "foot": "right",
+            "height": "Anna Shikusho Ongos Ladies, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "19800",
+            "externalId": "19800",
+            "name": "Thomalina Adams",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": "1993-07-06",
+            "foot": "right",
+            "height": "Thoalina Adas Ongos Ladies, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "100819",
+            "externalId": "100819",
+            "name": "Fiola Vliete",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Namibia"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Fiola Vliete Beauties FC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

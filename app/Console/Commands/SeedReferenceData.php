@@ -415,6 +415,10 @@ class SeedReferenceData extends Command
 
             // Use per-team country from JSON if available, fall back to pool country
             $teamCountry = $data['country'] ?? $country;
+            $stadiumSeats = isset($data['stadiumSeats'])
+                ? (int) str_replace(['.', ','], '', (string) $data['stadiumSeats'])
+                : null;
+            $colors = TeamColors::get($data['name'] ?? "Unknown ({$externalId})");
 
             if (!$teamId) {
                 $teamId = Str::uuid()->toString();
@@ -426,11 +430,21 @@ class SeedReferenceData extends Command
                     'country' => $teamCountry,
                     'image' => $data['image'] ?? null,
                     'stadium_name' => $data['stadiumName'] ?? null,
-                    'stadium_seats' => isset($data['stadiumSeats'])
-                        ? (int) str_replace(['.', ','], '', $data['stadiumSeats'])
-                        : 0,
+                    'stadium_seats' => $stadiumSeats ?? 0,
+                    'colors' => json_encode($colors),
                 ]);
                 $teamsByExternalId[$externalId] = $teamId;
+            } else {
+                $existingTeam = DB::table('teams')->where('id', $teamId)->first();
+
+                DB::table('teams')->where('id', $teamId)->update([
+                    'name' => $data['name'] ?? $existingTeam->name,
+                    'country' => $teamCountry ?: $existingTeam->country,
+                    'image' => $data['image'] ?? $existingTeam->image,
+                    'stadium_name' => $data['stadiumName'] ?? $existingTeam->stadium_name,
+                    'stadium_seats' => $stadiumSeats ?? $existingTeam->stadium_seats,
+                    'colors' => json_encode($colors),
+                ]);
             }
 
             $teamIdMap[$externalId] = $teamId;
@@ -551,20 +565,22 @@ class SeedReferenceData extends Command
 
             $colors = TeamColors::get($club['name']);
 
+            $stadiumSeats = isset($club['stadiumSeats'])
+                ? (int) str_replace(['.', ','], '', (string) $club['stadiumSeats'])
+                : null;
+
             if ($existingTeam) {
                 $teamId = $existingTeam->id;
-                // Update colors for existing teams
                 DB::table('teams')->where('id', $teamId)->update([
+                    'name' => $club['name'],
+                    'country' => $country,
+                    'image' => $club['image'] ?? $existingTeam->image,
+                    'stadium_name' => $club['stadiumName'] ?? $existingTeam->stadium_name,
+                    'stadium_seats' => $stadiumSeats ?? $existingTeam->stadium_seats,
                     'colors' => json_encode($colors),
                 ]);
             } else {
                 $teamId = Str::uuid()->toString();
-
-                // Parse stadium seats
-                $stadiumSeats = isset($club['stadiumSeats'])
-                    ? (int) str_replace(['.', ','], '', $club['stadiumSeats'])
-                    : 0;
-
                 DB::table('teams')->insert([
                     'id' => $teamId,
                     'external_source' => ExternalData::defaultSource(),
@@ -573,7 +589,7 @@ class SeedReferenceData extends Command
                     'country' => $country,
                     'image' => $club['image'] ?? null,
                     'stadium_name' => $club['stadiumName'] ?? null,
-                    'stadium_seats' => $stadiumSeats,
+                    'stadium_seats' => $stadiumSeats ?? 0,
                     'colors' => json_encode($colors),
                 ]);
             }

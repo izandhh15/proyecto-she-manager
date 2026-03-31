@@ -1,0 +1,372 @@
+{
+    "id": "515",
+    "externalId": "515",
+    "transfermarktId": "515",
+    "name": "Bermuda",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "69373",
+            "externalId": "69373",
+            "name": "Micah Pond",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "1999-05-02",
+            "foot": "right",
+            "height": "Micah Pond unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44627",
+            "externalId": "44627",
+            "name": "Terrinae Trott",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2004-09-22",
+            "foot": "right",
+            "height": "Terrinae Trott vereinslos, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44628",
+            "externalId": "44628",
+            "name": "Zakhari Turner",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2003-01-22",
+            "foot": "right",
+            "height": "Zakhari Turner IMG Acadey, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44614",
+            "externalId": "44614",
+            "name": "Koa Goodchild",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2003-01-09",
+            "foot": "right",
+            "height": "Koa Goodchild Saltus GS, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69366",
+            "externalId": "69366",
+            "name": "Victoria Davis",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Victoria Davis unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69365",
+            "externalId": "69365",
+            "name": "Marley Christian",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Marley Christian unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44622",
+            "externalId": "44622",
+            "name": "Jenna Rempel",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2002-07-02",
+            "foot": "right",
+            "height": "Jenna Repel unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44629",
+            "externalId": "44629",
+            "name": "Danni Watson",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2003-03-28",
+            "foot": "right",
+            "height": "Danni Watson unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69364",
+            "externalId": "69364",
+            "name": "K’shaela Burch-Waldron",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "K’shaela Burch-Waldron unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44610",
+            "externalId": "44610",
+            "name": "Delia Ebbin",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2001-02-28",
+            "foot": "right",
+            "height": "Delia Ebbin vereinslos, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44630",
+            "externalId": "44630",
+            "name": "Zemira Webb",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2004-07-21",
+            "foot": "right",
+            "height": "Zeira Webb Black Rock FC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72425",
+            "externalId": "72425",
+            "name": "Sierra Fisher",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "1996-03-31",
+            "foot": "right",
+            "height": "Sierra Fisher unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44159",
+            "externalId": "44159",
+            "name": "Kenni Thompson",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Bermuda",
+                "Belgium"
+            ],
+            "dateOfBirth": "2000-12-01",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69369",
+            "externalId": "69369",
+            "name": "Symira Lowe-Darrell",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2000-07-11",
+            "foot": "right",
+            "height": "Syira Lowe-Darrell unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44611",
+            "externalId": "44611",
+            "name": "Trinae Edwards",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2002-02-18",
+            "foot": "right",
+            "height": "Trinae Edwards Soerset CC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69368",
+            "externalId": "69368",
+            "name": "Eva Frazzoni",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Eva Frazzoni unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44620",
+            "externalId": "44620",
+            "name": "Leilanni Nesbeth",
+            "position": "Defensive Midfield",
+            "age": 24,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2001-07-17",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "30k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "69367",
+            "externalId": "69367",
+            "name": "Keunna Dill",
+            "position": "Central Midfield",
+            "age": 30,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "1995-10-31",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44607",
+            "externalId": "44607",
+            "name": "Nia Christopher",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Bermuda",
+                "United States"
+            ],
+            "dateOfBirth": "2001-05-02",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69372",
+            "externalId": "69372",
+            "name": "Aaliyah Nolan",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Aaliyah Nolan unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44603",
+            "externalId": "44603",
+            "name": "Emily Cabral",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Bermuda",
+                "Portugal"
+            ],
+            "dateOfBirth": "2004-07-01",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "69363",
+            "externalId": "69363",
+            "name": "Khyla Brangman",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "1994-11-27",
+            "foot": "right",
+            "height": "Khyla Brangan unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "44621",
+            "externalId": "44621",
+            "name": "Jya Ratteray-Smith",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "2002-07-02",
+            "foot": "right",
+            "height": "Jya Ratteray-Sith unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72374",
+            "externalId": "72374",
+            "name": "Kennesha Nanette",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Bermuda"
+            ],
+            "dateOfBirth": "1997-12-12",
+            "foot": "right",
+            "height": "Kennesha Nanette Caldicot Town, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

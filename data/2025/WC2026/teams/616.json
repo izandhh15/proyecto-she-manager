@@ -1,0 +1,279 @@
+{
+    "id": "616",
+    "externalId": "616",
+    "transfermarktId": "616",
+    "name": "Hongkong",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "92485",
+            "externalId": "92485",
+            "name": "Wai Nga Leung",
+            "position": "Goalkeeper",
+            "age": 37,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1988-08-24",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67350",
+            "externalId": "67350",
+            "name": "Cheuk Wai Ng",
+            "position": "Goalkeeper",
+            "age": 29,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1997-03-19",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92478",
+            "externalId": "92478",
+            "name": "Chung Yee Sin",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1992-08-08",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "67349",
+            "externalId": "67349",
+            "name": "Chak Shun Ma",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1996-03-02",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92479",
+            "externalId": "92479",
+            "name": "So Kwan Chu",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "2004-03-03",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67338",
+            "externalId": "67338",
+            "name": "Po-Yan Chu",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "2005-08-01",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67348",
+            "externalId": "67348",
+            "name": "Pui-ki Chung",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1998-02-02",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106769",
+            "externalId": "106769",
+            "name": "Hiu Ting Wong",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Hiu Ting Wong TSL FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67337",
+            "externalId": "67337",
+            "name": "Wing Lam Chan",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "2003-07-30",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106136",
+            "externalId": "106136",
+            "name": "Chiu Man Fu",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1998-06-02",
+            "foot": "right",
+            "height": "Chiu Man Fu Kitchee, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107065",
+            "externalId": "107065",
+            "name": "Yuen Ting Wai",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1992-10-15",
+            "foot": "right",
+            "height": "Yuen Ting Wai Shatin SA, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "116533",
+            "externalId": "116533",
+            "name": "Lan Wei",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "2006-05-21",
+            "foot": "right",
+            "height": "Lan Wei unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67344",
+            "externalId": "67344",
+            "name": "Halasan Tsang",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "2001-09-11",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106761",
+            "externalId": "106761",
+            "name": "Wing Ching Chan",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Wing Ching Chan United Citizen WFC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106762",
+            "externalId": "106762",
+            "name": "Sharon Fung",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1999-07-16",
+            "foot": "right",
+            "height": "Sharon Fung TSL FC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67345",
+            "externalId": "67345",
+            "name": "So Han Wong",
+            "position": "Central Midfield",
+            "age": 34,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "1991-11-26",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107067",
+            "externalId": "107067",
+            "name": "Pak Ling Lucia Ko",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Pak Ling Lucia Ko Derby County U21, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67341",
+            "externalId": "67341",
+            "name": "Anke Leung",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Hongkong"
+            ],
+            "dateOfBirth": "2006-09-29",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

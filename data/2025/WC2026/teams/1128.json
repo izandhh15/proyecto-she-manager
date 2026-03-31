@@ -1,0 +1,370 @@
+{
+    "id": "1128",
+    "externalId": "1128",
+    "transfermarktId": "1128",
+    "name": "Belarus",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "4503",
+            "externalId": "4503",
+            "name": "Natalya Voskobovich",
+            "position": "Goalkeeper",
+            "age": 32,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1993-10-25",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "25431",
+            "externalId": "25431",
+            "name": "Ekaterina Miklashevich",
+            "position": "Goalkeeper",
+            "age": 34,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1992-01-25",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46255",
+            "externalId": "46255",
+            "name": "Elizaveta Sevko",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2001-01-12",
+            "foot": "right",
+            "height": "Elizaveta Sevko Zvezda-2005 Per, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30627",
+            "externalId": "30627",
+            "name": "Maryia Svidunovich",
+            "position": "Goalkeeper",
+            "age": 25,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2000-05-20",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34834",
+            "externalId": "34834",
+            "name": "Zarina Kapustina",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1998-11-15",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63647",
+            "externalId": "63647",
+            "name": "Darya Harshkova",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Belarus",
+                "Russia"
+            ],
+            "dateOfBirth": "2006-05-05",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63646",
+            "externalId": "63646",
+            "name": "Alina Charlionak",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2005-11-20",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46333",
+            "externalId": "46333",
+            "name": "Arina Sitnikova",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2001-11-06",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "31445",
+            "externalId": "31445",
+            "name": "Viktoryia Kazakevich",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1998-05-12",
+            "foot": "right",
+            "height": "Viktoryia Kazakevich WFC Minsk, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "24479",
+            "externalId": "24479",
+            "name": "Anna Kozyupa",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1995-03-07",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "21545",
+            "externalId": "21545",
+            "name": "Yuliya Slesarchik",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1994-08-25",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "4468",
+            "externalId": "4468",
+            "name": "Anastasiya Linnik",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1993-07-11",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "46236",
+            "externalId": "46236",
+            "name": "Anna Sas",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2003-10-06",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30571",
+            "externalId": "30571",
+            "name": "Anastasiya Shuppo",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1997-11-15",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46289",
+            "externalId": "46289",
+            "name": "Darya Manyukova",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1998-11-01",
+            "foot": "right",
+            "height": "Darya Manyukova WFC Dinao-BSUPC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28871",
+            "externalId": "28871",
+            "name": "Valeriya Belaya",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1998-07-04",
+            "foot": "right",
+            "height": "Valeriya Belaya WFC Minsk, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46795",
+            "externalId": "46795",
+            "name": "Yana Ray",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2003-04-08",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63651",
+            "externalId": "63651",
+            "name": "Anastasiya Maher",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2006-01-31",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "30626",
+            "externalId": "30626",
+            "name": "Anastasiya Shlapakova",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2000-03-06",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "30629",
+            "externalId": "30629",
+            "name": "Karolina Zhitko",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "1999-11-22",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30620",
+            "externalId": "30620",
+            "name": "Karyna Alkhovik",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2000-06-17",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "46258",
+            "externalId": "46258",
+            "name": "Viktoryia Valyuk",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2002-06-30",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46797",
+            "externalId": "46797",
+            "name": "Melana Surovtseva",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2003-01-13",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63653",
+            "externalId": "63653",
+            "name": "Anna Sinyavskaya",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Belarus"
+            ],
+            "dateOfBirth": "2006-01-15",
+            "foot": "right",
+            "height": "Anna Sinyavskaya WFC Dinao-BSUPC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -1,0 +1,358 @@
+{
+    "id": "736",
+    "externalId": "736",
+    "transfermarktId": "736",
+    "name": "Serbia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "63577",
+            "externalId": "63577",
+            "name": "Jovana Ðukić",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2005-01-26",
+            "foot": "right",
+            "height": "1,86m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63574",
+            "externalId": "63574",
+            "name": "Ema Aleksić",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2005-10-10",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28893",
+            "externalId": "28893",
+            "name": "Milica Kostić",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1997-12-21",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10652",
+            "externalId": "10652",
+            "name": "Nevena Damjanović",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1993-04-12",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63579",
+            "externalId": "63579",
+            "name": "Milica Gaković",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2005-09-19",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63578",
+            "externalId": "63578",
+            "name": "Aleksandra Gajić",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2006-08-31",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46343",
+            "externalId": "46343",
+            "name": "Emma Petrović",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Serbia",
+                "Sweden"
+            ],
+            "dateOfBirth": "2002-12-27",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "70k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "30601",
+            "externalId": "30601",
+            "name": "Anđela Frajtović",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2000-07-08",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28906",
+            "externalId": "28906",
+            "name": "Allegra Poljak",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1999-02-05",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "85k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "10751",
+            "externalId": "10751",
+            "name": "Violeta Slović",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1991-08-30",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28905",
+            "externalId": "28905",
+            "name": "Sara Pavlović",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1996-05-10",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "25k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "35307",
+            "externalId": "35307",
+            "name": "Dejana Stefanović",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1997-07-05",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "35k",
+            "contract": null
+        },
+        {
+            "id": "41062",
+            "externalId": "41062",
+            "name": "Živana Stupar",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2002-09-23",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42925",
+            "externalId": "42925",
+            "name": "Vesna Milivojević",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Serbia",
+                "Australia"
+            ],
+            "dateOfBirth": "2001-12-27",
+            "foot": "right",
+            "height": "Vesna Milivojević Malö FF, Midfieldm",
+            "marketValue": "75k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "62825",
+            "externalId": "62825",
+            "name": "Mary Stanić-Floody",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Serbia",
+                "Australia"
+            ],
+            "dateOfBirth": "2006-01-03",
+            "foot": "right",
+            "height": "Mary Stanić-Floody Canberra United, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "10680",
+            "externalId": "10680",
+            "name": "Marija Ilić",
+            "position": "Defensive Midfield",
+            "age": 32,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1993-06-03",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "15k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "10644",
+            "externalId": "10644",
+            "name": "Jelena Čanković",
+            "position": "Attacking Midfield",
+            "age": 30,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1995-08-13",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "70k",
+            "contract": null
+        },
+        {
+            "id": "30602",
+            "externalId": "30602",
+            "name": "Miljana Ivanović",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2000-05-17",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "60k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "44344",
+            "externalId": "44344",
+            "name": "Anastasija Ćirić",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2003-05-11",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28883",
+            "externalId": "28883",
+            "name": "Tijana Filipović",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "1999-05-26",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47420",
+            "externalId": "47420",
+            "name": "Mina Čavić",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2003-07-20",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "54730",
+            "externalId": "54730",
+            "name": "Nina Matejić",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Serbia"
+            ],
+            "dateOfBirth": "2005-02-08",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "11637",
+            "externalId": "11637",
+            "name": "Jovana Damnjanović",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Serbia",
+                "Germany"
+            ],
+            "dateOfBirth": "1994-11-24",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "175k",
+            "contract": "2027-06-30"
+        }
+    ]
+}

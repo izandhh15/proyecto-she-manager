@@ -1,0 +1,401 @@
+{
+    "id": "815",
+    "externalId": "815",
+    "transfermarktId": "815",
+    "name": "Ukraine",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "1650",
+            "externalId": "1650",
+            "name": "Kateryna Samson",
+            "position": "Goalkeeper",
+            "age": 37,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1988-07-05",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "49477",
+            "externalId": "49477",
+            "name": "Kateryna Boklach",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2004-01-16",
+            "foot": "right",
+            "height": "1,81m",
+            "marketValue": "25k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39796",
+            "externalId": "39796",
+            "name": "Daria Keliushyk",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2003-11-21",
+            "foot": "right",
+            "height": "1,77m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32721",
+            "externalId": "32721",
+            "name": "Daryna Bondarchuk",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1998-05-20",
+            "foot": "left",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "4354",
+            "externalId": "4354",
+            "name": "Olha Basanska",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1992-01-06",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39806",
+            "externalId": "39806",
+            "name": "Lesia Olkhova",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2004-01-09",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38741",
+            "externalId": "38741",
+            "name": "Yana Kotyk",
+            "position": "Centre-Back",
+            "age": 22,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2003-06-28",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "38670",
+            "externalId": "38670",
+            "name": "Maryna Shaynyuk",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2000-10-26",
+            "foot": "right",
+            "height": "Maryna Shaynyuk Metalist 1925, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38603",
+            "externalId": "38603",
+            "name": "Solomiia Kupiak",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2000-06-07",
+            "foot": "right",
+            "height": "Soloiia Kupiak FC Kolos Kovalivka, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "32772",
+            "externalId": "32772",
+            "name": "Iryna Podolska",
+            "position": "Centre-Back",
+            "age": 31,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1995-03-14",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32747",
+            "externalId": "32747",
+            "name": "Kateryna Korsun",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1995-08-28",
+            "foot": "right",
+            "height": "Kateryna Korsun SK Slavia Praha, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "5214",
+            "externalId": "5214",
+            "name": "Lyubov Shmatko",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1993-10-25",
+            "foot": "left",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "31191",
+            "externalId": "31191",
+            "name": "Anna Petryk",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1997-10-26",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38657",
+            "externalId": "38657",
+            "name": "Viktoriya Hiryn",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2000-10-24",
+            "foot": "both",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "38742",
+            "externalId": "38742",
+            "name": "Iryna Kotiash",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2001-05-07",
+            "foot": "right",
+            "height": "Iryna Kotiash FC Kolos Kovalivka, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "17761",
+            "externalId": "17761",
+            "name": "Daryna Ivkova",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1993-03-20",
+            "foot": "right",
+            "height": "Daryna Ivkova SeaSters WFC, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10724",
+            "externalId": "10724",
+            "name": "Olha Ovdiychuk",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1993-12-16",
+            "foot": "both",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "41198",
+            "externalId": "41198",
+            "name": "Daiana Semkiv",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2004-07-29",
+            "foot": "both",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "41549",
+            "externalId": "41549",
+            "name": "Svitlana Kohut",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1997-06-01",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61241",
+            "externalId": "61241",
+            "name": "Lidiia Zaborovets",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2006-04-04",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "32751",
+            "externalId": "32751",
+            "name": "Roksolana Kravchuk",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1997-11-07",
+            "foot": "right",
+            "height": "Roksolana Kravchuk SK Slavia Praha, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "33880",
+            "externalId": "33880",
+            "name": "Tanya Boychuk",
+            "position": "Centre-Forward",
+            "age": 25,
+            "nationality": [
+                "Ukraine",
+                "Canada"
+            ],
+            "dateOfBirth": "2000-06-20",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "65k",
+            "contract": "2026-12-31"
+        },
+        {
+            "id": "30348",
+            "externalId": "30348",
+            "name": "Yana Kalinina",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1994-11-14",
+            "foot": "right",
+            "height": "Yana Kalinina SeaSters WFC, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30346",
+            "externalId": "30346",
+            "name": "Veronika Andrukhiv",
+            "position": "Attacking Midfield",
+            "age": 29,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "1996-05-05",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "39892",
+            "externalId": "39892",
+            "name": "Nicole Kozlova",
+            "position": "Attacking Midfield",
+            "age": 25,
+            "nationality": [
+                "Ukraine",
+                "Canada"
+            ],
+            "dateOfBirth": "2000-07-08",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46104",
+            "externalId": "46104",
+            "name": "Inna Hlushchenko",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Ukraine"
+            ],
+            "dateOfBirth": "2004-05-12",
+            "foot": "right",
+            "height": "Inna Hlushchenko LOSC Lille, Strikerm",
+            "marketValue": "10k",
+            "contract": "2026-06-30"
+        }
+    ]
+}

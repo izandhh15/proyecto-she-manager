@@ -1,0 +1,369 @@
+{
+    "id": "743",
+    "externalId": "743",
+    "transfermarktId": "743",
+    "name": "Singapore",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "67149",
+            "externalId": "67149",
+            "name": "Noor Kusumawati",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1990-09-29",
+            "foot": "right",
+            "height": "1,61m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67161",
+            "externalId": "67161",
+            "name": "Beatrice Tan",
+            "position": "Goalkeeper",
+            "age": 33,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1992-06-29",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92197",
+            "externalId": "92197",
+            "name": "Erlinawaty Jaffar",
+            "position": "Goalkeeper",
+            "age": 40,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1985-11-10",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71775",
+            "externalId": "71775",
+            "name": "Siti Nurerwadah Erwan",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2004-06-26",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92198",
+            "externalId": "92198",
+            "name": "Irsalina binte Irwan",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2007-01-01",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92199",
+            "externalId": "92199",
+            "name": "Nur Adrianna Hazeri",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2004-07-03",
+            "foot": "right",
+            "height": "1,53m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67148",
+            "externalId": "67148",
+            "name": "Khairunnisa Khairol Anwar",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2003-02-21",
+            "foot": "right",
+            "height": "1,50m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67156",
+            "externalId": "67156",
+            "name": "Dhaniyah Qasimah",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2004-07-07",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "62660",
+            "externalId": "62660",
+            "name": "Rosnani Azman",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1997-05-22",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67160",
+            "externalId": "67160",
+            "name": "Nur Syazwani",
+            "position": "Centre-Back",
+            "age": 24,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2001-12-20",
+            "foot": "right",
+            "height": "Nur Syazwani Lion City Sailors, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92200",
+            "externalId": "92200",
+            "name": "Nur Sarah Sulkepli",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2006-07-24",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67144",
+            "externalId": "67144",
+            "name": "Stephanie Dominguez",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1998-09-27",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67158",
+            "externalId": "67158",
+            "name": "Nur Farhanah Ruhaizat",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1998-07-26",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71778",
+            "externalId": "71778",
+            "name": "Afiqah Omar",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2001-10-15",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "53753",
+            "externalId": "53753",
+            "name": "Putri Sazali",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2003-03-17",
+            "foot": "left",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67146",
+            "externalId": "67146",
+            "name": "Hui Xin Ho",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1992-04-23",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92201",
+            "externalId": "92201",
+            "name": "Mastura Jeilani",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1992-07-10",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92202",
+            "externalId": "92202",
+            "name": "Nasriah Ibrahim",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2004-09-01",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92203",
+            "externalId": "92203",
+            "name": "Sitianiwati Rosielin",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1997-05-26",
+            "foot": "right",
+            "height": "Sitianiwati Rosielin Police Soccer Association, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67152",
+            "externalId": "67152",
+            "name": "Venetia Lim",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2003-10-14",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67162",
+            "externalId": "67162",
+            "name": "Danelle Tan",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2004-10-25",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "67147",
+            "externalId": "67147",
+            "name": "Raudhah Kamis",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "1999-03-04",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92204",
+            "externalId": "92204",
+            "name": "Farah Nurzahirah",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2004-01-13",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67151",
+            "externalId": "67151",
+            "name": "Nicole Lim",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Singapore"
+            ],
+            "dateOfBirth": "2002-04-10",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

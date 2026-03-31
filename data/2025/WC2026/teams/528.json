@@ -1,0 +1,373 @@
+{
+    "id": "528",
+    "externalId": "528",
+    "transfermarktId": "528",
+    "name": "Chile",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_equal.gif",
+    "players": [
+        {
+            "id": "5632",
+            "externalId": "5632",
+            "name": "Christiane Endler",
+            "position": "Goalkeeper",
+            "age": 34,
+            "nationality": [
+                "Chile",
+                "Germany"
+            ],
+            "dateOfBirth": "1991-07-23",
+            "foot": "left",
+            "height": "1,83m",
+            "marketValue": "90k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "21542",
+            "externalId": "21542",
+            "name": "Ryan Torrero",
+            "position": "Goalkeeper",
+            "age": 35,
+            "nationality": [
+                "Chile",
+                "United States"
+            ],
+            "dateOfBirth": "1990-09-01",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47578",
+            "externalId": "47578",
+            "name": "Antonia Canales",
+            "position": "Goalkeeper",
+            "age": 23,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2002-10-16",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "60k",
+            "contract": null
+        },
+        {
+            "id": "5641",
+            "externalId": "5641",
+            "name": "Camila Sáez",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "1994-10-17",
+            "foot": "left",
+            "height": "1,70m",
+            "marketValue": "45k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "72186",
+            "externalId": "72186",
+            "name": "Mariana Morales",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2003-07-14",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70380",
+            "externalId": "70380",
+            "name": "Catalina Figueroa",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2005-01-28",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70375",
+            "externalId": "70375",
+            "name": "Anaís Cifuentes",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2005-01-01",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54954",
+            "externalId": "54954",
+            "name": "Fernanda Ramírez",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "1992-08-30",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "47600",
+            "externalId": "47600",
+            "name": "Michelle Olivares Acevedo",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2002-04-04",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "39980",
+            "externalId": "39980",
+            "name": "Rosario Balmaceda",
+            "position": "Centre-Back",
+            "age": 27,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "1999-03-26",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29312",
+            "externalId": "29312",
+            "name": "Fernanda Pinilla",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "1993-11-06",
+            "foot": "left",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47585",
+            "externalId": "47585",
+            "name": "Karen Fuentes",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2004-08-03",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47590",
+            "externalId": "47590",
+            "name": "Yastin Jiménez",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2000-10-17",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "38814",
+            "externalId": "38814",
+            "name": "Gisela Pino",
+            "position": "Defensive Midfield",
+            "age": 33,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "1992-09-01",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "70372",
+            "externalId": "70372",
+            "name": "Anaís Álvarez",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2007-07-04",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "29293",
+            "externalId": "29293",
+            "name": "Yanara Aedo",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "1993-08-05",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "15k",
+            "contract": null
+        },
+        {
+            "id": "72182",
+            "externalId": "72182",
+            "name": "Millaray Cortés",
+            "position": "Attacking Midfield",
+            "age": 21,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2004-06-30",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "45k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "15849",
+            "externalId": "15849",
+            "name": "Nayadet Opazo",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Chile",
+                "Spain"
+            ],
+            "dateOfBirth": "1994-08-05",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "38164",
+            "externalId": "38164",
+            "name": "María José Urrutia",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "1993-12-17",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "25k",
+            "contract": null
+        },
+        {
+            "id": "63079",
+            "externalId": "63079",
+            "name": "Sonya Keefe",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2003-04-11",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72188",
+            "externalId": "72188",
+            "name": "Mary Valencia",
+            "position": "Centre-Forward",
+            "age": 23,
+            "nationality": [
+                "Chile",
+                "Colombia"
+            ],
+            "dateOfBirth": "2003-02-08",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "106733",
+            "externalId": "106733",
+            "name": "Vaitiare Pardo",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2007-08-20",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "109950",
+            "externalId": "109950",
+            "name": "Pamela Cabezas López",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2007-07-10",
+            "foot": "right",
+            "height": "1,64m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "113588",
+            "externalId": "113588",
+            "name": "Nicole Carter",
+            "position": "Centre-Forward",
+            "age": 17,
+            "nationality": [
+                "Chile"
+            ],
+            "dateOfBirth": "2008-08-13",
+            "foot": "right",
+            "height": "Nicole Carter CSD Colo-Colo Acadeia, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

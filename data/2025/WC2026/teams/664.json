@@ -1,0 +1,373 @@
+{
+    "id": "664",
+    "externalId": "664",
+    "transfermarktId": "664",
+    "name": "Luxembourg",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_up.gif",
+    "players": [
+        {
+            "id": "63634",
+            "externalId": "63634",
+            "name": "Joy Jung",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2006-03-17",
+            "foot": "right",
+            "height": "1,86m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "98260",
+            "externalId": "98260",
+            "name": "Lisi Oberweis",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "1998-11-08",
+            "foot": "right",
+            "height": "Lisi Oberweis vereinslos, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56236",
+            "externalId": "56236",
+            "name": "Lucie Schlimé",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2003-09-19",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "98262",
+            "externalId": "98262",
+            "name": "Leticia Mateus",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Luxembourg",
+                "Portugal"
+            ],
+            "dateOfBirth": "2004-07-31",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "85002",
+            "externalId": "85002",
+            "name": "Amal Cherkane",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Luxembourg",
+                "Morocco"
+            ],
+            "dateOfBirth": "2006-09-16",
+            "foot": "right",
+            "height": "Aal Cherkane SC Bettebourg, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56237",
+            "externalId": "56237",
+            "name": "Emma Kremer",
+            "position": "Centre-Back",
+            "age": 25,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2000-07-28",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10749",
+            "externalId": "10749",
+            "name": "Andreia Machado",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Luxembourg",
+                "Portugal"
+            ],
+            "dateOfBirth": "1995-04-01",
+            "foot": "right",
+            "height": "Andreia Machado Racing FC Union, Defencem",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "52101",
+            "externalId": "52101",
+            "name": "Catarina Teixeira Lavinas",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2002-09-28",
+            "foot": "both",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56242",
+            "externalId": "56242",
+            "name": "Marta Estévez",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Luxembourg",
+                "Spain"
+            ],
+            "dateOfBirth": "1997-06-05",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "56264",
+            "externalId": "56264",
+            "name": "Laura Miller",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2001-12-07",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "80k",
+            "contract": null
+        },
+        {
+            "id": "51835",
+            "externalId": "51835",
+            "name": "Edina Kocan",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2002-02-27",
+            "foot": "right",
+            "height": "Edina Kocan Racing FC Union, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "56573",
+            "externalId": "56573",
+            "name": "Charlotte Schmit",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2006-01-17",
+            "foot": "right",
+            "height": "Charlotte Schit Sporting CP B, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "61934",
+            "externalId": "61934",
+            "name": "Anna Miny",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2007-05-23",
+            "foot": "right",
+            "height": "Anna Miny TuS Issel, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "63630",
+            "externalId": "63630",
+            "name": "Leila Schmit",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2006-11-09",
+            "foot": "right",
+            "height": "1,54m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71152",
+            "externalId": "71152",
+            "name": "Lena Alves",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2007-11-07",
+            "foot": "right",
+            "height": "Lena Alves FC Swift Hesperange, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "71156",
+            "externalId": "71156",
+            "name": "Olivia Konsbrück",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2007-02-09",
+            "foot": "right",
+            "height": "Olivia Konsbrück FC Swift Hesperange, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "75727",
+            "externalId": "75727",
+            "name": "Ana Barbosa",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2007-05-13",
+            "foot": "right",
+            "height": "Ana Barbosa Racing FC Union, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107295",
+            "externalId": "107295",
+            "name": "Hannah Dietrich",
+            "position": "Centre-Forward",
+            "age": 16,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2009-11-25",
+            "foot": "right",
+            "height": "Hannah Dietrich 1. FC Saarbrücken U17, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "107111",
+            "externalId": "107111",
+            "name": "Vera Villegas",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2007-08-15",
+            "foot": "right",
+            "height": "Vera Villegas Stade de Reis U19, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "92651",
+            "externalId": "92651",
+            "name": "Charlie Jorge Magalhães",
+            "position": "Centre-Forward",
+            "age": 17,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2008-11-13",
+            "foot": "right",
+            "height": "Charlie Jorge Magalhães ENT Woreldange/Munsbach/CSG/Biwer, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56571",
+            "externalId": "56571",
+            "name": "Joana Lourenço",
+            "position": "Centre-Forward",
+            "age": 21,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2004-06-04",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56565",
+            "externalId": "56565",
+            "name": "Caroline Jorge",
+            "position": "Centre-Forward",
+            "age": 20,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "2005-11-29",
+            "foot": "right",
+            "height": "Caroline Jorge Racing FC Union, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "32615",
+            "externalId": "32615",
+            "name": "Kimberley dos Santos",
+            "position": "Centre-Forward",
+            "age": 28,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "1998-02-26",
+            "foot": "right",
+            "height": "Kiberley dos Santos 1. FC Saarbrücken, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "10759",
+            "externalId": "10759",
+            "name": "Amy Thompson",
+            "position": "Central Midfield",
+            "age": 31,
+            "nationality": [
+                "Luxembourg"
+            ],
+            "dateOfBirth": "1994-07-28",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

@@ -1,0 +1,404 @@
+{
+    "id": "632",
+    "externalId": "632",
+    "transfermarktId": "632",
+    "name": "Cameroon",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "83493",
+            "externalId": "83493",
+            "name": "Cathy Biya",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2006-07-18",
+            "foot": "right",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "56650",
+            "externalId": "56650",
+            "name": "Ange Bawou",
+            "position": "Goalkeeper",
+            "age": 26,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2000-02-12",
+            "foot": "right",
+            "height": "1,80m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "6014",
+            "externalId": "6014",
+            "name": "Marie Awona",
+            "position": "Centre-Back",
+            "age": 33,
+            "nationality": [
+                "Cameroon",
+                "France"
+            ],
+            "dateOfBirth": "1993-02-02",
+            "foot": "right",
+            "height": "1,71m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "74235",
+            "externalId": "74235",
+            "name": "Ousmanou Doudou",
+            "position": "Centre-Back",
+            "age": 30,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1996-01-26",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "56679",
+            "externalId": "56679",
+            "name": "Colette Ndzana",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2000-07-19",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "53106",
+            "externalId": "53106",
+            "name": "Eliane Manbolamo",
+            "position": "Centre-Back",
+            "age": 34,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1991-07-03",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "46259",
+            "externalId": "46259",
+            "name": "Claudia Dabda",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2001-07-01",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "849",
+            "externalId": "849",
+            "name": "Estelle Johnson",
+            "position": "Central Midfield",
+            "age": 38,
+            "nationality": [
+                "Cameroon",
+                "United States"
+            ],
+            "dateOfBirth": "1988-03-30",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16627",
+            "externalId": "16627",
+            "name": "Falone Meffometou",
+            "position": "Central Midfield",
+            "age": 35,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1990-07-01",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "22998",
+            "externalId": "22998",
+            "name": "Easther Mayi Kith",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Cameroon",
+                "Canada"
+            ],
+            "dateOfBirth": "1997-03-28",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "16563",
+            "externalId": "16563",
+            "name": "Grace Yango",
+            "position": "Central Midfield",
+            "age": 32,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1993-06-12",
+            "foot": "left",
+            "height": "1,63m",
+            "marketValue": "29k",
+            "contract": null
+        },
+        {
+            "id": "91558",
+            "externalId": "91558",
+            "name": "Achta Toko",
+            "position": "Defensive Midfield",
+            "age": 20,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2005-07-08",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "90889",
+            "externalId": "90889",
+            "name": "Camilla Daha",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2005-03-18",
+            "foot": "right",
+            "height": "1,63m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "56678",
+            "externalId": "56678",
+            "name": "Catherine Mbengono",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1996-09-08",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "46483",
+            "externalId": "46483",
+            "name": "Brigitte Omboudou",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1992-07-29",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "40510",
+            "externalId": "40510",
+            "name": "Charlène Meyong",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1998-11-19",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "40k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "37706",
+            "externalId": "37706",
+            "name": "Fatima Kome",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2002-07-22",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "20k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "28201",
+            "externalId": "28201",
+            "name": "Genevieve Ngo Mbeleck",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1993-03-10",
+            "foot": "right",
+            "height": "1,59m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "40051",
+            "externalId": "40051",
+            "name": "Tatiana Ewodo",
+            "position": "Centre-Forward",
+            "age": 29,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1997-02-09",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "16265",
+            "externalId": "16265",
+            "name": "Gabrielle Onguéné",
+            "position": "Central Midfield",
+            "age": 37,
+            "nationality": [
+                "Cameroon",
+                "Russia"
+            ],
+            "dateOfBirth": "1989-02-25",
+            "foot": "right",
+            "height": "1,58m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73675",
+            "externalId": "73675",
+            "name": "Nina Ngueleu",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2004-12-11",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "40k",
+            "contract": null
+        },
+        {
+            "id": "11754",
+            "externalId": "11754",
+            "name": "Ajara Nchout",
+            "position": "Centre-Forward",
+            "age": 33,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1993-01-12",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "81675",
+            "externalId": "81675",
+            "name": "Raïssa Mbappé",
+            "position": "Centre-Forward",
+            "age": 32,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1993-10-04",
+            "foot": "right",
+            "height": "1,75m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "83494",
+            "externalId": "83494",
+            "name": "Eliane Bibout",
+            "position": "Centre-Forward",
+            "age": 27,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "1999-02-20",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "34807",
+            "externalId": "34807",
+            "name": "Michaela Abam",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Cameroon",
+                "United States"
+            ],
+            "dateOfBirth": "1997-06-12",
+            "foot": "both",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "37725",
+            "externalId": "37725",
+            "name": "Marie Ngah",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Cameroon"
+            ],
+            "dateOfBirth": "2002-10-20",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        }
+    ]
+}

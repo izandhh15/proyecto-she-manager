@@ -1,0 +1,400 @@
+{
+    "id": "508",
+    "externalId": "508",
+    "transfermarktId": "508",
+    "name": "Bangladesh",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "67406",
+            "externalId": "67406",
+            "name": "Rupna Chakma",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2004-01-02",
+            "foot": "right",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91479",
+            "externalId": "91479",
+            "name": "Swarna Rani Mandal",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2006-06-06",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117244",
+            "externalId": "117244",
+            "name": "Mile Akter",
+            "position": "Goalkeeper",
+            "age": 19,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2006-09-14",
+            "foot": "right",
+            "height": "Mile Akter Bangladesh Ary, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67402",
+            "externalId": "67402",
+            "name": "Sheuli Azim",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2001-12-20",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67417",
+            "externalId": "67417",
+            "name": "Shamsunnahar Sr.",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2003-01-31",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117249",
+            "externalId": "117249",
+            "name": "Afeida Khandaker",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2006-11-18",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117253",
+            "externalId": "117253",
+            "name": "Kohati Kisku",
+            "position": "Centre-Back",
+            "age": 20,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2005-09-05",
+            "foot": "right",
+            "height": "1,50m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117251",
+            "externalId": "117251",
+            "name": "Nabiran Khatun",
+            "position": "Centre-Back",
+            "age": 18,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2007-04-29",
+            "foot": "right",
+            "height": "Nabiran Khatun Farashganj SC, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117242",
+            "externalId": "117242",
+            "name": "Surovi Akter Afin",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67404",
+            "externalId": "67404",
+            "name": "Monika Chakma",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2003-09-15",
+            "foot": "right",
+            "height": "1,45m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91474",
+            "externalId": "91474",
+            "name": "Sapna Rani",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2006-05-09",
+            "foot": "right",
+            "height": "1,52m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67411",
+            "externalId": "67411",
+            "name": "Maria Manda",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2003-05-10",
+            "foot": "right",
+            "height": "1,47m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "83929",
+            "externalId": "83929",
+            "name": "Anika Siddiqui",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bangladesh",
+                "Sweden"
+            ],
+            "dateOfBirth": "2005-05-25",
+            "foot": "right",
+            "height": "Anika Siddiqui vereinslos, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117245",
+            "externalId": "117245",
+            "name": "Mst Halima Akter",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2005-04-06",
+            "foot": "right",
+            "height": "1,47m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117241",
+            "externalId": "117241",
+            "name": "Munki Akhter",
+            "position": "Central Midfield",
+            "age": 17,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2008-12-05",
+            "foot": "right",
+            "height": "1,45m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117252",
+            "externalId": "117252",
+            "name": "Unnoti Khatun",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2005-12-30",
+            "foot": "right",
+            "height": "1,42m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67405",
+            "externalId": "67405",
+            "name": "Ritu Porna Chakma",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2003-12-30",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "91476",
+            "externalId": "91476",
+            "name": "Shaheda Akter Ripa",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2005-12-08",
+            "foot": "right",
+            "height": "1,52m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117250",
+            "externalId": "117250",
+            "name": "Airin Khatun",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2006-05-29",
+            "foot": "right",
+            "height": "Airin Khatun Bangladesh Police, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67409",
+            "externalId": "67409",
+            "name": "Tohura Khatun",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2003-05-05",
+            "foot": "right",
+            "height": "1,47m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117258",
+            "externalId": "117258",
+            "name": "Most Sultana",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2003-08-10",
+            "foot": "right",
+            "height": "1,50m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117240",
+            "externalId": "117240",
+            "name": "Sauravi Akanda Prity",
+            "position": "Centre-Forward",
+            "age": 16,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2009-12-31",
+            "foot": "right",
+            "height": "1,45m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117243",
+            "externalId": "117243",
+            "name": "Alpi Akter",
+            "position": "Centre-Forward",
+            "age": 15,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2010-12-31",
+            "foot": "right",
+            "height": "1,49m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117257",
+            "externalId": "117257",
+            "name": "Mst. Sagorika",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2007-12-01",
+            "foot": "right",
+            "height": "1,42m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "67379",
+            "externalId": "67379",
+            "name": "Shamsunnahar Junior",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2004-03-30",
+            "foot": "right",
+            "height": "1,55m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "117292",
+            "externalId": "117292",
+            "name": "Umehla Marma",
+            "position": "Centre-Forward",
+            "age": 19,
+            "nationality": [
+                "Bangladesh"
+            ],
+            "dateOfBirth": "2007-01-01",
+            "foot": "right",
+            "height": "1,48m",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

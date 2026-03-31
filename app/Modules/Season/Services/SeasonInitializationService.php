@@ -68,6 +68,8 @@ class SeasonInitializationService
             );
         }
 
+        $matchdays = LeagueFixtureGenerator::normalizeMatchdays($matchdays, $teamCount);
+
         $fixtures = $this->leagueFixtureGenerator->generate($teamIds, $matchdays);
 
         $this->insertFixtures($gameId, $competitionId, $fixtures);

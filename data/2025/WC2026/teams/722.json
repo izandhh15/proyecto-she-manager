@@ -1,0 +1,54 @@
+{
+    "id": "722",
+    "externalId": "722",
+    "transfermarktId": "722",
+    "name": "Rwanda",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "47684",
+            "externalId": "47684",
+            "name": "Helene Uwizeyimana",
+            "position": "Goalkeeper",
+            "age": 40,
+            "nationality": [
+                "Rwanda"
+            ],
+            "dateOfBirth": "1985-05-01",
+            "foot": "right",
+            "height": "Helene Uwizeyiana AS Kigali Woen , Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47687",
+            "externalId": "47687",
+            "name": "Louise Maniraguha",
+            "position": "Centre-Back",
+            "age": 28,
+            "nationality": [
+                "Rwanda"
+            ],
+            "dateOfBirth": "1997-08-05",
+            "foot": "right",
+            "height": "Louise Maniraguha AS Kigali Woen , Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47705",
+            "externalId": "47705",
+            "name": "Gloria Sifa Nibagwire",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Rwanda"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Gloria Sifa Nibagwire AS Kigali Woen , Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

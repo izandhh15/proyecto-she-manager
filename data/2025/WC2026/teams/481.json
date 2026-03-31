@@ -1,0 +1,376 @@
+{
+    "id": "481",
+    "externalId": "481",
+    "transfermarktId": "481",
+    "name": "Albania",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "71102",
+            "externalId": "71102",
+            "name": "Rajmonda Spahiu",
+            "position": "Goalkeeper",
+            "age": 20,
+            "nationality": [
+                "Albania",
+                "Kosovo"
+            ],
+            "dateOfBirth": "2006-03-25",
+            "foot": "right",
+            "height": "Rajonda Spahiu KFF Mitrovica, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47609",
+            "externalId": "47609",
+            "name": "Klesjana Spaho",
+            "position": "Goalkeeper",
+            "age": 21,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2004-05-10",
+            "foot": "right",
+            "height": "Klesjana Spaho KF Teuta, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47586",
+            "externalId": "47586",
+            "name": "Antigoni Hyska",
+            "position": "Goalkeeper",
+            "age": 22,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2003-06-23",
+            "foot": "right",
+            "height": "1,69m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42682",
+            "externalId": "42682",
+            "name": "Armela Tukaj",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2001-05-25",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "117444",
+            "externalId": "117444",
+            "name": "Dilajda Leka",
+            "position": "Centre-Back",
+            "age": 19,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2007-01-01",
+            "foot": "right",
+            "height": "Dilajda Leka RSCA Woen B, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "64952",
+            "externalId": "64952",
+            "name": "Rexhina Maxhalaku",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2005-02-04",
+            "foot": "right",
+            "height": "Rexhina Maxhalaku KFF Grashi, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47587",
+            "externalId": "47587",
+            "name": "Aglia Iliadhi",
+            "position": "Centre-Back",
+            "age": 21,
+            "nationality": [
+                "Albania",
+                "Greece"
+            ],
+            "dateOfBirth": "2004-11-30",
+            "foot": "right",
+            "height": "Aglia Iliadhi Wacker Mecklenbeck, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28823",
+            "externalId": "28823",
+            "name": "Arbiona Bajraktari",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Albania",
+                "Kosovo"
+            ],
+            "dateOfBirth": "1996-09-10",
+            "foot": "right",
+            "height": "1,74m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30898",
+            "externalId": "30898",
+            "name": "Arbenita Curraj",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Albania",
+                "Kosovo"
+            ],
+            "dateOfBirth": "1996-07-28",
+            "foot": "left",
+            "height": "1,62m",
+            "marketValue": "20k",
+            "contract": "2027-06-30"
+        },
+        {
+            "id": "30893",
+            "externalId": "30893",
+            "name": "Gresa Berisha",
+            "position": "Attacking Midfield",
+            "age": 27,
+            "nationality": [
+                "Albania",
+                "Kosovo"
+            ],
+            "dateOfBirth": "1998-04-26",
+            "foot": "right",
+            "height": "1,67m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "20329",
+            "externalId": "20329",
+            "name": "Esmeralda Franja",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "1997-02-04",
+            "foot": "both",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "86854",
+            "externalId": "86854",
+            "name": "Xhesika Ndoj",
+            "position": "Central Midfield",
+            "age": 18,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2007-07-20",
+            "foot": "right",
+            "height": "Xhesika Ndoj KF Apolonia, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "28830",
+            "externalId": "28830",
+            "name": "Endrina Elezaj",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "1997-01-02",
+            "foot": "right",
+            "height": "Endrina Elezaj ŽNK Dinao, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "30548",
+            "externalId": "30548",
+            "name": "Alma Hilaj",
+            "position": "Defensive Midfield",
+            "age": 26,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2000-02-02",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "30k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "30551",
+            "externalId": "30551",
+            "name": "Qëndresa Krasniqi",
+            "position": "Attacking Midfield",
+            "age": 31,
+            "nationality": [
+                "Albania",
+                "Kosovo"
+            ],
+            "dateOfBirth": "1994-06-28",
+            "foot": "both",
+            "height": "1,57m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "47549",
+            "externalId": "47549",
+            "name": "Marinela Mema",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2004-01-22",
+            "foot": "right",
+            "height": "Marinela Mea FK Partizani Tirana, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42674",
+            "externalId": "42674",
+            "name": "Mikaela Metalla",
+            "position": "Attacking Midfield",
+            "age": 23,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2002-10-22",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "36149",
+            "externalId": "36149",
+            "name": "Ilarja Zarka",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2001-10-01",
+            "foot": "right",
+            "height": "Ilarja Zarka Ünye Gücü FK, Midfieldm",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "43914",
+            "externalId": "43914",
+            "name": "Sara Begallo",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2000-03-01",
+            "foot": "right",
+            "height": "Sara Begallo Ünye Gücü FK, Strikerm",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "16850",
+            "externalId": "16850",
+            "name": "Megi Doçi",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "1996-10-14",
+            "foot": "both",
+            "height": "1,66m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42670",
+            "externalId": "42670",
+            "name": "Klea Hamonikaj",
+            "position": "Central Midfield",
+            "age": 22,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2003-05-28",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "42637",
+            "externalId": "42637",
+            "name": "Fortesa Berisha",
+            "position": "Centre-Forward",
+            "age": 22,
+            "nationality": [
+                "Albania",
+                "Kosovo"
+            ],
+            "dateOfBirth": "2003-06-19",
+            "foot": "left",
+            "height": "1,65m",
+            "marketValue": "15k",
+            "contract": "2028-06-30"
+        },
+        {
+            "id": "90951",
+            "externalId": "90951",
+            "name": "Valentina Troka",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2002-11-15",
+            "foot": "right",
+            "height": "1,76m",
+            "marketValue": "50k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "106025",
+            "externalId": "106025",
+            "name": "Adela Qose",
+            "position": "Centre-Forward",
+            "age": 18,
+            "nationality": [
+                "Albania"
+            ],
+            "dateOfBirth": "2007-07-23",
+            "foot": "right",
+            "height": "Adela Qose Derby County U21, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}

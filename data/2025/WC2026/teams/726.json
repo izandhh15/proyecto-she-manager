@@ -1,0 +1,370 @@
+{
+    "id": "726",
+    "externalId": "726",
+    "transfermarktId": "726",
+    "name": "Zambia",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "58201",
+            "externalId": "58201",
+            "name": "Catherine Musonda",
+            "position": "Goalkeeper",
+            "age": 28,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1998-02-20",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "103988",
+            "externalId": "103988",
+            "name": "Mwila Chishala Mufunte",
+            "position": "Goalkeeper",
+            "age": 18,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2007-09-07",
+            "foot": "right",
+            "height": "1,62m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22965",
+            "externalId": "22965",
+            "name": "Ng’ambo Musole",
+            "position": "Goalkeeper",
+            "age": 27,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1998-06-23",
+            "foot": "right",
+            "height": "1,68m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "80921",
+            "externalId": "80921",
+            "name": "Memory Nthala",
+            "position": "Centre-Back",
+            "age": 26,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1999-07-21",
+            "foot": "right",
+            "height": "Meory Nthala Green Buffaloes, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58202",
+            "externalId": "58202",
+            "name": "Lushomo Mweemba",
+            "position": "Central Midfield",
+            "age": 24,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2001-04-10",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "10k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "58204",
+            "externalId": "58204",
+            "name": "Esther Siamfuko",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2004-08-08",
+            "foot": "right",
+            "height": "1,50m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "82348",
+            "externalId": "82348",
+            "name": "Pauline Zulu",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2003-03-03",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": "2028-12-31"
+        },
+        {
+            "id": "22954",
+            "externalId": "22954",
+            "name": "Margaret Belemu",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1997-02-24",
+            "foot": "right",
+            "height": "1,45m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22971",
+            "externalId": "22971",
+            "name": "Mary Wilombe",
+            "position": "Defensive Midfield",
+            "age": 28,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1997-09-22",
+            "foot": "both",
+            "height": "1,55m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "59340",
+            "externalId": "59340",
+            "name": "Evarine Katongo",
+            "position": "Defensive Midfield",
+            "age": 23,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2002-12-29",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "22970",
+            "externalId": "22970",
+            "name": "Martha Tembo",
+            "position": "Central Midfield",
+            "age": 28,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1998-03-08",
+            "foot": "both",
+            "height": "1,54m",
+            "marketValue": "10k",
+            "contract": "2026-05-31"
+        },
+        {
+            "id": "22959",
+            "externalId": "22959",
+            "name": "Ireen Lungu",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1997-10-06",
+            "foot": "right",
+            "height": "1,56m",
+            "marketValue": "10k",
+            "contract": null
+        },
+        {
+            "id": "82347",
+            "externalId": "82347",
+            "name": "Rhoda Chileshe",
+            "position": "Central Midfield",
+            "age": 27,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1998-05-08",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "85080",
+            "externalId": "85080",
+            "name": "Xiomara Mapepa",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2002-08-08",
+            "foot": "left",
+            "height": "1,68m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "73883",
+            "externalId": "73883",
+            "name": "Natasha Nanyangwe",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1999-06-27",
+            "foot": "right",
+            "height": "Natasha Nanyangwe Green Buffaloes, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "103985",
+            "externalId": "103985",
+            "name": "Blessing Maluba",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2007-03-26",
+            "foot": "right",
+            "height": "1,65m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "105395",
+            "externalId": "105395",
+            "name": "Samiah Phiri",
+            "position": "Central Midfield",
+            "age": 23,
+            "nationality": [
+                "Zambia",
+                "United States"
+            ],
+            "dateOfBirth": "2003-01-14",
+            "foot": "right",
+            "height": "1,73m",
+            "marketValue": "50k",
+            "contract": "2026-06-30"
+        },
+        {
+            "id": "106675",
+            "externalId": "106675",
+            "name": "Fridah Mukoma",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2006-10-13",
+            "foot": "right",
+            "height": "1,72m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "58370",
+            "externalId": "58370",
+            "name": "Kabange Mupopo",
+            "position": "Centre-Forward",
+            "age": 33,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1992-09-21",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "22957",
+            "externalId": "22957",
+            "name": "Grace Chanda",
+            "position": "Attacking Midfield",
+            "age": 28,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1997-06-11",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "30k",
+            "contract": null
+        },
+        {
+            "id": "22953",
+            "externalId": "22953",
+            "name": "Barbra Banda",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2000-03-20",
+            "foot": "right",
+            "height": "1,78m",
+            "marketValue": "750k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "41076",
+            "externalId": "41076",
+            "name": "Racheal Kundananji",
+            "position": "Central Midfield",
+            "age": 25,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "2000-06-03",
+            "foot": "both",
+            "height": "1,70m",
+            "marketValue": "250k",
+            "contract": "2027-12-31"
+        },
+        {
+            "id": "48850",
+            "externalId": "48850",
+            "name": "Racheal Nachula",
+            "position": "Centre-Forward",
+            "age": 40,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1986-01-14",
+            "foot": "right",
+            "height": "1,60m",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "54972",
+            "externalId": "54972",
+            "name": "Prisca Chilufya",
+            "position": "Central Midfield",
+            "age": 26,
+            "nationality": [
+                "Zambia"
+            ],
+            "dateOfBirth": "1999-06-08",
+            "foot": "right",
+            "height": "1,70m",
+            "marketValue": "45k",
+            "contract": "2027-12-31"
+        }
+    ]
+}

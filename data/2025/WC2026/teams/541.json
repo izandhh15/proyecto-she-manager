@@ -1,0 +1,444 @@
+{
+    "id": "541",
+    "externalId": "541",
+    "transfermarktId": "541",
+    "name": "Dominica",
+    "image": "https://www.soccerdonna.de/bilder/sonstiges/gk_down.gif",
+    "players": [
+        {
+            "id": "68931",
+            "externalId": "68931",
+            "name": "Pearl Etienne",
+            "position": "Goalkeeper",
+            "age": 43,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1982-07-06",
+            "foot": "right",
+            "height": "Pearl Etienne unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72422",
+            "externalId": "72422",
+            "name": "Juanita Barber",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Juanita Barber unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68944",
+            "externalId": "68944",
+            "name": "Christina Sobers",
+            "position": "Goalkeeper",
+            "age": 43,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1982-08-11",
+            "foot": "right",
+            "height": "Christina Sobers unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72423",
+            "externalId": "72423",
+            "name": "Shanté Hazel",
+            "position": "Goalkeeper",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Shanté Hazel unbekannt, Goalkeeperm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72419",
+            "externalId": "72419",
+            "name": "Tamisha Roberts",
+            "position": "Centre-Back",
+            "age": 23,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "2003-01-22",
+            "foot": "right",
+            "height": "Taisha Roberts unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68936",
+            "externalId": "68936",
+            "name": "Tyana Hilaire-Thomas",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Tyana Hilaire-Thoas unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68932",
+            "externalId": "68932",
+            "name": "Alanna Finn",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Alanna Finn unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72421",
+            "externalId": "72421",
+            "name": "Kayna Pascal",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Kayna Pascal unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68934",
+            "externalId": "68934",
+            "name": "Keanna Francis",
+            "position": "Centre-Back",
+            "age": 32,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1994-01-28",
+            "foot": "right",
+            "height": "Keanna Francis unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68938",
+            "externalId": "68938",
+            "name": "Tabique Lockhart",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Tabique Lockhart unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72424",
+            "externalId": "72424",
+            "name": "Nalver Samuel",
+            "position": "Centre-Back",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Nalver Sauel unbekannt, Defencem",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68943",
+            "externalId": "68943",
+            "name": "Kasika Samuel",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1996-10-31",
+            "foot": "right",
+            "height": "Kasika Sauel unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68935",
+            "externalId": "68935",
+            "name": "Alianne George",
+            "position": "Central Midfield",
+            "age": 20,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "2005-08-16",
+            "foot": "right",
+            "height": "Alianne George unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68940",
+            "externalId": "68940",
+            "name": "Briyanna Philip",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Briyanna Philip unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72420",
+            "externalId": "72420",
+            "name": "Britney Dennis",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Britney Dennis unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68945",
+            "externalId": "68945",
+            "name": "Britney Stoute",
+            "position": "Central Midfield",
+            "age": 33,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1992-05-03",
+            "foot": "right",
+            "height": "Britney Stoute unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68937",
+            "externalId": "68937",
+            "name": "Starr Humphreys",
+            "position": "Central Midfield",
+            "age": 21,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "2004-07-22",
+            "foot": "right",
+            "height": "Starr Huphreys unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68942",
+            "externalId": "68942",
+            "name": "Rosilia Registe",
+            "position": "Central Midfield",
+            "age": 48,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1978-02-28",
+            "foot": "right",
+            "height": "Rosilia Registe unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68929",
+            "externalId": "68929",
+            "name": "Nyomie Defoe",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Nyoie Defoe unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68928",
+            "externalId": "68928",
+            "name": "Kylee Bertrand",
+            "position": "Central Midfield",
+            "age": 29,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1997-03-15",
+            "foot": "right",
+            "height": "Kylee Bertrand unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72418",
+            "externalId": "72418",
+            "name": "Kenisha Lewis",
+            "position": "Central Midfield",
+            "age": 19,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "2007-01-04",
+            "foot": "right",
+            "height": "Kenisha Lewis unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68946",
+            "externalId": "68946",
+            "name": "Alijah Titre",
+            "position": "Central Midfield",
+            "age": 37,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1988-11-14",
+            "foot": "right",
+            "height": "Alijah Titre unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68930",
+            "externalId": "68930",
+            "name": "Alexina Etienne",
+            "position": "Central Midfield",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Alexina Etienne unbekannt, Midfieldm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68941",
+            "externalId": "68941",
+            "name": "Romelcia Phillip",
+            "position": "Centre-Forward",
+            "age": 31,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1994-10-04",
+            "foot": "right",
+            "height": "Roelcia Phillip unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68939",
+            "externalId": "68939",
+            "name": "Briya Philip",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Briya Philip unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68933",
+            "externalId": "68933",
+            "name": "Sari Finn",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "Sari Finn unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "72417",
+            "externalId": "72417",
+            "name": "Ronia Pierre-Louis",
+            "position": "Centre-Forward",
+            "age": 26,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1999-04-10",
+            "foot": "right",
+            "height": "Ronia Pierre-Louis unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68947",
+            "externalId": "68947",
+            "name": "China Tulloch",
+            "position": "Centre-Forward",
+            "age": null,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": null,
+            "foot": "right",
+            "height": "China Tulloch unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        },
+        {
+            "id": "68927",
+            "externalId": "68927",
+            "name": "Kira Bertrand",
+            "position": "Centre-Forward",
+            "age": 33,
+            "nationality": [
+                "Dominica"
+            ],
+            "dateOfBirth": "1992-07-28",
+            "foot": "right",
+            "height": "Kira Bertrand unbekannt, Strikerm",
+            "marketValue": "50k",
+            "contract": null
+        }
+    ]
+}
