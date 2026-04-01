@@ -10,7 +10,7 @@ RUN npm run build
 FROM composer:2 AS vendor-builder
 WORKDIR /app
 COPY composer.json composer.lock ./
-RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader --no-scripts
+RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader --no-scripts --ignore-platform-req=ext-pcntl
 
 # Runtime
 FROM php:8.4-fpm-alpine
@@ -32,6 +32,7 @@ RUN docker-php-ext-install \
     pdo_sqlite \
     mbstring \
     bcmath \
+    pcntl \
     opcache
 
 WORKDIR /app
