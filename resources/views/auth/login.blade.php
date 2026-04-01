@@ -17,6 +17,14 @@
 
         <x-auth-session-status class="rounded-2xl border border-success-tint-border bg-success-tint px-4 py-3 text-sm text-accent-green" :status="session('status')" />
 
+        <a
+            href="{{ route('auth.discord.redirect') }}"
+            class="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl border border-white/12 bg-indigo-500/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-indigo-500/30"
+        >
+            <span aria-hidden="true">Discord</span>
+            <span>{{ __('auth.continue_with_discord') }}</span>
+        </a>
+
         <form method="POST" action="{{ route('login') }}" class="space-y-5">
             @csrf
 

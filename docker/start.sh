@@ -1,36 +1,44 @@
-#!/bin/sh
-set -e
+﻿#!/bin/sh
+set -eu
 
-# Generar APP_KEY si no existe
-if [ -z "$APP_KEY" ]; then
-    echo "Generando APP_KEY..."
-    php artisan key:generate --force
+APP_ROLE=${APP_ROLE:-web}
+RUN_MIGRATIONS=${RUN_MIGRATIONS:-true}
+RUN_CACHE_WARMUP=${RUN_CACHE_WARMUP:-true}
+QUEUE_NAMES=${QUEUE_NAMES:-gameplay,setup,mail}
+
+if [ -z "${APP_KEY:-}" ]; then
+  echo "APP_KEY vacia: generando clave..."
+  php artisan key:generate --force
 fi
 
-# Crear base de datos si es SQLite
-if [ "$DB_CONNECTION" = "sqlite" ] || [ -z "$DB_CONNECTION" ]; then
-    if [ ! -f /app/database/database.sqlite ]; then
-        touch /app/database/database.sqlite
-    fi
+if [ "${DB_CONNECTION:-sqlite}" = "sqlite" ] && [ ! -f /app/database/database.sqlite ]; then
+  touch /app/database/database.sqlite
 fi
 
-# Ejecutar migraciones
-echo "Ejecutando migraciones..."
-php artisan migrate --force
-
-# Seed si es la primera vez
-if [ "$RUN_SEED" = "true" ]; then
-    echo "Poblando datos de referencia..."
-    php artisan app:seed-reference-data --force 2>/dev/null || true
+if [ "$RUN_MIGRATIONS" = "true" ]; then
+  echo "Ejecutando migraciones..."
+  php artisan migrate --force
 fi
 
-# Limpiar y cachear
-echo "Preparando aplicación..."
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
+if [ "${RUN_SEED:-false}" = "true" ]; then
+  echo "Poblando datos de referencia..."
+  php artisan app:seed-reference-data --force || true
+fi
 
-# Iniciar servicios en background
-echo "Iniciando servicios..."
+php artisan storage:link || true
+
+if [ "$RUN_CACHE_WARMUP" = "true" ]; then
+  echo "Cacheando config/rutas/vistas..."
+  php artisan config:cache
+  php artisan route:cache
+  php artisan view:cache
+fi
+
+if [ "$APP_ROLE" = "worker" ]; then
+  echo "Iniciando worker de colas: $QUEUE_NAMES"
+  exec php artisan queue:work --queue="$QUEUE_NAMES" --sleep=1 --tries=1 --max-time=3600
+fi
+
+echo "Iniciando web (php-fpm + nginx)..."
 php-fpm -D
-nginx -g "daemon off;"
+exec nginx -g "daemon off;"

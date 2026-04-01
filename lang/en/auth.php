@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
     // Authentication
@@ -11,6 +11,7 @@ return [
     'Forgot your password?' => 'Forgot your password?',
     'Already registered?' => 'Already registered?',
     'Remember me' => 'Remember me',
+    'continue_with_discord' => 'Continue with Discord',
 
     // Password reset
     'Reset Password' => 'Reset Password',
@@ -36,4 +37,7 @@ return [
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'session_expired' => 'Your session has expired. Please log in again.',
+    'discord_login_failed' => 'We could not log you in with Discord. Please try again.',
+    'discord_email_required' => 'Your Discord account did not provide an email address.',
+    'discord_user_default_name' => 'Manager',
 ];

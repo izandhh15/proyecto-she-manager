@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Storage;
  * @property int $id
  * @property string $name
  * @property string $email
+ * @property string|null $discord_id
  * @property \Illuminate\Support\Carbon|null $email_verified_at
  * @property string $password
  * @property string|null $remember_token
@@ -62,6 +63,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'discord_id',
         'password',
         'feedback_requested_at',
         'locale',

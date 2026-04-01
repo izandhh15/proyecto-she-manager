@@ -1,4 +1,4 @@
-# VirtuaFC
+﻿# VirtuaFC
 
 <p align="center">
   <b>If you enjoy the game, consider supporting the project:</b><br><br>
@@ -183,10 +183,10 @@ The HTTP layer uses invokable single-action classes: **Actions** (`App\Http\Acti
 
 Different competition types use a pluggable handler system implementing `CompetitionHandler`:
 
-- `LeagueHandler` — standard league with standings
-- `KnockoutCupHandler` — Copa del Rey bracket/draws
-- `LeagueWithPlayoffHandler` — league with playoff rounds
-- `SwissFormatHandler` — Champions League Swiss-system format
+- `LeagueHandler` â€” standard league with standings
+- `KnockoutCupHandler` â€” Copa del Rey bracket/draws
+- `LeagueWithPlayoffHandler` â€” league with playoff rounds
+- `SwissFormatHandler` â€” Champions League Swiss-system format
 
 ### Match Simulation
 
@@ -208,17 +208,17 @@ Season transitions use two pipelines: `SeasonClosingPipeline` (16 processors for
 
 Detailed documentation on game systems and design decisions:
 
-- **[Game Systems Overview](docs/game-systems/README.md)** — Index of all game system documentation
-- **[Player Abilities](docs/game-systems/player-abilities.md)** — How abilities are derived from market value with age adjustments
-- **[Player Potential](docs/game-systems/player-potential.md)** — How potential is generated and influences development
-- **[Player Development](docs/game-systems/player-development.md)** — How players grow and decline over seasons
-- **[Market Value Dynamics](docs/game-systems/market-value-dynamics.md)** — How market value evolves with ability and age
-- **[Match Simulation](docs/game-systems/match-simulation.md)** — xG formula, energy system, formations, mentality, events
-- **[Injury System](docs/game-systems/injury-system.md)** — Injury probability, durability, medical tiers, recovery
-- **[Season Lifecycle](docs/game-systems/season-lifecycle.md)** — Season flow, matchday progression, end-of-season pipeline
-- **[Club Economy System](docs/game-systems/club-economy-system.md)** — Budget allocation, revenue sources, investment tiers
-- **[Transfer Market](docs/game-systems/transfer-market.md)** — Scouting, buying, selling, loans, contracts
-- **[Youth Academy](docs/game-systems/academy-redesign.md)** — Phased stat reveals, development, evaluations
+- **[Game Systems Overview](docs/game-systems/README.md)** â€” Index of all game system documentation
+- **[Player Abilities](docs/game-systems/player-abilities.md)** â€” How abilities are derived from market value with age adjustments
+- **[Player Potential](docs/game-systems/player-potential.md)** â€” How potential is generated and influences development
+- **[Player Development](docs/game-systems/player-development.md)** â€” How players grow and decline over seasons
+- **[Market Value Dynamics](docs/game-systems/market-value-dynamics.md)** â€” How market value evolves with ability and age
+- **[Match Simulation](docs/game-systems/match-simulation.md)** â€” xG formula, energy system, formations, mentality, events
+- **[Injury System](docs/game-systems/injury-system.md)** â€” Injury probability, durability, medical tiers, recovery
+- **[Season Lifecycle](docs/game-systems/season-lifecycle.md)** â€” Season flow, matchday progression, end-of-season pipeline
+- **[Club Economy System](docs/game-systems/club-economy-system.md)** â€” Budget allocation, revenue sources, investment tiers
+- **[Transfer Market](docs/game-systems/transfer-market.md)** â€” Scouting, buying, selling, loans, contracts
+- **[Youth Academy](docs/game-systems/academy-redesign.md)** â€” Phased stat reveals, development, evaluations
 
 ## Data Structure
 
@@ -226,18 +226,18 @@ Reference data is stored in JSON files under `data/2025/`:
 
 ```
 data/2025/
-├── ESP1/          # La Liga
-├── ESP2/          # Segunda Division
-├── ESPCUP/        # Copa del Rey
-├── ESPSUP/        # Supercopa de Espana
-├── UCL/           # Champions League
-├── UEL/           # Europa League
-├── EUR/           # European club data by country
-├── DEU1/          # Bundesliga
-├── ENG1/          # Premier League
-├── FRA1/          # Ligue 1
-├── ITA1/          # Serie A
-└── WC2026/        # World Cup 2026
+â”œâ”€â”€ ESP1/          # La Liga
+â”œâ”€â”€ ESP2/          # Segunda Division
+â”œâ”€â”€ ESPCUP/        # Copa del Rey
+â”œâ”€â”€ ESPSUP/        # Supercopa de Espana
+â”œâ”€â”€ UCL/           # Champions League
+â”œâ”€â”€ UEL/           # Europa League
+â”œâ”€â”€ EUR/           # European club data by country
+â”œâ”€â”€ DEU1/          # Bundesliga
+â”œâ”€â”€ ENG1/          # Premier League
+â”œâ”€â”€ FRA1/          # Ligue 1
+â”œâ”€â”€ ITA1/          # Serie A
+â””â”€â”€ WC2026/        # World Cup 2026
 ```
 
 ## License
@@ -245,3 +245,13 @@ data/2025/
 Copyright (c) 2026 Pablo Roman. All rights reserved.
 
 This source code is made available for viewing and educational purposes only. See [LICENSE](LICENSE) for details.
+
+## Despliegue en Koyeb
+
+Hay una guía paso a paso en [`docs/deployment/koyeb.md`](docs/deployment/koyeb.md).
+
+Resumen rápido:
+
+- El servicio web usa `APP_ROLE=web`.
+- El worker de colas usa la misma imagen con `APP_ROLE=worker`.
+- Ambos comparten la misma base de datos y variables de entorno.
