@@ -1,0 +1,26 @@
+name: Update Composer Lock
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          tools: composer
+
+      - name: Update lock for socialite
+        run: composer update laravel/socialite --no-interaction --prefer-dist
+
+      - name: Commit lock changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add composer.json composer.lock
+          git commit -m "fix: update composer lock for socialite" || echo "No changes"
+          git push
