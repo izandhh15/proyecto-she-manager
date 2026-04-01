@@ -40,6 +40,8 @@ WORKDIR /app
 COPY . .
 COPY --from=vendor-builder /app/vendor ./vendor
 COPY --from=node-builder /app/public/build ./public/build
+RUN test -f /app/public/build/manifest.json
+
 
 RUN mkdir -p /app/storage/logs /app/storage/framework/cache /app/storage/framework/views /app/storage/framework/sessions /app/bootstrap/cache \
     && chown -R www-data:www-data /app/storage /app/bootstrap/cache \
