@@ -1,9 +1,25 @@
-public function up(): void
-{
-    // no-op: replaced by previous games migration
-}
+<?php
 
-public function down(): void
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
 {
-    // no-op
-}
+    public function up(): void
+    {
+        if (Schema::hasTable('games')) {
+            return;
+        }
+
+        Schema::create('games', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('games');
+    }
+};
