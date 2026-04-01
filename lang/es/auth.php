@@ -11,7 +11,6 @@ return [
     'Forgot your password?' => 'Olvidaste tu contrasena?',
     'Already registered?' => 'Ya tienes cuenta?',
     'Remember me' => 'Recordarme',
-    'continue_with_google' => 'Continuar con Google',
 
     // Password reset
     'Reset Password' => 'Restablecer Contrasena',
@@ -37,9 +36,7 @@ return [
     'password' => 'La contrasena proporcionada es incorrecta.',
     'throttle' => 'Demasiados intentos de acceso. Por favor intenta de nuevo en :seconds segundos.',
     'session_expired' => 'Tu sesion ha expirado. Por favor, inicia sesion de nuevo.',
-    'google_login_failed' => 'No se pudo iniciar sesion con Google. Intentalo de nuevo.',
-    'google_email_required' => 'Tu cuenta de Google no tiene un correo disponible.',
-    'google_user_default_name' => 'Manager',
 ];
+
 
 
