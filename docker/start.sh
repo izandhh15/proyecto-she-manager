@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+#!/bin/sh
 set -eu
 
 APP_ROLE=${APP_ROLE:-web}
