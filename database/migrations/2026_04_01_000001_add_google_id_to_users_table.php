@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -9,15 +9,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('discord_id')->nullable()->after('email')->unique();
+            $table->string('google_id')->nullable()->after('email')->unique();
         });
     }
 
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropUnique('users_discord_id_unique');
-            $table->dropColumn('discord_id');
+            $table->dropUnique('users_google_id_unique');
+            $table->dropColumn('google_id');
         });
     }
 };
+

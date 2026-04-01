@@ -11,7 +11,7 @@ return [
     'Forgot your password?' => 'Forgot your password?',
     'Already registered?' => 'Already registered?',
     'Remember me' => 'Remember me',
-    'continue_with_discord' => 'Continue with Discord',
+    'continue_with_google' => 'Continue with Google',
 
     // Password reset
     'Reset Password' => 'Reset Password',
@@ -37,7 +37,9 @@ return [
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'session_expired' => 'Your session has expired. Please log in again.',
-    'discord_login_failed' => 'We could not log you in with Discord. Please try again.',
-    'discord_email_required' => 'Your Discord account did not provide an email address.',
-    'discord_user_default_name' => 'Manager',
+    'google_login_failed' => 'We could not log you in with Google. Please try again.',
+    'google_email_required' => 'Your Google account did not provide an email address.',
+    'google_user_default_name' => 'Manager',
 ];
+
+
