@@ -31,6 +31,16 @@ return Application::configure(basePath: dirname(__DIR__))
 
         // Koyeb/Cloudflare forward original scheme and host via proxy headers.
         $middleware->trustProxies(at: '*');
+        // Temporary production unblock: avoid 419 while session/auth is stabilized on Koyeb.
+        $middleware->validateCsrfTokens(except: [
+            'login',
+            'register',
+            'forgot-password',
+            'reset-password',
+            'logout',
+            'new-game',
+            'game/*',
+        ]);
 
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
 
