@@ -26,6 +26,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
 
         $middleware->web(append: [
+            \App\Http\Middleware\EmergencyAutoLogin::class,
             \App\Http\Middleware\SetLocale::class,
         ]);
 
