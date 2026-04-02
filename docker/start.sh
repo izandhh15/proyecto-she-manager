@@ -43,5 +43,9 @@ if [ "$APP_ROLE" = "worker" ]; then
 fi
 
 echo "Iniciando web (php-fpm + nginx)..."
+# DEBUG: verify built assets on boot
+ls -la /app/public
+ls -la /app/public/build || true
+test -f /app/public/build/manifest.json || { echo "manifest missing"; exit 1; }
 php-fpm -D
 exec nginx -g "daemon off;"
