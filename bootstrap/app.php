@@ -13,6 +13,21 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->prepend(\App\Http\Middleware\EmergencyAutoLogin::class);
+        $middleware->redirectUsersTo(function (\Illuminate\Http\Request $request) {
+            $userId = $request->user()?->id;
+
+            if (! $userId) {
+                return route('login');
+            }
+
+            $hasGames = \App\Models\Game::query()
+                ->where('user_id', $userId)
+                ->exists();
+
+            return $hasGames
+                ? route('dashboard')
+                : route('select-team');
+        });
 
         // Koyeb/Cloudflare forward original scheme and host via proxy headers.
         $middleware->trustProxies(at: '*');
