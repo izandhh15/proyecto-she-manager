@@ -243,7 +243,7 @@
                                      'bg-accent-green': marker.type === 'goal',
                                      'bg-accent-primary': marker.type === 'own_goal',
                                      'bg-accent-gold': marker.type === 'yellow_card',
-                                     'bg-accent-primary': marker.type === 'red_card',
+                                     'bg-accent-red': marker.type === 'red_card',
                                      'bg-accent-orange': marker.type === 'injury',
                                      'bg-accent-blue': marker.type === 'substitution',
                                  }"
@@ -559,7 +559,7 @@
                                     <span class="font-heading font-bold text-sm text-text-primary" x-text="getStatCount('yellow_card', 'home')"></span>
                                 </div>
                                 <div class="flex items-center gap-1">
-                                    <div class="w-3 h-4 rounded-[2px] bg-accent-primary"></div>
+                                    <div class="w-3 h-4 rounded-[2px] bg-accent-red"></div>
                                     <span class="font-heading font-bold text-sm text-text-primary" x-text="getStatCount('red_card', 'home')"></span>
                                 </div>
                             </div>
@@ -571,7 +571,7 @@
                                 </div>
                                 <div class="flex items-center gap-1">
                                     <span class="font-heading font-bold text-sm text-text-primary" x-text="getStatCount('red_card', 'away')"></span>
-                                    <div class="w-3 h-4 rounded-[2px] bg-accent-primary"></div>
+                                    <div class="w-3 h-4 rounded-[2px] bg-accent-red"></div>
                                 </div>
                             </div>
                         </div>

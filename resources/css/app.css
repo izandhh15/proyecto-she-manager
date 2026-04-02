@@ -110,7 +110,7 @@ input[type="radio"]:checked {
   --color-accent-gold: #f59e0b;
   --color-accent-green: #22c55e;
   --color-accent-primary: #9333ea;
-  --color-accent-red: #9333ea;
+  --color-accent-red: #ef4444;
   --color-accent-orange: #f97316;
 
   --color-bar-track: var(--bar-track);

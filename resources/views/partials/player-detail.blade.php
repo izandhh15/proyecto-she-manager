@@ -192,7 +192,7 @@
                 <span class="inline-flex items-center gap-1.5">
                     <span class="w-2 h-3 bg-yellow-400 rounded-xs"></span>
                     <span class="text-xs font-semibold text-text-body">{{ $gamePlayer->yellow_cards }}</span>
-                    <span class="w-2 h-3 bg-accent-primary rounded-xs ml-1"></span>
+                    <span class="w-2 h-3 bg-accent-red rounded-xs ml-1"></span>
                     <span class="text-xs font-semibold text-text-body">{{ $gamePlayer->red_cards }}</span>
                 </span>
             </div>

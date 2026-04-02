@@ -461,7 +461,7 @@ $awayGoalLines = $formatGoalGroup($awayGoals);
                                                 <td class="text-center py-1.5 {{ $gp->goals > 0 ? 'font-semibold text-text-body' : 'text-text-muted' }}">{{ $gp->goals }}</td>
                                                 <td class="text-center py-1.5 {{ $gp->assists > 0 ? 'font-semibold text-text-body' : 'text-text-muted' }}">{{ $gp->assists }}</td>
                                                 <td class="text-center py-1.5 hidden md:table-cell {{ $gp->yellow_cards > 0 ? 'text-accent-gold font-medium' : 'text-text-muted' }}">{{ $gp->yellow_cards }}</td>
-                                                <td class="text-center py-1.5 hidden md:table-cell {{ $gp->red_cards > 0 ? 'text-accent-primary font-medium' : 'text-text-muted' }}">{{ $gp->red_cards }}</td>
+                                                <td class="text-center py-1.5 hidden md:table-cell {{ $gp->red_cards > 0 ? 'text-accent-red font-medium' : 'text-text-muted' }}">{{ $gp->red_cards }}</td>
                                             </tr>
                                             @endforeach
                                         </tbody>

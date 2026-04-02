@@ -14,7 +14,7 @@
 </span>
 <span class="w-6 text-center shrink-0 flex items-center justify-center"
       x-show="event.type === 'red_card'">
-    <div class="w-2.5 h-3.5 rounded-[2px] bg-accent-primary"></div>
+    <div class="w-2.5 h-3.5 rounded-[2px] bg-accent-red"></div>
 </span>
 <span class="w-6 text-center shrink-0 flex items-center justify-center"
       x-show="event.type === 'injury'">
@@ -39,7 +39,7 @@
         <span class="text-[10px] text-text-muted ml-1">{{ __('game.live_yellow_card') }}</span>
     </template>
     <template x-if="event.type === 'red_card'">
-        <span class="text-[10px] text-accent-primary ml-1" x-text="event.metadata?.second_yellow ? '{{ __('game.live_second_yellow') }}' : '{{ __('game.live_red_card') }}'"></span>
+        <span class="text-[10px] text-accent-red ml-1" x-text="event.metadata?.second_yellow ? '{{ __('game.live_second_yellow') }}' : '{{ __('game.live_red_card') }}'"></span>
     </template>
     <template x-if="event.type === 'injury'">
         <span class="text-[10px] text-accent-orange ml-1">{{ __('game.live_injury') }}</span>

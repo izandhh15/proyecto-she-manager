@@ -96,7 +96,7 @@
                                             @if($event->event_type === 'yellow_card')
                                                 <span class="w-2 h-3 bg-yellow-400 rounded-xs"></span>
                                             @else
-                                                <span class="w-2 h-3 bg-accent-primary rounded-xs"></span>
+                                                <span class="w-2 h-3 bg-accent-red rounded-xs"></span>
                                             @endif
                                         </div>
                                     @endforeach
@@ -107,7 +107,7 @@
                                             @if($event->event_type === 'yellow_card')
                                                 <span class="w-2 h-3 bg-yellow-400 rounded-xs"></span>
                                             @else
-                                                <span class="w-2 h-3 bg-accent-primary rounded-xs"></span>
+                                                <span class="w-2 h-3 bg-accent-red rounded-xs"></span>
                                             @endif
                                             {{ $event->gamePlayer->player->name }} {{ $event->minute }}'
                                         </div>

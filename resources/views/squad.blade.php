@@ -513,7 +513,7 @@
                                                     <span class="text-[11px] tabular-nums text-text-secondary">{{ $gp->yellow_cards }}</span>
                                                 </span>
                                                 <span class="inline-flex items-center gap-0.5">
-                                                    <span class="w-2 h-3 bg-accent-primary rounded-xs"></span>
+                                                    <span class="w-2 h-3 bg-accent-red rounded-xs"></span>
                                                     <span class="text-[11px] tabular-nums text-text-secondary">{{ $gp->red_cards }}</span>
                                                 </span>
                                             </div>
