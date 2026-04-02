@@ -27,6 +27,9 @@ fi
 
 php artisan storage:link || true
 
+# Ensure Laravel never tries Vite dev server in production container
+rm -f /app/public/hot
+
 if [ "$RUN_CACHE_WARMUP" = "true" ]; then
   echo "Cacheando config/rutas/vistas..."
   php artisan config:cache
