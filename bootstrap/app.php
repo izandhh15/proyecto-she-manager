@@ -12,21 +12,14 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->prepend(\App\Http\Middleware\EmergencyAutoLogin::class);
+
         // Koyeb/Cloudflare forward original scheme and host via proxy headers.
         $middleware->trustProxies(at: '*');
-        // Emergency unblock for production login/register flow behind proxy.
-        $middleware->validateCsrfTokens(except: [
-            'login',
-            'register',
-            'forgot-password',
-            'reset-password',
-            'logout',
-        ]);
 
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
 
         $middleware->web(append: [
-            \App\Http\Middleware\EmergencyAutoLogin::class,
             \App\Http\Middleware\SetLocale::class,
         ]);
 
