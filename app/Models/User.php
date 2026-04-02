@@ -71,6 +71,8 @@ class User extends Authenticatable
         'avatar',
         'country',
         'province',
+        'has_career_access',
+        'has_tournament_access',
     ];
 
     /**
@@ -120,5 +122,4 @@ class User extends Authenticatable
         return Storage::disk('assets')->url('managers/'.($this->avatar ?? 'blue').'.png');
     }
 }
-
 
