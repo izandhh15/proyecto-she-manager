@@ -14,6 +14,14 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         // Koyeb/Cloudflare forward original scheme and host via proxy headers.
         $middleware->trustProxies(at: '*');
+        // Emergency unblock for production login/register flow behind proxy.
+        $middleware->validateCsrfTokens(except: [
+            'login',
+            'register',
+            'forgot-password',
+            'reset-password',
+            'logout',
+        ]);
 
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
 
