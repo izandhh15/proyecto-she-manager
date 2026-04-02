@@ -13,7 +13,10 @@ return [
     |
     */
 
-    'enabled' => (bool) env('BETA_MODE', false),
+    // Keep production open by default to avoid invite-only lockouts on deploy.
+    'enabled' => env('APP_ENV') === 'production'
+        ? false
+        : (bool) env('BETA_MODE', false),
 
     /*
     |--------------------------------------------------------------------------

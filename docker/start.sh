@@ -7,8 +7,9 @@ RUN_CACHE_WARMUP=${RUN_CACHE_WARMUP:-true}
 QUEUE_NAMES=${QUEUE_NAMES:-gameplay,setup,mail}
 
 if [ -z "${APP_KEY:-}" ]; then
-  echo "APP_KEY vacia: generando clave..."
-  php artisan key:generate --force
+  APP_KEY=$(php -r '$seed = (getenv("APP_NAME") ?: "app")."|".(getenv("APP_URL") ?: "")."|".(getenv("DB_HOST") ?: "")."|".(getenv("DB_DATABASE") ?: ""); echo "base64:".base64_encode(substr(hash("sha256", $seed, true), 0, 32));')
+  export APP_KEY
+  echo "WARNING: APP_KEY vacia. Usando clave temporal determinista; configura APP_KEY fija en Koyeb."
 fi
 
 if [ "${DB_CONNECTION:-sqlite}" = "sqlite" ] && [ ! -f /app/database/database.sqlite ]; then

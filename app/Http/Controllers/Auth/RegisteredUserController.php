@@ -22,12 +22,10 @@ class RegisteredUserController extends Controller
      */
     public function create(Request $request): View
     {
-        $invite = InviteCode::findByCode($request->query('invite'));
-
         return view('auth.register', [
-            'inviteCode' => $request->query('invite'),
-            'betaMode' => config('beta.enabled'),
-            'email' => $invite->email ?? null,
+            'inviteCode' => null,
+            'betaMode' => false,
+            'email' => null,
         ]);
     }
 
@@ -44,14 +42,14 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ];
 
-        if (config('beta.enabled')) {
+        if (config('beta.enabled') && $request->filled('invite_code')) {
             $rules['invite_code'] = ['required', 'string'];
         }
 
         $request->validate($rules);
 
         $invite = null;
-        if (config('beta.enabled')) {
+        if (config('beta.enabled') && $request->filled('invite_code')) {
             $invite = InviteCode::findByCode($request->input('invite_code'));
 
             if (! $invite || ! $invite->isValidForEmail($request->input('email'))) {
