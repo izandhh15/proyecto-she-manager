@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 namespace App\Models;
 
@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Storage;
  * @property int $id
  * @property string $name
  * @property string $email
- * @property string|null $google_id
  * @property \Illuminate\Support\Carbon|null $email_verified_at
- * @property string $password
+ * @property string|null $password
  * @property string|null $remember_token
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
@@ -63,7 +62,6 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'google_id',
         'password',
         'feedback_requested_at',
         'locale',
@@ -113,7 +111,7 @@ class User extends Authenticatable
             ->join('');
 
         return mb_strlen($initials) > 2
-            ? mb_substr($initials, 0, 1) . mb_substr($initials, -1)
+            ? mb_substr($initials, 0, 1).mb_substr($initials, -1)
             : $initials;
     }
 
@@ -122,4 +120,5 @@ class User extends Authenticatable
         return Storage::disk('assets')->url('managers/'.($this->avatar ?? 'blue').'.png');
     }
 }
+
 
