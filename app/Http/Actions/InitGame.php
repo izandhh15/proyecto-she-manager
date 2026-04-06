@@ -3,6 +3,7 @@
 namespace App\Http\Actions;
 
 use App\Models\ActivationEvent;
+use App\Models\Competition;
 use App\Modules\Season\Services\ActivationTracker;
 use App\Modules\Season\Services\GameCreationService;
 use App\Modules\Season\Services\TournamentCreationService;
@@ -26,17 +27,27 @@ class InitGame
         }
 
         $request->validate([
-            'team_id' => ['required', 'uuid'],
-            'national_team_id' => ['nullable', 'uuid', 'different:team_id'],
-            'game_mode' => ['sometimes', Rule::in([Game::MODE_CAREER, Game::MODE_TOURNAMENT])],
+            'management_mode' => ['required', Rule::in(['club_only', 'national_only', 'club_national'])],
+            'club_team_id' => ['nullable', 'uuid'],
+            'national_team_id' => ['nullable', 'uuid'],
         ]);
 
-        $gameMode = $request->get('game_mode', Game::MODE_CAREER);
+        $managementMode = $request->string('management_mode')->toString();
+        $clubTeamId = $request->input('club_team_id');
+        $nationalTeamId = $request->input('national_team_id');
 
-        if ($gameMode === Game::MODE_TOURNAMENT) {
+        if ($managementMode === 'national_only') {
+            if (! $nationalTeamId) {
+                return back()->withErrors(['national_team_id' => __('game.national_team_required')])->withInput();
+            }
+
+            if (! Competition::where('id', 'WC2026')->exists()) {
+                return back()->withErrors(['national_team_id' => __('game.national_mode_unavailable')])->withInput();
+            }
+
             $game = $this->tournamentCreationService->create(
                 userId: (string) $request->user()->id,
-                teamId: $request->get('team_id'),
+                teamId: $nationalTeamId,
             );
 
             $this->activationTracker->record($request->user()->id, ActivationEvent::EVENT_GAME_CREATED, $game->id, Game::MODE_TOURNAMENT);
@@ -44,14 +55,26 @@ class InitGame
             return redirect()->route('show-game', $game->id);
         }
 
+        if (! $clubTeamId) {
+            return back()->withErrors(['club_team_id' => __('game.club_team_required')])->withInput();
+        }
+
+        if ($managementMode === 'club_national' && ! $nationalTeamId) {
+            return back()->withErrors(['national_team_id' => __('game.national_team_required')])->withInput();
+        }
+
+        if ($managementMode === 'club_national' && $clubTeamId === $nationalTeamId) {
+            return back()->withErrors(['national_team_id' => __('game.national_team_must_differ')])->withInput();
+        }
+
         $game = $this->gameCreationService->create(
             userId: (string) $request->user()->id,
-            teamId: $request->get('team_id'),
-            gameMode: $gameMode,
-            nationalTeamId: $request->get('national_team_id'),
+            teamId: $clubTeamId,
+            gameMode: Game::MODE_CAREER,
+            nationalTeamId: $managementMode === 'club_national' ? $nationalTeamId : null,
         );
 
-        $this->activationTracker->record($request->user()->id, ActivationEvent::EVENT_GAME_CREATED, $game->id, $gameMode);
+        $this->activationTracker->record($request->user()->id, ActivationEvent::EVENT_GAME_CREATED, $game->id, Game::MODE_CAREER);
 
         return redirect()->route('game.welcome', $game->id);
     }

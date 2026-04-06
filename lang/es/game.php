@@ -440,6 +440,21 @@ return [
     'optional_national_team' => 'Selección nacional (opcional)',
     'no_national_team' => 'Sin selección por ahora',
     'national_team_help' => 'Puedes llevar club y selección a la vez. También te llegarán ofertas de selecciones al final de temporada.',
+    'new_game_flow_help' => 'Elige cómo quieres jugar esta partida y configura tu club/selección en un solo paso.',
+    'mode_club_only' => 'SOLO CLUB',
+    'mode_club_only_desc' => 'Dirige únicamente un club durante la carrera.',
+    'mode_national_only' => 'SOLO SELECCIÓN',
+    'mode_national_only_desc' => 'Juega solo con una selección nacional.',
+    'mode_club_and_national' => 'SELECCIÓN + CLUB',
+    'mode_club_and_national_desc' => 'Compagina tu club con una selección nacional.',
+    'select_national_team' => 'Selecciona selección nacional',
+    'select_national_team_placeholder' => 'Elige una selección',
+    'national_team_only_senior_help' => 'Solo se muestran selecciones absolutas (sin categorías Sub).',
+    'club_team_required' => 'Debes seleccionar un club.',
+    'national_team_required' => 'Debes seleccionar una selección nacional.',
+    'national_team_must_differ' => 'La selección nacional debe ser distinta al club.',
+    'national_mode_unavailable' => 'El modo de selección no está disponible temporalmente.',
 ];
+
 
 

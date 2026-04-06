@@ -439,6 +439,21 @@ return [
     'optional_national_team' => 'National team (optional)',
     'no_national_team' => 'No national team for now',
     'national_team_help' => 'You can manage club and national team at the same time. National offers can also arrive at season end.',
+    'new_game_flow_help' => 'Choose how you want to play this save and set up club/national team in one step.',
+    'mode_club_only' => 'CLUB ONLY',
+    'mode_club_only_desc' => 'Manage only a club in career mode.',
+    'mode_national_only' => 'NATIONAL TEAM ONLY',
+    'mode_national_only_desc' => 'Play only with a national team.',
+    'mode_club_and_national' => 'NATIONAL TEAM + CLUB',
+    'mode_club_and_national_desc' => 'Manage your club while coaching a national team.',
+    'select_national_team' => 'Select national team',
+    'select_national_team_placeholder' => 'Choose a national team',
+    'national_team_only_senior_help' => 'Only senior national teams are shown (no youth sides).',
+    'club_team_required' => 'You must select a club.',
+    'national_team_required' => 'You must select a national team.',
+    'national_team_must_differ' => 'National team must be different from your club.',
+    'national_mode_unavailable' => 'National team mode is temporarily unavailable.',
 ];
+
 
 

@@ -16,7 +16,6 @@ final class SelectTeam
             return redirect()->route('dashboard')->withErrors(['limit' => __('messages.game_limit_reached')]);
         }
 
-        // Build country â†’ tier â†’ competition structure for career mode
         $countries = [];
 
         foreach ($countryConfig->playableCountryCodes() as $code) {
@@ -32,7 +31,7 @@ final class SelectTeam
                 }
             }
 
-            if (!empty($tiers)) {
+            if (! empty($tiers)) {
                 $countries[$code] = [
                     'name' => $config['name'],
                     'tiers' => $tiers,
@@ -40,35 +39,33 @@ final class SelectTeam
             }
         }
 
-        // Load World Cup teams for tournament mode
-        $wcTeams = collect();
-        $wcFeaturedTeams = collect();
-        $hasTournamentMode = Competition::where('id', 'WC2026')->exists();
+        $allNationalTeams = Team::query()
+            ->where('type', 'national')
+            ->whereNotNull('external_id')
+            ->orderBy('name')
+            ->get()
+            ->reject(function (Team $team) {
+                $name = mb_strtolower($team->name);
 
-        if ($hasTournamentMode) {
-            $allWcTeams = Team::query()
-                ->where('type', 'national')
-                ->whereNotNull('external_id')
-                ->orderBy('name')
-                ->get()
-                ->values();
+                return preg_match('/\b(?:sub|u)\s*-?\d{2}\b/u', $name) === 1;
+            })
+            ->values();
 
-            $featuredCountries = ['es', 'ar', 'br', 'gb-eng', 'fr', 'de', 'pt', 'nl', 'it', 'us'];
-            $wcFeaturedTeams = $allWcTeams
-                ->filter(fn (Team $team) => in_array(strtolower((string) $team->country), $featuredCountries, true))
-                ->values();
+        $featuredCountries = ['es', 'ar', 'br', 'gb-eng', 'fr', 'de', 'pt', 'nl', 'it', 'us'];
+        $featuredNationalTeams = $allNationalTeams
+            ->filter(fn (Team $team) => in_array(strtolower((string) $team->country), $featuredCountries, true))
+            ->values();
 
-            $wcTeams = $allWcTeams
-                ->reject(fn (Team $team) => in_array($team->id, $wcFeaturedTeams->pluck('id')->all(), true))
-                ->values();
-        }
+        $otherNationalTeams = $allNationalTeams
+            ->reject(fn (Team $team) => in_array($team->id, $featuredNationalTeams->pluck('id')->all(), true))
+            ->values();
 
         return view('select-team', [
             'countries' => $countries,
-            'wcTeams' => $wcTeams,
-            'wcFeaturedTeams' => $wcFeaturedTeams,
-            'hasTournamentMode' => $hasTournamentMode,
-            'nationalTeams' => $allWcTeams ?? collect(),
+            'nationalTeams' => $allNationalTeams,
+            'featuredNationalTeams' => $featuredNationalTeams,
+            'otherNationalTeams' => $otherNationalTeams,
+            'hasTournamentMode' => Competition::where('id', 'WC2026')->exists(),
         ]);
     }
 }
