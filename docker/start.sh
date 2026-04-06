@@ -23,7 +23,9 @@ fi
 
 if [ "${RUN_SEED:-false}" = "true" ]; then
   echo "Poblando datos de referencia..."
-  php artisan app:seed-reference-data --force || true
+  php artisan app:seed-reference-data || true
+  echo "Poblando selecciones nacionales..."
+  php artisan app:seed-world-cup-data || true
 fi
 
 php artisan storage:link || true

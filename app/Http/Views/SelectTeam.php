@@ -40,32 +40,30 @@ final class SelectTeam
         }
 
         $allNationalTeams = Team::query()
-            ->where('type', 'national')
-            ->whereNotNull('external_id')
+            ->where(function ($query) {
+                $query->where('type', 'national')
+                    ->orWhereIn('id', function ($subQuery) {
+                        $subQuery->select('team_id')
+                            ->from('competition_teams')
+                            ->where('competition_id', 'WC2026');
+                    });
+            })
             ->orderBy('name')
             ->get()
             ->reject(function (Team $team) {
                 $name = mb_strtolower($team->name);
 
+                // Exclude youth national teams such as U17/U-19/Sub 20
                 return preg_match('/\b(?:sub|u)\s*-?\d{2}\b/u', $name) === 1;
             })
-            ->values();
-
-        $featuredCountries = ['es', 'ar', 'br', 'gb-eng', 'fr', 'de', 'pt', 'nl', 'it', 'us'];
-        $featuredNationalTeams = $allNationalTeams
-            ->filter(fn (Team $team) => in_array(strtolower((string) $team->country), $featuredCountries, true))
-            ->values();
-
-        $otherNationalTeams = $allNationalTeams
-            ->reject(fn (Team $team) => in_array($team->id, $featuredNationalTeams->pluck('id')->all(), true))
+            ->unique('id')
             ->values();
 
         return view('select-team', [
             'countries' => $countries,
             'nationalTeams' => $allNationalTeams,
-            'featuredNationalTeams' => $featuredNationalTeams,
-            'otherNationalTeams' => $otherNationalTeams,
             'hasTournamentMode' => Competition::where('id', 'WC2026')->exists(),
         ]);
     }
 }
+
