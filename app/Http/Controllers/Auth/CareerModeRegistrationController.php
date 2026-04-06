@@ -3,14 +3,12 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\InviteCode;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rules;
 use App\Models\ActivationEvent;
 use App\Modules\Season\Services\ActivationTracker;
 use Illuminate\View\View;
@@ -22,12 +20,10 @@ class CareerModeRegistrationController extends Controller
      */
     public function create(Request $request): View
     {
-        $invite = InviteCode::findByCode($request->query('invite'));
-
         return view('auth.register-career-mode', [
-            'inviteCode' => $request->query('invite'),
-            'betaMode' => config('beta.enabled'),
-            'email' => $invite->email ?? null,
+            'inviteCode' => null,
+            'betaMode' => false,
+            'email' => null,
         ]);
     }
 
@@ -38,36 +34,19 @@ class CareerModeRegistrationController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $rules = [
+        $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
-        ];
-
-        if (config('beta.enabled')) {
-            $rules['invite_code'] = ['required', 'string'];
-        }
-
-        $request->validate($rules);
-
-        $invite = null;
-        if (config('beta.enabled')) {
-            $invite = InviteCode::findByCode($request->input('invite_code'));
-
-            if (! $invite || ! $invite->isValidForEmail($request->input('email'))) {
-                return back()->withErrors([
-                    'invite_code' => __('beta.invalid_invite'),
-                ])->withInput();
-            }
-        }
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'has_career_access' => true,
+            'has_tournament_access' => true,
         ]);
-
-        $invite?->consume();
 
         event(new Registered($user));
 
@@ -78,4 +57,3 @@ class CareerModeRegistrationController extends Controller
         return redirect(route('dashboard', absolute: false));
     }
 }
-

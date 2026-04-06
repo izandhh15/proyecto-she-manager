@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\InviteCode;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
@@ -35,28 +34,11 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $rules = [
+        $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ];
-
-        if (config('beta.enabled') && $request->filled('invite_code')) {
-            $rules['invite_code'] = ['required', 'string'];
-        }
-
-        $request->validate($rules);
-
-        $invite = null;
-        if (config('beta.enabled') && $request->filled('invite_code')) {
-            $invite = InviteCode::findByCode($request->input('invite_code'));
-
-            if (! $invite || ! $invite->isValidForEmail($request->input('email'))) {
-                return back()->withErrors([
-                    'invite_code' => __('beta.invalid_invite'),
-                ])->withInput();
-            }
-        }
+        ]);
 
         $user = User::create([
             'name' => $request->name,
@@ -65,8 +47,6 @@ class RegisteredUserController extends Controller
             'has_career_access' => true,
             'has_tournament_access' => true,
         ]);
-
-        $invite?->consume();
 
         event(new Registered($user));
 
