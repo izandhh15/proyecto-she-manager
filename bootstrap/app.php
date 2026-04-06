@@ -12,7 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $middleware->prepend(\App\Http\Middleware\EmergencyAutoLogin::class);
+        if ((bool) env('EMERGENCY_AUTO_LOGIN', false)) {
+            $middleware->prepend(\App\Http\Middleware\EmergencyAutoLogin::class);
+        }
         $middleware->redirectUsersTo(function (\Illuminate\Http\Request $request) {
             $userId = $request->user()?->id;
 

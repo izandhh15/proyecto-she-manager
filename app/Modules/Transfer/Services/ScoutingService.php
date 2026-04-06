@@ -35,6 +35,12 @@ class ScoutingService
     private const REPUTATION_GAP_MAX_MODIFIER = 0.02;
 
     /**
+     * Hard realism gate for unrealistic moves.
+     * Blocks top players from dropping too many reputation tiers.
+     */
+    private const STAR_MARKET_VALUE_HARD_GATE = 1_500_000_000; // EUR 15M+
+
+    /**
      * Wage premium multipliers for players on expiring contracts (pre-contract signings).
      * Keyed by minimum market value in cents.
      * Checked in descending order â€” first match wins.
@@ -533,6 +539,15 @@ class ScoutingService
     {
         // Reputation gate: player may refuse to join a lower-reputation club
         if ($game) {
+            if ($this->isUnrealisticDestination($game->team, $player)) {
+                return [
+                    'result' => 'rejected',
+                    'counter_amount' => null,
+                    'asking_price' => $this->calculateAskingPrice($player),
+                    'message' => __('transfers.bid_rejected_not_interested', ['team' => $player->team?->name]),
+                ];
+            }
+
             $reputationModifier = $this->calculateReputationModifier($game->team, $player);
             if ($reputationModifier < 1.0 && rand(1, 100) > (int) ($reputationModifier * 100)) {
                 return [
@@ -613,6 +628,13 @@ class ScoutingService
     {
         // Reputation gate: player may refuse to join a lower-reputation club
         if ($game) {
+            if ($this->isUnrealisticDestination($game->team, $player)) {
+                return [
+                    'result' => 'rejected',
+                    'message' => __('transfers.loan_rejected_not_interested', ['player' => $player->name]),
+                ];
+            }
+
             $reputationModifier = $this->calculateReputationModifier($game->team, $player);
             if ($reputationModifier < 1.0 && rand(1, 100) > (int) ($reputationModifier * 100)) {
                 return [
@@ -751,6 +773,13 @@ class ScoutingService
      */
     public function evaluatePreContractOffer(GamePlayer $player, int $offeredWage, Team $biddingTeam): array
     {
+        if ($this->isUnrealisticDestination($biddingTeam, $player)) {
+            return [
+                'accepted' => false,
+                'message' => __('messages.pre_contract_rejected', ['player' => $player->name]),
+            ];
+        }
+
         $wageDemand = $this->calculatePreContractWageDemand($player);
 
         if ($offeredWage >= $wageDemand) {
@@ -781,6 +810,52 @@ class ScoutingService
             'accepted' => false,
             'message' => __('messages.pre_contract_rejected', ['player' => $player->name]),
         ];
+    }
+
+    /**
+     * Hard block for unrealistic transfers of elite players to very low-reputation clubs.
+     */
+    private function isUnrealisticDestination(Team $biddingTeam, GamePlayer $player): bool
+    {
+        if ($player->team_id === null) {
+            return false;
+        }
+
+        $gameId = $player->game_id;
+        $sourceReputation = $gameId && $player->team_id
+            ? TeamReputation::resolveLevel($gameId, $player->team_id)
+            : ($player->team?->clubProfile?->reputation_level ?? ClubProfile::REPUTATION_LOCAL);
+        $targetReputation = $gameId
+            ? TeamReputation::resolveLevel($gameId, $biddingTeam->id)
+            : ($biddingTeam->clubProfile?->reputation_level ?? ClubProfile::REPUTATION_LOCAL);
+
+        $sourceIndex = ClubProfile::getReputationTierIndex($sourceReputation);
+        $targetIndex = ClubProfile::getReputationTierIndex($targetReputation);
+        $gap = $sourceIndex - $targetIndex;
+
+        if ($gap <= 0) {
+            return false;
+        }
+
+        $tier = (int) ($player->tier ?? 1);
+        $isStarByValue = (int) $player->market_value_cents >= self::STAR_MARKET_VALUE_HARD_GATE;
+
+        // Very high-end players should not move down even one tier.
+        if ($gap >= 1 && ($tier >= 5 || $isStarByValue)) {
+            return true;
+        }
+
+        // Elite/continental-level players should not drop two tiers.
+        if ($gap >= 2 && $tier >= 4) {
+            return true;
+        }
+
+        // Strong established players should not drop three tiers.
+        if ($gap >= 3 && $tier >= 3) {
+            return true;
+        }
+
+        return false;
     }
 
     /**

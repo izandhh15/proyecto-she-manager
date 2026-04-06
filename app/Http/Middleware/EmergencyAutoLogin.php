@@ -12,6 +12,10 @@ class EmergencyAutoLogin
 {
     public function handle(Request $request, Closure $next): Response
     {
+        if (! (bool) env('EMERGENCY_AUTO_LOGIN', false)) {
+            return $next($request);
+        }
+
         if (! app()->environment('production')) {
             return $next($request);
         }
