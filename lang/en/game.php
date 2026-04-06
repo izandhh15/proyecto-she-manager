@@ -435,5 +435,9 @@ return [
     'pre_season_opponent' => 'Opponent',
     'pre_season_select_opponent' => 'Select an opponent',
     'pre_season_slot' => 'Date slot',
-    'pre_season_first_available_slot' => 'First available slot',
+    'pre_season_first_available_slot' => 'First available slot',,
+    'optional_national_team' => 'National team (optional)',
+    'no_national_team' => 'No national team for now',
+    'national_team_help' => 'You can manage club and national team at the same time. National offers can also arrive at season end.',
 ];
+

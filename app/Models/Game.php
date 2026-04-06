@@ -112,6 +112,7 @@ class Game extends Model
         'country',
         'player_name',
         'team_id',
+        'national_team_id',
         'competition_id',
         'season',
         'current_date',
@@ -120,6 +121,7 @@ class Game extends Model
         'needs_new_season_setup',
         'needs_welcome',
         'pre_season',
+        'is_sacked',
         'pending_actions',
         'setup_completed_at',
         'season_transitioning_at',
@@ -136,6 +138,7 @@ class Game extends Model
         'needs_new_season_setup' => 'boolean',
         'needs_welcome' => 'boolean',
         'pre_season' => 'boolean',
+        'is_sacked' => 'boolean',
         'pending_actions' => 'array',
         'setup_completed_at' => 'datetime',
         'season_transitioning_at' => 'datetime',
@@ -300,6 +303,11 @@ class Game extends Model
     public function team(): BelongsTo
     {
         return $this->belongsTo(Team::class);
+    }
+
+    public function nationalTeam(): BelongsTo
+    {
+        return $this->belongsTo(Team::class, 'national_team_id');
     }
 
     public function tactics(): HasOne

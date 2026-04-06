@@ -133,5 +133,10 @@ return [
     'pre_season_invalid_opponent' => 'Invalid opponent for a friendly.',
     'pre_season_foreign_only' => 'During pre-season you can only request friendlies against foreign teams.',
     'pre_season_no_slots' => 'No available pre-season slots left.',
-    'pre_season_opponent_busy' => 'That opponent already has a match on this date.',
+    'pre_season_opponent_busy' => 'That opponent already has a match on this date.',,
+    'offer_accepted' => 'Offer accepted successfully.',
+    'offer_declined' => 'Offer declined.',
+    'must_accept_club_offer' => 'You were sacked. You must accept a club offer to continue.',
 ];
+
+

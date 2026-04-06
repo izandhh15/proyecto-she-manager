@@ -68,6 +68,7 @@ final class SelectTeam
             'wcTeams' => $wcTeams,
             'wcFeaturedTeams' => $wcFeaturedTeams,
             'hasTournamentMode' => $hasTournamentMode,
+            'nationalTeams' => $allWcTeams ?? collect(),
         ]);
     }
 }

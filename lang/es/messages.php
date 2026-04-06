@@ -133,5 +133,10 @@ return [
     'pre_season_invalid_opponent' => 'Rival inválido para un amistoso.',
     'pre_season_foreign_only' => 'En pretemporada solo puedes solicitar amistosos contra equipos extranjeros.',
     'pre_season_no_slots' => 'No hay huecos libres en el calendario de pretemporada.',
-    'pre_season_opponent_busy' => 'Ese rival ya tiene partido en esa fecha.',
+    'pre_season_opponent_busy' => 'Ese rival ya tiene partido en esa fecha.',,
+    'offer_accepted' => 'Oferta aceptada correctamente.',
+    'offer_declined' => 'Oferta rechazada.',
+    'must_accept_club_offer' => 'Has sido cesado. Debes aceptar una oferta de club para continuar.',
 ];
+
+

@@ -544,6 +544,55 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
         </x-section-card>
         @endif
 
+        @if($jobOffers->isNotEmpty())
+        <x-section-card :title="__('season.manager_offers')" class="mb-6">
+            <div class="p-5 md:p-6 space-y-3">
+                @foreach($jobOffers as $offer)
+                    <div class="rounded-lg border border-border-default bg-surface-700/50 p-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                        <div class="flex items-center gap-3 min-w-0">
+                            <x-team-crest :team="$offer->team" class="w-8 h-8 shrink-0" />
+                            <div class="min-w-0">
+                                <div class="text-sm font-semibold text-text-primary truncate">{{ $offer->team->name }}</div>
+                                <div class="text-xs text-text-muted">
+                                    @if($offer->offer_type === 'national')
+                                        {{ __('season.national_team_offer') }}
+                                    @else
+                                        {{ $offer->competition?->name ?? __('season.club_offer') }}
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <form method="post" action="{{ route('game.job-offers.accept', [$game->id, $offer->id]) }}">
+                                @csrf
+                                <x-primary-button class="text-xs">{{ __('season.accept_offer') }}</x-primary-button>
+                            </form>
+                            <form method="post" action="{{ route('game.job-offers.decline', [$game->id, $offer->id]) }}">
+                                @csrf
+                                <x-secondary-button class="text-xs">{{ __('season.decline_offer') }}</x-secondary-button>
+                            </form>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </x-section-card>
+        @endif
+
+        <x-section-card :title="__('season.share_season')" class="mb-6">
+            <div class="p-5 md:p-6">
+                <p class="text-sm text-text-secondary mb-3">{{ __('season.share_season_help') }}</p>
+                <div class="rounded-lg border border-border-default bg-surface-700/50 p-3 text-sm text-text-body">{{ $shareText }}</div>
+                <div class="mt-3 flex flex-wrap gap-2">
+                    <a href="https://twitter.com/intent/tweet?text={{ urlencode($shareText) }}" target="_blank" rel="noopener" class="inline-flex min-h-[44px] items-center justify-center rounded-md bg-accent-blue px-4 text-sm font-semibold text-white">
+                        {{ __('season.share_on_x') }}
+                    </a>
+                    <button type="button" onclick="navigator.clipboard.writeText(@js($shareText))" class="inline-flex min-h-[44px] items-center justify-center rounded-md border border-border-strong px-4 text-sm font-semibold text-text-body">
+                        {{ __('season.copy_for_instagram') }}
+                    </button>
+                </div>
+            </div>
+        </x-section-card>
+
         {{-- ============================================================ --}}
         {{-- CTA: Start New Season                                         --}}
         {{-- ============================================================ --}}

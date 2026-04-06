@@ -155,5 +155,16 @@ return [
     'share_text' => 'Â¡LleguÃ© a :result en :competition con :team! Juega en VirtuaFC',
     'play_again' => 'Jugar de nuevo',
     'copied_to_clipboard' => 'Â¡Copiado!',
-    'your_squad_stats' => 'EstadÃ­sticas de tu plantilla',
+    'your_squad_stats' => 'EstadÃ­sticas de tu plantilla',,
+    'manager_offers' => 'Ofertas para la próxima temporada',
+    'national_team_offer' => 'Oferta de selección nacional',
+    'club_offer' => 'Oferta de club',
+    'accept_offer' => 'Aceptar',
+    'decline_offer' => 'Rechazar',
+    'share_season' => 'Comparte tu temporada',
+    'share_season_help' => 'Publica tu resumen y reta a tus amigos a superarte en SheManager.',
+    'share_on_x' => 'Compartir en X',
+    'copy_for_instagram' => 'Copiar texto para Instagram',
+    'share_summary_text' => 'Acabé la temporada :season con :team en :positionª posición en SheManager. ¿Te atreves a superarme? Juega en https://shemanager.koyeb.app',
 ];
+

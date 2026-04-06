@@ -27,6 +27,7 @@ class InitGame
 
         $request->validate([
             'team_id' => ['required', 'uuid'],
+            'national_team_id' => ['nullable', 'uuid', 'different:team_id'],
             'game_mode' => ['sometimes', Rule::in([Game::MODE_CAREER, Game::MODE_TOURNAMENT])],
         ]);
 
@@ -47,6 +48,7 @@ class InitGame
             userId: (string) $request->user()->id,
             teamId: $request->get('team_id'),
             gameMode: $gameMode,
+            nationalTeamId: $request->get('national_team_id'),
         );
 
         $this->activationTracker->record($request->user()->id, ActivationEvent::EVENT_GAME_CREATED, $game->id, $gameMode);

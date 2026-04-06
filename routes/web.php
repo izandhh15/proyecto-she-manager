@@ -36,6 +36,8 @@ use App\Http\Actions\RequestLoan;
 use App\Http\Actions\SaveLineup;
 use App\Http\Actions\SaveTacticalPreset;
 use App\Http\Actions\DeleteTacticalPreset;
+use App\Http\Actions\AcceptManagerJobOffer;
+use App\Http\Actions\DeclineManagerJobOffer;
 
 use App\Http\Actions\SaveSquadSelection;
 use App\Http\Views\ShowSquadSelection;
@@ -187,6 +189,8 @@ Route::middleware('auth')->group(function () {
 
         // Season End
         Route::get('/game/{gameId}/season-end', ShowSeasonEnd::class)->name('game.season-end');
+        Route::post('/game/{gameId}/job-offers/{offerId}/accept', AcceptManagerJobOffer::class)->name('game.job-offers.accept');
+        Route::post('/game/{gameId}/job-offers/{offerId}/decline', DeclineManagerJobOffer::class)->name('game.job-offers.decline');
         Route::post('/game/{gameId}/start-new-season', StartNewSeason::class)->name('game.start-new-season');
 
         // Tournament End

@@ -436,5 +436,9 @@ return [
     'pre_season_opponent' => 'Rival',
     'pre_season_select_opponent' => 'Selecciona un rival',
     'pre_season_slot' => 'Fecha',
-    'pre_season_first_available_slot' => 'Primer hueco disponible',
+    'pre_season_first_available_slot' => 'Primer hueco disponible',,
+    'optional_national_team' => 'Selección nacional (opcional)',
+    'no_national_team' => 'Sin selección por ahora',
+    'national_team_help' => 'Puedes llevar club y selección a la vez. También te llegarán ofertas de selecciones al final de temporada.',
 ];
+

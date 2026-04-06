@@ -90,6 +90,18 @@
                 <div class="rounded-xl border border-border-default bg-surface-800/80 px-4 py-3 text-sm text-text-secondary">
                     Esta primera versiÃ³n ya presenta la experiencia como manager de fÃºtbol femenino. La simulaciÃ³n y la estructura de competiciones se mantienen mientras adaptamos datos y plantillas especÃ­ficas.
                 </div>
+                <div x-show="mode === 'career'" x-cloak class="rounded-xl border border-border-default bg-surface-800/80 p-4">
+                    <label for="national_team_id" class="block text-sm font-semibold text-text-body mb-2">
+                        {{ __('game.optional_national_team') }}
+                    </label>
+                    <select id="national_team_id" name="national_team_id" class="w-full rounded-lg border-border-default bg-surface-700 text-text-body">
+                        <option value="">{{ __('game.no_national_team') }}</option>
+                        @foreach($nationalTeams as $nationalTeam)
+                            <option value="{{ $nationalTeam->id }}">{{ $nationalTeam->name }}</option>
+                        @endforeach
+                    </select>
+                    <p class="mt-2 text-xs text-text-muted">{{ __('game.national_team_help') }}</p>
+                </div>
 
                 {{-- ===================== CAREER MODE: Club teams ===================== --}}
                 <div x-show="mode === 'career'" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
@@ -227,3 +239,4 @@
         </div>
     </div>
 </x-app-layout>
+

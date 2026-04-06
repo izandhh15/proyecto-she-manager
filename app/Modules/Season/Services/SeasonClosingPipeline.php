@@ -7,6 +7,7 @@ use App\Modules\Season\DTOs\SeasonTransitionData;
 use App\Modules\Season\Processors\ContractExpirationProcessor;
 use App\Modules\Season\Processors\ContractRenewalProcessor;
 use App\Modules\Season\Processors\LoanReturnProcessor;
+use App\Modules\Season\Processors\ManagerMarketProcessor;
 use App\Modules\Season\Processors\PlayerDevelopmentProcessor;
 use App\Modules\Season\Processors\PlayerRetirementProcessor;
 use App\Modules\Season\Processors\PreContractTransferProcessor;
@@ -36,6 +37,7 @@ class SeasonClosingPipeline
     public function __construct(
         SeasonArchiveProcessor $seasonArchive,
         LoanReturnProcessor $loanReturn,
+        ManagerMarketProcessor $managerMarket,
         PreContractTransferProcessor $preContractTransfer,
         ContractExpirationProcessor $contractExpiration,
         ContractRenewalProcessor $contractRenewal,
@@ -55,6 +57,7 @@ class SeasonClosingPipeline
         $this->processors = [
             $seasonArchive,
             $loanReturn,
+            $managerMarket,
             $preContractTransfer,
             $contractExpiration,
             $contractRenewal,

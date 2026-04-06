@@ -14,6 +14,7 @@ use App\Models\GameStanding;
 use App\Models\SimulatedSeason;
 use App\Models\Team;
 use App\Models\TeamReputation;
+use App\Models\ManagerJobOffer;
 use App\Modules\Competition\Promotions\PromotionRelegationFactory;
 use App\Modules\Season\Services\SeasonGoalService;
 
@@ -144,6 +145,19 @@ class ShowSeasonEnd
         // === Section 4: Simulated League Results ===
         $simulatedResults = $this->buildSimulatedResults($gameId, $game->season);
 
+        $jobOffers = ManagerJobOffer::with(['team', 'competition'])
+            ->where('game_id', $game->id)
+            ->where('status', ManagerJobOffer::STATUS_PENDING)
+            ->orderByDesc('priority')
+            ->latest('id')
+            ->get();
+
+        $shareText = __('season.share_summary_text', [
+            'team' => $game->team->name,
+            'position' => $playerStanding?->position ?? '-',
+            'season' => $game->formatted_season,
+        ]);
+
         return view('season-end', [
             'game' => $game,
             'competition' => $competition,
@@ -175,6 +189,8 @@ class ShowSeasonEnd
             'simulatedResults' => $simulatedResults,
             // Reputation
             'reputationData' => $reputationData,
+            'jobOffers' => $jobOffers,
+            'shareText' => $shareText,
         ]);
     }
 
