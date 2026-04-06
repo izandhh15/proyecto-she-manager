@@ -132,7 +132,9 @@ class BudgetProjectionService
         $strengths = [];
         foreach ($teams as $team) {
             $teamPlayers = $playersByTeam->get($team->id, collect());
-            $strengths[$team->id] = $this->calculateStrengthFromPlayers($teamPlayers);
+            $baseStrength = $this->calculateStrengthFromPlayers($teamPlayers);
+            $strengthMultiplier = $this->resolveTeamStrengthMultiplier($league->id, $team->name);
+            $strengths[$team->id] = round($baseStrength * $strengthMultiplier, 1);
         }
 
         // Sort by strength descending
@@ -177,6 +179,19 @@ class BudgetProjectionService
         }
 
         return round($scores->avg(), 1);
+    }
+
+    /**
+     * Resolve deterministic strength multiplier for realism tuning.
+     */
+    private function resolveTeamStrengthMultiplier(string $competitionId, string $teamName): float
+    {
+        $normalizedTeamName = mb_strtolower(trim($teamName));
+
+        $defaultBias = (float) (config("match_simulation.team_strength_bias.default.{$normalizedTeamName}") ?? 1.0);
+        $competitionBias = (float) (config("match_simulation.team_strength_bias.{$competitionId}.{$normalizedTeamName}") ?? $defaultBias);
+
+        return max(0.5, min(1.5, $competitionBias));
     }
 
     /**

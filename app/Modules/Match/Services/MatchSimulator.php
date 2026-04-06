@@ -348,6 +348,17 @@ class MatchSimulator
     }
 
     /**
+     * Resolve deterministic team strength multiplier for realism tuning.
+     */
+    private function resolveTeamStrengthMultiplier(Team $team): float
+    {
+        $normalizedTeamName = mb_strtolower(trim($team->name));
+        $multiplier = (float) (config("match_simulation.team_strength_bias.default.{$normalizedTeamName}") ?? 1.0);
+
+        return max(0.5, min(1.5, $multiplier));
+    }
+
+    /**
      * Calculate striker quality bonus for expected goals.
      *
      * Elite forwards (90+) provide a significant boost to their team's
@@ -770,13 +781,15 @@ class MatchSimulator
 
         // Scale everything by the fraction of match remaining
         $matchFraction = max(0, (93 - $fromMinute)) / 93;
+        $homeStrengthMultiplier = $this->resolveTeamStrengthMultiplier($homeTeam);
+        $awayStrengthMultiplier = $this->resolveTeamStrengthMultiplier($awayTeam);
 
         $events = collect();
         $baseGoals = config('match_simulation.base_goals', 1.3);
 
         // Preliminary strength calculation (used for card bias and as final strength if no injury sub)
-        $homeStrength = $this->calculateTeamStrength($homePlayers, $fromMinute, $homeEntryMinutes, $homeTacticalDrain);
-        $awayStrength = $this->calculateTeamStrength($awayPlayers, $fromMinute, $awayEntryMinutes, $awayTacticalDrain);
+        $homeStrength = $this->calculateTeamStrength($homePlayers, $fromMinute, $homeEntryMinutes, $homeTacticalDrain) * $homeStrengthMultiplier;
+        $awayStrength = $this->calculateTeamStrength($awayPlayers, $fromMinute, $awayEntryMinutes, $awayTacticalDrain) * $awayStrengthMultiplier;
 
         [$homeExpectedGoals, $awayExpectedGoals] = $this->calculateBaseExpectedGoals(
             $homeStrength, $awayStrength,
@@ -844,8 +857,8 @@ class MatchSimulator
 
             // Recalculate strength and goals with updated lineup if an injury sub occurred
             if ($lineupChanged) {
-                $homeStrength = $this->calculateTeamStrength($homePlayers, $fromMinute, $homeEntryMinutes, $homeTacticalDrain);
-                $awayStrength = $this->calculateTeamStrength($awayPlayers, $fromMinute, $awayEntryMinutes, $awayTacticalDrain);
+                $homeStrength = $this->calculateTeamStrength($homePlayers, $fromMinute, $homeEntryMinutes, $homeTacticalDrain) * $homeStrengthMultiplier;
+                $awayStrength = $this->calculateTeamStrength($awayPlayers, $fromMinute, $awayEntryMinutes, $awayTacticalDrain) * $awayStrengthMultiplier;
 
                 [$homeExpectedGoals, $awayExpectedGoals] = $this->calculateBaseExpectedGoals(
                     $homeStrength, $awayStrength,
@@ -887,6 +900,7 @@ class MatchSimulator
                     $homeStrength, $awayStrength,
                     $homeEntryMinutes, $awayEntryMinutes,
                     $homeTacticalDrain, $awayTacticalDrain,
+                    $homeStrengthMultiplier, $awayStrengthMultiplier,
                     $fromMinute, $baseGoals, $homeRedCard, $awayRedCard,
                 );
                 $events = $events->merge($goalEvents);
@@ -958,6 +972,8 @@ class MatchSimulator
         array $awayEntryMinutes,
         float $homeTacticalDrain,
         float $awayTacticalDrain,
+        float $homeStrengthMultiplier,
+        float $awayStrengthMultiplier,
         int $fromMinute,
         float $baseGoals,
         ?MatchEventData $homeRedCard,
@@ -1015,8 +1031,8 @@ class MatchSimulator
         $fraction2 = max(0, 93 - $splitMinute) / 93;
         $effectiveMinute2 = $splitMinute + (93 - $splitMinute) / 2;
 
-        $homeStrength2 = $this->calculateTeamStrength($homePlayers2, $splitMinute, $homeEntryMinutes, $homeTacticalDrain);
-        $awayStrength2 = $this->calculateTeamStrength($awayPlayers2, $splitMinute, $awayEntryMinutes, $awayTacticalDrain);
+        $homeStrength2 = $this->calculateTeamStrength($homePlayers2, $splitMinute, $homeEntryMinutes, $homeTacticalDrain) * $homeStrengthMultiplier;
+        $awayStrength2 = $this->calculateTeamStrength($awayPlayers2, $splitMinute, $awayEntryMinutes, $awayTacticalDrain) * $awayStrengthMultiplier;
 
         [$homeXG2, $awayXG2] = $this->calculateBaseExpectedGoals(
             $homeStrength2, $awayStrength2,
@@ -1368,10 +1384,12 @@ class MatchSimulator
         // Scale ET fraction based on remaining minutes (full ET = 30/90, partial if re-simulating)
         $etMinutesRemaining = max(0, 120 - $fromMinute);
         $etFraction = $etMinutesRemaining / 90.0;
+        $homeStrengthMultiplier = $this->resolveTeamStrengthMultiplier($homeTeam);
+        $awayStrengthMultiplier = $this->resolveTeamStrengthMultiplier($awayTeam);
 
         // Ratio-based xG â€” energy already accounts for fatigue
-        $homeStrength = $this->calculateTeamStrength($homePlayers, $fromMinute, $homeEntryMinutes, $homeTacticalDrain);
-        $awayStrength = $this->calculateTeamStrength($awayPlayers, $fromMinute, $awayEntryMinutes, $awayTacticalDrain);
+        $homeStrength = $this->calculateTeamStrength($homePlayers, $fromMinute, $homeEntryMinutes, $homeTacticalDrain) * $homeStrengthMultiplier;
+        $awayStrength = $this->calculateTeamStrength($awayPlayers, $fromMinute, $awayEntryMinutes, $awayTacticalDrain) * $awayStrengthMultiplier;
 
         $baseGoals = config('match_simulation.base_goals', 1.3);
 

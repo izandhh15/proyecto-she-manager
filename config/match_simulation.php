@@ -330,4 +330,44 @@ return [
         'defense_modifier' => 1.15,     // 15% boost in opponent xG when facing 10 men
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Team Strength Bias (Realism Tuning)
+    |--------------------------------------------------------------------------
+    |
+    | Optional deterministic multipliers applied to team strength to model
+    | long-term structural dominance in women's football.
+    |
+    | - "default": applies in all competitions.
+    | - Competition-specific maps (ESP1, ESPCUP, ESPSUP, UCL, UEL...) override
+    |   default for that competition when present.
+    |
+    | Keys are team names (case-insensitive).
+    |
+    */
+    'team_strength_bias' => [
+        'default' => [
+            'fc barcelona' => 1.12,
+            'real madrid cf' => 1.03,
+            'atlético de madrid' => 1.02,
+        ],
+        'ESP1' => [
+            'fc barcelona' => 1.18,
+            'real madrid cf' => 1.04,
+            'atlético de madrid' => 1.03,
+        ],
+        'ESPCUP' => [
+            'fc barcelona' => 1.15,
+        ],
+        'ESPSUP' => [
+            'fc barcelona' => 1.15,
+        ],
+        'UCL' => [
+            'fc barcelona' => 1.10,
+            'olympique lyon' => 1.08,
+            'arsenal wfc' => 1.06,
+            'chelsea fc women' => 1.06,
+        ],
+    ],
+
 ];
