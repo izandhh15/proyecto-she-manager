@@ -10,6 +10,7 @@ use App\Models\Game;
 use App\Models\GameTactics;
 use App\Models\Team;
 use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Facades\Schema;
 
 class GameCreationService
 {
@@ -40,20 +41,25 @@ class GameCreationService
 
         // Create game record (setup not yet complete)
         // current_date and season_goal are set by processors during SetupNewGame
-        $game = Game::create([
+        $payload = [
             'id' => $gameId,
             'user_id' => $userId,
             'game_mode' => $gameMode,
             'country' => $team->country ?? 'ES',
             'team_id' => $teamId,
-            'national_team_id' => $nationalTeamId,
             'competition_id' => $competitionId,
             'season' => $season,
             'current_date' => null,
             'current_matchday' => 0,
             'season_goal' => null,
             'setup_completed_at' => null,
-        ]);
+        ];
+
+        if (Schema::hasColumn('games', 'national_team_id')) {
+            $payload['national_team_id'] = $nationalTeamId;
+        }
+
+        $game = Game::create($payload);
 
         // Create default tactical settings
         GameTactics::create(['game_id' => $gameId]);

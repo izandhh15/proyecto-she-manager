@@ -17,6 +17,7 @@ use App\Models\TeamReputation;
 use App\Models\ManagerJobOffer;
 use App\Modules\Competition\Promotions\PromotionRelegationFactory;
 use App\Modules\Season\Services\SeasonGoalService;
+use Illuminate\Support\Facades\Schema;
 
 class ShowSeasonEnd
 {
@@ -145,12 +146,15 @@ class ShowSeasonEnd
         // === Section 4: Simulated League Results ===
         $simulatedResults = $this->buildSimulatedResults($gameId, $game->season);
 
-        $jobOffers = ManagerJobOffer::with(['team', 'competition'])
-            ->where('game_id', $game->id)
-            ->where('status', ManagerJobOffer::STATUS_PENDING)
-            ->orderByDesc('priority')
-            ->latest('id')
-            ->get();
+        $jobOffers = collect();
+        if (Schema::hasTable('manager_job_offers')) {
+            $jobOffers = ManagerJobOffer::with(['team', 'competition'])
+                ->where('game_id', $game->id)
+                ->where('status', ManagerJobOffer::STATUS_PENDING)
+                ->orderByDesc('priority')
+                ->latest('id')
+                ->get();
+        }
 
         $shareText = __('season.share_summary_text', [
             'team' => $game->team->name,

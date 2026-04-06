@@ -10,11 +10,16 @@ use App\Models\ManagerJobOffer;
 use App\Models\Team;
 use App\Modules\Season\Contracts\SeasonProcessor;
 use App\Modules\Season\DTOs\SeasonTransitionData;
+use Illuminate\Support\Facades\Schema;
 
 class ManagerMarketProcessor implements SeasonProcessor
 {
     public function process(Game $game, SeasonTransitionData $data): SeasonTransitionData
     {
+        if (! Schema::hasTable('manager_job_offers')) {
+            return $data;
+        }
+
         $currentCompetition = Competition::find($game->competition_id);
         if (! $currentCompetition || $currentCompetition->role !== Competition::ROLE_LEAGUE) {
             return $data;
@@ -37,7 +42,9 @@ class ManagerMarketProcessor implements SeasonProcessor
         $currentTier = max(1, (int) $currentCompetition->tier);
 
         $isSacked = $percentile >= 0.85;
-        $game->update(['is_sacked' => $isSacked]);
+        if (Schema::hasColumn('games', 'is_sacked')) {
+            $game->update(['is_sacked' => $isSacked]);
+        }
 
         // Clean pending offers for same season before generating new ones.
         ManagerJobOffer::where('game_id', $game->id)

@@ -4,6 +4,7 @@ namespace App\Http\Actions;
 
 use App\Models\Game;
 use App\Models\ManagerJobOffer;
+use Illuminate\Support\Facades\Schema;
 
 class AcceptManagerJobOffer
 {
@@ -18,15 +19,22 @@ class AcceptManagerJobOffer
             ->firstOrFail();
 
         if ($offer->offer_type === ManagerJobOffer::TYPE_NATIONAL) {
-            $game->update([
-                'national_team_id' => $offer->team_id,
-            ]);
+            if (Schema::hasColumn('games', 'national_team_id')) {
+                $game->update([
+                    'national_team_id' => $offer->team_id,
+                ]);
+            }
         } else {
-            $game->update([
+            $payload = [
                 'team_id' => $offer->team_id,
                 'competition_id' => $offer->competition_id,
-                'is_sacked' => false,
-            ]);
+            ];
+
+            if (Schema::hasColumn('games', 'is_sacked')) {
+                $payload['is_sacked'] = false;
+            }
+
+            $game->update($payload);
         }
 
         $offer->update(['status' => ManagerJobOffer::STATUS_ACCEPTED]);
