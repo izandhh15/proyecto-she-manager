@@ -428,4 +428,12 @@ return [
     'pre_season_banner_desc' => 'Season starts :date. Use this time to set up your squad, play friendlies and sign players.',
     'pre_season_skip' => 'Skip Pre-Season',
     'pre_season_skipped' => 'Pre-season skipped. The season has begun.',
+    'pre_season_schedule' => 'Friendly schedule',
+    'pre_season_no_friendlies' => 'No friendlies scheduled.',
+    'pre_season_request_friendly' => 'Request friendly',
+    'pre_season_cancel_friendly' => 'Cancel',
+    'pre_season_opponent' => 'Opponent',
+    'pre_season_select_opponent' => 'Select an opponent',
+    'pre_season_slot' => 'Date slot',
+    'pre_season_first_available_slot' => 'First available slot',
 ];

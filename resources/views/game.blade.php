@@ -49,6 +49,68 @@
                 </x-secondary-button>
             </div>
         </x-status-banner>
+
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <x-section-card :title="__('game.pre_season_schedule')">
+                @if(($preSeasonMatches ?? collect())->isEmpty())
+                    <p class="text-sm text-text-muted">{{ __('game.pre_season_no_friendlies') }}</p>
+                @else
+                    <div class="space-y-2">
+                        @foreach($preSeasonMatches as $friendly)
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 rounded-lg border border-border-default px-3 py-2">
+                                <div class="text-sm text-text-body">
+                                    <span class="font-semibold">
+                                        {{ $friendly->scheduled_date?->locale(app()->getLocale())->translatedFormat('d M Y') }}
+                                    </span>
+                                    <span class="text-text-muted">·</span>
+                                    <span>{{ $friendly->homeTeam?->name }} vs {{ $friendly->awayTeam?->name }}</span>
+                                </div>
+                                <form action="{{ route('game.pre-season.friendly.cancel', [$game->id, $friendly->id]) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <x-secondary-button>
+                                        {{ __('game.pre_season_cancel_friendly') }}
+                                    </x-secondary-button>
+                                </form>
+                            </div>
+                        @endforeach
+                    </div>
+                @endif
+            </x-section-card>
+
+            <x-section-card :title="__('game.pre_season_request_friendly')">
+                <form action="{{ route('game.pre-season.friendly.request', $game->id) }}" method="POST" class="space-y-3">
+                    @csrf
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wide text-text-faint mb-1">
+                            {{ __('game.pre_season_opponent') }}
+                        </label>
+                        <select name="opponent_team_id" class="w-full rounded-md border border-border-default bg-surface-900 text-text-primary text-sm px-3 py-2" required>
+                            <option value="">{{ __('game.pre_season_select_opponent') }}</option>
+                            @foreach(($friendlyOpponents ?? collect()) as $opponent)
+                                <option value="{{ $opponent->id }}">{{ $opponent->name }} ({{ $opponent->country }})</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wide text-text-faint mb-1">
+                            {{ __('game.pre_season_slot') }}
+                        </label>
+                        <select name="round_number" class="w-full rounded-md border border-border-default bg-surface-900 text-text-primary text-sm px-3 py-2">
+                            <option value="">{{ __('game.pre_season_first_available_slot') }}</option>
+                            @foreach(($friendlyRoundOptions ?? collect()) as $slot)
+                                <option value="{{ $slot['round'] }}">{{ $slot['label'] }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <x-primary-button color="sky" class="w-full">
+                        {{ __('game.pre_season_request_friendly') }}
+                    </x-primary-button>
+                </form>
+            </x-section-card>
+        </div>
         @endif
 
         @if($nextMatch)

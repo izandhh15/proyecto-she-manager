@@ -125,4 +125,13 @@ return [
     // Game management
     'game_deleted' => 'Game deleted successfully.',
     'game_limit_reached' => 'You have reached the maximum limit of 3 games. Delete one to create another.',
+
+    // Pre-season friendlies
+    'pre_season_friendly_requested' => 'Friendly requested against :team.',
+    'pre_season_friendly_cancelled' => 'Friendly cancelled.',
+    'pre_season_friendly_not_found' => 'Could not find that friendly to cancel.',
+    'pre_season_invalid_opponent' => 'Invalid opponent for a friendly.',
+    'pre_season_foreign_only' => 'During pre-season you can only request friendlies against foreign teams.',
+    'pre_season_no_slots' => 'No available pre-season slots left.',
+    'pre_season_opponent_busy' => 'That opponent already has a match on this date.',
 ];

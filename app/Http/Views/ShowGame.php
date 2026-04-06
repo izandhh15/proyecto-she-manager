@@ -10,6 +10,7 @@ use App\Models\CupTie;
 use App\Models\Game;
 use App\Models\GameMatch;
 use App\Models\GameStanding;
+use App\Models\Team;
 
 class ShowGame
 {
@@ -135,14 +136,49 @@ class ShowGame
 
         // Add pre-season data
         if ($game->isInPreSeason()) {
+            $preSeasonCompetitionId = config('preseason.competition_id', 'PRESEASON');
+            $preSeasonSchedule = collect(config('preseason.schedule', []))->values();
+
             $firstCompetitiveMatch = GameMatch::where('game_id', $game->id)
-                ->where('competition_id', '!=', 'PRESEASON')
+                ->where('competition_id', '!=', $preSeasonCompetitionId)
                 ->where('played', false)
                 ->orderBy('scheduled_date')
                 ->first();
 
+            $preSeasonMatches = GameMatch::with(['homeTeam', 'awayTeam'])
+                ->where('game_id', $game->id)
+                ->where('competition_id', $preSeasonCompetitionId)
+                ->where('played', false)
+                ->orderBy('round_number')
+                ->get();
+
+            $usedRoundNumbers = $preSeasonMatches->pluck('round_number')->all();
+            $availableRoundOptions = $preSeasonSchedule
+                ->filter(fn (array $slot, int $index) => !in_array($index + 1, $usedRoundNumbers, true))
+                ->map(function (array $slot, int $index) use ($game) {
+                    $date = \Carbon\Carbon::createFromDate((int) $game->season, $slot['month'], $slot['day']);
+
+                    return [
+                        'round' => $index + 1,
+                        'label' => $date->locale(app()->getLocale())->translatedFormat('d M Y'),
+                    ];
+                })
+                ->values();
+
+            $opponentTeamIds = Team::where('country', '!=', ($game->country ?? 'ES'))
+                ->pluck('id')
+                ->all();
+
+            $friendlyOpponents = Team::whereIn('id', $opponentTeamIds)
+                ->orderBy('name')
+                ->limit(200)
+                ->get(['id', 'name', 'country']);
+
             $viewData['isPreSeason'] = true;
             $viewData['seasonStartDate'] = $firstCompetitiveMatch?->scheduled_date;
+            $viewData['preSeasonMatches'] = $preSeasonMatches;
+            $viewData['friendlyOpponents'] = $friendlyOpponents;
+            $viewData['friendlyRoundOptions'] = $availableRoundOptions;
         }
 
         return view('game', $viewData);

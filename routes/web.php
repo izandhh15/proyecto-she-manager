@@ -48,6 +48,8 @@ use App\Http\Actions\UpdatePlayerNumber;
 use App\Http\Actions\RemoveFromShortlist;
 use App\Http\Actions\DeleteScoutSearch;
 use App\Http\Actions\SkipPreSeason;
+use App\Http\Actions\RequestPreSeasonFriendly;
+use App\Http\Actions\CancelPreSeasonFriendly;
 use App\Http\Actions\SubmitTransferBid;
 use App\Http\Actions\UnlistPlayerFromTransfer;
 use App\Http\Views\ShowLineup;
@@ -132,6 +134,8 @@ Route::middleware('auth')->group(function () {
         // Game Actions
         Route::post('/game/{gameId}/advance', AdvanceMatchday::class)->name('game.advance');
         Route::post('/game/{gameId}/skip-pre-season', SkipPreSeason::class)->name('game.skip-pre-season');
+        Route::post('/game/{gameId}/pre-season/friendly', RequestPreSeasonFriendly::class)->name('game.pre-season.friendly.request');
+        Route::delete('/game/{gameId}/pre-season/friendly/{matchId}', CancelPreSeasonFriendly::class)->name('game.pre-season.friendly.cancel');
         Route::post('/game/{gameId}/lineup', SaveLineup::class)->name('game.lineup.save');
         Route::get('/game/{gameId}/lineup/auto', GetAutoLineup::class)->name('game.lineup.auto');
         Route::post('/game/{gameId}/tactical-presets', SaveTacticalPreset::class)->name('game.tactical-presets.save');

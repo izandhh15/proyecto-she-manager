@@ -429,4 +429,12 @@ return [
     'pre_season_banner_desc' => 'La temporada comienza el :date. Aprovecha para configurar tu plantilla, jugar amistosos y fichar jugadores.',
     'pre_season_skip' => 'Saltar Pretemporada',
     'pre_season_skipped' => 'Pretemporada saltada. La temporada ha comenzado.',
+    'pre_season_schedule' => 'Calendario de amistosos',
+    'pre_season_no_friendlies' => 'No hay amistosos programados.',
+    'pre_season_request_friendly' => 'Solicitar amistoso',
+    'pre_season_cancel_friendly' => 'Cancelar',
+    'pre_season_opponent' => 'Rival',
+    'pre_season_select_opponent' => 'Selecciona un rival',
+    'pre_season_slot' => 'Fecha',
+    'pre_season_first_available_slot' => 'Primer hueco disponible',
 ];

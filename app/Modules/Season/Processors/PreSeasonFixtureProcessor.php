@@ -20,16 +20,6 @@ use Illuminate\Support\Str;
  */
 class PreSeasonFixtureProcessor implements SeasonProcessor
 {
-    private const PRESEASON_COMPETITION_ID = 'PRESEASON';
-    private const NUM_MATCHES = 4;
-
-    private const PRESEASON_SCHEDULE = [
-        ['day' => 12, 'month' => 7, 'home' => true],
-        ['day' => 22, 'month' => 7, 'home' => false],
-        ['day' => 2,  'month' => 8, 'home' => true],
-        ['day' => 10, 'month' => 8, 'home' => false],
-    ];
-
     public function priority(): int
     {
         return 108;
@@ -43,20 +33,22 @@ class PreSeasonFixtureProcessor implements SeasonProcessor
 
         $seasonYear = (int) $data->newSeason;
         $opponents = $this->selectOpponents($game);
+        $schedule = config('preseason.schedule', []);
+        $competitionId = config('preseason.competition_id', 'PRESEASON');
 
-        foreach (self::PRESEASON_SCHEDULE as $i => $schedule) {
+        foreach ($schedule as $i => $slot) {
             if (! isset($opponents[$i])) {
                 break;
             }
 
-            $date = Carbon::createFromDate($seasonYear, $schedule['month'], $schedule['day']);
+            $date = Carbon::createFromDate($seasonYear, $slot['month'], $slot['day']);
 
             GameMatch::create([
                 'id' => Str::uuid()->toString(),
                 'game_id' => $game->id,
-                'competition_id' => self::PRESEASON_COMPETITION_ID,
-                'home_team_id' => $schedule['home'] ? $game->team_id : $opponents[$i]->id,
-                'away_team_id' => $schedule['home'] ? $opponents[$i]->id : $game->team_id,
+                'competition_id' => $competitionId,
+                'home_team_id' => $slot['home'] ? $game->team_id : $opponents[$i]->id,
+                'away_team_id' => $slot['home'] ? $opponents[$i]->id : $game->team_id,
                 'scheduled_date' => $date->toDateString(),
                 'round_number' => $i + 1,
                 'played' => false,
@@ -93,7 +85,7 @@ class PreSeasonFixtureProcessor implements SeasonProcessor
                 $query->whereIn('reputation_level', $validLevels);
             })
             ->inRandomOrder()
-            ->limit(self::NUM_MATCHES)
+            ->limit((int) config('preseason.num_matches', 4))
             ->get();
     }
 }

@@ -345,7 +345,7 @@ class SeedReferenceData extends Command
         $teamIdMap = $this->seedTeams($teamsData['clubs'], $code, $seasonId, $country);
 
         // Seed players (embedded in teams data)
-        $this->seedPlayersFromTeams($teamsData['clubs'], $teamIdMap);
+        $this->seedPlayersFromTeams($teamsData['clubs'], $teamIdMap, $code);
 
     }
 
@@ -375,7 +375,7 @@ class SeedReferenceData extends Command
         $teamIdMap = $this->seedSwissFormatTeams($teamsData['clubs'], $code, $season);
 
         // Seed embedded player data if present (clubs that have a 'players' array)
-        $this->seedPlayersFromTeams($teamsData['clubs'], $teamIdMap);
+        $this->seedPlayersFromTeams($teamsData['clubs'], $teamIdMap, $code);
 
         // Swiss league phase fixtures are generated per-game by SetupNewGame
 
@@ -467,7 +467,7 @@ class SeedReferenceData extends Command
         }
 
         $this->line("  Teams: " . count($teamIdMap));
-        $this->seedPlayersFromTeams($clubs, $teamIdMap);
+        $this->seedPlayersFromTeams($clubs, $teamIdMap, $code);
     }
 
     /**
@@ -617,7 +617,7 @@ class SeedReferenceData extends Command
     /**
      * Seed players from embedded team data.
      */
-    private function seedPlayersFromTeams(array $clubs, array $teamIdMap): void
+    private function seedPlayersFromTeams(array $clubs, array $teamIdMap, string $competitionCode): void
     {
         $count = 0;
         $valuationService = app(PlayerValuationService::class);
@@ -659,6 +659,8 @@ class SeedReferenceData extends Command
 
                 // Calculate abilities from market value, position, and age
                 $marketValueCents = Money::parseMarketValue($player['marketValue'] ?? null);
+                $teamMultiplier = $this->resolveTeamValuationMultiplier($competitionCode, $club['name'] ?? null);
+                $marketValueCents = (int) round($marketValueCents * $teamMultiplier);
                 $position = $player['position'] ?? 'Central Midfield';
                 [$technical, $physical] = $valuationService->marketValueToAbilities($marketValueCents, $position, $age ?? 25);
 
@@ -706,6 +708,41 @@ class SeedReferenceData extends Command
         }
 
         $this->line("  Players: {$count}");
+    }
+
+    /**
+     * Resolve valuation multiplier by competition and team.
+     *
+     * Multipliers are configured in config/team_valuation_rebalance.php.
+     */
+    private function resolveTeamValuationMultiplier(string $competitionCode, ?string $teamName): float
+    {
+        if (empty($teamName)) {
+            return 1.0;
+        }
+
+        $normalizedTeamName = $this->normalizeTeamName($teamName);
+        $competitionConfig = config("team_valuation_rebalance.competitions.{$competitionCode}.team_multipliers", []);
+
+        if (!is_array($competitionConfig) || empty($competitionConfig)) {
+            return 1.0;
+        }
+
+        $multiplier = (float) ($competitionConfig[$normalizedTeamName] ?? 1.0);
+
+        return max(0.75, min(1.40, $multiplier));
+    }
+
+    /**
+     * Normalize team names for stable config lookups.
+     */
+    private function normalizeTeamName(string $name): string
+    {
+        $normalized = mb_strtolower(trim($name));
+        $normalized = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $normalized) ?: $normalized;
+        $normalized = preg_replace('/[^a-z0-9]+/', ' ', $normalized) ?? $normalized;
+
+        return trim($normalized);
     }
 
     private function approximateDateOfBirthFromAge(int $age): ?string

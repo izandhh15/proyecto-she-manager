@@ -125,4 +125,13 @@ return [
     // Game management
     'game_deleted' => 'Partida eliminada correctamente.',
     'game_limit_reached' => 'Has alcanzado el límite máximo de 3 partidas. Elimina una para crear otra nueva.',
+
+    // Pre-season friendlies
+    'pre_season_friendly_requested' => 'Amistoso solicitado contra :team.',
+    'pre_season_friendly_cancelled' => 'Amistoso cancelado.',
+    'pre_season_friendly_not_found' => 'No se pudo encontrar el amistoso para cancelarlo.',
+    'pre_season_invalid_opponent' => 'Rival inválido para un amistoso.',
+    'pre_season_foreign_only' => 'En pretemporada solo puedes solicitar amistosos contra equipos extranjeros.',
+    'pre_season_no_slots' => 'No hay huecos libres en el calendario de pretemporada.',
+    'pre_season_opponent_busy' => 'Ese rival ya tiene partido en esa fecha.',
 ];
