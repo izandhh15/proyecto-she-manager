@@ -421,6 +421,10 @@ return [
     // Onboarding - Club Info
     'stadium' => 'Estadio',
     'seats' => ':count localidades',
+    'attendance' => 'Asistencia',
+    'average_attendance' => 'Asistencia media',
+    'last_home_crowd' => 'Última entrada en casa',
+    'occupancy' => 'Ocupación',
 
     // Pre-season
     'pre_season' => 'Pretemporada',
@@ -455,6 +459,5 @@ return [
     'national_team_must_differ' => 'La selección nacional debe ser distinta al club.',
     'national_mode_unavailable' => 'El modo de selección no está disponible temporalmente.',
 ];
-
 
 

@@ -119,6 +119,10 @@ class ShowSeasonEnd
         $teamTopScorer = $teamPlayers->where('goals', '>', 0)->sortByDesc('goals')->first();
         $teamTopAssister = $teamPlayers->where('assists', '>', 0)->sortByDesc('assists')->first();
         $teamMostAppearances = $teamPlayers->sortByDesc('appearances')->first();
+        $teamBestGoalkeeper = $teamPlayers
+            ->where('position', 'Goalkeeper')
+            ->sortByDesc('clean_sheets')
+            ->first();
         $teamYellowCards = $teamPlayers->sum('yellow_cards');
         $teamRedCards = $teamPlayers->sum('red_cards');
         $teamCleanSheets = $teamPlayers->where('position', 'Goalkeeper')->sum('clean_sheets');
@@ -180,6 +184,7 @@ class ShowSeasonEnd
             'teamTopScorer' => $teamTopScorer,
             'teamTopAssister' => $teamTopAssister,
             'teamMostAppearances' => $teamMostAppearances,
+            'teamBestGoalkeeper' => $teamBestGoalkeeper,
             'biggestVictory' => $biggestVictory,
             'worstDefeat' => $worstDefeat,
             'homeRecord' => $homeRecord,

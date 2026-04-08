@@ -16,6 +16,7 @@ use App\Models\GameStanding;
 use App\Models\Player;
 use App\Support\ExternalData;
 use App\Models\Team;
+use App\Modules\Match\Services\MatchVenueService;
 use App\Modules\Season\Services\TournamentRosterFallbackService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -155,6 +156,7 @@ class SetupTournamentGame implements ShouldQueue
         }
 
         $matchRows = [];
+        $venueService = app(MatchVenueService::class);
 
         foreach ($groupsData as $groupLabel => $groupInfo) {
             foreach ($groupInfo['matches'] as $match) {
@@ -165,6 +167,18 @@ class SetupTournamentGame implements ShouldQueue
                     continue;
                 }
 
+                $venue = $venueService->resolve(
+                    homeTeamId: $homeTeamId,
+                    competitionId: self::COMPETITION_ID,
+                    roundNumber: (int) $match['round'],
+                    matchKey: implode('|', [
+                        $this->gameId,
+                        $homeTeamId,
+                        $awayTeamId,
+                        $match['date'],
+                    ]),
+                );
+
                 $matchRows[] = [
                     'id' => Str::uuid()->toString(),
                     'game_id' => $this->gameId,
@@ -174,6 +188,8 @@ class SetupTournamentGame implements ShouldQueue
                     'home_team_id' => $homeTeamId,
                     'away_team_id' => $awayTeamId,
                     'scheduled_date' => $match['date'],
+                    'venue_name' => $venue['venue_name'],
+                    'venue_capacity' => $venue['venue_capacity'],
                     'played' => false,
                 ];
             }

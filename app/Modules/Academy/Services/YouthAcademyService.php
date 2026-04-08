@@ -6,6 +6,7 @@ use App\Modules\Squad\DTOs\GeneratedPlayerData;
 use App\Models\AcademyPlayer;
 use App\Models\Game;
 use App\Models\GamePlayer;
+use App\Models\Team;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -59,6 +60,12 @@ class YouthAcademyService
      */
     public function generateSeasonBatch(Game $game): Collection
     {
+        $reserveProspects = $this->syncReserveTeamProspects($game);
+
+        if ($this->isReserveAcademy($game)) {
+            return $reserveProspects;
+        }
+
         $tier = $game->currentInvestment->youth_academy_tier ?? 0;
 
         if ($tier === 0) {
@@ -76,6 +83,127 @@ class YouthAcademyService
         }
 
         return $prospects;
+    }
+
+    public function linkedReserveTeam(Game $game): ?Team
+    {
+        return Team::query()
+            ->where('parent_team_id', $game->team_id)
+            ->orderBy('name')
+            ->first();
+    }
+
+    public function isReserveAcademy(Game $game): bool
+    {
+        return $this->linkedReserveTeam($game) !== null;
+    }
+
+    public function capacityForGame(Game $game): ?int
+    {
+        if ($this->isReserveAcademy($game)) {
+            return null;
+        }
+
+        return self::getCapacity($game->currentInvestment->youth_academy_tier ?? 0);
+    }
+
+    /**
+     * Mirror a linked reserve squad into the academy view.
+     *
+     * @return Collection<int, AcademyPlayer> Newly created academy entries
+     */
+    public function syncReserveTeamProspects(Game $game): Collection
+    {
+        $reserveTeam = $this->linkedReserveTeam($game);
+
+        if (! $reserveTeam) {
+            return collect();
+        }
+
+        $existingLinked = AcademyPlayer::query()
+            ->where('game_id', $game->id)
+            ->where('team_id', $game->team_id)
+            ->whereNotNull('source_game_player_id')
+            ->get()
+            ->keyBy('source_game_player_id');
+
+        if ($existingLinked->isEmpty()) {
+            AcademyPlayer::query()
+                ->where('game_id', $game->id)
+                ->where('team_id', $game->team_id)
+                ->whereNull('source_game_player_id')
+                ->delete();
+        }
+
+        $reservePlayers = GamePlayer::query()
+            ->with('player')
+            ->where('game_id', $game->id)
+            ->where('team_id', $reserveTeam->id)
+            ->orderBy('team_id')
+            ->orderByDesc('potential')
+            ->orderByDesc('game_technical_ability')
+            ->get();
+
+        $syncedIds = [];
+        $created = collect();
+
+        foreach ($reservePlayers as $reservePlayer) {
+            if (! $reservePlayer->player) {
+                continue;
+            }
+
+            $syncedIds[] = $reservePlayer->id;
+            $existing = $existingLinked->get($reservePlayer->id);
+
+            $attributes = [
+                'source_team_id' => $reserveTeam->id,
+                'name' => $reservePlayer->name,
+                'nationality' => $reservePlayer->nationality,
+                'date_of_birth' => $reservePlayer->player->date_of_birth
+                    ?? $game->current_date?->copy()->subYears(20)
+                    ?? Carbon::createFromDate((int) $game->season - 20, 7, 1),
+                'position' => $reservePlayer->position,
+                'technical_ability' => $reservePlayer->current_technical_ability,
+                'physical_ability' => $reservePlayer->current_physical_ability,
+                'potential' => $reservePlayer->potential ?? max($reservePlayer->current_technical_ability, $reservePlayer->current_physical_ability),
+                'potential_low' => $reservePlayer->potential_low ?? max($reservePlayer->current_technical_ability, $reservePlayer->current_physical_ability),
+                'potential_high' => $reservePlayer->potential_high ?? max($reservePlayer->current_technical_ability, $reservePlayer->current_physical_ability),
+                'contract_until' => $reservePlayer->contract_until,
+            ];
+
+            if ($existing) {
+                $existing->update($attributes);
+
+                continue;
+            }
+
+            $created->push(AcademyPlayer::create($attributes + [
+                'id' => Str::uuid()->toString(),
+                'game_id' => $game->id,
+                'team_id' => $game->team_id,
+                'source_game_player_id' => $reservePlayer->id,
+                'appeared_at' => $game->current_date,
+                'is_on_loan' => false,
+                'joined_season' => (int) $game->season,
+                'initial_technical' => $reservePlayer->current_technical_ability,
+                'initial_physical' => $reservePlayer->current_physical_ability,
+            ]));
+        }
+
+        $staleQuery = AcademyPlayer::query()
+            ->where('game_id', $game->id)
+            ->where('team_id', $game->team_id)
+            ->whereNotNull('source_game_player_id');
+
+        if ($syncedIds === []) {
+            $staleQuery->delete();
+        } else {
+            $staleQuery
+                ->whereNotIn('source_game_player_id', $syncedIds)
+                ->delete();
+        }
+
+        return $created;
     }
 
     /**
@@ -276,6 +404,26 @@ class YouthAcademyService
      */
     public function promoteToFirstTeam(AcademyPlayer $academy, Game $game): GamePlayer
     {
+        if ($academy->source_game_player_id) {
+            $linkedPlayer = GamePlayer::query()
+                ->where('game_id', $game->id)
+                ->where('id', $academy->source_game_player_id)
+                ->first();
+
+            if ($linkedPlayer) {
+                $linkedPlayer->update([
+                    'team_id' => $game->team_id,
+                    'number' => GamePlayer::nextAvailableNumber($game->id, $game->team_id),
+                    'position' => $academy->position,
+                    'contract_until' => $academy->contract_until ?? $linkedPlayer->contract_until,
+                ]);
+
+                $academy->delete();
+
+                return $linkedPlayer->refresh();
+            }
+        }
+
         $gamePlayer = $this->playerGenerator->create($game, new GeneratedPlayerData(
             teamId: $academy->team_id,
             position: $academy->position,

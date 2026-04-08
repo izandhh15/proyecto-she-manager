@@ -22,6 +22,11 @@ class LoanAcademyPlayer
             ->where('is_on_loan', false)
             ->firstOrFail();
 
+        if ($academy->is_reserve_linked) {
+            return redirect()->route('game.squad.academy', $gameId)
+                ->with('error', __('messages.academy_reserve_action_blocked'));
+        }
+
         $playerName = $academy->name;
 
         $this->youthAcademyService->loanPlayer($academy);

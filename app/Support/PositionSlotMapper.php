@@ -10,6 +10,8 @@ namespace App\Support;
  */
 class PositionSlotMapper
 {
+    public const SECONDARY_POSITION_MIN_SCORE = 40;
+
     /**
      * Compatibility matrix: [slot_code => [position => score]]
      * Score: 100 = natural, 80 = very good, 60 = good, 40 = acceptable, 20 = poor, 0 = unsuitable
@@ -188,5 +190,27 @@ class PositionSlotMapper
             'LW', 'RW', 'CF' => 'Forward',
             default => 'Midfielder',
         };
+    }
+
+    /**
+     * Get alternate pitch slots a player can cover with acceptable compatibility.
+     *
+     * @return array<string, int> [slot_code => score]
+     */
+    public static function getSecondarySlots(string $position, int $minimumScore = self::SECONDARY_POSITION_MIN_SCORE): array
+    {
+        $secondarySlots = [];
+
+        foreach (self::SLOT_COMPATIBILITY as $slotCode => $compatibility) {
+            $score = $compatibility[$position] ?? 0;
+
+            if ($score >= $minimumScore && $score < 100) {
+                $secondarySlots[$slotCode] = $score;
+            }
+        }
+
+        arsort($secondarySlots);
+
+        return $secondarySlots;
     }
 }

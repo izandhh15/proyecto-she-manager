@@ -123,6 +123,16 @@ class PositionMapper
     }
 
     /**
+     * Get localized display name for an internal slot code.
+     */
+    public static function slotToDisplayName(string $slotCode): string
+    {
+        $key = self::$slotToKey[$slotCode] ?? null;
+
+        return $key ? __("positions.{$key}") : $slotCode;
+    }
+
+    /**
      * Get localized display name for a scout search filter value (GK, CB, any_defender, etc.).
      */
     public static function filterToDisplayName(string $filterValue): string

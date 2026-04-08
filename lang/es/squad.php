@@ -186,6 +186,7 @@ return [
     'clean_sheets_full' => 'Porterías a Cero',
     'goals_conceded_full' => 'Goles Encajados',
     'discovered' => 'Descubierto',
+    'secondary_positions' => 'Posiciones secundarias',
 
     // Academy
     'academy' => 'Cantera',
@@ -363,4 +364,25 @@ return [
 
     // Dorsales
     'number' => 'Dorsal',
+    'academy_model' => 'Modelo',
+    'academy_model_reserve' => 'Filial real',
+    'academy_reserve_badge' => 'Filial',
+    'academy_source_team' => 'Equipo base',
+    'academy_promotion_cost' => 'Coste de subida',
+    'academy_free' => 'Gratis',
+    'academy_contract_short' => 'Contrato :year',
+    'no_reserve_players' => 'No hay jugadoras disponibles en el filial.',
+    'academy_reserve_explanation' => 'La cantera usa el filial real (:team). Puedes subir a sus jugadoras gratis cuando quieras.',
+    'academy_reserve_empty' => 'Cuando haya jugadoras con contrato activo en el filial aparecerÃ¡n aquÃ­ automÃ¡ticamente.',
+    'academy_reserve_help_intro' => 'En este club la cantera funciona como un filial real. La pantalla refleja directamente las jugadoras disponibles en :team.',
+    'academy_reserve_help_title' => 'Como funciona el filial',
+    'academy_reserve_help_1' => 'Las jugadoras vienen del filial real del club, no de una generaciÃ³n aleatoria.',
+    'academy_reserve_help_2' => 'Las habilidades y el potencial se muestran completos porque ya forman parte de tu estructura.',
+    'academy_reserve_help_3' => 'Subirlas al primer equipo no cuesta dinero y respeta su contrato actual.',
+    'academy_reserve_contracts_title' => 'Contratos y robos',
+    'academy_reserve_contracts_desc' => 'El filial tambiÃ©n tiene contratos reales. Si una jugadora acaba contrato sin subir, otros filiales pueden ficharla.',
+    'academy_reserve_contracts_1' => 'Controla el aÃ±o de contrato en cada jugadora.',
+    'academy_reserve_contracts_2' => 'Si te interesa una jugadora, puedes subirla antes de que llegue a junio.',
+    'academy_reserve_contracts_3' => 'Los equipos cercanos del mismo paÃ­s tienen prioridad para robar talento libre.',
+    'academy_reserve_detail_note' => 'Al ser una jugadora del filial, aquÃ­ solo necesitas decidir si subirla ya o dejarla seguir en el B.',
 ];

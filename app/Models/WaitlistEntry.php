@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property int $id
  * @property string $name
  * @property string $email
+ * @property \Illuminate\Support\Carbon|null $rejected_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\InviteCode|null $inviteCode
@@ -26,7 +27,11 @@ class WaitlistEntry extends Model
 {
     protected $table = 'waitlist';
 
-    protected $fillable = ['name', 'email'];
+    protected $fillable = ['name', 'email', 'rejected_at'];
+
+    protected $casts = [
+        'rejected_at' => 'datetime',
+    ];
 
     public function setEmailAttribute(string $value): void
     {
@@ -36,5 +41,10 @@ class WaitlistEntry extends Model
     public function inviteCode(): HasOne
     {
         return $this->hasOne(InviteCode::class, 'email', 'email');
+    }
+
+    public function isRejected(): bool
+    {
+        return $this->rejected_at !== null;
     }
 }

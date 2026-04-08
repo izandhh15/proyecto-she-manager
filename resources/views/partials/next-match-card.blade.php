@@ -15,7 +15,7 @@
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
             <x-competition-pill :competition="$comp" :round-name="$nextMatch->round_name" :round-number="$nextMatch->round_number" />
             <span class="text-xs text-text-muted truncate">
-                {{ $nextMatch->homeTeam->stadium_name ?? '' }} &middot; {{ $nextMatch->scheduled_date->locale(app()->getLocale())->translatedFormat('d M Y') }}
+                {{ $nextMatch->venue_name ?? $nextMatch->homeTeam->stadium_name ?? '' }} &middot; {{ $nextMatch->scheduled_date->locale(app()->getLocale())->translatedFormat('d M Y') }}
             </span>
         </div>
     </div>

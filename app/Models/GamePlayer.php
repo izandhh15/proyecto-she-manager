@@ -6,6 +6,7 @@ use App\Modules\Player\Services\InjuryService;
 use App\Support\CountryCodeMapper;
 use App\Support\Money;
 use App\Support\PositionMapper;
+use App\Support\PositionSlotMapper;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -795,6 +796,26 @@ class GamePlayer extends Model
     public function getPositionDisplayAttribute(): array
     {
         return PositionMapper::getPositionDisplay($this->position);
+    }
+
+    /**
+     * Get secondary position displays derived from slot compatibility.
+     *
+     * @return array<int, array{slot: string, abbreviation: string, name: string, score: int}>
+     */
+    public function getSecondaryPositionDisplaysAttribute(): array
+    {
+        $secondarySlots = PositionSlotMapper::getSecondarySlots($this->position);
+
+        return collect($secondarySlots)
+            ->map(fn (int $score, string $slotCode) => [
+                'slot' => $slotCode,
+                'abbreviation' => PositionMapper::slotToDisplayAbbreviation($slotCode),
+                'name' => PositionMapper::slotToDisplayName($slotCode),
+                'score' => $score,
+            ])
+            ->values()
+            ->all();
     }
 
     /**

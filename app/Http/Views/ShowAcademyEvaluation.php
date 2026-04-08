@@ -8,13 +8,25 @@ use App\Models\Game;
 
 class ShowAcademyEvaluation
 {
+    public function __construct(
+        private readonly YouthAcademyService $youthAcademyService,
+    ) {}
+
     public function __invoke(string $gameId)
     {
         $game = Game::with('team')->findOrFail($gameId);
         abort_if($game->isTournamentMode(), 404);
 
+        if ($this->youthAcademyService->isReserveAcademy($game)) {
+            $this->youthAcademyService->syncReserveTeamProspects($game);
+            $game->removePendingAction('academy_evaluation');
+
+            return redirect()->route('game.squad.academy', $gameId)
+                ->with('success', __('messages.academy_evaluation_not_needed'));
+        }
+
         $tier = $game->currentInvestment->youth_academy_tier ?? 0;
-        $capacity = YouthAcademyService::getCapacity($tier);
+        $capacity = $this->youthAcademyService->capacityForGame($game) ?? 0;
         $arrivalsRange = YouthAcademyService::getArrivalsRange($tier);
 
         $players = AcademyPlayer::where('game_id', $gameId)

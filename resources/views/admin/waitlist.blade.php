@@ -6,7 +6,7 @@
     <x-flash-message type="success" :message="session('success')" class="mb-4" />
     <x-flash-message type="error" :message="session('error')" class="mb-4" />
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
         <div class="bg-surface-800 border border-border-default rounded-xl p-4">
             <div class="text-xs text-text-muted uppercase tracking-wider mb-1">{{ __('admin.waitlist_total') }}</div>
             <div class="font-heading text-2xl font-bold text-text-primary">{{ number_format($total) }}</div>
@@ -22,6 +22,10 @@
         <div class="bg-surface-800 border border-border-default rounded-xl p-4">
             <div class="text-xs text-text-muted uppercase tracking-wider mb-1">{{ __('admin.waitlist_registered') }}</div>
             <div class="font-heading text-2xl font-bold text-accent-green">{{ number_format($registered) }}</div>
+        </div>
+        <div class="bg-surface-800 border border-border-default rounded-xl p-4">
+            <div class="text-xs text-text-muted uppercase tracking-wider mb-1">{{ __('admin.waitlist_rejected_count') }}</div>
+            <div class="font-heading text-2xl font-bold text-accent-primary">{{ number_format($rejected) }}</div>
         </div>
     </div>
 
@@ -40,7 +44,7 @@
         </div>
     </form>
 
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto rounded-xl border border-border-default bg-surface-800">
         <table class="min-w-full divide-y divide-border-default">
             <thead>
                 <tr>
@@ -53,6 +57,12 @@
             </thead>
             <tbody class="divide-y divide-border-default">
                 @foreach($entries as $entry)
+                    @php
+                        $isRejected = $entry->isRejected();
+                        $isPending = !$isRejected && !$entry->inviteCode;
+                        $isRegistered = !$isRejected && $entry->inviteCode && $entry->inviteCode->times_used > 0;
+                        $isInvited = !$isRejected && $entry->inviteCode && $entry->inviteCode->times_used === 0;
+                    @endphp
                     <tr>
                         <td class="px-4 py-3 text-sm text-text-primary">
                             {{ $entry->name }}
@@ -60,29 +70,50 @@
                         </td>
                         <td class="px-4 py-3 text-sm text-text-muted hidden md:table-cell">{{ $entry->email }}</td>
                         <td class="px-4 py-3 text-sm">
-                            @if(! $entry->inviteCode)
-                                <span class="inline-flex items-center rounded-full bg-accent-gold/10 px-2 py-0.5 text-xs font-medium text-accent-gold ring-1 ring-inset ring-accent-gold/20">
-                                    {{ __('admin.waitlist_status_pending') }}
+                            @if($isRejected)
+                                <span class="inline-flex items-center rounded-full bg-accent-primary/10 px-2 py-0.5 text-xs font-medium text-accent-primary ring-1 ring-inset ring-accent-primary/20">
+                                    {{ __('admin.waitlist_status_rejected') }}
                                 </span>
-                            @elseif($entry->inviteCode->times_used > 0)
+                            @elseif($isRegistered)
                                 <span class="inline-flex items-center rounded-full bg-accent-green/10 px-2 py-0.5 text-xs font-medium text-accent-green ring-1 ring-inset ring-accent-green/20">
                                     {{ __('admin.waitlist_status_registered') }}
                                 </span>
-                            @else
+                            @elseif($isInvited)
                                 <span class="inline-flex items-center rounded-full bg-accent-blue/10 px-2 py-0.5 text-xs font-medium text-accent-blue ring-1 ring-inset ring-accent-blue/20">
                                     {{ __('admin.waitlist_status_invited') }}
                                 </span>
+                            @else
+                                <span class="inline-flex items-center rounded-full bg-accent-gold/10 px-2 py-0.5 text-xs font-medium text-accent-gold ring-1 ring-inset ring-accent-gold/20">
+                                    {{ __('admin.waitlist_status_pending') }}
+                                </span>
                             @endif
                         </td>
-                        <td class="px-4 py-3 text-sm text-text-muted hidden md:table-cell">{{ $entry->created_at->format('d/m/Y') }}</td>
-                        <td class="px-4 py-3 text-right whitespace-nowrap">
-                            @if(! $entry->inviteCode)
-                                <form method="POST" action="{{ route('admin.send-waitlist-invite', $entry) }}" class="inline">
-                                    @csrf
-                                    <x-ghost-button type="submit" color="blue" size="xs">
-                                        {{ __('admin.waitlist_send_invite') }}
-                                    </x-ghost-button>
-                                </form>
+                        <td class="px-4 py-3 text-sm text-text-muted hidden md:table-cell">
+                            {{ $entry->created_at?->format('d/m/Y') }}
+                            @if($isRejected && $entry->rejected_at)
+                                <div class="text-[10px] text-accent-primary mt-1">{{ __('admin.waitlist_rejected_on', ['date' => $entry->rejected_at->format('d/m/Y')]) }}</div>
+                            @endif
+                        </td>
+                        <td class="px-4 py-3 text-right">
+                            @if($isPending)
+                                <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
+                                    <form method="POST" action="{{ route('admin.send-waitlist-invite', $entry) }}">
+                                        @csrf
+                                        <x-ghost-button type="submit" color="blue" size="xs" class="w-full sm:w-auto">
+                                            {{ __('admin.waitlist_send_invite') }}
+                                        </x-ghost-button>
+                                    </form>
+                                    <form method="POST" action="{{ route('admin.reject-waitlist-entry', $entry) }}">
+                                        @csrf
+                                        <x-ghost-button type="submit" color="red" size="xs" class="w-full sm:w-auto">
+                                            {{ __('admin.waitlist_reject') }}
+                                        </x-ghost-button>
+                                    </form>
+                                </div>
+                            @elseif($isRejected)
+                                <span class="text-xs text-text-faint">{{ __('admin.waitlist_no_actions') }}</span>
+                            @else
+                                <span class="text-xs text-text-faint">{{ __('admin.waitlist_processed') }}</span>
                             @endif
                         </td>
                     </tr>

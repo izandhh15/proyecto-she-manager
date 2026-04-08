@@ -126,7 +126,15 @@ export function drawStatsRow(ctx, stats, { padding, contentWidth, y }) {
     return y;
 }
 
-export function drawBrandFooter(ctx, width, y, { tagline = 'Juega a ser seleccionador en virtuafc.com' } = {}) {
+export function drawBrandFooter(
+    ctx,
+    width,
+    y,
+    {
+        badgeText = 'SheManager',
+        tagline = 'Dirige tu club en shemanager.koyeb.app',
+    } = {}
+) {
     const padding = DEFAULT_PADDING;
 
     y += 16;
@@ -134,7 +142,6 @@ export function drawBrandFooter(ctx, width, y, { tagline = 'Juega a ser seleccio
     y += 16;
 
     // Virtua FC badge — compensate skew to visually center
-    const badgeText = 'Virtua FC';
     ctx.font = '800 14px "Barlow Semi Condensed", sans-serif';
     const badgeWidth = ctx.measureText(badgeText).width + 16;
     const badgeHeight = 22;
@@ -161,17 +168,41 @@ export function drawBrandFooter(ctx, width, y, { tagline = 'Juega a ser seleccio
     return y;
 }
 
-export function trimAndDownload(canvas, y, filename) {
+export function trimCanvas(canvas, y) {
     const finalCanvas = document.createElement('canvas');
     finalCanvas.width = canvas.width;
     finalCanvas.height = y * SCALE;
     const fctx = finalCanvas.getContext('2d');
     fctx.drawImage(canvas, 0, 0);
 
+    return finalCanvas;
+}
+
+export function downloadCanvas(canvas, filename) {
+    const href = canvas.toDataURL('image/png');
+
     const link = document.createElement('a');
     link.download = filename;
-    link.href = finalCanvas.toDataURL('image/png');
+    link.href = href;
     link.click();
+}
+
+export function trimAndDownload(canvas, y, filename) {
+    const finalCanvas = trimCanvas(canvas, y);
+    downloadCanvas(finalCanvas, filename);
+}
+
+export function canvasToBlob(canvas) {
+    return new Promise((resolve, reject) => {
+        canvas.toBlob((blob) => {
+            if (blob) {
+                resolve(blob);
+                return;
+            }
+
+            reject(new Error('Could not export canvas.'));
+        }, 'image/png');
+    });
 }
 
 export function wrapText(ctx, text, maxWidth) {

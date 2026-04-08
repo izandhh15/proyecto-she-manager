@@ -8,6 +8,7 @@ use App\Models\FinancialTransaction;
 use App\Models\TeamReputation;
 use App\Models\Game;
 use App\Models\GameInvestment;
+use App\Models\GameMatch;
 use App\Models\GamePlayer;
 use App\Models\GameStanding;
 use App\Models\Loan;
@@ -134,7 +135,31 @@ class SeasonSettlementProcessor implements SeasonProcessor
         $config = $league->getConfig();
         $positionFactor = $config->getPositionFactor($position);
 
-        return (int) ($base * $facilitiesMultiplier * $positionFactor);
+        $projectedRevenue = (int) ($base * $facilitiesMultiplier * $positionFactor);
+
+        $occupancyRatios = GameMatch::where('game_id', $game->id)
+            ->where('home_team_id', $game->team_id)
+            ->where('played', true)
+            ->get(['attendance', 'venue_capacity'])
+            ->map(function (GameMatch $match) use ($team) {
+                $capacity = (int) ($match->venue_capacity ?: $team->stadium_seats);
+                if ($capacity <= 0 || ! $match->attendance) {
+                    return null;
+                }
+
+                return min(1, $match->attendance / max(1, $capacity));
+            })
+            ->filter();
+
+        if ($occupancyRatios->isEmpty()) {
+            return $projectedRevenue;
+        }
+
+        $baselineOccupancy = app(\App\Modules\Match\Services\MatchAttendanceService::class)
+            ->expectedBaselineOccupancy();
+        $scalingFactor = $occupancyRatios->avg() / max(0.1, $baselineOccupancy);
+
+        return (int) round($projectedRevenue * $scalingFactor);
     }
 
     /**

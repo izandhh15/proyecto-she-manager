@@ -578,17 +578,139 @@ $getZoneClass = function($position) use ($standingsZones, $borderColorMap) {
         </x-section-card>
         @endif
 
-        <x-section-card :title="__('season.share_season')" class="mb-6">
+        @php
+            $seasonSummaryConfig = [
+                'teamName' => $game->team->name,
+                'teamCrestUrl' => $game->team->image,
+                'subtitle' => $game->formatted_season . ' · ' . (($playerStanding?->position ?? null) ? $playerStanding->position . 'º' : '-'),
+                'subtitleColor' => $isChampion ? '#f59e0b' : '#94a3b8',
+                'record' => [
+                    'played' => (int) ($playerStanding?->played ?? 0),
+                    'won' => (int) ($playerStanding?->won ?? 0),
+                    'drawn' => (int) ($playerStanding?->drawn ?? 0),
+                    'lost' => (int) ($playerStanding?->lost ?? 0),
+                    'gf' => (int) ($playerStanding?->goals_for ?? 0),
+                    'ga' => (int) ($playerStanding?->goals_against ?? 0),
+                    'pts' => (int) ($playerStanding?->points ?? 0),
+                ],
+                'highlights' => array_values(array_filter([
+                    $teamTopScorer && $teamTopScorer->goals > 0 ? [
+                        'playerName' => $teamTopScorer->player->name,
+                        'value' => $teamTopScorer->goals,
+                        'label' => __('season.goals'),
+                    ] : null,
+                    $teamTopAssister && $teamTopAssister->assists > 0 ? [
+                        'playerName' => $teamTopAssister->player->name,
+                        'value' => $teamTopAssister->assists,
+                        'label' => __('season.assists'),
+                    ] : null,
+                    $teamMostAppearances && $teamMostAppearances->appearances > 0 ? [
+                        'playerName' => $teamMostAppearances->player->name,
+                        'value' => $teamMostAppearances->appearances,
+                        'label' => __('season.appearances'),
+                    ] : null,
+                    $teamBestGoalkeeper && $teamBestGoalkeeper->clean_sheets > 0 ? [
+                        'playerName' => $teamBestGoalkeeper->player->name,
+                        'value' => $teamBestGoalkeeper->clean_sheets,
+                        'label' => __('season.clean_sheets'),
+                    ] : null,
+                ])),
+                'homeRecord' => $homeRecord,
+                'awayRecord' => $awayRecord,
+                'otherCompetitions' => collect($otherCompetitionResults)->map(function ($result) {
+                    return [
+                        'name' => __($result['competition']->name),
+                        'result' => $result['wonCompetition']
+                            ? __('season.champion_label')
+                            : ($result['roundName'] ? __($result['roundName']) : __('season.competition_in_progress')),
+                        'isChampion' => (bool) $result['wonCompetition'],
+                    ];
+                })->take(3)->values()->all(),
+                'labels' => [
+                    'played' => __('game.played_abbr'),
+                    'won' => __('game.won_abbr'),
+                    'drawn' => __('game.drawn_abbr'),
+                    'lost' => __('game.lost_abbr'),
+                    'gf' => __('game.goals_for_abbr'),
+                    'ga' => __('game.goals_against_abbr'),
+                    'gd' => __('game.goal_diff_abbr'),
+                    'pts' => __('game.pts_abbr'),
+                    'teamHighlights' => __('season.team_in_numbers'),
+                    'homeRecord' => __('season.home_record'),
+                    'awayRecord' => __('season.away_record'),
+                    'otherCompetitions' => __('season.your_other_competitions'),
+                ],
+            ];
+            $shareIntentUrl = 'https://twitter.com/intent/tweet?text=' . urlencode($shareText);
+        @endphp
+
+        <x-section-card
+            :title="__('season.share_season')"
+            class="mb-6"
+            x-data="seasonSummary(@js($seasonSummaryConfig))"
+        >
             <div class="p-5 md:p-6">
-                <p class="text-sm text-text-secondary mb-3">{{ __('season.share_season_help') }}</p>
-                <div class="rounded-lg border border-border-default bg-surface-700/50 p-3 text-sm text-text-body">{{ $shareText }}</div>
-                <div class="mt-3 flex flex-wrap gap-2">
-                    <a href="https://twitter.com/intent/tweet?text={{ urlencode($shareText) }}" target="_blank" rel="noopener" class="inline-flex min-h-[44px] items-center justify-center rounded-md bg-accent-blue px-4 text-sm font-semibold text-white">
-                        {{ __('season.share_on_x') }}
-                    </a>
-                    <button type="button" onclick="navigator.clipboard.writeText(@js($shareText))" class="inline-flex min-h-[44px] items-center justify-center rounded-md border border-border-strong px-4 text-sm font-semibold text-text-body">
-                        {{ __('season.copy_for_instagram') }}
-                    </button>
+                <p class="text-sm text-text-secondary mb-4">{{ __('season.share_season_help') }}</p>
+
+                <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_20rem] gap-4 items-start">
+                    <div class="rounded-2xl border border-border-default bg-surface-900/80 p-3 md:p-4">
+                        <div class="aspect-[4/5] overflow-hidden rounded-xl border border-white/5 bg-surface-900/60 flex items-center justify-center">
+                            <div x-show="!previewUrl" x-cloak class="text-center px-6">
+                                <div class="mx-auto mb-3 h-10 w-10 rounded-full border-2 border-accent-blue/40 border-t-accent-blue animate-spin"></div>
+                                <p class="text-sm text-text-secondary">{{ __('season.summary_preview_loading') }}</p>
+                            </div>
+
+                            <img
+                                x-show="previewUrl"
+                                x-cloak
+                                :src="previewUrl"
+                                :alt="`{{ __('season.share_season') }} ${teamName}`"
+                                class="w-full h-full object-contain"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="rounded-xl border border-border-default bg-surface-700/50 p-3 text-sm text-text-body">
+                            {{ $shareText }}
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-2">
+                            <button
+                                type="button"
+                                @click="downloadSeasonImage()"
+                                class="inline-flex min-h-[44px] items-center justify-center rounded-md bg-accent-blue px-4 text-sm font-semibold text-white"
+                            >
+                                {{ __('season.download_summary_image') }}
+                            </button>
+
+                            <button
+                                type="button"
+                                @click="shareSeasonImage({ text: @js($shareText), url: window.location.href, fallbackUrl: @js($shareIntentUrl) })"
+                                class="inline-flex min-h-[44px] items-center justify-center rounded-md border border-accent-blue/40 bg-accent-blue/10 px-4 text-sm font-semibold text-accent-blue"
+                            >
+                                {{ __('season.share_summary_image') }}
+                            </button>
+
+                            <a
+                                href="{{ $shareIntentUrl }}"
+                                target="_blank"
+                                rel="noopener"
+                                class="inline-flex min-h-[44px] items-center justify-center rounded-md bg-surface-700 px-4 text-sm font-semibold text-text-body"
+                            >
+                                {{ __('season.share_on_x') }}
+                            </a>
+
+                            <button
+                                type="button"
+                                @click="copyShareText(@js($shareText))"
+                                class="inline-flex min-h-[44px] items-center justify-center rounded-md border border-border-strong px-4 text-sm font-semibold text-text-body"
+                            >
+                                <span x-show="!copied">{{ __('season.copy_for_instagram') }}</span>
+                                <span x-show="copied" x-cloak>{{ __('season.copy_ready') }}</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </x-section-card>

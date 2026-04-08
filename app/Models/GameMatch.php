@@ -17,6 +17,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $home_team_id
  * @property string $away_team_id
  * @property \Illuminate\Support\Carbon $scheduled_date
+ * @property string|null $venue_name
+ * @property int|null $venue_capacity
+ * @property int|null $attendance
  * @property int|null $home_score
  * @property int|null $away_score
  * @property bool $played
@@ -88,6 +91,9 @@ class GameMatch extends Model
         'home_team_id',
         'away_team_id',
         'scheduled_date',
+        'venue_name',
+        'venue_capacity',
+        'attendance',
         'home_score',
         'away_score',
         'played',
@@ -117,6 +123,8 @@ class GameMatch extends Model
     protected $casts = [
         'round_number' => 'integer',
         'scheduled_date' => 'datetime',
+        'venue_capacity' => 'integer',
+        'attendance' => 'integer',
         'home_score' => 'integer',
         'away_score' => 'integer',
         'home_lineup' => 'array',
@@ -220,6 +228,17 @@ class GameMatch extends Model
             return '-';
         }
         return "{$this->home_score} - {$this->away_score}";
+    }
+
+    public function getOccupancyPercentageAttribute(): ?int
+    {
+        $capacity = $this->venue_capacity ?? $this->homeTeam?->stadium_seats;
+
+        if (! $this->attendance || ! $capacity) {
+            return null;
+        }
+
+        return (int) round(($this->attendance / max(1, $capacity)) * 100);
     }
 
     public function getWinnerId(): ?string

@@ -9,6 +9,9 @@
 /** @var int $purchaseSpending */
 /** @var int $infrastructureSpending */
 /** @var bool $hasTransferActivity */
+/** @var int|null $averageAttendance */
+/** @var int|null $occupancyRate */
+/** @var \App\Models\GameMatch|null $lastHomeCrowd */
 @endphp
 
 <x-app-layout>
@@ -55,6 +58,14 @@
 
         {{-- KPI Cards --}}
         <div class="flex flex-wrap gap-3 mb-6">
+            <x-summary-card :label="__('game.stadium')">
+                <div class="mt-1">
+                    <div class="font-heading text-lg font-bold text-text-primary truncate max-w-52">{{ $game->team->stadium_name ?: '-' }}</div>
+                    @if($game->team->stadium_seats > 0)
+                        <div class="text-xs text-text-muted">{{ __('game.seats', ['count' => number_format($game->team->stadium_seats)]) }}</div>
+                    @endif
+                </div>
+            </x-summary-card>
             <x-summary-card :label="__('finances.squad_value')" :value="\App\Support\Money::format($squadValue)" />
             <x-summary-card :label="__('finances.annual_wage_bill')" :value="\App\Support\Money::format($wageBill) . __('squad.per_year')" />
             <x-summary-card :label="__('finances.wage_revenue_ratio')">
@@ -68,6 +79,28 @@
             @if($investment)
             <x-summary-card :label="__('finances.transfer_budget')" :value="$investment->formatted_transfer_budget" value-class="text-accent-blue" />
             @endif
+            <x-summary-card :label="__('game.average_attendance')">
+                <div class="mt-1">
+                    <div class="font-heading text-xl font-bold text-text-primary">
+                        {{ $averageAttendance ? number_format($averageAttendance) : '-' }}
+                    </div>
+                    @if($lastHomeCrowd?->attendance)
+                        <div class="text-xs text-text-muted">
+                            {{ __('game.last_home_crowd') }}: {{ number_format($lastHomeCrowd->attendance) }}
+                        </div>
+                    @endif
+                </div>
+            </x-summary-card>
+            <x-summary-card :label="__('game.occupancy')">
+                <div class="mt-1">
+                    <div class="font-heading text-xl font-bold text-text-primary">
+                        {{ $occupancyRate !== null ? $occupancyRate . '%' : '-' }}
+                    </div>
+                    @if($lastHomeCrowd?->venue_name)
+                        <div class="text-xs text-text-muted truncate max-w-48">{{ $lastHomeCrowd->venue_name }}</div>
+                    @endif
+                </div>
+            </x-summary-card>
         </div>
 
         {{-- 2-Column Layout --}}

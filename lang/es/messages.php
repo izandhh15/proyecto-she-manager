@@ -94,6 +94,9 @@ return [
     'academy_over_capacity' => 'La cantera supera la capacidad. Debes liberar :excess plaza(s).',
     'academy_must_decide_21' => 'Los jugadores de 21+ aÃ±os deben ser subidos o despedidos.',
 
+    'academy_evaluation_not_needed' => 'Esta cantera funciona como filial: no hace falta evaluarla a final de temporada.',
+    'academy_reserve_action_blocked' => 'Las jugadoras del filial solo se pueden subir al primer equipo o esperar a que renueven.',
+
     // Player release messages
     'player_released' => ':player ha sido liberado. IndemnizaciÃ³n pagada: :severance.',
     'release_not_your_player' => 'Solo puedes liberar jugadores de tu propio equipo.',
@@ -138,7 +141,6 @@ return [
     'offer_declined' => 'Oferta rechazada.',
     'must_accept_club_offer' => 'Has sido cesado. Debes aceptar una oferta de club para continuar.',
 ];
-
 
 
 

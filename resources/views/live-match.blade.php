@@ -110,8 +110,15 @@
                             <div class="text-[10px] text-text-secondary font-medium uppercase tracking-wider truncate">
                                 {{ $match->round_name ? __($match->round_name) : __('game.matchday_n', ['number' => $match->round_number]) }}
                             </div>
-                            @if($match->homeTeam->stadium_name)
-                                <div class="text-[9px] text-text-muted font-normal tracking-wide truncate hidden sm:block">{{ $match->homeTeam->stadium_name }}</div>
+                            @if($match->venue_name || $match->homeTeam->stadium_name)
+                                <div class="text-[9px] text-text-muted font-normal tracking-wide truncate hidden sm:block">
+                                    {{ $match->venue_name ?? $match->homeTeam->stadium_name }}
+                                    @if($match->attendance)
+                                        &middot; {{ number_format($match->attendance) }} {{ __('game.attendance') }}
+                                    @elseif($match->venue_capacity)
+                                        &middot; {{ __('game.seats', ['count' => number_format($match->venue_capacity)]) }}
+                                    @endif
+                                </div>
                             @endif
                         </div>
                     </div>

@@ -4,6 +4,7 @@ namespace App\Modules\Season\Processors;
 
 use App\Modules\Season\Contracts\SeasonProcessor;
 use App\Modules\Season\DTOs\SeasonTransitionData;
+use App\Modules\Academy\Services\YouthAcademyService;
 use App\Modules\Notification\Services\NotificationService;
 use App\Models\AcademyPlayer;
 use App\Models\Game;
@@ -18,6 +19,7 @@ class YouthAcademySetupProcessor implements SeasonProcessor
 {
     public function __construct(
         private readonly NotificationService $notificationService,
+        private readonly YouthAcademyService $youthAcademyService,
     ) {}
 
     public function priority(): int
@@ -28,6 +30,15 @@ class YouthAcademySetupProcessor implements SeasonProcessor
     public function process(Game $game, SeasonTransitionData $data): SeasonTransitionData
     {
         if ($data->isInitialSeason) {
+            return $data;
+        }
+
+        if ($this->youthAcademyService->isReserveAcademy($game)) {
+            $created = $this->youthAcademyService->syncReserveTeamProspects($game);
+            $game->removePendingAction('academy_evaluation');
+
+            $data->setMetadata('academy_players_count', $created->count());
+
             return $data;
         }
 

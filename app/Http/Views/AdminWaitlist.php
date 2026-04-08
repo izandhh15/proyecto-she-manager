@@ -26,11 +26,14 @@ class AdminWaitlist
             ->appends($request->query());
 
         $total = WaitlistEntry::count();
-        $pending = WaitlistEntry::whereDoesntHave('inviteCode')->count();
-        $invited = WaitlistEntry::whereHas('inviteCode', function ($q) {
+        $rejected = WaitlistEntry::whereNotNull('rejected_at')->count();
+        $pending = WaitlistEntry::whereNull('rejected_at')
+            ->whereDoesntHave('inviteCode')
+            ->count();
+        $invited = WaitlistEntry::whereNull('rejected_at')->whereHas('inviteCode', function ($q) {
             $q->where('times_used', 0);
         })->count();
-        $registered = WaitlistEntry::whereHas('inviteCode', function ($q) {
+        $registered = WaitlistEntry::whereNull('rejected_at')->whereHas('inviteCode', function ($q) {
             $q->where('times_used', '>', 0);
         })->count();
 
@@ -39,6 +42,7 @@ class AdminWaitlist
             'search' => $search,
             'total' => $total,
             'pending' => $pending,
+            'rejected' => $rejected,
             'invited' => $invited,
             'registered' => $registered,
         ]);

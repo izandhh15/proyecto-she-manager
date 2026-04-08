@@ -420,6 +420,10 @@ return [
     // Onboarding - Club Info
     'stadium' => 'Stadium',
     'seats' => ':count seats',
+    'attendance' => 'Attendance',
+    'average_attendance' => 'Average attendance',
+    'last_home_crowd' => 'Last home crowd',
+    'occupancy' => 'Occupancy',
 
     // Pre-season
     'pre_season' => 'Pre-Season',
@@ -454,6 +458,5 @@ return [
     'national_team_must_differ' => 'National team must be different from your club.',
     'national_mode_unavailable' => 'National team mode is temporarily unavailable.',
 ];
-
 
 

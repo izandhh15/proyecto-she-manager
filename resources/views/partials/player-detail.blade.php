@@ -16,6 +16,7 @@
     $showActions = $isCareerMode && ($isListed || $canManage);
 
     $positionDisplay = $gamePlayer->position_display;
+    $secondaryPositions = array_slice($gamePlayer->secondary_position_displays, 0, 4);
     $nationalityFlag = $gamePlayer->nationality_flag;
     $primaryNationality = $gamePlayer->nationality[0] ?? null;
     $devStatus = $gamePlayer->developmentStatus($game->current_date);
@@ -76,6 +77,18 @@
                 <span>{{ $gamePlayer->age($game->current_date) }} {{ __('app.years') }}@if($gamePlayer->player->height) Â· {{ $gamePlayer->player->height }}@endif</span>
             </div>
             <div class="text-[11px] text-text-faint mt-1">{{ $gamePlayer->position_name }}</div>
+            @if(!empty($secondaryPositions))
+                <div class="mt-2">
+                    <div class="text-[10px] text-text-faint uppercase tracking-widest font-semibold mb-1">{{ __('squad.secondary_positions') }}</div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        @foreach($secondaryPositions as $secondaryPosition)
+                            <span class="inline-flex items-center rounded-full border border-border-default bg-surface-700/60 px-2 py-0.5 text-[10px] font-medium text-text-secondary">
+                                {{ $secondaryPosition['abbreviation'] }} · {{ $secondaryPosition['name'] }}
+                            </span>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
 
             {{-- Status badges --}}
             <div class="flex flex-wrap items-center gap-1.5 mt-2">

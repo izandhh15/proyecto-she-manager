@@ -4,6 +4,7 @@ namespace App\Modules\Season\Processors;
 
 use App\Modules\Season\Contracts\SeasonProcessor;
 use App\Modules\Season\DTOs\SeasonTransitionData;
+use App\Modules\Match\Services\MatchVenueService;
 use App\Models\ClubProfile;
 use App\Models\Game;
 use App\Models\GameMatch;
@@ -20,6 +21,10 @@ use Illuminate\Support\Str;
  */
 class PreSeasonFixtureProcessor implements SeasonProcessor
 {
+    public function __construct(
+        private readonly MatchVenueService $venueService,
+    ) {}
+
     public function priority(): int
     {
         return 108;
@@ -42,14 +47,24 @@ class PreSeasonFixtureProcessor implements SeasonProcessor
             }
 
             $date = Carbon::createFromDate($seasonYear, $slot['month'], $slot['day']);
+            $homeTeamId = $slot['home'] ? $game->team_id : $opponents[$i]->id;
+            $awayTeamId = $slot['home'] ? $opponents[$i]->id : $game->team_id;
+            $venue = $this->venueService->resolve(
+                homeTeamId: $homeTeamId,
+                competitionId: $competitionId,
+                roundNumber: $i + 1,
+                matchKey: implode('|', [$game->id, $homeTeamId, $awayTeamId, $date->toDateString()]),
+            );
 
             GameMatch::create([
                 'id' => Str::uuid()->toString(),
                 'game_id' => $game->id,
                 'competition_id' => $competitionId,
-                'home_team_id' => $slot['home'] ? $game->team_id : $opponents[$i]->id,
-                'away_team_id' => $slot['home'] ? $opponents[$i]->id : $game->team_id,
+                'home_team_id' => $homeTeamId,
+                'away_team_id' => $awayTeamId,
                 'scheduled_date' => $date->toDateString(),
+                'venue_name' => $venue['venue_name'],
+                'venue_capacity' => $venue['venue_capacity'],
                 'round_number' => $i + 1,
                 'played' => false,
             ]);

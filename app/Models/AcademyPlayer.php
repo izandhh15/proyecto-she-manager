@@ -12,6 +12,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $id
  * @property string $game_id
  * @property string $team_id
+ * @property string|null $source_game_player_id
+ * @property string|null $source_team_id
  * @property string $name
  * @property array<array-key, mixed>|null $nationality
  * @property \Illuminate\Support\Carbon $date_of_birth
@@ -22,6 +24,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int $potential_low
  * @property int $potential_high
  * @property \Illuminate\Support\Carbon $appeared_at
+ * @property \Illuminate\Support\Carbon|null $contract_until
  * @property bool $is_on_loan
  * @property int|null $joined_season
  * @property int|null $initial_technical
@@ -33,6 +36,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read array $position_display
  * @property-read string $position_group
  * @property-read string $potential_range
+ * @property-read bool $is_reserve_linked
+ * @property-read int|null $contract_expiry_year
+ * @property-read \App\Models\GamePlayer|null $sourceGamePlayer
+ * @property-read \App\Models\Team|null $sourceTeam
  * @property-read \App\Models\Team|null $team
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AcademyPlayer newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AcademyPlayer newQuery()
@@ -61,6 +68,8 @@ class AcademyPlayer extends Model
     protected $fillable = [
         'game_id',
         'team_id',
+        'source_game_player_id',
+        'source_team_id',
         'name',
         'nationality',
         'date_of_birth',
@@ -71,6 +80,7 @@ class AcademyPlayer extends Model
         'potential_low',
         'potential_high',
         'appeared_at',
+        'contract_until',
         'is_on_loan',
         'evaluation_needed',
         'joined_season',
@@ -82,6 +92,7 @@ class AcademyPlayer extends Model
         'nationality' => 'array',
         'date_of_birth' => 'date',
         'appeared_at' => 'date',
+        'contract_until' => 'date',
         'technical_ability' => 'integer',
         'physical_ability' => 'integer',
         'potential' => 'integer',
@@ -102,6 +113,16 @@ class AcademyPlayer extends Model
     public function team(): BelongsTo
     {
         return $this->belongsTo(Team::class);
+    }
+
+    public function sourceGamePlayer(): BelongsTo
+    {
+        return $this->belongsTo(GamePlayer::class, 'source_game_player_id');
+    }
+
+    public function sourceTeam(): BelongsTo
+    {
+        return $this->belongsTo(Team::class, 'source_team_id');
     }
 
     public function getAgeAttribute(): int
@@ -132,6 +153,16 @@ class AcademyPlayer extends Model
     public function getPotentialRangeAttribute(): string
     {
         return "{$this->potential_low}-{$this->potential_high}";
+    }
+
+    public function getIsReserveLinkedAttribute(): bool
+    {
+        return $this->source_game_player_id !== null;
+    }
+
+    public function getContractExpiryYearAttribute(): ?int
+    {
+        return $this->contract_until?->year;
     }
 
     public function getPositionGroupAttribute(): string

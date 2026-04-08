@@ -5,8 +5,10 @@ namespace App\Modules\Season\Processors;
 use App\Modules\Season\Contracts\SeasonProcessor;
 use App\Modules\Season\DTOs\SeasonTransitionData;
 use App\Modules\Transfer\Services\ContractService;
+use App\Models\AcademyPlayer;
 use App\Models\Game;
 use App\Models\GamePlayer;
+use App\Models\Team;
 use Carbon\Carbon;
 
 /**
@@ -59,6 +61,7 @@ class ContractExpirationProcessor implements SeasonProcessor
         $releasedPlayers = [];
         $autoRenewedPlayers = [];
         $newFreeAgents = [];
+        $reservePoachedPlayers = [];
 
         $releasedIds = [];
         $freeAgentIds = [];
@@ -84,6 +87,47 @@ class ContractExpirationProcessor implements SeasonProcessor
         foreach ($aiExpiredByTeam as $teamId => $teamExpiredPlayers) {
             $teamAvg = $aiTeamAverages[$teamId] ?? 55;
             $freeAgentCount = 0;
+            $team = $teamExpiredPlayers->first()?->team;
+
+            if ($team?->parent_team_id === $game->team_id) {
+                foreach ($teamExpiredPlayers as $player) {
+                    $destination = $this->findReservePoachingTeam($player, $game);
+
+                    if ($destination && $this->shouldPoachReservePlayer($player)) {
+                        $player->update([
+                            'team_id' => $destination->id,
+                            'number' => GamePlayer::nextAvailableNumber($game->id, $destination->id),
+                            'contract_until' => $newContractEnd,
+                        ]);
+
+                        AcademyPlayer::query()
+                            ->where('game_id', $game->id)
+                            ->where('source_game_player_id', $player->id)
+                            ->delete();
+
+                        $reservePoachedPlayers[] = [
+                            'playerId' => $player->id,
+                            'playerName' => $player->name,
+                            'fromTeamId' => $team->id,
+                            'fromTeamName' => $team->name,
+                            'toTeamId' => $destination->id,
+                            'toTeamName' => $destination->name,
+                        ];
+
+                        continue;
+                    }
+
+                    $autoRenewedPlayers[] = [
+                        'playerId' => $player->id,
+                        'playerName' => $player->name,
+                        'teamId' => $player->team_id,
+                        'teamName' => $team->name,
+                    ];
+                    $autoRenewedIds[] = $player->id;
+                }
+
+                continue;
+            }
 
             // Sort by non-renewal likelihood (most likely to leave first)
             $sorted = $teamExpiredPlayers->sortByDesc(
@@ -131,7 +175,8 @@ class ContractExpirationProcessor implements SeasonProcessor
 
         return $data->setMetadata('expiredContracts', $releasedPlayers)
             ->setMetadata('autoRenewedContracts', $autoRenewedPlayers)
-            ->setMetadata('aiContractDepartures', $newFreeAgents);
+            ->setMetadata('aiContractDepartures', $newFreeAgents)
+            ->setMetadata('reserveContractDepartures', $reservePoachedPlayers);
     }
 
     /**
@@ -192,5 +237,64 @@ class ContractExpirationProcessor implements SeasonProcessor
     private function getPlayerAbility(GamePlayer $player): int
     {
         return (int) round((($player->game_technical_ability ?? 50) + ($player->game_physical_ability ?? 50)) / 2);
+    }
+
+    private function shouldPoachReservePlayer(GamePlayer $player): bool
+    {
+        $chance = (int) config('academy.reserve_poach_probability.base', 35);
+        $age = $player->age($player->game->current_date);
+        $ability = $this->getPlayerAbility($player);
+
+        if ($age <= 21) {
+            $chance += (int) config('academy.reserve_poach_probability.age_21_or_less_bonus', 15);
+        }
+
+        if (($player->potential_high ?? $player->potential ?? 0) >= 78) {
+            $chance += (int) config('academy.reserve_poach_probability.high_potential_bonus', 15);
+        }
+
+        if ($ability >= 68) {
+            $chance += (int) config('academy.reserve_poach_probability.high_ability_bonus', 10);
+        }
+
+        return mt_rand(1, 100) <= min(90, $chance);
+    }
+
+    private function findReservePoachingTeam(GamePlayer $player, Game $game): ?Team
+    {
+        $currentTeam = $player->team;
+        $parentTeam = $currentTeam?->parentTeam;
+
+        if (! $currentTeam || ! $parentTeam) {
+            return null;
+        }
+
+        $preferredParents = config('academy.reserve_poaching_targets', [])[$parentTeam->getRawOriginal('name')] ?? [];
+
+        foreach ($preferredParents as $parentName) {
+            $candidateParent = Team::query()
+                ->where('name', $parentName)
+                ->first();
+
+            if (! $candidateParent) {
+                continue;
+            }
+
+            $candidateReserve = Team::query()
+                ->where('parent_team_id', $candidateParent->id)
+                ->first();
+
+            if ($candidateReserve && $candidateReserve->id !== $currentTeam->id) {
+                return $candidateReserve;
+            }
+        }
+
+        return Team::query()
+            ->whereNotNull('parent_team_id')
+            ->where('country', $currentTeam->country)
+            ->where('parent_team_id', '!=', $game->team_id)
+            ->where('id', '!=', $currentTeam->id)
+            ->orderBy('name')
+            ->first();
     }
 }

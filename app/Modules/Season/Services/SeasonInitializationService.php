@@ -7,6 +7,7 @@ use App\Models\CompetitionEntry;
 use App\Models\GameMatch;
 use App\Models\GamePlayer;
 use App\Models\Team;
+use App\Modules\Match\Services\MatchVenueService;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use App\Modules\Competition\Services\CupDrawService;
@@ -31,6 +32,7 @@ class SeasonInitializationService
         private StandingsCalculator $standingsCalculator,
         private CupDrawService $cupDrawService,
         private CountryConfig $countryConfig,
+        private MatchVenueService $venueService,
     ) {}
 
     /**
@@ -275,6 +277,19 @@ class SeasonInitializationService
     {
         $rows = [];
         foreach ($fixtures as $fixture) {
+            $matchDate = Carbon::parse($fixture['date']);
+            $venue = $this->venueService->resolve(
+                homeTeamId: $fixture['homeTeamId'],
+                competitionId: $competitionId,
+                roundNumber: (int) $fixture['matchday'],
+                matchKey: implode('|', [
+                    $gameId,
+                    $fixture['homeTeamId'],
+                    $fixture['awayTeamId'],
+                    $matchDate->toDateString(),
+                ]),
+            );
+
             $rows[] = [
                 'id' => Str::uuid()->toString(),
                 'game_id' => $gameId,
@@ -282,7 +297,9 @@ class SeasonInitializationService
                 'round_number' => $fixture['matchday'],
                 'home_team_id' => $fixture['homeTeamId'],
                 'away_team_id' => $fixture['awayTeamId'],
-                'scheduled_date' => Carbon::parse($fixture['date']),
+                'scheduled_date' => $matchDate,
+                'venue_name' => $venue['venue_name'],
+                'venue_capacity' => $venue['venue_capacity'],
                 'home_score' => null,
                 'away_score' => null,
                 'played' => false,

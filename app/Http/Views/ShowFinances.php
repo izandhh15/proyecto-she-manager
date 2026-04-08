@@ -6,6 +6,7 @@ use App\Modules\Finance\Services\BudgetProjectionService;
 use App\Models\FinancialTransaction;
 use App\Models\Game;
 use App\Models\GameInvestment;
+use App\Models\GameMatch;
 use App\Models\GamePlayer;
 use App\Models\TransferOffer;
 
@@ -94,6 +95,32 @@ class ShowFinances
 
         $hasTransferActivity = $salesRevenue > 0 || $purchaseSpending > 0 || $infrastructureSpending > 0;
 
+        $attendanceMatches = GameMatch::where('game_id', $gameId)
+            ->where('home_team_id', $game->team_id)
+            ->where('played', true)
+            ->whereNotNull('attendance')
+            ->where('attendance', '>', 0)
+            ->orderByDesc('scheduled_date')
+            ->get(['attendance', 'venue_capacity', 'venue_name', 'scheduled_date']);
+
+        $averageAttendance = $attendanceMatches->isNotEmpty()
+            ? (int) round($attendanceMatches->avg('attendance'))
+            : null;
+
+        $occupancyRate = $attendanceMatches->isNotEmpty()
+            ? (int) round($attendanceMatches->avg(function (GameMatch $match) use ($game) {
+                $capacity = (int) ($match->venue_capacity ?: $game->team->stadium_seats);
+
+                if ($capacity <= 0) {
+                    return 0;
+                }
+
+                return ($match->attendance / $capacity) * 100;
+            }))
+            : null;
+
+        $lastHomeCrowd = $attendanceMatches->first();
+
         return view('finances', [
             'game' => $game,
             'finances' => $finances,
@@ -111,6 +138,9 @@ class ShowFinances
             'purchaseSpending' => $purchaseSpending,
             'infrastructureSpending' => $infrastructureSpending,
             'hasTransferActivity' => $hasTransferActivity,
+            'averageAttendance' => $averageAttendance,
+            'occupancyRate' => $occupancyRate,
+            'lastHomeCrowd' => $lastHomeCrowd,
         ]);
     }
 }

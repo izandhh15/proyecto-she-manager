@@ -155,7 +155,7 @@ return [
     'share_text' => 'I reached :result at the :competition with :team! Play VirtuaFC',
     'play_again' => 'Play Again',
     'copied_to_clipboard' => 'Copied!',
-    'your_squad_stats' => 'Your Squad Stats',,
+    'your_squad_stats' => 'Your Squad Stats',
     'manager_offers' => 'Offers for next season',
     'national_team_offer' => 'National team offer',
     'club_offer' => 'Club offer',
@@ -163,8 +163,12 @@ return [
     'decline_offer' => 'Decline',
     'share_season' => 'Share your season',
     'share_season_help' => 'Post your summary and challenge your friends to beat your run in SheManager.',
+    'summary_preview_loading' => 'Generating your summary image...',
+    'download_summary_image' => 'Download image',
+    'share_summary_image' => 'Share image',
     'share_on_x' => 'Share on X',
     'copy_for_instagram' => 'Copy text for Instagram',
+    'copy_ready' => 'Text copied',
     'share_summary_text' => 'I finished season :season with :team in :positionth place in SheManager. Can you beat me? Play at https://shemanager.koyeb.app',
 ];
 

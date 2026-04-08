@@ -34,6 +34,15 @@
         </svg>
         {{ __('admin.nav_game_stats') }}
     </a>
+
+    <a href="{{ route('admin.waitlist') }}"
+       class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium min-h-[44px] transition-colors
+              {{ request()->routeIs('admin.waitlist') ? 'bg-surface-700 text-text-primary' : 'text-text-muted hover:text-text-secondary hover:bg-surface-700/50' }}">
+        <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 7.5v9A2.25 2.25 0 0 1 15.75 18.75h-7.5A2.25 2.25 0 0 1 6 16.5v-9m12 0A2.25 2.25 0 0 0 15.75 5.25h-7.5A2.25 2.25 0 0 0 6 7.5m12 0v.75c0 .621-.504 1.125-1.125 1.125H7.125A1.125 1.125 0 0 1 6 8.25V7.5m3.75 6h4.5" />
+        </svg>
+        {{ __('admin.nav_waitlist') }}
+    </a>
 </nav>
 
 <div class="px-3 py-4 border-t border-border-default space-y-1">

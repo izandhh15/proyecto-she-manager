@@ -10,6 +10,7 @@ use App\Modules\Squad\Services\EligibilityService;
 use App\Models\CupTie;
 use App\Models\Game;
 use App\Models\GameMatch;
+use App\Modules\Match\Services\MatchVenueService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
@@ -95,6 +96,8 @@ abstract class CupCompetitionHandler implements CompetitionHandler
         PlayoffRoundConfig $config,
         ?int $bracketPosition = null,
     ): void {
+        $venueService = app(MatchVenueService::class);
+
         $tie = CupTie::create([
             'id' => Str::uuid()->toString(),
             'game_id' => $game->id,
@@ -105,6 +108,13 @@ abstract class CupCompetitionHandler implements CompetitionHandler
             'away_team_id' => $awayTeamId,
         ]);
 
+        $firstLegVenue = $venueService->resolve(
+            homeTeamId: $homeTeamId,
+            competitionId: $competitionId,
+            roundNumber: $config->round,
+            matchKey: implode('|', [$game->id, $homeTeamId, $awayTeamId, (string) $config->firstLegDate]),
+        );
+
         $firstLeg = GameMatch::create([
             'id' => Str::uuid()->toString(),
             'game_id' => $game->id,
@@ -114,12 +124,21 @@ abstract class CupCompetitionHandler implements CompetitionHandler
             'home_team_id' => $homeTeamId,
             'away_team_id' => $awayTeamId,
             'scheduled_date' => $config->firstLegDate,
+            'venue_name' => $firstLegVenue['venue_name'],
+            'venue_capacity' => $firstLegVenue['venue_capacity'],
             'cup_tie_id' => $tie->id,
         ]);
 
         $tie->update(['first_leg_match_id' => $firstLeg->id]);
 
         if ($config->twoLegged && $config->secondLegDate) {
+            $secondLegVenue = $venueService->resolve(
+                homeTeamId: $awayTeamId,
+                competitionId: $competitionId,
+                roundNumber: $config->round,
+                matchKey: implode('|', [$game->id, $awayTeamId, $homeTeamId, (string) $config->secondLegDate]),
+            );
+
             $secondLeg = GameMatch::create([
                 'id' => Str::uuid()->toString(),
                 'game_id' => $game->id,
@@ -129,6 +148,8 @@ abstract class CupCompetitionHandler implements CompetitionHandler
                 'home_team_id' => $awayTeamId,
                 'away_team_id' => $homeTeamId,
                 'scheduled_date' => $config->secondLegDate,
+                'venue_name' => $secondLegVenue['venue_name'],
+                'venue_capacity' => $secondLegVenue['venue_capacity'],
                 'cup_tie_id' => $tie->id,
             ]);
 

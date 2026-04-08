@@ -186,6 +186,7 @@ return [
     'clean_sheets_full' => 'Clean Sheets',
     'goals_conceded_full' => 'Goals Conceded',
     'discovered' => 'Discovered',
+    'secondary_positions' => 'Secondary positions',
 
     // Academy
     'academy' => 'Academy',
@@ -363,4 +364,25 @@ return [
 
     // Number
     'number' => 'Number',
+    'academy_model' => 'Model',
+    'academy_model_reserve' => 'Real reserve team',
+    'academy_reserve_badge' => 'Reserve',
+    'academy_source_team' => 'Source team',
+    'academy_promotion_cost' => 'Promotion cost',
+    'academy_free' => 'Free',
+    'academy_contract_short' => 'Contract :year',
+    'no_reserve_players' => 'No players are currently available in the reserve team.',
+    'academy_reserve_explanation' => 'This academy uses the real reserve squad (:team). You can promote those players for free whenever you want.',
+    'academy_reserve_empty' => 'Any reserve-team player with an active contract will appear here automatically.',
+    'academy_reserve_help_intro' => 'At this club the academy works as a real reserve squad. This screen mirrors the players available in :team.',
+    'academy_reserve_help_title' => 'How the reserve squad works',
+    'academy_reserve_help_1' => 'Players come from the club reserve side instead of random academy generation.',
+    'academy_reserve_help_2' => 'Abilities and potential are fully visible because they already belong to your club structure.',
+    'academy_reserve_help_3' => 'Promoting them to the first team costs nothing and keeps their current contract.',
+    'academy_reserve_contracts_title' => 'Contracts and poaching',
+    'academy_reserve_contracts_desc' => 'The reserve squad also uses real contracts. If a player expires without a promotion, other reserve teams can sign her.',
+    'academy_reserve_contracts_1' => 'Track each player contract year from this screen.',
+    'academy_reserve_contracts_2' => 'If you want to keep a player, promote her before June.',
+    'academy_reserve_contracts_3' => 'Nearby clubs in the same country get priority when poaching free reserve talent.',
+    'academy_reserve_detail_note' => 'Because this player belongs to the reserve team, the only choice here is whether to promote her now or leave her in the B side.',
 ];

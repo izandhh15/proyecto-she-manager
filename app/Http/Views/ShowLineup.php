@@ -93,6 +93,7 @@ class ShowLineup
                 'position' => $p->position,
                 'positionGroup' => $p->position_group,
                 'positionAbbr' => $p->position_abbreviation,
+                'secondaryPositions' => $p->secondary_position_displays,
                 'overallScore' => $p->overall_score,
                 'technicalAbility' => $p->technical_ability,
                 'physicalAbility' => $p->physical_ability,

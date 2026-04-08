@@ -16,9 +16,11 @@ class ShowAcademyPlayerDetail
             ->where('team_id', $game->team_id)
             ->findOrFail($playerId);
 
-        $revealPhase = $academyPlayer->seasons_in_academy > 1
+        $revealPhase = $academyPlayer->is_reserve_linked
             ? 2
-            : YouthAcademyService::getRevealPhase($game);
+            : ($academyPlayer->seasons_in_academy > 1
+            ? 2
+            : YouthAcademyService::getRevealPhase($game));
 
         return view('partials.academy-player-detail', [
             'game' => $game,

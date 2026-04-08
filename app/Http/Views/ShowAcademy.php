@@ -11,12 +11,17 @@ class ShowAcademy
 {
     public function __construct(
         private readonly ContractService $contractService,
+        private readonly YouthAcademyService $youthAcademyService,
     ) {}
 
     public function __invoke(string $gameId)
     {
         $game = Game::with('team')->findOrFail($gameId);
         abort_if($game->isTournamentMode(), 404);
+
+        $this->youthAcademyService->syncReserveTeamProspects($game);
+        $reserveTeam = $this->youthAcademyService->linkedReserveTeam($game);
+        $usesReserveSquad = $reserveTeam !== null;
 
         $prospects = AcademyPlayer::where('game_id', $gameId)
             ->where('team_id', $game->team_id)
@@ -36,8 +41,8 @@ class ShowAcademy
 
         $tier = $game->currentInvestment->youth_academy_tier ?? 0;
         $tierDescription = YouthAcademyService::getTierDescription($tier);
-        $capacity = YouthAcademyService::getCapacity($tier);
-        $revealPhase = YouthAcademyService::getRevealPhase($game);
+        $capacity = $this->youthAcademyService->capacityForGame($game);
+        $revealPhase = $usesReserveSquad ? 2 : YouthAcademyService::getRevealPhase($game);
 
         return view('squad-academy', [
             'game' => $game,
@@ -52,6 +57,8 @@ class ShowAcademy
             'tierDescription' => $tierDescription,
             'capacity' => $capacity,
             'revealPhase' => $revealPhase,
+            'usesReserveSquad' => $usesReserveSquad,
+            'reserveTeam' => $reserveTeam,
         ]);
     }
 

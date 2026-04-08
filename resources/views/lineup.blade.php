@@ -335,6 +335,7 @@
                                             </div>
 
                                             {{-- Player name --}}
+                                            <span class="mt-1 text-[8px] font-heading font-semibold text-white/85 uppercase tracking-[0.18em] leading-none drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]" x-text="slot.player?.positionAbbr"></span>
                                             <span class="mt-0.5 text-[8px] font-semibold text-white uppercase tracking-wide leading-tight text-center max-w-[66px] line-clamp-2 break-words drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]" x-text="slot.player?.name"></span>
                                         </div>
                                     </div>
@@ -465,6 +466,7 @@
                                                 );
                                                 $posAbbrev = \App\Support\PositionMapper::toAbbreviation($player->position);
                                                 $posGroup = \App\Support\PositionMapper::getPositionGroup($player->position);
+                                                $secondaryPositions = array_slice($player->secondary_position_displays, 0, 3);
                                             @endphp
                                             <div
                                                 x-show="posTab === 'all' || posTab === '{{ $posGroup }}'"
@@ -488,17 +490,24 @@
                                                                 <span class="text-[8px] px-1 py-0.5 rounded-sm bg-red-500/10 text-accent-primary font-medium shrink-0">{{ $unavailabilityReason }}</span>
                                                             @endif
                                                         </div>
-                                                        <div class="flex items-center gap-2 mt-0.5">
+                                                        <div class="mt-0.5 flex flex-wrap items-center gap-1">
                                                             <span class="text-[9px] text-text-muted font-heading uppercase">{{ $posAbbrev }}</span>
-                                                            @if(!$isUnavailable)
+                                                            @foreach($secondaryPositions as $secondaryPosition)
+                                                                <span class="inline-flex items-center rounded-sm bg-surface-700 px-1 py-0.5 text-[8px] font-medium text-text-faint">
+                                                                    {{ $secondaryPosition['abbreviation'] }}
+                                                                </span>
+                                                            @endforeach
+                                                        </div>
+                                                        @if(!$isUnavailable)
+                                                        <div class="mt-1 flex items-center gap-1">
                                                             <div class="flex items-center gap-1">
                                                                 <div class="w-8 h-1 rounded-full bg-surface-600 overflow-hidden">
                                                                     <div class="h-full rounded-full fitness-bar @if($player->fitness >= 80) bg-accent-green @elseif($player->fitness >= 60) bg-accent-gold @elseif($player->fitness >= 40) bg-accent-orange @else bg-accent-primary @endif" style="width: {{ $player->fitness }}%"></div>
                                                                 </div>
                                                                 <span class="text-[8px] text-text-faint">{{ $player->fitness }}%</span>
                                                             </div>
-                                                            @endif
                                                         </div>
+                                                        @endif
                                                     </div>
                                                     <x-rating-badge :value="$player->overall_score" size="sm" class="shrink-0" />
                                                     @if(!$isUnavailable)

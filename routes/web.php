@@ -7,6 +7,7 @@ use App\Http\Views\AdminActivation;
 use App\Http\Views\AdminDashboard;
 use App\Http\Views\AdminGameStats;
 use App\Http\Views\AdminUsers;
+use App\Http\Views\AdminWaitlist;
 use App\Http\Actions\DeleteGame;
 use App\Http\Actions\AcceptCounterOffer;
 use App\Http\Actions\CompleteNewSeason;
@@ -38,6 +39,8 @@ use App\Http\Actions\SaveTacticalPreset;
 use App\Http\Actions\DeleteTacticalPreset;
 use App\Http\Actions\AcceptManagerJobOffer;
 use App\Http\Actions\DeclineManagerJobOffer;
+use App\Http\Actions\RejectWaitlistEntry;
+use App\Http\Actions\SendWaitlistInvite;
 
 use App\Http\Actions\SaveSquadSelection;
 use App\Http\Views\ShowSquadSelection;
@@ -240,6 +243,9 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
         Route::get('/users', AdminUsers::class)->name('users');
         Route::get('/activation', AdminActivation::class)->name('activation');
         Route::get('/game-stats', AdminGameStats::class)->name('game-stats');
+        Route::get('/waitlist', AdminWaitlist::class)->name('waitlist');
+        Route::post('/waitlist/{waitlistEntry}/invite', SendWaitlistInvite::class)->name('send-waitlist-invite');
+        Route::post('/waitlist/{waitlistEntry}/reject', RejectWaitlistEntry::class)->name('reject-waitlist-entry');
         Route::post('/impersonate/{userId}', StartImpersonation::class)->name('impersonate');
     });
 });

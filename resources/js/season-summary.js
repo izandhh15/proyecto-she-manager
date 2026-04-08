@@ -1,13 +1,22 @@
 import {
+    canvasToBlob,
     createCanvasContext,
-    fillBackground,
-    drawTeamHeader,
-    drawStatsRow,
+    downloadCanvas,
+    drawBrandFooter,
     drawDivider,
     drawSectionLabel,
-    drawBrandFooter,
-    trimAndDownload,
+    drawStatsRow,
+    drawTeamHeader,
+    fillBackground,
+    trimCanvas,
 } from './modules/canvas-image';
+
+const SUMMARY_WIDTH = 800;
+const SUMMARY_HEIGHT = 1400;
+
+function buildFilename(teamName) {
+    return `${teamName.replace(/[^a-zA-Z0-9]/g, '_')}_season.png`;
+}
 
 export default function seasonSummary(config) {
     return {
@@ -21,26 +30,35 @@ export default function seasonSummary(config) {
         awayRecord: config.awayRecord,
         otherCompetitions: config.otherCompetitions,
         labels: config.labels,
+        previewUrl: null,
+        copied: false,
+        isGeneratingPreview: false,
 
-        async downloadSeasonImage() {
-            const { canvas, ctx, width, padding, contentWidth } = createCanvasContext(800, 1400);
-            fillBackground(ctx, width, 1400);
+        init() {
+            this.refreshPreview();
+        },
 
-            await document.fonts.ready;
+        async buildSummaryCanvas() {
+            const { canvas, ctx, width, padding, contentWidth } = createCanvasContext(SUMMARY_WIDTH, SUMMARY_HEIGHT);
+            fillBackground(ctx, width, SUMMARY_HEIGHT);
+
+            if (document.fonts?.ready) {
+                await document.fonts.ready;
+            }
 
             let y = padding;
 
-            // Team header
             y = await drawTeamHeader(ctx, {
                 crestUrl: this.teamCrestUrl,
                 name: this.teamName,
                 subtitle: this.subtitle,
                 subtitleColor: this.subtitleColor,
-                padding, width, y,
+                padding,
+                width,
+                y,
             });
 
-            // Stats row: P / W / D / L / GF / GA / GD / Pts
-            const gd = this.record.gf - this.record.ga;
+            const goalDifference = this.record.gf - this.record.ga;
             y = drawStatsRow(ctx, [
                 { label: this.labels.played, value: this.record.played, color: '#ffffff' },
                 { label: this.labels.won, value: this.record.won, color: '#22c55e' },
@@ -48,46 +66,45 @@ export default function seasonSummary(config) {
                 { label: this.labels.lost, value: this.record.lost, color: '#ef4444' },
                 { label: this.labels.gf, value: this.record.gf, color: '#ffffff' },
                 { label: this.labels.ga, value: this.record.ga, color: '#ffffff' },
-                { label: this.labels.gd, value: (gd >= 0 ? '+' : '') + gd, color: gd >= 0 ? '#22c55e' : '#ef4444' },
+                {
+                    label: this.labels.gd,
+                    value: `${goalDifference >= 0 ? '+' : ''}${goalDifference}`,
+                    color: goalDifference >= 0 ? '#22c55e' : '#ef4444',
+                },
                 { label: this.labels.pts, value: this.record.pts, color: '#f59e0b' },
             ], { padding, contentWidth, y });
 
-            // Team highlights (top scorer, assister, appearances, MVP)
             if (this.highlights.length > 0) {
                 drawSectionLabel(ctx, this.labels.teamHighlights, padding, y);
                 y += 18;
 
-                for (const h of this.highlights) {
+                for (const highlight of this.highlights) {
                     ctx.fillStyle = '#e2e8f0';
                     ctx.font = '400 14px Inter, sans-serif';
-                    ctx.fillText(h.playerName, padding, y);
+                    ctx.fillText(highlight.playerName, padding, y);
 
-                    // Value + label on the right
-                    ctx.fillStyle = '#cbd5e1';
-                    ctx.font = '600 13px Inter, sans-serif';
-                    const valText = String(h.value);
+                    const valueText = String(highlight.value);
+                    const labelText = highlight.label.toUpperCase();
                     const rightEdge = width - padding;
-                    const valWidth = ctx.measureText(valText).width;
+                    const valueWidth = ctx.measureText(valueText).width;
 
                     ctx.fillStyle = '#64748b';
                     ctx.font = '600 10px Inter, sans-serif';
-                    const lblText = h.label.toUpperCase();
-                    const lblWidth = ctx.measureText(lblText).width;
-                    ctx.fillText(lblText, rightEdge - lblWidth, y);
+                    const labelWidth = ctx.measureText(labelText).width;
+                    ctx.fillText(labelText, rightEdge - labelWidth, y);
 
                     ctx.fillStyle = '#cbd5e1';
                     ctx.font = '600 13px Inter, sans-serif';
-                    ctx.fillText(valText, rightEdge - lblWidth - valWidth - 6, y);
+                    ctx.fillText(valueText, rightEdge - labelWidth - valueWidth - 6, y);
 
                     y += 22;
                 }
-                y += 14;
 
+                y += 14;
                 drawDivider(ctx, padding, width - padding, y);
                 y += 14;
             }
 
-            // Home / Away records
             y += 8;
             drawSectionLabel(ctx, this.labels.homeRecord, padding, y);
             drawSectionLabel(ctx, this.labels.awayRecord, padding + contentWidth / 2, y);
@@ -99,13 +116,15 @@ export default function seasonSummary(config) {
                     { value: record.d, color: '#94a3b8', label: this.labels.drawn },
                     { value: record.l, color: '#ef4444', label: this.labels.lost },
                 ];
+
                 let offsetX = x;
                 for (const item of items) {
+                    const valueText = String(item.value);
+
                     ctx.fillStyle = item.color;
                     ctx.font = 'bold 20px Inter, sans-serif';
-                    const vText = String(item.value);
-                    ctx.fillText(vText, offsetX, y + 2);
-                    offsetX += ctx.measureText(vText).width + 3;
+                    ctx.fillText(valueText, offsetX, y + 2);
+                    offsetX += ctx.measureText(valueText).width + 3;
 
                     ctx.fillStyle = '#64748b';
                     ctx.font = '600 10px Inter, sans-serif';
@@ -118,7 +137,6 @@ export default function seasonSummary(config) {
             drawRecord(this.awayRecord, padding + contentWidth / 2);
             y += 20;
 
-            // Other competitions
             if (this.otherCompetitions.length > 0) {
                 drawDivider(ctx, padding, width - padding, y);
                 y += 20;
@@ -126,22 +144,104 @@ export default function seasonSummary(config) {
                 drawSectionLabel(ctx, this.labels.otherCompetitions, padding, y);
                 y += 18;
 
-                for (const comp of this.otherCompetitions) {
+                for (const competition of this.otherCompetitions) {
                     ctx.fillStyle = '#e2e8f0';
                     ctx.font = '600 14px Inter, sans-serif';
-                    ctx.fillText(comp.name, padding, y);
+                    ctx.fillText(competition.name, padding, y);
 
-                    ctx.fillStyle = comp.isChampion ? '#f59e0b' : '#94a3b8';
+                    const resultText = competition.result;
+                    ctx.fillStyle = competition.isChampion ? '#f59e0b' : '#94a3b8';
                     ctx.font = '400 13px Inter, sans-serif';
-                    const resultText = comp.result;
                     ctx.fillText(resultText, width - padding - ctx.measureText(resultText).width, y);
 
                     y += 22;
                 }
             }
 
-            y = drawBrandFooter(ctx, width, y, { tagline: 'Dirige a tu club en virtuafc.com' });
-            trimAndDownload(canvas, y, this.teamName.replace(/[^a-zA-Z0-9]/g, '_') + '_season.png');
+            y = drawBrandFooter(ctx, width, y);
+
+            return {
+                canvas: trimCanvas(canvas, y),
+                filename: buildFilename(this.teamName),
+            };
+        },
+
+        async refreshPreview() {
+            if (this.isGeneratingPreview) {
+                return;
+            }
+
+            this.isGeneratingPreview = true;
+
+            try {
+                const { canvas } = await this.buildSummaryCanvas();
+                this.previewUrl = canvas.toDataURL('image/png');
+            } catch (error) {
+                console.error('Failed to generate season summary preview.', error);
+            } finally {
+                this.isGeneratingPreview = false;
+            }
+        },
+
+        async downloadSeasonImage() {
+            try {
+                const { canvas, filename } = await this.buildSummaryCanvas();
+                downloadCanvas(canvas, filename);
+            } catch (error) {
+                console.error('Failed to download season summary.', error);
+            }
+        },
+
+        async shareSeasonImage({ text, url, fallbackUrl }) {
+            try {
+                const { canvas, filename } = await this.buildSummaryCanvas();
+
+                if (navigator.share) {
+                    const blob = await canvasToBlob(canvas);
+                    const file = new File([blob], filename, { type: 'image/png' });
+                    const sharePayload = {
+                        title: `${this.teamName} · ${this.subtitle}`,
+                        text,
+                        url,
+                    };
+
+                    if (navigator.canShare?.({ files: [file] })) {
+                        await navigator.share({
+                            ...sharePayload,
+                            files: [file],
+                        });
+                        return true;
+                    }
+
+                    await navigator.share(sharePayload);
+                    return true;
+                }
+            } catch (error) {
+                if (error?.name !== 'AbortError') {
+                    console.error('Failed to share season summary.', error);
+                }
+            }
+
+            if (fallbackUrl) {
+                window.open(fallbackUrl, '_blank', 'noopener');
+                return true;
+            }
+
+            return false;
+        },
+
+        async copyShareText(text) {
+            try {
+                await navigator.clipboard.writeText(text);
+                this.copied = true;
+
+                clearTimeout(this._copiedTimer);
+                this._copiedTimer = setTimeout(() => {
+                    this.copied = false;
+                }, 2200);
+            } catch (error) {
+                console.error('Failed to copy share text.', error);
+            }
         },
     };
 }

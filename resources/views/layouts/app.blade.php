@@ -38,10 +38,10 @@
             @if(config('beta.enabled'))
                 <div class="bg-amber-500 text-amber-950 text-center text-xs py-1.5 px-4">
                     <span class="font-semibold">{{ __('beta.badge') }}</span>
-                    â€”
+                    -
                     {{ __('beta.banner_warning') }}
                     @if(config('beta.feedback_url'))
-                        Â· <a href="{{ config('beta.feedback_url') }}" target="_blank" class="underline font-semibold hover:text-amber-300">{{ __('beta.send_feedback') }}</a>
+                        · <a href="{{ config('beta.feedback_url') }}" target="_blank" class="underline font-semibold hover:text-amber-300">{{ __('beta.send_feedback') }}</a>
                     @endif
                 </div>
             @endif
@@ -64,17 +64,24 @@
                 <div class="border-t border-border-default/50">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-                            {{-- Logo + copyright --}}
                             <div class="flex flex-col items-center md:items-start gap-3">
                                 <div class="-skew-x-12 bg-text-faint/15 px-3 py-0.5">
                                     <span class="skew-x-12 inline-block text-lg font-extrabold text-text-faint tracking-tight" style="font-family: 'Barlow Semi Condensed', sans-serif;">SheManager</span>
                                 </div>
                                 <p class="text-xs text-text-faint">
-                                    &copy; {{ date('Y') }} Pablo RomÃ¡n &middot; <a href="https://github.com/pabloroman/virtua-fc" target="_blank" class="hover:text-text-muted transition-colors">Proyecto Open Source</a> &middot; <a href="{{ route('legal') }}" class="hover:text-text-muted transition-colors">Aviso Legal</a>
+                                    &copy; {{ date('Y') }} Izan Delgado &middot; <a href="https://github.com/izandhh15/proyecto-she-manager" target="_blank" rel="noopener" class="hover:text-text-muted transition-colors">Proyecto Open Source</a> &middot; <a href="{{ route('legal') }}" class="hover:text-text-muted transition-colors">Aviso Legal</a>
                                 </p>
+                                <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 text-xs text-text-muted">
+                                    <a href="https://x.com/izandhh" target="_blank" rel="noopener" class="hover:text-text-secondary transition-colors">Izan Delgado</a>
+                                    <a href="https://x.com/SheManagerGame" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 hover:text-text-secondary transition-colors" aria-label="X oficial de SheManager">
+                                        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path d="M18.901 1.153h3.68l-8.04 9.188L24 22.847h-7.406l-5.8-7.584-6.64 7.584H.472l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.933Zm-1.291 19.493h2.04L6.486 3.24H4.298L17.61 20.646Z"/>
+                                        </svg>
+                                        <span>@SheManagerGame</span>
+                                    </a>
+                                </div>
                             </div>
 
-                            {{-- Navigation links --}}
                             <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-text-muted">
                                 @if(auth()->user())
                                 <a href="{{ route('select-team') }}" class="hover:text-text-secondary transition-colors">{{ __('app.new_game') }}</a>

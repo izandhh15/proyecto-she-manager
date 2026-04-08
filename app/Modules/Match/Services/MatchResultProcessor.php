@@ -12,6 +12,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use App\Modules\Competition\Services\StandingsCalculator;
+use App\Modules\Match\Services\MatchAttendanceService;
 use App\Modules\Squad\Services\EligibilityService;
 use App\Modules\Player\Services\PlayerConditionService;
 use App\Modules\Notification\Services\NotificationService;
@@ -20,6 +21,7 @@ class MatchResultProcessor
 {
     public function __construct(
         private readonly StandingsCalculator $standingsCalculator,
+        private readonly MatchAttendanceService $attendanceService,
         private readonly EligibilityService $eligibilityService,
         private readonly PlayerConditionService $conditionService,
         private readonly NotificationService $notificationService,
@@ -32,9 +34,23 @@ class MatchResultProcessor
      */
     public function processAll(string $gameId, int $matchday, string $currentDate, array $matchResults, ?string $deferMatchId = null, $allPlayers = null): void
     {
+        $game = Game::find($gameId);
+
         // Capture previous date BEFORE updating game state (used for recovery calculation)
         $previousDate = Game::where('id', $gameId)->value('current_date');
         $previousDate = $previousDate ? Carbon::parse($previousDate) : null;
+
+        $matchIds = array_column($matchResults, 'matchId');
+        $matches = GameMatch::with(['homeTeam', 'awayTeam'])
+            ->whereIn('id', $matchIds)
+            ->get()
+            ->keyBy('id');
+
+        $competitionIds = collect($matchResults)->pluck('competitionId')->unique();
+        $competitions = Competition::whereIn('id', $competitionIds)->get()->keyBy('id');
+        $attendanceByMatch = $game
+            ? $this->attendanceService->calculateForMatches($game, $matches, $competitions)
+            : [];
 
         // 1. Update game state (replaces onMatchdayAdvanced projector)
         Game::where('id', $gameId)->update([
@@ -42,17 +58,8 @@ class MatchResultProcessor
             'current_date' => Carbon::parse($currentDate)->toDateString(),
         ]);
 
-        // 2. Bulk update match records (scores + played)
-        $this->bulkUpdateMatchScores($matchResults);
-
-        // Load shared context once
-        $game = Game::find($gameId);
-        $matchIds = array_column($matchResults, 'matchId');
-        $matches = GameMatch::whereIn('id', $matchIds)->get()->keyBy('id');
-
-        // Load competitions once (typically 1-2 unique)
-        $competitionIds = collect($matchResults)->pluck('competitionId')->unique();
-        $competitions = Competition::whereIn('id', $competitionIds)->get()->keyBy('id');
+        // 2. Bulk update match records (scores + played + attendance)
+        $this->bulkUpdateMatchScores($matchResults, $attendanceByMatch);
 
         // 3. Serve suspensions for all matches (batch, using pre-loaded player IDs)
         // Exclude players from the deferred match's teams â€” their suspensions
@@ -122,7 +129,7 @@ class MatchResultProcessor
     /**
      * Update match scores in a single query using CASE WHEN.
      */
-    private function bulkUpdateMatchScores(array $matchResults): void
+    private function bulkUpdateMatchScores(array $matchResults, array $attendanceByMatch = []): void
     {
         if (empty($matchResults)) {
             return;
@@ -133,6 +140,7 @@ class MatchResultProcessor
         $awayCases = [];
         $homePossCases = [];
         $awayPossCases = [];
+        $attendanceCases = [];
 
         foreach ($matchResults as $result) {
             $id = $result['matchId'];
@@ -143,9 +151,15 @@ class MatchResultProcessor
             $awayPoss = $result['awayPossession'] ?? 50;
             $homePossCases[] = "WHEN id = '{$id}' THEN {$homePoss}";
             $awayPossCases[] = "WHEN id = '{$id}' THEN {$awayPoss}";
+            if (isset($attendanceByMatch[$id])) {
+                $attendanceCases[] = "WHEN id = '{$id}' THEN {$attendanceByMatch[$id]}";
+            }
         }
 
         $idList = "'" . implode("','", $ids) . "'";
+        $attendanceSet = empty($attendanceCases)
+            ? ''
+            : "attendance = CASE " . implode(' ', $attendanceCases) . " ELSE attendance END,";
 
         DB::statement("
             UPDATE game_matches
@@ -153,6 +167,7 @@ class MatchResultProcessor
                 away_score = CASE " . implode(' ', $awayCases) . " END,
                 home_possession = CASE " . implode(' ', $homePossCases) . " END,
                 away_possession = CASE " . implode(' ', $awayPossCases) . " END,
+                {$attendanceSet}
                 played = true
             WHERE id IN ({$idList})
         ");

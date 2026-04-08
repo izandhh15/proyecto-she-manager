@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Modules\Player\Services\PlayerValuationService;
+use App\Modules\Match\Services\MatchVenueService;
 use App\Support\CountryCodeMapper;
 use App\Support\ExternalData;
 use App\Support\TeamColors;
@@ -228,9 +229,11 @@ class SeedWorldCupData extends Command
         $this->info('Seeding teams...');
         $teamMapping = [];
         $jsonTeamIdsByExternalId = [];
+        $venueService = app(MatchVenueService::class);
 
         foreach ($this->jsonTeams as $externalId => $jsonTeam) {
             $countryCode = $jsonTeam['country'];
+            $primaryVenue = $this->resolveNationalPrimaryVenue($venueService, $countryCode);
             $existing = DB::table('teams')
                 ->where('type', 'national')
                 ->where(function ($query) use ($externalId, $countryCode) {
@@ -250,8 +253,8 @@ class SeedWorldCupData extends Command
                 'name' => $jsonTeam['name'],
                 'country' => $countryCode ?? 'TBD',
                 'image' => $jsonTeam['image'],
-                'stadium_name' => null,
-                'stadium_seats' => 0,
+                'stadium_name' => $primaryVenue['name'] ?? null,
+                'stadium_seats' => $primaryVenue['capacity'] ?? 0,
                 'colors' => json_encode(TeamColors::get($jsonTeam['name'])),
             ];
 
@@ -266,6 +269,7 @@ class SeedWorldCupData extends Command
 
         foreach ($this->csvTeams as $csvId => $team) {
             $countryCode = CountryCodeMapper::toCode($team['team_name']);
+            $primaryVenue = $this->resolveNationalPrimaryVenue($venueService, $countryCode);
             $externalId = $this->jsonTeamNames[$team['team_name']]
                 ?? $this->jsonTeamNamesNormalized[$this->normalizeTeamName($team['team_name'])]
                 ?? null;
@@ -275,6 +279,8 @@ class SeedWorldCupData extends Command
                 DB::table('teams')->where('id', $teamId)->update([
                     'name' => $team['team_name'],
                     'country' => $countryCode ?? ($this->jsonTeams[$externalId]['country'] ?? 'TBD'),
+                    'stadium_name' => $primaryVenue['name'] ?? DB::raw('stadium_name'),
+                    'stadium_seats' => $primaryVenue['capacity'] ?? DB::raw('stadium_seats'),
                     'colors' => json_encode(TeamColors::get($team['team_name'])),
                 ]);
             } else {
@@ -309,8 +315,8 @@ class SeedWorldCupData extends Command
                         'name' => $team['team_name'],
                         'country' => $countryCode ?? 'TBD',
                         'image' => null,
-                        'stadium_name' => null,
-                        'stadium_seats' => 0,
+                        'stadium_name' => $primaryVenue['name'] ?? null,
+                        'stadium_seats' => $primaryVenue['capacity'] ?? 0,
                         'colors' => json_encode(TeamColors::get($team['team_name'])),
                     ]);
                 }
@@ -633,6 +639,23 @@ class SeedWorldCupData extends Command
     private function normalizeTeamName(string $value): string
     {
         return Str::lower(Str::slug(Str::ascii($value), ''));
+    }
+
+    /**
+     * @return array{name: string, capacity: int}|null
+     */
+    private function resolveNationalPrimaryVenue(MatchVenueService $venueService, ?string $countryCode): ?array
+    {
+        if (empty($countryCode)) {
+            return null;
+        }
+
+        $pool = $venueService->nationalTeamPool(new Team([
+            'country' => $countryCode,
+            'type' => 'national',
+        ]));
+
+        return $pool[0] ?? null;
     }
 
     private function normalizeCsvCell(string $value): string

@@ -9,4 +9,4 @@
 {{ __('beta.feedback_email_reply_hint') }}
 
 {{ __('beta.feedback_email_thanks') }}
-Pablo â€” {{ config('app.name') }}
+Izan Delgado — {{ config('app.name') }}

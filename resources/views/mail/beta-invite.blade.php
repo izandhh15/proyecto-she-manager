@@ -9,4 +9,4 @@
 {{ __('beta.email_warning') }}
 
 {{ __('beta.email_thanks') }}
-Pablo â€” {{ config('app.name') }}
+Izan Delgado — {{ config('app.name') }}

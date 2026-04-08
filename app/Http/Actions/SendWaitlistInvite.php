@@ -14,6 +14,10 @@ class SendWaitlistInvite
             return back()->with('error', __('admin.waitlist_beta_disabled'));
         }
 
+        if ($waitlistEntry->isRejected()) {
+            return back()->with('error', __('admin.waitlist_cannot_invite_rejected'));
+        }
+
         if ($inviteService->hasAlreadyBeenInvited($waitlistEntry->email)) {
             return back()->with('error', __('admin.waitlist_already_invited'));
         }
