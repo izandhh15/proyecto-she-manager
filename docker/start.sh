@@ -35,9 +35,15 @@ rm -f /app/public/hot
 
 if [ "$RUN_CACHE_WARMUP" = "true" ]; then
   echo "Cacheando config/rutas/vistas..."
+  php artisan config:clear || true
+  php artisan route:clear || true
+  php artisan view:clear || true
   php artisan config:cache
-  php artisan route:cache
-  php artisan view:cache
+  php artisan route:cache || {
+    echo "WARNING: route:cache fallo. Continuando sin cachear rutas."
+    php artisan route:clear || true
+  }
+  php artisan view:cache || true
 fi
 
 if [ "$APP_ROLE" = "worker" ]; then

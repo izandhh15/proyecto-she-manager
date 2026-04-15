@@ -16,7 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
         if ((bool) env('EMERGENCY_AUTO_LOGIN', false)) {
             $middleware->prepend(\App\Http\Middleware\EmergencyAutoLogin::class);
         }
-        $middleware->redirectGuestsTo(fn () => route('login'));
+        $middleware->redirectGuestsTo('/login');
 
         $middleware->redirectUsersTo(function (Request $request) {
             $userId = $request->user()?->id;
@@ -25,9 +25,7 @@ return Application::configure(basePath: dirname(__DIR__))
                 ->where('user_id', $userId)
                 ->exists();
 
-            return $hasGames
-                ? route('dashboard')
-                : route('select-team');
+            return $hasGames ? '/dashboard' : '/new-game';
         });
 
         // Koyeb/Cloudflare forward original scheme and host via proxy headers.
