@@ -6,6 +6,15 @@ RUN_MIGRATIONS=${RUN_MIGRATIONS:-true}
 RUN_CACHE_WARMUP=${RUN_CACHE_WARMUP:-true}
 QUEUE_NAMES=${QUEUE_NAMES:-gameplay,setup,mail}
 
+rm -f /app/bootstrap/cache/*.php || true
+rm -f /app/storage/framework/cache/data/* || true
+
+mkdir -p /app/storage/logs /app/storage/framework/cache /app/storage/framework/views /app/storage/framework/sessions /app/bootstrap/cache
+touch /app/storage/logs/laravel.log || true
+touch /tmp/laravel-emergency.log || true
+chmod -R 0777 /app/storage /app/bootstrap/cache || true
+chmod 0666 /tmp/laravel-emergency.log || true
+
 if [ -z "${APP_KEY:-}" ]; then
   APP_KEY=$(php -r '$seed = (getenv("APP_NAME") ?: "app")."|".(getenv("APP_URL") ?: "")."|".(getenv("DB_HOST") ?: "")."|".(getenv("DB_DATABASE") ?: ""); echo "base64:".base64_encode(substr(hash("sha256", $seed, true), 0, 32));')
   export APP_KEY
@@ -15,6 +24,8 @@ fi
 if [ "${DB_CONNECTION:-sqlite}" = "sqlite" ] && [ ! -f /app/database/database.sqlite ]; then
   touch /app/database/database.sqlite
 fi
+
+php artisan optimize:clear || true
 
 if [ "$RUN_MIGRATIONS" = "true" ]; then
   echo "Ejecutando migraciones..."
