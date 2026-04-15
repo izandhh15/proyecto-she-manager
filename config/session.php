@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Str;
 
+$sessionDomain = env('SESSION_DOMAIN');
+
+if (is_string($sessionDomain) && in_array(strtolower($sessionDomain), ['', 'null', 'false'], true)) {
+    $sessionDomain = null;
+}
+
 return [
 
     /*
@@ -18,9 +24,7 @@ return [
     |
     */
 
-    'driver' => env('APP_ENV') === 'production'
-        ? 'database'
-        : env('SESSION_DRIVER', 'database'),
+    'driver' => env('SESSION_DRIVER', 'database'),
 
     /*
     |--------------------------------------------------------------------------
@@ -49,9 +53,7 @@ return [
     |
     */
 
-    'encrypt' => env('APP_ENV') === 'production'
-        ? false
-        : env('SESSION_ENCRYPT', false),
+    'encrypt' => env('SESSION_ENCRYPT', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -160,9 +162,7 @@ return [
     |
     */
 
-    'domain' => env('APP_ENV') === 'production'
-        ? null
-        : env('SESSION_DOMAIN'),
+    'domain' => $sessionDomain,
 
     /*
     |--------------------------------------------------------------------------
@@ -175,7 +175,7 @@ return [
     |
     */
 
-    'secure' => env('SESSION_SECURE_COOKIE', env('APP_ENV') === 'production'),
+    'secure' => env('SESSION_SECURE_COOKIE', app()->environment('production')),
 
     /*
     |--------------------------------------------------------------------------

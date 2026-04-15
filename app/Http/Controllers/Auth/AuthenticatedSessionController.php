@@ -28,7 +28,6 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-        $request->session()->save();
 
         $hasGames = Game::query()
             ->where('user_id', $request->user()->id)
